@@ -1,0 +1,4223 @@
+{
+  "summary": {
+    "date": "2026-10-15",
+    "baseline": "48886fa39b059a88e01bc75ab99dba7acc935db8",
+    "scope": "All first-party CSS and JS, vendor and scripts excluded; source inventory, not computed-style assertion",
+    "files_scanned": 54,
+    "css_files": 19,
+    "js_files": 35,
+    "css_declarations": 258,
+    "timing_literals_in_css_motion_declarations": {
+      "220ms": 35,
+      "0s": 21,
+      "980ms": 19,
+      "180ms": 19,
+      "550ms": 17,
+      "760ms": 13,
+      "350ms": 11,
+      "720ms": 10,
+      "320ms": 7,
+      "400ms": 5,
+      "200ms": 5,
+      "0ms": 5,
+      "500ms": 4,
+      "560ms": 3,
+      "620ms": 3,
+      "250ms": 3,
+      "440ms": 2,
+      "100ms": 2,
+      "260ms": 2,
+      "360ms": 2,
+      "0.01ms": 2,
+      "340ms": 1,
+      "300ms": 1,
+      "280ms": 1,
+      "160ms": 1,
+      "480ms": 1,
+      "900ms": 1,
+      "6s": 1,
+      "700ms": 1,
+      "140ms": 1,
+      "600ms": 1,
+      "150s": 1,
+      "180s": 1,
+      "210s": 1,
+      "90s": 1,
+      "120s": 1,
+      "160s": 1
+    },
+    "easing_literals_in_css_motion_declarations": {
+      "cubic-bezier(0.22, 1, 0.36, 1)": 14,
+      "ease": 9,
+      "ease-out": 8,
+      "linear": 7,
+      "cubic-bezier(0.4, 0, 0.2, 1)": 2,
+      "cubic-bezier(.2,0,0,1)": 1,
+      "cubic-bezier(.16,1,.3,1)": 1
+    },
+    "source_tokens": [
+      {
+        "file": "website-code/company.css",
+        "line": 3,
+        "declaration": "--ease:cubic-bezier(.22,1,.36,1)"
+      },
+      {
+        "file": "website-code/site-experience.css",
+        "line": 1,
+        "declaration": "--motion-quick:180ms"
+      },
+      {
+        "file": "website-code/site-experience.css",
+        "line": 1,
+        "declaration": "--motion-standard:320ms"
+      },
+      {
+        "file": "website-code/site-experience.css",
+        "line": 1,
+        "declaration": "--motion-scene:620ms"
+      },
+      {
+        "file": "website-code/site-foundations.css",
+        "line": 5,
+        "declaration": "--ease:cubic-bezier(.22,1,.36,1)"
+      },
+      {
+        "file": "website-code/styles.css",
+        "line": 4,
+        "declaration": "--ease:cubic-bezier(.22,1,.36,1)"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2,
+        "declaration": "--x-motion-fast: 220ms"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2,
+        "declaration": "--x-motion-normal: 400ms"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2,
+        "declaration": "--x-motion-slow: 950ms"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2,
+        "declaration": "--x-motion-visual: 1200ms"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2,
+        "declaration": "--x-motion-route: 250ms"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2,
+        "declaration": "--x-motion-counter: 2200ms"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2,
+        "declaration": "--x-motion-counter-delay: 200ms"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2,
+        "declaration": "--x-motion-stagger: 100ms"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2,
+        "declaration": "--x-motion-ease-premium: cubic-bezier(0.22, 1, 0.36, 1)"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2,
+        "declaration": "--x-motion-ease-out: cubic-bezier(0.22, 1, 0.36, 1)"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2,
+        "declaration": "--x-duration-instant: var(--x-motion-fast)"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2,
+        "declaration": "--x-duration-fast: var(--x-motion-fast)"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2,
+        "declaration": "--x-duration-base: var(--x-motion-normal)"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2,
+        "declaration": "--x-duration-moderate: var(--x-motion-normal)"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2,
+        "declaration": "--x-duration-slow: var(--x-motion-slow)"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2,
+        "declaration": "--x-duration-emphasis: var(--x-motion-visual)"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2,
+        "declaration": "--x-ease-standard: cubic-bezier(0.2, 0, 0, 1)"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2,
+        "declaration": "--x-ease-enter: cubic-bezier(0.16, 1, 0.3, 1)"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2,
+        "declaration": "--x-ease-exit: cubic-bezier(0.4, 0, 1, 1)"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2,
+        "declaration": "--x-ease-emphasis: cubic-bezier(0.22, 1, 0.36, 1)"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 5,
+        "declaration": "--x-motion-fast: 0.01ms"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 5,
+        "declaration": "--x-motion-normal: 0.01ms"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 5,
+        "declaration": "--x-motion-slow: 0.01ms"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 5,
+        "declaration": "--x-motion-visual: 0.01ms"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 5,
+        "declaration": "--x-motion-route: 0.01ms"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 5,
+        "declaration": "--x-duration-fast: 0.01ms"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 5,
+        "declaration": "--x-duration-base: 0.01ms"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 5,
+        "declaration": "--x-duration-moderate: 0.01ms"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 5,
+        "declaration": "--x-duration-slow: 0.01ms"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 5,
+        "declaration": "--x-duration-emphasis: 0.01ms"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 554,
+        "declaration": "--xb-motion: 240ms"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 635,
+        "declaration": "--xm-ease: cubic-bezier(.22,1,.36,1)"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 635,
+        "declaration": "--xm-duration: var(--x-motion-normal)"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 1590,
+        "declaration": "--xj-motion: 550ms"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 1590,
+        "declaration": "--xj-ease: cubic-bezier(.22,1,.36,1)"
+      }
+    ],
+    "files": [
+      "website-code/app.js",
+      "website-code/asset-urls.js",
+      "website-code/business-content.js",
+      "website-code/company-brand.css",
+      "website-code/company-honors.css",
+      "website-code/company-honors.js",
+      "website-code/company.css",
+      "website-code/company.js",
+      "website-code/content-motion.js",
+      "website-code/franchise-redirect.js",
+      "website-code/loader.css",
+      "website-code/loader.js",
+      "website-code/motion.js",
+      "website-code/planting-factory.css",
+      "website-code/planting-factory.js",
+      "website-code/planting-management.css",
+      "website-code/planting-management.js",
+      "website-code/planting-model.js",
+      "website-code/planting-page.css",
+      "website-code/planting-page.js",
+      "website-code/product-hero.css",
+      "website-code/product-hero.js",
+      "website-code/product-scene.js",
+      "website-code/products-catalog-motion.js",
+      "website-code/products-cooperation-services.css",
+      "website-code/products-cooperation-services.js",
+      "website-code/products-cooperation.css",
+      "website-code/products-cooperation.js",
+      "website-code/products-page.css",
+      "website-code/products-page.js",
+      "website-code/products-process-icons.js",
+      "website-code/products-showcase.css",
+      "website-code/products-showcase.js",
+      "website-code/responsive-media.js",
+      "website-code/section-cover.js",
+      "website-code/service-annotation.css",
+      "website-code/site-experience.css",
+      "website-code/site-experience.js",
+      "website-code/site-foundations.css",
+      "website-code/site-navigation.css",
+      "website-code/site-navigation.js",
+      "website-code/styles.css",
+      "website-code/transplanted.js",
+      "website-code/xunai/about-page.js",
+      "website-code/xunai/ai-orbit.js",
+      "website-code/xunai/ai-page.js",
+      "website-code/xunai/brand-figma.js",
+      "website-code/xunai/content.css",
+      "website-code/xunai/cooperation.css",
+      "website-code/xunai/franchise-form.js",
+      "website-code/xunai/franchise-page.js",
+      "website-code/xunai/responsive-images.js",
+      "website-code/xunai/store-tools.js",
+      "website-code/xunai/stores-page.js"
+    ]
+  },
+  "css": [
+    {
+      "file": "website-code/company-brand.css",
+      "line": 17,
+      "declaration": "transition:transform 760ms var(--ease),filter 980ms var(--ease)",
+      "duration_literals": [
+        "760ms",
+        "980ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company-brand.css",
+      "line": 31,
+      "declaration": "transition:none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company-brand.css",
+      "line": 36,
+      "declaration": "transition:opacity 760ms var(--ease),filter 980ms var(--ease),transform 980ms var(--ease)",
+      "duration_literals": [
+        "760ms",
+        "980ms",
+        "980ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company-brand.css",
+      "line": 38,
+      "declaration": "transition:none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company-brand.css",
+      "line": 40,
+      "declaration": "transition:transform 760ms var(--ease),filter 980ms var(--ease)",
+      "duration_literals": [
+        "760ms",
+        "980ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company-brand.css",
+      "line": 49,
+      "declaration": "transition:opacity 760ms var(--ease),clip-path 980ms var(--ease),filter 980ms var(--ease)",
+      "duration_literals": [
+        "760ms",
+        "980ms",
+        "980ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company-brand.css",
+      "line": 50,
+      "declaration": "transition:opacity 560ms var(--ease),clip-path 720ms var(--ease),filter 720ms var(--ease),transform 720ms var(--ease)",
+      "duration_literals": [
+        "560ms",
+        "720ms",
+        "720ms",
+        "720ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company-brand.css",
+      "line": 58,
+      "declaration": "transition:flex-grow 620ms var(--ease)",
+      "duration_literals": [
+        "620ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company-brand.css",
+      "line": 60,
+      "declaration": "transition:width 620ms var(--ease)",
+      "duration_literals": [
+        "620ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company-brand.css",
+      "line": 61,
+      "declaration": "transition:opacity 760ms var(--ease),clip-path 980ms var(--ease),filter 980ms var(--ease),transform 760ms var(--ease)",
+      "duration_literals": [
+        "760ms",
+        "980ms",
+        "980ms",
+        "760ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company-brand.css",
+      "line": 70,
+      "declaration": "transition:opacity 220ms var(--ease),transform 440ms var(--ease),visibility 0s 440ms",
+      "duration_literals": [
+        "220ms",
+        "440ms",
+        "0s",
+        "440ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company-brand.css",
+      "line": 71,
+      "declaration": "transition:opacity 340ms 100ms var(--ease),transform 620ms var(--ease),visibility 0s",
+      "duration_literals": [
+        "340ms",
+        "100ms",
+        "620ms",
+        "0s"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company-brand.css",
+      "line": 94,
+      "declaration": "animation:none!important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company-brand.css",
+      "line": 94,
+      "declaration": "transition:none!important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 3,
+      "declaration": "--ease:cubic-bezier(.22,1,.36,1)",
+      "duration_literals": [],
+      "easing_literals": [
+        "cubic-bezier(.22,1,.36,1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 5,
+      "declaration": "transition:transform 300ms var(--ease)",
+      "duration_literals": [
+        "300ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 13,
+      "declaration": "transition:opacity 280ms var(--ease)",
+      "duration_literals": [
+        "280ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 20,
+      "declaration": "animation:business-open 550ms var(--ease) both",
+      "duration_literals": [
+        "550ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 22,
+      "declaration": "transition:transform 550ms var(--ease)",
+      "duration_literals": [
+        "550ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 42,
+      "declaration": "transition:color 220ms var(--ease)",
+      "duration_literals": [
+        "220ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 44,
+      "declaration": "transition:opacity 350ms var(--ease)",
+      "duration_literals": [
+        "350ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 53,
+      "declaration": "transition:background 220ms var(--ease),color 220ms var(--ease)",
+      "duration_literals": [
+        "220ms",
+        "220ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 59,
+      "declaration": "transition:opacity 220ms var(--ease)",
+      "duration_literals": [
+        "220ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 67,
+      "declaration": "transition:color 220ms var(--ease),border-color 220ms var(--ease),gap 220ms var(--ease)",
+      "duration_literals": [
+        "220ms",
+        "220ms",
+        "220ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 69,
+      "declaration": "transition:none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 74,
+      "declaration": "transition:opacity 760ms var(--ease),clip-path 980ms var(--ease),filter 980ms var(--ease),transform 980ms var(--ease)",
+      "duration_literals": [
+        "760ms",
+        "980ms",
+        "980ms",
+        "980ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 77,
+      "declaration": "transition:none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 77,
+      "declaration": "transition:none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 77,
+      "declaration": "animation:none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 91,
+      "declaration": "transition:color 350ms var(--ease)",
+      "duration_literals": [
+        "350ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 92,
+      "declaration": "transition:color 350ms var(--ease)",
+      "duration_literals": [
+        "350ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 95,
+      "declaration": "transition:filter 350ms var(--ease)",
+      "duration_literals": [
+        "350ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 100,
+      "declaration": "transition:transform 400ms var(--ease),filter 400ms var(--ease)",
+      "duration_literals": [
+        "400ms",
+        "400ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 103,
+      "declaration": "animation:history-caption 200ms var(--ease) 200ms both",
+      "duration_literals": [
+        "200ms",
+        "200ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 127,
+      "declaration": "transition:none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 129,
+      "declaration": "transition:none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 130,
+      "declaration": "animation:none!important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 144,
+      "declaration": "transition-duration:220ms",
+      "duration_literals": [
+        "220ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/planting-factory.css",
+      "line": 103,
+      "declaration": "transition:none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/planting-management.css",
+      "line": 2,
+      "declaration": "transition:grid-template-columns 760ms var(--ease)",
+      "duration_literals": [
+        "760ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/planting-management.css",
+      "line": 5,
+      "declaration": "transition:none!important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/planting-management.css",
+      "line": 13,
+      "declaration": "transition:aspect-ratio 760ms var(--ease)",
+      "duration_literals": [
+        "760ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/planting-management.css",
+      "line": 27,
+      "declaration": "transition:none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/planting-page.css",
+      "line": 55,
+      "declaration": "transition:opacity 560ms var(--ease),transform 720ms var(--ease),filter 720ms var(--ease),clip-path 720ms var(--ease)",
+      "duration_literals": [
+        "560ms",
+        "720ms",
+        "720ms",
+        "720ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/planting-page.css",
+      "line": 71,
+      "declaration": "transition:opacity 320ms var(--ease)",
+      "duration_literals": [
+        "320ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/planting-page.css",
+      "line": 72,
+      "declaration": "transition:opacity 320ms var(--ease)",
+      "duration_literals": [
+        "320ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/planting-page.css",
+      "line": 149,
+      "declaration": "transition:none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/product-scene.js",
+      "line": 38,
+      "declaration": "transition: 'opacity 100ms linear',\n  ",
+      "duration_literals": [
+        "100ms"
+      ],
+      "easing_literals": [
+        "linear"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/products-cooperation-services.css",
+      "line": 29,
+      "declaration": "transition:transform 220ms var(--ease)",
+      "duration_literals": [
+        "220ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/products-cooperation-services.css",
+      "line": 39,
+      "declaration": "animation:cooperation-services-unfold 260ms var(--ease)",
+      "duration_literals": [
+        "260ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/products-cooperation-services.css",
+      "line": 43,
+      "declaration": "transition:background 220ms var(--ease),border-color 220ms var(--ease),color 220ms var(--ease)",
+      "duration_literals": [
+        "220ms",
+        "220ms",
+        "220ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/products-cooperation-services.css",
+      "line": 84,
+      "declaration": "animation:none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/products-cooperation-services.css",
+      "line": 85,
+      "declaration": "transition:none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/products-page.css",
+      "line": 22,
+      "declaration": "transition:box-shadow 160ms var(--ease)",
+      "duration_literals": [
+        "160ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/products-showcase.css",
+      "line": 8,
+      "declaration": "transition:background-color 480ms var(--ease)",
+      "duration_literals": [
+        "480ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/products-showcase.css",
+      "line": 15,
+      "declaration": "transition:transform 980ms var(--ease)",
+      "duration_literals": [
+        "980ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-experience.css",
+      "line": 1,
+      "declaration": "--motion-quick:180ms",
+      "duration_literals": [
+        "180ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-experience.css",
+      "line": 1,
+      "declaration": "--motion-standard:320ms",
+      "duration_literals": [
+        "320ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-experience.css",
+      "line": 1,
+      "declaration": "--motion-scene:620ms",
+      "duration_literals": [
+        "620ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-experience.css",
+      "line": 3,
+      "declaration": "transition:opacity var(--motion-standard) var(--ease)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-experience.css",
+      "line": 4,
+      "declaration": "transition-delay:0ms",
+      "duration_literals": [
+        "0ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-experience.css",
+      "line": 5,
+      "declaration": "transition:opacity var(--motion-standard) var(--ease)!important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-experience.css",
+      "line": 8,
+      "declaration": "transition:none!important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-foundations.css",
+      "line": 5,
+      "declaration": "--ease:cubic-bezier(.22,1,.36,1)",
+      "duration_literals": [],
+      "easing_literals": [
+        "cubic-bezier(.22,1,.36,1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-foundations.css",
+      "line": 29,
+      "declaration": "transition:color 220ms var(--ease),border-color 220ms var(--ease)",
+      "duration_literals": [
+        "220ms",
+        "220ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-foundations.css",
+      "line": 31,
+      "declaration": "transition:transform 220ms var(--ease)",
+      "duration_literals": [
+        "220ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-foundations.css",
+      "line": 87,
+      "declaration": "transition:color 220ms var(--ease),border-color 220ms var(--ease)",
+      "duration_literals": [
+        "220ms",
+        "220ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-foundations.css",
+      "line": 89,
+      "declaration": "transition:transform 220ms var(--ease)",
+      "duration_literals": [
+        "220ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-foundations.css",
+      "line": 92,
+      "declaration": "transition:opacity 760ms var(--ease),clip-path 980ms var(--ease),filter 980ms var(--ease)",
+      "duration_literals": [
+        "760ms",
+        "980ms",
+        "980ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-foundations.css",
+      "line": 93,
+      "declaration": "transition:opacity 560ms var(--ease),transform 720ms var(--ease),clip-path 720ms var(--ease),filter 720ms var(--ease)",
+      "duration_literals": [
+        "560ms",
+        "720ms",
+        "720ms",
+        "720ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-foundations.css",
+      "line": 94,
+      "declaration": "transition-delay:var(--reveal-delay,0ms)",
+      "duration_literals": [
+        "0ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-foundations.css",
+      "line": 95,
+      "declaration": "transition:none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-foundations.css",
+      "line": 95,
+      "declaration": "animation:none!important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-foundations.css",
+      "line": 95,
+      "declaration": "transition:none!important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-navigation.css",
+      "line": 12,
+      "declaration": "transition:transform 180ms cubic-bezier(.2,0,0,1)",
+      "duration_literals": [
+        "180ms"
+      ],
+      "easing_literals": [
+        "cubic-bezier(.2,0,0,1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-navigation.css",
+      "line": 19,
+      "declaration": "animation:site-drawer-enter 400ms cubic-bezier(.16,1,.3,1) both",
+      "duration_literals": [
+        "400ms"
+      ],
+      "easing_literals": [
+        "cubic-bezier(.16,1,.3,1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-navigation.css",
+      "line": 36,
+      "declaration": "animation:none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/site-navigation.css",
+      "line": 36,
+      "declaration": "transition:none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 4,
+      "declaration": "--ease:cubic-bezier(.22,1,.36,1)",
+      "duration_literals": [],
+      "easing_literals": [
+        "cubic-bezier(.22,1,.36,1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 18,
+      "declaration": "transition:opacity 760ms var(--ease),clip-path 980ms var(--ease),filter 980ms var(--ease)",
+      "duration_literals": [
+        "760ms",
+        "980ms",
+        "980ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 19,
+      "declaration": "transition-delay:var(--reveal-delay,0ms)",
+      "duration_literals": [
+        "0ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 20,
+      "declaration": "transition:opacity 360ms var(--ease)",
+      "duration_literals": [
+        "360ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 21,
+      "declaration": "transition-delay:var(--reveal-delay,0ms)",
+      "duration_literals": [
+        "0ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 22,
+      "declaration": "transition:opacity 180ms var(--ease),filter 260ms var(--ease)",
+      "duration_literals": [
+        "180ms",
+        "260ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 36,
+      "declaration": "transition:transform 220ms var(--ease)",
+      "duration_literals": [
+        "220ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 39,
+      "declaration": "transition:color 220ms var(--ease),border-color 220ms var(--ease)",
+      "duration_literals": [
+        "220ms",
+        "220ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 41,
+      "declaration": "transition:transform 220ms var(--ease)",
+      "duration_literals": [
+        "220ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 67,
+      "declaration": "transition:color 320ms var(--ease),opacity 360ms var(--ease)",
+      "duration_literals": [
+        "320ms",
+        "360ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 70,
+      "declaration": "transition:opacity 320ms var(--ease)",
+      "duration_literals": [
+        "320ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 79,
+      "declaration": "transition:opacity 760ms var(--ease)",
+      "duration_literals": [
+        "760ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 81,
+      "declaration": "transition:opacity 760ms var(--ease),clip-path 980ms var(--ease),filter 980ms var(--ease),transform 980ms var(--ease)",
+      "duration_literals": [
+        "760ms",
+        "980ms",
+        "980ms",
+        "980ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 82,
+      "declaration": "transition-delay:0ms",
+      "duration_literals": [
+        "0ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 96,
+      "declaration": "transition:background-color 220ms var(--ease)",
+      "duration_literals": [
+        "220ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 100,
+      "declaration": "transition:opacity 250ms var(--ease)",
+      "duration_literals": [
+        "250ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 106,
+      "declaration": "transition:box-shadow 250ms var(--ease),transform 250ms var(--ease)",
+      "duration_literals": [
+        "250ms",
+        "250ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 152,
+      "declaration": "transition:color 220ms var(--ease),border-color 220ms var(--ease)",
+      "duration_literals": [
+        "220ms",
+        "220ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 155,
+      "declaration": "transition:opacity 220ms var(--ease),transform 220ms var(--ease)",
+      "duration_literals": [
+        "220ms",
+        "220ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 288,
+      "declaration": "transition:none!important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 288,
+      "declaration": "animation:none!important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2,
+      "declaration": "--x-motion-fast: 220ms",
+      "duration_literals": [
+        "220ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2,
+      "declaration": "--x-motion-normal: 400ms",
+      "duration_literals": [
+        "400ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2,
+      "declaration": "--x-motion-slow: 950ms",
+      "duration_literals": [
+        "950ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2,
+      "declaration": "--x-motion-visual: 1200ms",
+      "duration_literals": [
+        "1200ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2,
+      "declaration": "--x-motion-route: 250ms",
+      "duration_literals": [
+        "250ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2,
+      "declaration": "--x-motion-counter: 2200ms",
+      "duration_literals": [
+        "2200ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2,
+      "declaration": "--x-motion-counter-delay: 200ms",
+      "duration_literals": [
+        "200ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2,
+      "declaration": "--x-motion-stagger: 100ms",
+      "duration_literals": [
+        "100ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2,
+      "declaration": "--x-motion-ease-premium: cubic-bezier(0.22, 1, 0.36, 1)",
+      "duration_literals": [],
+      "easing_literals": [
+        "cubic-bezier(0.22, 1, 0.36, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2,
+      "declaration": "--x-motion-ease-out: cubic-bezier(0.22, 1, 0.36, 1)",
+      "duration_literals": [],
+      "easing_literals": [
+        "cubic-bezier(0.22, 1, 0.36, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2,
+      "declaration": "--x-duration-instant: var(--x-motion-fast)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2,
+      "declaration": "--x-duration-fast: var(--x-motion-fast)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2,
+      "declaration": "--x-duration-base: var(--x-motion-normal)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2,
+      "declaration": "--x-duration-moderate: var(--x-motion-normal)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2,
+      "declaration": "--x-duration-slow: var(--x-motion-slow)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2,
+      "declaration": "--x-duration-emphasis: var(--x-motion-visual)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2,
+      "declaration": "--x-ease-standard: cubic-bezier(0.2, 0, 0, 1)",
+      "duration_literals": [],
+      "easing_literals": [
+        "cubic-bezier(0.2, 0, 0, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2,
+      "declaration": "--x-ease-enter: cubic-bezier(0.16, 1, 0.3, 1)",
+      "duration_literals": [],
+      "easing_literals": [
+        "cubic-bezier(0.16, 1, 0.3, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2,
+      "declaration": "--x-ease-exit: cubic-bezier(0.4, 0, 1, 1)",
+      "duration_literals": [],
+      "easing_literals": [
+        "cubic-bezier(0.4, 0, 1, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2,
+      "declaration": "--x-ease-emphasis: cubic-bezier(0.22, 1, 0.36, 1)",
+      "duration_literals": [],
+      "easing_literals": [
+        "cubic-bezier(0.22, 1, 0.36, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 5,
+      "declaration": "--x-motion-fast: 0.01ms",
+      "duration_literals": [
+        "0.01ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 5,
+      "declaration": "--x-motion-normal: 0.01ms",
+      "duration_literals": [
+        "0.01ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 5,
+      "declaration": "--x-motion-slow: 0.01ms",
+      "duration_literals": [
+        "0.01ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 5,
+      "declaration": "--x-motion-visual: 0.01ms",
+      "duration_literals": [
+        "0.01ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 5,
+      "declaration": "--x-motion-route: 0.01ms",
+      "duration_literals": [
+        "0.01ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 5,
+      "declaration": "--x-duration-fast: 0.01ms",
+      "duration_literals": [
+        "0.01ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 5,
+      "declaration": "--x-duration-base: 0.01ms",
+      "duration_literals": [
+        "0.01ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 5,
+      "declaration": "--x-duration-moderate: 0.01ms",
+      "duration_literals": [
+        "0.01ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 5,
+      "declaration": "--x-duration-slow: 0.01ms",
+      "duration_literals": [
+        "0.01ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 5,
+      "declaration": "--x-duration-emphasis: 0.01ms",
+      "duration_literals": [
+        "0.01ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 20,
+      "declaration": "animation: loader-line 720ms var(--x-ease-emphasis) both",
+      "duration_literals": [
+        "720ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 21,
+      "declaration": "transition: opacity var(--x-duration-base) var(--x-ease-exit), visibility 0s linear var(--x-duration-base)",
+      "duration_literals": [
+        "0s"
+      ],
+      "easing_literals": [
+        "linear"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 23,
+      "declaration": "transition: transform var(--x-duration-slow) var(--x-ease-emphasis),\n    opacity var(--x-duration-base) var(--x-ease-standard),\n    visibility 0s linear var(--x-duration-slow)",
+      "duration_literals": [
+        "0s"
+      ],
+      "easing_literals": [
+        "linear"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 26,
+      "declaration": "transition-delay: 0s",
+      "duration_literals": [
+        "0s"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 31,
+      "declaration": "transition: color var(--x-duration-base) var(--x-ease-standard),\n    background-color var(--x-duration-base) var(--x-ease-standard),\n    border-color var(--x-duration-base) var(--x-ease-standard)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 41,
+      "declaration": "transition: background-color var(--x-duration-fast) var(--x-ease-standard),\n    color var(--x-duration-fast) var(--x-ease-standard),\n    transform var(--x-duration-instant) var(--x-ease-standard)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 50,
+      "declaration": "transition: transform var(--x-duration-fast) var(--x-ease-standard)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 57,
+      "declaration": "transition: transform var(--x-duration-moderate) var(--x-ease-enter),\n    opacity var(--x-duration-base) var(--x-ease-enter),\n    visibility 0s linear var(--x-duration-moderate)",
+      "duration_literals": [
+        "0s"
+      ],
+      "easing_literals": [
+        "linear"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 60,
+      "declaration": "transition-delay: 0s",
+      "duration_literals": [
+        "0s"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 74,
+      "declaration": "transition: opacity 900ms var(--x-ease-standard), transform 6s linear",
+      "duration_literals": [
+        "900ms",
+        "6s"
+      ],
+      "easing_literals": [
+        "linear"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 111,
+      "declaration": "transition: color var(--x-duration-fast) var(--x-ease-standard)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 112,
+      "declaration": "transition: transform var(--x-duration-moderate) var(--x-ease-emphasis)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 118,
+      "declaration": "transition: opacity var(--x-duration-base) var(--x-ease-enter), transform var(--x-duration-moderate) var(--x-ease-enter)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 132,
+      "declaration": "transition: transform 700ms var(--x-ease-emphasis)",
+      "duration_literals": [
+        "700ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 186,
+      "declaration": "transition: opacity var(--x-duration-slow) var(--x-ease-enter), transform var(--x-duration-slow) var(--x-ease-enter)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 228,
+      "declaration": "animation-duration: 0.01ms !important",
+      "duration_literals": [
+        "0.01ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 228,
+      "declaration": "animation-iteration-count: 1 !important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 228,
+      "declaration": "transition-duration: 0.01ms !important",
+      "duration_literals": [
+        "0.01ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 243,
+      "declaration": "transition: opacity 320ms cubic-bezier(0.4, 0, 0.2, 1), visibility 320ms",
+      "duration_literals": [
+        "320ms",
+        "320ms"
+      ],
+      "easing_literals": [
+        "cubic-bezier(0.4, 0, 0.2, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 244,
+      "declaration": "transition: none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 247,
+      "declaration": "animation: 320ms cubic-bezier(0.4, 0, 0.2, 1) 0s 1 normal both running xunai-loader-enter",
+      "duration_literals": [
+        "320ms",
+        "0s"
+      ],
+      "easing_literals": [
+        "cubic-bezier(0.4, 0, 0.2, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 256,
+      "declaration": "transition: background-color 220ms, color 220ms, border-color 220ms",
+      "duration_literals": [
+        "220ms",
+        "220ms",
+        "220ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 297,
+      "declaration": "transition: transform var(--x-duration-fast) var(--x-ease-standard)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 346,
+      "declaration": "transition: none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 358,
+      "declaration": "transition: background var(--x-duration-fast) var(--x-ease-standard),color var(--x-duration-fast) var(--x-ease-standard),transform var(--x-duration-fast) var(--x-ease-standard)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 397,
+      "declaration": "transition: none !important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 397,
+      "declaration": "animation: auto ease 0s 1 normal none running none !important",
+      "duration_literals": [
+        "0s"
+      ],
+      "easing_literals": [
+        "ease"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 418,
+      "declaration": "transition: background 220ms",
+      "duration_literals": [
+        "220ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 487,
+      "declaration": "transition: color var(--x-duration-fast) var(--x-ease-standard)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 488,
+      "declaration": "transition: transform var(--x-duration-fast) var(--x-ease-standard)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 554,
+      "declaration": "--xb-motion: 240ms",
+      "duration_literals": [
+        "240ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 560,
+      "declaration": "transition: background var(--x-duration-fast),color var(--x-duration-fast),border-color var(--x-duration-fast)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 573,
+      "declaration": "transition: color var(--x-duration-fast)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 633,
+      "declaration": "transition: none !important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 633,
+      "declaration": "animation: auto ease 0s 1 normal none running none !important",
+      "duration_literals": [
+        "0s"
+      ],
+      "easing_literals": [
+        "ease"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 635,
+      "declaration": "--xm-ease: cubic-bezier(.22,1,.36,1)",
+      "duration_literals": [],
+      "easing_literals": [
+        "cubic-bezier(.22,1,.36,1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 635,
+      "declaration": "--xm-duration: var(--x-motion-normal)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 636,
+      "declaration": "transition: background-color 180ms ease-out, color 180ms ease-out, border-color 180ms ease-out, transform 140ms ease-out, box-shadow 180ms ease-out",
+      "duration_literals": [
+        "180ms",
+        "180ms",
+        "180ms",
+        "140ms",
+        "180ms"
+      ],
+      "easing_literals": [
+        "ease-out",
+        "ease-out",
+        "ease-out",
+        "ease-out",
+        "ease-out"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 641,
+      "declaration": "transition: border-color 180ms ease-out, box-shadow 180ms ease-out",
+      "duration_literals": [
+        "180ms",
+        "180ms"
+      ],
+      "easing_literals": [
+        "ease-out",
+        "ease-out"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 643,
+      "declaration": "animation: 220ms cubic-bezier(0.22, 1, 0.36, 1) 0s 1 normal none running control-dialog-enter",
+      "duration_literals": [
+        "220ms",
+        "0s"
+      ],
+      "easing_literals": [
+        "cubic-bezier(0.22, 1, 0.36, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 644,
+      "declaration": "animation: 180ms ease-out 0s 1 normal none running control-backdrop-enter",
+      "duration_literals": [
+        "180ms",
+        "0s"
+      ],
+      "easing_literals": [
+        "ease-out"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 655,
+      "declaration": "transition: none !important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 657,
+      "declaration": "animation: auto ease 0s 1 normal none running none !important",
+      "duration_literals": [
+        "0s"
+      ],
+      "easing_literals": [
+        "ease"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 670,
+      "declaration": "transition: transform var(--xm-duration) var(--xm-ease)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 673,
+      "declaration": "transition: transform var(--xm-duration) var(--xm-ease)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 675,
+      "declaration": "transition: color var(--xm-quick),background var(--xm-quick)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 685,
+      "declaration": "transition: none !important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 686,
+      "declaration": "animation: auto ease 0s 1 normal none running none !important",
+      "duration_literals": [
+        "0s"
+      ],
+      "easing_literals": [
+        "ease"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 686,
+      "declaration": "transition: none !important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 705,
+      "declaration": "transition: background-color 180ms",
+      "duration_literals": [
+        "180ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 706,
+      "declaration": "transition: transform 200ms",
+      "duration_literals": [
+        "200ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 743,
+      "declaration": "transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1)",
+      "duration_literals": [
+        "600ms"
+      ],
+      "easing_literals": [
+        "cubic-bezier(0.22, 1, 0.36, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 755,
+      "declaration": "transition: background-color 180ms",
+      "duration_literals": [
+        "180ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 797,
+      "declaration": "transition: none !important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 797,
+      "declaration": "animation: auto ease 0s 1 normal none running none !important",
+      "duration_literals": [
+        "0s"
+      ],
+      "easing_literals": [
+        "ease"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 836,
+      "declaration": "transition: scale 550ms cubic-bezier(0.22, 1, 0.36, 1)",
+      "duration_literals": [
+        "550ms"
+      ],
+      "easing_literals": [
+        "cubic-bezier(0.22, 1, 0.36, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 947,
+      "declaration": "transition: background var(--xm-quick),color var(--xm-quick)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 951,
+      "declaration": "transition: transform 350ms var(--xm-ease)",
+      "duration_literals": [
+        "350ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 960,
+      "declaration": "transition: transform var(--xm-duration) var(--xm-ease)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 965,
+      "declaration": "transition: transform 550ms var(--xm-ease)",
+      "duration_literals": [
+        "550ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 987,
+      "declaration": "transition: background var(--xm-quick)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 992,
+      "declaration": "transition: transform 550ms var(--xm-ease)",
+      "duration_literals": [
+        "550ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 994,
+      "declaration": "transition: border-color var(--xm-quick),background var(--xm-quick)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 998,
+      "declaration": "transition: transform 550ms var(--xm-ease)",
+      "duration_literals": [
+        "550ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1042,
+      "declaration": "transition: none !important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1042,
+      "declaration": "animation: auto ease 0s 1 normal none running none !important",
+      "duration_literals": [
+        "0s"
+      ],
+      "easing_literals": [
+        "ease"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1073,
+      "declaration": "transition: color 180ms",
+      "duration_literals": [
+        "180ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1125,
+      "declaration": "transition: opacity 180ms",
+      "duration_literals": [
+        "180ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1128,
+      "declaration": "transition: transform 550ms cubic-bezier(0.22, 1, 0.36, 1)",
+      "duration_literals": [
+        "550ms"
+      ],
+      "easing_literals": [
+        "cubic-bezier(0.22, 1, 0.36, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1134,
+      "declaration": "transition: transform 550ms cubic-bezier(0.22, 1, 0.36, 1)",
+      "duration_literals": [
+        "550ms"
+      ],
+      "easing_literals": [
+        "cubic-bezier(0.22, 1, 0.36, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1159,
+      "declaration": "transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1)",
+      "duration_literals": [
+        "500ms"
+      ],
+      "easing_literals": [
+        "cubic-bezier(0.22, 1, 0.36, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1160,
+      "declaration": "transition: flex-basis 500ms cubic-bezier(0.22, 1, 0.36, 1), color 220ms, border-color 220ms",
+      "duration_literals": [
+        "500ms",
+        "220ms",
+        "220ms"
+      ],
+      "easing_literals": [
+        "cubic-bezier(0.22, 1, 0.36, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1164,
+      "declaration": "transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1), opacity 350ms",
+      "duration_literals": [
+        "500ms",
+        "350ms"
+      ],
+      "easing_literals": [
+        "cubic-bezier(0.22, 1, 0.36, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1168,
+      "declaration": "transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1)",
+      "duration_literals": [
+        "500ms"
+      ],
+      "easing_literals": [
+        "cubic-bezier(0.22, 1, 0.36, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1255,
+      "declaration": "transition: none !important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1255,
+      "declaration": "animation: auto ease 0s 1 normal none running none !important",
+      "duration_literals": [
+        "0s"
+      ],
+      "easing_literals": [
+        "ease"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1262,
+      "declaration": "transition: transform 550ms cubic-bezier(0.22, 1, 0.36, 1)",
+      "duration_literals": [
+        "550ms"
+      ],
+      "easing_literals": [
+        "cubic-bezier(0.22, 1, 0.36, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1268,
+      "declaration": "transition: none !important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1279,
+      "declaration": "transition: background var(--xm-quick),color var(--xm-quick)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1280,
+      "declaration": "transition: transform var(--xm-duration) var(--xm-ease)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1284,
+      "declaration": "transition: opacity 180ms",
+      "duration_literals": [
+        "180ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1406,
+      "declaration": "transition: transform 550ms cubic-bezier(0.22, 1, 0.36, 1)",
+      "duration_literals": [
+        "550ms"
+      ],
+      "easing_literals": [
+        "cubic-bezier(0.22, 1, 0.36, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1408,
+      "declaration": "transition: transform 550ms cubic-bezier(0.22, 1, 0.36, 1)",
+      "duration_literals": [
+        "550ms"
+      ],
+      "easing_literals": [
+        "cubic-bezier(0.22, 1, 0.36, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1411,
+      "declaration": "transition: opacity 350ms",
+      "duration_literals": [
+        "350ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1425,
+      "declaration": "transition: none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1432,
+      "declaration": "animation: 150s linear 0s infinite normal none running xa-orbit-turn",
+      "duration_literals": [
+        "150s",
+        "0s"
+      ],
+      "easing_literals": [
+        "linear"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1433,
+      "declaration": "animation-duration: 180s",
+      "duration_literals": [
+        "180s"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1434,
+      "declaration": "animation-duration: 210s",
+      "duration_literals": [
+        "210s"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1435,
+      "declaration": "animation: auto ease 0s 1 normal none running none",
+      "duration_literals": [
+        "0s"
+      ],
+      "easing_literals": [
+        "ease"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1440,
+      "declaration": "animation: 90s linear 0s infinite normal none running xa-orbit-turn",
+      "duration_literals": [
+        "90s",
+        "0s"
+      ],
+      "easing_literals": [
+        "linear"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1442,
+      "declaration": "animation-duration: 120s",
+      "duration_literals": [
+        "120s"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1443,
+      "declaration": "animation-duration: 160s",
+      "duration_literals": [
+        "160s"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1445,
+      "declaration": "transition: background 350ms, box-shadow 350ms",
+      "duration_literals": [
+        "350ms",
+        "350ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1454,
+      "declaration": "transition: none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1471,
+      "declaration": "transition: transform 550ms cubic-bezier(0.22, 1, 0.36, 1), filter 550ms",
+      "duration_literals": [
+        "550ms",
+        "550ms"
+      ],
+      "easing_literals": [
+        "cubic-bezier(0.22, 1, 0.36, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1475,
+      "declaration": "animation: auto ease 0s 1 normal none running none",
+      "duration_literals": [
+        "0s"
+      ],
+      "easing_literals": [
+        "ease"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1477,
+      "declaration": "transition: none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1498,
+      "declaration": "transition: background 350ms, transform 350ms",
+      "duration_literals": [
+        "350ms",
+        "350ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1519,
+      "declaration": "transition: transform 550ms cubic-bezier(0.22, 1, 0.36, 1), filter 550ms",
+      "duration_literals": [
+        "550ms",
+        "550ms"
+      ],
+      "easing_literals": [
+        "cubic-bezier(0.22, 1, 0.36, 1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1577,
+      "declaration": "transition: none !important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1590,
+      "declaration": "--xj-motion: 550ms",
+      "duration_literals": [
+        "550ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1590,
+      "declaration": "--xj-ease: cubic-bezier(.22,1,.36,1)",
+      "duration_literals": [],
+      "easing_literals": [
+        "cubic-bezier(.22,1,.36,1)"
+      ],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1598,
+      "declaration": "transition: transform var(--xj-motion) var(--xj-ease)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1622,
+      "declaration": "transition: transform var(--x-duration-fast)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1639,
+      "declaration": "transition: background var(--x-duration-base)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1658,
+      "declaration": "transition: background var(--x-duration-base)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1704,
+      "declaration": "transition: none !important",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1714,
+      "declaration": "transition: color var(--x-duration-base)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1717,
+      "declaration": "transition: grid-template-rows var(--xj-motion) var(--xj-ease),opacity var(--x-duration-moderate)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1737,
+      "declaration": "transition: none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1776,
+      "declaration": "transition: transform 550ms var(--xj-ease)",
+      "duration_literals": [
+        "550ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1791,
+      "declaration": "transition: transform 550ms var(--xj-ease)",
+      "duration_literals": [
+        "550ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1800,
+      "declaration": "transition: none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1850,
+      "declaration": "transition: background-color 180ms",
+      "duration_literals": [
+        "180ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1852,
+      "declaration": "transition: transform 200ms",
+      "duration_literals": [
+        "200ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1879,
+      "declaration": "transition: none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1886,
+      "declaration": "transition: background-color 180ms, color 180ms",
+      "duration_literals": [
+        "180ms",
+        "180ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1890,
+      "declaration": "transition: opacity 180ms",
+      "duration_literals": [
+        "180ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1896,
+      "declaration": "transition: background-color 180ms",
+      "duration_literals": [
+        "180ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1897,
+      "declaration": "transition: transform 200ms",
+      "duration_literals": [
+        "200ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1936,
+      "declaration": "transition: none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1962,
+      "declaration": "transition: none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1978,
+      "declaration": "transition: color var(--x-motion-fast),border-color var(--x-motion-fast)",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2013,
+      "declaration": "transition: none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2078,
+      "declaration": "transition: opacity 400ms var(--x-motion-ease-premium)",
+      "duration_literals": [
+        "400ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2083,
+      "declaration": "transition: opacity 400ms var(--x-motion-ease-premium)",
+      "duration_literals": [
+        "400ms"
+      ],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2346,
+      "declaration": "transition: none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2356,
+      "declaration": "transition: none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2557,
+      "declaration": "transition:none",
+      "duration_literals": [],
+      "easing_literals": [],
+      "status": "source declaration; cascade/runtime applicability not implied"
+    }
+  ],
+  "js_events_and_motion": [
+    {
+      "file": "website-code/app.js",
+      "line": 6,
+      "source": "window.addEventListener('pagehide', event => {"
+    },
+    {
+      "file": "website-code/company-brand.css",
+      "line": 94,
+      "source": "@media(prefers-reduced-motion:reduce){.company-brand-content .xf-brand *{animation:none!important;transition:none!important;scroll-behavior:auto!important}.company-brand-content .xf-brand .company-brand-reveal{opacity:1;clip-path:none;filter:none;transform:none}.company-brand-content .xf-history-card:not(.is-active) .xf-history-copy{filter:none;}}"
+    },
+    {
+      "file": "website-code/company-brand.css",
+      "line": 95,
+      "source": "@media(prefers-reduced-motion:reduce){.company-brand-content .xf-brand .xf-covers>button>img.company-brand-reveal{filter:brightness(.65);}}"
+    },
+    {
+      "file": "website-code/company-brand.css",
+      "line": 96,
+      "source": "@media(prefers-reduced-motion:reduce){.company-brand-content .company-business-hover .company-business-choice>img.company-brand-reveal{filter:brightness(.65);}}"
+    },
+    {
+      "file": "website-code/company-honors.js",
+      "line": 25,
+      "source": "if (align && section.getBoundingClientRect().top < top) section.scrollIntoView({ behavior:'instant', block:'start' });"
+    },
+    {
+      "file": "website-code/company-honors.js",
+      "line": 44,
+      "source": "tabs.forEach(tab => tab.addEventListener('click', onTab));"
+    },
+    {
+      "file": "website-code/company-honors.js",
+      "line": 45,
+      "source": "track.addEventListener('toggle', onToggle, true);"
+    },
+    {
+      "file": "website-code/company-honors.js",
+      "line": 46,
+      "source": "window.addEventListener('hashchange', onHash);"
+    },
+    {
+      "file": "website-code/company-honors.js",
+      "line": 52,
+      "source": "window.removeEventListener('hashchange', onHash);"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 69,
+      "source": "@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.more-link{transition:none}.company-hero-video,.company-hero-image{transform:none!important}}"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 77,
+      "source": "@media(prefers-reduced-motion:reduce){.company-motion-ready .company-media,.company-motion-ready .company-media.is-revealed{opacity:1;clip-path:none;filter:none;transform:none;transition:none}.business-detail-track,.business-covers,.honor-tab,.honor-number>img,.honor-certificate summary,.honor-certificate summary b::after{transition:none}.business-detail-viewport{animation:none}}"
+    },
+    {
+      "file": "website-code/company.css",
+      "line": 125,
+      "source": "@media(prefers-reduced-motion:reduce){"
+    },
+    {
+      "file": "website-code/company.js",
+      "line": 5,
+      "source": "const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');"
+    },
+    {
+      "file": "website-code/company.js",
+      "line": 34,
+      "source": "if (element.tagName === 'IMG') element.addEventListener('load', () => { brandObserver.unobserve(element); brandObserver.observe(element); });"
+    },
+    {
+      "file": "website-code/company.js",
+      "line": 37,
+      "source": "brandContent.addEventListener('company-brand-change', event => {"
+    },
+    {
+      "file": "website-code/company.js",
+      "line": 40,
+      "source": "window.addEventListener('pagehide', event => { if(event.persisted)return;stopBrand?.();brandObserver.disconnect(); });"
+    },
+    {
+      "file": "website-code/company.js",
+      "line": 43,
+      "source": "if (anchor && brandContent.contains(anchor)) anchor.scrollIntoView({ behavior:'instant' });"
+    },
+    {
+      "file": "website-code/company.js",
+      "line": 51,
+      "source": "image.addEventListener('load', () => {"
+    },
+    {
+      "file": "website-code/company.js",
+      "line": 65,
+      "source": "window.addEventListener('pagehide', event => { if (!event.persisted) stopHonors(); }, { once:true });"
+    },
+    {
+      "file": "website-code/company.js",
+      "line": 77,
+      "source": "document.addEventListener('visibilitychange', syncHeroVideo);"
+    },
+    {
+      "file": "website-code/company.js",
+      "line": 93,
+      "source": "if (progress < 1) requestAnimationFrame(tick); else element.textContent = final;"
+    },
+    {
+      "file": "website-code/company.js",
+      "line": 95,
+      "source": "requestAnimationFrame(tick);"
+    },
+    {
+      "file": "website-code/content-motion.js",
+      "line": 1,
+      "source": "const reduce = matchMedia('(prefers-reduced-motion: reduce)');"
+    },
+    {
+      "file": "website-code/content-motion.js",
+      "line": 15,
+      "source": "if (!reduce.matches) panels[index]?.animate("
+    },
+    {
+      "file": "website-code/content-motion.js",
+      "line": 24,
+      "source": "element.addEventListener(type, listener, options);"
+    },
+    {
+      "file": "website-code/content-motion.js",
+      "line": 60,
+      "source": "if (progress < 1) frames.set(element, requestAnimationFrame(tick));"
+    },
+    {
+      "file": "website-code/content-motion.js",
+      "line": 63,
+      "source": "frames.set(element, requestAnimationFrame(tick));"
+    },
+    {
+      "file": "website-code/content-motion.js",
+      "line": 69,
+      "source": "cancelAnimationFrame(frames.get(entry.target)); frames.delete(entry.target);"
+    },
+    {
+      "file": "website-code/content-motion.js",
+      "line": 85,
+      "source": "on(document, 'visibilitychange', sync);"
+    },
+    {
+      "file": "website-code/content-motion.js",
+      "line": 90,
+      "source": "targets.forEach(reveal); frames.forEach(frame => cancelAnimationFrame(frame)); frames.clear();"
+    },
+    {
+      "file": "website-code/content-motion.js",
+      "line": 94,
+      "source": "observers.forEach(observer => observer.disconnect()); frames.forEach(frame => cancelAnimationFrame(frame));"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 4,
+      "source": "const reduced = matchMedia('(prefers-reduced-motion: reduce)');"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 22,
+      "source": "const previousRestoration = history.scrollRestoration;"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 23,
+      "source": "if (plainHome) history.scrollRestoration = 'manual';"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 82,
+      "source": "if (!reduced.matches) orbitFrame = requestAnimationFrame(animateOrbit);"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 88,
+      "source": "orbitFrame = requestAnimationFrame(animateOrbit);"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 112,
+      "source": "cancelAnimationFrame(frame);"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 113,
+      "source": "cancelAnimationFrame(orbitFrame);"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 117,
+      "source": "window.removeEventListener('hashchange', onHashChange);"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 118,
+      "source": "window.removeEventListener('pageshow', onPageShow);"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 119,
+      "source": "window.removeEventListener('pagehide', onPageHide);"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 122,
+      "source": "document.removeEventListener('visibilitychange', onVisibilityChange);"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 126,
+      "source": "if (plainHome) history.scrollRestoration = previousRestoration;"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 136,
+      "source": "window.scrollTo({ top: Math.max(0, scroll - flow), behavior: 'instant' });"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 193,
+      "source": "if (!removed && !settled) frame = requestAnimationFrame(update);"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 200,
+      "source": "if (committed && scrollY < top + travel) window.scrollTo({ top: top + travel, behavior: 'instant' });"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 201,
+      "source": "if (!frame) { lastTime = 0; frame = requestAnimationFrame(update); }"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 220,
+      "source": "function enter() { window.scrollTo({ top: top + travel, behavior: 'instant' }); }"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 236,
+      "source": "if (document.hidden) { cancelAnimationFrame(orbitFrame); orbitFrame = 0; }"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 243,
+      "source": "window.scrollTo({ top: 0, behavior: 'instant' });"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 251,
+      "source": "if (plainHome) window.scrollTo({ top: 0, behavior: 'instant' });"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 252,
+      "source": "homeLinks.forEach(link => link.addEventListener('click', onHomeLink));"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 253,
+      "source": "['pointerenter', 'pointermove', 'pointerleave'].forEach(event => seed.addEventListener(event, onPointer));"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 254,
+      "source": "window.addEventListener('scroll', onScroll, { passive: true });"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 255,
+      "source": "window.addEventListener('resize', measure, { passive: true });"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 256,
+      "source": "window.addEventListener('keydown', onKey);"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 257,
+      "source": "window.addEventListener('hashchange', onHashChange);"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 258,
+      "source": "reduced.addEventListener('change', measure);"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 259,
+      "source": "window.addEventListener('pageshow', onPageShow);"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 260,
+      "source": "window.addEventListener('pagehide', onPageHide);"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 261,
+      "source": "window.addEventListener('wheel', onScrollIntent, { passive: true });"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 262,
+      "source": "window.addEventListener('touchmove', onScrollIntent, { passive: true });"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 263,
+      "source": "document.addEventListener('visibilitychange', onVisibilityChange);"
+    },
+    {
+      "file": "website-code/loader.js",
+      "line": 269,
+      "source": "window.scrollTo({ top: location.hash === '#hero-story' ? top + travel : anchor.getBoundingClientRect().top + scrollY - padding, behavior: 'instant' });"
+    },
+    {
+      "file": "website-code/motion.js",
+      "line": 42,
+      "source": "const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');"
+    },
+    {
+      "file": "website-code/motion.js",
+      "line": 61,
+      "source": "target.addEventListener(event, callback, options);"
+    },
+    {
+      "file": "website-code/motion.js",
+      "line": 85,
+      "source": "seriesTimer = window.setInterval(() => {"
+    },
+    {
+      "file": "website-code/motion.js",
+      "line": 105,
+      "source": "imageTimer = window.setTimeout(() => {"
+    },
+    {
+      "file": "website-code/motion.js",
+      "line": 137,
+      "source": "if (progress < 1) counterFrames.set(element, requestAnimationFrame(tick));"
+    },
+    {
+      "file": "website-code/motion.js",
+      "line": 140,
+      "source": "counterFrames.set(element, requestAnimationFrame(tick));"
+    },
+    {
+      "file": "website-code/motion.js",
+      "line": 144,
+      "source": "if (!disposed && !document.hidden && !frame) frame = requestAnimationFrame(update);"
+    },
+    {
+      "file": "website-code/motion.js",
+      "line": 191,
+      "source": "cancelAnimationFrame(counterFrames.get(entry.target));"
+    },
+    {
+      "file": "website-code/motion.js",
+      "line": 356,
+      "source": "company.scrollIntoView({ behavior: 'instant', block: 'start' });"
+    },
+    {
+      "file": "website-code/motion.js",
+      "line": 364,
+      "source": "on(document, 'visibilitychange', () => {"
+    },
+    {
+      "file": "website-code/motion.js",
+      "line": 367,
+      "source": "cancelAnimationFrame(frame);"
+    },
+    {
+      "file": "website-code/motion.js",
+      "line": 396,
+      "source": "cancelAnimationFrame(frame);"
+    },
+    {
+      "file": "website-code/motion.js",
+      "line": 401,
+      "source": "for (const counterFrame of counterFrames.values()) cancelAnimationFrame(counterFrame);"
+    },
+    {
+      "file": "website-code/planting-factory.css",
+      "line": 102,
+      "source": "@media(prefers-reduced-motion:reduce){"
+    },
+    {
+      "file": "website-code/planting-management.css",
+      "line": 27,
+      "source": "@media(prefers-reduced-motion:reduce){.plant-management-grid,.plant-management-choice figure{transition:none}}"
+    },
+    {
+      "file": "website-code/planting-management.js",
+      "line": 50,
+      "source": "const reduce = matchMedia('(prefers-reduced-motion: reduce)');"
+    },
+    {
+      "file": "website-code/planting-management.js",
+      "line": 90,
+      "source": "else swapTimer = setTimeout(finish, 800);"
+    },
+    {
+      "file": "website-code/planting-management.js",
+      "line": 92,
+      "source": "grid.addEventListener('click', select);"
+    },
+    {
+      "file": "website-code/planting-management.js",
+      "line": 93,
+      "source": "grid.addEventListener('transitionend', settled);"
+    },
+    {
+      "file": "website-code/planting-management.js",
+      "line": 94,
+      "source": "reduce.addEventListener('change', finish);"
+    },
+    {
+      "file": "website-code/planting-model.js",
+      "line": 18,
+      "source": "frame = requestAnimationFrame(() => { frame = 0; if (!destroyed) renderer.render(scene,camera); });"
+    },
+    {
+      "file": "website-code/planting-model.js",
+      "line": 47,
+      "source": "destroyed = true; cancelAnimationFrame(frame); observer.disconnect();"
+    },
+    {
+      "file": "website-code/planting-page.css",
+      "line": 113,
+      "source": "@media(max-height:600px) and (prefers-reduced-motion:no-preference){"
+    },
+    {
+      "file": "website-code/planting-page.css",
+      "line": 119,
+      "source": "@media(max-width:900px) and (max-height:600px) and (prefers-reduced-motion:no-preference){"
+    },
+    {
+      "file": "website-code/planting-page.css",
+      "line": 124,
+      "source": "@media(max-height:560px) and (prefers-reduced-motion:no-preference){"
+    },
+    {
+      "file": "website-code/planting-page.css",
+      "line": 130,
+      "source": "@media(prefers-reduced-motion:reduce){"
+    },
+    {
+      "file": "website-code/planting-page.js",
+      "line": 43,
+      "source": "const reduced = matchMedia('(prefers-reduced-motion:reduce)');"
+    },
+    {
+      "file": "website-code/planting-page.js",
+      "line": 209,
+      "source": "if(moving) frame=requestAnimationFrame(render); else last=0;"
+    },
+    {
+      "file": "website-code/planting-page.js",
+      "line": 211,
+      "source": "function schedule(){if(!frame)frame=requestAnimationFrame(render);}"
+    },
+    {
+      "file": "website-code/planting-page.js",
+      "line": 212,
+      "source": "window.addEventListener('scroll',schedule,{passive:true});"
+    },
+    {
+      "file": "website-code/planting-page.js",
+      "line": 213,
+      "source": "window.addEventListener('resize',measure);"
+    },
+    {
+      "file": "website-code/planting-page.js",
+      "line": 214,
+      "source": "reduced.addEventListener('change',measure);"
+    },
+    {
+      "file": "website-code/planting-page.js",
+      "line": 218,
+      "source": "if (target?.dataset.chapterScroll) window.scrollTo({top:Number(target.dataset.chapterScroll),behavior:'instant'});"
+    },
+    {
+      "file": "website-code/planting-page.js",
+      "line": 220,
+      "source": "window.addEventListener('hashchange',goToPlantChapter);"
+    },
+    {
+      "file": "website-code/planting-page.js",
+      "line": 221,
+      "source": "document.addEventListener('click',event=>{"
+    },
+    {
+      "file": "website-code/planting-page.js",
+      "line": 229,
+      "source": "window.addEventListener('pagehide',event=>{if(event.persisted)return;stopContent.forEach(stop=>stop());observer.disconnect();modelObserver.disconnect();plantScene?.destroy();cancelAnimationFrame(frame);},{once:true});"
+    },
+    {
+      "file": "website-code/product-hero.css",
+      "line": 39,
+      "source": "@media(prefers-reduced-motion:reduce){.model-hero{height:var(--model-height)}.model-hero-viewport{position:relative;top:auto}}"
+    },
+    {
+      "file": "website-code/product-hero.js",
+      "line": 38,
+      "source": "const reduced = matchMedia('(prefers-reduced-motion: reduce)');"
+    },
+    {
+      "file": "website-code/product-hero.js",
+      "line": 60,
+      "source": "const schedule = () => { if (!frame) frame = requestAnimationFrame(update); };"
+    },
+    {
+      "file": "website-code/product-hero.js",
+      "line": 61,
+      "source": "buttons.forEach((button, index) => button.addEventListener('click', () => {"
+    },
+    {
+      "file": "website-code/product-hero.js",
+      "line": 64,
+      "source": "window.scrollTo({ top: top + (index ? index + .05 : 0) / 4.98 * (hero.offsetHeight - stage.offsetHeight), behavior: 'instant' });"
+    },
+    {
+      "file": "website-code/product-hero.js",
+      "line": 67,
+      "source": "window.addEventListener('scroll', schedule, {passive:true,signal:abort.signal});"
+    },
+    {
+      "file": "website-code/product-hero.js",
+      "line": 68,
+      "source": "window.addEventListener('resize', schedule, {signal:abort.signal});"
+    },
+    {
+      "file": "website-code/product-hero.js",
+      "line": 69,
+      "source": "reduced.addEventListener('change', schedule, {signal:abort.signal});"
+    },
+    {
+      "file": "website-code/product-hero.js",
+      "line": 71,
+      "source": "return () => { abort.abort(); cancelAnimationFrame(frame); scene.destroy(); };"
+    },
+    {
+      "file": "website-code/product-scene.js",
+      "line": 89,
+      "source": "const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');"
+    },
+    {
+      "file": "website-code/product-scene.js",
+      "line": 99,
+      "source": "frame = requestAnimationFrame(() => {"
+    },
+    {
+      "file": "website-code/product-scene.js",
+      "line": 155,
+      "source": "retry.addEventListener('click', loadModels, { once: true });"
+    },
+    {
+      "file": "website-code/product-scene.js",
+      "line": 225,
+      "source": "motionPreference.addEventListener('change', update);"
+    },
+    {
+      "file": "website-code/product-scene.js",
+      "line": 238,
+      "source": "cancelAnimationFrame(frame);"
+    },
+    {
+      "file": "website-code/products-catalog-motion.js",
+      "line": 21,
+      "source": "const reduce = matchMedia('(prefers-reduced-motion: reduce)');"
+    },
+    {
+      "file": "website-code/products-catalog-motion.js",
+      "line": 51,
+      "source": "if (current !== target) frame = requestAnimationFrame(draw);"
+    },
+    {
+      "file": "website-code/products-catalog-motion.js",
+      "line": 58,
+      "source": "if (!frame) frame = requestAnimationFrame(draw);"
+    },
+    {
+      "file": "website-code/products-catalog-motion.js",
+      "line": 61,
+      "source": "cancelAnimationFrame(frame); frame = 0;"
+    },
+    {
+      "file": "website-code/products-catalog-motion.js",
+      "line": 82,
+      "source": "if (reduce.matches) { panels[index].scrollIntoView({behavior:'instant'}); return; }"
+    },
+    {
+      "file": "website-code/products-catalog-motion.js",
+      "line": 84,
+      "source": "scrollTo({top:start + timeline.panels[index].arrival, behavior:'instant'});"
+    },
+    {
+      "file": "website-code/products-catalog-motion.js",
+      "line": 86,
+      "source": "if (!frame) frame = requestAnimationFrame(draw);"
+    },
+    {
+      "file": "website-code/products-catalog-motion.js",
+      "line": 96,
+      "source": "window.addEventListener('scroll', schedule, {passive:true});"
+    },
+    {
+      "file": "website-code/products-catalog-motion.js",
+      "line": 97,
+      "source": "window.addEventListener('resize', measure);"
+    },
+    {
+      "file": "website-code/products-catalog-motion.js",
+      "line": 98,
+      "source": "window.addEventListener('hashchange', goToHash);"
+    },
+    {
+      "file": "website-code/products-catalog-motion.js",
+      "line": 99,
+      "source": "document.addEventListener('click', repeatHash);"
+    },
+    {
+      "file": "website-code/products-catalog-motion.js",
+      "line": 100,
+      "source": "reduce.addEventListener('change', measure);"
+    },
+    {
+      "file": "website-code/products-catalog-motion.js",
+      "line": 104,
+      "source": "cancelAnimationFrame(frame); resized.disconnect();"
+    },
+    {
+      "file": "website-code/products-catalog-motion.js",
+      "line": 107,
+      "source": "window.removeEventListener('hashchange', goToHash);"
+    },
+    {
+      "file": "website-code/products-cooperation-services.css",
+      "line": 83,
+      "source": "@media(prefers-reduced-motion:reduce){"
+    },
+    {
+      "file": "website-code/products-cooperation.css",
+      "line": 26,
+      "source": "@media(prefers-reduced-motion:reduce){"
+    },
+    {
+      "file": "website-code/products-cooperation.js",
+      "line": 25,
+      "source": "const reduced = matchMedia('(prefers-reduced-motion: reduce)');"
+    },
+    {
+      "file": "website-code/products-cooperation.js",
+      "line": 28,
+      "source": "let top=72, travel=1, scrollTop=0;"
+    },
+    {
+      "file": "website-code/products-cooperation.js",
+      "line": 56,
+      "source": "draw(); frame=progress===target&&velocity===0?0:requestAnimationFrame(animate);"
+    },
+    {
+      "file": "website-code/products-cooperation.js",
+      "line": 58,
+      "source": "const schedule = () => { if(!frame){lastTime=0;frame=requestAnimationFrame(animate);} };"
+    },
+    {
+      "file": "website-code/products-cooperation.js",
+      "line": 59,
+      "source": "const onScroll = () => { target=clamp((scrollY-scrollTop+top)/travel); schedule(); };"
+    },
+    {
+      "file": "website-code/products-cooperation.js",
+      "line": 62,
+      "source": "scrollTop=scroll.getBoundingClientRect().top+scrollY;"
+    },
+    {
+      "file": "website-code/products-cooperation.js",
+      "line": 67,
+      "source": "window.addEventListener('scroll',onScroll,{...options,passive:true});window.addEventListener('resize',measure,options);"
+    },
+    {
+      "file": "website-code/products-cooperation.js",
+      "line": 68,
+      "source": "reduced.addEventListener('change',measure,options);"
+    },
+    {
+      "file": "website-code/products-cooperation.js",
+      "line": 72,
+      "source": "return ()=>{abort.abort();observer.disconnect();cancelAnimationFrame(frame);};"
+    },
+    {
+      "file": "website-code/products-page.css",
+      "line": 44,
+      "source": "@media(prefers-reduced-motion:reduce){.product-detail-track{will-change:auto}}"
+    },
+    {
+      "file": "website-code/products-page.js",
+      "line": 8,
+      "source": "const reduce = matchMedia('(prefers-reduced-motion: reduce)');"
+    },
+    {
+      "file": "website-code/products-page.js",
+      "line": 49,
+      "source": "if (!reduce.matches) copyAnimation = copy.animate([{opacity:.65,transform:'translateY(6px)'},{opacity:1,transform:'none'}],{duration:320,easing:'cubic-bezier(.22,1,.36,1)'});"
+    },
+    {
+      "file": "website-code/products-page.js",
+      "line": 80,
+      "source": "gallery.addEventListener('click', selectCard);"
+    },
+    {
+      "file": "website-code/products-page.js",
+      "line": 82,
+      "source": "window.addEventListener('resize', resize);"
+    },
+    {
+      "file": "website-code/products-page.js",
+      "line": 86,
+      "source": "window.addEventListener('pagehide', event => { if (!event.persisted) cleanups.forEach(cleanup => cleanup?.()); });"
+    },
+    {
+      "file": "website-code/products-page.js",
+      "line": 87,
+      "source": "if (location.hash && !location.hash.startsWith('#products-')) requestAnimationFrame(() => document.getElementById(location.hash.slice(1))?.scrollIntoView({behavior:'instant'}));"
+    },
+    {
+      "file": "website-code/products-showcase.js",
+      "line": 24,
+      "source": "const stop = () => { cancelAnimationFrame(frame); frame = 0; };"
+    },
+    {
+      "file": "website-code/products-showcase.js",
+      "line": 31,
+      "source": "render(position); frame = requestAnimationFrame(tick);"
+    },
+    {
+      "file": "website-code/products-showcase.js",
+      "line": 36,
+      "source": "lastTime = performance.now(); frame = requestAnimationFrame(tick);"
+    },
+    {
+      "file": "website-code/products-showcase.js",
+      "line": 60,
+      "source": "const on = (target, type, listener, options = {}) => target.addEventListener(type, listener, { ...options, signal: controller.signal });"
+    },
+    {
+      "file": "website-code/products-showcase.js",
+      "line": 101,
+      "source": "clearTimeout(wheelTimer); wheelTimer = setTimeout(finishWheel, 100);"
+    },
+    {
+      "file": "website-code/products-showcase.js",
+      "line": 114,
+      "source": "const reduced = matchMedia('(prefers-reduced-motion: reduce)');"
+    },
+    {
+      "file": "website-code/products-showcase.js",
+      "line": 115,
+      "source": "const on = (element, type, listener) => element.addEventListener(type, listener, { signal: controller.signal });"
+    },
+    {
+      "file": "website-code/products-showcase.js",
+      "line": 119,
+      "source": "if (!reduced.matches) element.animate([{ opacity: .65, transform: 'translateY(6px)' }, { opacity: 1, transform: 'none' }], { duration: 320, easing: 'cubic-bezier(.22,1,.36,1)' });"
+    },
+    {
+      "file": "website-code/section-cover.js",
+      "line": 10,
+      "source": "const reduce = matchMedia('(prefers-reduced-motion: reduce)');"
+    },
+    {
+      "file": "website-code/section-cover.js",
+      "line": 28,
+      "source": "if (!frame) frame = requestAnimationFrame(sync);"
+    },
+    {
+      "file": "website-code/section-cover.js",
+      "line": 44,
+      "source": "window.addEventListener('scroll', schedule, { passive: true });"
+    },
+    {
+      "file": "website-code/section-cover.js",
+      "line": 45,
+      "source": "window.addEventListener('resize', measure);"
+    },
+    {
+      "file": "website-code/section-cover.js",
+      "line": 46,
+      "source": "reduce.addEventListener('change', measure);"
+    },
+    {
+      "file": "website-code/section-cover.js",
+      "line": 49,
+      "source": "cancelAnimationFrame(frame);"
+    },
+    {
+      "file": "website-code/site-experience.css",
+      "line": 8,
+      "source": "@media(prefers-reduced-motion:reduce){.content-reveal-copy{transition:none!important}}"
+    },
+    {
+      "file": "website-code/site-experience.js",
+      "line": 20,
+      "source": "window.addEventListener('pagehide',()=>rendered.disconnect(),{once:true});"
+    },
+    {
+      "file": "website-code/site-foundations.css",
+      "line": 95,
+      "source": "@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.content-reveal-media,.content-reveal-copy{opacity:1;clip-path:none;filter:none;transform:none;transition:none}.aiaitie-business *{scroll-behavior:auto;animation:none!important;transition:none!important}}"
+    },
+    {
+      "file": "website-code/site-navigation.css",
+      "line": 36,
+      "source": "@media(prefers-reduced-motion:reduce){.site-drawer[open]{animation:none}.site-navigation :is(#primary-nav,#company-nav) a::after{transition:none}}"
+    },
+    {
+      "file": "website-code/site-navigation.js",
+      "line": 5,
+      "source": "const reduce = matchMedia('(prefers-reduced-motion:reduce)');"
+    },
+    {
+      "file": "website-code/site-navigation.js",
+      "line": 23,
+      "source": "drawer.animate([{opacity:style.opacity,transform:style.transform},{opacity:0,transform:'translateX(100%)'}],{duration:400,easing:'cubic-bezier(.16,1,.3,1)'}).onfinish = finish;"
+    },
+    {
+      "file": "website-code/site-navigation.js",
+      "line": 25,
+      "source": "menu.addEventListener('click', () => {"
+    },
+    {
+      "file": "website-code/site-navigation.js",
+      "line": 33,
+      "source": "drawer.addEventListener('keydown', event => {"
+    },
+    {
+      "file": "website-code/site-navigation.js",
+      "line": 39,
+      "source": "drawer.querySelector('.site-drawer-close').addEventListener('click', () => close());"
+    },
+    {
+      "file": "website-code/site-navigation.js",
+      "line": 40,
+      "source": "drawer.querySelector('nav').addEventListener('click', event => { if (event.target.closest('a')) close(false); });"
+    },
+    {
+      "file": "website-code/site-navigation.js",
+      "line": 41,
+      "source": "drawer.addEventListener('cancel', event => { event.preventDefault(); close(); });"
+    },
+    {
+      "file": "website-code/site-navigation.js",
+      "line": 42,
+      "source": "mobile.addEventListener('change', () => { if (!mobile.matches) close(false); });"
+    },
+    {
+      "file": "website-code/styles.css",
+      "line": 287,
+      "source": "@media(prefers-reduced-motion:reduce){"
+    },
+    {
+      "file": "website-code/transplanted.js",
+      "line": 50,
+      "source": "if (anchor) document.getElementById(decodeURIComponent(anchor))?.scrollIntoView({ behavior: 'instant' });"
+    },
+    {
+      "file": "website-code/transplanted.js",
+      "line": 51,
+      "source": "else window.scrollTo({ top: 0, behavior: 'instant' });"
+    },
+    {
+      "file": "website-code/transplanted.js",
+      "line": 53,
+      "source": "window.addEventListener('hashchange', render);"
+    },
+    {
+      "file": "website-code/transplanted.js",
+      "line": 54,
+      "source": "window.addEventListener('pagehide', () => { unmount(); stopMotion(); });"
+    },
+    {
+      "file": "website-code/xunai/about-page.js",
+      "line": 41,
+      "source": "input.addEventListener('blur',()=>validate(input));"
+    },
+    {
+      "file": "website-code/xunai/about-page.js",
+      "line": 44,
+      "source": "form.addEventListener('input',()=>{ready.hidden=true;form.querySelector('.xo-form-status').textContent=''});"
+    },
+    {
+      "file": "website-code/xunai/about-page.js",
+      "line": 45,
+      "source": "form.addEventListener('submit',event=>{"
+    },
+    {
+      "file": "website-code/xunai/about-page.js",
+      "line": 54,
+      "source": "ready.querySelector('[data-copy-ready]').addEventListener('click',async()=>{"
+    },
+    {
+      "file": "website-code/xunai/ai-page.js",
+      "line": 39,
+      "source": "const reduce=matchMedia('(prefers-reduced-motion: reduce)');"
+    },
+    {
+      "file": "website-code/xunai/ai-page.js",
+      "line": 41,
+      "source": "resize();window.addEventListener('resize',resize);"
+    },
+    {
+      "file": "website-code/xunai/ai-page.js",
+      "line": 54,
+      "source": "tab.addEventListener('click',()=>select(i));"
+    },
+    {
+      "file": "website-code/xunai/ai-page.js",
+      "line": 55,
+      "source": "tab.addEventListener('keydown',event=>{"
+    },
+    {
+      "file": "website-code/xunai/ai-page.js",
+      "line": 60,
+      "source": "dial.addEventListener('pointerdown',event=>{if(event.button!==0||!event.isPrimary)return;swipe={x:event.clientX,y:event.clientY};dial.setPointerCapture(event.pointerId)});"
+    },
+    {
+      "file": "website-code/xunai/ai-page.js",
+      "line": 61,
+      "source": "dial.addEventListener('pointerup',event=>{if(!swipe)return;const dx=event.clientX-swipe.x,dy=event.clientY-swipe.y;swipe=null;if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy))select(selected+(dx<0?1:-1))});"
+    },
+    {
+      "file": "website-code/xunai/ai-page.js",
+      "line": 62,
+      "source": "dial.addEventListener('pointercancel',()=>swipe=null);"
+    },
+    {
+      "file": "website-code/xunai/ai-page.js",
+      "line": 63,
+      "source": "dial.addEventListener('lostpointercapture',()=>swipe=null);"
+    },
+    {
+      "file": "website-code/xunai/ai-page.js",
+      "line": 66,
+      "source": "report.addEventListener('pointerdown',event=>{if(event.pointerType!=='mouse'||event.button!==0||!event.isPrimary)return;drag={x:event.clientX,left:report.scrollLeft};report.setPointerCapture(event.pointerId)});"
+    },
+    {
+      "file": "website-code/xunai/ai-page.js",
+      "line": 67,
+      "source": "report.addEventListener('pointermove',event=>{if(drag)report.scrollLeft=drag.left+drag.x-event.clientX});"
+    },
+    {
+      "file": "website-code/xunai/ai-page.js",
+      "line": 68,
+      "source": "const release=()=>drag=null;report.addEventListener('pointerup',release);report.addEventListener('pointercancel',release);report.addEventListener('lostpointercapture',release);"
+    },
+    {
+      "file": "website-code/xunai/ai-page.js",
+      "line": 69,
+      "source": "report.addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight'].includes(event.key)){event.preventDefault();report.scrollBy({left:report.clientWidth*(event.key==='ArrowRight'?1:-1),behavior:reduce.matches?'instant':'smooth'})}});"
+    },
+    {
+      "file": "website-code/xunai/brand-figma.js",
+      "line": 27,
+      "source": "const listen=(node,type,handler)=>node.addEventListener(type,handler,{signal:controller.signal});"
+    },
+    {
+      "file": "website-code/xunai/brand-figma.js",
+      "line": 56,
+      "source": "const reduced=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;"
+    },
+    {
+      "file": "website-code/xunai/brand-figma.js",
+      "line": 71,
+      "source": "covers.querySelectorAll('[data-stage]').forEach((button,i)=>button.addEventListener('click',()=>select(i)));"
+    },
+    {
+      "file": "website-code/xunai/brand-figma.js",
+      "line": 75,
+      "source": "closing=viewport.animate([{opacity:1,transform:'translateX(0)'},{opacity:0,transform:'translateX(-8px)'}],{duration:280,easing:'ease-out'});closing.onfinish=finish;"
+    },
+    {
+      "file": "website-code/xunai/brand-figma.js",
+      "line": 77,
+      "source": "business.querySelectorAll('[data-stage-close]').forEach(button=>button.addEventListener('click',close));"
+    },
+    {
+      "file": "website-code/xunai/brand-figma.js",
+      "line": 78,
+      "source": "business.addEventListener('keydown',event=>{if(active<0||viewport.hidden)return;if(event.key==='Escape'){close();event.preventDefault();}if(['ArrowLeft','ArrowRight'].includes(event.key)){select(active+(event.key==='ArrowRight'?1:-1));event.preventDefault();}});"
+    },
+    {
+      "file": "website-code/xunai/brand-figma.js",
+      "line": 80,
+      "source": "viewport.addEventListener('pointerdown',event=>{if(!event.isPrimary||event.button!==0)return;pointer=[event.clientX,event.clientY];swiped=false;});"
+    },
+    {
+      "file": "website-code/xunai/brand-figma.js",
+      "line": 81,
+      "source": "viewport.addEventListener('pointerup',event=>{if(!pointer)return;const dx=event.clientX-pointer[0],dy=event.clientY-pointer[1];pointer=null;if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.3){swiped=true;select(active+(dx>0?1:-1));}});"
+    },
+    {
+      "file": "website-code/xunai/brand-figma.js",
+      "line": 82,
+      "source": "viewport.addEventListener('pointercancel',()=>{pointer=null;});"
+    },
+    {
+      "file": "website-code/xunai/brand-figma.js",
+      "line": 83,
+      "source": "viewport.addEventListener('click',event=>{if(swiped){event.preventDefault();event.stopPropagation();swiped=false;}},true);"
+    },
+    {
+      "file": "website-code/xunai/brand-figma.js",
+      "line": 84,
+      "source": "viewport.addEventListener('dragstart',event=>event.preventDefault());"
+    },
+    {
+      "file": "website-code/xunai/brand-figma.js",
+      "line": 89,
+      "source": "const listen=(node,type,handler,options={})=>node.addEventListener(type,handler,{...options,signal:controller.signal});"
+    },
+    {
+      "file": "website-code/xunai/brand-figma.js",
+      "line": 94,
+      "source": "const positionYear=behavior=>historyViewport.scrollTo({left:Math.min(offset(selectedYear),Math.max(0,historyViewport.scrollWidth-historyViewport.clientWidth)),behavior});"
+    },
+    {
+      "file": "website-code/xunai/brand-figma.js",
+      "line": 95,
+      "source": "const revealYear=()=>{const button=years[selectedYear];if(yearList.scrollWidth>yearList.clientWidth)yearList.scrollTo({left:button.offsetLeft-yearList.offsetLeft-(yearList.clientWidth-button.offsetWidth)/2,behavior:reduced()?'instant':'smooth'});};"
+    },
+    {
+      "file": "website-code/xunai/brand-figma.js",
+      "line": 120,
+      "source": "listen(historyViewport,'scroll',()=>{cancelAnimationFrame(scrollFrame);scrollFrame=requestAnimationFrame(()=>{if(!manualScroll||drag?.active)return;const index=nearest();if(index!==selectedYear){updateYear(index);revealYear();}});},{passive:true});"
+    },
+    {
+      "file": "website-code/xunai/brand-figma.js",
+      "line": 122,
+      "source": "return ()=>{controller.abort();cancelAnimationFrame(scrollFrame);resize.disconnect();closing?.cancel();stopBusiness();};"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 5,
+      "source": "@media (prefers-reduced-motion: reduce) {.xunai-content{--x-motion-fast: 0.01ms; --x-motion-normal: 0.01ms; --x-motion-slow: 0.01ms; --x-motion-visual: 0.01ms; --x-motion-route: 0.01ms; --x-duration-fast: 0.01ms; --x-duration-base: 0.01ms; --x-duration-moderate: 0.01ms; --x-duration-slow: 0.01ms; --x-duration-emphasis: 0.01ms;}}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 227,
+      "source": "@media (prefers-reduced-motion: reduce) {main:where(.xunai-content){scroll-behavior: auto;}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 252,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) .intro-loader,:where(.xunai-content) .route-curtain{display: none;}}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 397,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) *,:where(.xunai-content) ::before,:where(.xunai-content) ::after{scroll-behavior: auto !important; transition: none !important; animation: auto ease 0s 1 normal none running none !important;}}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 633,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) .xb-page *{scroll-behavior: auto !important; transition: none !important; animation: auto ease 0s 1 normal none running none !important;}}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 655,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) :is(.pill-button, .deck-link, .icon-button, .menu-toggle, .service-rail),:where(.xunai-content) .field :is(input, select, textarea){transition: none !important;}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 685,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) .xm-tab-indicator{transition: none !important;}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 694,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) .xm-reveal[data-motion-state]{opacity: 1; translate: none !important;}}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 797,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) .xh-home *{transition: none !important; animation: auto ease 0s 1 normal none running none !important; scroll-behavior: auto !important;}}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 916,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) .xs-strength:hover img{scale: 1;}}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1042,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) .xs-page *{transition: none !important; animation: auto ease 0s 1 normal none running none !important; scroll-behavior: auto !important;}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1255,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) .xf-brand *{transition: none !important; animation: auto ease 0s 1 normal none running none !important; scroll-behavior: auto !important;}}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1268,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) .xf-group-grid figure img,:where(.xunai-content) .xf-cta{transition: none !important;}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1399,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) .xa-stage,:where(.xunai-content) .xa-orbit,:where(.xunai-content) .xa-device,:where(.xunai-content) .xa-light,:where(.xunai-content) .xa-device-shadow{transform: none !important;}}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1425,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) .xa-dial-pointer,:where(.xunai-content) .xa-evidence-stage > img,:where(.xunai-content) .xa-certificates button{transition: none;}}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1475,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) .xa-orbit-layer,:where(.xunai-content) .xa-star-trails i{animation: auto ease 0s 1 normal none running none;}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1577,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) .xo-page *{transition: none !important;}}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1704,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) .xj-page *{transition: none !important; scroll-behavior: auto !important;}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1737,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) .xj-step-copy{transition: none;}}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1769,
+      "source": "@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {:where(.xunai-content) .xj-turn-panel{position: sticky; top: var(--xj-pin-top,var(--x-header-height)); z-index: 1; min-height: calc(100svh - var(--x-header-height)); margin-bottom: clamp(160px, 24svh, 240px);}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1796,
+      "source": "@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {:where(.xunai-content) .xj-process-photos figure{position: sticky; top: calc(var(--x-header-height) + 24px);}}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1800,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) .xj-process-photos img,:where(.xunai-content) .xj-hero > img{transition: none; transform: none !important;}}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1879,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) .xj-product-grid .xj-product,:where(.xunai-content) .xj-product-image,:where(.xunai-content) .xj-product-title,#main-content a.xu-action-link > .xu-action-arrow{transition: none;}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 1935,
+      "source": "@media (prefers-reduced-motion: reduce) {main:where(.xunai-content){scroll-behavior: auto;}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2010,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) .xo-news-viewport{overflow-x: auto;}"
+    },
+    {
+      "file": "website-code/xunai/content.css",
+      "line": 2319,
+      "source": "@media (prefers-reduced-motion: reduce) {:where(.xunai-content) .xo-news-viewport{overflow-x: auto; touch-action: pan-x pan-y;}"
+    },
+    {
+      "file": "website-code/xunai/franchise-form.js",
+      "line": 40,
+      "source": "form.addEventListener('submit', event => {"
+    },
+    {
+      "file": "website-code/xunai/franchise-form.js",
+      "line": 55,
+      "source": "mount.querySelector('[data-form-copy]').addEventListener('click', async () => {"
+    },
+    {
+      "file": "website-code/xunai/franchise-form.js",
+      "line": 62,
+      "source": "mount.querySelector('[data-form-back]')?.addEventListener('click', () => {"
+    },
+    {
+      "file": "website-code/xunai/franchise-form.js",
+      "line": 67,
+      "source": "mount.querySelector('[data-form-restart]')?.addEventListener('click', () => {"
+    },
+    {
+      "file": "website-code/xunai/franchise-page.js",
+      "line": 29,
+      "source": "const selectProduct=index=>{products.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===index)));const strip=products[index].parentElement;strip.scrollTo({left:products[index].offsetLeft-strip.firstElementChild.offsetLeft,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth'});};"
+    },
+    {
+      "file": "website-code/xunai/franchise-page.js",
+      "line": 30,
+      "source": "products.forEach((button,i)=>{button.addEventListener('click',()=>selectProduct(i));button.addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight'].includes(event.key))return;event.preventDefault();const next=Math.max(0,Math.min(products.length-1,i+(event.key==='ArrowRight'?1:-1)));selectProduct(next);products[next].focus()})});"
+    },
+    {
+      "file": "website-code/xunai/franchise-page.js",
+      "line": 31,
+      "source": "const strip=products[0].parentElement;let productDrag=null;strip.addEventListener('pointerdown',e=>{if(e.pointerType==='mouse'){productDrag={x:e.clientX,left:strip.scrollLeft};strip.setPointerCapture(e.pointerId)}});strip.addEventListener('pointermove',e=>{if(productDrag)strip.scrollLeft=productDrag.left+productDrag.x-e.clientX});strip.addEventListener('pointerup',()=>productDrag=null);strip.addEventListener('pointercancel',()=>productDrag=null);"
+    },
+    {
+      "file": "website-code/xunai/franchise-page.js",
+      "line": 32,
+      "source": "const reduce=matchMedia('(prefers-reduced-motion:reduce)');let drag=null;"
+    },
+    {
+      "file": "website-code/xunai/franchise-page.js",
+      "line": 34,
+      "source": "gallery.addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight'].includes(event.key)){event.preventDefault();move(event.key==='ArrowRight'?1:-1)}});"
+    },
+    {
+      "file": "website-code/xunai/franchise-page.js",
+      "line": 35,
+      "source": "gallery.addEventListener('pointerdown',event=>{if(event.pointerType!=='mouse')return;drag={x:event.clientX,left:gallery.scrollLeft};gallery.setPointerCapture(event.pointerId);gallery.classList.add('is-dragging')});"
+    },
+    {
+      "file": "website-code/xunai/franchise-page.js",
+      "line": 36,
+      "source": "gallery.addEventListener('pointermove',event=>{if(drag)gallery.scrollLeft=drag.left+drag.x-event.clientX});"
+    },
+    {
+      "file": "website-code/xunai/franchise-page.js",
+      "line": 37,
+      "source": "const release=()=>{drag=null;gallery.classList.remove('is-dragging')};gallery.addEventListener('pointerup',release);gallery.addEventListener('pointercancel',release);"
+    },
+    {
+      "file": "website-code/xunai/franchise-page.js",
+      "line": 72,
+      "source": "buttons.forEach((button,i)=>button.addEventListener('click',()=>{"
+    },
+    {
+      "file": "website-code/xunai/franchise-page.js",
+      "line": 78,
+      "source": "photoList.addEventListener('keydown',event=>{if(['ArrowDown','ArrowRight','ArrowUp','ArrowLeft'].includes(event.key)){event.preventDefault();select(Math.max(0,Math.min(5,current+(['ArrowDown','ArrowRight'].includes(event.key)?1:-1))))}});"
+    },
+    {
+      "file": "website-code/xunai/franchise-page.js",
+      "line": 79,
+      "source": "photoList.addEventListener('touchstart',event=>{touchY=event.touches[0].clientY},{passive:true});"
+    },
+    {
+      "file": "website-code/xunai/franchise-page.js",
+      "line": 80,
+      "source": "photoList.addEventListener('touchend',event=>{if(touchY===null)return;const dy=touchY-event.changedTouches[0].clientY;if(Math.abs(dy)>40)select(Math.max(0,Math.min(5,current+(dy>0?1:-1))));touchY=null},{passive:true});"
+    },
+    {
+      "file": "website-code/xunai/franchise-page.js",
+      "line": 81,
+      "source": "mobile.addEventListener('change',arrange);"
+    },
+    {
+      "file": "website-code/xunai/franchise-page.js",
+      "line": 82,
+      "source": "process.addEventListener('wheel',wheel,{passive:false});"
+    },
+    {
+      "file": "website-code/xunai/franchise-page.js",
+      "line": 83,
+      "source": "window.addEventListener('resize',arrange);"
+    },
+    {
+      "file": "website-code/xunai/store-tools.js",
+      "line": 7,
+      "source": "const filter=()=>{const query=input.value.trim().toLocaleLowerCase();let count=0;for(const row of rows){const text=row.textContent+row.closest('.xs-location-group').querySelector('h3').textContent;row.hidden=!text.toLocaleLowerCase().includes(query);if(!row.hidden)count++;}locations.querySelectorAll('.xs-city-book,.xs-store-subgroup').forEach(group=>{group.hidden=![...group.querySelectorAll('[data-store-id]')].some(row=>!row.hidden);group.open=!!query&&!group.hidden;});locations.querySelectorAll('.xs-location-group').forEach(g=>g.hidden=![...g.querySelectorAll('[data-store-id]')].some(d=>!d.hidden));status.textContent=query?(count?`找到 ${count} 条记录。`:'未找到匹配门店，请尝试城市或店型。') :'';};input.addEventListener('input',filter);"
+    },
+    {
+      "file": "website-code/xunai/store-tools.js",
+      "line": 26,
+      "source": "const dialog=locations.querySelector('dialog'),open=locations.querySelector('#xr-complaint-open');open.addEventListener('click',e=>{e.preventDefault();dialog.showModal()});dialog.querySelector('[data-xr-close]').addEventListener('click',()=>dialog.close());dialog.addEventListener('close',()=>open.focus({preventScroll:true}));"
+    },
+    {
+      "file": "website-code/xunai/store-tools.js",
+      "line": 27,
+      "source": "const form=dialog.querySelector('form'),fields=[...form.querySelectorAll('input,textarea')];const validate=field=>{const invalid=!field.value.trim()||!field.validity.valid;field.setAttribute('aria-invalid',String(invalid));dialog.querySelector('#xr-error-'+field.name).textContent=invalid?(field.type==='email'?'请填写有效的联系邮箱。':'请填写此项。'):'';return !invalid;};fields.forEach(f=>f.addEventListener('blur',()=>validate(f)));form.addEventListener('submit',e=>{e.preventDefault();const invalid=fields.filter(f=>!validate(f));dialog.querySelector('.xr-status').textContent=invalid.length?'请检查标出的填写项。':'填写检查通过。接收渠道待补充，本次未发送或保存信息。';invalid[0]?.focus()});"
+    },
+    {
+      "file": "website-code/xunai/stores-page.js",
+      "line": 7,
+      "source": "wide.addEventListener('change',()=>resizeServices());ultra.addEventListener('change',()=>resizeServices());"
+    },
+    {
+      "file": "website-code/xunai/stores-page.js",
+      "line": 172,
+      "source": "if(layout){let active=3;layout.addEventListener('click',event=>{const button=event.target.closest('[data-strength]');if(!button)return;const index=Number(button.dataset.strength);if(index===active)return;const from=button.querySelector('img').getBoundingClientRect();const old=active;active=index;layout.querySelector('.xs-strength-thumbs').innerHTML=[0,1,2,3].filter(i=>i!==active).map(i=>strengthCard(i)).join('');const feature=layout.querySelector('.xs-strength-feature');feature.innerHTML=strengthCard(active,true)+(active===3?'<p>打破传统的空间体验，对艾灸文化进行重新演绎。在都市语境中重构传统艾灸的疗愈智慧，以现代人的审美需求建立有温度的艾灸空间。</p>':'');const img=feature.querySelector('img'),to=img.getBoundingClientRect();if(!matchMedia('(prefers-reduced-motion: reduce)').matches)img.animate([{transform:`translate(${from.left-to.left}px,${from.top-to.top}px) scale(${from.width/to.width},${from.height/to.height})`},{transform:'none'}],{duration:550,easing:'cubic-bezier(.22,1,.36,1)'});layout.querySelector(`[data-strength=\"${old}\"]`).focus({preventScroll:true});});}"
+    },
+    {
+      "file": "website-code/xunai/stores-page.js",
+      "line": 175,
+      "source": "const reduce=matchMedia('(prefers-reduced-motion: reduce)');let selected=-1,page=0,perPage=4;"
+    },
+    {
+      "file": "website-code/xunai/stores-page.js",
+      "line": 184,
+      "source": "if(reveal&&old!==index&&!reduce.matches)copy.animate([{opacity:.3,transform:'translateY(8px)'},{opacity:1,transform:'none'}],{duration:550,easing:'cubic-bezier(.22,1,.36,1)'});"
+    },
+    {
+      "file": "website-code/xunai/stores-page.js",
+      "line": 196,
+      "source": "cards.forEach((card,i)=>card.addEventListener('click',()=>{select(i);if(innerWidth<768)copy.scrollIntoView({block:'center',behavior:reduce.matches?'auto':'smooth'})}));"
+    },
+    {
+      "file": "website-code/xunai/stores-page.js",
+      "line": 197,
+      "source": "prev.addEventListener('click',()=>select((page-1)*perPage,false,false));next.addEventListener('click',()=>select((page+1)*perPage,false,false));"
+    },
+    {
+      "file": "website-code/xunai/stores-page.js",
+      "line": 198,
+      "source": "track.addEventListener('keydown',event=>{const columns=wide.matches?perPage:2;const move={ArrowRight:1,ArrowLeft:-1,ArrowDown:columns,ArrowUp:-columns}[event.key];if(move){event.preventDefault();select(Number(event.target.closest('[data-service]').dataset.service)+move,true,false)}});"
+    },
+    {
+      "file": "website-code/xunai/stores-page.js",
+      "line": 200,
+      "source": "viewport.addEventListener('pointerdown',event=>{if(event.isPrimary&&event.button===0){point=[event.clientX,event.clientY];swiped=false}});"
+    },
+    {
+      "file": "website-code/xunai/stores-page.js",
+      "line": 201,
+      "source": "viewport.addEventListener('pointerup',event=>{if(!point)return;const dx=event.clientX-point[0],dy=event.clientY-point[1];point=null;if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.3){swiped=true;select(Math.max(0,Math.min(pageCount()-1,page+(dx<0?1:-1)))*perPage,false,false)}});"
+    },
+    {
+      "file": "website-code/xunai/stores-page.js",
+      "line": 202,
+      "source": "viewport.addEventListener('pointercancel',()=>point=null);"
+    },
+    {
+      "file": "website-code/xunai/stores-page.js",
+      "line": 203,
+      "source": "viewport.addEventListener('click',event=>{if(swiped){event.preventDefault();event.stopPropagation();swiped=false}},true);"
+    },
+    {
+      "file": "website-code/xunai/stores-page.js",
+      "line": 204,
+      "source": "viewport.addEventListener('dragstart',event=>event.preventDefault());"
+    }
+  ]
+}

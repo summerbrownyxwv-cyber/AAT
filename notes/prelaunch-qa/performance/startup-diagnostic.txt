@@ -1,0 +1,28 @@
+node:internal/child_process:1160
+    result.error = new ErrnoException(result.error, 'spawnSync ' + options.file);
+                   ^
+
+<ref *1> Error: spawnSync git ENOENT
+    at Object.spawnSync (node:internal/child_process:1160:20)
+    at spawnSync (node:child_process:928:24)
+    at execFileSync (node:child_process:971:15)
+    at file:///Users/dabao/Desktop/%E8%89%BE%E8%89%BE%E8%B4%B4%E5%AE%98%E7%BD%91-%E9%A6%96%E9%A1%B5%E4%BA%A4%E4%BB%98/AAT/notes/prelaunch-qa/performance/run-lighthouse.mjs:21:18
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'spawnSync git',
+  path: 'git',
+  spawnargs: [ 'rev-parse', 'HEAD' ],
+  error: [Circular *1],
+  status: null,
+  signal: null,
+  output: null,
+  pid: 0,
+  stdout: undefined,
+  stderr: undefined
+}
+
+Node.js v24.19.0

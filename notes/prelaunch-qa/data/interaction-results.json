@@ -1,0 +1,2911 @@
+{
+  "date": "2026-10-15",
+  "phase": "01 audit only",
+  "baseline": "48886fa39b059a88e01bc75ab99dba7acc935db8",
+  "method": "Isolated headless Chrome through Playwright. Ordinary UI input; page evaluation reads layout/state only except non-visual pageshow instrumentation. No website source edits, external final actions or submissions.",
+  "tests": [
+    {
+      "name": "computed-fonts-index-390",
+      "status": "collected",
+      "metrics": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": "loader-active"
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "computed-fonts-company-390",
+      "status": "collected",
+      "metrics": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "unloaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "computed-fonts-planting-390",
+      "status": "collected",
+      "metrics": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "computed-fonts-products-390",
+      "status": "collected",
+      "metrics": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "computed-fonts-service-390",
+      "status": "collected",
+      "metrics": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "computed-fonts-ai-390",
+      "status": "collected",
+      "metrics": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "computed-fonts-contact-390",
+      "status": "collected",
+      "metrics": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "computed-fonts-index-1440",
+      "status": "collected",
+      "metrics": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": "loader-active"
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "computed-fonts-company-1440",
+      "status": "collected",
+      "metrics": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "unloaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "computed-fonts-planting-1440",
+      "status": "collected",
+      "metrics": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "computed-fonts-products-1440",
+      "status": "collected",
+      "metrics": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "computed-fonts-service-1440",
+      "status": "collected",
+      "metrics": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "computed-fonts-ai-1440",
+      "status": "collected",
+      "metrics": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "computed-fonts-contact-1440",
+      "status": "collected",
+      "metrics": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "computed-fonts-index-3840",
+      "status": "collected",
+      "metrics": {
+        "width": 3840,
+        "height": 2160,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 3840,
+          "height": 2160,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "42.6667px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": "loader-active"
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "computed-fonts-company-3840",
+      "status": "collected",
+      "metrics": {
+        "width": 3840,
+        "height": 2160,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 3840,
+          "height": 2160,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "42.6667px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "unloaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "computed-fonts-planting-3840",
+      "status": "collected",
+      "metrics": {
+        "width": 3840,
+        "height": 2160,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 3840,
+          "height": 2160,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "42.6667px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "computed-fonts-products-3840",
+      "status": "collected",
+      "metrics": {
+        "width": 3840,
+        "height": 2160,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 3840,
+          "height": 2160,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "42.6667px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "computed-fonts-service-3840",
+      "status": "collected",
+      "metrics": {
+        "width": 3840,
+        "height": 2160,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 3840,
+          "height": 2160,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "42.6667px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "computed-fonts-ai-3840",
+      "status": "collected",
+      "metrics": {
+        "width": 3840,
+        "height": 2160,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 3840,
+          "height": 2160,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "42.6667px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "computed-fonts-contact-3840",
+      "status": "collected",
+      "metrics": {
+        "width": 3840,
+        "height": 2160,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 3840,
+          "height": 2160,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "42.6667px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "navigation-keyboard-390",
+      "status": "passed",
+      "opened": {
+        "open": true,
+        "focusInside": true,
+        "expanded": "true"
+      },
+      "trapped": true,
+      "closed": {
+        "open": false,
+        "focus": "menu-toggle",
+        "overflow": ""
+      },
+      "screenshot": "states/contact/390x844/interaction-menu-closed.jpg"
+    },
+    {
+      "name": "products-arrow-loop-drag-390",
+      "status": "passed",
+      "before": {
+        "index": "0",
+        "copy": "艾灸器",
+        "output": "1 / 6",
+        "track": "none",
+        "cards": [
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          },
+          {
+            "step": "0",
+            "label": "查看艾灸器"
+          },
+          {
+            "step": "1",
+            "label": "查看艾绒柱"
+          },
+          {
+            "step": "2",
+            "label": "查看清艾条"
+          },
+          {
+            "step": "3",
+            "label": "查看联合悬灸盒"
+          },
+          {
+            "step": "-2",
+            "label": "查看耳灸"
+          },
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          }
+        ]
+      },
+      "one": {
+        "index": "1",
+        "copy": "艾绒柱",
+        "output": "2 / 6",
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "cards": [
+          {
+            "step": "-1",
+            "label": "查看艾灸器"
+          },
+          {
+            "step": "0",
+            "label": "查看艾绒柱"
+          },
+          {
+            "step": "1",
+            "label": "查看清艾条"
+          },
+          {
+            "step": "2",
+            "label": "查看联合悬灸盒"
+          },
+          {
+            "step": "3",
+            "label": "查看耳灸"
+          },
+          {
+            "step": "-2",
+            "label": "查看眼灸"
+          },
+          {
+            "step": "-1",
+            "label": "查看艾灸器"
+          }
+        ]
+      },
+      "loop": {
+        "index": "0",
+        "copy": "艾灸器",
+        "output": "1 / 6",
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "cards": [
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          },
+          {
+            "step": "0",
+            "label": "查看艾灸器"
+          },
+          {
+            "step": "1",
+            "label": "查看艾绒柱"
+          },
+          {
+            "step": "2",
+            "label": "查看清艾条"
+          },
+          {
+            "step": "3",
+            "label": "查看联合悬灸盒"
+          },
+          {
+            "step": "-2",
+            "label": "查看耳灸"
+          },
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          }
+        ]
+      },
+      "rapid": {
+        "index": "0",
+        "copy": "艾灸器",
+        "output": "1 / 6",
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "cards": [
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          },
+          {
+            "step": "0",
+            "label": "查看艾灸器"
+          },
+          {
+            "step": "1",
+            "label": "查看艾绒柱"
+          },
+          {
+            "step": "2",
+            "label": "查看清艾条"
+          },
+          {
+            "step": "3",
+            "label": "查看联合悬灸盒"
+          },
+          {
+            "step": "-2",
+            "label": "查看耳灸"
+          },
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          }
+        ]
+      },
+      "dragging": {
+        "index": "1",
+        "copy": "艾绒柱",
+        "output": "2 / 6",
+        "track": "matrix(1, 0, 0, 1, 119, 0)",
+        "cards": [
+          {
+            "step": "-1",
+            "label": "查看艾灸器"
+          },
+          {
+            "step": "0",
+            "label": "查看艾绒柱"
+          },
+          {
+            "step": "1",
+            "label": "查看清艾条"
+          },
+          {
+            "step": "2",
+            "label": "查看联合悬灸盒"
+          },
+          {
+            "step": "3",
+            "label": "查看耳灸"
+          },
+          {
+            "step": "-2",
+            "label": "查看眼灸"
+          },
+          {
+            "step": "-1",
+            "label": "查看艾灸器"
+          }
+        ]
+      },
+      "released": {
+        "index": "1",
+        "copy": "艾绒柱",
+        "output": "2 / 6",
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "cards": [
+          {
+            "step": "-1",
+            "label": "查看艾灸器"
+          },
+          {
+            "step": "0",
+            "label": "查看艾绒柱"
+          },
+          {
+            "step": "1",
+            "label": "查看清艾条"
+          },
+          {
+            "step": "2",
+            "label": "查看联合悬灸盒"
+          },
+          {
+            "step": "3",
+            "label": "查看耳灸"
+          },
+          {
+            "step": "-2",
+            "label": "查看眼灸"
+          },
+          {
+            "step": "-1",
+            "label": "查看艾灸器"
+          }
+        ]
+      },
+      "screenshot": "states/products/390x844/interaction-ran-after-drag.jpg",
+      "metrics": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "scrollY": 2674,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BUTTON",
+          "id": "",
+          "cls": "product-detail-card"
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "company-click-history-390",
+      "status": "passed",
+      "hover": "false",
+      "click": "true",
+      "esc": "false",
+      "history": {
+        "selected": "2025",
+        "left": 2701,
+        "max": 2910,
+        "textFilters": [
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none"
+        ]
+      },
+      "screenshot": "states/company/390x844/interaction-history-last-year.jpg"
+    },
+    {
+      "name": "ai-tabs-long-chapters-390",
+      "status": "passed",
+      "right": "xa-cert-1",
+      "end": "xa-cert-2",
+      "startY": 2228,
+      "down": {
+        "y": 2828,
+        "panels": [
+          {
+            "id": "",
+            "top": 64,
+            "height": 780,
+            "fit": true,
+            "behind": true,
+            "inert": true,
+            "visibility": "hidden"
+          },
+          {
+            "id": "value",
+            "top": 64,
+            "height": 780,
+            "fit": true,
+            "behind": true,
+            "inert": true,
+            "visibility": "hidden"
+          },
+          {
+            "id": "ai-capabilities",
+            "top": 64,
+            "height": 780,
+            "fit": true,
+            "behind": true,
+            "inert": true,
+            "visibility": "hidden"
+          },
+          {
+            "id": "ai-evidence",
+            "top": 64,
+            "height": 780,
+            "fit": true,
+            "behind": false,
+            "inert": false,
+            "visibility": "visible"
+          },
+          {
+            "id": "how-it-works",
+            "top": 356,
+            "height": 967,
+            "fit": false,
+            "behind": false,
+            "inert": false,
+            "visibility": "visible"
+          },
+          {
+            "id": "ai-reports",
+            "top": 1322.71875,
+            "height": 849,
+            "fit": false,
+            "behind": false,
+            "inert": false,
+            "visibility": "visible"
+          },
+          {
+            "id": "scenarios",
+            "top": 2171.921875,
+            "height": 780,
+            "fit": true,
+            "behind": false,
+            "inert": false,
+            "visibility": "visible"
+          }
+        ]
+      },
+      "up": {
+        "y": 2228,
+        "visible": [
+          "ai-capabilities",
+          "ai-evidence",
+          "how-it-works",
+          "ai-reports",
+          "scenarios"
+        ]
+      },
+      "screenshot": "states/ai/390x844/interaction-cert-tab-and-cover-state.jpg"
+    },
+    {
+      "name": "service-cover-back-focus-390",
+      "status": "passed",
+      "cards": [
+        {
+          "top": 367.203125,
+          "height": 780,
+          "position": "sticky",
+          "inert": false,
+          "behind": false
+        },
+        {
+          "top": 1205.703125,
+          "height": 780,
+          "position": "sticky",
+          "inert": false,
+          "behind": false
+        }
+      ],
+      "before": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "scrollY": 2667,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      },
+      "entering": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      },
+      "returned": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "scrollY": 2667,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      },
+      "screenshot": "states/service/390x844/interaction-back-from-store-detail.jpg",
+      "finding": "Scroll position approximately restored"
+    },
+    {
+      "name": "oem-details-390",
+      "status": "passed",
+      "opened": {
+        "open": true,
+        "steps": 10
+      },
+      "closed": true,
+      "screenshot": "states/products/390x844/interaction-oem-collapse.jpg"
+    },
+    {
+      "name": "navigation-keyboard-1440",
+      "status": "observed",
+      "metrics": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "16px",
+        "active": {
+          "tag": "A",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      },
+      "focus": {
+        "outline": "solid",
+        "outlineWidth": "2px"
+      },
+      "screenshot": "states/contact/1440x900/interaction-navigation-focus.jpg"
+    },
+    {
+      "name": "products-arrow-loop-drag-1440",
+      "status": "passed",
+      "before": {
+        "index": "0",
+        "copy": "艾灸器",
+        "output": "1 / 6",
+        "track": "none",
+        "cards": [
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          },
+          {
+            "step": "0",
+            "label": "查看艾灸器"
+          },
+          {
+            "step": "1",
+            "label": "查看艾绒柱"
+          },
+          {
+            "step": "2",
+            "label": "查看清艾条"
+          },
+          {
+            "step": "3",
+            "label": "查看联合悬灸盒"
+          },
+          {
+            "step": "-2",
+            "label": "查看耳灸"
+          },
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          }
+        ]
+      },
+      "one": {
+        "index": "1",
+        "copy": "艾绒柱",
+        "output": "2 / 6",
+        "track": "matrix(1, 0, 0, 1, 0.259319, 0)",
+        "cards": [
+          {
+            "step": "-1",
+            "label": "查看艾灸器"
+          },
+          {
+            "step": "0",
+            "label": "查看艾绒柱"
+          },
+          {
+            "step": "1",
+            "label": "查看清艾条"
+          },
+          {
+            "step": "2",
+            "label": "查看联合悬灸盒"
+          },
+          {
+            "step": "3",
+            "label": "查看耳灸"
+          },
+          {
+            "step": "-2",
+            "label": "查看眼灸"
+          },
+          {
+            "step": "-1",
+            "label": "查看艾灸器"
+          }
+        ]
+      },
+      "loop": {
+        "index": "0",
+        "copy": "艾灸器",
+        "output": "1 / 6",
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "cards": [
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          },
+          {
+            "step": "0",
+            "label": "查看艾灸器"
+          },
+          {
+            "step": "1",
+            "label": "查看艾绒柱"
+          },
+          {
+            "step": "2",
+            "label": "查看清艾条"
+          },
+          {
+            "step": "3",
+            "label": "查看联合悬灸盒"
+          },
+          {
+            "step": "-2",
+            "label": "查看耳灸"
+          },
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          }
+        ]
+      },
+      "rapid": {
+        "index": "0",
+        "copy": "艾灸器",
+        "output": "1 / 6",
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "cards": [
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          },
+          {
+            "step": "0",
+            "label": "查看艾灸器"
+          },
+          {
+            "step": "1",
+            "label": "查看艾绒柱"
+          },
+          {
+            "step": "2",
+            "label": "查看清艾条"
+          },
+          {
+            "step": "3",
+            "label": "查看联合悬灸盒"
+          },
+          {
+            "step": "-2",
+            "label": "查看耳灸"
+          },
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          }
+        ]
+      },
+      "dragging": {
+        "index": "0",
+        "copy": "艾灸器",
+        "output": "1 / 6",
+        "track": "matrix(1, 0, 0, 1, -170, 0)",
+        "cards": [
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          },
+          {
+            "step": "0",
+            "label": "查看艾灸器"
+          },
+          {
+            "step": "1",
+            "label": "查看艾绒柱"
+          },
+          {
+            "step": "2",
+            "label": "查看清艾条"
+          },
+          {
+            "step": "3",
+            "label": "查看联合悬灸盒"
+          },
+          {
+            "step": "-2",
+            "label": "查看耳灸"
+          },
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          }
+        ]
+      },
+      "released": {
+        "index": "1",
+        "copy": "艾绒柱",
+        "output": "2 / 6",
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "cards": [
+          {
+            "step": "-1",
+            "label": "查看艾灸器"
+          },
+          {
+            "step": "0",
+            "label": "查看艾绒柱"
+          },
+          {
+            "step": "1",
+            "label": "查看清艾条"
+          },
+          {
+            "step": "2",
+            "label": "查看联合悬灸盒"
+          },
+          {
+            "step": "3",
+            "label": "查看耳灸"
+          },
+          {
+            "step": "-2",
+            "label": "查看眼灸"
+          },
+          {
+            "step": "-1",
+            "label": "查看艾灸器"
+          }
+        ]
+      },
+      "screenshot": "states/products/1440x900/interaction-ran-after-drag.jpg",
+      "metrics": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "scale": 1
+        },
+        "scrollY": 3484,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BUTTON",
+          "id": "",
+          "cls": "product-detail-card"
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "company-click-history-1440",
+      "status": "passed",
+      "hover": "false",
+      "click": "true",
+      "esc": "false",
+      "history": {
+        "selected": "2025",
+        "left": 2857,
+        "max": 3045,
+        "textFilters": [
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none"
+        ]
+      },
+      "screenshot": "states/company/1440x900/interaction-history-last-year.jpg"
+    },
+    {
+      "name": "ai-tabs-long-chapters-1440",
+      "status": "passed",
+      "right": "xa-cert-1",
+      "end": "xa-cert-2",
+      "startY": 2562,
+      "down": {
+        "y": 3162,
+        "panels": [
+          {
+            "id": "",
+            "top": 49,
+            "height": 851,
+            "fit": true,
+            "behind": true,
+            "inert": true,
+            "visibility": "hidden"
+          },
+          {
+            "id": "value",
+            "top": 72,
+            "height": 828,
+            "fit": true,
+            "behind": true,
+            "inert": true,
+            "visibility": "hidden"
+          },
+          {
+            "id": "ai-capabilities",
+            "top": 72,
+            "height": 828,
+            "fit": true,
+            "behind": true,
+            "inert": true,
+            "visibility": "hidden"
+          },
+          {
+            "id": "ai-evidence",
+            "top": -114,
+            "height": 1014,
+            "fit": true,
+            "behind": false,
+            "inert": false,
+            "visibility": "visible"
+          },
+          {
+            "id": "how-it-works",
+            "top": 430.859375,
+            "height": 1049,
+            "fit": true,
+            "behind": false,
+            "inert": false,
+            "visibility": "visible"
+          },
+          {
+            "id": "ai-reports",
+            "top": 1480.046875,
+            "height": 1228,
+            "fit": true,
+            "behind": false,
+            "inert": false,
+            "visibility": "visible"
+          },
+          {
+            "id": "scenarios",
+            "top": 2707.59375,
+            "height": 879,
+            "fit": true,
+            "behind": false,
+            "inert": false,
+            "visibility": "visible"
+          }
+        ]
+      },
+      "up": {
+        "y": 2562,
+        "visible": [
+          "ai-evidence",
+          "how-it-works",
+          "ai-reports",
+          "scenarios"
+        ]
+      },
+      "screenshot": "states/ai/1440x900/interaction-cert-tab-and-cover-state.jpg"
+    },
+    {
+      "name": "service-cover-back-focus-1440",
+      "status": "passed",
+      "cards": [
+        {
+          "top": 422.828125,
+          "height": 828,
+          "position": "sticky",
+          "inert": false,
+          "behind": false
+        },
+        {
+          "top": 1250.828125,
+          "height": 828,
+          "position": "sticky",
+          "inert": false,
+          "behind": false
+        }
+      ],
+      "before": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "scale": 1
+        },
+        "scrollY": 3097,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      },
+      "entering": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      },
+      "returned": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "scale": 1
+        },
+        "scrollY": 3097,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      },
+      "screenshot": "states/service/1440x900/interaction-back-from-store-detail.jpg",
+      "finding": "Scroll position approximately restored"
+    },
+    {
+      "name": "oem-details-1440",
+      "status": "passed",
+      "opened": {
+        "open": true,
+        "steps": 10
+      },
+      "closed": true,
+      "screenshot": "states/products/1440x900/interaction-oem-collapse.jpg"
+    },
+    {
+      "name": "navigation-keyboard-3840",
+      "status": "observed",
+      "metrics": {
+        "width": 3840,
+        "height": 2160,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 3840,
+          "height": 2160,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "42.6667px",
+        "active": {
+          "tag": "A",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      },
+      "focus": {
+        "outline": "solid",
+        "outlineWidth": "2px"
+      },
+      "screenshot": "states/contact/3840x2160/interaction-navigation-focus.jpg"
+    },
+    {
+      "name": "products-arrow-loop-drag-3840",
+      "status": "passed",
+      "before": {
+        "index": "0",
+        "copy": "艾灸器",
+        "output": "1 / 6",
+        "track": "none",
+        "cards": [
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          },
+          {
+            "step": "0",
+            "label": "查看艾灸器"
+          },
+          {
+            "step": "1",
+            "label": "查看艾绒柱"
+          },
+          {
+            "step": "2",
+            "label": "查看清艾条"
+          },
+          {
+            "step": "3",
+            "label": "查看联合悬灸盒"
+          },
+          {
+            "step": "-2",
+            "label": "查看耳灸"
+          },
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          }
+        ]
+      },
+      "one": {
+        "index": "1",
+        "copy": "艾绒柱",
+        "output": "2 / 6",
+        "track": "matrix(1, 0, 0, 1, 1.54417, 0)",
+        "cards": [
+          {
+            "step": "-1",
+            "label": "查看艾灸器"
+          },
+          {
+            "step": "0",
+            "label": "查看艾绒柱"
+          },
+          {
+            "step": "1",
+            "label": "查看清艾条"
+          },
+          {
+            "step": "2",
+            "label": "查看联合悬灸盒"
+          },
+          {
+            "step": "3",
+            "label": "查看耳灸"
+          },
+          {
+            "step": "-2",
+            "label": "查看眼灸"
+          },
+          {
+            "step": "-1",
+            "label": "查看艾灸器"
+          }
+        ]
+      },
+      "loop": {
+        "index": "0",
+        "copy": "艾灸器",
+        "output": "1 / 6",
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "cards": [
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          },
+          {
+            "step": "0",
+            "label": "查看艾灸器"
+          },
+          {
+            "step": "1",
+            "label": "查看艾绒柱"
+          },
+          {
+            "step": "2",
+            "label": "查看清艾条"
+          },
+          {
+            "step": "3",
+            "label": "查看联合悬灸盒"
+          },
+          {
+            "step": "-2",
+            "label": "查看耳灸"
+          },
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          }
+        ]
+      },
+      "rapid": {
+        "index": "0",
+        "copy": "艾灸器",
+        "output": "1 / 6",
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "cards": [
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          },
+          {
+            "step": "0",
+            "label": "查看艾灸器"
+          },
+          {
+            "step": "1",
+            "label": "查看艾绒柱"
+          },
+          {
+            "step": "2",
+            "label": "查看清艾条"
+          },
+          {
+            "step": "3",
+            "label": "查看联合悬灸盒"
+          },
+          {
+            "step": "-2",
+            "label": "查看耳灸"
+          },
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          }
+        ]
+      },
+      "dragging": {
+        "index": "0",
+        "copy": "艾灸器",
+        "output": "1 / 6",
+        "track": "matrix(1, 0, 0, 1, -170, 0)",
+        "cards": [
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          },
+          {
+            "step": "0",
+            "label": "查看艾灸器"
+          },
+          {
+            "step": "1",
+            "label": "查看艾绒柱"
+          },
+          {
+            "step": "2",
+            "label": "查看清艾条"
+          },
+          {
+            "step": "3",
+            "label": "查看联合悬灸盒"
+          },
+          {
+            "step": "-2",
+            "label": "查看耳灸"
+          },
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          }
+        ]
+      },
+      "released": {
+        "index": "0",
+        "copy": "艾灸器",
+        "output": "1 / 6",
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "cards": [
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          },
+          {
+            "step": "0",
+            "label": "查看艾灸器"
+          },
+          {
+            "step": "1",
+            "label": "查看艾绒柱"
+          },
+          {
+            "step": "2",
+            "label": "查看清艾条"
+          },
+          {
+            "step": "3",
+            "label": "查看联合悬灸盒"
+          },
+          {
+            "step": "-2",
+            "label": "查看耳灸"
+          },
+          {
+            "step": "-1",
+            "label": "查看眼灸"
+          }
+        ]
+      },
+      "screenshot": "states/products/3840x2160/interaction-ran-after-drag.jpg",
+      "metrics": {
+        "width": 3840,
+        "height": 2160,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 3840,
+          "height": 2160,
+          "scale": 1
+        },
+        "scrollY": 8762,
+        "rootFont": "42.6667px",
+        "active": {
+          "tag": "BUTTON",
+          "id": "",
+          "cls": "product-detail-card"
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "company-click-history-3840",
+      "status": "passed",
+      "hover": "false",
+      "click": "true",
+      "esc": "false",
+      "history": {
+        "selected": "2025",
+        "left": 6769,
+        "max": 8120,
+        "textFilters": [
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none"
+        ]
+      },
+      "screenshot": "states/company/3840x2160/interaction-history-last-year.jpg"
+    },
+    {
+      "name": "ai-tabs-long-chapters-3840",
+      "status": "passed",
+      "right": "xa-cert-1",
+      "end": "xa-cert-2",
+      "startY": 7144,
+      "down": {
+        "y": 7744,
+        "panels": [
+          {
+            "id": "",
+            "top": -108,
+            "height": 2268,
+            "fit": true,
+            "behind": true,
+            "inert": true,
+            "visibility": "hidden"
+          },
+          {
+            "id": "value",
+            "top": 192,
+            "height": 1968,
+            "fit": true,
+            "behind": true,
+            "inert": true,
+            "visibility": "hidden"
+          },
+          {
+            "id": "ai-capabilities",
+            "top": 192,
+            "height": 1968,
+            "fit": true,
+            "behind": true,
+            "inert": true,
+            "visibility": "hidden"
+          },
+          {
+            "id": "ai-evidence",
+            "top": -541,
+            "height": 2701,
+            "fit": true,
+            "behind": false,
+            "inert": false,
+            "visibility": "visible"
+          },
+          {
+            "id": "how-it-works",
+            "top": 1353.5625,
+            "height": 2798,
+            "fit": true,
+            "behind": false,
+            "inert": false,
+            "visibility": "visible"
+          },
+          {
+            "id": "ai-reports",
+            "top": 4151.40625,
+            "height": 3240,
+            "fit": true,
+            "behind": false,
+            "inert": false,
+            "visibility": "visible"
+          },
+          {
+            "id": "scenarios",
+            "top": 7391.609375,
+            "height": 2343,
+            "fit": true,
+            "behind": false,
+            "inert": false,
+            "visibility": "visible"
+          }
+        ]
+      },
+      "up": {
+        "y": 7144,
+        "visible": [
+          "ai-evidence",
+          "how-it-works",
+          "ai-reports",
+          "scenarios"
+        ]
+      },
+      "screenshot": "states/ai/3840x2160/interaction-cert-tab-and-cover-state.jpg"
+    },
+    {
+      "name": "service-cover-back-focus-3840",
+      "status": "passed",
+      "cards": [
+        {
+          "top": 1088.734375,
+          "height": 1968,
+          "position": "sticky",
+          "inert": false,
+          "behind": false
+        },
+        {
+          "top": 3056.734375,
+          "height": 1968,
+          "position": "sticky",
+          "inert": false,
+          "behind": false
+        }
+      ],
+      "before": {
+        "width": 3840,
+        "height": 2160,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 3840,
+          "height": 2160,
+          "scale": 1
+        },
+        "scrollY": 7850,
+        "rootFont": "42.6667px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      },
+      "entering": {
+        "width": 3840,
+        "height": 2160,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 3840,
+          "height": 2160,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "42.6667px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      },
+      "returned": {
+        "width": 3840,
+        "height": 2160,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 3840,
+          "height": 2160,
+          "scale": 1
+        },
+        "scrollY": 7850,
+        "rootFont": "42.6667px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      },
+      "screenshot": "states/service/3840x2160/interaction-back-from-store-detail.jpg",
+      "finding": "Scroll position approximately restored"
+    },
+    {
+      "name": "oem-details-3840",
+      "status": "passed",
+      "opened": {
+        "open": true,
+        "steps": 10
+      },
+      "closed": true,
+      "screenshot": "states/products/3840x2160/interaction-oem-collapse.jpg"
+    },
+    {
+      "name": "local-form-validation-and-unsent-summary",
+      "status": "passed",
+      "empty": {
+        "invalid": 3,
+        "focus": "name",
+        "status": "表单中有未完成的必填项"
+      },
+      "summary": {
+        "heading": "意向已整理，尚未发送",
+        "focus": true,
+        "textarea": "生产合作意向\n姓名：QA测试\n联系电话：10000000000\n所在城市：测试城市\n合作类型：OEM研发\n意向产品：测试产品\n补充说明：未填写",
+        "mailScheme": "mailto"
+      },
+      "screenshot": "states/contact/390x844/interaction-production-empty-validation.jpg",
+      "note": "No copy, mail, phone or external submit activated. Input existed only in isolated page memory."
+    },
+    {
+      "name": "hash-route-new-content-focus",
+      "status": "harness-error",
+      "error": "locator.waitFor: Timeout 7000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.prototype-form').first()\u001b[22m\n",
+      "url": "http://127.0.0.1:4196/website-code/contact.html#/production/apply",
+      "metrics": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "scrollY": 480,
+        "rootFont": "16px",
+        "active": {
+          "tag": "DIV",
+          "id": "",
+          "cls": "form-success"
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    {
+      "name": "bfcache-navigation-observation",
+      "status": "harness-error",
+      "error": "locator.click: Timeout 7000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.site-navigation nav a[href$=\"contact.html\"]')\u001b[22m\n\u001b[2m    - locator resolved to <a href=\"./contact.html\">联系我们</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    13 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "url": "http://127.0.0.1:4196/website-code/service.html#/stores/services",
+      "metrics": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "scrollY": 0,
+        "rootFont": "16px",
+        "active": {
+          "tag": "BODY",
+          "id": "",
+          "cls": ""
+        },
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi OPPO",
+            "status": "loaded",
+            "weight": "100 700"
+          },
+          {
+            "family": "XunAi Mincho",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "XunAi Crimson",
+            "status": "unloaded",
+            "weight": "400"
+          }
+        ]
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "requestFailures": [],
+  "browserVersion": "154.0.8037.99"
+}

@@ -1,0 +1,74 @@
+{
+  "url": "http://127.0.0.1:4196/website-code/planting.html",
+  "flags": {
+    "output": [
+      "html",
+      "json"
+    ],
+    "logLevel": "error"
+  },
+  "config": {
+    "extends": "lighthouse:default",
+    "settings": {
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "formFactor": "mobile",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 3,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "throttlingMethod": "simulate",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000
+    }
+  },
+  "chromeLaunchArgs": [
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "--disable-features=Translate,OptimizationHints,MediaRouter,DialMediaRouteProvider,CalculateNativeWinOcclusion,InterestFeedContentSuggestions,CertificateTransparencyComponentUpdater,AutofillServerCommunication,PrivacySandboxSettings4,RenderDocument",
+    "--disable-extensions",
+    "--disable-component-extensions-with-background-pages",
+    "--disable-background-networking",
+    "--disable-component-update",
+    "--disable-client-side-phishing-detection",
+    "--disable-sync",
+    "--metrics-recording-only",
+    "--disable-default-apps",
+    "--mute-audio",
+    "--no-default-browser-check",
+    "--no-first-run",
+    "--disable-backgrounding-occluded-windows",
+    "--disable-renderer-backgrounding",
+    "--disable-background-timer-throttling",
+    "--disable-ipc-flooding-protection",
+    "--password-store=basic",
+    "--use-mock-keychain",
+    "--force-fieldtrials=*BackgroundTracing/default/",
+    "--disable-hang-monitor",
+    "--disable-prompt-on-repost",
+    "--disable-domain-reliability",
+    "--propagate-iph-for-testing",
+    "--remote-debugging-port=0",
+    "--user-data-dir=/Users/dabao/Desktop/艾艾贴官网-首页交付/AAT/notes/prelaunch-qa/.runtime/lighthouse-profiles/planting-mobile-390x844",
+    "--headless=new",
+    "--no-first-run",
+    "--no-default-browser-check",
+    "--mute-audio",
+    "about:blank"
+  ]
+}

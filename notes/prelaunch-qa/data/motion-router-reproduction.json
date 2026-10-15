@@ -1,0 +1,50 @@
+{
+  "scope": "Source execution with DOM/module stubs; not a browser or BFCache eligibility test",
+  "baseline": "48886fa39b059a88e01bc75ab99dba7acc935db8",
+  "initialEvents": [
+    [
+      "render",
+      "<section>baseline</section>"
+    ],
+    [
+      "mounted"
+    ],
+    [
+      "motionMounted"
+    ],
+    [
+      "scroll",
+      {
+        "top": 0,
+        "behavior": "instant"
+      }
+    ]
+  ],
+  "pagehidePersistedDisposes": true,
+  "pageShowListenerRegistered": false,
+  "hashNavigationScrolls": [
+    [
+      "scroll",
+      {
+        "top": 0,
+        "behavior": "instant"
+      }
+    ],
+    [
+      "scroll",
+      {
+        "top": 0,
+        "behavior": "instant"
+      }
+    ],
+    [
+      "scroll",
+      {
+        "top": 0,
+        "behavior": "instant"
+      }
+    ]
+  ],
+  "renderFocusCallsInRouter": false,
+  "routeScrollCacheInRouter": false
+}

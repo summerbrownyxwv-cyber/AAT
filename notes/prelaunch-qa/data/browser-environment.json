@@ -1,0 +1,35 @@
+{
+  "revision": "48886fa39b059a88e01bc75ab99dba7acc935db8",
+  "tag": "qa-prelaunch-baseline-20261015",
+  "branch": "qa/prelaunch-20261015-phase01",
+  "os": {
+    "platform": "darwin",
+    "release": "24.6.0",
+    "architecture": "arm64",
+    "macOS": "15.7.1"
+  },
+  "browser": {
+    "name": "Google Chrome",
+    "version": "154.0.8037.99",
+    "executable": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "headless": true
+  },
+  "playwright": "1.62.1",
+  "baseURL": "http://127.0.0.1:4196",
+  "viewportUnit": "CSS px",
+  "baselineDPR": 1,
+  "locale": "zh-CN",
+  "timezone": "Asia/Shanghai",
+  "screenshot": {
+    "format": "JPEG",
+    "quality": 78,
+    "fullPage": true,
+    "animations": "current normal state; not disabled",
+    "videos": "actual live frame, time recorded"
+  },
+  "limitations": [
+    "Before-change evidence, not approved visual truth",
+    "Headless Chromium emulation is not physical mobile/Safari testing",
+    "Pinned chapters need supplemental scroll states; a full document screenshot cannot expose every overlapping panel"
+  ]
+}

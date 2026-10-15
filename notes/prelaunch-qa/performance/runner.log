@@ -1,0 +1,29 @@
+START index-desktop-1440x900 2026-10-15T12:59:00.230Z
+DONE index-desktop-1440x900 {"performance":75,"accessibility":97,"best-practices":100,"seo":100} LCP=24046.8882 TBT=1.1117999999999597 CLS=0
+START company-desktop-1440x900 2026-10-15T12:59:11.729Z
+DONE company-desktop-1440x900 {"performance":61,"accessibility":100,"best-practices":100,"seo":100} LCP=17246.8808 TBT=0 CLS=0.00005837283266646147
+START planting-desktop-1440x900 2026-10-15T12:59:20.470Z
+DONE planting-desktop-1440x900 {"performance":75,"accessibility":100,"best-practices":100,"seo":100} LCP=22087.683449999997 TBT=0 CLS=0
+START products-desktop-1440x900 2026-10-15T12:59:30.313Z
+DONE products-desktop-1440x900 {"performance":46,"accessibility":100,"best-practices":100,"seo":100} LCP=49415.62177499999 TBT=334 CLS=0
+START service-desktop-1440x900 2026-10-15T12:59:40.657Z
+DONE service-desktop-1440x900 {"performance":55,"accessibility":100,"best-practices":100,"seo":100} LCP=30007.20315 TBT=0 CLS=0
+START ai-desktop-1440x900 2026-10-15T12:59:51.126Z
+DONE ai-desktop-1440x900 {"performance":55,"accessibility":97,"best-practices":100,"seo":100} LCP=28284.49385 TBT=0 CLS=0
+START contact-desktop-1440x900 2026-10-15T13:00:03.068Z
+DONE contact-desktop-1440x900 {"performance":55,"accessibility":100,"best-practices":100,"seo":100} LCP=27187.301400000004 TBT=0 CLS=0
+START index-mobile-390x844 2026-10-15T13:00:10.228Z
+DONE index-mobile-390x844 {"performance":74,"accessibility":97,"best-practices":100,"seo":100} LCP=148730.6937 TBT=59 CLS=0
+START company-mobile-390x844 2026-10-15T13:00:18.432Z
+DONE company-mobile-390x844 {"performance":55,"accessibility":100,"best-practices":100,"seo":100} LCP=105381.2781 TBT=0 CLS=0
+START planting-mobile-390x844 2026-10-15T13:00:26.162Z
+DONE planting-mobile-390x844 {"performance":74,"accessibility":100,"best-practices":100,"seo":100} LCP=165080.84595000002 TBT=16 CLS=0
+START products-mobile-390x844 2026-10-15T13:00:33.948Z
+DONE products-mobile-390x844 {"performance":33,"accessibility":100,"best-practices":100,"seo":100} LCP=123453.7071 TBT=1020 CLS=0
+START service-mobile-390x844 2026-10-15T13:00:42.690Z
+DONE service-mobile-390x844 {"performance":55,"accessibility":100,"best-practices":100,"seo":100} LCP=184729.60335 TBT=0 CLS=0
+START ai-mobile-390x844 2026-10-15T13:00:52.811Z
+DONE ai-mobile-390x844 {"performance":55,"accessibility":97,"best-practices":100,"seo":100} LCP=175656.5427 TBT=0 CLS=0
+START contact-mobile-390x844 2026-10-15T13:01:04.612Z
+DONE contact-mobile-390x844 {"performance":55,"accessibility":100,"best-practices":100,"seo":100} LCP=172880.64495 TBT=0 CLS=0.00000241891034999905
+ALL AUDITS FINISHED

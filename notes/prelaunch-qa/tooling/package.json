@@ -1,0 +1,10 @@
+{
+  "name": "aiaitie-prelaunch-qa-tooling",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Pinned audit-only tooling; does not participate in website build or runtime.",
+  "devDependencies": {
+    "lighthouse": "13.5.0"
+  }
+}
