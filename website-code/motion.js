@@ -20,7 +20,6 @@ export function mountMotion() {
   const holds = [...document.querySelectorAll('[data-scroll-hold]')];
   const seriesButtons = [...document.querySelectorAll('.series-thumb[data-series-index]')];
   const seriesDots = [...document.querySelectorAll('[data-series-dot]')];
-  const seriesPlayback = document.querySelector('.series-playback');
   const seriesPhoto = document.querySelector('#series-photo');
   const seriesBackdrop = document.querySelector('.series-backdrop');
   const seriesLabel = document.querySelector('#series-label');
@@ -50,9 +49,6 @@ export function mountMotion() {
   let imageRequest = 0;
   let seriesTimer = 0;
   let currentSeries = 0;
-  let seriesPaused = false;
-  let seriesHovered = false;
-  let seriesFocused = false;
   let disposed = false;
   let plantStep = 0;
   let selectedPlant = null;
@@ -78,10 +74,7 @@ export function mountMotion() {
 
   function startSeriesLoop() {
     clearInterval(seriesTimer);
-    seriesPlayback.hidden = motionPreference.matches;
-    seriesPlayback.textContent = seriesPaused ? '继续轮播' : '暂停轮播';
-    seriesPlayback.setAttribute('aria-label', seriesPaused ? '继续产品系列自动轮播' : '暂停产品系列自动轮播');
-    if (motionPreference.matches || seriesPaused || seriesHovered || seriesFocused || document.hidden || seriesButtons.length < 2) return;
+    if (motionPreference.matches || document.hidden || seriesButtons.length < 2) return;
     seriesTimer = window.setInterval(() => {
       if (document.hidden || !visible.has(seriesPhoto)) return;
       showSeries((currentSeries + 1) % seriesButtons.length);
@@ -94,7 +87,7 @@ export function mountMotion() {
     clearTimeout(imageTimer);
     select(seriesButtons, index, 'seriesIndex');
     selectSeries(index);
-    if (manual) { seriesPaused = true; startSeriesLoop(); }
+    if (manual) startSeriesLoop();
     seriesLabel.textContent = button.dataset.label;
     const next = new Image();
     next.onload = () => {
@@ -334,13 +327,6 @@ export function mountMotion() {
   for (const dot of seriesDots) {
     on(dot, 'click', () => showSeries(Number(dot.dataset.seriesDot), true));
   }
-  on(seriesPlayback, 'click', () => { seriesPaused = !seriesPaused; startSeriesLoop(); });
-  on(collections, 'pointerenter', event => { seriesHovered = event.pointerType !== 'touch'; startSeriesLoop(); });
-  on(collections, 'pointerleave', () => { seriesHovered = false; startSeriesLoop(); });
-  on(collections, 'focusin', () => { seriesFocused = true; startSeriesLoop(); });
-  on(collections, 'focusout', event => {
-    if (!collections.contains(event.relatedTarget)) { seriesFocused = false; startSeriesLoop(); }
-  });
   for (const button of contactButtons) {
     on(button, 'click', () => {
       if (button.dataset.contactLink) { location.href = button.dataset.contactLink; return; }

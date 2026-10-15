@@ -5,7 +5,7 @@
 .product-catalog.is-pinned .product-group{position:absolute;inset:0;overflow:clip;will-change:transform}
 .product-catalog.is-pinned .product-group-sheet{min-height:100%;will-change:transform}
 .product-catalog.is-pinned .product-catalog-stage[data-transitioning=true] .product-group{pointer-events:none}
-.product-group{--product-color:#955f36;background:var(--product-color);color:var(--cream)}
+.product-group{--product-color:#fff;background:var(--product-color);color:var(--ink)}
 .product-group-sheet{padding-bottom:clamp(calc(32 * var(--wide-u)),3vw,calc(52 * var(--wide-u)))}
 .product-group-heading{min-height:clamp(calc(76 * var(--wide-u)),6.25vw,calc(120 * var(--wide-u)));padding-block:calc(18 * var(--wide-u));display:flex;align-items:center;justify-content:space-between;gap:calc(24 * var(--wide-u))}
 .product-group-heading h2{font-size:clamp(calc(22 * var(--wide-u)),2vw,calc(30 * var(--wide-u)))}
@@ -25,7 +25,8 @@
 .product-detail-gallery.is-dragging .product-detail-card{cursor:grabbing}
 .product-card-layer{position:absolute;overflow:hidden}
 .product-card-layer img{position:absolute;display:block;max-width:none;user-select:none;pointer-events:none}
-.product-group :focus-visible{outline-color:var(--cream)}
+:is(#products-cui,#products-zhi) .product-detail-card{background:#fff}
+.product-group :focus-visible{outline-color:var(--ink)}
 .products-page~.site-footer{min-height:0}
 @media(min-width:901px){
   :is(#products-cui,#products-zhi) .product-group-layout{grid-template-columns:minmax(0,1fr) clamp(calc(280 * var(--wide-u)),23vw,calc(360 * var(--wide-u)));margin-inline:0 var(--right)}

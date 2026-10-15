@@ -40,7 +40,7 @@ class Surface {
   setPointerCapture() {}
   hasPointerCapture() { return false; }
   emit(type, values = {}) {
-    const event = { target: { closest: () => null }, isPrimary: true, pointerType: 'touch', pointerId: 1, clientX: 200, clientY: 100, preventDefault() { this.prevented = true; }, stopImmediatePropagation() {}, ...values };
+    const event = { type, target: { closest: () => null }, isPrimary: true, pointerType: 'touch', pointerId: 1, button: 0, clientX: 200, clientY: 100, preventDefault() { this.prevented = true; }, stopImmediatePropagation() {}, ...values };
     this.listeners.get(type)?.forEach(callback => callback(event)); return event;
   }
 }
@@ -55,4 +55,36 @@ for (const callback of [...timers.values()]) callback(); advance(120);
 surface.emit('pointerdown'); const beforeVertical = input.position;
 surface.emit('pointermove', { clientX: 195, clientY: 180 }); assert.equal(input.position, beforeVertical, 'Vertical touch movement never starts a carousel drag');
 surface.emit('pointercancel'); cleanup(); motion.dispose(); rapid.dispose();
-console.log('PASS: exact-offset release, spring interruption, rapid retargeting, cyclic continuity, pointer tracking, wheel input and vertical scroll.');
+
+// A deliberate short gesture must work at both phone and 4K card widths.
+for (const cardWidth of [280, 1100]) {
+  const shortSurface = new Surface(), shortMotion = createCarouselMotion(() => {});
+  const stop = bindCarouselInput(shortSurface, shortMotion, () => cardWidth);
+  shortSurface.emit('pointerdown', { pointerType: 'mouse' }); now += 200;
+  shortSurface.emit('pointermove', { pointerType: 'mouse', clientX: 184 }); now += 140;
+  shortSurface.emit('pointerup', { pointerType: 'mouse', clientX: 184 }); advance(120);
+  assert.equal(shortMotion.position, 1, 'A slow 16px mouse swipe changes a product regardless of card width');
+  shortSurface.emit('pointerdown'); now += 200;
+  shortSurface.emit('pointermove', { clientX: 205 });
+  shortSurface.emit('lostpointercapture', { target: { closest: () => null } });
+  shortSurface.emit('pointermove', { clientX: 220 });
+  assert.equal(shortMotion.position, 1 - 20 / cardWidth, 'Transferring implicit touch capture from the card to the gallery does not end the gesture');
+  now += 140;
+  shortSurface.emit('pointerup', { clientX: 220 }); advance(120);
+  assert.equal(shortMotion.position, 0, 'A slow 20px touch swipe reverses immediately');
+  shortSurface.emit('wheel', { deltaX: 16, deltaY: 0 }); now += 140;
+  for (const callback of [...timers.values()]) callback(); advance(120);
+  assert.equal(shortMotion.position, 1, 'A short horizontal trackpad gesture changes one product');
+  shortSurface.emit('pointerdown'); shortSurface.emit('pointermove', { clientX: 202, clientY: 102 });
+  shortSurface.emit('pointerup', { clientX: 202, clientY: 102 }); advance(120);
+  assert.equal(shortMotion.position, 1, 'A 2px click tremor does not change the product');
+  stop();
+}
+const mirroredSurface = new Surface(), mirroredMotion = createCarouselMotion(() => {});
+const stopMirrored = bindCarouselInput(mirroredSurface, mirroredMotion, () => 600, () => -1);
+mirroredSurface.emit('pointerdown', { pointerType: 'mouse' }); now += 200;
+mirroredSurface.emit('pointermove', { pointerType: 'mouse', clientX: 216 }); now += 140;
+mirroredSurface.emit('pointerup', { pointerType: 'mouse', clientX: 216 }); advance(120);
+assert.equal(mirroredMotion.position, 1, 'Mirrored galleries respond to a short gesture in their visual direction');
+stopMirrored();
+console.log('PASS: exact-offset release, interruption, cyclic continuity, short mouse/touch/wheel gestures, click tremor, mirrored direction and native vertical scroll.');

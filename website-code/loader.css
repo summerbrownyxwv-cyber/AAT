@@ -43,8 +43,7 @@
   overflow: visible;
 }
 .loader-petals circle { fill: none; stroke: #aaa79e; stroke-width: .8; stroke-opacity: .65; vector-effect: non-scaling-stroke; opacity: var(--loader-item, 0); transform-box: fill-box; transform-origin: center; transform: scale(calc(.94 + .06 * var(--loader-item, 0))); }
-.loader-center { opacity: .1; }
-.loader-emblem { opacity: .8; }
+.loader-center, .loader-emblem { opacity: 0; }
 .loader-welcome { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
 .loader-seed { position: absolute; top: 50%; left: 50%; width: min(73svh, 58vw, calc(1000 * var(--wide-u))); aspect-ratio: 592 / 603; transform-origin: center; pointer-events: auto; }
 .loader-seed-orbit { width: 100%; height: 100%; overflow: visible; }
