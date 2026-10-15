@@ -1,0 +1,112 @@
+.planting-page :is(.pf-campus,.pf-technology,.pf-lines,.pf-capacity){color:#fff;background:#955f36;}
+.planting-page :is(.pf-campus,.pf-technology,.pf-capacity){border-radius:var(--radius);}
+.planting-page :is(.pf-technology,.pf-capacity){background:#8a8a32;}
+.planting-page :is(.pf-campus,.pf-technology,.pf-lines,.pf-capacity) :is(h2,h3){font-family:var(--display);font-weight:400;color:inherit;}
+.planting-page :is(.pf-campus,.pf-technology,.pf-lines,.pf-capacity) h2{font-size:clamp(calc(24 * var(--wide-u)),32 * var(--u),calc(43 * var(--wide-u)));line-height:1.4;}
+.planting-page :is(.pf-campus,.pf-technology,.pf-lines,.pf-capacity) h3,.planting-page .pf-technology .pf-small-heading{font-size:clamp(calc(18 * var(--wide-u)),20 * var(--u),calc(27 * var(--wide-u)));line-height:1.4;}
+.planting-page :is(.pf-campus,.pf-technology,.pf-lines,.pf-capacity) p{font:400 var(--body)/1.6875 var(--sans);text-align:left;}
+.planting-page .pf-shell{width:auto;max-width:none;margin-inline:var(--left) var(--right);}
+.planting-page .pf-media{margin:0;border-radius:var(--radius);overflow:hidden;contain:paint;}
+.planting-page .pf-media img{display:block;width:100%;height:100%;object-fit:cover;}
+.planting-page .pf-campus-inner{position:relative;width:var(--page-width);max-width:100%;margin-inline:auto;padding:calc(59 * var(--u)) calc(7 * var(--u)) calc(112 * var(--u)) calc(44 * var(--u));}
+.planting-page .pf-campus-aerial{position:absolute;left:calc(44 * var(--u));top:var(--campus-photo-top);width:min(47%,calc(var(--campus-photo-height) * .92));height:var(--campus-photo-height);}
+.planting-page .pf-campus-intro{width:calc(487 * var(--u));max-width:100%;margin:calc(67 * var(--u)) calc(103 * var(--u)) 0 auto;}
+.planting-page .pf-campus-intro>h3{text-align:right;}
+.planting-page .pf-campus-description{margin-top:calc(27 * var(--u));}
+.planting-page .pf-campus-description>p+p{margin-top:calc(27 * var(--u));}
+.planting-page .pf-campus-stats{margin-top:calc(82 * var(--u));}
+.planting-page .pf-stat-list{padding:0;margin-inline:0;margin-bottom:0;}
+.planting-page .pf-stat-list>div{display:flex;align-items:center;justify-content:space-between;gap:calc(16 * var(--wide-u));min-height:calc(52 * var(--u));padding:calc(3 * var(--wide-u)) calc(13 * var(--u));border-top:1px solid rgba(255,255,255,.55);}
+.planting-page .pf-stat-list>div:last-child{border-bottom:1px solid rgba(255,255,255,.55);}
+.planting-page .pf-stat-list dt{font:400 var(--body)/1.45 var(--display);}
+.planting-page .pf-stat-list dd{flex-shrink:0;margin:0;font:400 clamp(calc(23 * var(--wide-u)),35.172 * var(--u),calc(47 * var(--wide-u)))/1.2 var(--sans);font-variant-numeric:tabular-nums;white-space:nowrap;}
+.planting-page .pf-campus-stats>div{padding-left:calc(72 * var(--u));padding-right:0;}
+.planting-page .pf-campus-lower{display:grid;grid-template-columns:calc(585 * var(--u)) calc(676 * var(--u));justify-content:space-between;align-items:end;gap:calc(24 * var(--wide-u));margin-top:calc(82 * var(--u));}
+.planting-page .pf-extraction-stats{margin-top:0;}
+.planting-page .pf-campus-photo{aspect-ratio:676/456;}
+.planting-page .pf-campus-photo img{height:111.18%;margin-top:-3.77%;}
+.planting-page .pf-technology{padding-block:calc(54 * var(--u)) calc(116 * var(--u));}
+.planting-page .pf-technical-grid{display:grid;grid-template-columns:633fr 617fr;gap:calc(35 * var(--u));margin-top:calc(75 * var(--u));}
+.planting-page .pf-laboratory-photo{aspect-ratio:633/376.283;}
+.planting-page .pf-laboratory-photo img{height:126.21%;margin-top:-7.79%;}
+.planting-page .pf-aging-photo{aspect-ratio:617.175/727.95;}
+.planting-page .pf-laboratory>h3{margin-top:calc(27 * var(--u));}
+.planting-page .pf-laboratory>p{max-width:calc(487 * var(--u));margin-top:calc(12 * var(--u));}
+.planting-page .pf-aging>h3{margin-top:calc(75 * var(--u));text-align:right;}
+.planting-page .pf-aging>p{margin-top:calc(12 * var(--u));}
+.planting-page .pf-lines{padding-block:calc(133 * var(--u)) calc(105 * var(--u));}
+.planting-page .pf-line-grid{display:grid;grid-template-columns:635fr 614fr;gap:calc(36 * var(--u));align-items:start;}
+.planting-page .pf-moxa-photo{aspect-ratio:634.758/727.95;}
+.planting-page .pf-oil-photo{aspect-ratio:613.658/376.283;}
+.planting-page .pf-line-grid article>h3{margin-top:calc(51 * var(--u));}
+.planting-page .pf-essential-oil>h3{text-align:right;}
+.planting-page .pf-line-grid article>p{margin-top:calc(12 * var(--u));}
+.planting-page .pf-capacity-inner{width:var(--page-width);max-width:100%;margin-inline:auto;padding:calc(92 * var(--u)) calc(66 * var(--u)) calc(94 * var(--u)) calc(87 * var(--u));}
+.planting-page .pf-patch-photo{width:calc(941 * var(--u));max-width:100%;aspect-ratio:941/469;}
+.planting-page .pf-patch-photo img{height:173.79%;width:115.49%;max-width:none;margin-top:-12.08%;margin-left:-5.13%;}
+.planting-page .pf-patch-copy{width:calc(585 * var(--u));max-width:100%;margin-top:calc(38 * var(--u));}
+.planting-page .pf-patch-copy>.pf-stat-list{margin-top:calc(14 * var(--u));}
+.planting-page .pf-device{display:grid;grid-template-columns:minmax(0,718fr) minmax(0,517fr);justify-content:space-between;align-items:end;gap:calc(52 * var(--u));margin-top:calc(20 * var(--u));}
+.planting-page .pf-device-copy{width:calc(585 * var(--u));max-width:100%;justify-self:end;}
+.planting-page .pf-device-copy>h3{text-align:right;}
+.planting-page .pf-device-copy>.pf-stat-list{margin-top:calc(16 * var(--u));}
+.planting-page .pf-device-photo{aspect-ratio:517/469;}
+.planting-page .pf-device-photo img{width:120.95%;max-width:none;margin-left:-21.03%;}
+@media(max-width:1023px){
+  .planting-page .pf-campus-inner{padding:calc(48 * var(--wide-u)) calc(32 * var(--wide-u)) calc(64 * var(--wide-u));}
+  .planting-page .pf-campus-aerial{left:calc(32 * var(--wide-u));width:min(40%,calc(var(--campus-photo-height) * .92));}
+  .planting-page .pf-campus-intro{width:52%;margin:calc(48 * var(--wide-u)) 0 0 auto;}
+  .planting-page .pf-campus-stats{margin-top:calc(40 * var(--wide-u));}
+  .planting-page .pf-campus-stats>div{padding-left:0;}
+  .planting-page .pf-campus-lower{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:calc(32 * var(--wide-u));margin-top:calc(48 * var(--wide-u));}
+  .planting-page .pf-extraction-stats>div:first-child{align-items:flex-start;}
+  .planting-page .pf-stat-list>div{min-height:calc(48 * var(--wide-u));padding:calc(7 * var(--wide-u)) 0;}
+  .planting-page .pf-stat-list dt{font-size:calc(14 * var(--wide-u));}
+  .planting-page .pf-stat-list dd{font-size:clamp(calc(23 * var(--wide-u)),3vw,calc(30 * var(--wide-u)));}
+  .planting-page .pf-technology{padding-block:calc(48 * var(--wide-u)) calc(64 * var(--wide-u));}
+  .planting-page .pf-technical-grid{margin-top:calc(40 * var(--wide-u));gap:calc(24 * var(--wide-u));}
+  .planting-page .pf-laboratory>p{max-width:none;}
+  .planting-page .pf-aging>h3{margin-top:calc(36 * var(--wide-u));}
+  .planting-page .pf-lines{padding-block:calc(64 * var(--wide-u));}
+  .planting-page .pf-line-grid{gap:calc(24 * var(--wide-u));}
+  .planting-page .pf-line-grid article>h3{margin-top:calc(28 * var(--wide-u));}
+  .planting-page .pf-capacity-inner{padding:calc(64 * var(--wide-u)) calc(32 * var(--wide-u));}
+  .planting-page .pf-patch-photo{width:80%;}
+  .planting-page .pf-patch-copy{width:52%;margin-top:calc(28 * var(--wide-u));}
+  .planting-page .pf-device{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:calc(32 * var(--wide-u));margin-top:calc(48 * var(--wide-u));}
+  .planting-page .pf-device-copy{width:100%;}
+}
+@media(max-width:767px){
+  .planting-page :is(.pf-campus,.pf-technology,.pf-capacity){border-radius:calc(20 * var(--wide-u));}
+  .planting-page .pf-campus-inner,.planting-page .pf-capacity-inner{padding:calc(40 * var(--wide-u)) calc(20 * var(--wide-u)) calc(48 * var(--wide-u));}
+  .planting-page .pf-campus-aerial{position:relative;left:auto;top:auto;width:100%;height:auto;aspect-ratio:4/5;margin-top:calc(36 * var(--wide-u));}
+  .planting-page .pf-campus-intro{width:100%;margin-top:calc(36 * var(--wide-u));}
+  .planting-page .pf-campus-intro>h3,.planting-page .pf-aging>h3,.planting-page .pf-essential-oil>h3,.planting-page .pf-device-copy>h3{text-align:left;}
+  .planting-page .pf-campus-description{margin-top:calc(16 * var(--wide-u));}
+  .planting-page .pf-campus-description>p+p{margin-top:calc(16 * var(--wide-u));}
+  .planting-page .pf-campus-stats{margin-top:calc(28 * var(--wide-u));}
+  .planting-page .pf-campus-lower{grid-template-columns:1fr;margin-top:calc(32 * var(--wide-u));gap:calc(24 * var(--wide-u));}
+  .planting-page .pf-campus-photo{grid-row:1;}
+  .planting-page .pf-stat-list dd{font-size:clamp(calc(23 * var(--wide-u)),6vw,calc(29 * var(--wide-u)));}
+  .planting-page .pf-technology{padding-block:calc(40 * var(--wide-u)) calc(48 * var(--wide-u));}
+  .planting-page .pf-technical-grid,.planting-page .pf-line-grid{grid-template-columns:1fr;gap:calc(40 * var(--wide-u));}
+  .planting-page .pf-technical-grid{margin-top:calc(28 * var(--wide-u));}
+  .planting-page .pf-aging-photo{aspect-ratio:617/650;}
+  .planting-page .pf-laboratory>h3,.planting-page .pf-aging>h3,.planting-page .pf-line-grid article>h3{margin-top:calc(24 * var(--wide-u));}
+  .planting-page .pf-lines{padding-block:calc(48 * var(--wide-u));}
+  .planting-page .pf-patch-photo,.planting-page .pf-patch-copy{width:100%;}
+  .planting-page .pf-device{grid-template-columns:1fr;gap:calc(24 * var(--wide-u));margin-top:calc(40 * var(--wide-u));}
+  .planting-page .pf-device-photo{grid-row:1;}
+  .planting-page .pf-device-copy{justify-self:start;}
+}
+@media(prefers-reduced-motion:reduce){
+  .planting-page :is(.pf-campus,.pf-technology,.pf-lines,.pf-capacity) .content-reveal-media,.planting-page :is(.pf-campus,.pf-technology,.pf-lines,.pf-capacity) .content-reveal-copy{opacity:1;clip-path:none;filter:none;transform:none;transition:none;}
+}
+
+@media(min-width:1024px){
+ .planting-page .pf-campus-inner{padding-inline:var(--left) var(--right)}
+ .planting-page .pf-campus-aerial{left:var(--left)}
+ .planting-page .pf-campus-intro{margin-right:0}
+ .planting-page .pf-capacity-inner{padding-inline:var(--left) var(--right)}
+ .planting-page :is(.pf-campus-description,.pf-aging,.pf-essential-oil,.pf-device-copy) p{text-align:right}
+}

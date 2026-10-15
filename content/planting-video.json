@@ -1,0 +1,54 @@
+{
+  "video": "assets/planting/planting-hero.mp4",
+  "checkedOn": "2026-10-15",
+  "originalSourceBytes": 541502381,
+  "compressionInputBytes": 393198877,
+  "outputBytes": 91317434,
+  "limitBytes": 100000000,
+  "reductionFromOriginalPercent": 83.136,
+  "reductionFromInputPercent": 76.776,
+  "originalSourceSha256": "4ec295d7187042cab6e4d8bf2a4b934d42a95ea0866768582cee42824f8ed445",
+  "compressionInputSha256": "ae4ffa6848d7993cfadadd904f61826dc82622334a100c26c34f139ce923a4e2",
+  "outputSha256": "5be5dc0c8635f1f42b097ffa35fcd5006e7dbac5c31bef214912624ca513dbdf",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "framesPerSecond": 30,
+  "frameCount": 8753,
+  "durationSeconds": 291.76666666666665,
+  "codec": "H.264 High",
+  "pixelFormat": "yuv420p",
+  "colorSpace": "BT.709 limited range",
+  "audio": "No audio in input or output",
+  "fastStart": true,
+  "qualityMode": "Lossy H.264 encoding to meet the 100 MB limit; dense foliage texture is softer than the larger input. Not lossless.",
+  "encoding": {
+    "encoder": "libx264",
+    "preset": "slow",
+    "targetBitrate": 2500000,
+    "passes": 2
+  },
+  "verification": {
+    "fullDecodeErrors": 0,
+    "framesDuplicated": 0,
+    "framesDropped": 0,
+    "ssimAllFrames": 0.973711,
+    "vmafFfmpegSummary": 88.849294,
+    "vmafMeanSampledFrames": 87.068529,
+    "vmafSampling": "Every fifth frame across the entire video; reference is the previous 393 MB high-fidelity version",
+    "vmafSampledFrames": 1751,
+    "visualCheck": "Native-resolution foliage crop compared with an original frame; texture softening is visible",
+    "browserPlayback": {
+      "readyState": 4,
+      "paused": false,
+      "error": 0,
+      "width": 1920,
+      "height": 1080,
+      "durationSeconds": 291.766667,
+      "loop": true,
+      "muted": true,
+      "controls": false
+    }
+  }
+}

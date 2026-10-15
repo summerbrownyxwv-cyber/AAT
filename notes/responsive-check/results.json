@@ -1,0 +1,1750 @@
+{
+  "date": "2026-10-15",
+  "scope": "AAT current version; actual CSS viewport; local in-app browser emulation",
+  "layouts": [
+    {
+      "broken": [],
+      "cover": [
+        {
+          "h": 663,
+          "id": "",
+          "pin": false,
+          "top": "0px",
+          "width": 320
+        },
+        {
+          "h": 644,
+          "id": "value",
+          "pin": false,
+          "top": "0px",
+          "width": 320
+        },
+        {
+          "h": 743,
+          "id": "ai-capabilities",
+          "pin": false,
+          "top": "0px",
+          "width": 320
+        },
+        {
+          "h": 634,
+          "id": "ai-evidence",
+          "pin": false,
+          "top": "0px",
+          "width": 320
+        },
+        {
+          "h": 1047,
+          "id": "how-it-works",
+          "pin": false,
+          "top": "0px",
+          "width": 320
+        },
+        {
+          "h": 737,
+          "id": "ai-reports",
+          "pin": false,
+          "top": "0px",
+          "width": 320
+        },
+        {
+          "h": 657,
+          "id": "scenarios",
+          "pin": false,
+          "top": "0px",
+          "width": 320
+        }
+      ],
+      "h": 568,
+      "overflow": 0,
+      "page": "ai.html",
+      "videos": [
+        {
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 320
+    },
+    {
+      "broken": [],
+      "cover": [
+        {
+          "h": 780,
+          "id": "",
+          "pin": true,
+          "top": "64px",
+          "width": 390
+        },
+        {
+          "h": 780,
+          "id": "value",
+          "pin": true,
+          "top": "64px",
+          "width": 390
+        },
+        {
+          "h": 780,
+          "id": "ai-capabilities",
+          "pin": true,
+          "top": "64px",
+          "width": 390
+        },
+        {
+          "h": 780,
+          "id": "ai-evidence",
+          "pin": true,
+          "top": "64px",
+          "width": 390
+        },
+        {
+          "h": 967,
+          "id": "how-it-works",
+          "pin": false,
+          "top": "0px",
+          "width": 390
+        },
+        {
+          "h": 849,
+          "id": "ai-reports",
+          "pin": false,
+          "top": "0px",
+          "width": 390
+        },
+        {
+          "h": 780,
+          "id": "scenarios",
+          "pin": true,
+          "top": "64px",
+          "width": 390
+        }
+      ],
+      "h": 844,
+      "overflow": 0,
+      "page": "ai.html",
+      "videos": [
+        {
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 390
+    },
+    {
+      "broken": [],
+      "cover": [
+        {
+          "h": 960,
+          "id": "",
+          "pin": true,
+          "top": "64px",
+          "width": 768
+        },
+        {
+          "h": 960,
+          "id": "value",
+          "pin": true,
+          "top": "64px",
+          "width": 768
+        },
+        {
+          "h": 960,
+          "id": "ai-capabilities",
+          "pin": true,
+          "top": "64px",
+          "width": 768
+        },
+        {
+          "h": 960,
+          "id": "ai-evidence",
+          "pin": true,
+          "top": "64px",
+          "width": 768
+        },
+        {
+          "h": 1273,
+          "id": "how-it-works",
+          "pin": false,
+          "top": "0px",
+          "width": 768
+        },
+        {
+          "h": 960,
+          "id": "ai-reports",
+          "pin": true,
+          "top": "64px",
+          "width": 768
+        },
+        {
+          "h": 1543,
+          "id": "scenarios",
+          "pin": false,
+          "top": "0px",
+          "width": 768
+        }
+      ],
+      "h": 1024,
+      "overflow": 0,
+      "page": "ai.html",
+      "videos": [
+        {
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 768
+    },
+    {
+      "broken": [],
+      "cover": [
+        {
+          "h": 928,
+          "id": "",
+          "pin": false,
+          "top": "0px",
+          "width": 844
+        },
+        {
+          "h": 802,
+          "id": "value",
+          "pin": false,
+          "top": "0px",
+          "width": 844
+        },
+        {
+          "h": 742,
+          "id": "ai-capabilities",
+          "pin": false,
+          "top": "0px",
+          "width": 844
+        },
+        {
+          "h": 912,
+          "id": "ai-evidence",
+          "pin": false,
+          "top": "0px",
+          "width": 844
+        },
+        {
+          "h": 1325,
+          "id": "how-it-works",
+          "pin": false,
+          "top": "0px",
+          "width": 844
+        },
+        {
+          "h": 714,
+          "id": "ai-reports",
+          "pin": false,
+          "top": "0px",
+          "width": 844
+        },
+        {
+          "h": 1647,
+          "id": "scenarios",
+          "pin": false,
+          "top": "0px",
+          "width": 844
+        }
+      ],
+      "h": 500,
+      "overflow": 0,
+      "page": "ai.html",
+      "videos": [
+        {
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 844
+    },
+    {
+      "broken": [],
+      "cover": [
+        {
+          "h": 696,
+          "id": "",
+          "pin": true,
+          "top": "72px",
+          "width": 1024
+        },
+        {
+          "h": 696,
+          "id": "value",
+          "pin": true,
+          "top": "72px",
+          "width": 1024
+        },
+        {
+          "h": 696,
+          "id": "ai-capabilities",
+          "pin": true,
+          "top": "72px",
+          "width": 1024
+        },
+        {
+          "h": 996,
+          "id": "ai-evidence",
+          "pin": true,
+          "top": "-228px",
+          "width": 1024
+        },
+        {
+          "h": 850,
+          "id": "how-it-works",
+          "pin": true,
+          "top": "-82px",
+          "width": 1024
+        },
+        {
+          "h": 980,
+          "id": "ai-reports",
+          "pin": true,
+          "top": "-212px",
+          "width": 1024
+        },
+        {
+          "h": 906,
+          "id": "scenarios",
+          "pin": true,
+          "top": "-138px",
+          "width": 1024
+        }
+      ],
+      "h": 768,
+      "overflow": 0,
+      "page": "ai.html",
+      "videos": [
+        {
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 1024
+    },
+    {
+      "broken": [],
+      "cover": [
+        {
+          "h": 851,
+          "id": "",
+          "pin": true,
+          "top": "-41px",
+          "width": 1440
+        },
+        {
+          "h": 738,
+          "id": "value",
+          "pin": true,
+          "top": "72px",
+          "width": 1440
+        },
+        {
+          "h": 738,
+          "id": "ai-capabilities",
+          "pin": true,
+          "top": "72px",
+          "width": 1440
+        },
+        {
+          "h": 1014,
+          "id": "ai-evidence",
+          "pin": true,
+          "top": "-204px",
+          "width": 1440
+        },
+        {
+          "h": 1049,
+          "id": "how-it-works",
+          "pin": true,
+          "top": "-239px",
+          "width": 1440
+        },
+        {
+          "h": 1228,
+          "id": "ai-reports",
+          "pin": true,
+          "top": "-418px",
+          "width": 1440
+        },
+        {
+          "h": 879,
+          "id": "scenarios",
+          "pin": true,
+          "top": "-69px",
+          "width": 1440
+        }
+      ],
+      "h": 810,
+      "overflow": 0,
+      "page": "ai.html",
+      "videos": [
+        {
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 1440
+    },
+    {
+      "broken": [],
+      "cover": [
+        {
+          "h": 1235,
+          "id": "",
+          "pin": true,
+          "top": "98.5px",
+          "width": 1970
+        },
+        {
+          "h": 1235,
+          "id": "value",
+          "pin": true,
+          "top": "98.5px",
+          "width": 1970
+        },
+        {
+          "h": 1235,
+          "id": "ai-capabilities",
+          "pin": true,
+          "top": "98.5px",
+          "width": 1970
+        },
+        {
+          "h": 1387,
+          "id": "ai-evidence",
+          "pin": true,
+          "top": "-54px",
+          "width": 1970
+        },
+        {
+          "h": 1435,
+          "id": "how-it-works",
+          "pin": true,
+          "top": "-102px",
+          "width": 1970
+        },
+        {
+          "h": 1672,
+          "id": "ai-reports",
+          "pin": true,
+          "top": "-339px",
+          "width": 1970
+        },
+        {
+          "h": 1235,
+          "id": "scenarios",
+          "pin": true,
+          "top": "98.5px",
+          "width": 1970
+        }
+      ],
+      "h": 1333,
+      "overflow": 0,
+      "page": "ai.html",
+      "videos": [
+        {
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 1970
+    },
+    {
+      "broken": [],
+      "cover": [
+        {
+          "h": 1512,
+          "id": "",
+          "pin": true,
+          "top": "-72px",
+          "width": 2560
+        },
+        {
+          "h": 1312,
+          "id": "value",
+          "pin": true,
+          "top": "128px",
+          "width": 2560
+        },
+        {
+          "h": 1312,
+          "id": "ai-capabilities",
+          "pin": true,
+          "top": "128px",
+          "width": 2560
+        },
+        {
+          "h": 1802,
+          "id": "ai-evidence",
+          "pin": true,
+          "top": "-362px",
+          "width": 2560
+        },
+        {
+          "h": 1865,
+          "id": "how-it-works",
+          "pin": true,
+          "top": "-425px",
+          "width": 2560
+        },
+        {
+          "h": 2167,
+          "id": "ai-reports",
+          "pin": true,
+          "top": "-727px",
+          "width": 2560
+        },
+        {
+          "h": 1562,
+          "id": "scenarios",
+          "pin": true,
+          "top": "-122px",
+          "width": 2560
+        }
+      ],
+      "h": 1440,
+      "overflow": 0,
+      "page": "ai.html",
+      "videos": [
+        {
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 2560
+    },
+    {
+      "broken": [],
+      "cover": [
+        {
+          "h": 2268,
+          "id": "",
+          "pin": true,
+          "top": "-108px",
+          "width": 3840
+        },
+        {
+          "h": 1968,
+          "id": "value",
+          "pin": true,
+          "top": "192px",
+          "width": 3840
+        },
+        {
+          "h": 1968,
+          "id": "ai-capabilities",
+          "pin": true,
+          "top": "192px",
+          "width": 3840
+        },
+        {
+          "h": 2701,
+          "id": "ai-evidence",
+          "pin": true,
+          "top": "-541px",
+          "width": 3840
+        },
+        {
+          "h": 2798,
+          "id": "how-it-works",
+          "pin": true,
+          "top": "-638px",
+          "width": 3840
+        },
+        {
+          "h": 3240,
+          "id": "ai-reports",
+          "pin": true,
+          "top": "-1080px",
+          "width": 3840
+        },
+        {
+          "h": 2343,
+          "id": "scenarios",
+          "pin": true,
+          "top": "-183px",
+          "width": 3840
+        }
+      ],
+      "h": 2160,
+      "overflow": 0,
+      "page": "ai.html",
+      "videos": [
+        {
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 3840
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 568,
+      "overflow": 0,
+      "page": "index.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 320
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 844,
+      "overflow": 0,
+      "page": "index.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 390
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 1024,
+      "overflow": 0,
+      "page": "index.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 768
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 500,
+      "overflow": 0,
+      "page": "index.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 844
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 768,
+      "overflow": 0,
+      "page": "index.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 1024
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 810,
+      "overflow": 0,
+      "page": "index.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 1440
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 1333,
+      "overflow": 0,
+      "page": "index.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 1970
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 1440,
+      "overflow": 0,
+      "page": "index.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 2560
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 2160,
+      "overflow": 0,
+      "page": "index.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 3840
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 568,
+      "overflow": 0,
+      "page": "company.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 320
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 844,
+      "overflow": 0,
+      "page": "company.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 390
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 1024,
+      "overflow": 0,
+      "page": "company.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 768
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 500,
+      "overflow": 0,
+      "page": "company.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 844
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 768,
+      "overflow": 0,
+      "page": "company.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 1024
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 810,
+      "overflow": 0,
+      "page": "company.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 1440
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 1333,
+      "overflow": 0,
+      "page": "company.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 1970
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 1440,
+      "overflow": 0,
+      "page": "company.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 2560
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 2160,
+      "overflow": 0,
+      "page": "company.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 3840
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 568,
+      "overflow": 0,
+      "page": "planting.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        },
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 320
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 844,
+      "overflow": 0,
+      "page": "planting.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        },
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 390
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 1024,
+      "overflow": 0,
+      "page": "planting.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        },
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 768
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 500,
+      "overflow": 0,
+      "page": "planting.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        },
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 844
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 768,
+      "overflow": 0,
+      "page": "planting.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        },
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 1024
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 810,
+      "overflow": 0,
+      "page": "planting.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        },
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 1440
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 1333,
+      "overflow": 0,
+      "page": "planting.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        },
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 1970
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 1440,
+      "overflow": 0,
+      "page": "planting.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        },
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 2560
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 2160,
+      "overflow": 0,
+      "page": "planting.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        },
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 3840
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 568,
+      "overflow": 0,
+      "page": "products.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 320
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 844,
+      "overflow": 0,
+      "page": "products.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 390
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 1024,
+      "overflow": 0,
+      "page": "products.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 768
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 500,
+      "overflow": 0,
+      "page": "products.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 844
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 768,
+      "overflow": 0,
+      "page": "products.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 1024
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 810,
+      "overflow": 0,
+      "page": "products.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 1440
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 1333,
+      "overflow": 0,
+      "page": "products.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 1970
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 1440,
+      "overflow": 0,
+      "page": "products.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 2560
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 2160,
+      "overflow": 0,
+      "page": "products.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 3840
+    },
+    {
+      "broken": [],
+      "cover": [
+        {
+          "h": 504,
+          "id": "",
+          "pin": true,
+          "top": "64px",
+          "width": 280
+        },
+        {
+          "h": 504,
+          "id": "",
+          "pin": true,
+          "top": "64px",
+          "width": 280
+        }
+      ],
+      "h": 568,
+      "overflow": 0,
+      "page": "service.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 320
+    },
+    {
+      "broken": [],
+      "cover": [
+        {
+          "h": 780,
+          "id": "",
+          "pin": true,
+          "top": "64px",
+          "width": 350
+        },
+        {
+          "h": 780,
+          "id": "",
+          "pin": true,
+          "top": "64px",
+          "width": 350
+        }
+      ],
+      "h": 844,
+      "overflow": 0,
+      "page": "service.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 390
+    },
+    {
+      "broken": [],
+      "cover": [
+        {
+          "h": 960,
+          "id": "",
+          "pin": true,
+          "top": "64px",
+          "width": 720
+        },
+        {
+          "h": 960,
+          "id": "",
+          "pin": true,
+          "top": "64px",
+          "width": 720
+        }
+      ],
+      "h": 1024,
+      "overflow": 0,
+      "page": "service.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 768
+    },
+    {
+      "broken": [],
+      "cover": [
+        {
+          "h": 629,
+          "id": "",
+          "pin": false,
+          "top": "0px",
+          "width": 796
+        },
+        {
+          "h": 564,
+          "id": "",
+          "pin": false,
+          "top": "0px",
+          "width": 796
+        }
+      ],
+      "h": 500,
+      "overflow": 0,
+      "page": "service.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 844
+    },
+    {
+      "broken": [],
+      "cover": [
+        {
+          "h": 715,
+          "id": "",
+          "pin": true,
+          "top": "53px",
+          "width": 932
+        },
+        {
+          "h": 826,
+          "id": "",
+          "pin": true,
+          "top": "-58px",
+          "width": 932
+        }
+      ],
+      "h": 768,
+      "overflow": 0,
+      "page": "service.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 1024
+    },
+    {
+      "broken": [],
+      "cover": [
+        {
+          "h": 738,
+          "id": "",
+          "pin": true,
+          "top": "72px",
+          "width": 1285
+        },
+        {
+          "h": 738,
+          "id": "",
+          "pin": true,
+          "top": "72px",
+          "width": 1285
+        }
+      ],
+      "h": 810,
+      "overflow": 0,
+      "page": "service.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 1440
+    },
+    {
+      "broken": [],
+      "cover": [
+        {
+          "h": 1235,
+          "id": "",
+          "pin": true,
+          "top": "98.5px",
+          "width": 1758
+        },
+        {
+          "h": 1235,
+          "id": "",
+          "pin": true,
+          "top": "98.5px",
+          "width": 1758
+        }
+      ],
+      "h": 1333,
+      "overflow": 0,
+      "page": "service.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 1970
+    },
+    {
+      "broken": [],
+      "cover": [
+        {
+          "h": 1312,
+          "id": "",
+          "pin": true,
+          "top": "128px",
+          "width": 2284
+        },
+        {
+          "h": 1312,
+          "id": "",
+          "pin": true,
+          "top": "128px",
+          "width": 2284
+        }
+      ],
+      "h": 1440,
+      "overflow": 0,
+      "page": "service.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 2560
+    },
+    {
+      "broken": [],
+      "cover": [
+        {
+          "h": 1968,
+          "id": "",
+          "pin": true,
+          "top": "192px",
+          "width": 3427
+        },
+        {
+          "h": 1968,
+          "id": "",
+          "pin": true,
+          "top": "192px",
+          "width": 3427
+        }
+      ],
+      "h": 2160,
+      "overflow": 0,
+      "page": "service.html",
+      "videos": [
+        {
+          "autoplay": true,
+          "controls": false,
+          "error": 0,
+          "loop": true,
+          "muted": true
+        }
+      ],
+      "w": 3840
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 568,
+      "overflow": 0,
+      "page": "contact.html",
+      "videos": [],
+      "w": 320
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 844,
+      "overflow": 0,
+      "page": "contact.html",
+      "videos": [],
+      "w": 390
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 1024,
+      "overflow": 0,
+      "page": "contact.html",
+      "videos": [],
+      "w": 768
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 500,
+      "overflow": 0,
+      "page": "contact.html",
+      "videos": [],
+      "w": 844
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 768,
+      "overflow": 0,
+      "page": "contact.html",
+      "videos": [],
+      "w": 1024
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 810,
+      "overflow": 0,
+      "page": "contact.html",
+      "videos": [],
+      "w": 1440
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 1333,
+      "overflow": 0,
+      "page": "contact.html",
+      "videos": [],
+      "w": 1970
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 1440,
+      "overflow": 0,
+      "page": "contact.html",
+      "videos": [],
+      "w": 2560
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 2160,
+      "overflow": 0,
+      "page": "contact.html",
+      "videos": [],
+      "w": 3840
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 568,
+      "overflow": 0,
+      "page": "contact.html",
+      "videos": [],
+      "w": 320
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 844,
+      "overflow": 0,
+      "page": "contact.html",
+      "videos": [],
+      "w": 390
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 1024,
+      "overflow": 0,
+      "page": "contact.html",
+      "videos": [],
+      "w": 768
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 500,
+      "overflow": 0,
+      "page": "contact.html",
+      "videos": [],
+      "w": 844
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 768,
+      "overflow": 0,
+      "page": "contact.html",
+      "videos": [],
+      "w": 1024
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 810,
+      "overflow": 0,
+      "page": "contact.html",
+      "videos": [],
+      "w": 1440
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 1333,
+      "overflow": 0,
+      "page": "contact.html",
+      "videos": [],
+      "w": 1970
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 1440,
+      "overflow": 0,
+      "page": "contact.html",
+      "videos": [],
+      "w": 2560
+    },
+    {
+      "broken": [],
+      "cover": [],
+      "h": 2160,
+      "overflow": 0,
+      "page": "contact.html",
+      "videos": [],
+      "w": 3840
+    }
+  ],
+  "summary": {
+    "pages": 8,
+    "viewportSizes": 9,
+    "layoutChecks": 72,
+    "horizontalOverflowFailures": 0,
+    "loadedBrokenImages": 0,
+    "physicalDevicesTested": false
+  },
+  "interactionChecks": [
+    "Desktop pointer drag and rapid reversal",
+    "Detail carousel arrows and cyclic product index",
+    "AI long chapter down and reverse scroll",
+    "Store comparison upward covering",
+    "Business click toggle",
+    "History year positioning and clear text",
+    "OEM disclosure opens",
+    "Closed cooperation and loader circles; no mouse cue"
+  ],
+  "plantingVideoCheck": {
+    "record": "content/planting-video.json",
+    "outputBytes": 91317434,
+    "under100MB": true,
+    "browserPlaybackPassed": true,
+    "fullDecodePassed": true
+  }
+}
