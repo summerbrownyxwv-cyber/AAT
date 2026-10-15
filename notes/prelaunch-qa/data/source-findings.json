@@ -1,0 +1,756 @@
+{
+  "date": "2026-10-15",
+  "timezone": "Asia/Shanghai",
+  "phase": "第一轮只审查，运行中的网站文件保持不变。",
+  "repository": "/Users/dabao/Desktop/艾艾贴官网-首页交付/AAT",
+  "branch": "qa/prelaunch-20261015-phase01",
+  "baseline_commit": "48886fa39b059a88e01bc75ab99dba7acc935db8",
+  "method": "源码、既有说明文档、本地HTTP HEAD与现有完整性检查；本子任务未控制浏览器。",
+  "route_inventory": {
+    "entries": [
+      "/website-code/index.html",
+      "/website-code/company.html",
+      "/website-code/planting.html",
+      "/website-code/products.html",
+      "/website-code/service.html",
+      "/website-code/ai.html",
+      "/website-code/contact.html",
+      "/website-code/franchise.html"
+    ],
+    "service_hash_routes": [
+      "/stores/standard",
+      "/stores/black-gold",
+      "/stores/services",
+      "/stores/standard/detail",
+      "/stores/black-gold/detail",
+      "/franchise"
+    ],
+    "contact_hash_routes": [
+      "/about/culture",
+      "/about/news",
+      "/about/join",
+      "/about/careers",
+      "/about/business",
+      "/about/overseas",
+      "/franchise/apply",
+      "/production/apply"
+    ],
+    "anchor_examples": {
+      "index": [
+        "hero-story",
+        "company",
+        "planting",
+        "collections",
+        "service",
+        "ai",
+        "contact"
+      ],
+      "company": [
+        "business",
+        "products",
+        "stores",
+        "history",
+        "honors",
+        "honor-authority",
+        "honor-certificates",
+        "honor-responsibility"
+      ],
+      "planting": [
+        "land",
+        "greenhouse",
+        "research",
+        "traits",
+        "composition",
+        "management",
+        "factory",
+        "extraction-lines",
+        "production-technology",
+        "production-capacity"
+      ],
+      "products": [
+        "products-hero",
+        "products-intro",
+        "products-series",
+        "product-catalog",
+        "products-ran",
+        "products-cui",
+        "products-wen",
+        "products-zhi",
+        "manufacturing",
+        "cooperation-services",
+        "cooperation-quality"
+      ],
+      "service": [
+        "locations",
+        "types",
+        "services"
+      ],
+      "ai": [
+        "value",
+        "how-it-works",
+        "experience",
+        "ai-capabilities",
+        "ai-evidence",
+        "ai-reports",
+        "scenarios"
+      ]
+    },
+    "aliases": [
+      "/ -> /website-code/index.html",
+      "/{entry}.html -> /website-code/{entry}.html via preview302; build-generated JSredirects",
+      "franchise.html#/franchise -> service.html#/franchise; other franchisehash -> contact.html#/franchise/apply"
+    ],
+    "evidence": [
+      "website-code/transplanted.js:5-6,37-40",
+      "website-code/franchise-redirect.js:1-3",
+      "content/site-map.md",
+      "website-code/scripts/serve.mjs:10,15-17"
+    ]
+  },
+  "metadata_inventory": [
+    {
+      "route": "/website-code/index.html",
+      "title": "艾艾贴 · 从一株艾草到健康生活",
+      "description_present": true,
+      "favicon_present": true,
+      "canonical_present": false,
+      "og_present": false,
+      "twitter_present": false,
+      "dynamic_empty_main": false
+    },
+    {
+      "route": "/website-code/company.html",
+      "title": "企业介绍 · 艾艾贴",
+      "description_present": true,
+      "favicon_present": true,
+      "canonical_present": false,
+      "og_present": false,
+      "twitter_present": false,
+      "dynamic_empty_main": false
+    },
+    {
+      "route": "/website-code/planting.html",
+      "title": "种植生产 · 艾艾贴",
+      "description_present": true,
+      "favicon_present": true,
+      "canonical_present": false,
+      "og_present": false,
+      "twitter_present": false,
+      "dynamic_empty_main": false
+    },
+    {
+      "route": "/website-code/products.html",
+      "title": "自研产品 · 艾艾贴",
+      "description_present": true,
+      "favicon_present": true,
+      "canonical_present": false,
+      "og_present": false,
+      "twitter_present": false,
+      "dynamic_empty_main": true
+    },
+    {
+      "route": "/website-code/service.html",
+      "title": "终端服务 · 艾艾贴",
+      "description_present": true,
+      "favicon_present": true,
+      "canonical_present": false,
+      "og_present": false,
+      "twitter_present": false,
+      "dynamic_empty_main": true
+    },
+    {
+      "route": "/website-code/ai.html",
+      "title": "AI中医师 · 艾艾贴",
+      "description_present": true,
+      "favicon_present": true,
+      "canonical_present": false,
+      "og_present": false,
+      "twitter_present": false,
+      "dynamic_empty_main": true
+    },
+    {
+      "route": "/website-code/contact.html",
+      "title": "联系我们 · 艾艾贴",
+      "description_present": true,
+      "favicon_present": true,
+      "canonical_present": false,
+      "og_present": false,
+      "twitter_present": false,
+      "dynamic_empty_main": true
+    },
+    {
+      "route": "/website-code/franchise.html",
+      "title": "加盟合作 · 艾艾贴",
+      "description_present": false,
+      "favicon_present": false,
+      "canonical_present": false,
+      "og_present": false,
+      "twitter_present": false,
+      "dynamic_empty_main": false
+    }
+  ],
+  "application_comment_scan": {
+    "files": 62,
+    "comment_lines": 51,
+    "formal_protection_or_ownTODO_markers": [],
+    "comments": [
+      {
+        "file": "website-code/company-brand.css",
+        "line": 1,
+        "text": "/* Aiaitie presentation layer for the imported XunAi brand sections. */"
+      },
+      {
+        "file": "website-code/company-honors.css",
+        "line": 1,
+        "text": "/* The selected list and expanded certificate determine the section height. */"
+      },
+      {
+        "file": "website-code/company.css",
+        "line": 8,
+        "text": "/* The commercial panel follows the reference site's cover-to-detail split. */"
+      },
+      {
+        "file": "website-code/company.css",
+        "line": 37,
+        "text": "/* Three natural-scroll chapters retain the reference's certificate disclosures. */"
+      },
+      {
+        "file": "website-code/company.css",
+        "line": 73,
+        "text": "/* Images share the homepage's fade, crop and focus timing; layouts stay still. */"
+      },
+      {
+        "file": "website-code/company.css",
+        "line": 79,
+        "text": "/* Figma 1144:65: one 1440 × 3539 coordinate system, scaled as a whole. */"
+      },
+      {
+        "file": "website-code/company.css",
+        "line": 132,
+        "text": "/* Repair the enterprise footer's inherited outer grid and oversized column. */"
+      },
+      {
+        "file": "website-code/company.css",
+        "line": 138,
+        "text": "/* Align the finer enterprise header with the same content shell. */"
+      },
+      {
+        "file": "website-code/planting-page.js",
+        "line": 44,
+        "text": "// Every story uses native scroll distance; no wheel interception or timed playback."
+      },
+      {
+        "file": "website-code/planting-page.js",
+        "line": 141,
+        "text": "// Let each covering sheet settle behind native scroll without moving the document."
+      },
+      {
+        "file": "website-code/product-scene.js",
+        "line": 13,
+        "text": "/**"
+      },
+      {
+        "file": "website-code/product-scene.js",
+        "line": 44,
+        "text": "// A feathered 110° light band follows the same yaw as the product."
+      },
+      {
+        "file": "website-code/products-cooperation.js",
+        "line": 6,
+        "text": "// The five circles and brand mark share the homepage loader geometry."
+      },
+      {
+        "file": "website-code/products-cooperation.js",
+        "line": 63,
+        "text": "// The following section covers the final viewport of the pinned intro in normal flow."
+      },
+      {
+        "file": "website-code/products-process-icons.js",
+        "line": 3,
+        "text": "// One outline per form keeps the illustrations clear at both overview and detail sizes."
+      },
+      {
+        "file": "website-code/site-experience.css",
+        "line": 10,
+        "text": "/* Keep the device graphic expressive; put the reading in a normal text column. */"
+      },
+      {
+        "file": "website-code/site-foundations.css",
+        "line": 1,
+        "text": "/* Generated from the existing homepage; edit its source rules, then run sync-site-chrome. */"
+      },
+      {
+        "file": "website-code/site-foundations.css",
+        "line": 17,
+        "text": "/* Keep imported page interiors at their original browser defaults; their scoped stylesheet follows. */"
+      },
+      {
+        "file": "website-code/site-foundations.css",
+        "line": 78,
+        "text": "/* Inner-page compatibility binds existing components to homepage foundations. */"
+      },
+      {
+        "file": "website-code/site-foundations.css",
+        "line": 97,
+        "text": "/* Desktop dimensions share the 1440px design scale; mobile keeps physical pixels. */"
+      },
+      {
+        "file": "website-code/styles.css",
+        "line": 302,
+        "text": "/* Desktop dimensions share the 1440px design scale; mobile keeps physical pixels. */"
+      },
+      {
+        "file": "website-code/xunai/about-page.js",
+        "line": 1,
+        "text": "/* Verified contact channels, role entry points and four original brand stories. */"
+      },
+      {
+        "file": "website-code/xunai/ai-orbit.js",
+        "line": 1,
+        "text": "/* Original Figma 489:753 vector positions, relative to its 617 × 599 canvas. */"
+      },
+      {
+        "file": "website-code/xunai/ai-page.js",
+        "line": 3,
+        "text": "/* Figma 482:15. Shared navigation, fonts and footer remain unchanged. */"
+      },
+      {
+        "file": "website-code/xunai/brand-figma.js",
+        "line": 1,
+        "text": "/* Brand overview reconstructed from Figma 216:286. Shared shell stays outside. */"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 1,
+        "text": "/* Source layer: design-system/tokens.css */"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 6,
+        "text": "/* Source layer: styles.css */"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 231,
+        "text": "/* Source layer: brand-refinement.css */"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 400,
+        "text": "/* Source layer: brand-page.css */"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 634,
+        "text": "/* Source layer: motion-refinement.css */"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 695,
+        "text": "/* Source layer: home-editorial.css */"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 813,
+        "text": "/* Source layer: stores-page.css */"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 1060,
+        "text": "/* Source layer: brand-figma.css */"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 1298,
+        "text": "/* Source layer: ai-page.css */"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 1478,
+        "text": "/* Source layer: about-page.css */"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 1589,
+        "text": "/* Source layer: franchise-page.css */"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 1801,
+        "text": "/* Source layer: store-tools.css */"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 1819,
+        "text": "/* Source layer: site-consistency.css */"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2111,
+        "text": "/* Source layer: mobile-responsive.css */"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2355,
+        "text": "/* Prepared enquiries stay on this page. */"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2378,
+        "text": "/* Restore the original culture image, staggered stories and three image-led entries. */"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2403,
+        "text": "/* Preserve the desktop composition as the shared 1440px design unit grows. */"
+      },
+      {
+        "file": "website-code/xunai/content.css",
+        "line": 2548,
+        "text": "/* Long desktop chapters scroll fully before their final viewport pins beneath the next sheet. */"
+      },
+      {
+        "file": "website-code/xunai/franchise-form.js",
+        "line": 1,
+        "text": "// This page prepares an enquiry locally; users contact the official channels themselves."
+      },
+      {
+        "file": "website-code/xunai/franchise-page.js",
+        "line": 1,
+        "text": "/* Figma 487:443. Original photographs and copy; shared navigation and form. */"
+      },
+      {
+        "file": "website-code/xunai/responsive-images.js",
+        "line": 1,
+        "text": "/* Current local responsive image catalog; historical entries are archived in notes. */"
+      },
+      {
+        "file": "website-code/xunai/store-tools.js",
+        "line": 1,
+        "text": "// Final review additions: local-only store search and complaint form."
+      },
+      {
+        "file": "website-code/xunai/store-tools.js",
+        "line": 8,
+        "text": "// Group the existing roster by city on every screen size."
+      },
+      {
+        "file": "website-code/xunai/stores-page.js",
+        "line": 3,
+        "text": "/* Figma 5:3; shared shell and brand fonts are retained. */"
+      },
+      {
+        "file": "website-code/xunai/stores-page.js",
+        "line": 44,
+        "text": "// User-supplied roster: retain source IDs; crossed-out rows 60 and 61 are excluded."
+      },
+      {
+        "file": "website-code/xunai/stores-page.js",
+        "line": 45,
+        "text": "// Public fields only. Do not infer addresses, opening status or staff contact details."
+      }
+    ],
+    "interpretation": "Implementation/source comments are not automatically human visual approvals. Third-party Three TODOs excluded."
+  },
+  "integrity_result": {
+    "check": "node website-code/scripts/check-package.mjs",
+    "result": "PASS",
+    "counts": {
+      "entry_pages": 8,
+      "resolved_references": 1167,
+      "products": 19,
+      "product_images": 40,
+      "original_verifiedWebP_sources": 566,
+      "newLosslessAlphaAssets": 20
+    },
+    "httpHEAD": {
+      "all8entries": 200,
+      "/robots.txt": 404,
+      "/sitemap.xml": 404,
+      "/website-code/404.html": 404,
+      "/website-code/not-a-real-page.html": 404
+    },
+    "scope_limit": "路径/像素校验不能证明全部动态状态、外链、实体设备兼容性或生产服务器响应正确。"
+  },
+  "findings": [
+    {
+      "id": "SRC-01",
+      "priority": "P1",
+      "status": "大屏比例策略存在新旧要求冲突，需人工决定",
+      "route": [
+        "all 7 content routes"
+      ],
+      "viewport": ">=1440, especially3840x2160",
+      "current_behavior": "桌面设计单位和根字号在1440以上线性放大，本轮要求4K不能无条件放大所有文字图片。",
+      "possible_cause_and_evidence": "styles.css:4定义--u:100vw/1440、--wide-u:max(1px,var(--u))；:303将根字号设为16*--u。site-foundations.css:5、98重复规则。历史用户请求及README明确等比例放大。",
+      "minimal_proposal": "第一轮保持源码；先确认哪些特殊构图保留等比，哪些阅读/导航元素需要上限，再按角色提出局部方案，比较1440/1920/2560/3840。",
+      "files": [
+        "website-code/styles.css:4,303",
+        "website-code/site-foundations.css:5,98",
+        "website-code/xunai/content.css:2403"
+      ],
+      "shared_impact": true,
+      "locked_design_impact": "A-02/A-03 and intentional large-scale compositions; global change prohibited without confirmed scope.",
+      "before_screenshots": [],
+      "after_screenshots": [],
+      "after_screenshot_reason": "第一轮仅审查，未授权修改网站，因此没有修改后截图。",
+      "test_result": "源码确定；实际字号及视觉影响需根任务的多视口证据。",
+      "needs_human_confirmation": true
+    },
+    {
+      "id": "SRC-02",
+      "priority": "P1",
+      "status": "源码与文档冲突已确认，上线处理待决定",
+      "route": [
+        "/website-code/service.html#locations"
+      ],
+      "viewport": "all",
+      "current_behavior": "服务页注入投诉预览入口，README却声称未配置查询/举报入口暂不展示；预览明确接收渠道待补充且不会发送。",
+      "possible_cause_and_evidence": "stores-page.js:169调用XunAiReview.mount；store-tools.js:5注入门店查询和投诉链接，:25加入待补充渠道弹窗，:27明确未发送/保存。",
+      "minimal_proposal": "保留代码；请用户选择投诉预览继续标示、只隐藏投诉入口，或下一轮接入批准渠道；真实本地门店搜索独立评审，不一并删除。",
+      "files": [
+        "README.md",
+        "website-code/xunai/stores-page.js:169",
+        "website-code/xunai/store-tools.js:5,25-27"
+      ],
+      "shared_impact": true,
+      "locked_design_impact": "Current service surface is frozen; user decision required before removing entry or changing flow.",
+      "before_screenshots": [],
+      "after_screenshots": [],
+      "after_screenshot_reason": "第一轮仅审查，未授权修改网站，因此没有修改后截图。",
+      "test_result": "源码确定有注入路径；弹窗交互证据由根任务浏览器记录补齐。",
+      "needs_human_confirmation": true
+    },
+    {
+      "id": "SRC-03",
+      "priority": "P1",
+      "status": "源码支持的生命周期风险，需浏览器复现",
+      "route": [
+        "/website-code/ai.html",
+        "/website-code/service.html",
+        "/website-code/contact.html"
+      ],
+      "viewport": "desktop/mobile navigation Back",
+      "current_behavior": "导入页面在pagehide无条件卸载交互，未判断BFCache保存，也没有pageshow重挂载。",
+      "possible_cause_and_evidence": "transplanted.js:54每次pagehide执行unmount/stopMotion；无pageshow处理。products-page.js:86及company.js:40、65则明确检查event.persisted。",
+      "minimal_proposal": "先真实执行离开及浏览器后退，记录pageshow.persisted并验证交互；若复现，仅沿既有模式保护BFCache或恢复挂载。",
+      "files": [
+        "website-code/transplanted.js:54",
+        "website-code/products-page.js:86",
+        "website-code/company.js:40,65"
+      ],
+      "shared_impact": true,
+      "locked_design_impact": "Pure lifecycle fix can preserve A-17/A-18/A-20 visuals; must check forms/scroll/state.",
+      "before_screenshots": [],
+      "after_screenshots": [],
+      "after_screenshot_reason": "第一轮仅审查，未授权修改网站，因此没有修改后截图。",
+      "test_result": "未声称已经观察到故障；需真实BFCache路径和返回后的组件操作验证。",
+      "needs_human_confirmation": false
+    },
+    {
+      "id": "SRC-04",
+      "priority": "P2",
+      "status": "源码支持的导航可访问性风险，需键盘复现",
+      "route": [
+        "/website-code/service.html#/stores/standard/detail",
+        "/website-code/service.html#/franchise",
+        "/website-code/contact.html#/about/business",
+        "/website-code/contact.html#/production/apply"
+      ],
+      "viewport": "all",
+      "current_behavior": "hash子路由替换触发导航的DOM后没有显式焦点管理；无anchor的hash返回也强制滚到顶部。",
+      "possible_cause_and_evidence": "transplanted.js:47替换main.innerHTML，:50–51定位anchor或滚到0；模块无focus或popstate恢复逻辑。HTML的main已有tabindex=-1。",
+      "minimal_proposal": "键盘进入子路由并后退；若复现，在前进路由聚焦main或标题，后退保留阅读位置；不延迟导航，不新增遮罩。",
+      "files": [
+        "website-code/transplanted.js:36-53",
+        "website-code/contact.html:32",
+        "website-code/service.html:34"
+      ],
+      "shared_impact": true,
+      "locked_design_impact": "No intended visual change; shared import routing means all14 hash routes regression required.",
+      "before_screenshots": [],
+      "after_screenshots": [],
+      "after_screenshot_reason": "第一轮仅审查，未授权修改网站，因此没有修改后截图。",
+      "test_result": "已检查源码；焦点及历史位置需要浏览器/辅助技术证据。",
+      "needs_human_confirmation": false
+    },
+    {
+      "id": "SRC-05",
+      "priority": "P2",
+      "status": "分享与索引metadata缺失已确认，内容策略待确定",
+      "route": [
+        "/website-code/index.html",
+        "/website-code/company.html",
+        "/website-code/planting.html",
+        "/website-code/products.html",
+        "/website-code/service.html",
+        "/website-code/ai.html",
+        "/website-code/contact.html"
+      ],
+      "viewport": "all",
+      "current_behavior": "7正文页有title/description/favicon，没有canonical、OpenGraph或Twitter分享标签。",
+      "possible_cause_and_evidence": "逐页检查HTML head，未找到这些标签；本轮没有确认最终域名和分享图。",
+      "minimal_proposal": "确认发布域名、公开路径，选用现有批准素材作为分享图后，补页级信息；不猜域名、不生成新图。",
+      "files": [
+        "website-code/index.html:4-10",
+        "website-code/company.html:4-10",
+        "website-code/planting.html:4-10",
+        "website-code/products.html:4-10",
+        "website-code/service.html:4-10",
+        "website-code/ai.html:4-10",
+        "website-code/contact.html:4-10"
+      ],
+      "shared_impact": true,
+      "locked_design_impact": "No visible layout change; existing content and approved imagery locked.",
+      "before_screenshots": [],
+      "after_screenshots": [],
+      "after_screenshot_reason": "第一轮仅审查，未授权修改网站，因此没有修改后截图。",
+      "test_result": "7份HTML源头均已检查；正式域名爬虫及分享平台效果未验证。",
+      "needs_human_confirmation": true
+    },
+    {
+      "id": "SRC-06",
+      "priority": "P2",
+      "status": "本地404与索引文件缺失已确认，生产服务器未知",
+      "route": [
+        "/robots.txt",
+        "/sitemap.xml",
+        "/website-code/404.html",
+        "/website-code/not-a-real-page.html"
+      ],
+      "viewport": "all",
+      "current_behavior": "无sitemap、robots或品牌404恢复页；本地未知路径返回普通404，生产部署行为尚未知。",
+      "possible_cause_and_evidence": "文件清单没有对应文件；HTTP HEAD四个缺失路径均404；serve.mjs:19、36使用通用错误；build.mjs:22–24只生成8个跳转入口。",
+      "minimal_proposal": "确定域名和服务器后，提出sitemap/robots及最小404导航恢复方案；验证真实HTTP404与正常路由。",
+      "files": [
+        "website-code/scripts/serve.mjs:19,36",
+        "website-code/scripts/build.mjs:22-24"
+      ],
+      "shared_impact": true,
+      "locked_design_impact": "New metadata/fallback surface only, no redesign of existing pages.404 copy/layout needs review.",
+      "before_screenshots": [],
+      "after_screenshots": [],
+      "after_screenshot_reason": "第一轮仅审查，未授权修改网站，因此没有修改后截图。",
+      "test_result": "8入口HTML均200；四条缺失路径404；没有测试生产服务器。",
+      "needs_human_confirmation": true
+    },
+    {
+      "id": "SRC-07",
+      "priority": "P1",
+      "status": "授权档案需人工核验，不认定侵权",
+      "route": [
+        "all routes using current fonts"
+      ],
+      "viewport": "all",
+      "current_behavior": "包内有OPPO和Three独立license；未找到筑紫明朝/Crimson独立许可或Web嵌入来源说明。",
+      "possible_cause_and_evidence": "assets/fonts/OPPO-LICENSE.txt和website-code/vendor/THREE-LICENSE.txt存在；另两类字体在包内但无对应独立许可。未安装FontTools，不解释嵌入权利元数据。",
+      "minimal_proposal": "请内容负责人核对已有商业/Web字体许可并提供档案；保留已确认字体，不自动替换，不作法律结论。",
+      "files": [
+        "assets/fonts/OPPO-LICENSE.txt",
+        "assets/fonts/tsukushi-mincho-r.woff2",
+        "assets/fonts/crimson-regular.woff2",
+        "website-code/styles.css:1-3"
+      ],
+      "shared_impact": true,
+      "locked_design_impact": "A-03 fully preserved; documentation check does not authorize font replacement.",
+      "before_screenshots": [],
+      "after_screenshots": [],
+      "after_screenshot_reason": "第一轮仅审查，未授权修改网站，因此没有修改后截图。",
+      "test_result": "仅文件证据；缺少本地文档不能证明缺少合法授权。",
+      "needs_human_confirmation": true
+    },
+    {
+      "id": "SRC-08",
+      "priority": "P1",
+      "status": "正式接收预期与上线资料需人工决定",
+      "route": [
+        "/website-code/contact.html#/franchise/apply",
+        "/website-code/contact.html#/production/apply",
+        "/website-code/contact.html#/about/careers",
+        "/website-code/contact.html#/about/business",
+        "/website-code/contact.html#/about/overseas"
+      ],
+      "viewport": "all",
+      "current_behavior": "各意向表单只整理本地摘要，支持手动复制、mailto或电话；没有接收后台，页面诚实标明尚未发送；未找到备案/隐私文件。",
+      "possible_cause_and_evidence": "franchise-form.js:1、6、40–60及about-page.js:19、44–55没有POST/fetch接收；README明确本地整理。实际部署与数据处理未确定，不能从文件缺失断言违法。",
+      "minimal_proposal": "确认上线接受本地整理还是必须正式接收；按实际部署提供备案/隐私等内容。不得伪造成功，不发送真实测试申请。",
+      "files": [
+        "website-code/xunai/franchise-form.js:1,6,40-60",
+        "website-code/xunai/about-page.js:19,44-55",
+        "website-code/business-content.js:8-20",
+        "README.md"
+      ],
+      "shared_impact": true,
+      "locked_design_impact": "A-21: honest feedback must remain; visual/formflow changes require approval.",
+      "before_screenshots": [],
+      "after_screenshots": [],
+      "after_screenshot_reason": "第一轮仅审查，未授权修改网站，因此没有修改后截图。",
+      "test_result": "源码确定无网络接收；没有提交表单或联系任何外部人员。合规内容需人工核对。",
+      "needs_human_confirmation": true
+    },
+    {
+      "id": "SRC-09",
+      "priority": "P2",
+      "status": "加载失败恢复机制缺口，需故障状态验证",
+      "route": [
+        "/website-code/products.html",
+        "/website-code/ai.html",
+        "/website-code/service.html",
+        "/website-code/contact.html"
+      ],
+      "viewport": "all",
+      "current_behavior": "产品/AI/服务/联系的主体在模块渲染前为空；异步导入失败时没有局部错误提示或重试。",
+      "possible_cause_and_evidence": "HTML main初始为空；transplanted.js:45等待导入，:47才替换main，render未catch；products-page.js:26由模块填充主体。",
+      "minimal_proposal": "先复现资源失败状态，再提出现有风格下最小恢复提示；成功导航不加等待或全屏加载；文案需审阅。",
+      "files": [
+        "website-code/transplanted.js:22-55",
+        "website-code/products-page.js:26",
+        "website-code/products.html:34",
+        "website-code/ai.html:40",
+        "website-code/service.html:34",
+        "website-code/contact.html:32"
+      ],
+      "shared_impact": true,
+      "locked_design_impact": "No successful-state redesign; fallback isnew state thatrequires text review.",
+      "before_screenshots": [],
+      "after_screenshots": [],
+      "after_screenshot_reason": "第一轮仅审查，未授权修改网站，因此没有修改后截图。",
+      "test_result": "正常路由均200；尚未做禁用JS或强制模块失败测试，不认定正常访问存在白屏。",
+      "needs_human_confirmation": true
+    },
+    {
+      "id": "SRC-10",
+      "priority": "P2",
+      "status": "旧注释来源证据不足，保留待核对",
+      "route": [
+        "resource maintenance"
+      ],
+      "viewport": "all",
+      "current_behavior": "responsive-images.js称历史资源已归档notes，当前notes未标识对应archive。",
+      "possible_cause_and_evidence": "website-code/xunai/responsive-images.js:1；README/交付说明只维护最新；当前文件清单没有明确的对应归档。",
+      "minimal_proposal": "记录证据并请维护人核对注释是否过时；不自行删除注释或资源。",
+      "files": [
+        "website-code/xunai/responsive-images.js:1",
+        "notes/资源整理说明.md"
+      ],
+      "shared_impact": true,
+      "locked_design_impact": "No websitevisualimpact; user forbidsunauthorized deletion.",
+      "before_screenshots": [],
+      "after_screenshots": [],
+      "after_screenshot_reason": "第一轮仅审查，未授权修改网站，因此没有修改后截图。",
+      "test_result": "已检查文件清单和注释；没有对应档案不等于线上资源缺失。",
+      "needs_human_confirmation": true
+    }
+  ],
+  "noP0_asserted": true,
+  "screenshot_note": "本子任务源码发现没有修改后截图；根任务的浏览器基准及状态证据需在最终报告关联，未截图不能当作视觉通过。",
+  "manual_confirmations": [
+    "4K比例：特殊构图与正文角色的边界",
+    "投诉预览是否上线",
+    "发布域名/分享图/索引策略",
+    "字体与摄影Web授权档案",
+    "实际部署/备案/隐私与数据处理",
+    "正式接收或本地整理意向流程",
+    "旧资源归档注释来源"
+  ]
+}

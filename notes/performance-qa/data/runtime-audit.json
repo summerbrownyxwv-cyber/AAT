@@ -1,0 +1,1020 @@
+{
+  "createdAt": "2026-10-15T22:36:38.938340+08:00",
+  "scope": "Read-only source/runtime architecture and HTTP audit; no business implementation modified by this agent",
+  "pageSourceInventory": {
+    "index": {
+      "css": [
+        {
+          "path": "./styles.css",
+          "bytes": 30398
+        },
+        {
+          "path": "./site-navigation.css",
+          "bytes": 5004
+        },
+        {
+          "path": "./site-experience.css",
+          "bytes": 3373
+        },
+        {
+          "path": "./loader.css",
+          "bytes": 3130
+        }
+      ],
+      "entryJS": [
+        "./loader.js",
+        "./app.js",
+        "./site-navigation.js",
+        "./site-experience.js"
+      ],
+      "preloadedFonts": [
+        {
+          "path": "../assets/fonts/oppo-sans.woff2",
+          "bytes": 13645776
+        },
+        {
+          "path": "../assets/fonts/tsukushi-mincho-r.woff2",
+          "bytes": 2254280
+        }
+      ]
+    },
+    "company": {
+      "css": [
+        {
+          "path": "./company.css",
+          "bytes": 31105
+        },
+        {
+          "path": "./xunai/content.css",
+          "bytes": 294676
+        },
+        {
+          "path": "./site-foundations.css",
+          "bytes": 11693
+        },
+        {
+          "path": "./company-brand.css",
+          "bytes": 13036
+        },
+        {
+          "path": "./company-honors.css",
+          "bytes": 522
+        },
+        {
+          "path": "./site-navigation.css",
+          "bytes": 5004
+        },
+        {
+          "path": "./site-experience.css",
+          "bytes": 3373
+        }
+      ],
+      "entryJS": [
+        "./company.js",
+        "./site-navigation.js",
+        "./site-experience.js"
+      ],
+      "preloadedFonts": [
+        {
+          "path": "../assets/fonts/oppo-sans.woff2",
+          "bytes": 13645776
+        },
+        {
+          "path": "../assets/fonts/tsukushi-mincho-r.woff2",
+          "bytes": 2254280
+        }
+      ]
+    },
+    "planting": {
+      "css": [
+        {
+          "path": "./site-foundations.css",
+          "bytes": 11693
+        },
+        {
+          "path": "./planting-page.css",
+          "bytes": 16949
+        },
+        {
+          "path": "./planting-factory.css",
+          "bytes": 10198
+        },
+        {
+          "path": "./planting-management.css",
+          "bytes": 2411
+        },
+        {
+          "path": "./site-navigation.css",
+          "bytes": 5004
+        },
+        {
+          "path": "./site-experience.css",
+          "bytes": 3373
+        }
+      ],
+      "entryJS": [
+        "./planting-page.js",
+        "./site-navigation.js",
+        "./site-experience.js"
+      ],
+      "preloadedFonts": [
+        {
+          "path": "../assets/fonts/oppo-sans.woff2",
+          "bytes": 13645776
+        },
+        {
+          "path": "../assets/fonts/tsukushi-mincho-r.woff2",
+          "bytes": 2254280
+        }
+      ]
+    },
+    "products": {
+      "css": [
+        {
+          "path": "./site-foundations.css",
+          "bytes": 11693
+        },
+        {
+          "path": "./products-page.css",
+          "bytes": 4810
+        },
+        {
+          "path": "./products-showcase.css",
+          "bytes": 3474
+        },
+        {
+          "path": "./product-hero.css",
+          "bytes": 4378
+        },
+        {
+          "path": "./products-cooperation.css",
+          "bytes": 3525
+        },
+        {
+          "path": "./products-cooperation-services.css",
+          "bytes": 10987
+        },
+        {
+          "path": "./site-navigation.css",
+          "bytes": 5004
+        },
+        {
+          "path": "./site-experience.css",
+          "bytes": 3373
+        }
+      ],
+      "entryJS": [
+        "./products-page.js",
+        "./site-navigation.js",
+        "./site-experience.js"
+      ],
+      "preloadedFonts": [
+        {
+          "path": "../assets/fonts/oppo-sans.woff2",
+          "bytes": 13645776
+        },
+        {
+          "path": "../assets/fonts/tsukushi-mincho-r.woff2",
+          "bytes": 2254280
+        }
+      ]
+    },
+    "service": {
+      "css": [
+        {
+          "path": "./site-foundations.css",
+          "bytes": 11693
+        },
+        {
+          "path": "./xunai/content.css",
+          "bytes": 294676
+        },
+        {
+          "path": "./xunai/cooperation.css",
+          "bytes": 117
+        },
+        {
+          "path": "./site-navigation.css",
+          "bytes": 5004
+        },
+        {
+          "path": "./site-experience.css",
+          "bytes": 3373
+        },
+        {
+          "path": "./service-annotation.css",
+          "bytes": 940
+        }
+      ],
+      "entryJS": [
+        "./transplanted.js",
+        "./site-navigation.js",
+        "./site-experience.js"
+      ],
+      "preloadedFonts": [
+        {
+          "path": "../assets/fonts/oppo-sans.woff2",
+          "bytes": 13645776
+        },
+        {
+          "path": "../assets/fonts/tsukushi-mincho-r.woff2",
+          "bytes": 2254280
+        }
+      ]
+    },
+    "ai": {
+      "css": [
+        {
+          "path": "./site-foundations.css",
+          "bytes": 11693
+        },
+        {
+          "path": "./xunai/content.css",
+          "bytes": 294676
+        },
+        {
+          "path": "./site-navigation.css",
+          "bytes": 5004
+        },
+        {
+          "path": "./site-experience.css",
+          "bytes": 3373
+        }
+      ],
+      "entryJS": [
+        "./transplanted.js",
+        "./site-navigation.js",
+        "./site-experience.js"
+      ],
+      "preloadedFonts": [
+        {
+          "path": "../assets/fonts/oppo-sans.woff2",
+          "bytes": 13645776
+        },
+        {
+          "path": "../assets/fonts/tsukushi-mincho-r.woff2",
+          "bytes": 2254280
+        }
+      ]
+    },
+    "contact": {
+      "css": [
+        {
+          "path": "./site-foundations.css",
+          "bytes": 11693
+        },
+        {
+          "path": "./xunai/content.css",
+          "bytes": 294676
+        },
+        {
+          "path": "./site-navigation.css",
+          "bytes": 5004
+        },
+        {
+          "path": "./site-experience.css",
+          "bytes": 3373
+        }
+      ],
+      "entryJS": [
+        "./transplanted.js",
+        "./site-navigation.js",
+        "./site-experience.js"
+      ],
+      "preloadedFonts": [
+        {
+          "path": "../assets/fonts/oppo-sans.woff2",
+          "bytes": 13645776
+        },
+        {
+          "path": "../assets/fonts/tsukushi-mincho-r.woff2",
+          "bytes": 2254280
+        }
+      ]
+    },
+    "franchise": {
+      "css": [],
+      "entryJS": [
+        "./franchise-redirect.js"
+      ],
+      "preloadedFonts": []
+    }
+  },
+  "fontDuplicates": [
+    {
+      "name": "oppo-sans.woff2",
+      "paths": [
+        "assets/fonts/oppo-sans.woff2",
+        "assets/xunai/fonts/oppo-sans.woff2"
+      ],
+      "bytesEach": 13645776,
+      "sha256": "8d409dfff2a584a1e9c7d3022ef35887abe13510566fa19d776e475fc0a72c31",
+      "bytesIdentical": true
+    },
+    {
+      "name": "tsukushi-mincho-r.woff2",
+      "paths": [
+        "assets/fonts/tsukushi-mincho-r.woff2",
+        "assets/xunai/fonts/tsukushi-mincho-r.woff2"
+      ],
+      "bytesEach": 2254280,
+      "sha256": "a0703fedb2f3e22439fe584d12d68ce9532b6549943f912af0496872f20630d2",
+      "bytesIdentical": true
+    },
+    {
+      "name": "crimson-regular.woff2",
+      "paths": [
+        "assets/fonts/crimson-regular.woff2",
+        "assets/xunai/fonts/crimson-regular.woff2"
+      ],
+      "bytesEach": 43084,
+      "sha256": "126d2796c0ef94085dcd0cad414016bc99c6d19505b5937beb12d6ddb3c8b266",
+      "bytesIdentical": true
+    }
+  ],
+  "textCompressionEstimates": [
+    {
+      "path": "website-code/vendor/three.core.js",
+      "bytes": 1458113,
+      "gzip9EstimateBytes": 286503
+    },
+    {
+      "path": "website-code/vendor/three.module.js",
+      "bytes": 662772,
+      "gzip9EstimateBytes": 130785
+    },
+    {
+      "path": "website-code/xunai/content.css",
+      "bytes": 294676,
+      "gzip9EstimateBytes": 43287
+    },
+    {
+      "path": "website-code/vendor/loaders/GLTFLoader.js",
+      "bytes": 117570,
+      "gzip9EstimateBytes": 25889
+    },
+    {
+      "path": "website-code/vendor/utils/BufferGeometryUtils.js",
+      "bytes": 37712,
+      "gzip9EstimateBytes": 8663
+    },
+    {
+      "path": "website-code/company.css",
+      "bytes": 31105,
+      "gzip9EstimateBytes": 6248
+    },
+    {
+      "path": "website-code/styles.css",
+      "bytes": 30398,
+      "gzip9EstimateBytes": 6257
+    },
+    {
+      "path": "website-code/xunai/stores-page.js",
+      "bytes": 26045,
+      "gzip9EstimateBytes": 9182
+    },
+    {
+      "path": "website-code/xunai/responsive-images.js",
+      "bytes": 25478,
+      "gzip9EstimateBytes": 2097
+    },
+    {
+      "path": "website-code/planting-page.js",
+      "bytes": 20591,
+      "gzip9EstimateBytes": 7078
+    },
+    {
+      "path": "website-code/motion.js",
+      "bytes": 18281,
+      "gzip9EstimateBytes": 4681
+    },
+    {
+      "path": "website-code/xunai/brand-figma.js",
+      "bytes": 17580,
+      "gzip9EstimateBytes": 6568
+    },
+    {
+      "path": "website-code/planting-page.css",
+      "bytes": 16949,
+      "gzip9EstimateBytes": 3247
+    },
+    {
+      "path": "website-code/company-brand.css",
+      "bytes": 13036,
+      "gzip9EstimateBytes": 2479
+    },
+    {
+      "path": "website-code/loader.js",
+      "bytes": 12555,
+      "gzip9EstimateBytes": 3542
+    },
+    {
+      "path": "website-code/xunai/franchise-page.js",
+      "bytes": 11958,
+      "gzip9EstimateBytes": 4540
+    },
+    {
+      "path": "website-code/site-foundations.css",
+      "bytes": 11693,
+      "gzip9EstimateBytes": 3016
+    },
+    {
+      "path": "website-code/vendor/utils/SkeletonUtils.js",
+      "bytes": 11535,
+      "gzip9EstimateBytes": 3203
+    },
+    {
+      "path": "website-code/products-showcase.js",
+      "bytes": 11321,
+      "gzip9EstimateBytes": 3645
+    },
+    {
+      "path": "website-code/products-cooperation-services.css",
+      "bytes": 10987,
+      "gzip9EstimateBytes": 2055
+    },
+    {
+      "path": "website-code/planting-factory.css",
+      "bytes": 10198,
+      "gzip9EstimateBytes": 1965
+    },
+    {
+      "path": "website-code/xunai/ai-page.js",
+      "bytes": 10145,
+      "gzip9EstimateBytes": 4379
+    },
+    {
+      "path": "website-code/product-scene.js",
+      "bytes": 9345,
+      "gzip9EstimateBytes": 3482
+    },
+    {
+      "path": "website-code/xunai/ai-orbit.js",
+      "bytes": 8075,
+      "gzip9EstimateBytes": 3098
+    },
+    {
+      "path": "website-code/xunai/about-page.js",
+      "bytes": 7992,
+      "gzip9EstimateBytes": 3558
+    },
+    {
+      "path": "website-code/planting-factory.js",
+      "bytes": 7422,
+      "gzip9EstimateBytes": 2215
+    },
+    {
+      "path": "website-code/xunai/franchise-form.js",
+      "bytes": 7255,
+      "gzip9EstimateBytes": 2626
+    },
+    {
+      "path": "website-code/products-page.js",
+      "bytes": 7090,
+      "gzip9EstimateBytes": 2698
+    },
+    {
+      "path": "website-code/planting-management.js",
+      "bytes": 6665,
+      "gzip9EstimateBytes": 2706
+    },
+    {
+      "path": "website-code/asset-urls.js",
+      "bytes": 6493,
+      "gzip9EstimateBytes": 918
+    },
+    {
+      "path": "website-code/products-cooperation-services.js",
+      "bytes": 5631,
+      "gzip9EstimateBytes": 2087
+    },
+    {
+      "path": "website-code/products-cooperation.js",
+      "bytes": 5157,
+      "gzip9EstimateBytes": 1978
+    },
+    {
+      "path": "website-code/company.js",
+      "bytes": 5042,
+      "gzip9EstimateBytes": 1712
+    },
+    {
+      "path": "website-code/site-navigation.css",
+      "bytes": 5004,
+      "gzip9EstimateBytes": 1431
+    },
+    {
+      "path": "website-code/vendor/environments/RoomEnvironment.js",
+      "bytes": 4960,
+      "gzip9EstimateBytes": 1663
+    },
+    {
+      "path": "website-code/content-motion.js",
+      "bytes": 4954,
+      "gzip9EstimateBytes": 1807
+    },
+    {
+      "path": "website-code/xunai/store-tools.js",
+      "bytes": 4899,
+      "gzip9EstimateBytes": 2230
+    },
+    {
+      "path": "website-code/products-catalog-motion.js",
+      "bytes": 4895,
+      "gzip9EstimateBytes": 1638
+    },
+    {
+      "path": "website-code/products-page.css",
+      "bytes": 4810,
+      "gzip9EstimateBytes": 1346
+    },
+    {
+      "path": "website-code/product-hero.css",
+      "bytes": 4378,
+      "gzip9EstimateBytes": 1219
+    },
+    {
+      "path": "website-code/products-process-icons.js",
+      "bytes": 4123,
+      "gzip9EstimateBytes": 1532
+    },
+    {
+      "path": "website-code/product-hero.js",
+      "bytes": 3935,
+      "gzip9EstimateBytes": 1499
+    },
+    {
+      "path": "website-code/products-cooperation.css",
+      "bytes": 3525,
+      "gzip9EstimateBytes": 990
+    },
+    {
+      "path": "website-code/products-showcase.css",
+      "bytes": 3474,
+      "gzip9EstimateBytes": 1027
+    },
+    {
+      "path": "website-code/transplanted.js",
+      "bytes": 3427,
+      "gzip9EstimateBytes": 1269
+    },
+    {
+      "path": "website-code/site-experience.css",
+      "bytes": 3373,
+      "gzip9EstimateBytes": 1103
+    },
+    {
+      "path": "website-code/loader.css",
+      "bytes": 3130,
+      "gzip9EstimateBytes": 1036
+    },
+    {
+      "path": "website-code/planting-model.js",
+      "bytes": 2872,
+      "gzip9EstimateBytes": 1248
+    },
+    {
+      "path": "website-code/site-navigation.js",
+      "bytes": 2586,
+      "gzip9EstimateBytes": 1041
+    },
+    {
+      "path": "website-code/section-cover.js",
+      "bytes": 2551,
+      "gzip9EstimateBytes": 880
+    },
+    {
+      "path": "website-code/planting-management.css",
+      "bytes": 2411,
+      "gzip9EstimateBytes": 765
+    },
+    {
+      "path": "website-code/business-content.js",
+      "bytes": 2312,
+      "gzip9EstimateBytes": 828
+    },
+    {
+      "path": "website-code/company-honors.js",
+      "bytes": 2214,
+      "gzip9EstimateBytes": 868
+    },
+    {
+      "path": "website-code/responsive-media.js",
+      "bytes": 962,
+      "gzip9EstimateBytes": 531
+    },
+    {
+      "path": "website-code/service-annotation.css",
+      "bytes": 940,
+      "gzip9EstimateBytes": 314
+    },
+    {
+      "path": "website-code/site-experience.js",
+      "bytes": 829,
+      "gzip9EstimateBytes": 428
+    },
+    {
+      "path": "website-code/company-honors.css",
+      "bytes": 522,
+      "gzip9EstimateBytes": 268
+    },
+    {
+      "path": "website-code/app.js",
+      "bytes": 384,
+      "gzip9EstimateBytes": 231
+    },
+    {
+      "path": "website-code/franchise-redirect.js",
+      "bytes": 255,
+      "gzip9EstimateBytes": 189
+    },
+    {
+      "path": "website-code/xunai/cooperation.css",
+      "bytes": 117,
+      "gzip9EstimateBytes": 110
+    }
+  ],
+  "productionHTTP": {
+    "measuredAt": "2026-10-15T22:33:57.555139+08:00",
+    "baseURL": "https://aat-website-nine.vercel.app/",
+    "headAndHash": [
+      {
+        "path": "website-code/index.html",
+        "status": 200,
+        "headers": {
+          "Access-Control-Allow-Origin": "*",
+          "Age": "18",
+          "Cache-Control": "public, max-age=0, must-revalidate",
+          "Content-Disposition": "inline; filename=\"index.html\"",
+          "Content-Encoding": "br",
+          "Content-Type": "text/html; charset=utf-8",
+          "Date": "Thu, 15 Oct 2026 14:33:41 GMT",
+          "Etag": "W/\"b0451667ab82c070aae76d2d7961374a\"",
+          "Last-Modified": "Thu, 15 Oct 2026 14:33:23 GMT",
+          "Server": "Vercel",
+          "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+          "X-Vercel-Cache": "HIT",
+          "X-Vercel-Id": "hnd1::62fb4-1792074821587-5d444f3f8491",
+          "Connection": "close"
+        },
+        "remoteBytesIdentity": 17879,
+        "remoteSha256": "b91eb0eea61e77e010c59fc035d85fbbc16bdfc8117d31db62cd23462653af3d",
+        "localBytes": 17725,
+        "localSha256": "30bfe4fdc56f415436170b7372e3677c12f4cb530b3c795fb56dae5e6ad3d466",
+        "sameAsLocal": false
+      },
+      {
+        "path": "website-code/products.html",
+        "status": 200,
+        "headers": {
+          "Access-Control-Allow-Origin": "*",
+          "Age": "0",
+          "Cache-Control": "public, max-age=0, must-revalidate",
+          "Content-Disposition": "inline; filename=\"products.html\"",
+          "Content-Encoding": "br",
+          "Content-Type": "text/html; charset=utf-8",
+          "Date": "Thu, 15 Oct 2026 14:33:45 GMT",
+          "Etag": "W/\"2564bf8d7e838f17580b956badc38a9a\"",
+          "Last-Modified": "Thu, 15 Oct 2026 14:33:45 GMT",
+          "Server": "Vercel",
+          "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+          "X-Vercel-Cache": "MISS",
+          "X-Vercel-Id": "hnd1::6b9lm-1792074824665-54eca5acc1f6",
+          "Connection": "close"
+        },
+        "remoteBytesIdentity": 4205,
+        "remoteSha256": "347a47b563a0bbb835c136bf75a8f4b353443af38c64b952791c72e1f026f5aa",
+        "localBytes": 4205,
+        "localSha256": "347a47b563a0bbb835c136bf75a8f4b353443af38c64b952791c72e1f026f5aa",
+        "sameAsLocal": true
+      },
+      {
+        "path": "website-code/styles.css",
+        "status": 200,
+        "headers": {
+          "Access-Control-Allow-Origin": "*",
+          "Age": "0",
+          "Cache-Control": "public, max-age=0, must-revalidate",
+          "Content-Disposition": "inline; filename=\"styles.css\"",
+          "Content-Encoding": "br",
+          "Content-Type": "text/css; charset=utf-8",
+          "Date": "Thu, 15 Oct 2026 14:33:46 GMT",
+          "Etag": "W/\"4cc2914166431b7531dfa64722807d1a\"",
+          "Last-Modified": "Thu, 15 Oct 2026 14:33:46 GMT",
+          "Server": "Vercel",
+          "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+          "X-Vercel-Cache": "MISS",
+          "X-Vercel-Id": "hnd1::6b9lm-1792074826368-c6617a6e85b7",
+          "Connection": "close"
+        },
+        "remoteBytesIdentity": 30821,
+        "remoteSha256": "bed2a1d18a6d13904a2a4683299b524fec7f4a74c9cfeeb4dba3ee30ee18583b",
+        "localBytes": 30398,
+        "localSha256": "e3f16ca26cfa83df5f97eca3a416228fe6848081e5ed0ae3a2a847f2af9e3e81",
+        "sameAsLocal": false
+      },
+      {
+        "path": "website-code/product-scene.js",
+        "status": 200,
+        "headers": {
+          "Access-Control-Allow-Origin": "*",
+          "Age": "0",
+          "Cache-Control": "public, max-age=0, must-revalidate",
+          "Content-Disposition": "inline; filename=\"product-scene.js\"",
+          "Content-Encoding": "br",
+          "Content-Type": "application/javascript; charset=utf-8",
+          "Date": "Thu, 15 Oct 2026 14:33:49 GMT",
+          "Etag": "W/\"53ad5aaf5896ed663110ffd458bd02af\"",
+          "Last-Modified": "Thu, 15 Oct 2026 14:33:49 GMT",
+          "Server": "Vercel",
+          "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+          "X-Vercel-Cache": "MISS",
+          "X-Vercel-Id": "hnd1::bd777-1792074828897-b077612c9124",
+          "Connection": "close"
+        },
+        "remoteBytesIdentity": 9345,
+        "remoteSha256": "fa6e570761f57a800774ea79fcf8686c516b9e8358394a8deee3e95b1e50d7f1",
+        "localBytes": 9345,
+        "localSha256": "fa6e570761f57a800774ea79fcf8686c516b9e8358394a8deee3e95b1e50d7f1",
+        "sameAsLocal": true
+      },
+      {
+        "path": "website-code/planting-model.js",
+        "status": 200,
+        "headers": {
+          "Access-Control-Allow-Origin": "*",
+          "Age": "0",
+          "Cache-Control": "public, max-age=0, must-revalidate",
+          "Content-Disposition": "inline; filename=\"planting-model.js\"",
+          "Content-Encoding": "br",
+          "Content-Type": "application/javascript; charset=utf-8",
+          "Date": "Thu, 15 Oct 2026 14:33:50 GMT",
+          "Etag": "W/\"97a0ab4c7429348772ab9341456e9cb5\"",
+          "Last-Modified": "Thu, 15 Oct 2026 14:33:50 GMT",
+          "Server": "Vercel",
+          "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+          "X-Vercel-Cache": "MISS",
+          "X-Vercel-Id": "hnd1::4ghd8-1792074830607-1903048dd7ad",
+          "Connection": "close"
+        },
+        "remoteBytesIdentity": 2872,
+        "remoteSha256": "b474bf64e9dfe209e8bc1016a228198f865e2b1bebe8dea84c01f9734678f5cf",
+        "localBytes": 2872,
+        "localSha256": "b474bf64e9dfe209e8bc1016a228198f865e2b1bebe8dea84c01f9734678f5cf",
+        "sameAsLocal": true
+      },
+      {
+        "path": "assets/fonts/oppo-sans.woff2",
+        "status": 200,
+        "headers": {
+          "Accept-Ranges": "bytes",
+          "Access-Control-Allow-Origin": "*",
+          "Age": "3927",
+          "Cache-Control": "public, max-age=0, must-revalidate",
+          "Content-Disposition": "inline; filename=\"oppo-sans.woff2\"",
+          "Content-Length": "13645776",
+          "Content-Type": "font/woff2",
+          "Date": "Thu, 15 Oct 2026 14:33:52 GMT",
+          "Etag": "\"84622ee494d418c5a1eba000bb1e34c2\"",
+          "Last-Modified": "Thu, 15 Oct 2026 13:28:24 GMT",
+          "Server": "Vercel",
+          "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+          "X-Vercel-Cache": "HIT",
+          "X-Vercel-Id": "hnd1::rrds9-1792074832438-ae17331c1066",
+          "Connection": "close"
+        }
+      },
+      {
+        "path": "assets/planting/planting-hero.mp4",
+        "status": 200,
+        "headers": {
+          "Accept-Ranges": "bytes",
+          "Access-Control-Allow-Origin": "*",
+          "Age": "0",
+          "Cache-Control": "public, max-age=0, must-revalidate",
+          "Content-Disposition": "inline; filename=\"planting-hero.mp4\"",
+          "Content-Length": "91317434",
+          "Content-Type": "video/mp4",
+          "Date": "Thu, 15 Oct 2026 14:33:56 GMT",
+          "Etag": "\"efd7864901fcc6feed010ad216fd18e9\"",
+          "Last-Modified": "Thu, 15 Oct 2026 14:33:53 GMT",
+          "Server": "Vercel",
+          "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+          "X-Vercel-Cache": "MISS",
+          "X-Vercel-Id": "hnd1::t24r9-1792074832999-bfd6ddcc6e6c",
+          "Connection": "close"
+        }
+      }
+    ],
+    "range": {
+      "path": "assets/planting/planting-hero.mp4",
+      "status": 206,
+      "headers": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Origin": "*",
+        "Age": "1",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Disposition": "inline; filename=\"planting-hero.mp4\"",
+        "Content-Length": "4096",
+        "Content-Range": "bytes 0-4095/91317434",
+        "Content-Type": "video/mp4",
+        "Date": "Thu, 15 Oct 2026 14:33:57 GMT",
+        "Etag": "\"efd7864901fcc6feed010ad216fd18e9\"",
+        "Last-Modified": "Thu, 15 Oct 2026 14:33:56 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Vercel-Cache": "HIT",
+        "X-Vercel-Id": "hnd1::9qdbr-1792074837490-1da648b985d4",
+        "Connection": "close"
+      },
+      "bytesRead": 4096,
+      "first16Hex": "000000206674797069736f6d00000200"
+    }
+  },
+  "build": {
+    "packageEngines": ">=22",
+    "buildCommand": "npm run build",
+    "outputDirectory": "website-code/dist",
+    "buildPreservesURLPrefix": true,
+    "configFound": false,
+    "copies": [
+      "assets (all)",
+      "content (all)",
+      "website-code (except dist/.DS_Store)",
+      "package.json",
+      "eight root HTML compatibility entries"
+    ],
+    "excluded": [
+      "notes",
+      "Git metadata",
+      "root README"
+    ],
+    "sourceToolFilesCopied": 12,
+    "sourceToolBytesCopied": 45812,
+    "distPresentAtAudit": false
+  },
+  "findings": [
+    {
+      "id": "RT-01",
+      "priority": "P1",
+      "category": [
+        "B",
+        "D",
+        "E"
+      ],
+      "confidence": "source-and-hash-confirmed; actual double request to verify in baseline network",
+      "routes": [
+        "service",
+        "ai",
+        "contact"
+      ],
+      "problem": "HTML preloads root fonts, then later xunai/content.css redefines the same family using identical font files at different URLs. Browser URLs cannot share the same cache entry even though file hashes match.",
+      "evidence": [
+        "website-code/service.html:10-13",
+        "website-code/ai.html:10-13",
+        "website-code/contact.html:10-13",
+        "website-code/xunai/content.css:232-234",
+        "website-code/site-foundations.css:2-4"
+      ],
+      "candidate": "Canonicalize only three xunai @font-face source URLs to ../../assets/fonts/*.woff2; retain font names, ranges, display strategy and cascade order. Do not delete source fonts.",
+      "expectedBenefit": "Up to 15,900,056 cold bytes avoided on affected routes if both preloaded fonts are otherwise downloaded twice; measured benefit must come from browser network comparison.",
+      "visualRisk": "Very low: decoded font bytes have identical SHA256; verify text wrapping and computed fonts at six viewports."
+    },
+    {
+      "id": "RT-02",
+      "priority": "P2",
+      "category": [
+        "F",
+        "G"
+      ],
+      "confidence": "call-chain-confirmed; frame/CPU counts pending browser profile",
+      "routes": [
+        "products",
+        "planting"
+      ],
+      "problem": "Scene setters always schedule WebGL render even when clamped progress or rotation is unchanged. Full-page scroll listeners keep calling them after their visual segment has finished.",
+      "evidence": [
+        "website-code/product-hero.js:43-60",
+        "website-code/product-scene.js:232-234",
+        "website-code/planting-page.js:208",
+        "website-code/planting-model.js:40-44"
+      ],
+      "candidate": "Guard equal clamped progress/rotation in scene setters. Keep original requestRender on resize, model load and motion preference changes, all animation parameters unchanged.",
+      "expectedBenefit": "Avoid redundant offscreen WebGL renders and model/DOM updates after progress clamps; not a claim of continuous idle rendering.",
+      "visualRisk": "Low only after equal-state behavior and resize/model readiness regression; profile real draw calls before implementation."
+    },
+    {
+      "id": "RT-03",
+      "priority": "P2",
+      "category": [
+        "F"
+      ],
+      "confidence": "layout-read-after-write confirmed in source; cost not measured",
+      "routes": [
+        "planting"
+      ],
+      "problem": "The same animation callback writes section positions/widths/heights then reads trait figure offsetHeight. This may flush style/layout during active scroll and settling.",
+      "evidence": [
+        "website-code/planting-page.js:141-208"
+      ],
+      "candidate": "Profile Layout/RecalculateStyle first. If material, read geometry once before writes or cache invariant figure height in existing measure(), validated against resize/font/image changes.",
+      "expectedBenefit": "Unknown until trace; no blanket scroll throttling.",
+      "visualRisk": "Medium: moving geometry reads can change responsive timing; leave as proposal pending trace."
+    },
+    {
+      "id": "RT-04",
+      "priority": "P2",
+      "category": [
+        "I"
+      ],
+      "confidence": "build-code-confirmed",
+      "routes": [
+        "production build"
+      ],
+      "problem": "Build recursively copies assets/content and all website-code files except dist/.DS_Store. It also publishes local build/check/serve and a product conversion script.",
+      "evidence": [
+        "website-code/scripts/build.mjs:5-25",
+        "website-code/scripts/*.mjs",
+        "website-code/scripts/convert-product-assets.py"
+      ],
+      "candidate": "Exclude only website-code/scripts from deployment after confirming all imports in runtime graph stay outside scripts; retain source scripts and verification rules. Use asset graph for further asset filtering.",
+      "expectedBenefit": "45,812 bytes / 12 tool files excluded from current deployment (small vs media; request cost unchanged unless these URLs are explicitly fetched).",
+      "visualRisk": "None if runtime graph verified; no source deletion."
+    },
+    {
+      "id": "RT-05",
+      "priority": "P2",
+      "category": [
+        "C",
+        "F"
+      ],
+      "confidence": "size-and-route-link-confirmed; coverage not measured",
+      "routes": [
+        "company",
+        "service",
+        "ai",
+        "contact"
+      ],
+      "problem": "Shared xunai/content.css is 294,676 raw bytes, includes old/home/brand/store/AI/contact/franchise styles. All four routes load it as blocking CSS.",
+      "evidence": [
+        "website-code/xunai/content.css",
+        "website-code/company.html:11-19",
+        "website-code/service.html:12-17",
+        "website-code/ai.html:12-15",
+        "website-code/contact.html:12-15"
+      ],
+      "candidate": "Do not purge by static selector grep because subroutes/dynamic states share it. First measure CSS coverage across all states; evaluate output-only parse-safe minification while preserving source comments.",
+      "expectedBenefit": "gzip9 estimate 43,287 bytes, deployed Brotli already active. Benefit from whitespace alone is likely far smaller than media/font work.",
+      "visualRisk": "High for unused-CSS removal; no implementation authorized without states/visual proof."
+    },
+    {
+      "id": "RT-06",
+      "priority": "P2",
+      "category": [
+        "H",
+        "J"
+      ],
+      "confidence": "actual-production-HTTP-confirmed",
+      "routes": [
+        "all sampled deployment resources"
+      ],
+      "problem": "Vercel browser cache max-age=0,must-revalidate for HTML/CSS/JS/font/video; edge cache HIT works and text Brotli already works. There are no content hashes in filenames or local vercel.json.",
+      "evidence": [
+        "data/runtime-audit.json#productionHTTP",
+        "website-code/scripts/build.mjs",
+        "README.md"
+      ],
+      "candidate": "Keep HTML revalidation. Do not add immutable to mutable names. Consider versioned assets in a separately validated plan; no need to add Brotli as it is already served by Vercel.",
+      "expectedBenefit": "Hot-navigation validation RTT potentially reducible; cannot quantify from HEAD only.",
+      "visualRisk": "Stale asset risk if long caching applied without versioning; proposal only."
+    },
+    {
+      "id": "RT-07",
+      "priority": "P2",
+      "category": [
+        "F"
+      ],
+      "confidence": "source-confirmed-lifecycle-risk; not new performance fix",
+      "routes": [
+        "service",
+        "ai",
+        "contact"
+      ],
+      "problem": "transplanted.js unmounts on every pagehide including persisted BFCache navigation, without pageshow re-mount; site-experience MutationObserver also disconnects once.",
+      "evidence": [
+        "website-code/transplanted.js:54-56",
+        "website-code/site-experience.js:20"
+      ],
+      "candidate": "Existing design QA lifecycle finding; test back/forward and only repair under specific verified failure.",
+      "expectedBenefit": "Correct lifecycle, not proven speed improvement.",
+      "visualRisk": "Can change restored interactions; not included in automatic performance edits."
+    }
+  ],
+  "limitations": [
+    "No browser load/Lighthouse test by this agent to avoid concurrent benchmark load. Root owns same-condition timing and resource traces.",
+    "No production deploy/push/main commit.",
+    "No model quality/DPR/animation effect change.",
+    "No font subsetting, media re-encoding or asset checksum-rule change.",
+    "Production and local source are not the same version: sampled index/styles differ; production metrics cannot be directly compared to current local changes."
+  ]
+}

@@ -1,0 +1,30 @@
+import {chromium} from '/Users/dabao/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs';
+import {mkdir,writeFile,readFile} from 'node:fs/promises';
+import {resolve} from 'node:path';
+const phase=process.argv[2],root=resolve(import.meta.dirname,'../../..'),out=resolve(root,'notes/performance-qa/data');await mkdir(out,{recursive:true});
+const inventory=JSON.parse(await readFile(resolve(root,'notes/prelaunch-qa/data/motion-routes.json'),'utf8'));
+const browser=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});
+const result={phase,browser:browser.version(),base:'http://127.0.0.1:4197',conditions:'Local built output; raw HTTP text, ETag revalidation, Range. Mobile 10Mbps/80ms/CPU4, desktop 50Mbps/40ms/CPU1. Ready=fonts.ready(max45s)+2s; full browse=0.9 viewport native wheel/350ms until bottom, max65 gestures; warm=reload same context. No real-user INP.',records:[]};
+try{for(const profile of [{name:'mobile',width:390,height:844,latency:80,mbps:10,cpu:4},{name:'desktop',width:1440,height:900,latency:40,mbps:50,cpu:1}]){
+ for(const route of inventory.routes){
+  const context=await browser.newContext({viewport:{width:profile.width,height:profile.height},deviceScaleFactor:1,isMobile:profile.name==='mobile',hasTouch:profile.name==='mobile',locale:'zh-CN'}),page=await context.newPage(),cdp=await context.newCDPSession(page);
+  await cdp.send('Network.enable');await cdp.send('Performance.enable');await cdp.send('Network.emulateNetworkConditions',{offline:false,latency:profile.latency,downloadThroughput:profile.mbps*1000000/8,uploadThroughput:profile.mbps*1000000/8});await cdp.send('Emulation.setCPUThrottlingRate',{rate:profile.cpu});
+  const requests=new Map(),errors=[];page.on('pageerror',e=>errors.push(String(e)));
+  cdp.on('Network.requestWillBeSent',e=>requests.set(e.requestId,{url:e.request.url,type:e.type,initiator:e.initiator.type,priority:e.request.initialPriority,start:e.timestamp,bytes:0}));
+  cdp.on('Network.responseReceived',e=>{const r=requests.get(e.requestId);if(r)Object.assign(r,{status:e.response.status,mime:e.response.mimeType,cache:e.response.fromDiskCache||e.response.fromServiceWorker||false,ttfbMs:e.response.timing?.receiveHeadersStart,encoding:e.response.headers['content-encoding']})});
+  cdp.on('Network.dataReceived',e=>{const r=requests.get(e.requestId);if(r)r.bytes+=e.encodedDataLength});
+  cdp.on('Network.loadingFinished',e=>{const r=requests.get(e.requestId);if(r){r.bytes=e.encodedDataLength;r.end=e.timestamp}});
+  await page.addInitScript(()=>{window.__perf={lcp:0,cls:0,longTasks:[],events:[]};new PerformanceObserver(l=>{for(const e of l.getEntries())window.__perf.lcp=e.startTime}).observe({type:'largest-contentful-paint',buffered:true});new PerformanceObserver(l=>{for(const e of l.getEntries())if(!e.hadRecentInput)window.__perf.cls+=e.value}).observe({type:'layout-shift',buffered:true});new PerformanceObserver(l=>window.__perf.longTasks.push(...l.getEntries().map(e=>({start:e.startTime,duration:e.duration})))).observe({type:'longtask',buffered:true});new PerformanceObserver(l=>window.__perf.events.push(...l.getEntries().map(e=>({name:e.name,duration:e.duration})))).observe({type:'event',durationThreshold:16,buffered:true})});
+  const snapshot=async()=>({network:[...requests.values()].map(r=>({...r})),bytes:[...requests.values()].reduce((s,r)=>s+r.bytes,0),requests:requests.size,metrics:await page.evaluate(()=>{const nav=performance.getEntriesByType('navigation')[0];return {...window.__perf,fcp:performance.getEntriesByName('first-contentful-paint')[0]?.startTime??null,ttfb:nav?.responseStart-nav?.requestStart,fontsStatus:document.fonts.status,now:performance.now(),heap:performance.memory?{used:performance.memory.usedJSHeapSize,total:performance.memory.totalJSHeapSize}:null}}),cpu:Object.fromEntries((await cdp.send('Performance.getMetrics')).metrics.filter(m=>['ScriptDuration','TaskDuration','LayoutDuration','RecalcStyleDuration','JSHeapUsedSize'].includes(m.name)).map(m=>[m.name,m.value]))});
+  const ready=async()=>{await page.waitForFunction(()=>document.querySelector('main')?.children.length>0);await Promise.race([page.evaluate(()=>document.fonts.ready),page.waitForTimeout(45000)]);await page.waitForTimeout(2000)};
+  const record={slug:route.slug,route:route.route,profile};
+  try{
+   await page.goto(result.base+route.route,{waitUntil:'domcontentloaded',timeout:60000});await ready();record.cold=await snapshot();
+   let previous=-1;for(let i=0;i<65;i++){const s=await page.evaluate(()=>({y:scrollY,end:document.documentElement.scrollHeight-innerHeight}));if(s.y>=s.end-2||s.y===previous&&i>2)break;previous=s.y;await page.mouse.wheel(0,profile.height*.9);await page.waitForTimeout(350)}await page.waitForTimeout(1000);record.fullBrowse=await snapshot();
+   record.images=await page.locator('img').evaluateAll(images=>images.map(e=>({src:e.currentSrc,natural:[e.naturalWidth,e.naturalHeight],rendered:[e.getBoundingClientRect().width,e.getBoundingClientRect().height],loading:e.loading,complete:e.complete})));record.media=await page.locator('video').evaluateAll(videos=>videos.map(v=>({src:v.currentSrc,readyState:v.readyState,error:v.error?.code||0,video:[v.videoWidth,v.videoHeight],controls:v.controls,loop:v.loop,autoplay:v.autoplay,muted:v.muted})));
+   requests.clear();await page.reload({waitUntil:'domcontentloaded',timeout:60000});await ready();record.warm=await snapshot();record.errors=errors;
+   console.log(`${phase} ${profile.name} ${route.slug}: cold ${(record.cold.bytes/1e6).toFixed(2)}MB, full ${(record.fullBrowse.bytes/1e6).toFixed(2)}MB, warm ${(record.warm.bytes/1e6).toFixed(2)}MB`);
+  }catch(e){record.error=e.message;console.log(`ERROR ${phase} ${profile.name} ${route.slug}: ${e.message.slice(0,150)}`)}
+  result.records.push(record);await writeFile(resolve(out,phase+'-page-metrics.json'),JSON.stringify(result,null,2));await context.close();
+ }
+}}finally{await browser.close()}

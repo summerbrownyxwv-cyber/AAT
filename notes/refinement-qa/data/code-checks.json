@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-15",
+  "checks": [
+    {
+      "name": "check-package",
+      "exit_code": 0,
+      "output": "PASS: 19 products across 6/6/4/3 series; 20 current lossless alpha assets; centered contain-fit compositions inside shared card bounds.\nPASS: eight pages, 1167 resolved references, 40 product images, 566 pixel-verified WebP assets; original models/SVG preserved."
+    },
+    {
+      "name": "check-home-motion",
+      "chunk_id": "d54786",
+      "wall_time_seconds": 0.000011,
+      "exit_code": 0,
+      "original_token_count": 25,
+      "output": "PASS: no pause UI, series autoplay, wrap, repeated manual reset, visibility, and reduced motion.\n"
+    },
+    {
+      "name": "check-product-carousel-motion",
+      "chunk_id": "9fe27c",
+      "wall_time_seconds": 0.000016333,
+      "exit_code": 0,
+      "original_token_count": 39,
+      "output": "PASS: exact-offset release, interruption, cyclic continuity, short mouse/touch/wheel gestures, click tremor, mirrored direction and native vertical scroll.\n"
+    },
+    {
+      "name": "check-site-experience",
+      "chunk_id": "bd21f4",
+      "wall_time_seconds": 0.000044583,
+      "exit_code": 0,
+      "original_token_count": 48,
+      "output": "PASS: simplified contact layout, honest enquiries, real stories, official channels, product descriptions, shared footers, and static/dynamic silent looping videos without playback controls.\n"
+    },
+    {
+      "name": "check-honors-cooperation",
+      "chunk_id": "c150e0",
+      "wall_time_seconds": 0.000005958,
+      "exit_code": 0,
+      "original_token_count": 27,
+      "output": "PASS: flower closes when scale settles; honor tabs, certificate disclosure, hash navigation and cleanup.\n"
+    },
+    {
+      "name": "check-company-interactions",
+      "chunk_id": "c28174",
+      "wall_time_seconds": 0.00001075,
+      "exit_code": 0,
+      "original_token_count": 31,
+      "output": "PASS: click-only business accordion, keyboard collapse/focus, native history scrolling/drag, year sync, bounds and cleanup.\n"
+    },
+    {
+      "name": "check-section-cover",
+      "chunk_id": "0b9915",
+      "wall_time_seconds": 0.000010959,
+      "exit_code": 0,
+      "original_token_count": 34,
+      "output": "PASS: desktop long chapters fully read before bottom pinning, mobile long/reduced-motion natural flow, full-width cover and cleanup.\n"
+    },
+    {
+      "name": "check-hero-migration",
+      "chunk_id": "8a5892",
+      "wall_time_seconds": 0.000013875,
+      "exit_code": 0,
+      "original_token_count": 26,
+      "output": "PASS: model hero moved to products, five native-scroll selections, homepage video and media checksum.\n"
+    }
+  ],
+  "diffCheck": {
+    "exit_code": 0
+  },
+  "readOnlyReview": {
+    "status": "no clear new regressions found",
+    "scope": "production diff of U-01, U-02, U-03"
+  }
+}

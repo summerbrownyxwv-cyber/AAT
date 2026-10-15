@@ -1,0 +1,11 @@
+{
+  "scope": "Exact current createCarouselMotion source executed with deterministic RAF clock, not browser playback",
+  "baseline": "48886fa39b059a88e01bc75ab99dba7acc935db8",
+  "reducedBefore": false,
+  "toggledReducedDuringSettle": true,
+  "positionBeforePreferenceChange": 0.2260543257530585,
+  "positionAfterOneReducedFrame": 0.30828683539915624,
+  "pendingFramesAfterOneReducedFrame": 1,
+  "settledPosition": 1,
+  "defect": "An already running spring ignores changed reduced-motion preference until it settles; subsequent step/end already checks the preference."
+}

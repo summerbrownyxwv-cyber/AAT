@@ -1,0 +1,380 @@
+{
+  "baselineCommit": "48886fa39b059a88e01bc75ab99dba7acc935db8",
+  "method": "Source-based semantic grouping. Same CSS class does not prove same semantic component; state lists are inspection requirements, not runtime pass claims.",
+  "components": [
+    {
+      "id": "C01",
+      "role": "全站导航",
+      "routes": [
+        "all"
+      ],
+      "selectors": [
+        ".site-navigation",
+        ".site-drawer"
+      ],
+      "sources": [
+        "website-code/site-navigation.css:1",
+        "website-code/site-navigation.js"
+      ],
+      "implementation": "共享实现",
+      "keepVariants": [
+        "首页、企业导航Mincho字体继承差异；桌面/移动抽屉"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus-visible",
+        "current",
+        "open",
+        "reduced-motion"
+      ]
+    },
+    {
+      "id": "C02",
+      "role": "全站页脚",
+      "routes": [
+        "all content pages"
+      ],
+      "selectors": [
+        ".site-footer",
+        ".footer-links"
+      ],
+      "sources": [
+        "website-code/styles.css:158",
+        "website-code/site-foundations.css:33",
+        "website-code/site-experience.css:6"
+      ],
+      "implementation": "首页内联HTML与内页基础样式，样式有重复",
+      "keepVariants": [
+        "footer章节留白及明暗场景"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus-visible"
+      ]
+    },
+    {
+      "id": "C03",
+      "role": "轻量了解更多/正文文字链接",
+      "routes": [
+        "index",
+        "company",
+        "planting",
+        "products",
+        "service",
+        "ai",
+        "contact"
+      ],
+      "selectors": [
+        ".more-link",
+        ".business-link",
+        ".text-link",
+        ".xu-detail-link",
+        ".xs-booklet-open",
+        ".xs-products-more>a"
+      ],
+      "sources": [
+        "website-code/styles.css:39",
+        "website-code/site-foundations.css:29",
+        "website-code/site-foundations.css:86",
+        "website-code/xunai/content.css:1896"
+      ],
+      "implementation": "多类名，经aiaitie-business兼容规则部分共用",
+      "keepVariants": [
+        "品牌展示与表单返回语义不同；链接箭头SVG/文本两种"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus-visible"
+      ]
+    },
+    {
+      "id": "C04",
+      "role": "主要/次要表单动作",
+      "routes": [
+        "contact#/about/careers",
+        "contact#/about/business",
+        "contact#/about/overseas",
+        "contact#/franchise/apply",
+        "contact#/production/apply"
+      ],
+      "selectors": [
+        ".pill-button",
+        ".filter-button",
+        ".form-actions",
+        ".xo-ready-actions"
+      ],
+      "sources": [
+        "website-code/xunai/content.css:41",
+        "website-code/site-foundations.css:86",
+        "website-code/xunai/about-page.js:19",
+        "website-code/xunai/franchise-form.js:6"
+      ],
+      "implementation": "两套表单结构，各自负责业务",
+      "keepVariants": [
+        "深色招商CTA与白底表单按钮；不要按类名pill强制胶囊外观"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus-visible",
+        "invalid",
+        "ready-unsent"
+      ]
+    },
+    {
+      "id": "C05",
+      "role": "生产合作申请主CTA",
+      "routes": [
+        "products#manufacturing"
+      ],
+      "selectors": [
+        ".cooperation-services-apply"
+      ],
+      "sources": [
+        "website-code/products-cooperation-services.css:43"
+      ],
+      "implementation": "指定独立按钮",
+      "keepVariants": [
+        "白底描边、品牌圆角、深色hover，为已确认业务入口"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus-visible"
+      ]
+    },
+    {
+      "id": "C06",
+      "role": "折叠/展开",
+      "routes": [
+        "company#honors",
+        "service#locations",
+        "products#manufacturing",
+        "service#/stores/services"
+      ],
+      "selectors": [
+        ".honor-certificate",
+        ".xu-disclosure",
+        ".site-disclosure",
+        ".cooperation-flow-details",
+        ".xs-service-steps"
+      ],
+      "sources": [
+        "website-code/company.css:51",
+        "website-code/company-honors.css:1",
+        "website-code/xunai/content.css:1890",
+        "website-code/products-cooperation-services.css:23"
+      ],
+      "implementation": "原生details/summary；视觉语义多种",
+      "keepVariants": [
+        "荣誉日期行、门店分组和OEM/ODM步骤不同，不整体合并"
+      ],
+      "states": [
+        "closed",
+        "open",
+        "hover",
+        "focus-visible",
+        "reduced-motion"
+      ]
+    },
+    {
+      "id": "C07",
+      "role": "图像卡片",
+      "routes": [
+        "index",
+        "company",
+        "service",
+        "contact",
+        "products"
+      ],
+      "selectors": [
+        ".company-image",
+        ".xf-products",
+        ".xs-strength",
+        ".xo-join-card",
+        ".product-detail-card"
+      ],
+      "sources": [
+        "website-code/styles.css:46",
+        "website-code/company-brand.css:16",
+        "website-code/xunai/content.css:2378",
+        "website-code/products-page.css:20"
+      ],
+      "implementation": "不同构图与业务语义",
+      "keepVariants": [
+        "卡片圆角比例、错落图卡、产品透明分层组合均冻结"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus-visible where actionable"
+      ]
+    },
+    {
+      "id": "C08",
+      "role": "轮播/画廊",
+      "routes": [
+        "index",
+        "products",
+        "company#history",
+        "service#/stores/services"
+      ],
+      "selectors": [
+        ".series-thumbnails",
+        ".products-series",
+        ".product-detail-gallery",
+        ".xf-history-viewport",
+        ".xs-service-track"
+      ],
+      "sources": [
+        "website-code/products-showcase.js",
+        "website-code/products-page.js",
+        "website-code/xunai/brand-figma.js",
+        "website-code/company-brand.css:28"
+      ],
+      "implementation": "轮播与原生横向时间线分工不同",
+      "keepVariants": [
+        "产品循环阻尼；公司时间线原生吸附；已删除轮播文字控件不得复加"
+      ],
+      "states": [
+        "drag",
+        "wheel",
+        "keyboard",
+        "adjacent-click",
+        "interrupted",
+        "loop",
+        "reduced-motion"
+      ]
+    },
+    {
+      "id": "C09",
+      "role": "数值/序号",
+      "routes": [
+        "index",
+        "company",
+        "planting",
+        "products",
+        "ai"
+      ],
+      "selectors": [
+        ".base-number",
+        ".stat-cell strong",
+        ".xf-years",
+        ".product-group-heading>span",
+        ".cooperation-services-step-number"
+      ],
+      "sources": [
+        "website-code/styles.css:62",
+        "website-code/company-brand.css:20",
+        "website-code/products-page.css:12",
+        "website-code/products-cooperation-services.css:37"
+      ],
+      "implementation": "分业务形态，使用Sans数字和tabular-nums",
+      "keepVariants": [
+        "年份、产品序列号、指标说明不是相同组件"
+      ],
+      "states": [
+        "default",
+        "selected where interactive"
+      ]
+    },
+    {
+      "id": "C10",
+      "role": "表单输入与错误",
+      "routes": [
+        "contact#/about/careers",
+        "contact#/about/business",
+        "contact#/about/overseas",
+        "contact#/franchise/apply",
+        "contact#/production/apply"
+      ],
+      "selectors": [
+        ".field",
+        ".xo-field",
+        ".field-error",
+        ".xo-error"
+      ],
+      "sources": [
+        "website-code/xunai/franchise-form.js:75",
+        "website-code/xunai/about-page.js:15",
+        "website-code/xunai/content.css:2239"
+      ],
+      "implementation": "两套字段组件；用户标签可见，错误反馈不同",
+      "keepVariants": [
+        "现有多步骤意向摘要与单屏商务/招聘表单不合并流程"
+      ],
+      "states": [
+        "default",
+        "focus",
+        "invalid",
+        "readonly",
+        "ready-unsent"
+      ]
+    },
+    {
+      "id": "C11",
+      "role": "业务选择/标签",
+      "routes": [
+        "company#business",
+        "products#products-hero",
+        "company#honors"
+      ],
+      "selectors": [
+        ".company-business-choice",
+        ".product-options button",
+        ".honor-tab"
+      ],
+      "sources": [
+        "website-code/company-brand.css:60",
+        "website-code/product-hero.css:9",
+        "website-code/company.css:42"
+      ],
+      "implementation": "按业务语义独立",
+      "keepVariants": [
+        "商业范式点击切换已确认；悬停仅图像微动"
+      ],
+      "states": [
+        "default",
+        "hover-feedback",
+        "focus-visible",
+        "active",
+        "selected"
+      ]
+    },
+    {
+      "id": "C12",
+      "role": "章节叠屏/视频展示",
+      "routes": [
+        "index",
+        "products",
+        "service",
+        "ai"
+      ],
+      "selectors": [
+        ".home-film",
+        ".cooperation-stage",
+        ".section-cover",
+        ".xs-type"
+      ],
+      "sources": [
+        "website-code/styles.css:298",
+        "website-code/products-cooperation.css:3",
+        "website-code/section-cover.js",
+        "website-code/service-annotation.css"
+      ],
+      "implementation": "共享叠屏工具+页面独立背景和内容",
+      "keepVariants": [
+        "首页全屏video cover；所有video无控件循环；AI全宽章节；店型仅局部覆盖"
+      ],
+      "states": [
+        "scroll-forward",
+        "scroll-back",
+        "reduced-motion",
+        "mobile-long-content"
+      ]
+    }
+  ]
+}

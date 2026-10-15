@@ -1,0 +1,142 @@
+[
+  {
+    "width": 390,
+    "height": 844,
+    "group": "ran",
+    "mouseSwipePixels": 16,
+    "wheelPixels": 16,
+    "touchSwipePixels": 20,
+    "passed": true
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "group": "cui",
+    "mouseSwipePixels": 16,
+    "wheelPixels": 16,
+    "touchSwipePixels": 20,
+    "passed": true
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "group": "wen",
+    "mouseSwipePixels": 16,
+    "wheelPixels": 16,
+    "touchSwipePixels": 20,
+    "passed": true
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "group": "zhi",
+    "mouseSwipePixels": 16,
+    "wheelPixels": 16,
+    "touchSwipePixels": 20,
+    "passed": true
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "group": "series",
+    "mouseSwipePixels": 16,
+    "keyboardReverse": true,
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "group": "ran",
+    "mouseSwipePixels": 16,
+    "wheelPixels": 16,
+    "touchSwipePixels": null,
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "group": "cui",
+    "mouseSwipePixels": 16,
+    "wheelPixels": 16,
+    "touchSwipePixels": null,
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "group": "wen",
+    "mouseSwipePixels": 16,
+    "wheelPixels": 16,
+    "touchSwipePixels": null,
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "group": "zhi",
+    "mouseSwipePixels": 16,
+    "wheelPixels": 16,
+    "touchSwipePixels": null,
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "group": "series",
+    "mouseSwipePixels": 16,
+    "keyboardReverse": true,
+    "passed": true
+  },
+  {
+    "width": 3840,
+    "height": 2160,
+    "group": "ran",
+    "mouseSwipePixels": 16,
+    "wheelPixels": 16,
+    "touchSwipePixels": null,
+    "passed": true
+  },
+  {
+    "width": 3840,
+    "height": 2160,
+    "group": "cui",
+    "mouseSwipePixels": 16,
+    "wheelPixels": 16,
+    "touchSwipePixels": null,
+    "passed": true
+  },
+  {
+    "width": 3840,
+    "height": 2160,
+    "group": "wen",
+    "mouseSwipePixels": 16,
+    "wheelPixels": 16,
+    "touchSwipePixels": null,
+    "passed": true
+  },
+  {
+    "width": 3840,
+    "height": 2160,
+    "group": "zhi",
+    "mouseSwipePixels": 16,
+    "wheelPixels": 16,
+    "touchSwipePixels": null,
+    "passed": true
+  },
+  {
+    "width": 3840,
+    "height": 2160,
+    "group": "series",
+    "mouseSwipePixels": 16,
+    "keyboardReverse": true,
+    "passed": true
+  },
+  {
+    "page": "index",
+    "manualLabel": "温-系列",
+    "automaticLabel": "植-系列",
+    "delay": 4500,
+    "pauseControls": 0,
+    "passed": true
+  }
+]

@@ -1,0 +1,113 @@
+{
+  "comparedRecords": 42,
+  "differences": [
+    {
+      "page": [
+        "index",
+        390,
+        844,
+        "collections"
+      ],
+      "section": "hero-story",
+      "delta": {
+        "y": 1308.19
+      }
+    },
+    {
+      "page": [
+        "index",
+        390,
+        844,
+        "collections"
+      ],
+      "section": "company",
+      "delta": {
+        "y": 1308.19
+      }
+    },
+    {
+      "page": [
+        "index",
+        390,
+        844,
+        "collections"
+      ],
+      "section": "planting",
+      "delta": {
+        "y": 1308.19
+      }
+    },
+    {
+      "page": [
+        "index",
+        390,
+        844,
+        "collections"
+      ],
+      "section": "collections",
+      "delta": {
+        "y": 1308.19
+      }
+    },
+    {
+      "page": [
+        "index",
+        390,
+        844,
+        "collections"
+      ],
+      "section": "service",
+      "delta": {
+        "y": 1308.19
+      }
+    },
+    {
+      "page": [
+        "index",
+        390,
+        844,
+        "collections"
+      ],
+      "section": "ai",
+      "delta": {
+        "y": 1308.19
+      }
+    },
+    {
+      "page": [
+        "index",
+        390,
+        844,
+        "collections"
+      ],
+      "section": "contact",
+      "delta": {
+        "y": 1308.19
+      }
+    },
+    {
+      "page": [
+        "planting",
+        390,
+        844,
+        null
+      ],
+      "section": "plant-origin plant-shell plant-cover",
+      "delta": {
+        "y": 247.81
+      }
+    },
+    {
+      "page": [
+        "ai",
+        1440,
+        900,
+        null
+      ],
+      "section": "xa-hero section-cover-panel is-cover-fit",
+      "delta": {
+        "y": -21
+      }
+    }
+  ]
+}

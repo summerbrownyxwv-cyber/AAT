@@ -1,0 +1,4990 @@
+{
+  "phase": "before",
+  "browser": "Chrome",
+  "version": "154.0.8037.99",
+  "records": [
+    {
+      "name": "index",
+      "screenshot": "before/index/390x844/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/index.html",
+      "w": 390,
+      "h": 844,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "hero-story",
+          "class": "home-film",
+          "x": 0,
+          "y": 1308.1875,
+          "w": 390,
+          "h": 844,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "company",
+          "class": "company-section cream",
+          "x": 0,
+          "y": 2152.1875,
+          "w": 390,
+          "h": 761.109375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "planting",
+          "class": "planting-section shell",
+          "x": 20,
+          "y": 2913.296875,
+          "w": 350,
+          "h": 1248.3125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "collections",
+          "class": "collections-section cream",
+          "x": 0,
+          "y": 4161.609375,
+          "w": 390,
+          "h": 573.25,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "service",
+          "class": "service-section cream",
+          "x": 0,
+          "y": 4734.859375,
+          "w": 390,
+          "h": 494.09375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "ai",
+          "class": "ai-section shell",
+          "x": 20,
+          "y": 5260.953125,
+          "w": 350,
+          "h": 898.5,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "contact",
+          "class": "contact-section shell",
+          "x": 20,
+          "y": 6231.453125,
+          "w": 350,
+          "h": 312.390625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        }
+      ],
+      "controls": [
+        "暂停轮播"
+      ],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ]
+    },
+    {
+      "name": "index",
+      "screenshot": "before/index/390x844/collections.jpg",
+      "url": "http://127.0.0.1:4196/website-code/index.html#collections",
+      "w": 390,
+      "h": 844,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "hero-story",
+          "class": "home-film",
+          "x": 0,
+          "y": 0,
+          "w": 390,
+          "h": 844,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "company",
+          "class": "company-section cream",
+          "x": 0,
+          "y": 844,
+          "w": 390,
+          "h": 761.109375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "planting",
+          "class": "planting-section shell",
+          "x": 20,
+          "y": 1605.109375,
+          "w": 350,
+          "h": 1248.3125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "collections",
+          "class": "collections-section cream",
+          "x": 0,
+          "y": 2853.421875,
+          "w": 390,
+          "h": 573.25,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "service",
+          "class": "service-section cream",
+          "x": 0,
+          "y": 3426.671875,
+          "w": 390,
+          "h": 494.09375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "ai",
+          "class": "ai-section shell",
+          "x": 20,
+          "y": 3952.765625,
+          "w": 350,
+          "h": 898.5,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "contact",
+          "class": "contact-section shell",
+          "x": 20,
+          "y": 4923.265625,
+          "w": 350,
+          "h": 312.390625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        }
+      ],
+      "controls": [
+        "暂停轮播"
+      ],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "state": "collections"
+    },
+    {
+      "name": "company",
+      "screenshot": "before/company/390x844/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/company.html",
+      "w": 390,
+      "h": 844,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "",
+          "class": "company-hero",
+          "x": 0,
+          "y": 64,
+          "w": 390,
+          "h": 780,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "id": "",
+          "class": "company-intro",
+          "x": 0,
+          "y": 844,
+          "w": 390,
+          "h": 520.46875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "business",
+          "class": "xf-section",
+          "x": 20,
+          "y": 1364.46875,
+          "w": 350,
+          "h": 1195.6875,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "history",
+          "class": "xf-section xf-history",
+          "x": 20,
+          "y": 2560.15625,
+          "w": 350,
+          "h": 658.453125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "products",
+          "class": "xf-section",
+          "x": 20,
+          "y": 3218.609375,
+          "w": 350,
+          "h": 1164.96875,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "stores",
+          "class": "xf-section",
+          "x": 20,
+          "y": 4383.578125,
+          "w": 350,
+          "h": 889.921875,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "honors",
+          "class": "honor-section page-shell honor-story",
+          "x": 20,
+          "y": 5273.5,
+          "w": 350,
+          "h": 845.578125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "honor-authority",
+          "class": "honor-group",
+          "x": 20,
+          "y": 5549.296875,
+          "w": 350,
+          "h": 479.78125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "honor-certificates",
+          "class": "honor-group",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "honor-responsibility",
+          "class": "honor-group",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "",
+          "class": "action-section page-shell",
+          "x": 20,
+          "y": 6119.078125,
+          "w": 350,
+          "h": 995.09375,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ]
+    },
+    {
+      "name": "planting",
+      "screenshot": "before/planting/390x844/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/planting.html",
+      "w": 390,
+      "h": 844,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "",
+          "class": "plant-hero",
+          "x": 0,
+          "y": 64,
+          "w": 390,
+          "h": 360,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "land",
+          "class": "plant-land",
+          "x": 0,
+          "y": 424,
+          "w": 390,
+          "h": 1128,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "plant-origin plant-shell plant-cover",
+          "x": 20,
+          "y": 1643.1875,
+          "w": 350,
+          "h": 430.359375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "research",
+          "class": "plant-research plant-shell plant-cover",
+          "x": 20,
+          "y": 2073.546875,
+          "w": 350,
+          "h": 837,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "traits",
+          "class": "plant-traits plant-shell plant-cover",
+          "x": 20,
+          "y": 2910.546875,
+          "w": 350,
+          "h": 4368,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "composition",
+          "class": "plant-composition",
+          "x": 20,
+          "y": 2910.546875,
+          "w": 350,
+          "h": 780,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "management",
+          "class": "plant-management plant-shell plant-cover",
+          "x": 20,
+          "y": 7278.546875,
+          "w": 350,
+          "h": 873.1875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "factory",
+          "class": "pf-campus plant-cover",
+          "x": 0,
+          "y": 8151.734375,
+          "w": 390,
+          "h": 1617.5625,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "id": "production-technology",
+          "class": "pf-technology plant-cover",
+          "x": 0,
+          "y": 9769.296875,
+          "w": 390,
+          "h": 1166.578125,
+          "bg": "rgb(138, 138, 50)",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "id": "extraction-lines",
+          "class": "pf-lines plant-cover",
+          "x": 0,
+          "y": 10935.875,
+          "w": 390,
+          "h": 1185.921875,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "id": "production-capacity",
+          "class": "pf-capacity plant-cover",
+          "x": 0,
+          "y": 12121.796875,
+          "w": 390,
+          "h": 970.421875,
+          "bg": "rgb(138, 138, 50)",
+          "color": "rgb(255, 255, 255)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        },
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ]
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/390x844/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html",
+      "w": 390,
+      "h": 844,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 64,
+          "w": 390,
+          "h": 1792.796875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 1856.796875,
+          "w": 390,
+          "h": 470.75,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 2327.546875,
+          "w": 390,
+          "h": 410.46875,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 2738.015625,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 3518.015625,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 3518.015625,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 3518.015625,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 6193.40625,
+          "w": 390,
+          "h": 3667.234375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 7859.59375,
+          "w": 390,
+          "h": 2001.046875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 20,
+          "y": 8093.578125,
+          "w": 350,
+          "h": 611.78125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 20,
+          "y": 8705.359375,
+          "w": 350,
+          "h": 611.78125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 20,
+          "y": 9317.140625,
+          "w": 350,
+          "h": 543.5,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "ran"
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/390x844/products-series.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html#products-series",
+      "w": 390,
+      "h": 844,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 64,
+          "w": 390,
+          "h": 1792.796875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 1856.796875,
+          "w": 390,
+          "h": 470.75,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 2327.546875,
+          "w": 390,
+          "h": 410.46875,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 2738.015625,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 3518.015625,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 3518.015625,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 3518.015625,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 6193.40625,
+          "w": 390,
+          "h": 3667.234375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 7859.59375,
+          "w": 390,
+          "h": 2001.046875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 20,
+          "y": 8093.578125,
+          "w": 350,
+          "h": 611.78125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 20,
+          "y": 8705.359375,
+          "w": 350,
+          "h": 611.78125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 20,
+          "y": 9317.140625,
+          "w": 350,
+          "h": 543.5,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "ran",
+      "state": "products-series"
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/390x844/products-ran.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html#products-ran",
+      "w": 390,
+      "h": 844,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 64,
+          "w": 390,
+          "h": 1792.796875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 1856.796875,
+          "w": 390,
+          "h": 470.75,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 2327.546875,
+          "w": 390,
+          "h": 410.46875,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 2738.015625,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 3518.015625,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 3518.015625,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 3518.015625,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 6193.40625,
+          "w": 390,
+          "h": 3667.234375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 7859.59375,
+          "w": 390,
+          "h": 2001.046875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 20,
+          "y": 8093.578125,
+          "w": 350,
+          "h": 611.78125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 20,
+          "y": 8705.359375,
+          "w": 350,
+          "h": 611.78125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 20,
+          "y": 9317.140625,
+          "w": 350,
+          "h": 543.5,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "ran",
+      "state": "products-ran"
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/390x844/products-cui.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html#products-cui",
+      "w": 390,
+      "h": 844,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 64,
+          "w": 390,
+          "h": 1792.796875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 1856.796875,
+          "w": 390,
+          "h": 470.75,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 2327.546875,
+          "w": 390,
+          "h": 410.46875,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 3573,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 3573,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 4353,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 4353,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 6193.40625,
+          "w": 390,
+          "h": 3667.234375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 7859.59375,
+          "w": 390,
+          "h": 2001.046875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 20,
+          "y": 8093.578125,
+          "w": 350,
+          "h": 611.78125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 20,
+          "y": 8705.359375,
+          "w": 350,
+          "h": 611.78125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 20,
+          "y": 9317.140625,
+          "w": 350,
+          "h": 543.5,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "cui",
+      "state": "products-cui"
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/390x844/products-wen.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html#products-wen",
+      "w": 390,
+      "h": 844,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 64,
+          "w": 390,
+          "h": 1792.796875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 1856.796875,
+          "w": 390,
+          "h": 470.75,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 2327.546875,
+          "w": 390,
+          "h": 410.46875,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 4407,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 4407,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 4407.253677368164,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 5187,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 6193.40625,
+          "w": 390,
+          "h": 3667.234375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 7859.59375,
+          "w": 390,
+          "h": 2001.046875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 20,
+          "y": 8093.578125,
+          "w": 350,
+          "h": 611.78125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 20,
+          "y": 8705.359375,
+          "w": 350,
+          "h": 611.78125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 20,
+          "y": 9317.140625,
+          "w": 350,
+          "h": 543.5,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "wen",
+      "state": "products-wen"
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/390x844/products-zhi.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html#products-zhi",
+      "w": 390,
+      "h": 844,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 64,
+          "w": 390,
+          "h": 1792.796875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 1856.796875,
+          "w": 390,
+          "h": 470.75,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 2327.546875,
+          "w": 390,
+          "h": 410.46875,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 5242,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 5242,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 5242,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 5242,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 6193.40625,
+          "w": 390,
+          "h": 3667.234375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 7859.59375,
+          "w": 390,
+          "h": 2001.046875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 20,
+          "y": 8093.578125,
+          "w": 350,
+          "h": 611.78125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 20,
+          "y": 8705.359375,
+          "w": 350,
+          "h": 611.78125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 20,
+          "y": 9317.140625,
+          "w": 350,
+          "h": 543.5,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "zhi",
+      "state": "products-zhi"
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/390x844/cooperation-oem.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html#cooperation-oem",
+      "w": 390,
+      "h": 844,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 64,
+          "w": 390,
+          "h": 1792.796875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 1856.796875,
+          "w": 390,
+          "h": 470.75,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 2327.546875,
+          "w": 390,
+          "h": 410.46875,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 5413.40625,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 5413.40625,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 5413.40625,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 5413.40625,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 6193.40625,
+          "w": 390,
+          "h": 3667.234375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 7859.59375,
+          "w": 390,
+          "h": 2001.046875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 20,
+          "y": 8093.578125,
+          "w": 350,
+          "h": 611.78125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 20,
+          "y": 8705.359375,
+          "w": 350,
+          "h": 611.78125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 20,
+          "y": 9317.140625,
+          "w": 350,
+          "h": 543.5,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "zhi",
+      "state": "cooperation-oem"
+    },
+    {
+      "name": "service",
+      "screenshot": "before/service/390x844/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/service.html",
+      "w": 390,
+      "h": 844,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "",
+          "class": "xs-hero",
+          "x": 0,
+          "y": 64,
+          "w": 390,
+          "h": 685,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "",
+          "class": "xs-section xs-competence",
+          "x": 0,
+          "y": 749,
+          "w": 390,
+          "h": 1155.84375,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "locations",
+          "class": "xs-section",
+          "x": 0,
+          "y": 1904.84375,
+          "w": 390,
+          "h": 937.75,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "types",
+          "class": "xs-section",
+          "x": 0,
+          "y": 2842.59375,
+          "w": 390,
+          "h": 1869.609375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "services",
+          "class": "xs-services-section xs-section",
+          "x": 0,
+          "y": 4712.203125,
+          "w": 390,
+          "h": 894.34375,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ]
+    },
+    {
+      "name": "ai",
+      "screenshot": "before/ai/390x844/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/ai.html",
+      "w": 390,
+      "h": 844,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "",
+          "class": "xa-hero section-cover-panel is-cover-fit",
+          "x": 0,
+          "y": 68,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "value",
+          "class": "xa-intro section-cover-panel is-cover-fit",
+          "x": 0,
+          "y": 844,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "ai-capabilities",
+          "class": "xa-matrix section-cover-panel is-cover-fit",
+          "x": 0,
+          "y": 1624,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "ai-evidence",
+          "class": "xa-evidence section-cover-panel is-cover-fit",
+          "x": 0,
+          "y": 2404,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "how-it-works",
+          "class": "xa-values section-cover-panel",
+          "x": 0,
+          "y": 3184,
+          "w": 390,
+          "h": 966.71875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "ai-reports",
+          "class": "xa-reports section-cover-panel",
+          "x": 0,
+          "y": 4150.71875,
+          "w": 390,
+          "h": 849.203125,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "scenarios",
+          "class": "xa-scenarios section-cover-panel is-cover-fit",
+          "x": 0,
+          "y": 4999.921875,
+          "w": 390,
+          "h": 780,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ]
+    },
+    {
+      "name": "contact",
+      "screenshot": "before/contact/390x844/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/contact.html",
+      "w": 390,
+      "h": 844,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "",
+          "class": "xo-hero",
+          "x": 0,
+          "y": 64,
+          "w": 390,
+          "h": 219.375,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "news",
+          "class": "xo-news xo-original-news",
+          "x": 20,
+          "y": 331.375,
+          "w": 350,
+          "h": 588.46875,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "join",
+          "class": "xo-join",
+          "x": 20,
+          "y": 919.84375,
+          "w": 350,
+          "h": 963.5,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "controls": [],
+      "videos": []
+    },
+    {
+      "name": "index",
+      "screenshot": "before/index/1440x900/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/index.html",
+      "w": 1440,
+      "h": 900,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "hero-story",
+          "class": "home-film",
+          "x": 0,
+          "y": 1395,
+          "w": 1440,
+          "h": 900,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "company",
+          "class": "company-section cream",
+          "x": 0,
+          "y": 2295,
+          "w": 1440,
+          "h": 777.328125,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "planting",
+          "class": "planting-section shell",
+          "x": 87,
+          "y": 3072.328125,
+          "w": 1285,
+          "h": 1392.84375,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "collections",
+          "class": "collections-section cream",
+          "x": 0,
+          "y": 4465.171875,
+          "w": 1440,
+          "h": 908.984375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "service",
+          "class": "service-section cream",
+          "x": 0,
+          "y": 5374.15625,
+          "w": 1440,
+          "h": 970.5625,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "ai",
+          "class": "ai-section shell",
+          "x": 87,
+          "y": 6377.71875,
+          "w": 1285,
+          "h": 984.015625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "contact",
+          "class": "contact-section shell",
+          "x": 87,
+          "y": 7472.328125,
+          "w": 1285,
+          "h": 263,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        }
+      ],
+      "controls": [
+        "暂停轮播"
+      ],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ]
+    },
+    {
+      "name": "index",
+      "screenshot": "before/index/1440x900/collections.jpg",
+      "url": "http://127.0.0.1:4196/website-code/index.html#collections",
+      "w": 1440,
+      "h": 900,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "hero-story",
+          "class": "home-film",
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 900,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "company",
+          "class": "company-section cream",
+          "x": 0,
+          "y": 900,
+          "w": 1440,
+          "h": 777.328125,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "planting",
+          "class": "planting-section shell",
+          "x": 87,
+          "y": 1677.328125,
+          "w": 1285,
+          "h": 1392.84375,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "collections",
+          "class": "collections-section cream",
+          "x": 0,
+          "y": 3070.171875,
+          "w": 1440,
+          "h": 908.984375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "service",
+          "class": "service-section cream",
+          "x": 0,
+          "y": 3979.15625,
+          "w": 1440,
+          "h": 970.5625,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "ai",
+          "class": "ai-section shell",
+          "x": 87,
+          "y": 4982.71875,
+          "w": 1285,
+          "h": 984.015625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "contact",
+          "class": "contact-section shell",
+          "x": 87,
+          "y": 6077.328125,
+          "w": 1285,
+          "h": 263,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        }
+      ],
+      "controls": [
+        "暂停轮播"
+      ],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "state": "collections"
+    },
+    {
+      "name": "company",
+      "screenshot": "before/company/1440x900/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/company.html",
+      "w": 1440,
+      "h": 900,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "",
+          "class": "company-hero",
+          "x": 0,
+          "y": 72,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "id": "",
+          "class": "company-intro",
+          "x": 0,
+          "y": 900,
+          "w": 1440,
+          "h": 704.875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "business",
+          "class": "xf-section",
+          "x": 87,
+          "y": 1604.875,
+          "w": 1285,
+          "h": 635.9375,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "history",
+          "class": "xf-section xf-history",
+          "x": 87,
+          "y": 2240.8125,
+          "w": 1285,
+          "h": 758.40625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "products",
+          "class": "xf-section",
+          "x": 87,
+          "y": 2999.21875,
+          "w": 1285,
+          "h": 1406.78125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "stores",
+          "class": "xf-section",
+          "x": 87,
+          "y": 4406,
+          "w": 1285,
+          "h": 983.03125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "honors",
+          "class": "honor-section page-shell honor-story",
+          "x": 87,
+          "y": 5389.03125,
+          "w": 1285,
+          "h": 808.59375,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "honor-authority",
+          "class": "honor-group",
+          "x": 566.1875,
+          "y": 5561.828125,
+          "w": 805.8125,
+          "h": 463,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "honor-certificates",
+          "class": "honor-group",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "honor-responsibility",
+          "class": "honor-group",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "",
+          "class": "action-section page-shell",
+          "x": 87,
+          "y": 6197.625,
+          "w": 1285,
+          "h": 608.203125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ]
+    },
+    {
+      "name": "planting",
+      "screenshot": "before/planting/1440x900/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/planting.html",
+      "w": 1440,
+      "h": 900,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "",
+          "class": "plant-hero",
+          "x": 0,
+          "y": 72,
+          "w": 1440,
+          "h": 810,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "land",
+          "class": "plant-land",
+          "x": 0,
+          "y": 882,
+          "w": 1440,
+          "h": 1739,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "plant-origin plant-shell plant-cover",
+          "x": 87,
+          "y": 2769.796875,
+          "w": 1285,
+          "h": 526.015625,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "research",
+          "class": "plant-research plant-shell plant-cover",
+          "x": 87,
+          "y": 3295.8125,
+          "w": 1285,
+          "h": 1054,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "traits",
+          "class": "plant-traits plant-shell plant-cover",
+          "x": 87,
+          "y": 4349.8125,
+          "w": 1285,
+          "h": 4636.796875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "composition",
+          "class": "plant-composition",
+          "x": 87,
+          "y": 4349.8125,
+          "w": 1285,
+          "h": 828,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "management",
+          "class": "plant-management plant-shell plant-cover",
+          "x": 87,
+          "y": 8986.609375,
+          "w": 1285,
+          "h": 986.796875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "factory",
+          "class": "pf-campus plant-cover",
+          "x": 0,
+          "y": 9973.40625,
+          "w": 1440,
+          "h": 1379.796875,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "id": "production-technology",
+          "class": "pf-technology plant-cover",
+          "x": 0,
+          "y": 11353.203125,
+          "w": 1440,
+          "h": 1196.734375,
+          "bg": "rgb(138, 138, 50)",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "id": "extraction-lines",
+          "class": "pf-lines plant-cover",
+          "x": 0,
+          "y": 12549.9375,
+          "w": 1440,
+          "h": 1165.21875,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "id": "production-capacity",
+          "class": "pf-capacity plant-cover",
+          "x": 0,
+          "y": 13715.15625,
+          "w": 1440,
+          "h": 1327.234375,
+          "bg": "rgb(138, 138, 50)",
+          "color": "rgb(255, 255, 255)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        },
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ]
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/1440x900/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html",
+      "w": 1440,
+      "h": 900,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 72,
+          "w": 1440,
+          "h": 1908,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 1980,
+          "w": 1440,
+          "h": 821.875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 2801.875,
+          "w": 1440,
+          "h": 753.6875,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 3555.5625,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 4383.5625,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 4383.5625,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 4383.5625,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 7223.59375,
+          "w": 1440,
+          "h": 3812.671875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 8996.59375,
+          "w": 1440,
+          "h": 2039.671875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 87,
+          "y": 9326.515625,
+          "w": 1285,
+          "h": 604.890625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 87,
+          "y": 9931.40625,
+          "w": 1285,
+          "h": 604.890625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 87,
+          "y": 10536.296875,
+          "w": 1285,
+          "h": 499.96875,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "ran"
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/1440x900/products-series.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html#products-series",
+      "w": 1440,
+      "h": 900,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 72,
+          "w": 1440,
+          "h": 1908,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 1980,
+          "w": 1440,
+          "h": 821.875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 2801.875,
+          "w": 1440,
+          "h": 753.6875,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 3555.5625,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 4383.5625,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 4383.5625,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 4383.5625,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 7223.59375,
+          "w": 1440,
+          "h": 3812.671875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 8996.59375,
+          "w": 1440,
+          "h": 2039.671875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 87,
+          "y": 9326.515625,
+          "w": 1285,
+          "h": 604.890625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 87,
+          "y": 9931.40625,
+          "w": 1285,
+          "h": 604.890625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 87,
+          "y": 10536.296875,
+          "w": 1285,
+          "h": 499.96875,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "ran",
+      "state": "products-series"
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/1440x900/products-ran.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html#products-ran",
+      "w": 1440,
+      "h": 900,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 72,
+          "w": 1440,
+          "h": 1908,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 1980,
+          "w": 1440,
+          "h": 821.875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 2801.875,
+          "w": 1440,
+          "h": 753.6875,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 3556,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 4384,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 4384,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 4384,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 7223.59375,
+          "w": 1440,
+          "h": 3812.671875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 8996.59375,
+          "w": 1440,
+          "h": 2039.671875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 87,
+          "y": 9326.515625,
+          "w": 1285,
+          "h": 604.890625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 87,
+          "y": 9931.40625,
+          "w": 1285,
+          "h": 604.890625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 87,
+          "y": 10536.296875,
+          "w": 1285,
+          "h": 499.96875,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "ran",
+      "state": "products-ran"
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/1440x900/products-cui.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html#products-cui",
+      "w": 1440,
+      "h": 900,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 72,
+          "w": 1440,
+          "h": 1908,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 1980,
+          "w": 1440,
+          "h": 821.875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 2801.875,
+          "w": 1440,
+          "h": 753.6875,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 4442,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 4442,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 5270,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 5270,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 7223.59375,
+          "w": 1440,
+          "h": 3812.671875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 8996.59375,
+          "w": 1440,
+          "h": 2039.671875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 87,
+          "y": 9326.515625,
+          "w": 1285,
+          "h": 604.890625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 87,
+          "y": 9931.40625,
+          "w": 1285,
+          "h": 604.890625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 87,
+          "y": 10536.296875,
+          "w": 1285,
+          "h": 499.96875,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "cui",
+      "state": "products-cui"
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/1440x900/products-wen.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html#products-wen",
+      "w": 1440,
+      "h": 900,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 72,
+          "w": 1440,
+          "h": 1908,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 1980,
+          "w": 1440,
+          "h": 821.875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 2801.875,
+          "w": 1440,
+          "h": 753.6875,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 5327,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 5327,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 5327.567649841309,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 6155,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 7223.59375,
+          "w": 1440,
+          "h": 3812.671875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 8996.59375,
+          "w": 1440,
+          "h": 2039.671875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 87,
+          "y": 9326.515625,
+          "w": 1285,
+          "h": 604.890625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 87,
+          "y": 9931.40625,
+          "w": 1285,
+          "h": 604.890625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 87,
+          "y": 10536.296875,
+          "w": 1285,
+          "h": 499.96875,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "wen",
+      "state": "products-wen"
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/1440x900/products-zhi.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html#products-zhi",
+      "w": 1440,
+      "h": 900,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 72,
+          "w": 1440,
+          "h": 1908,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 1980,
+          "w": 1440,
+          "h": 821.875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 2801.875,
+          "w": 1440,
+          "h": 753.6875,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 6213,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 6213,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 6213,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 6213.52059173584,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 7223.59375,
+          "w": 1440,
+          "h": 3812.671875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 8996.59375,
+          "w": 1440,
+          "h": 2039.671875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 87,
+          "y": 9326.515625,
+          "w": 1285,
+          "h": 604.890625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 87,
+          "y": 9931.40625,
+          "w": 1285,
+          "h": 604.890625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 87,
+          "y": 10536.296875,
+          "w": 1285,
+          "h": 499.96875,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "zhi",
+      "state": "products-zhi"
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/1440x900/cooperation-oem.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html#cooperation-oem",
+      "w": 1440,
+      "h": 900,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 72,
+          "w": 1440,
+          "h": 1908,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 1980,
+          "w": 1440,
+          "h": 821.875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 2801.875,
+          "w": 1440,
+          "h": 753.6875,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 6395.59375,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 6395.59375,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 6395.59375,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 6395.59375,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 7223.59375,
+          "w": 1440,
+          "h": 3812.671875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 8996.59375,
+          "w": 1440,
+          "h": 2039.671875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 87,
+          "y": 9326.515625,
+          "w": 1285,
+          "h": 604.890625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 87,
+          "y": 9931.40625,
+          "w": 1285,
+          "h": 604.890625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 87,
+          "y": 10536.296875,
+          "w": 1285,
+          "h": 499.96875,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "zhi",
+      "state": "cooperation-oem"
+    },
+    {
+      "name": "service",
+      "screenshot": "before/service/1440x900/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/service.html",
+      "w": 1440,
+      "h": 900,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "",
+          "class": "xs-hero",
+          "x": 0,
+          "y": 72,
+          "w": 1440,
+          "h": 1147.34375,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "",
+          "class": "xs-section xs-competence",
+          "x": 0,
+          "y": 1219.34375,
+          "w": 1440,
+          "h": 1312.8125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "locations",
+          "class": "xs-section",
+          "x": 0,
+          "y": 2532.15625,
+          "w": 1440,
+          "h": 756.578125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "types",
+          "class": "xs-section",
+          "x": 0,
+          "y": 3288.734375,
+          "w": 1440,
+          "h": 2008.1875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "services",
+          "class": "xs-services-section xs-section",
+          "x": 0,
+          "y": 5296.921875,
+          "w": 1440,
+          "h": 1395,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ]
+    },
+    {
+      "name": "ai",
+      "screenshot": "before/ai/1440x900/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/ai.html",
+      "w": 1440,
+      "h": 900,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "",
+          "class": "xa-hero section-cover-panel is-cover-fit",
+          "x": 0,
+          "y": 158,
+          "w": 1440,
+          "h": 850.578125,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "value",
+          "class": "xa-intro section-cover-panel is-cover-fit",
+          "x": 0,
+          "y": 922.578125,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "ai-capabilities",
+          "class": "xa-matrix section-cover-panel is-cover-fit",
+          "x": 0,
+          "y": 1750.578125,
+          "w": 1440,
+          "h": 828,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "ai-evidence",
+          "class": "xa-evidence section-cover-panel is-cover-fit",
+          "x": 0,
+          "y": 2578.578125,
+          "w": 1440,
+          "h": 1014.28125,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "how-it-works",
+          "class": "xa-values section-cover-panel is-cover-fit",
+          "x": 0,
+          "y": 3592.859375,
+          "w": 1440,
+          "h": 1049.1875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "ai-reports",
+          "class": "xa-reports section-cover-panel is-cover-fit",
+          "x": 0,
+          "y": 4642.046875,
+          "w": 1440,
+          "h": 1227.546875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "scenarios",
+          "class": "xa-scenarios section-cover-panel is-cover-fit",
+          "x": 0,
+          "y": 5869.59375,
+          "w": 1440,
+          "h": 878.5625,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ]
+    },
+    {
+      "name": "contact",
+      "screenshot": "before/contact/1440x900/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/contact.html",
+      "w": 1440,
+      "h": 900,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "",
+          "class": "xo-hero",
+          "x": 0,
+          "y": 72,
+          "w": 1440,
+          "h": 810,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "news",
+          "class": "xo-news xo-original-news",
+          "x": 87,
+          "y": 968.390625,
+          "w": 1285,
+          "h": 864.390625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "join",
+          "class": "xo-join",
+          "x": 87,
+          "y": 1832.78125,
+          "w": 1285,
+          "h": 670.59375,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "controls": [],
+      "videos": []
+    },
+    {
+      "name": "index",
+      "screenshot": "before/index/3840x2160/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/index.html",
+      "w": 3840,
+      "h": 2160,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "hero-story",
+          "class": "home-film",
+          "x": 0,
+          "y": 2160,
+          "w": 3840,
+          "h": 2160,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "company",
+          "class": "company-section cream",
+          "x": 0,
+          "y": 4320,
+          "w": 3840,
+          "h": 2072.859375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "planting",
+          "class": "planting-section shell",
+          "x": 232,
+          "y": 6392.859375,
+          "w": 3426.671875,
+          "h": 3714.28125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "collections",
+          "class": "collections-section cream",
+          "x": 0,
+          "y": 10107.140625,
+          "w": 3840,
+          "h": 2423.953125,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "service",
+          "class": "service-section cream",
+          "x": 0,
+          "y": 12531.09375,
+          "w": 3840,
+          "h": 2588.171875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "ai",
+          "class": "ai-section shell",
+          "x": 232,
+          "y": 15207.265625,
+          "w": 3426.671875,
+          "h": 2624.046875,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "contact",
+          "class": "contact-section shell",
+          "x": 232,
+          "y": 18126.25,
+          "w": 3426.671875,
+          "h": 701.28125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        }
+      ],
+      "controls": [
+        "暂停轮播"
+      ],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ]
+    },
+    {
+      "name": "index",
+      "screenshot": "before/index/3840x2160/collections.jpg",
+      "url": "http://127.0.0.1:4196/website-code/index.html#collections",
+      "w": 3840,
+      "h": 2160,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "hero-story",
+          "class": "home-film",
+          "x": 0,
+          "y": 0,
+          "w": 3840,
+          "h": 2160,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "company",
+          "class": "company-section cream",
+          "x": 0,
+          "y": 2160,
+          "w": 3840,
+          "h": 2072.859375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "planting",
+          "class": "planting-section shell",
+          "x": 232,
+          "y": 4232.859375,
+          "w": 3426.671875,
+          "h": 3714.28125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "collections",
+          "class": "collections-section cream",
+          "x": 0,
+          "y": 7947.140625,
+          "w": 3840,
+          "h": 2423.953125,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "service",
+          "class": "service-section cream",
+          "x": 0,
+          "y": 10371.09375,
+          "w": 3840,
+          "h": 2588.171875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "ai",
+          "class": "ai-section shell",
+          "x": 232,
+          "y": 13047.265625,
+          "w": 3426.671875,
+          "h": 2624.046875,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "contact",
+          "class": "contact-section shell",
+          "x": 232,
+          "y": 15966.25,
+          "w": 3426.671875,
+          "h": 701.28125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        }
+      ],
+      "controls": [
+        "暂停轮播"
+      ],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "state": "collections"
+    },
+    {
+      "name": "company",
+      "screenshot": "before/company/3840x2160/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/company.html",
+      "w": 3840,
+      "h": 2160,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "",
+          "class": "company-hero",
+          "x": 0,
+          "y": 192,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "id": "",
+          "class": "company-intro",
+          "x": 0,
+          "y": 2160,
+          "w": 3840,
+          "h": 1879.828125,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "business",
+          "class": "xf-section",
+          "x": 232,
+          "y": 4039.828125,
+          "w": 3426.671875,
+          "h": 1696.015625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "history",
+          "class": "xf-section xf-history",
+          "x": 232,
+          "y": 5735.84375,
+          "w": 3426.671875,
+          "h": 2001.375,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "products",
+          "class": "xf-section",
+          "x": 232,
+          "y": 7737.21875,
+          "w": 3426.671875,
+          "h": 3622.390625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "stores",
+          "class": "xf-section",
+          "x": 232,
+          "y": 11359.609375,
+          "w": 3426.671875,
+          "h": 2505.765625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "honors",
+          "class": "honor-section page-shell honor-story",
+          "x": 232,
+          "y": 13865.375,
+          "w": 3426.671875,
+          "h": 2144.53125,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "honor-authority",
+          "class": "honor-group",
+          "x": 1509.859375,
+          "y": 14326.171875,
+          "w": 2148.8125,
+          "h": 1222.9375,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "honor-certificates",
+          "class": "honor-group",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "honor-responsibility",
+          "class": "honor-group",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "",
+          "class": "action-section page-shell",
+          "x": 232,
+          "y": 16009.90625,
+          "w": 3426.671875,
+          "h": 1620.140625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ]
+    },
+    {
+      "name": "planting",
+      "screenshot": "before/planting/3840x2160/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/planting.html",
+      "w": 3840,
+      "h": 2160,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "",
+          "class": "plant-hero",
+          "x": 0,
+          "y": 192,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "land",
+          "class": "plant-land",
+          "x": 0,
+          "y": 2160,
+          "w": 3840,
+          "h": 4636.546875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "plant-origin plant-shell plant-cover",
+          "x": 232,
+          "y": 7193.328125,
+          "w": 3426.671875,
+          "h": 1402.71875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "research",
+          "class": "plant-research plant-shell plant-cover",
+          "x": 232,
+          "y": 8596.046875,
+          "w": 3426.671875,
+          "h": 2810.140625,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "traits",
+          "class": "plant-traits plant-shell plant-cover",
+          "x": 232,
+          "y": 11406.1875,
+          "w": 3426.671875,
+          "h": 11020.796875,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "composition",
+          "class": "plant-composition",
+          "x": 232,
+          "y": 11406.1875,
+          "w": 3426.671875,
+          "h": 1968,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "management",
+          "class": "plant-management plant-shell plant-cover",
+          "x": 232,
+          "y": 22426.984375,
+          "w": 3426.671875,
+          "h": 2630.4375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "factory",
+          "class": "pf-campus plant-cover",
+          "x": 0,
+          "y": 25057.421875,
+          "w": 3840,
+          "h": 3679.328125,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "id": "production-technology",
+          "class": "pf-technology plant-cover",
+          "x": 0,
+          "y": 28736.75,
+          "w": 3840,
+          "h": 3191.296875,
+          "bg": "rgb(138, 138, 50)",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "id": "extraction-lines",
+          "class": "pf-lines plant-cover",
+          "x": 0,
+          "y": 31928.046875,
+          "w": 3840,
+          "h": 3107.234375,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "id": "production-capacity",
+          "class": "pf-capacity plant-cover",
+          "x": 0,
+          "y": 35035.28125,
+          "w": 3840,
+          "h": 3539.25,
+          "bg": "rgb(138, 138, 50)",
+          "color": "rgb(255, 255, 255)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        },
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ]
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/3840x2160/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html",
+      "w": 3840,
+      "h": 2160,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 192,
+          "w": 3840,
+          "h": 4560,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 4752,
+          "w": 3840,
+          "h": 2191.703125,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 6943.703125,
+          "w": 3840,
+          "h": 2009.84375,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 8953.546875,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 10921.546875,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 10921.546875,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 10921.546875,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 17671.78125,
+          "w": 3840,
+          "h": 9663.4375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 21907.78125,
+          "w": 3840,
+          "h": 5427.4375,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 232,
+          "y": 22787.609375,
+          "w": 3426.671875,
+          "h": 1608,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 232,
+          "y": 24395.609375,
+          "w": 3426.671875,
+          "h": 1608,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 232,
+          "y": 26003.609375,
+          "w": 3426.671875,
+          "h": 1331.609375,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "ran"
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/3840x2160/products-series.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html#products-series",
+      "w": 3840,
+      "h": 2160,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 192,
+          "w": 3840,
+          "h": 4560,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 4752,
+          "w": 3840,
+          "h": 2191.703125,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 6943.703125,
+          "w": 3840,
+          "h": 2009.84375,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 8953.546875,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 10921.546875,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 10921.546875,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 10921.546875,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 17671.78125,
+          "w": 3840,
+          "h": 9663.4375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 21907.78125,
+          "w": 3840,
+          "h": 5427.4375,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 232,
+          "y": 22787.609375,
+          "w": 3426.671875,
+          "h": 1608,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 232,
+          "y": 24395.609375,
+          "w": 3426.671875,
+          "h": 1608,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 232,
+          "y": 26003.609375,
+          "w": 3426.671875,
+          "h": 1331.609375,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "ran",
+      "state": "products-series"
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/3840x2160/products-ran.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html#products-ran",
+      "w": 3840,
+      "h": 2160,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 192,
+          "w": 3840,
+          "h": 4560,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 4752,
+          "w": 3840,
+          "h": 2191.703125,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 6943.703125,
+          "w": 3840,
+          "h": 2009.84375,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 8954,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 10922,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 10922,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 10922,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 17671.78125,
+          "w": 3840,
+          "h": 9663.4375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 21907.78125,
+          "w": 3840,
+          "h": 5427.4375,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 232,
+          "y": 22787.609375,
+          "w": 3426.671875,
+          "h": 1608,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 232,
+          "y": 24395.609375,
+          "w": 3426.671875,
+          "h": 1608,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 232,
+          "y": 26003.609375,
+          "w": 3426.671875,
+          "h": 1331.609375,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "ran",
+      "state": "products-ran"
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/3840x2160/products-cui.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html#products-cui",
+      "w": 3840,
+      "h": 2160,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 192,
+          "w": 3840,
+          "h": 4560,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 4752,
+          "w": 3840,
+          "h": 2191.703125,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 6943.703125,
+          "w": 3840,
+          "h": 2009.84375,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 11059,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 11059.361022949219,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 13027,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 13027,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 17671.78125,
+          "w": 3840,
+          "h": 9663.4375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 21907.78125,
+          "w": 3840,
+          "h": 5427.4375,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 232,
+          "y": 22787.609375,
+          "w": 3426.671875,
+          "h": 1608,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 232,
+          "y": 24395.609375,
+          "w": 3426.671875,
+          "h": 1608,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 232,
+          "y": 26003.609375,
+          "w": 3426.671875,
+          "h": 1331.609375,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "cui",
+      "state": "products-cui"
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/3840x2160/products-wen.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html#products-wen",
+      "w": 3840,
+      "h": 2160,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 192,
+          "w": 3840,
+          "h": 4560,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 4752,
+          "w": 3840,
+          "h": 2191.703125,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 6943.703125,
+          "w": 3840,
+          "h": 2009.84375,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 13165,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 13165,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 13165.078674316406,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 15133,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 17671.78125,
+          "w": 3840,
+          "h": 9663.4375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 21907.78125,
+          "w": 3840,
+          "h": 5427.4375,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 232,
+          "y": 22787.609375,
+          "w": 3426.671875,
+          "h": 1608,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 232,
+          "y": 24395.609375,
+          "w": 3426.671875,
+          "h": 1608,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 232,
+          "y": 26003.609375,
+          "w": 3426.671875,
+          "h": 1331.609375,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "wen",
+      "state": "products-wen"
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/3840x2160/products-zhi.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html#products-zhi",
+      "w": 3840,
+      "h": 2160,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 192,
+          "w": 3840,
+          "h": 4560,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 4752,
+          "w": 3840,
+          "h": 2191.703125,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 6943.703125,
+          "w": 3840,
+          "h": 2009.84375,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 15271,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 15271,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 15271,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 15271,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 17671.78125,
+          "w": 3840,
+          "h": 9663.4375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 21907.78125,
+          "w": 3840,
+          "h": 5427.4375,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 232,
+          "y": 22787.609375,
+          "w": 3426.671875,
+          "h": 1608,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 232,
+          "y": 24395.609375,
+          "w": 3426.671875,
+          "h": 1608,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 232,
+          "y": 26003.609375,
+          "w": 3426.671875,
+          "h": 1331.609375,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "zhi",
+      "state": "products-zhi"
+    },
+    {
+      "name": "products",
+      "screenshot": "before/products/3840x2160/cooperation-oem.jpg",
+      "url": "http://127.0.0.1:4196/website-code/products.html#cooperation-oem",
+      "w": 3840,
+      "h": 2160,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "products-hero",
+          "class": "model-hero",
+          "x": 0,
+          "y": 192,
+          "w": 3840,
+          "h": 4560,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-intro",
+          "class": "products-intro cream",
+          "x": 0,
+          "y": 4752,
+          "w": 3840,
+          "h": 2191.703125,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "products-series",
+          "class": "products-series",
+          "x": 0,
+          "y": 6943.703125,
+          "w": 3840,
+          "h": 2009.84375,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-ran",
+          "class": "product-group",
+          "x": 0,
+          "y": 15703.78125,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-cui",
+          "class": "product-group",
+          "x": 0,
+          "y": 15703.78125,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-wen",
+          "class": "product-group",
+          "x": 0,
+          "y": 15703.78125,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(149, 95, 54)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "products-zhi",
+          "class": "product-group",
+          "x": 0,
+          "y": 15703.78125,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(111, 113, 43)",
+          "color": "rgb(251, 244, 227)"
+        },
+        {
+          "id": "manufacturing",
+          "class": "product-cooperation",
+          "x": 0,
+          "y": 17671.78125,
+          "w": 3840,
+          "h": 9663.4375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "",
+          "class": "cooperation-services-content",
+          "x": 0,
+          "y": 21907.78125,
+          "w": 3840,
+          "h": 5427.4375,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-oem",
+          "class": "cooperation-services-story cooperation-services-story-oem",
+          "x": 232,
+          "y": 22787.609375,
+          "w": 3426.671875,
+          "h": 1608,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-odm",
+          "class": "cooperation-services-story cooperation-services-story-odm",
+          "x": 232,
+          "y": 24395.609375,
+          "w": 3426.671875,
+          "h": 1608,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "cooperation-quality",
+          "class": "cooperation-services-quality",
+          "x": 232,
+          "y": 26003.609375,
+          "w": 3426.671875,
+          "h": 1331.609375,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(35, 24, 21)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ],
+      "active": "zhi",
+      "state": "cooperation-oem"
+    },
+    {
+      "name": "service",
+      "screenshot": "before/service/3840x2160/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/service.html",
+      "w": 3840,
+      "h": 2160,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "",
+          "class": "xs-hero",
+          "x": 0,
+          "y": 192,
+          "w": 3840,
+          "h": 3014.640625,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "id": "",
+          "class": "xs-section xs-competence",
+          "x": 0,
+          "y": 3206.640625,
+          "w": 3840,
+          "h": 3499.21875,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "locations",
+          "class": "xs-section",
+          "x": 0,
+          "y": 6705.859375,
+          "w": 3840,
+          "h": 1616.625,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "types",
+          "class": "xs-section",
+          "x": 0,
+          "y": 8322.484375,
+          "w": 3840,
+          "h": 4873.5,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(35, 24, 21)"
+        },
+        {
+          "id": "services",
+          "class": "xs-services-section xs-section",
+          "x": 0,
+          "y": 13195.984375,
+          "w": 3840,
+          "h": 5139.46875,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ]
+    },
+    {
+      "name": "ai",
+      "screenshot": "before/ai/3840x2160/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/ai.html",
+      "w": 3840,
+      "h": 2160,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "",
+          "class": "xa-hero section-cover-panel is-cover-fit",
+          "x": 0,
+          "y": 192,
+          "w": 3840,
+          "h": 2268.1875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "value",
+          "class": "xa-intro section-cover-panel is-cover-fit",
+          "x": 0,
+          "y": 2460.1875,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "ai-capabilities",
+          "class": "xa-matrix section-cover-panel is-cover-fit",
+          "x": 0,
+          "y": 4428.1875,
+          "w": 3840,
+          "h": 1968,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "ai-evidence",
+          "class": "xa-evidence section-cover-panel is-cover-fit",
+          "x": 0,
+          "y": 6396.1875,
+          "w": 3840,
+          "h": 2701.375,
+          "bg": "rgb(251, 244, 227)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "how-it-works",
+          "class": "xa-values section-cover-panel is-cover-fit",
+          "x": 0,
+          "y": 9097.5625,
+          "w": 3840,
+          "h": 2797.84375,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "ai-reports",
+          "class": "xa-reports section-cover-panel is-cover-fit",
+          "x": 0,
+          "y": 11895.40625,
+          "w": 3840,
+          "h": 3240.203125,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "scenarios",
+          "class": "xa-scenarios section-cover-panel is-cover-fit",
+          "x": 0,
+          "y": 15135.609375,
+          "w": 3840,
+          "h": 2342.875,
+          "bg": "rgb(255, 255, 255)",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "loop": true,
+          "autoplay": true,
+          "controls": false,
+          "muted": true,
+          "error": 0
+        }
+      ]
+    },
+    {
+      "name": "contact",
+      "screenshot": "before/contact/3840x2160/full-page.jpg",
+      "url": "http://127.0.0.1:4196/website-code/contact.html",
+      "w": 3840,
+      "h": 2160,
+      "dpr": 1,
+      "overflow": 0,
+      "sections": [
+        {
+          "id": "",
+          "class": "xo-hero",
+          "x": 0,
+          "y": 192,
+          "w": 3840,
+          "h": 2160,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "news",
+          "class": "xo-news xo-original-news",
+          "x": 232,
+          "y": 2582.390625,
+          "w": 3426.671875,
+          "h": 2148.375,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "id": "join",
+          "class": "xo-join",
+          "x": 232,
+          "y": 4730.765625,
+          "w": 3426.671875,
+          "h": 1788.234375,
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "controls": [],
+      "videos": []
+    }
+  ]
+}

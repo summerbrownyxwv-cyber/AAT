@@ -1,0 +1,206 @@
+{
+  "baseline": "48886fa39b059a88e01bc75ab99dba7acc935db8",
+  "routes": [
+    {
+      "slug": "index",
+      "route": "/website-code/index.html",
+      "protocol": "full document navigation"
+    },
+    {
+      "slug": "company",
+      "route": "/website-code/company.html",
+      "protocol": "full document navigation"
+    },
+    {
+      "slug": "planting",
+      "route": "/website-code/planting.html",
+      "protocol": "full document navigation"
+    },
+    {
+      "slug": "products",
+      "route": "/website-code/products.html",
+      "protocol": "full document navigation"
+    },
+    {
+      "slug": "service-home",
+      "route": "/website-code/service.html",
+      "protocol": "full document navigation"
+    },
+    {
+      "slug": "ai",
+      "route": "/website-code/ai.html",
+      "protocol": "full document navigation"
+    },
+    {
+      "slug": "contact",
+      "route": "/website-code/contact.html",
+      "protocol": "full document navigation"
+    },
+    {
+      "slug": "franchise",
+      "route": "/website-code/franchise.html",
+      "protocol": "full document navigation"
+    },
+    {
+      "slug": "service-standard",
+      "route": "/website-code/service.html#/stores/standard",
+      "protocol": "same document hash router"
+    },
+    {
+      "slug": "service-black-gold",
+      "route": "/website-code/service.html#/stores/black-gold",
+      "protocol": "same document hash router"
+    },
+    {
+      "slug": "service-services",
+      "route": "/website-code/service.html#/stores/services",
+      "protocol": "same document hash router"
+    },
+    {
+      "slug": "service-standard-detail",
+      "route": "/website-code/service.html#/stores/standard/detail",
+      "protocol": "same document hash router"
+    },
+    {
+      "slug": "service-black-gold-detail",
+      "route": "/website-code/service.html#/stores/black-gold/detail",
+      "protocol": "same document hash router"
+    },
+    {
+      "slug": "service-franchise",
+      "route": "/website-code/service.html#/franchise",
+      "protocol": "same document hash router"
+    },
+    {
+      "slug": "contact-culture",
+      "route": "/website-code/contact.html#/about/culture",
+      "protocol": "same document hash router"
+    },
+    {
+      "slug": "contact-news",
+      "route": "/website-code/contact.html#/about/news",
+      "protocol": "same document hash router"
+    },
+    {
+      "slug": "contact-join",
+      "route": "/website-code/contact.html#/about/join",
+      "protocol": "same document hash router"
+    },
+    {
+      "slug": "contact-careers",
+      "route": "/website-code/contact.html#/about/careers",
+      "protocol": "same document hash router"
+    },
+    {
+      "slug": "contact-business",
+      "route": "/website-code/contact.html#/about/business",
+      "protocol": "same document hash router"
+    },
+    {
+      "slug": "contact-overseas",
+      "route": "/website-code/contact.html#/about/overseas",
+      "protocol": "same document hash router"
+    },
+    {
+      "slug": "contact-franchise-apply",
+      "route": "/website-code/contact.html#/franchise/apply",
+      "protocol": "same document hash router"
+    },
+    {
+      "slug": "contact-production-apply",
+      "route": "/website-code/contact.html#/production/apply",
+      "protocol": "same document hash router"
+    }
+  ],
+  "chapter_anchors": {
+    "ai": [
+      "#value",
+      "#ai-capabilities",
+      "#ai-evidence",
+      "#how-it-works",
+      "#ai-reports",
+      "#scenarios",
+      "#experience"
+    ],
+    "products": [
+      "#products-hero",
+      "#products-intro",
+      "#products-series",
+      "#products-ran",
+      "#products-cui",
+      "#products-wen",
+      "#products-zhi",
+      "#manufacturing",
+      "#cooperation-services",
+      "#cooperation-oem",
+      "#cooperation-odm",
+      "#cooperation-quality"
+    ],
+    "company": [
+      "#business",
+      "#history",
+      "#products",
+      "#stores",
+      "#honors"
+    ],
+    "planting": [
+      "#land",
+      "#greenhouse",
+      "#research",
+      "#traits",
+      "#composition",
+      "#management",
+      "#extraction-lines",
+      "#production-capacity"
+    ]
+  },
+  "viewports_css_pixels": [
+    [
+      320,
+      640
+    ],
+    [
+      360,
+      800
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      430,
+      932
+    ],
+    [
+      768,
+      1024
+    ],
+    [
+      1024,
+      768
+    ],
+    [
+      1280,
+      800
+    ],
+    [
+      1440,
+      900
+    ],
+    [
+      1920,
+      1080
+    ],
+    [
+      2560,
+      1440
+    ],
+    [
+      3840,
+      2160
+    ]
+  ],
+  "screenshots": "baseline/<slug>/<width>x<height>/full-page.jpg",
+  "interaction_screenshots": "states/<slug>/<width>x<height>/<state>.jpg",
+  "after_screenshots": "not applicable Phase01"
+}

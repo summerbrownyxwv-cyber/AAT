@@ -1,0 +1,1379 @@
+{
+  "capturedAt": "2026-10-15T14:33:48.705858+00:00",
+  "projectRoot": "/Users/dabao/Desktop/艾艾贴官网-首页交付/AAT",
+  "scope": "read-only video/font inventory; no encoding/decoding or asset changes",
+  "tools": {
+    "ffprobe": null,
+    "ffmpeg": "/Users/dabao/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "version": "ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers",
+    "metadataMethod": "MP4 ISO-BMFF boxes + ffmpeg input probe; no frame decode or perceptual quality inference"
+  },
+  "videos": [
+    {
+      "path": "assets/company/company-hero.mp4",
+      "bytes": 16128344,
+      "sha256": "cddf798a721b4b97552165099e8893c29c2d08c2cca621313680c26e0ab25b5e",
+      "references": [
+        {
+          "file": "website-code/company.html",
+          "lines": [
+            35
+          ]
+        },
+        {
+          "file": "content/asset-map.json",
+          "lines": [
+            490,
+            491
+          ]
+        }
+      ],
+      "topLevelAtoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "bytes": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "bytes": 16815
+        },
+        {
+          "type": "free",
+          "offset": 16847,
+          "bytes": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 16855,
+          "bytes": 16111489
+        }
+      ],
+      "faststart": true,
+      "tracks": [
+        {
+          "handler": "vide",
+          "codecFourCC": "avc1",
+          "timescale": 25000,
+          "durationSeconds": 52.48,
+          "sampleCount": 1312,
+          "compressedSampleBytes": 16111481,
+          "averageBitrateBitsPerSecond": 2456018.445,
+          "width": 1920,
+          "height": 1080,
+          "framesPerSecond": 25,
+          "timeToSampleRuns": [
+            {
+              "sampleCount": 1312,
+              "sampleDelta": 1000
+            }
+          ],
+          "keyframes": {
+            "count": 16,
+            "maxGapFrames": 249,
+            "averageGapFrames": 82.73333333333333
+          },
+          "avcProfileIdc": 100,
+          "avcLevelIdc": 40
+        }
+      ],
+      "movieDurationSeconds": 52.48,
+      "ffmpegProbeStderr": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/dabao/Desktop/艾艾贴官网-首页交付/AAT/assets/company/company-hero.mp4':\n  Metadata:\n    major_brand     : isom\n    minor_version   : 512\n    compatible_brands: isomiso2avc1mp41\n    encoder         : Lavf61.7.100\n  Duration: 00:00:52.48, start: 0.000000, bitrate: 2458 kb/s\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709/unknown/unknown, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 2456 kb/s, 25 fps, 25 tbr, 25k tbn (default)\n      Metadata:\n        handler_name    : VideoHandler\n        vendor_id       : [0][0][0][0]\nAt least one output file must be specified\n",
+      "localRangeRequest": {
+        "url": "http://127.0.0.1:4196/assets/company/company-hero.mp4",
+        "status": 206,
+        "headers": {
+          "Content-Type": "video/mp4",
+          "Content-Length": "1024",
+          "Accept-Ranges": "bytes",
+          "Content-Range": "bytes 0-1023/16128344",
+          "Date": "Thu, 15 Oct 2026 14:33:48 GMT",
+          "Connection": "close"
+        },
+        "bodyBytes": 1024
+      }
+    },
+    {
+      "path": "assets/homepage/home-hero.mp4",
+      "bytes": 17516809,
+      "sha256": "b8b356cafb948cbd1bfe7c5e9c6d3901c020ccf5bfc6d4c437120adbdc1bf7e3",
+      "references": [
+        {
+          "file": "website-code/index.html",
+          "lines": [
+            65
+          ]
+        },
+        {
+          "file": "content/home-video.json",
+          "lines": [
+            2
+          ]
+        }
+      ],
+      "topLevelAtoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "bytes": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "bytes": 8403
+        },
+        {
+          "type": "free",
+          "offset": 8435,
+          "bytes": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 8443,
+          "bytes": 17508366
+        }
+      ],
+      "faststart": true,
+      "tracks": [
+        {
+          "handler": "vide",
+          "codecFourCC": "avc1",
+          "timescale": 25000,
+          "durationSeconds": 24.52,
+          "sampleCount": 613,
+          "compressedSampleBytes": 17508358,
+          "averageBitrateBitsPerSecond": 5712351.713,
+          "width": 1920,
+          "height": 1080,
+          "framesPerSecond": 25,
+          "timeToSampleRuns": [
+            {
+              "sampleCount": 613,
+              "sampleDelta": 1000
+            }
+          ],
+          "keyframes": {
+            "count": 8,
+            "maxGapFrames": 168,
+            "averageGapFrames": 77.42857142857143
+          },
+          "avcProfileIdc": 100,
+          "avcLevelIdc": 40
+        }
+      ],
+      "movieDurationSeconds": 24.52,
+      "ffmpegProbeStderr": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/dabao/Desktop/艾艾贴官网-首页交付/AAT/assets/homepage/home-hero.mp4':\n  Metadata:\n    major_brand     : isom\n    minor_version   : 512\n    compatible_brands: isomiso2avc1mp41\n    encoder         : Lavf61.7.100\n  Duration: 00:00:24.52, start: 0.000000, bitrate: 5715 kb/s\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709/unknown/unknown, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 5712 kb/s, 25 fps, 25 tbr, 25k tbn (default)\n      Metadata:\n        handler_name    : VideoHandler\n        vendor_id       : [0][0][0][0]\nAt least one output file must be specified\n",
+      "localRangeRequest": {
+        "url": "http://127.0.0.1:4196/assets/homepage/home-hero.mp4",
+        "status": 206,
+        "headers": {
+          "Content-Type": "video/mp4",
+          "Content-Length": "1024",
+          "Accept-Ranges": "bytes",
+          "Content-Range": "bytes 0-1023/17516809",
+          "Date": "Thu, 15 Oct 2026 14:33:48 GMT",
+          "Connection": "close"
+        },
+        "bodyBytes": 1024
+      }
+    },
+    {
+      "path": "assets/planting/planting-hero.mp4",
+      "bytes": 91317434,
+      "sha256": "5be5dc0c8635f1f42b097ffa35fcd5006e7dbac5c31bef214912624ca513dbdf",
+      "references": [
+        {
+          "file": "website-code/planting.html",
+          "lines": [
+            34
+          ]
+        },
+        {
+          "file": "content/asset-map.json",
+          "lines": [
+            3136,
+            3137
+          ]
+        },
+        {
+          "file": "content/planting-video.json",
+          "lines": [
+            2
+          ]
+        }
+      ],
+      "topLevelAtoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "bytes": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "bytes": 106289
+        },
+        {
+          "type": "free",
+          "offset": 106321,
+          "bytes": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 106329,
+          "bytes": 91211105
+        }
+      ],
+      "faststart": true,
+      "tracks": [
+        {
+          "handler": "vide",
+          "codecFourCC": "avc1",
+          "timescale": 90000,
+          "durationSeconds": 291.76666666666665,
+          "sampleCount": 8753,
+          "compressedSampleBytes": 91211097,
+          "averageBitrateBitsPerSecond": 2500932.627,
+          "width": 1920,
+          "height": 1080,
+          "framesPerSecond": 30,
+          "timeToSampleRuns": [
+            {
+              "sampleCount": 8753,
+              "sampleDelta": 3000
+            }
+          ],
+          "keyframes": {
+            "count": 110,
+            "maxGapFrames": 250,
+            "averageGapFrames": 79.54128440366972
+          },
+          "avcProfileIdc": 100,
+          "avcLevelIdc": 50
+        }
+      ],
+      "movieDurationSeconds": 291.767,
+      "ffmpegProbeStderr": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/dabao/Desktop/艾艾贴官网-首页交付/AAT/assets/planting/planting-hero.mp4':\n  Metadata:\n    major_brand     : isom\n    minor_version   : 512\n    compatible_brands: isomiso2avc1mp41\n    encoder         : Lavf61.7.100\n  Duration: 00:04:51.77, start: 0.000000, bitrate: 2503 kb/s\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080, 2500 kb/s, 30 fps, 30 tbr, 90k tbn (default)\n      Metadata:\n        handler_name    : VideoHandler\n        vendor_id       : [0][0][0][0]\n        encoder         : Lavc61.19.100 libx264\nAt least one output file must be specified\n",
+      "localRangeRequest": {
+        "url": "http://127.0.0.1:4196/assets/planting/planting-hero.mp4",
+        "status": 206,
+        "headers": {
+          "Content-Type": "video/mp4",
+          "Content-Length": "1024",
+          "Accept-Ranges": "bytes",
+          "Content-Range": "bytes 0-1023/91317434",
+          "Date": "Thu, 15 Oct 2026 14:33:48 GMT",
+          "Connection": "close"
+        },
+        "bodyBytes": 1024
+      }
+    },
+    {
+      "path": "assets/planting/qiyou-one.mp4",
+      "bytes": 64487852,
+      "sha256": "8a031f6d7d8b7299f0fba619e90f02ac5dd4a9ff6969c94ff15ace7f14c1f6ea",
+      "references": [
+        {
+          "file": "website-code/planting-page.js",
+          "lines": [
+            26
+          ]
+        },
+        {
+          "file": "content/asset-map.json",
+          "lines": [
+            3163,
+            3164
+          ]
+        }
+      ],
+      "topLevelAtoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "bytes": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "bytes": 64621
+        },
+        {
+          "type": "free",
+          "offset": 64653,
+          "bytes": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 64661,
+          "bytes": 64423191
+        }
+      ],
+      "faststart": true,
+      "tracks": [
+        {
+          "handler": "vide",
+          "codecFourCC": "avc1",
+          "timescale": 90000,
+          "durationSeconds": 128.48,
+          "sampleCount": 3212,
+          "compressedSampleBytes": 62367925,
+          "averageBitrateBitsPerSecond": 3883432.441,
+          "width": 1920,
+          "height": 1080,
+          "framesPerSecond": 25.000000000000004,
+          "timeToSampleRuns": [
+            {
+              "sampleCount": 3212,
+              "sampleDelta": 3600
+            }
+          ],
+          "keyframes": {
+            "count": 38,
+            "maxGapFrames": 249,
+            "averageGapFrames": 80.24324324324324
+          },
+          "avcProfileIdc": 100,
+          "avcLevelIdc": 40
+        },
+        {
+          "handler": "soun",
+          "codecFourCC": "mp4a",
+          "timescale": 48000,
+          "durationSeconds": 128.59633333333332,
+          "sampleCount": 6028,
+          "compressedSampleBytes": 2055258,
+          "averageBitrateBitsPerSecond": 127857.953
+        }
+      ],
+      "movieDurationSeconds": 128.575,
+      "ffmpegProbeStderr": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/dabao/Desktop/艾艾贴官网-首页交付/AAT/assets/planting/qiyou-one.mp4':\n  Metadata:\n    major_brand     : isom\n    minor_version   : 512\n    compatible_brands: isomiso2avc1mp41\n    encoder         : Lavf61.7.100\n  Duration: 00:02:08.58, start: 0.000000, bitrate: 4012 kb/s\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709/unknown/unknown, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 3883 kb/s, 25 fps, 25 tbr, 90k tbn (default)\n      Metadata:\n        vendor_id       : [0][0][0][0]\n  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 127 kb/s (default)\n      Metadata:\n        vendor_id       : [0][0][0][0]\nAt least one output file must be specified\n",
+      "localRangeRequest": {
+        "url": "http://127.0.0.1:4196/assets/planting/qiyou-one.mp4",
+        "status": 206,
+        "headers": {
+          "Content-Type": "video/mp4",
+          "Content-Length": "1024",
+          "Accept-Ranges": "bytes",
+          "Content-Range": "bytes 0-1023/64487852",
+          "Date": "Thu, 15 Oct 2026 14:33:48 GMT",
+          "Connection": "close"
+        },
+        "bodyBytes": 1024
+      }
+    },
+    {
+      "path": "assets/products/products-film.mp4",
+      "bytes": 7187453,
+      "sha256": "f7bbdf26efb309453cc8738ebb1b00bd5de9e9fe92bd22cd6745fd3f38742809",
+      "references": [
+        {
+          "file": "website-code/products-showcase.js",
+          "lines": [
+            11
+          ]
+        },
+        {
+          "file": "content/asset-map.json",
+          "lines": [
+            3783,
+            3784
+          ]
+        }
+      ],
+      "topLevelAtoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "bytes": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "bytes": 19079
+        },
+        {
+          "type": "free",
+          "offset": 19111,
+          "bytes": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 19119,
+          "bytes": 7168334
+        }
+      ],
+      "faststart": true,
+      "tracks": [
+        {
+          "handler": "vide",
+          "codecFourCC": "avc1",
+          "timescale": 25000,
+          "durationSeconds": 35.16,
+          "sampleCount": 879,
+          "compressedSampleBytes": 7153450,
+          "averageBitrateBitsPerSecond": 1627633.675,
+          "width": 1920,
+          "height": 1080,
+          "framesPerSecond": 25.000000000000004,
+          "timeToSampleRuns": [
+            {
+              "sampleCount": 879,
+              "sampleDelta": 1000
+            }
+          ],
+          "keyframes": {
+            "count": 10,
+            "maxGapFrames": 250,
+            "averageGapFrames": 87.33333333333333
+          },
+          "avcProfileIdc": 100,
+          "avcLevelIdc": 40
+        },
+        {
+          "handler": "soun",
+          "codecFourCC": "mp4a",
+          "timescale": 48000,
+          "durationSeconds": 35.221333333333334,
+          "sampleCount": 1651,
+          "compressedSampleBytes": 14876,
+          "averageBitrateBitsPerSecond": 3378.861
+        }
+      ],
+      "movieDurationSeconds": 35.2,
+      "ffmpegProbeStderr": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/dabao/Desktop/艾艾贴官网-首页交付/AAT/assets/products/products-film.mp4':\n  Metadata:\n    major_brand     : isom\n    minor_version   : 512\n    compatible_brands: isomiso2avc1mp41\n    creation_time   : 2025-11-18T06:54:09.000000Z\n    encoder         : Lavf61.7.100\n  Duration: 00:00:35.20, start: 0.000000, bitrate: 1633 kb/s\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709/unknown/unknown, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 1627 kb/s, 25 fps, 25 tbr, 25k tbn (default)\n      Metadata:\n        creation_time   : 2025-11-18T06:54:09.000000Z\n        handler_name    : L-SMASH Video Media Handler\n        vendor_id       : [0][0][0][0]\n        encoder         : AVC Coding\n  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 3 kb/s (default)\n      Metadata:\n        creation_time   : 2025-11-18T06:54:09.000000Z\n        handler_name    : L-SMASH Sound Media Handler\n        vendor_id       : [0][0][0][0]\nAt least one output file must be specified\n",
+      "localRangeRequest": {
+        "url": "http://127.0.0.1:4196/assets/products/products-film.mp4",
+        "status": 206,
+        "headers": {
+          "Content-Type": "video/mp4",
+          "Content-Length": "1024",
+          "Accept-Ranges": "bytes",
+          "Content-Range": "bytes 0-1023/7187453",
+          "Date": "Thu, 15 Oct 2026 14:33:48 GMT",
+          "Connection": "close"
+        },
+        "bodyBytes": 1024
+      }
+    },
+    {
+      "path": "assets/xunai/ai/ai-demo.mp4",
+      "bytes": 89964461,
+      "sha256": "18031b6ea2298ea16b1a401a00128f3516f7f51ec0c21b8da18e35dfac688700",
+      "references": [
+        {
+          "file": "website-code/xunai/ai-page.js",
+          "lines": [
+            25
+          ]
+        },
+        {
+          "file": "content/asset-map.json",
+          "lines": [
+            4707,
+            4708
+          ]
+        }
+      ],
+      "topLevelAtoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "bytes": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "bytes": 185356
+        },
+        {
+          "type": "free",
+          "offset": 185388,
+          "bytes": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 185396,
+          "bytes": 89779065
+        }
+      ],
+      "faststart": true,
+      "tracks": [
+        {
+          "handler": "vide",
+          "codecFourCC": "avc1",
+          "timescale": 30000,
+          "durationSeconds": 518.9851333333334,
+          "sampleCount": 15554,
+          "compressedSampleBytes": 89779057,
+          "averageBitrateBitsPerSecond": 1383917.207,
+          "width": 1920,
+          "height": 1080,
+          "framesPerSecond": 29.97002997002997,
+          "timeToSampleRuns": [
+            {
+              "sampleCount": 15554,
+              "sampleDelta": 1001
+            }
+          ],
+          "keyframes": {
+            "count": 66,
+            "maxGapFrames": 250,
+            "averageGapFrames": 238.86153846153846
+          },
+          "avcProfileIdc": 100,
+          "avcLevelIdc": 50
+        }
+      ],
+      "movieDurationSeconds": 518.986,
+      "ffmpegProbeStderr": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/dabao/Desktop/艾艾贴官网-首页交付/AAT/assets/xunai/ai/ai-demo.mp4':\n  Metadata:\n    major_brand     : isom\n    minor_version   : 512\n    compatible_brands: isomiso2avc1mp41\n    encoder         : Lavf61.7.100\n  Duration: 00:08:38.99, start: 0.000000, bitrate: 1386 kb/s\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080, 1383 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)\n      Metadata:\n        handler_name    : VideoHandler\n        vendor_id       : [0][0][0][0]\n        encoder         : Lavc61.19.100 libx264\nAt least one output file must be specified\n",
+      "localRangeRequest": {
+        "url": "http://127.0.0.1:4196/assets/xunai/ai/ai-demo.mp4",
+        "status": 206,
+        "headers": {
+          "Content-Type": "video/mp4",
+          "Content-Length": "1024",
+          "Accept-Ranges": "bytes",
+          "Content-Range": "bytes 0-1023/89964461",
+          "Date": "Thu, 15 Oct 2026 14:33:48 GMT",
+          "Connection": "close"
+        },
+        "bodyBytes": 1024
+      }
+    },
+    {
+      "path": "assets/xunai/stores/黑金店体验流程.mp4",
+      "bytes": 41704236,
+      "sha256": "d52519eb97d2b29b1c130cccd6b65cb2cb26c095c72bb714ed2f6c6ae5f2d9d3",
+      "references": [
+        {
+          "file": "website-code/xunai/stores-page.js",
+          "lines": [
+            166
+          ]
+        },
+        {
+          "file": "content/asset-map.json",
+          "lines": [
+            11769,
+            11770
+          ]
+        }
+      ],
+      "topLevelAtoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "bytes": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "bytes": 20535
+        },
+        {
+          "type": "free",
+          "offset": 20567,
+          "bytes": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 20575,
+          "bytes": 41683661
+        }
+      ],
+      "faststart": true,
+      "tracks": [
+        {
+          "handler": "vide",
+          "codecFourCC": "avc1",
+          "timescale": 15360,
+          "durationSeconds": 53.06666666666667,
+          "sampleCount": 1592,
+          "compressedSampleBytes": 41683653,
+          "averageBitrateBitsPerSecond": 6283967.789,
+          "width": 2730,
+          "height": 1440,
+          "framesPerSecond": 29.999999999999996,
+          "timeToSampleRuns": [
+            {
+              "sampleCount": 1592,
+              "sampleDelta": 512
+            }
+          ],
+          "keyframes": {
+            "count": 13,
+            "maxGapFrames": 250,
+            "averageGapFrames": 122.91666666666667
+          },
+          "avcProfileIdc": 100,
+          "avcLevelIdc": 50
+        }
+      ],
+      "movieDurationSeconds": 53.067,
+      "ffmpegProbeStderr": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/dabao/Desktop/艾艾贴官网-首页交付/AAT/assets/xunai/stores/黑金店体验流程.mp4':\n  Metadata:\n    major_brand     : isom\n    minor_version   : 512\n    compatible_brands: isomiso2avc1mp41\n    encoder         : Lavf61.7.100\n  Duration: 00:00:53.07, start: 0.000000, bitrate: 6287 kb/s\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 2730x1440 [SAR 1:1 DAR 91:48], 6283 kb/s, 30 fps, 30 tbr, 15360 tbn (default)\n      Metadata:\n        handler_name    : VideoHandler\n        vendor_id       : [0][0][0][0]\n        encoder         : Lavc61.19.100 libx264\nAt least one output file must be specified\n",
+      "localRangeRequest": {
+        "url": "http://127.0.0.1:4196/assets/xunai/stores/%E9%BB%91%E9%87%91%E5%BA%97%E4%BD%93%E9%AA%8C%E6%B5%81%E7%A8%8B.mp4",
+        "status": 206,
+        "headers": {
+          "Content-Type": "video/mp4",
+          "Content-Length": "1024",
+          "Accept-Ranges": "bytes",
+          "Content-Range": "bytes 0-1023/41704236",
+          "Date": "Thu, 15 Oct 2026 14:33:48 GMT",
+          "Connection": "close"
+        },
+        "bodyBytes": 1024
+      }
+    }
+  ],
+  "fonts": [
+    {
+      "path": "assets/fonts/crimson-regular.woff2",
+      "bytes": 43084,
+      "sha256": "126d2796c0ef94085dcd0cad414016bc99c6d19505b5937beb12d6ddb3c8b266",
+      "references": [
+        {
+          "file": "website-code/styles.css",
+          "lines": [
+            3
+          ]
+        },
+        {
+          "file": "website-code/site-foundations.css",
+          "lines": [
+            4
+          ]
+        },
+        {
+          "file": "website-code/xunai/content.css",
+          "lines": [
+            234
+          ]
+        },
+        {
+          "file": "content/asset-map.json",
+          "lines": [
+            4539,
+            4540,
+            7114,
+            7115
+          ]
+        }
+      ],
+      "woff2Header": {
+        "numTables": 17,
+        "totalSfntSize": 107128,
+        "totalCompressedSize": 42983
+      }
+    },
+    {
+      "path": "assets/fonts/oppo-sans.woff2",
+      "bytes": 13645776,
+      "sha256": "8d409dfff2a584a1e9c7d3022ef35887abe13510566fa19d776e475fc0a72c31",
+      "references": [
+        {
+          "file": "website-code/index.html",
+          "lines": [
+            10
+          ]
+        },
+        {
+          "file": "website-code/styles.css",
+          "lines": [
+            1
+          ]
+        },
+        {
+          "file": "website-code/contact.html",
+          "lines": [
+            10
+          ]
+        },
+        {
+          "file": "website-code/products.html",
+          "lines": [
+            10
+          ]
+        },
+        {
+          "file": "website-code/planting.html",
+          "lines": [
+            10
+          ]
+        },
+        {
+          "file": "website-code/service.html",
+          "lines": [
+            10
+          ]
+        },
+        {
+          "file": "website-code/company.html",
+          "lines": [
+            10
+          ]
+        },
+        {
+          "file": "website-code/ai.html",
+          "lines": [
+            10
+          ]
+        },
+        {
+          "file": "website-code/site-foundations.css",
+          "lines": [
+            2
+          ]
+        },
+        {
+          "file": "website-code/company.css",
+          "lines": [
+            1
+          ]
+        },
+        {
+          "file": "website-code/xunai/content.css",
+          "lines": [
+            232
+          ]
+        },
+        {
+          "file": "content/asset-map.json",
+          "lines": [
+            4547,
+            4548,
+            7122,
+            7123
+          ]
+        }
+      ],
+      "woff2Header": {
+        "numTables": 20,
+        "totalSfntSize": 22741072,
+        "totalCompressedSize": 13645656
+      }
+    },
+    {
+      "path": "assets/fonts/tsukushi-mincho-r.woff2",
+      "bytes": 2254280,
+      "sha256": "a0703fedb2f3e22439fe584d12d68ce9532b6549943f912af0496872f20630d2",
+      "references": [
+        {
+          "file": "website-code/index.html",
+          "lines": [
+            11
+          ]
+        },
+        {
+          "file": "website-code/styles.css",
+          "lines": [
+            2
+          ]
+        },
+        {
+          "file": "website-code/contact.html",
+          "lines": [
+            11
+          ]
+        },
+        {
+          "file": "website-code/products.html",
+          "lines": [
+            11
+          ]
+        },
+        {
+          "file": "website-code/planting.html",
+          "lines": [
+            11
+          ]
+        },
+        {
+          "file": "website-code/service.html",
+          "lines": [
+            11
+          ]
+        },
+        {
+          "file": "website-code/company.html",
+          "lines": [
+            11
+          ]
+        },
+        {
+          "file": "website-code/ai.html",
+          "lines": [
+            11
+          ]
+        },
+        {
+          "file": "website-code/site-foundations.css",
+          "lines": [
+            3
+          ]
+        },
+        {
+          "file": "website-code/company.css",
+          "lines": [
+            2
+          ]
+        },
+        {
+          "file": "website-code/xunai/content.css",
+          "lines": [
+            233
+          ]
+        },
+        {
+          "file": "content/asset-map.json",
+          "lines": [
+            4555,
+            4556,
+            7130,
+            7131
+          ]
+        }
+      ],
+      "woff2Header": {
+        "numTables": 17,
+        "totalSfntSize": 4824724,
+        "totalCompressedSize": 2254178
+      }
+    },
+    {
+      "path": "assets/xunai/fonts/crimson-regular.woff2",
+      "bytes": 43084,
+      "sha256": "126d2796c0ef94085dcd0cad414016bc99c6d19505b5937beb12d6ddb3c8b266",
+      "references": [
+        {
+          "file": "website-code/styles.css",
+          "lines": [
+            3
+          ]
+        },
+        {
+          "file": "website-code/site-foundations.css",
+          "lines": [
+            4
+          ]
+        },
+        {
+          "file": "website-code/xunai/content.css",
+          "lines": [
+            234
+          ]
+        },
+        {
+          "file": "content/asset-map.json",
+          "lines": [
+            4539,
+            4540,
+            7114,
+            7115
+          ]
+        }
+      ],
+      "woff2Header": {
+        "numTables": 17,
+        "totalSfntSize": 107128,
+        "totalCompressedSize": 42983
+      }
+    },
+    {
+      "path": "assets/xunai/fonts/oppo-sans.woff2",
+      "bytes": 13645776,
+      "sha256": "8d409dfff2a584a1e9c7d3022ef35887abe13510566fa19d776e475fc0a72c31",
+      "references": [
+        {
+          "file": "website-code/index.html",
+          "lines": [
+            10
+          ]
+        },
+        {
+          "file": "website-code/styles.css",
+          "lines": [
+            1
+          ]
+        },
+        {
+          "file": "website-code/contact.html",
+          "lines": [
+            10
+          ]
+        },
+        {
+          "file": "website-code/products.html",
+          "lines": [
+            10
+          ]
+        },
+        {
+          "file": "website-code/planting.html",
+          "lines": [
+            10
+          ]
+        },
+        {
+          "file": "website-code/service.html",
+          "lines": [
+            10
+          ]
+        },
+        {
+          "file": "website-code/company.html",
+          "lines": [
+            10
+          ]
+        },
+        {
+          "file": "website-code/ai.html",
+          "lines": [
+            10
+          ]
+        },
+        {
+          "file": "website-code/site-foundations.css",
+          "lines": [
+            2
+          ]
+        },
+        {
+          "file": "website-code/company.css",
+          "lines": [
+            1
+          ]
+        },
+        {
+          "file": "website-code/xunai/content.css",
+          "lines": [
+            232
+          ]
+        },
+        {
+          "file": "content/asset-map.json",
+          "lines": [
+            4547,
+            4548,
+            7122,
+            7123
+          ]
+        }
+      ],
+      "woff2Header": {
+        "numTables": 20,
+        "totalSfntSize": 22741072,
+        "totalCompressedSize": 13645656
+      }
+    },
+    {
+      "path": "assets/xunai/fonts/tsukushi-mincho-r.woff2",
+      "bytes": 2254280,
+      "sha256": "a0703fedb2f3e22439fe584d12d68ce9532b6549943f912af0496872f20630d2",
+      "references": [
+        {
+          "file": "website-code/index.html",
+          "lines": [
+            11
+          ]
+        },
+        {
+          "file": "website-code/styles.css",
+          "lines": [
+            2
+          ]
+        },
+        {
+          "file": "website-code/contact.html",
+          "lines": [
+            11
+          ]
+        },
+        {
+          "file": "website-code/products.html",
+          "lines": [
+            11
+          ]
+        },
+        {
+          "file": "website-code/planting.html",
+          "lines": [
+            11
+          ]
+        },
+        {
+          "file": "website-code/service.html",
+          "lines": [
+            11
+          ]
+        },
+        {
+          "file": "website-code/company.html",
+          "lines": [
+            11
+          ]
+        },
+        {
+          "file": "website-code/ai.html",
+          "lines": [
+            11
+          ]
+        },
+        {
+          "file": "website-code/site-foundations.css",
+          "lines": [
+            3
+          ]
+        },
+        {
+          "file": "website-code/company.css",
+          "lines": [
+            2
+          ]
+        },
+        {
+          "file": "website-code/xunai/content.css",
+          "lines": [
+            233
+          ]
+        },
+        {
+          "file": "content/asset-map.json",
+          "lines": [
+            4555,
+            4556,
+            7130,
+            7131
+          ]
+        }
+      ],
+      "woff2Header": {
+        "numTables": 17,
+        "totalSfntSize": 4824724,
+        "totalCompressedSize": 2254178
+      }
+    }
+  ],
+  "totals": {
+    "videoFiles": 7,
+    "videoBytes": 328306589,
+    "fontFiles": 6,
+    "fontBytes": 31886280,
+    "uniqueFontBytes": 15943140
+  },
+  "limitations": [
+    "Local Range headers are not evidence of live Vercel cache/Range behavior.",
+    "FFmpeg probe reads metadata; not a full decode, SSIM/VMAF or visual quality test.",
+    "No network performance baseline is inferred from asset folder totals.",
+    "Font glyph coverage, original licensing outside repository and mobile Safari behavior are not inferred."
+  ],
+  "browserFontDiagnostic": {
+    "browser": "154.0.8037.99",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "dpr": 1,
+    "conditions": "Independent fresh contexts on local source preview; MP4/WebM deliberately blocked to isolate font requests; NOT performance baseline or video behavior test",
+    "observations": [
+      {
+        "slug": "index",
+        "diagnosticOnly": true,
+        "videoBlocked": true,
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "weight": "100 700",
+            "status": "loaded"
+          },
+          {
+            "family": "XunAi Mincho",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "XunAi Crimson",
+            "weight": "400",
+            "status": "unloaded"
+          }
+        ],
+        "mediaAttempts": [
+          {
+            "url": "http://127.0.0.1:4196/assets/homepage/home-hero.mp4",
+            "note": "blocked in this diagnostic only; not a transfer baseline"
+          }
+        ],
+        "timing": [
+          {
+            "url": "http://127.0.0.1:4196/assets/fonts/oppo-sans.woff2",
+            "startTime": 25,
+            "duration": 47.80000000074506,
+            "transferSize": 13646076,
+            "encodedBodySize": 13645776
+          },
+          {
+            "url": "http://127.0.0.1:4196/assets/fonts/tsukushi-mincho-r.woff2",
+            "startTime": 25.700000001117587,
+            "duration": 51.5,
+            "transferSize": 2254580,
+            "encodedBodySize": 2254280
+          }
+        ],
+        "videos": [
+          {
+            "source": "http://127.0.0.1:4196/assets/homepage/home-hero.mp4",
+            "preload": "metadata",
+            "autoplay": true,
+            "muted": true,
+            "loop": true,
+            "controls": false,
+            "poster": "http://127.0.0.1:4196/assets/homepage/home-hero-poster.webp",
+            "boundsY": 1395
+          }
+        ]
+      },
+      {
+        "slug": "service",
+        "diagnosticOnly": true,
+        "videoBlocked": true,
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "weight": "100 700",
+            "status": "loaded"
+          },
+          {
+            "family": "XunAi Mincho",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "XunAi Crimson",
+            "weight": "400",
+            "status": "unloaded"
+          },
+          {
+            "family": "XunAi OPPO",
+            "weight": "100 700",
+            "status": "loaded"
+          },
+          {
+            "family": "XunAi Mincho",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "XunAi Crimson",
+            "weight": "400",
+            "status": "unloaded"
+          }
+        ],
+        "mediaAttempts": [
+          {
+            "url": "http://127.0.0.1:4196/assets/xunai/stores/%E9%BB%91%E9%87%91%E5%BA%97%E4%BD%93%E9%AA%8C%E6%B5%81%E7%A8%8B.mp4",
+            "note": "blocked in this diagnostic only; not a transfer baseline"
+          }
+        ],
+        "timing": [
+          {
+            "url": "http://127.0.0.1:4196/assets/fonts/oppo-sans.woff2",
+            "startTime": 11,
+            "duration": 49,
+            "transferSize": 13646076,
+            "encodedBodySize": 13645776
+          },
+          {
+            "url": "http://127.0.0.1:4196/assets/fonts/tsukushi-mincho-r.woff2",
+            "startTime": 11.199999999254942,
+            "duration": 21.09999999962747,
+            "transferSize": 2254580,
+            "encodedBodySize": 2254280
+          },
+          {
+            "url": "http://127.0.0.1:4196/assets/xunai/fonts/oppo-sans.woff2",
+            "startTime": 91,
+            "duration": 29.09999999962747,
+            "transferSize": 13646076,
+            "encodedBodySize": 13645776
+          },
+          {
+            "url": "http://127.0.0.1:4196/assets/xunai/fonts/tsukushi-mincho-r.woff2",
+            "startTime": 91.19999999925494,
+            "duration": 9.599999999627471,
+            "transferSize": 2254580,
+            "encodedBodySize": 2254280
+          }
+        ],
+        "videos": [
+          {
+            "source": "http://127.0.0.1:4196/assets/xunai/stores/%E9%BB%91%E9%87%91%E5%BA%97%E4%BD%93%E9%AA%8C%E6%B5%81%E7%A8%8B.mp4",
+            "preload": "metadata",
+            "autoplay": true,
+            "muted": true,
+            "loop": true,
+            "controls": false,
+            "poster": "http://127.0.0.1:4196/assets/xunai/booklets/black-gold-imgRectangle1.webp",
+            "boundsY": 72
+          }
+        ]
+      },
+      {
+        "slug": "ai",
+        "diagnosticOnly": true,
+        "videoBlocked": true,
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "weight": "100 700",
+            "status": "loaded"
+          },
+          {
+            "family": "XunAi Mincho",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "XunAi Crimson",
+            "weight": "400",
+            "status": "unloaded"
+          },
+          {
+            "family": "XunAi OPPO",
+            "weight": "100 700",
+            "status": "loaded"
+          },
+          {
+            "family": "XunAi Mincho",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "XunAi Crimson",
+            "weight": "400",
+            "status": "unloaded"
+          }
+        ],
+        "mediaAttempts": [
+          {
+            "url": "http://127.0.0.1:4196/assets/xunai/ai/ai-demo.mp4",
+            "note": "blocked in this diagnostic only; not a transfer baseline"
+          }
+        ],
+        "timing": [
+          {
+            "url": "http://127.0.0.1:4196/assets/fonts/oppo-sans.woff2",
+            "startTime": 15.800000000745058,
+            "duration": 38.399999998509884,
+            "transferSize": 13646076,
+            "encodedBodySize": 13645776
+          },
+          {
+            "url": "http://127.0.0.1:4196/assets/fonts/tsukushi-mincho-r.woff2",
+            "startTime": 16,
+            "duration": 25.59999999962747,
+            "transferSize": 2254580,
+            "encodedBodySize": 2254280
+          },
+          {
+            "url": "http://127.0.0.1:4196/assets/xunai/fonts/tsukushi-mincho-r.woff2",
+            "startTime": 72.30000000074506,
+            "duration": 15.5,
+            "transferSize": 2254580,
+            "encodedBodySize": 2254280
+          },
+          {
+            "url": "http://127.0.0.1:4196/assets/xunai/fonts/oppo-sans.woff2",
+            "startTime": 72.30000000074506,
+            "duration": 37.19999999925494,
+            "transferSize": 13646076,
+            "encodedBodySize": 13645776
+          }
+        ],
+        "videos": [
+          {
+            "source": "http://127.0.0.1:4196/assets/xunai/ai/ai-demo.mp4",
+            "preload": "none",
+            "autoplay": true,
+            "muted": true,
+            "loop": true,
+            "controls": false,
+            "poster": "http://127.0.0.1:4196/assets/xunai/ai/ai-demo-poster.webp",
+            "boundsY": 1165.15625
+          }
+        ]
+      },
+      {
+        "slug": "contact",
+        "diagnosticOnly": true,
+        "videoBlocked": true,
+        "fonts": [
+          {
+            "family": "XunAi OPPO",
+            "weight": "100 700",
+            "status": "loaded"
+          },
+          {
+            "family": "XunAi Mincho",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "XunAi Crimson",
+            "weight": "400",
+            "status": "unloaded"
+          },
+          {
+            "family": "XunAi OPPO",
+            "weight": "100 700",
+            "status": "loaded"
+          },
+          {
+            "family": "XunAi Mincho",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "XunAi Crimson",
+            "weight": "400",
+            "status": "unloaded"
+          }
+        ],
+        "mediaAttempts": [],
+        "timing": [
+          {
+            "url": "http://127.0.0.1:4196/assets/fonts/oppo-sans.woff2",
+            "startTime": 12.800000000745058,
+            "duration": 44.69999999925494,
+            "transferSize": 13646076,
+            "encodedBodySize": 13645776
+          },
+          {
+            "url": "http://127.0.0.1:4196/assets/fonts/tsukushi-mincho-r.woff2",
+            "startTime": 13,
+            "duration": 31.699999999254942,
+            "transferSize": 2254580,
+            "encodedBodySize": 2254280
+          },
+          {
+            "url": "http://127.0.0.1:4196/assets/xunai/fonts/tsukushi-mincho-r.woff2",
+            "startTime": 78.80000000074506,
+            "duration": 9.899999998509884,
+            "transferSize": 2254580,
+            "encodedBodySize": 2254280
+          },
+          {
+            "url": "http://127.0.0.1:4196/assets/xunai/fonts/oppo-sans.woff2",
+            "startTime": 79.09999999962747,
+            "duration": 31.200000001117587,
+            "transferSize": 13646076,
+            "encodedBodySize": 13645776
+          }
+        ],
+        "videos": []
+      }
+    ]
+  },
+  "referenceMatchingRule": "references list literal basename occurrences in active source/content files, not a proven production dependency graph; root audit must trace path and dynamic references before exclusion."
+}

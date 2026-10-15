@@ -1,0 +1,615 @@
+{
+  "method": "Read-only extraction. These files are reference sources, not AAT runtime dependencies and not proposed replacement design.",
+  "sources": [
+    {
+      "absolutePath": "/Users/dabao/Desktop/寻艾官网/website-code/design-system/tokens.css",
+      "sha256": "d08aead00191cd9408a12294b2c3cb3a947964ddb973dcd0fa052ec6c8d4a6dd",
+      "matches": [
+        {
+          "line": 55,
+          "text": "  /* Typography. */"
+        },
+        {
+          "line": 56,
+          "text": "  --x-font-sans: \"Noto Sans SC\", \"Source Han Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif;"
+        },
+        {
+          "line": 57,
+          "text": "  --x-font-serif: \"Noto Serif SC\", \"Source Han Serif SC\", \"Songti SC\", serif;"
+        },
+        {
+          "line": 58,
+          "text": "  --x-font-display: \"Arial Black\", \"Helvetica Neue\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif;"
+        },
+        {
+          "line": 59,
+          "text": "  --x-font-mono: \"SFMono-Regular\", \"SF Mono\", \"Roboto Mono\", \"Courier New\", monospace;"
+        },
+        {
+          "line": 60,
+          "text": "  --x-font-size-xs: 0.75rem;"
+        },
+        {
+          "line": 61,
+          "text": "  --x-font-size-sm: 0.875rem;"
+        },
+        {
+          "line": 62,
+          "text": "  --x-font-size-base: 1rem;"
+        },
+        {
+          "line": 63,
+          "text": "  --x-font-size-lg: 1.125rem;"
+        },
+        {
+          "line": 64,
+          "text": "  --x-font-size-xl: 1.5rem;"
+        },
+        {
+          "line": 65,
+          "text": "  --x-font-size-2xl: 2rem;"
+        },
+        {
+          "line": 66,
+          "text": "  --x-font-size-3xl: 3rem;"
+        },
+        {
+          "line": 67,
+          "text": "  --x-font-size-4xl: 4.5rem;"
+        },
+        {
+          "line": 68,
+          "text": "  --x-font-size-display: var(--x-type-display);"
+        },
+        {
+          "line": 71,
+          "text": "  --x-type-display: clamp(2.5rem, 1.3rem + 4.5vw, 5.5rem);"
+        },
+        {
+          "line": 72,
+          "text": "  --x-type-h1: clamp(2rem, 1.5rem + 1.95vw, 3.25rem);"
+        },
+        {
+          "line": 73,
+          "text": "  --x-type-h2: clamp(1.625rem, 1.25rem + 1.2vw, 2.25rem);"
+        },
+        {
+          "line": 74,
+          "text": "  --x-type-h3: clamp(1.25rem, 1rem + 1vw, 1.75rem);"
+        },
+        {
+          "line": 75,
+          "text": "  --x-type-body-large: clamp(1rem, .95rem + .2vw, 1.125rem);"
+        },
+        {
+          "line": 76,
+          "text": "  --x-type-body: clamp(.9375rem, .9rem + .15vw, 1rem);"
+        },
+        {
+          "line": 77,
+          "text": "  --x-type-caption: clamp(.75rem, .7rem + .2vw, .875rem);"
+        },
+        {
+          "line": 78,
+          "text": "  --x-type-label: var(--x-type-caption);"
+        },
+        {
+          "line": 79,
+          "text": "  --x-type-nav: clamp(.9375rem, .9rem + .15vw, 1rem);"
+        },
+        {
+          "line": 80,
+          "text": "  --x-type-button: clamp(.875rem, .8rem + .3vw, 1rem);"
+        },
+        {
+          "line": 81,
+          "text": "  --x-leading-heading: 1.4;"
+        },
+        {
+          "line": 82,
+          "text": "  --x-leading-display: 1.3;"
+        },
+        {
+          "line": 83,
+          "text": "  --x-leading-body: 1.75;"
+        },
+        {
+          "line": 84,
+          "text": "  --x-leading-label: 1.5;"
+        },
+        {
+          "line": 85,
+          "text": "  --x-tracking-heading: 0;"
+        },
+        {
+          "line": 86,
+          "text": "  --x-tracking-body: 0;"
+        },
+        {
+          "line": 87,
+          "text": "  --x-tracking-label: .02em;"
+        },
+        {
+          "line": 88,
+          "text": "  --x-heading-xl: var(--x-type-h1);"
+        },
+        {
+          "line": 89,
+          "text": "  --x-heading-lg: var(--x-type-h2);"
+        },
+        {
+          "line": 90,
+          "text": "  --x-heading-md: var(--x-type-h3);"
+        },
+        {
+          "line": 91,
+          "text": "  --x-body-size: var(--x-type-body);"
+        },
+        {
+          "line": 92,
+          "text": "  --x-meta-size: var(--x-type-caption);"
+        },
+        {
+          "line": 158,
+          "text": "@media (min-width: 48rem) {"
+        },
+        {
+          "line": 167,
+          "text": "/* Four tiers: <768, 768–1024, 1025–1439, >=1440 CSS pixels. */"
+        },
+        {
+          "line": 168,
+          "text": "@media (min-width: 64.0625rem) {"
+        },
+        {
+          "line": 176,
+          "text": "@media (prefers-reduced-motion: reduce) {"
+        }
+      ]
+    },
+    {
+      "absolutePath": "/Users/dabao/Desktop/寻艾官网/website-code/mobile-responsive.css",
+      "sha256": "0b0eba4556953ac31c9df8e07b1d5a9607447ac5fc800bc0c54cbcb3ac7f5d01",
+      "matches": [
+        {
+          "line": 1,
+          "text": "/* Mobile only. 1024px belongs to the approved Desktop baseline. */"
+        },
+        {
+          "line": 2,
+          "text": "@media (max-width:1023.98px) {"
+        },
+        {
+          "line": 4,
+          "text": "    --m-display:clamp(2.25rem,9vw,2.625rem);"
+        },
+        {
+          "line": 5,
+          "text": "    --m-h1:2rem;"
+        },
+        {
+          "line": 6,
+          "text": "    --m-h2:clamp(1.625rem,6.8vw,1.875rem);"
+        },
+        {
+          "line": 7,
+          "text": "    --m-h3:1.25rem;"
+        },
+        {
+          "line": 8,
+          "text": "    --m-body:1rem;"
+        },
+        {
+          "line": 9,
+          "text": "    --m-caption:.8125rem;"
+        },
+        {
+          "line": 16,
+          "text": "    --x-type-display:var(--m-display);"
+        },
+        {
+          "line": 17,
+          "text": "    --x-type-h1:var(--m-h1);"
+        },
+        {
+          "line": 18,
+          "text": "    --x-type-h2:var(--m-h2);"
+        },
+        {
+          "line": 19,
+          "text": "    --x-type-h3:var(--m-h3);"
+        },
+        {
+          "line": 20,
+          "text": "    --x-type-body:var(--m-body);"
+        },
+        {
+          "line": 21,
+          "text": "    --x-type-body-large:var(--m-body);"
+        },
+        {
+          "line": 22,
+          "text": "    --x-type-caption:var(--m-caption);"
+        },
+        {
+          "line": 25,
+          "text": "  #main-content h1,#main-content :is(.xf-hero h1,.xa-hero h1){font-size:var(--m-h1)}"
+        },
+        {
+          "line": 26,
+          "text": "  #main-content h2,#main-content .xs-type-copy h3{font-size:var(--m-h2)}"
+        },
+        {
+          "line": 27,
+          "text": "  #main-content h3{font-size:var(--m-h3)}"
+        },
+        {
+          "line": 28,
+          "text": "  #main-content .xh-opening h1{font-size:var(--m-display)}"
+        },
+        {
+          "line": 29,
+          "text": "  #main-content p{font-size:var(--m-body);line-height:1.75}"
+        },
+        {
+          "line": 30,
+          "text": "  #main-content :is(figcaption,.xs-pending,.xr-note,.xo-form-note,.xh-label,.xf-muted,.xa-note){font-size:var(--m-caption)}"
+        },
+        {
+          "line": 54,
+          "text": "  .xf-cta h2{font-size:var(--m-h2)}"
+        },
+        {
+          "line": 55,
+          "text": "  .xf-cta p{font-size:var(--m-body)}"
+        },
+        {
+          "line": 81,
+          "text": "  .xf-stage-copy h4{font-size:var(--m-h3)}"
+        },
+        {
+          "line": 113,
+          "text": "  @media(min-width:768px){"
+        },
+        {
+          "line": 197,
+          "text": "  @media(max-width:767px){"
+        },
+        {
+          "line": 217,
+          "text": "  @media(max-width:767.98px){"
+        },
+        {
+          "line": 230,
+          "text": "    #main-content .xf-products figcaption{--x-type-caption:1.25rem;font-size:1.25rem;line-height:1.5}"
+        },
+        {
+          "line": 262,
+          "text": "    @media(prefers-reduced-motion:reduce){"
+        },
+        {
+          "line": 267,
+          "text": "  @media(min-width:768px){"
+        },
+        {
+          "line": 279,
+          "text": "@media(max-width:1199.98px){"
+        }
+      ]
+    },
+    {
+      "absolutePath": "/Users/dabao/Desktop/寻艾官网/website-code/wide-desktop.css",
+      "sha256": "a31917097be0f66194b55362753feec9dcae4473bdde71c56dd590cd2ae7798b",
+      "matches": [
+        {
+          "line": 2,
+          "text": "@media (min-width:1920px){"
+        },
+        {
+          "line": 53,
+          "text": "@media(min-width:768px){"
+        },
+        {
+          "line": 58,
+          "text": "@media(max-width:767px){"
+        },
+        {
+          "line": 61,
+          "text": "@media (min-width:2560px){"
+        }
+      ]
+    },
+    {
+      "absolutePath": "/Users/dabao/Desktop/寻艾官网/website-code/site-consistency.css",
+      "sha256": "81aacfefa04d460c30d6f30a048e43e11cb067378ff4d235fa886f63615fd2d4",
+      "matches": [
+        {
+          "line": 3,
+          "text": ".service-contact-links a{display:flex;align-items:center;min-height:44px;font:500 16px/1.6 var(--x-font-sans);color:inherit;text-underline-offset:4px}"
+        },
+        {
+          "line": 5,
+          "text": "#main-content :is(.xa-number,.xa-stats dd,.xf-years,time,table,form,input,select,textarea){font-family:var(--x-font-sans)}"
+        },
+        {
+          "line": 6,
+          "text": "#main-content :is(.xj-store h3,.xo-story h3,.xs-card-label,.xa-matrix dt,.xj-support-grid dt,form h2,form h3){font-family:var(--x-font-sans);font-weight:500}"
+        },
+        {
+          "line": 8,
+          "text": "#main-content strong{font-family:var(--x-font-sans);font-weight:600}"
+        },
+        {
+          "line": 15,
+          "text": ".xj-process .xj-process-nav li button span{font-family:var(--x-font-sans);font-weight:500}"
+        },
+        {
+          "line": 16,
+          "text": "@media(min-width:768px) and (max-width:1199.98px){"
+        },
+        {
+          "line": 24,
+          "text": " #locations .xs-store-subgroup>summary{display:flex;justify-content:space-between;font:400 1.25rem/1.4 var(--x-font-display)}"
+        },
+        {
+          "line": 35,
+          "text": "#main-content a.xu-action-link{display:inline-flex;align-items:center;justify-content:space-between;gap:16px;min-height:48px;width:max-content;max-width:100%;padding:8px 0;border:0;border-bottom:1px solid currentColor;border-radius:0;background:transparent;color:inherit;font:400 14px/1.5 var(--x-font-sans);letter-spacing:0;text-decoration:none;box-shadow:none;transition:background-color 180ms}"
+        },
+        {
+          "line": 36,
+          "text": "#main-content a.xu-action-link::after{display:none}#main-content a.xu-action-link>.xu-action-arrow{display:block;width:24px;height:24px;margin:0;font:400 24px/1 var(--x-font-sans);color:inherit;transition:transform 200ms}"
+        },
+        {
+          "line": 38,
+          "text": ".xf-principles{width:100%}.xf-intro .xf-principle{width:100%;border:0;border-top:1px solid var(--x-border-default);border-radius:0;overflow:visible}.xf-intro .xf-principle:last-child{border-bottom:1px solid var(--x-border-default)}.xf-principles summary{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:60px;padding:14px 12px;font:400 16px/1.5 var(--x-font-sans);cursor:pointer;list-style:none}.xf-principles summary::-webkit-details-marker{display:none}.xf-principles p{padding:8px 12px 20px;font-size:14px}.xf-principles summary:focus-visible{outline:2px solid var(--x-focus-ring);outline-offset:3px}"
+        },
+        {
+          "line": 41,
+          "text": ".xh-ai-visual{min-width:0;position:relative;background:transparent}.xh-home .xh-ai-visual .xa-stage{width:100%;margin:0;aspect-ratio:1}.xh-home .xh-ai-visual .xa-orbit img{object-fit:contain}.xh-home .xh-ai-visual .xa-device img{object-fit:contain}.xh-ai-visual.is-paused .xa-orbit-layer{animation-play-state:paused}.xh-motion-toggle{display:block;margin:16px 0 0 auto;min-height:44px;padding:8px 12px;border:1px solid var(--x-border-default);border-radius:24px;background:transparent;color:inherit;font:400 14px/1.5 var(--x-font-sans)}"
+        },
+        {
+          "line": 42,
+          "text": ".xj-product-grid{display:flex;gap:20px;overflow-x:auto;padding:6px 0;scroll-snap-type:x mandatory;scrollbar-width:none}.xj-product-grid .xj-product,.xj-product-grid .xj-product[aria-pressed=true]{flex:0 0 30%;min-width:0;height:auto;overflow:hidden;border:0;border-radius:0;background:transparent;color:var(--x-text-primary);padding:0;text-align:left;scroll-snap-align:start}.xj-product-image{display:block;height:auto;aspect-ratio:1;opacity:1;transform:none}.xj-product-image img{display:block;width:100%;height:100%;object-fit:cover;border-radius:6px;pointer-events:none}.xj-product-title,.xj-product[aria-pressed=true] .xj-product-title{display:block;margin-top:16px;font:400 24px/1.5 var(--x-font-display);transform:none}.xj-product:focus-visible{outline:2px solid var(--x-focus-ring);outline-offset:3px}"
+        },
+        {
+          "line": 43,
+          "text": "@media(max-width:767px){.xj-product-grid .xj-product,.xj-product-grid .xj-product[aria-pressed=true]{flex-basis:82%}}"
+        },
+        {
+          "line": 44,
+          "text": "@media(prefers-reduced-motion:reduce){.xj-product-grid .xj-product,.xj-product-image,.xj-product-title,#main-content a.xu-action-link>.xu-action-arrow{transition:none}.xh-motion-toggle{display:none}}"
+        },
+        {
+          "line": 45,
+          "text": "main :is(h1,h2,h3,h4){font-family:var(--x-font-display);font-weight:400;letter-spacing:0;line-height:1.4;text-wrap:balance}"
+        },
+        {
+          "line": 60,
+          "text": ".xu-detail-link{display:inline-flex;align-items:center;gap:24px;min-height:44px;border-bottom:1px solid currentColor;font:16px/1.5 var(--x-font-sans);color:inherit;text-decoration:none;white-space:nowrap;transition:background-color 180ms}"
+        },
+        {
+          "line": 81,
+          "text": "@media(max-width:1024px){.xf-certificate summary>.xu-toggle-icon{grid-column:2;grid-row:1/3}}"
+        },
+        {
+          "line": 82,
+          "text": "@media(max-width:767px){"
+        },
+        {
+          "line": 95,
+          "text": "@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.xu-toggle-icon::after,.xf-principle button>span::after,.xu-detail-link span{transition:none}}"
+        },
+        {
+          "line": 103,
+          "text": "main{font-size:var(--x-type-body);overflow-wrap:break-word}"
+        },
+        {
+          "line": 104,
+          "text": "#main-content h1{font-size:var(--x-type-h1)}"
+        },
+        {
+          "line": 105,
+          "text": "#main-content h2{font-size:var(--x-type-h2)}"
+        },
+        {
+          "line": 106,
+          "text": "#main-content h3{font-size:var(--x-type-h3)}"
+        },
+        {
+          "line": 107,
+          "text": "#main-content :is(.xh-opening h1,.xf-hero h1){font-size:var(--x-type-h1)}"
+        },
+        {
+          "line": 109,
+          "text": ".desktop-nav a{font-size:var(--x-type-nav)}"
+        },
+        {
+          "line": 110,
+          "text": ".pill-button,#main-content a.xu-action-link{font-size:var(--x-type-button)}"
+        },
+        {
+          "line": 111,
+          "text": "main :is(.xj-lead,.xf-heading p,.xs-section-heading p){font-size:var(--x-type-body-large)}"
+        },
+        {
+          "line": 146,
+          "text": "@media(min-width:768px) and (max-width:1024px){"
+        },
+        {
+          "line": 152,
+          "text": "@media(max-width:767px){"
+        },
+        {
+          "line": 153,
+          "text": " .xh-home .xh-opening h1{font-size:var(--x-type-display)}"
+        },
+        {
+          "line": 154,
+          "text": " .xh-home .xh-section h2,.xo-page h2{font-size:var(--x-type-h2)}"
+        },
+        {
+          "line": 158,
+          "text": " .xa-season>span{font-size:var(--x-type-caption)}"
+        },
+        {
+          "line": 167,
+          "text": " .xs-card-label{gap:.5rem;flex-wrap:wrap;font-size:var(--x-type-body)}"
+        },
+        {
+          "line": 181,
+          "text": "@media(prefers-reduced-motion:reduce){"
+        },
+        {
+          "line": 191,
+          "text": "#main-content h1{font-size:var(--x-type-h1)}"
+        },
+        {
+          "line": 192,
+          "text": "#main-content h2{font-size:var(--x-type-h2)}"
+        },
+        {
+          "line": 193,
+          "text": "#main-content h3{font-size:var(--x-type-h3)}"
+        },
+        {
+          "line": 195,
+          "text": "#main-content p{font-size:var(--x-type-body);line-height:var(--x-leading-body)}"
+        },
+        {
+          "line": 196,
+          "text": "#main-content :is(.xj-lead,.xf-heading p,.xs-section-heading p,.xh-section-head p){font-size:var(--x-type-body-large)}"
+        },
+        {
+          "line": 197,
+          "text": "#main-content :is(.xh-label,.xf-muted,.xs-pending,.xr-note,#xr-store-result,.xa-note,figcaption){font-size:var(--x-type-caption);color:var(--x-text-secondary)}"
+        },
+        {
+          "line": 199,
+          "text": ".xh-home .xh-row{font-size:var(--x-type-body-large);min-height:3.75rem;padding:1rem .5rem}"
+        },
+        {
+          "line": 201,
+          "text": ".xf-principles summary{font-size:var(--x-type-button);min-height:3.25rem;padding:.75rem .5rem}"
+        },
+        {
+          "line": 207,
+          "text": ".xf-history-card time{font-size:var(--x-type-h3)}"
+        },
+        {
+          "line": 208,
+          "text": ".xf-history-copy>span{font-size:var(--x-type-body)}"
+        },
+        {
+          "line": 211,
+          "text": "#main-content .xs-type-copy h3{font-size:var(--x-type-h2);margin-top:0}"
+        },
+        {
+          "line": 215,
+          "text": ".xr-store-tools>label{grid-column:1;margin:0;font-size:var(--x-type-button)}"
+        },
+        {
+          "line": 219,
+          "text": ".xr-store-tools>a{grid-column:2;font-size:var(--x-type-caption)}"
+        },
+        {
+          "line": 223,
+          "text": ".xs-strength-caption{font-size:var(--x-type-body);line-height:1.65}"
+        },
+        {
+          "line": 227,
+          "text": ".xr-store-tools>a{justify-self:end;font-size:var(--x-type-caption)}"
+        },
+        {
+          "line": 233,
+          "text": "#main-content .xa-hero h1{font-size:var(--x-type-h2)}"
+        },
+        {
+          "line": 242,
+          "text": "@media(max-width:1023.98px){"
+        },
+        {
+          "line": 253,
+          "text": "@media(min-width:1024px){"
+        },
+        {
+          "line": 267,
+          "text": "@media(max-width:767px){"
+        },
+        {
+          "line": 290,
+          "text": "@media(max-width:767px){"
+        }
+      ]
+    },
+    {
+      "absolutePath": "/Users/dabao/Desktop/寻艾官网/website-code/brand-refinement.css",
+      "sha256": "923d5fbbed663f83c832a59b490985a2c3ef9bbc012405d809c6818683008624",
+      "matches": [
+        {
+          "line": 11,
+          "text": "  --x-font-sans:\"XunAi OPPO\",\"PingFang SC\",sans-serif;"
+        },
+        {
+          "line": 12,
+          "text": "  --x-font-display:\"XunAi Mincho\",\"Songti SC\",serif;"
+        },
+        {
+          "line": 13,
+          "text": "  --x-font-mono:var(--x-font-sans);"
+        },
+        {
+          "line": 17,
+          "text": "body{font-family:var(--x-font-sans);font-size:var(--x-body-size);line-height:1.75;overflow-x:visible;font-synthesis:none}"
+        },
+        {
+          "line": 18,
+          "text": "h1,h2,h3{font-family:var(--x-font-display);font-weight:400;letter-spacing:0;line-height:1.4;text-wrap:balance}"
+        },
+        {
+          "line": 29,
+          "text": "@media(prefers-reduced-motion:reduce){.intro-loader,.route-curtain{display:none}}"
+        },
+        {
+          "line": 47,
+          "text": ".pill-button{font-family:var(--x-font-sans);font-size:14px;min-height:44px;padding:0 24px;background:var(--x-text-primary);border:1px solid var(--x-text-primary);color:#fff;text-transform:none}"
+        },
+        {
+          "line": 92,
+          "text": ".content-placeholder{grid-column:2;min-height:120px;border:0;padding:0;font-family:var(--x-font-sans);font-size:16px;line-height:1.8}"
+        },
+        {
+          "line": 104,
+          "text": ".footer-lockup{font-family:\"XunAi Crimson\",var(--x-font-display);font-size:32px;letter-spacing:0;line-height:1.4;justify-content:flex-start;gap:24px}.footer-lockup span:last-child{display:none}"
+        },
+        {
+          "line": 106,
+          "text": ".mobile-drawer{background:#fff;color:var(--x-text-primary);overflow-y:auto;overscroll-behavior:contain}.drawer-nav a{font-family:var(--x-font-display);font-size:28px;letter-spacing:0;border-color:var(--x-border-subtle);grid-template-columns:1fr}.drawer-nav a span{display:none}"
+        },
+        {
+          "line": 112,
+          "text": "@media(max-width:767px){.text-only-hero .hero-aside{grid-column:1!important;grid-row:2}.text-only-hero{min-height:0}.site-disclosure summary{min-height:76px}}"
+        },
+        {
+          "line": 113,
+          "text": "@media(min-width:1025px) and (max-width:1250px){.header-brand-group .deck-link{display:none}.desktop-nav,.nav-stack{gap:24px}}"
+        },
+        {
+          "line": 114,
+          "text": "@media(max-width:1024px){.site-header{grid-template-columns:1fr auto}.desktop-nav{display:none}.brand-opening,.page-hero,.ai-editorial{gap:32px}.collection-section,.brand-links{grid-template-columns:1fr 2fr;gap:32px}.editorial-section{gap:32px}.wire-row{grid-template-columns:1fr 1fr;gap:32px}}"
+        },
+        {
+          "line": 115,
+          "text": "@media(max-width:767px){"
+        },
+        {
+          "line": 125,
+          "text": "@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}"
+        },
+        {
+          "line": 126,
+          "text": ".mobile-drawer{z-index:70}.drawer-head{flex-shrink:0;font-family:var(--x-font-sans)}"
+        }
+      ]
+    }
+  ]
+}

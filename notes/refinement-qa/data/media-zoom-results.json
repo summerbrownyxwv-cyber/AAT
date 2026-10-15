@@ -1,0 +1,1299 @@
+{
+  "created": "2026-10-15T14:13:56.135Z",
+  "browser": "154.0.8037.99",
+  "platform": "darwin",
+  "method": "Real Chrome headless; normal motion; no video.play() invocation by test; native autoplay plus existing visibility management. Loop tested by seeking near the end in test runtime only.",
+  "zoom": {
+    "status": "not-tested",
+    "reason": "Headless Chrome has no browser chrome zoom control in this harness. CSS zoom, CDP pageScale and deviceScaleFactor are not treated as browser zoom. True 200% browser zoom remains a manual check."
+  },
+  "limitations": [
+    "DPR values are browser device emulation, not physical hardware/browser compatibility coverage.",
+    "Tests prove visible playback advances and one loop restart in this local Chrome session, not every network condition or long-run playback."
+  ],
+  "records": [
+    {
+      "route": "index.html#hero-story",
+      "selector": "#hero-story video",
+      "requestedViewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 3
+      },
+      "environment": {
+        "width": 390,
+        "height": 844,
+        "dpr": 3,
+        "visualViewportScale": 1,
+        "rootFont": "16px",
+        "bodyFont": "16px",
+        "h1Font": "32px",
+        "documentWidth": 390
+      },
+      "start": {
+        "time": 0.896044,
+        "duration": 24.52,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/homepage/home-hero.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "scrollY": 0
+      },
+      "end": {
+        "time": 2.103588,
+        "duration": 24.52,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/homepage/home-hero.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "scrollY": 0
+      },
+      "attributesPass": true,
+      "autoplayPass": true,
+      "loopState": {
+        "time": 1.417667,
+        "duration": 24.52,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/homepage/home-hero.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "scrollY": 0
+      },
+      "loopPass": true,
+      "pass": true
+    },
+    {
+      "route": "company.html",
+      "selector": ".company-hero-video",
+      "requestedViewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 3
+      },
+      "environment": {
+        "width": 390,
+        "height": 844,
+        "dpr": 3,
+        "visualViewportScale": 1,
+        "rootFont": "16px",
+        "bodyFont": "16px",
+        "h1Font": "31.2px",
+        "documentWidth": 390
+      },
+      "start": {
+        "time": 0.993564,
+        "duration": 52.48,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/company/company-hero.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 780
+        },
+        "scrollY": 0
+      },
+      "end": {
+        "time": 2.199822,
+        "duration": 52.48,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/company/company-hero.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 780
+        },
+        "scrollY": 0
+      },
+      "attributesPass": true,
+      "autoplayPass": true,
+      "loopState": {
+        "time": 1.42677,
+        "duration": 52.48,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/company/company-hero.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 780
+        },
+        "scrollY": 0
+      },
+      "loopPass": true,
+      "pass": true
+    },
+    {
+      "route": "planting.html",
+      "selector": ".plant-hero video",
+      "requestedViewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 3
+      },
+      "environment": {
+        "width": 390,
+        "height": 844,
+        "dpr": 3,
+        "visualViewportScale": 1,
+        "rootFont": "16px",
+        "bodyFont": "16px",
+        "h1Font": "30px",
+        "documentWidth": 390
+      },
+      "start": {
+        "time": 1.014926,
+        "duration": 291.766667,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/planting/planting-hero.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 360
+        },
+        "scrollY": 0
+      },
+      "end": {
+        "time": 2.221729,
+        "duration": 291.766667,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/planting/planting-hero.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 360
+        },
+        "scrollY": 0
+      },
+      "attributesPass": true,
+      "autoplayPass": true,
+      "loopState": {
+        "time": 1.402596,
+        "duration": 291.766667,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/planting/planting-hero.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 360
+        },
+        "scrollY": 0
+      },
+      "loopPass": true,
+      "pass": true
+    },
+    {
+      "route": "planting.html",
+      "selector": ".plant-origin video",
+      "requestedViewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 3
+      },
+      "environment": {
+        "width": 390,
+        "height": 844,
+        "dpr": 3,
+        "visualViewportScale": 1,
+        "rootFont": "16px",
+        "bodyFont": "16px",
+        "h1Font": "30px",
+        "documentWidth": 390
+      },
+      "start": {
+        "time": 0.666726,
+        "duration": 128.575,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/planting/qiyou-one.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 20,
+          "y": 376.1875,
+          "width": 350,
+          "height": 179.484375
+        },
+        "scrollY": 1267
+      },
+      "end": {
+        "time": 1.871685,
+        "duration": 128.575,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/planting/qiyou-one.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 20,
+          "y": 376.1875,
+          "width": 350,
+          "height": 179.484375
+        },
+        "scrollY": 1267
+      },
+      "attributesPass": true,
+      "autoplayPass": true,
+      "loopState": {
+        "time": 1.228657,
+        "duration": 128.575,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/planting/qiyou-one.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 20,
+          "y": 376.1875,
+          "width": 350,
+          "height": 179.484375
+        },
+        "scrollY": 1267
+      },
+      "loopPass": true,
+      "pass": true
+    },
+    {
+      "route": "products.html#products-intro",
+      "selector": "#products-intro video",
+      "requestedViewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 3
+      },
+      "environment": {
+        "width": 390,
+        "height": 844,
+        "dpr": 3,
+        "visualViewportScale": 1,
+        "rootFont": "16px",
+        "bodyFont": "16px",
+        "h1Font": "20px",
+        "documentWidth": 390
+      },
+      "start": {
+        "time": 0.715012,
+        "duration": 35.2,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/products/products-film.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 20,
+          "y": 367.796875,
+          "width": 350,
+          "height": 197.359375
+        },
+        "scrollY": 1529
+      },
+      "end": {
+        "time": 1.921006,
+        "duration": 35.2,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/products/products-film.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 20,
+          "y": 367.796875,
+          "width": 350,
+          "height": 197.359375
+        },
+        "scrollY": 1529
+      },
+      "attributesPass": true,
+      "autoplayPass": true,
+      "loopState": {
+        "time": 1.306519,
+        "duration": 35.2,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/products/products-film.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 20,
+          "y": 367.796875,
+          "width": 350,
+          "height": 197.359375
+        },
+        "scrollY": 1529
+      },
+      "loopPass": true,
+      "pass": true
+    },
+    {
+      "route": "service.html",
+      "selector": ".xs-hero video",
+      "requestedViewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 3
+      },
+      "environment": {
+        "width": 390,
+        "height": 844,
+        "dpr": 3,
+        "visualViewportScale": 1,
+        "rootFont": "16px",
+        "bodyFont": "16px",
+        "h1Font": "32px",
+        "documentWidth": 390
+      },
+      "start": {
+        "time": 1.047449,
+        "duration": 53.066667,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/xunai/stores/%E9%BB%91%E9%87%91%E5%BA%97%E4%BD%93%E9%AA%8C%E6%B5%81%E7%A8%8B.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 205.703125
+        },
+        "scrollY": 0
+      },
+      "end": {
+        "time": 2.252785,
+        "duration": 53.066667,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/xunai/stores/%E9%BB%91%E9%87%91%E5%BA%97%E4%BD%93%E9%AA%8C%E6%B5%81%E7%A8%8B.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 205.703125
+        },
+        "scrollY": 0
+      },
+      "attributesPass": true,
+      "autoplayPass": true,
+      "loopState": {
+        "time": 1.356808,
+        "duration": 53.066667,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/xunai/stores/%E9%BB%91%E9%87%91%E5%BA%97%E4%BD%93%E9%AA%8C%E6%B5%81%E7%A8%8B.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 205.703125
+        },
+        "scrollY": 0
+      },
+      "loopPass": true,
+      "pass": true
+    },
+    {
+      "route": "ai.html#value",
+      "selector": "#value video",
+      "requestedViewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 3
+      },
+      "environment": {
+        "width": 390,
+        "height": 844,
+        "dpr": 3,
+        "visualViewportScale": 1,
+        "rootFont": "16px",
+        "bodyFont": "16px",
+        "h1Font": "25.35px",
+        "documentWidth": 390
+      },
+      "start": {
+        "time": 0.802776,
+        "duration": 518.985133,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/xunai/ai/ai-demo.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 20,
+          "y": 542.65625,
+          "width": 350,
+          "height": 196.875
+        },
+        "scrollY": 1130
+      },
+      "end": {
+        "time": 2.008894,
+        "duration": 518.985133,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/xunai/ai/ai-demo.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 20,
+          "y": 542.65625,
+          "width": 350,
+          "height": 196.875
+        },
+        "scrollY": 1130
+      },
+      "attributesPass": true,
+      "autoplayPass": true,
+      "loopState": {
+        "time": 1.276742,
+        "duration": 518.985133,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/xunai/ai/ai-demo.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 20,
+          "y": 542.65625,
+          "width": 350,
+          "height": 196.875
+        },
+        "scrollY": 1130
+      },
+      "loopPass": true,
+      "pass": true
+    },
+    {
+      "route": "index.html#hero-story",
+      "selector": "#hero-story video",
+      "requestedViewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 2
+      },
+      "environment": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 2,
+        "visualViewportScale": 1,
+        "rootFont": "21.3333px",
+        "bodyFont": "21.3333px",
+        "h1Font": "42.6667px",
+        "documentWidth": 1920
+      },
+      "start": {
+        "time": 0.963323,
+        "duration": 24.52,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/homepage/home-hero.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "scrollY": 0
+      },
+      "end": {
+        "time": 2.167799,
+        "duration": 24.52,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/homepage/home-hero.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "scrollY": 0
+      },
+      "attributesPass": true,
+      "autoplayPass": true,
+      "loopState": {
+        "time": 1.415838,
+        "duration": 24.52,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/homepage/home-hero.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "scrollY": 0
+      },
+      "loopPass": true,
+      "pass": true
+    },
+    {
+      "route": "company.html",
+      "selector": ".company-hero-video",
+      "requestedViewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 2
+      },
+      "environment": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 2,
+        "visualViewportScale": 1,
+        "rootFont": "21.3333px",
+        "bodyFont": "21.3333px",
+        "h1Font": "96px",
+        "documentWidth": 1920
+      },
+      "start": {
+        "time": 1.004883,
+        "duration": 52.48,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/company/company-hero.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 96,
+          "width": 1920,
+          "height": 984
+        },
+        "scrollY": 0
+      },
+      "end": {
+        "time": 2.210167,
+        "duration": 52.48,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/company/company-hero.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 96,
+          "width": 1920,
+          "height": 984
+        },
+        "scrollY": 0
+      },
+      "attributesPass": true,
+      "autoplayPass": true,
+      "loopState": {
+        "time": 1.412343,
+        "duration": 52.48,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/company/company-hero.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 96,
+          "width": 1920,
+          "height": 984
+        },
+        "scrollY": 0
+      },
+      "loopPass": true,
+      "pass": true
+    },
+    {
+      "route": "planting.html",
+      "selector": ".plant-hero video",
+      "requestedViewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 2
+      },
+      "environment": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 2,
+        "visualViewportScale": 1,
+        "rootFont": "21.3333px",
+        "bodyFont": "21.3333px",
+        "h1Font": "42.6667px",
+        "documentWidth": 1920
+      },
+      "start": {
+        "time": 0.956571,
+        "duration": 291.766667,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/planting/planting-hero.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 96,
+          "width": 1920,
+          "height": 984
+        },
+        "scrollY": 0
+      },
+      "end": {
+        "time": 2.160341,
+        "duration": 291.766667,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/planting/planting-hero.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 96,
+          "width": 1920,
+          "height": 984
+        },
+        "scrollY": 0
+      },
+      "attributesPass": true,
+      "autoplayPass": true,
+      "loopState": {
+        "time": 1.406624,
+        "duration": 291.766667,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/planting/planting-hero.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 0,
+          "y": 96,
+          "width": 1920,
+          "height": 984
+        },
+        "scrollY": 0
+      },
+      "loopPass": true,
+      "pass": true
+    },
+    {
+      "route": "planting.html",
+      "selector": ".plant-origin video",
+      "requestedViewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 2
+      },
+      "environment": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 2,
+        "visualViewportScale": 1,
+        "rootFont": "21.3333px",
+        "bodyFont": "21.3333px",
+        "h1Font": "42.6667px",
+        "documentWidth": 1920
+      },
+      "start": {
+        "time": 0.668559,
+        "duration": 128.575,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/planting/qiyou-one.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 116,
+          "y": 294.65625,
+          "width": 1242.859375,
+          "height": 637.359375
+        },
+        "scrollY": 3322
+      },
+      "end": {
+        "time": 1.87298,
+        "duration": 128.575,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/planting/qiyou-one.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 116,
+          "y": 294.65625,
+          "width": 1242.859375,
+          "height": 637.359375
+        },
+        "scrollY": 3322
+      },
+      "attributesPass": true,
+      "autoplayPass": true,
+      "loopState": {
+        "time": 1.229374,
+        "duration": 128.575,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/planting/qiyou-one.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 116,
+          "y": 294.65625,
+          "width": 1242.859375,
+          "height": 637.359375
+        },
+        "scrollY": 3322
+      },
+      "loopPass": true,
+      "pass": true
+    },
+    {
+      "route": "products.html#products-intro",
+      "selector": "#products-intro video",
+      "requestedViewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 2
+      },
+      "environment": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 2,
+        "visualViewportScale": 1,
+        "rootFont": "21.3333px",
+        "bodyFont": "21.3333px",
+        "h1Font": "34.56px",
+        "documentWidth": 1920
+      },
+      "start": {
+        "time": 0.753283,
+        "duration": 35.2,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/products/products-film.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 527.203125,
+          "y": 236.65625,
+          "width": 1302.140625,
+          "height": 734.265625
+        },
+        "scrollY": 2230
+      },
+      "end": {
+        "time": 1.958416,
+        "duration": 35.2,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/products/products-film.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 527.203125,
+          "y": 236.65625,
+          "width": 1302.140625,
+          "height": 734.265625
+        },
+        "scrollY": 2230
+      },
+      "attributesPass": true,
+      "autoplayPass": true,
+      "loopState": {
+        "time": 1.307275,
+        "duration": 35.2,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/products/products-film.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 527.203125,
+          "y": 236.65625,
+          "width": 1302.140625,
+          "height": 734.265625
+        },
+        "scrollY": 2230
+      },
+      "loopPass": true,
+      "pass": true
+    },
+    {
+      "route": "service.html",
+      "selector": ".xs-hero video",
+      "requestedViewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 2
+      },
+      "environment": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 2,
+        "visualViewportScale": 1,
+        "rootFont": "21.3333px",
+        "bodyFont": "21.3333px",
+        "h1Font": "69.3333px",
+        "documentWidth": 1920
+      },
+      "start": {
+        "time": 1.056311,
+        "duration": 53.066667,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/xunai/stores/%E9%BB%91%E9%87%91%E5%BA%97%E4%BD%93%E9%AA%8C%E6%B5%81%E7%A8%8B.mp4",
+        "visibleRatio": 0.971626938208748,
+        "rect": {
+          "x": 0,
+          "y": 96,
+          "width": 1920,
+          "height": 1012.734375
+        },
+        "scrollY": 0
+      },
+      "end": {
+        "time": 2.261412,
+        "duration": 53.066667,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/xunai/stores/%E9%BB%91%E9%87%91%E5%BA%97%E4%BD%93%E9%AA%8C%E6%B5%81%E7%A8%8B.mp4",
+        "visibleRatio": 0.971626938208748,
+        "rect": {
+          "x": 0,
+          "y": 96,
+          "width": 1920,
+          "height": 1012.734375
+        },
+        "scrollY": 0
+      },
+      "attributesPass": true,
+      "autoplayPass": true,
+      "loopState": {
+        "time": 1.35536,
+        "duration": 53.066667,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/xunai/stores/%E9%BB%91%E9%87%91%E5%BA%97%E4%BD%93%E9%AA%8C%E6%B5%81%E7%A8%8B.mp4",
+        "visibleRatio": 0.971626938208748,
+        "rect": {
+          "x": 0,
+          "y": 96,
+          "width": 1920,
+          "height": 1012.734375
+        },
+        "scrollY": 0
+      },
+      "loopPass": true,
+      "pass": true
+    },
+    {
+      "route": "ai.html#value",
+      "selector": "#value video",
+      "requestedViewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 2
+      },
+      "environment": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 2,
+        "visualViewportScale": 1,
+        "rootFont": "21.3333px",
+        "bodyFont": "21.3333px",
+        "h1Font": "63.36px",
+        "documentWidth": 1920
+      },
+      "start": {
+        "time": 0.820986,
+        "duration": 518.985133,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/xunai/ai/ai-demo.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 1016.328125,
+          "y": 375.4375,
+          "width": 813.015625,
+          "height": 457.3125
+        },
+        "scrollY": 1118
+      },
+      "end": {
+        "time": 2.026475,
+        "duration": 518.985133,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/xunai/ai/ai-demo.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 1016.328125,
+          "y": 375.4375,
+          "width": 813.015625,
+          "height": 457.3125
+        },
+        "scrollY": 1118
+      },
+      "attributesPass": true,
+      "autoplayPass": true,
+      "loopState": {
+        "time": 1.425661,
+        "duration": 518.985133,
+        "paused": false,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "playsInline": true,
+        "controls": false,
+        "error": 0,
+        "source": "http://127.0.0.1:4196/assets/xunai/ai/ai-demo.mp4",
+        "visibleRatio": 1,
+        "rect": {
+          "x": 1016.328125,
+          "y": 375.4375,
+          "width": 813.015625,
+          "height": 457.3125
+        },
+        "scrollY": 1118
+      },
+      "loopPass": true,
+      "pass": true
+    }
+  ],
+  "summary": {
+    "total": 14,
+    "passed": 14,
+    "failed": 0
+  },
+  "os": {
+    "name": "macOS",
+    "version": "15.7.1",
+    "build": "24G231",
+    "arch": "arm64"
+  },
+  "representativeFontEnvironments": [
+    {
+      "route": "http://127.0.0.1:4196/website-code/index.html#hero-story",
+      "width": 390,
+      "height": 844,
+      "dpr": 3,
+      "visualViewportScale": 1,
+      "rootFont": "16px",
+      "bodyFont": "16px",
+      "fontFamily": "\"XunAi OPPO\", \"PingFang SC\", sans-serif",
+      "fonts": {
+        "status": "loaded",
+        "faces": [
+          {
+            "family": "XunAi OPPO",
+            "weight": "100 700",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "XunAi Mincho",
+            "weight": "400",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "XunAi Crimson",
+            "weight": "400",
+            "style": "normal",
+            "status": "unloaded"
+          }
+        ]
+      }
+    },
+    {
+      "route": "http://127.0.0.1:4196/website-code/index.html#hero-story",
+      "width": 1920,
+      "height": 1080,
+      "dpr": 2,
+      "visualViewportScale": 1,
+      "rootFont": "21.3333px",
+      "bodyFont": "21.3333px",
+      "fontFamily": "\"XunAi OPPO\", \"PingFang SC\", sans-serif",
+      "fonts": {
+        "status": "loaded",
+        "faces": [
+          {
+            "family": "XunAi OPPO",
+            "weight": "100 700",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "XunAi Mincho",
+            "weight": "400",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "XunAi Crimson",
+            "weight": "400",
+            "style": "normal",
+            "status": "unloaded"
+          }
+        ]
+      }
+    }
+  ]
+}

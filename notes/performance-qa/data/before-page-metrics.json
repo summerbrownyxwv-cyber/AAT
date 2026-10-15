@@ -1,0 +1,4602 @@
+{
+  "phase": "before",
+  "browser": "154.0.8037.99",
+  "base": "http://127.0.0.1:4197",
+  "conditions": "Local built output; raw HTTP text, ETag revalidation, Range. Mobile 10Mbps/80ms/CPU4, desktop 50Mbps/40ms/CPU1. Ready=fonts.ready(max45s)+2s; full browse=0.9 viewport native wheel/350ms until bottom, max65 gestures; warm=reload same context. No real-user INP.",
+  "records": [
+    {
+      "slug": "index",
+      "route": "/website-code/index.html",
+      "profile": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "latency": 80,
+        "mbps": 10,
+        "cpu": 4
+      },
+      "cold": {
+        "network": [
+          {
+            "url": "http://127.0.0.1:4197/website-code/index.html",
+            "type": "Document",
+            "initiator": "other",
+            "priority": "VeryHigh",
+            "start": 12767.850006,
+            "bytes": 17990,
+            "status": 200,
+            "mime": "text/html",
+            "cache": false,
+            "ttfbMs": 10.542,
+            "end": 12767.951363
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/fonts/oppo-sans.woff2",
+            "type": "Font",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12767.965251,
+            "bytes": 13646034,
+            "status": 200,
+            "mime": "font/woff2",
+            "cache": false,
+            "ttfbMs": 4.156,
+            "end": 12806.294024
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/fonts/tsukushi-mincho-r.woff2",
+            "type": "Font",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12767.96631,
+            "bytes": 2254536,
+            "status": 200,
+            "mime": "font/woff2",
+            "cache": false,
+            "ttfbMs": 5.763,
+            "end": 12778.186003
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/styles.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12767.966359,
+            "bytes": 30662,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 2.043,
+            "end": 12768.136065
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-navigation.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12767.9664,
+            "bytes": 5266,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 1.497,
+            "end": 12768.074881
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-experience.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12767.966436,
+            "bytes": 3635,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 1.643,
+            "end": 12768.06886
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/loader.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12767.967016,
+            "bytes": 3392,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 1.898,
+            "end": 12768.070068
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/loader.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.967052,
+            "bytes": 12826,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 1.795,
+            "end": 12768.343517
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/79f1b.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Medium",
+            "start": 12767.967093,
+            "bytes": 4777,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.833,
+            "end": 12768.230852
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/74169.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Medium",
+            "start": 12767.967123,
+            "bytes": 10212,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.856,
+            "end": 12768.266734
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/home-hero-poster.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.967184,
+            "bytes": 1186246,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 1.45,
+            "end": 12773.711652
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/6d5b4.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.967211,
+            "bytes": 654,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.953,
+            "end": 12768.35283
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/7e7ee.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.967953,
+            "bytes": 1261,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.373,
+            "end": 12768.381035
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/ee015.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.967975,
+            "bytes": 2143,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.111,
+            "end": 12768.43232
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/e18c9.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.96816,
+            "bytes": 6108694,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 1.331,
+            "end": 12792.315124
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/27abb.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.968194,
+            "bytes": 650,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.956,
+            "end": 12768.467428
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/adaae.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.968218,
+            "bytes": 1851,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.944,
+            "end": 12768.523599
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/7d125.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.968245,
+            "bytes": 2955,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.283,
+            "end": 12768.559684
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/777ed.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.968684,
+            "bytes": 3685,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.084,
+            "end": 12768.620864
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/109d9.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.968707,
+            "bytes": 6328,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.397,
+            "end": 12768.669975
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/10bfc.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.968729,
+            "bytes": 4793,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.15,
+            "end": 12768.724049
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/f1aad.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.968754,
+            "bytes": 648,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.303,
+            "end": 12768.756583
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/e24f6.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.96938,
+            "bytes": 648,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.65,
+            "end": 12768.810622
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/35af4.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.96941,
+            "bytes": 4788,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.965,
+            "end": 12768.860767
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/e0737.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.969449,
+            "bytes": 10210,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.895,
+            "end": 12768.932755
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/app.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12767.969482,
+            "bytes": 651,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 100.33,
+            "end": 12768.15179
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-navigation.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12767.969521,
+            "bytes": 2855,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 100.64,
+            "end": 12768.157648
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-experience.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12767.970078,
+            "bytes": 1096,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 106.131,
+            "end": 12768.158845
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/home-hero.mp4",
+            "type": "Media",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.991287,
+            "bytes": 8682608,
+            "status": 206,
+            "mime": "video/mp4",
+            "cache": false,
+            "ttfbMs": 1.365
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/motion.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12768.152928,
+            "bytes": 18552,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 4.773,
+            "end": 12768.295699
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/content-motion.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12768.153834,
+            "bytes": 5223,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 5.88,
+            "end": 12768.262112
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/0a4ac.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12768.253341,
+            "bytes": 521,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.988,
+            "end": 12769.019695
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/72506.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12768.254105,
+            "bytes": 523,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 2.899,
+            "end": 12769.106944
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/45f66.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12768.371144,
+            "bytes": 1121510,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 1.485,
+            "end": 12774.557226
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/28470.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12768.371891,
+            "bytes": 15396980,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 2.294,
+            "end": 12808.764932
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/16ce6.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12768.372402,
+            "bytes": 2322048,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 2.357,
+            "end": 12784.523385
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/79f1b.svg",
+            "type": "Other",
+            "initiator": "other",
+            "priority": "High",
+            "start": 12808.811638,
+            "bytes": 263,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.876,
+            "end": 12808.900317
+          }
+        ],
+        "bytes": 50877714,
+        "requests": 37,
+        "metrics": {
+          "lcp": 736,
+          "cls": 0,
+          "longTasks": [
+            {
+              "start": 535.3000000007451,
+              "duration": 145
+            },
+            {
+              "start": 38702.20000000112,
+              "duration": 175
+            },
+            {
+              "start": 38877.90000000037,
+              "duration": 170
+            }
+          ],
+          "events": [],
+          "fcp": 528,
+          "ttfb": 10.199999999254942,
+          "fontsStatus": "loaded",
+          "now": 41129.300000000745,
+          "heap": {
+            "used": 2397262,
+            "total": 4341582
+          }
+        },
+        "cpu": {
+          "LayoutDuration": 0.882827,
+          "RecalcStyleDuration": 1.818163,
+          "ScriptDuration": 2.646581,
+          "TaskDuration": 17.409143,
+          "JSHeapUsedSize": 2353000
+        }
+      },
+      "fullBrowse": {
+        "network": [
+          {
+            "url": "http://127.0.0.1:4197/website-code/index.html",
+            "type": "Document",
+            "initiator": "other",
+            "priority": "VeryHigh",
+            "start": 12767.850006,
+            "bytes": 17990,
+            "status": 200,
+            "mime": "text/html",
+            "cache": false,
+            "ttfbMs": 10.542,
+            "end": 12767.951363
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/fonts/oppo-sans.woff2",
+            "type": "Font",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12767.965251,
+            "bytes": 13646034,
+            "status": 200,
+            "mime": "font/woff2",
+            "cache": false,
+            "ttfbMs": 4.156,
+            "end": 12806.294024
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/fonts/tsukushi-mincho-r.woff2",
+            "type": "Font",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12767.96631,
+            "bytes": 2254536,
+            "status": 200,
+            "mime": "font/woff2",
+            "cache": false,
+            "ttfbMs": 5.763,
+            "end": 12778.186003
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/styles.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12767.966359,
+            "bytes": 30662,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 2.043,
+            "end": 12768.136065
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-navigation.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12767.9664,
+            "bytes": 5266,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 1.497,
+            "end": 12768.074881
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-experience.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12767.966436,
+            "bytes": 3635,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 1.643,
+            "end": 12768.06886
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/loader.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12767.967016,
+            "bytes": 3392,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 1.898,
+            "end": 12768.070068
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/loader.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.967052,
+            "bytes": 12826,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 1.795,
+            "end": 12768.343517
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/79f1b.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Medium",
+            "start": 12767.967093,
+            "bytes": 4777,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.833,
+            "end": 12768.230852
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/74169.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Medium",
+            "start": 12767.967123,
+            "bytes": 10212,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.856,
+            "end": 12768.266734
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/home-hero-poster.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.967184,
+            "bytes": 1186246,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 1.45,
+            "end": 12773.711652
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/6d5b4.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.967211,
+            "bytes": 654,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.953,
+            "end": 12768.35283
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/7e7ee.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.967953,
+            "bytes": 1261,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.373,
+            "end": 12768.381035
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/ee015.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.967975,
+            "bytes": 2143,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.111,
+            "end": 12768.43232
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/e18c9.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.96816,
+            "bytes": 6108694,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 1.331,
+            "end": 12792.315124
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/27abb.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.968194,
+            "bytes": 650,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.956,
+            "end": 12768.467428
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/adaae.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.968218,
+            "bytes": 1851,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.944,
+            "end": 12768.523599
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/7d125.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.968245,
+            "bytes": 2955,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.283,
+            "end": 12768.559684
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/777ed.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.968684,
+            "bytes": 3685,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.084,
+            "end": 12768.620864
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/109d9.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.968707,
+            "bytes": 6328,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.397,
+            "end": 12768.669975
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/10bfc.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.968729,
+            "bytes": 4793,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.15,
+            "end": 12768.724049
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/f1aad.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.968754,
+            "bytes": 648,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.303,
+            "end": 12768.756583
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/e24f6.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.96938,
+            "bytes": 648,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.65,
+            "end": 12768.810622
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/35af4.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.96941,
+            "bytes": 4788,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.965,
+            "end": 12768.860767
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/e0737.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.969449,
+            "bytes": 10210,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.895,
+            "end": 12768.932755
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/app.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12767.969482,
+            "bytes": 651,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 100.33,
+            "end": 12768.15179
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-navigation.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12767.969521,
+            "bytes": 2855,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 100.64,
+            "end": 12768.157648
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-experience.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12767.970078,
+            "bytes": 1096,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 106.131,
+            "end": 12768.158845
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/home-hero.mp4",
+            "type": "Media",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12767.991287,
+            "bytes": 8682608,
+            "status": 206,
+            "mime": "video/mp4",
+            "cache": false,
+            "ttfbMs": 1.365
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/motion.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12768.152928,
+            "bytes": 18552,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 4.773,
+            "end": 12768.295699
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/content-motion.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12768.153834,
+            "bytes": 5223,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 5.88,
+            "end": 12768.262112
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/0a4ac.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12768.253341,
+            "bytes": 521,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.988,
+            "end": 12769.019695
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/72506.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12768.254105,
+            "bytes": 523,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 2.899,
+            "end": 12769.106944
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/45f66.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12768.371144,
+            "bytes": 1121510,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 1.485,
+            "end": 12774.557226
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/28470.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12768.371891,
+            "bytes": 15396980,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 2.294,
+            "end": 12808.764932
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/16ce6.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12768.372402,
+            "bytes": 2322048,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 2.357,
+            "end": 12784.523385
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/79f1b.svg",
+            "type": "Other",
+            "initiator": "other",
+            "priority": "High",
+            "start": 12808.811638,
+            "bytes": 263,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.876,
+            "end": 12808.900317
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/07d4e.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12809.838094,
+            "bytes": 626052,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 1.218,
+            "end": 12812.206278
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/817f2.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12809.838924,
+            "bytes": 992340,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 1.223
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/6e977.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12810.200443,
+            "bytes": 767340,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 2.459
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/a8c81.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12810.201023,
+            "bytes": 767340,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 2.043
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/bbf5b.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12810.201062,
+            "bytes": 768840,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 1.825
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/9f5c0.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12810.201611,
+            "bytes": 767338,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 1.66
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/f4b08.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12810.839528,
+            "bytes": 345840,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 1258.818
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/2cec2.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12811.477935,
+            "bytes": 0
+          }
+        ],
+        "bytes": 55912804,
+        "requests": 45,
+        "metrics": {
+          "lcp": 736,
+          "cls": 0.0618384352184132,
+          "longTasks": [
+            {
+              "start": 535.3000000007451,
+              "duration": 145
+            },
+            {
+              "start": 38702.20000000112,
+              "duration": 175
+            },
+            {
+              "start": 38877.90000000037,
+              "duration": 170
+            },
+            {
+              "start": 42605.90000000037,
+              "duration": 129
+            }
+          ],
+          "events": [],
+          "fcp": 528,
+          "ttfb": 10.199999999254942,
+          "fontsStatus": "loaded",
+          "now": 46168.90000000037,
+          "heap": {
+            "used": 1899665,
+            "total": 4047545
+          }
+        },
+        "cpu": {
+          "LayoutDuration": 0.935944,
+          "RecalcStyleDuration": 2.35163,
+          "ScriptDuration": 2.76896,
+          "TaskDuration": 19.018243,
+          "JSHeapUsedSize": 1874684
+        }
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/79f1b.svg",
+          "natural": [
+            33,
+            32
+          ],
+          "rendered": [
+            29.28125,
+            28.40625
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/74169.svg",
+          "natural": [
+            82,
+            25
+          ],
+          "rendered": [
+            72.390625,
+            22.34375
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/45f66.webp",
+          "natural": [
+            1024,
+            768
+          ],
+          "rendered": [
+            350,
+            194.5
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/6d5b4.svg",
+          "natural": [
+            12,
+            12
+          ],
+          "rendered": [
+            12,
+            12
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/7e7ee.svg",
+          "natural": [
+            32,
+            31
+          ],
+          "rendered": [
+            24,
+            23.28125
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/ee015.svg",
+          "natural": [
+            32,
+            31
+          ],
+          "rendered": [
+            24,
+            23.28125
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/6d5b4.svg",
+          "natural": [
+            12,
+            12
+          ],
+          "rendered": [
+            12,
+            12
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/28470.webp",
+          "natural": [
+            4096,
+            2729
+          ],
+          "rendered": [
+            350,
+            196.859375
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/16ce6.webp",
+          "natural": [
+            1920,
+            1080
+          ],
+          "rendered": [
+            362.25,
+            203.74951171875
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/07d4e.webp",
+          "natural": [
+            1024,
+            768
+          ],
+          "rendered": [
+            227.5,
+            284.375
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/817f2.webp",
+          "natural": [
+            4096,
+            2731
+          ],
+          "rendered": [
+            430,
+            298.75
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/817f2.webp",
+          "natural": [
+            4096,
+            2731
+          ],
+          "rendered": [
+            357,
+            223.125
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/e18c9.webp",
+          "natural": [
+            2731,
+            4096
+          ],
+          "rendered": [
+            84.90625,
+            138.9375
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/6e977.webp",
+          "natural": [
+            2731,
+            4096
+          ],
+          "rendered": [
+            78.5,
+            78.5
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/a8c81.webp",
+          "natural": [
+            2731,
+            4096
+          ],
+          "rendered": [
+            78.5,
+            78.5
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/bbf5b.webp",
+          "natural": [
+            2731,
+            4096
+          ],
+          "rendered": [
+            93.6875,
+            140.5
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/6d5b4.svg",
+          "natural": [
+            12,
+            12
+          ],
+          "rendered": [
+            12,
+            12
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/9f5c0.webp",
+          "natural": [
+            4096,
+            2731
+          ],
+          "rendered": [
+            361.859375,
+            241.171875
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/27abb.svg",
+          "natural": [
+            18,
+            18
+          ],
+          "rendered": [
+            12,
+            12
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/f4b08.webp",
+          "natural": [
+            4096,
+            3094
+          ],
+          "rendered": [
+            389.421875,
+            294.59375
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/adaae.svg",
+          "natural": [
+            47,
+            46
+          ],
+          "rendered": [
+            28,
+            27.25
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/7d125.svg",
+          "natural": [
+            42,
+            45
+          ],
+          "rendered": [
+            28,
+            30.484375
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/777ed.svg",
+          "natural": [
+            45,
+            45
+          ],
+          "rendered": [
+            28,
+            28
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/109d9.svg",
+          "natural": [
+            35,
+            50
+          ],
+          "rendered": [
+            28,
+            40.078125
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/10bfc.svg",
+          "natural": [
+            35,
+            47
+          ],
+          "rendered": [
+            28,
+            37.578125
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/27abb.svg",
+          "natural": [
+            18,
+            18
+          ],
+          "rendered": [
+            12,
+            12
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/f1aad.svg",
+          "natural": [
+            18,
+            18
+          ],
+          "rendered": [
+            18,
+            18
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/e24f6.svg",
+          "natural": [
+            18,
+            18
+          ],
+          "rendered": [
+            18,
+            18
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/e24f6.svg",
+          "natural": [
+            18,
+            18
+          ],
+          "rendered": [
+            18,
+            18
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/35af4.svg",
+          "natural": [
+            35,
+            34
+          ],
+          "rendered": [
+            35.03125,
+            33.984375
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/e0737.svg",
+          "natural": [
+            87,
+            27
+          ],
+          "rendered": [
+            86.609375,
+            26.734375
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            177,
+            75
+          ],
+          "loading": "lazy",
+          "complete": false
+        }
+      ],
+      "media": [
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/home-hero.mp4",
+          "readyState": 4,
+          "error": 0,
+          "video": [
+            1920,
+            1080
+          ],
+          "controls": false,
+          "loop": true,
+          "autoplay": true,
+          "muted": true
+        }
+      ],
+      "warm": {
+        "network": [
+          {
+            "url": "http://127.0.0.1:4197/website-code/index.html",
+            "type": "Document",
+            "initiator": "other",
+            "priority": "VeryHigh",
+            "start": 12814.044973,
+            "bytes": 275,
+            "status": 200,
+            "mime": "text/html",
+            "cache": false,
+            "ttfbMs": 15162.908,
+            "end": 12829.295364
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/fonts/oppo-sans.woff2",
+            "type": "Font",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12829.337207,
+            "bytes": 268,
+            "status": 304,
+            "mime": "font/woff2",
+            "cache": false,
+            "ttfbMs": 0.847,
+            "end": 12829.426307
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/fonts/tsukushi-mincho-r.woff2",
+            "type": "Font",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12829.337966,
+            "bytes": 266,
+            "status": 304,
+            "mime": "font/woff2",
+            "cache": false,
+            "ttfbMs": 0.977,
+            "end": 12829.429721
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/styles.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12829.338003,
+            "bytes": 274,
+            "status": 304,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 0.628,
+            "end": 12829.427284
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-navigation.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12829.338036,
+            "bytes": 272,
+            "status": 304,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 0.576,
+            "end": 12829.428533
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-experience.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12829.338067,
+            "bytes": 272,
+            "status": 304,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 0.5,
+            "end": 12829.430836
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/loader.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12829.3381,
+            "bytes": 272,
+            "status": 304,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 0.414,
+            "end": 12829.43203
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/loader.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.338134,
+            "bytes": 281,
+            "status": 304,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 0.248,
+            "end": 12829.523412
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/79f1b.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Medium",
+            "start": 12829.338967,
+            "bytes": 263,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.35,
+            "end": 12829.520827
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/74169.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Medium",
+            "start": 12829.339002,
+            "bytes": 263,
+            "status": 304,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.402,
+            "end": 12829.52188
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/home-hero-poster.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.339046,
+            "bytes": 266,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 63.876,
+            "end": 12829.607429
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/6d5b4.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.339488,
+            "bytes": 261,
+            "status": 304,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.341,
+            "end": 12829.608298
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/7e7ee.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.339513,
+            "bytes": 263,
+            "status": 304,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.275,
+            "end": 12829.609742
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/ee015.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.339535,
+            "bytes": 263,
+            "status": 304,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.313,
+            "end": 12829.613289
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/e18c9.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.339563,
+            "bytes": 266,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.363,
+            "end": 12829.698811
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/27abb.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.339978,
+            "bytes": 261,
+            "status": 304,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.271,
+            "end": 12829.699558
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/adaae.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.340009,
+            "bytes": 263,
+            "status": 304,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.242,
+            "end": 12829.700999
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/7d125.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.340039,
+            "bytes": 263,
+            "status": 304,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.2,
+            "end": 12829.701902
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/777ed.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.340062,
+            "bytes": 263,
+            "status": 304,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.218,
+            "end": 12829.703331
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/109d9.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.340082,
+            "bytes": 263,
+            "status": 304,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 44.373,
+            "end": 12829.791953
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/10bfc.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.340106,
+            "bytes": 263,
+            "status": 304,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 45.49,
+            "end": 12829.793383
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/f1aad.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.340135,
+            "bytes": 261,
+            "status": 304,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 42.7,
+            "end": 12829.789616
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/e24f6.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.340156,
+            "bytes": 261,
+            "status": 304,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.38,
+            "end": 12829.794444
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/35af4.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.340182,
+            "bytes": 263,
+            "status": 304,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.343,
+            "end": 12829.795656
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/e0737.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.340895,
+            "bytes": 263,
+            "status": 304,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.667,
+            "end": 12829.881417
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/app.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12829.340921,
+            "bytes": 277,
+            "status": 304,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 86.1,
+            "end": 12829.517446
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-navigation.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12829.340948,
+            "bytes": 279,
+            "status": 304,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 86.55,
+            "end": 12829.518491
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-experience.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12829.340979,
+            "bytes": 277,
+            "status": 304,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 87.624,
+            "end": 12829.51964
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/45f66.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.353533,
+            "bytes": 266,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.712,
+            "end": 12829.882647
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/28470.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.353577,
+            "bytes": 268,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.242,
+            "end": 12829.883293
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/16ce6.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.353601,
+            "bytes": 266,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.257,
+            "end": 12829.88619
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/07d4e.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.353626,
+            "bytes": 264,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.231,
+            "end": 12829.886341
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/f4b08.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.354368,
+            "bytes": 266,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 42.941,
+            "end": 12829.790738
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/home-hero.mp4",
+            "type": "Media",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.356449,
+            "bytes": 2247152,
+            "status": 206,
+            "mime": "video/mp4",
+            "cache": false,
+            "ttfbMs": 95.055
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/0a4ac.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.436391,
+            "bytes": 0,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.988,
+            "end": 12829.436454
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/72506.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.437501,
+            "bytes": 0,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 2.899,
+            "end": 12829.437536
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/2cec2.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12829.473987,
+            "bytes": 3814,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 78.791,
+            "end": 12829.705593
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/motion.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12829.519514,
+            "bytes": 281,
+            "status": 304,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 1.215,
+            "end": 12829.610835
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/content-motion.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12829.519583,
+            "bytes": 279,
+            "status": 304,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 2.214,
+            "end": 12829.612116
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/79f1b.svg",
+            "type": "Other",
+            "initiator": "other",
+            "priority": "High",
+            "start": 12830.058856,
+            "bytes": 263,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.791,
+            "end": 12830.141524
+          }
+        ],
+        "bytes": 2260601,
+        "requests": 40,
+        "metrics": {
+          "lcp": 15660,
+          "cls": 0,
+          "longTasks": [
+            {
+              "start": 15482.199999999255,
+              "duration": 138
+            }
+          ],
+          "events": [],
+          "fcp": 15432,
+          "ttfb": 0.5,
+          "fontsStatus": "loaded",
+          "now": 17736.699999999255,
+          "heap": {
+            "used": 3361716,
+            "total": 6244464
+          }
+        },
+        "cpu": {
+          "LayoutDuration": 0.054239,
+          "RecalcStyleDuration": 0.148624,
+          "ScriptDuration": 0.272993,
+          "TaskDuration": 1.285676,
+          "JSHeapUsedSize": 3297080
+        }
+      },
+      "errors": []
+    },
+    {
+      "slug": "company",
+      "route": "/website-code/company.html",
+      "profile": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "latency": 80,
+        "mbps": 10,
+        "cpu": 4
+      },
+      "cold": {
+        "network": [
+          {
+            "url": "http://127.0.0.1:4197/website-code/company.html",
+            "type": "Document",
+            "initiator": "other",
+            "priority": "VeryHigh",
+            "start": 12831.978773,
+            "bytes": 16477,
+            "status": 200,
+            "mime": "text/html",
+            "cache": false,
+            "ttfbMs": 1.611,
+            "end": 12832.082134
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/fonts/oppo-sans.woff2",
+            "type": "Font",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12832.092593,
+            "bytes": 13646034,
+            "status": 200,
+            "mime": "font/woff2",
+            "cache": false,
+            "ttfbMs": 3.523,
+            "end": 12859.037755
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/fonts/tsukushi-mincho-r.woff2",
+            "type": "Font",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12832.093679,
+            "bytes": 2254536,
+            "status": 200,
+            "mime": "font/woff2",
+            "cache": false,
+            "ttfbMs": 139.111,
+            "end": 12839.091126
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/company.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12832.093726,
+            "bytes": 31369,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 2.106,
+            "end": 12832.275019
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/xunai/content.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12832.093763,
+            "bytes": 294942,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 2.155,
+            "end": 12833.111596
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-foundations.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12832.093794,
+            "bytes": 11957,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 1.926,
+            "end": 12832.224794
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/company-brand.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12832.09382,
+            "bytes": 13300,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 1.887,
+            "end": 12832.232166
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/company-honors.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12832.093848,
+            "bytes": 782,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 1.985,
+            "end": 12832.185209
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-navigation.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12832.094744,
+            "bytes": 5266,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 89.097,
+            "end": 12832.282404
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-experience.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12832.094774,
+            "bytes": 3635,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 128.077,
+            "end": 12832.317161
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/79f1b.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Medium",
+            "start": 12832.095017,
+            "bytes": 4777,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.147,
+            "end": 12832.476639
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/74169.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Medium",
+            "start": 12832.095546,
+            "bytes": 10212,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.917,
+            "end": 12832.494419
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/company/company-hero-poster.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Medium",
+            "start": 12832.095575,
+            "bytes": 1141468,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 1.142,
+            "end": 12836.736384
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/ee015.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Medium",
+            "start": 12832.095602,
+            "bytes": 2143,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.084,
+            "end": 12832.716589
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/35af4.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12832.095634,
+            "bytes": 4788,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.821,
+            "end": 12832.819745
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/e0737.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12832.095658,
+            "bytes": 10210,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.255,
+            "end": 12832.882112
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/company.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12832.095693,
+            "bytes": 5311,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 178.004,
+            "end": 12832.375815
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-navigation.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12832.096314,
+            "bytes": 2855,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 184.883,
+            "end": 12832.373757
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-experience.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12832.096344,
+            "bytes": 1096,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 220.064,
+            "end": 12832.401356
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/company/company-hero.mp4",
+            "type": "Media",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12832.116971,
+            "bytes": 15892064,
+            "status": 206,
+            "mime": "video/mp4",
+            "cache": false,
+            "ttfbMs": 1.218
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/responsive-media.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12832.377168,
+            "bytes": 1229,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 24.368,
+            "end": 12832.487537
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/xunai/brand-figma.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12832.377639,
+            "bytes": 17851,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 99.819,
+            "end": 12832.621786
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/company-honors.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12832.377699,
+            "bytes": 2483,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 110.367,
+            "end": 12832.578744
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/asset-urls.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12832.488945,
+            "bytes": 6762,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 6.079,
+            "end": 12832.605162
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/xunai/responsive-images.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12832.48902,
+            "bytes": 25749,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 91.135,
+            "end": 12832.760914
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/brand/imgGroup5.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12833.259873,
+            "bytes": 203835,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.058,
+            "end": 12834.283856
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/brand/imgArrowNarrowUpRight.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12833.260805,
+            "bytes": 650,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.623,
+            "end": 12833.34794
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgDsc13822-768.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12833.357169,
+            "bytes": 146892,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 2.213,
+            "end": 12834.142235
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-research-replacement-768.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12833.357289,
+            "bytes": 53286,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 2.115,
+            "end": 12834.449691
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/fonts/tsukushi-mincho-r.woff2",
+            "type": "Font",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12839.215731,
+            "bytes": 2254536,
+            "status": 200,
+            "mime": "font/woff2",
+            "cache": false,
+            "ttfbMs": 2.382,
+            "end": 12844.726721
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/79f1b.svg",
+            "type": "Other",
+            "initiator": "other",
+            "priority": "High",
+            "start": 12859.684544,
+            "bytes": 263,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.967,
+            "end": 12859.767561
+          }
+        ],
+        "bytes": 36066758,
+        "requests": 31,
+        "metrics": {
+          "lcp": 2452,
+          "cls": 0.0005291366390622921,
+          "longTasks": [
+            {
+              "start": 1146.300000000745,
+              "duration": 137
+            },
+            {
+              "start": 1316,
+              "duration": 63
+            },
+            {
+              "start": 27298.099999999627,
+              "duration": 290
+            },
+            {
+              "start": 27588.300000000745,
+              "duration": 85
+            }
+          ],
+          "events": [],
+          "fcp": 1396,
+          "ttfb": 1.400000000372529,
+          "fontsStatus": "loaded",
+          "now": 29711.300000000745,
+          "heap": {
+            "used": 1687016,
+            "total": 3536296
+          }
+        },
+        "cpu": {
+          "LayoutDuration": 0.086574,
+          "RecalcStyleDuration": 0.071687,
+          "ScriptDuration": 0.038568,
+          "TaskDuration": 1.507499,
+          "JSHeapUsedSize": 1665112
+        }
+      },
+      "fullBrowse": {
+        "network": [
+          {
+            "url": "http://127.0.0.1:4197/website-code/company.html",
+            "type": "Document",
+            "initiator": "other",
+            "priority": "VeryHigh",
+            "start": 12831.978773,
+            "bytes": 16477,
+            "status": 200,
+            "mime": "text/html",
+            "cache": false,
+            "ttfbMs": 1.611,
+            "end": 12832.082134
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/fonts/oppo-sans.woff2",
+            "type": "Font",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12832.092593,
+            "bytes": 13646034,
+            "status": 200,
+            "mime": "font/woff2",
+            "cache": false,
+            "ttfbMs": 3.523,
+            "end": 12859.037755
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/fonts/tsukushi-mincho-r.woff2",
+            "type": "Font",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12832.093679,
+            "bytes": 2254536,
+            "status": 200,
+            "mime": "font/woff2",
+            "cache": false,
+            "ttfbMs": 139.111,
+            "end": 12839.091126
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/company.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12832.093726,
+            "bytes": 31369,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 2.106,
+            "end": 12832.275019
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/xunai/content.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12832.093763,
+            "bytes": 294942,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 2.155,
+            "end": 12833.111596
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-foundations.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12832.093794,
+            "bytes": 11957,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 1.926,
+            "end": 12832.224794
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/company-brand.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12832.09382,
+            "bytes": 13300,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 1.887,
+            "end": 12832.232166
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/company-honors.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12832.093848,
+            "bytes": 782,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 1.985,
+            "end": 12832.185209
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-navigation.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12832.094744,
+            "bytes": 5266,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 89.097,
+            "end": 12832.282404
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-experience.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12832.094774,
+            "bytes": 3635,
+            "status": 200,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 128.077,
+            "end": 12832.317161
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/79f1b.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Medium",
+            "start": 12832.095017,
+            "bytes": 4777,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.147,
+            "end": 12832.476639
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/74169.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Medium",
+            "start": 12832.095546,
+            "bytes": 10212,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.917,
+            "end": 12832.494419
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/company/company-hero-poster.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Medium",
+            "start": 12832.095575,
+            "bytes": 1141468,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 1.142,
+            "end": 12836.736384
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/ee015.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Medium",
+            "start": 12832.095602,
+            "bytes": 2143,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.084,
+            "end": 12832.716589
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/35af4.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12832.095634,
+            "bytes": 4788,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.821,
+            "end": 12832.819745
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/e0737.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12832.095658,
+            "bytes": 10210,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.255,
+            "end": 12832.882112
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/company.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12832.095693,
+            "bytes": 5311,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 178.004,
+            "end": 12832.375815
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-navigation.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12832.096314,
+            "bytes": 2855,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 184.883,
+            "end": 12832.373757
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-experience.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12832.096344,
+            "bytes": 1096,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 220.064,
+            "end": 12832.401356
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/company/company-hero.mp4",
+            "type": "Media",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12832.116971,
+            "bytes": 15892064,
+            "status": 206,
+            "mime": "video/mp4",
+            "cache": false,
+            "ttfbMs": 1.218
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/responsive-media.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12832.377168,
+            "bytes": 1229,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 24.368,
+            "end": 12832.487537
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/xunai/brand-figma.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12832.377639,
+            "bytes": 17851,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 99.819,
+            "end": 12832.621786
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/company-honors.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12832.377699,
+            "bytes": 2483,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 110.367,
+            "end": 12832.578744
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/asset-urls.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12832.488945,
+            "bytes": 6762,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 6.079,
+            "end": 12832.605162
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/xunai/responsive-images.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12832.48902,
+            "bytes": 25749,
+            "status": 200,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 91.135,
+            "end": 12832.760914
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/brand/imgGroup5.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12833.259873,
+            "bytes": 203835,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 1.058,
+            "end": 12834.283856
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/brand/imgArrowNarrowUpRight.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12833.260805,
+            "bytes": 650,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.623,
+            "end": 12833.34794
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgDsc13822-768.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12833.357169,
+            "bytes": 146892,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 2.213,
+            "end": 12834.142235
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-research-replacement-768.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12833.357289,
+            "bytes": 53286,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 2.115,
+            "end": 12834.449691
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/fonts/tsukushi-mincho-r.woff2",
+            "type": "Font",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12839.215731,
+            "bytes": 2254536,
+            "status": 200,
+            "mime": "font/woff2",
+            "cache": false,
+            "ttfbMs": 2.382,
+            "end": 12844.726721
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/79f1b.svg",
+            "type": "Other",
+            "initiator": "other",
+            "priority": "High",
+            "start": 12859.684544,
+            "bytes": 263,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.967,
+            "end": 12859.767561
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgRectangle3-768.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12861.722306,
+            "bytes": 116092,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 1.241,
+            "end": 12861.904302
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgKhp016632-768.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12862.098767,
+            "bytes": 39696,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 2.613,
+            "end": 12862.326942
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/shared-history-2016-768.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12862.099716,
+            "bytes": 81460,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 2.523,
+            "end": 12862.387606
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame68-768.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12862.100122,
+            "bytes": 31510,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 2.761,
+            "end": 12862.310093
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame21-768.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12862.100151,
+            "bytes": 22482,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 2.41,
+            "end": 12862.276339
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame22-768.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12862.100177,
+            "bytes": 70772,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 2.374,
+            "end": 12862.379514
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame71-768.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12862.483221,
+            "bytes": 252860,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 1.941,
+            "end": 12862.829312
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame70-768.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12862.483334,
+            "bytes": 35420,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 1.916,
+            "end": 12862.655626
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame69-768.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12862.483374,
+            "bytes": 31482,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 1.598,
+            "end": 12862.647246
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame72-768.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12862.863561,
+            "bytes": 85838,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 2.265,
+            "end": 12863.162023
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame73-768.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12862.863659,
+            "bytes": 183754,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 1.986,
+            "end": 12863.315307
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame74-768.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12862.863687,
+            "bytes": 178570,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 1.887,
+            "end": 12863.311658
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/company/figma/92b14.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12863.630947,
+            "bytes": 428918,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 2.171,
+            "end": 12864.568397
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/company/figma/3af41.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12863.631867,
+            "bytes": 648524,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 1.424,
+            "end": 12864.776644
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/company/figma/14dd0.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12864.01213,
+            "bytes": 235380,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 2.045,
+            "end": 12864.630464
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/2cec2.webp",
+            "type": "Image",
+            "initiator": "other",
+            "priority": "Low",
+            "start": 12864.012704,
+            "bytes": 3814,
+            "status": 200,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.592,
+            "end": 12864.107681
+          }
+        ],
+        "bytes": 38513330,
+        "requests": 47,
+        "metrics": {
+          "lcp": 2452,
+          "cls": 0.0005291366390622921,
+          "longTasks": [
+            {
+              "start": 1146.300000000745,
+              "duration": 137
+            },
+            {
+              "start": 1316,
+              "duration": 63
+            },
+            {
+              "start": 27298.099999999627,
+              "duration": 290
+            },
+            {
+              "start": 27588.300000000745,
+              "duration": 85
+            },
+            {
+              "start": 32431.099999999627,
+              "duration": 54
+            }
+          ],
+          "events": [],
+          "fcp": 1396,
+          "ttfb": 1.400000000372529,
+          "fontsStatus": "loaded",
+          "now": 34525,
+          "heap": {
+            "used": 1874058,
+            "total": 3011990
+          }
+        },
+        "cpu": {
+          "LayoutDuration": 0.126878,
+          "RecalcStyleDuration": 0.189013,
+          "ScriptDuration": 0.115619,
+          "TaskDuration": 2.450957,
+          "JSHeapUsedSize": 1838848
+        }
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/79f1b.svg",
+          "natural": [
+            33,
+            32
+          ],
+          "rendered": [
+            29.28125,
+            28.40625
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/74169.svg",
+          "natural": [
+            82,
+            25
+          ],
+          "rendered": [
+            72.390625,
+            22.34375
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgDsc13822-768.webp",
+          "natural": [
+            350,
+            233
+          ],
+          "rendered": [
+            350,
+            350
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            0,
+            0
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/xunai/brand/imgGroup5.svg",
+          "natural": [
+            376,
+            341
+          ],
+          "rendered": [
+            0,
+            0
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/xunai/responsive/brand-research-replacement-768.webp",
+          "natural": [
+            350,
+            233
+          ],
+          "rendered": [
+            350,
+            350
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            0,
+            0
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgRectangle3-768.webp",
+          "natural": [
+            350,
+            250
+          ],
+          "rendered": [
+            350,
+            350
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            0,
+            0
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgKhp016632-768.webp",
+          "natural": [
+            350,
+            526
+          ],
+          "rendered": [
+            266,
+            199.5
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/xunai/responsive/shared-history-2016-768.webp",
+          "natural": [
+            350,
+            210
+          ],
+          "rendered": [
+            275.3100280761719,
+            206.482421875
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            275.31005859375,
+            206.482421875
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            275.31005859375,
+            206.482421875
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            275.31005859375,
+            206.482421875
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            275.31005859375,
+            206.482421875
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            275.31005859375,
+            206.482421875
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            275.31005859375,
+            206.482421875
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            275.31005859375,
+            206.482421875
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            275.31005859375,
+            206.482421875
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/xunai/brand/imgArrowNarrowUpRight.svg",
+          "natural": [
+            18,
+            18
+          ],
+          "rendered": [
+            24,
+            24
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame68-768.webp",
+          "natural": [
+            350,
+            233
+          ],
+          "rendered": [
+            169,
+            112.65625
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame21-768.webp",
+          "natural": [
+            350,
+            233
+          ],
+          "rendered": [
+            169,
+            112.65625
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame22-768.webp",
+          "natural": [
+            350,
+            526
+          ],
+          "rendered": [
+            350,
+            233.328125
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame71-768.webp",
+          "natural": [
+            350,
+            233
+          ],
+          "rendered": [
+            350,
+            233.328125
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame70-768.webp",
+          "natural": [
+            350,
+            233
+          ],
+          "rendered": [
+            169,
+            112.65625
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame69-768.webp",
+          "natural": [
+            350,
+            233
+          ],
+          "rendered": [
+            169,
+            112.65625
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/xunai/brand/imgArrowNarrowUpRight.svg",
+          "natural": [
+            18,
+            18
+          ],
+          "rendered": [
+            24,
+            24
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame72-768.webp",
+          "natural": [
+            350,
+            233
+          ],
+          "rendered": [
+            350,
+            233.328125
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame73-768.webp",
+          "natural": [
+            350,
+            526
+          ],
+          "rendered": [
+            169,
+            112.65625
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame74-768.webp",
+          "natural": [
+            350,
+            526
+          ],
+          "rendered": [
+            169,
+            112.65625
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/ee015.svg",
+          "natural": [
+            32,
+            31
+          ],
+          "rendered": [
+            52,
+            52
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/ee015.svg",
+          "natural": [
+            32,
+            31
+          ],
+          "rendered": [
+            52,
+            52
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/ee015.svg",
+          "natural": [
+            32,
+            31
+          ],
+          "rendered": [
+            52,
+            52
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            352.260009765625,
+            288.39990234375
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            352.260009765625,
+            288.39990234375
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            352.260009765625,
+            288.39990234375
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            352.260009765625,
+            288.39990234375
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            352.260009765625,
+            288.39996337890625
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            352.260009765625,
+            288.39996337890625
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            0,
+            0
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            0,
+            0
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            0,
+            0
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            0,
+            0
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            0,
+            0
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            0,
+            0
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            0,
+            0
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            0,
+            0
+          ],
+          "loading": "lazy",
+          "complete": false
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/company/figma/92b14.webp",
+          "natural": [
+            800,
+            600
+          ],
+          "rendered": [
+            176.1300048828125,
+            226.5999755859375
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/company/figma/3af41.webp",
+          "natural": [
+            800,
+            600
+          ],
+          "rendered": [
+            176.1300048828125,
+            226.5999755859375
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/company/figma/14dd0.webp",
+          "natural": [
+            800,
+            600
+          ],
+          "rendered": [
+            360.5,
+            267.8000183105469
+          ],
+          "loading": "lazy",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/35af4.svg",
+          "natural": [
+            35,
+            34
+          ],
+          "rendered": [
+            35.03125,
+            33.984375
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/e0737.svg",
+          "natural": [
+            87,
+            27
+          ],
+          "rendered": [
+            86.609375,
+            26.734375
+          ],
+          "loading": "auto",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:4197/assets/homepage/2cec2.webp",
+          "natural": [
+            226,
+            96
+          ],
+          "rendered": [
+            177,
+            75
+          ],
+          "loading": "lazy",
+          "complete": true
+        }
+      ],
+      "media": [
+        {
+          "src": "http://127.0.0.1:4197/assets/company/company-hero.mp4",
+          "readyState": 4,
+          "error": 0,
+          "video": [
+            1920,
+            1080
+          ],
+          "controls": false,
+          "loop": true,
+          "autoplay": true,
+          "muted": true
+        }
+      ],
+      "warm": {
+        "network": [
+          {
+            "url": "http://127.0.0.1:4197/website-code/company.html",
+            "type": "Document",
+            "initiator": "other",
+            "priority": "VeryHigh",
+            "start": 12866.531438,
+            "bytes": 275,
+            "status": 200,
+            "mime": "text/html",
+            "cache": false,
+            "ttfbMs": 0.829,
+            "end": 12866.622851
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/fonts/oppo-sans.woff2",
+            "type": "Font",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12866.711749,
+            "bytes": 268,
+            "status": 304,
+            "mime": "font/woff2",
+            "cache": false,
+            "ttfbMs": 0.935,
+            "end": 12866.801875
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/fonts/tsukushi-mincho-r.woff2",
+            "type": "Font",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12866.712094,
+            "bytes": 266,
+            "status": 304,
+            "mime": "font/woff2",
+            "cache": false,
+            "ttfbMs": 0.905,
+            "end": 12866.803735
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/company.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12866.712641,
+            "bytes": 274,
+            "status": 304,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 0.551,
+            "end": 12866.802844
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/xunai/content.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12866.712682,
+            "bytes": 276,
+            "status": 304,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 0.624,
+            "end": 12866.804854
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-foundations.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12866.712724,
+            "bytes": 274,
+            "status": 304,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 0.622,
+            "end": 12866.806125
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/company-brand.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12866.713181,
+            "bytes": 274,
+            "status": 304,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 0.614,
+            "end": 12866.807273
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/company-honors.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12866.713216,
+            "bytes": 270,
+            "status": 304,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 89.055,
+            "end": 12866.889014
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-navigation.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12866.713246,
+            "bytes": 272,
+            "status": 304,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 89.537,
+            "end": 12866.890006
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-experience.css",
+            "type": "Stylesheet",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12866.713274,
+            "bytes": 272,
+            "status": 304,
+            "mime": "text/css",
+            "cache": false,
+            "ttfbMs": 90.166,
+            "end": 12866.891227
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/79f1b.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Medium",
+            "start": 12866.713314,
+            "bytes": 263,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.709,
+            "end": 12866.972013
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/74169.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Medium",
+            "start": 12866.713995,
+            "bytes": 263,
+            "status": 304,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.28,
+            "end": 12866.972822
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/company/company-hero-poster.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Medium",
+            "start": 12866.714029,
+            "bytes": 266,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.274,
+            "end": 12866.974307
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/ee015.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Medium",
+            "start": 12866.714056,
+            "bytes": 263,
+            "status": 304,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.262,
+            "end": 12866.975734
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/35af4.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12866.714094,
+            "bytes": 263,
+            "status": 304,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.253,
+            "end": 12866.976448
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/e0737.svg",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12866.71412,
+            "bytes": 263,
+            "status": 304,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.186,
+            "end": 12866.977889
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/company.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12866.71415,
+            "bytes": 279,
+            "status": 304,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 90.902,
+            "end": 12866.892453
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-navigation.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12866.714184,
+            "bytes": 279,
+            "status": 304,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 92.055,
+            "end": 12866.893957
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/site-experience.js",
+            "type": "Script",
+            "initiator": "parser",
+            "priority": "High",
+            "start": 12866.714217,
+            "bytes": 277,
+            "status": 304,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 93.139,
+            "end": 12866.894988
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/company/figma/92b14.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12866.725906,
+            "bytes": 264,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.455,
+            "end": 12867.064104
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/company/figma/3af41.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12866.726959,
+            "bytes": 264,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.249,
+            "end": 12867.065604
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/company/figma/14dd0.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12866.726999,
+            "bytes": 264,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.252,
+            "end": 12867.066811
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/2cec2.webp",
+            "type": "Image",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12866.727034,
+            "bytes": 260,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.748,
+            "end": 12867.150713
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/company/company-hero.mp4",
+            "type": "Media",
+            "initiator": "parser",
+            "priority": "Low",
+            "start": 12866.729799,
+            "bytes": 2601152,
+            "status": 206,
+            "mime": "video/mp4",
+            "cache": false,
+            "ttfbMs": 0.733
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/fonts/tsukushi-mincho-r.woff2",
+            "type": "Font",
+            "initiator": "parser",
+            "priority": "VeryHigh",
+            "start": 12866.896302,
+            "bytes": 0,
+            "status": 200,
+            "mime": "font/woff2",
+            "cache": false,
+            "ttfbMs": 2.382,
+            "end": 12866.896804
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/responsive-media.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12866.937636,
+            "bytes": 277,
+            "status": 304,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 33.91,
+            "end": 12867.061156
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/xunai/brand-figma.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12866.938449,
+            "bytes": 281,
+            "status": 304,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 34.431,
+            "end": 12867.062143
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/company-honors.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12866.938478,
+            "bytes": 279,
+            "status": 304,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 35.515,
+            "end": 12867.063017
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/asset-urls.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12867.063653,
+            "bytes": 279,
+            "status": 304,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 0.421,
+            "end": 12867.155083
+          },
+          {
+            "url": "http://127.0.0.1:4197/website-code/xunai/responsive-images.js",
+            "type": "Script",
+            "initiator": "script",
+            "priority": "High",
+            "start": 12867.063727,
+            "bytes": 281,
+            "status": 304,
+            "mime": "text/javascript",
+            "cache": false,
+            "ttfbMs": 0.415,
+            "end": 12867.155246
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgDsc13822-768.webp",
+            "type": "Image",
+            "initiator": "script",
+            "priority": "Low",
+            "start": 12867.162233,
+            "bytes": 264,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.701,
+            "end": 12867.245438
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-research-replacement-768.webp",
+            "type": "Image",
+            "initiator": "script",
+            "priority": "Low",
+            "start": 12867.164257,
+            "bytes": 262,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.503,
+            "end": 12867.247783
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgRectangle3-768.webp",
+            "type": "Image",
+            "initiator": "script",
+            "priority": "Low",
+            "start": 12867.164337,
+            "bytes": 264,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.47,
+            "end": 12867.249033
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/brand/imgGroup5.svg",
+            "type": "Image",
+            "initiator": "script",
+            "priority": "Low",
+            "start": 12867.165098,
+            "bytes": 267,
+            "status": 304,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.249,
+            "end": 12867.250147
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgKhp016632-768.webp",
+            "type": "Image",
+            "initiator": "script",
+            "priority": "Low",
+            "start": 12867.165293,
+            "bytes": 262,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.181,
+            "end": 12867.251276
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/shared-history-2016-768.webp",
+            "type": "Image",
+            "initiator": "script",
+            "priority": "Low",
+            "start": 12867.166184,
+            "bytes": 262,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.579,
+            "end": 12867.326941
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/brand/imgArrowNarrowUpRight.svg",
+            "type": "Image",
+            "initiator": "script",
+            "priority": "Low",
+            "start": 12867.166865,
+            "bytes": 261,
+            "status": 304,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.347,
+            "end": 12867.329757
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame68-768.webp",
+            "type": "Image",
+            "initiator": "script",
+            "priority": "Low",
+            "start": 12867.167424,
+            "bytes": 262,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.241,
+            "end": 12867.332115
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame21-768.webp",
+            "type": "Image",
+            "initiator": "script",
+            "priority": "Low",
+            "start": 12867.167901,
+            "bytes": 262,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.276,
+            "end": 12867.332836
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame22-768.webp",
+            "type": "Image",
+            "initiator": "script",
+            "priority": "Low",
+            "start": 12867.168003,
+            "bytes": 262,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.424,
+            "end": 12867.335622
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame71-768.webp",
+            "type": "Image",
+            "initiator": "script",
+            "priority": "Low",
+            "start": 12867.168078,
+            "bytes": 264,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.552,
+            "end": 12867.408485
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame70-768.webp",
+            "type": "Image",
+            "initiator": "script",
+            "priority": "Low",
+            "start": 12867.168905,
+            "bytes": 262,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.323,
+            "end": 12867.41235
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame69-768.webp",
+            "type": "Image",
+            "initiator": "script",
+            "priority": "Low",
+            "start": 12867.16896,
+            "bytes": 262,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.434,
+            "end": 12867.414971
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame72-768.webp",
+            "type": "Image",
+            "initiator": "script",
+            "priority": "Low",
+            "start": 12867.169512,
+            "bytes": 262,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.211,
+            "end": 12867.416066
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame73-768.webp",
+            "type": "Image",
+            "initiator": "script",
+            "priority": "Low",
+            "start": 12867.169569,
+            "bytes": 264,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.447,
+            "end": 12867.418076
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/xunai/responsive/brand-imgFrame74-768.webp",
+            "type": "Image",
+            "initiator": "script",
+            "priority": "Low",
+            "start": 12867.169629,
+            "bytes": 264,
+            "status": 304,
+            "mime": "image/webp",
+            "cache": false,
+            "ttfbMs": 0.769,
+            "end": 12867.49064
+          },
+          {
+            "url": "http://127.0.0.1:4197/assets/homepage/79f1b.svg",
+            "type": "Other",
+            "initiator": "other",
+            "priority": "High",
+            "start": 12867.518575,
+            "bytes": 263,
+            "status": 200,
+            "mime": "image/svg+xml",
+            "cache": false,
+            "ttfbMs": 0.705,
+            "end": 12867.60095
+          }
+        ],
+        "bytes": 2613207,
+        "requests": 47,
+        "metrics": {
+          "lcp": 464,
+          "cls": 0,
+          "longTasks": [],
+          "events": [],
+          "fcp": 448,
+          "ttfb": 0.6999999992549419,
+          "fontsStatus": "loaded",
+          "now": 2727.5,
+          "heap": {
+            "used": 2527168,
+            "total": 4126104
+          }
+        },
+        "cpu": {
+          "LayoutDuration": 0.023379,
+          "RecalcStyleDuration": 0.034253,
+          "ScriptDuration": 0.020399,
+          "TaskDuration": 0.486301,
+          "JSHeapUsedSize": 2480204
+        }
+      },
+      "errors": []
+    }
+  ]
+}
