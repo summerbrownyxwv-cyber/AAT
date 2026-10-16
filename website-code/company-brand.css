@@ -16,14 +16,14 @@
 .company-brand-content .xf-covers>button,.company-brand-content .xf-detail-viewport,.company-brand-content .xf-stage-cover,.company-brand-content .xf-stage-content,.company-brand-content .xf-group-grid img,.company-brand-content .xf-products img,.company-brand-content .xf-terminal img{border-radius:var(--radius);}
 .company-brand-content .xf-covers>button>img,.company-brand-content .xf-stage-cover>img,.company-brand-content .xf-stage-content>img{transition:transform 760ms var(--ease),filter 980ms var(--ease);}
 .company-brand-content .xf-covers>button:hover>img,.company-brand-content .xf-covers>button:focus-visible>img{transform:scale(1.03);}
-.company-brand-content .xf-dark{background:var(--cream);color:#000;}
+.company-brand-content .xf-dark{background:#fff;color:#000;}
 .company-brand-content .xf-years{gap:0;padding-block:calc(4 * var(--wide-u));}
 .company-brand-content .xf-years button{border:0;min-height:calc(64 * var(--wide-u));padding:0 calc(4 * var(--wide-u)) calc(24 * var(--wide-u));color:#000;}
 .company-brand-content .xf-years button::before{content:"";position:absolute;left:0;right:0;bottom:calc(6 * var(--wide-u));height:1px;background:var(--line);}
 .company-brand-content .xf-years button:first-child::before{left:50%;}
 .company-brand-content .xf-years button:last-child::before{right:50%;}
 .company-brand-content .xf-years button::after{width:calc(6 * var(--wide-u));height:calc(6 * var(--wide-u));left:50%;bottom:calc(3 * var(--wide-u));transform:translateX(-50%);background:#000;}
-.company-brand-content .xf-years button[aria-pressed="true"]::after{width:calc(10 * var(--wide-u));height:calc(10 * var(--wide-u));bottom:calc(1 * var(--wide-u));box-shadow:0 0 0 calc(4 * var(--wide-u)) var(--cream);}
+.company-brand-content .xf-years button[aria-pressed="true"]::after{width:calc(10 * var(--wide-u));height:calc(10 * var(--wide-u));bottom:calc(1 * var(--wide-u));box-shadow:0 0 0 calc(4 * var(--wide-u)) #fff;}
 .company-brand-content .xf-years button:focus-visible{outline-offset:-2px;}
 .company-brand-content .xf-history-viewport{overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;touch-action:pan-x pan-y;cursor:grab;padding:0;}
 .company-brand-content .xf-history-viewport::-webkit-scrollbar{display:none;}
@@ -99,6 +99,7 @@
 .company-cover-main{overflow-x:clip;overflow-y:visible}
 .company-cover-main :is(.company-brand-content,.xf-brand){display:contents}
 .company-cover-main .section-cover-panel{position:relative;z-index:var(--cover-layer);isolation:isolate;background:#fff}
+.company-cover-main :is(#products,#honors){background:var(--cream);--section-cover-surface:var(--cream)}
 .company-cover-main .section-cover-panel::before{content:"";position:absolute;inset:0;z-index:-1;background:inherit;pointer-events:none}
 .company-cover-main .section-cover-panel:is(.xf-section,.page-shell)::before{left:calc(-1 * var(--left));right:calc(-1 * var(--right))}
 .company-cover-main .section-cover-panel.is-cover-fit{position:sticky;top:var(--cover-top);min-height:0}

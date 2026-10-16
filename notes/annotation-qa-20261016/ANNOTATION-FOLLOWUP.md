@@ -61,3 +61,11 @@
 修改前main：1402d814。用户指定#value/#ai-evidence白色，#ai-capabilities/#how-it-works/#scenarios米白。仅编辑ai.html现有inline主题规则；同步section-cover-surface和证据章before的背景/全宽阴影，保留原尺寸与裁切，避免切换时露出旧底色。图文、媒体原色、首屏、报告、排版与动效未改。独立只读检查确认局部ID规则优先于共享cover样式，不扩展到其他页面；浏览器修改后截图仍未取得。
 
 AI与共享cover专项检查、npm run check、npm run build、dist资源校验、diff检查均通过；source/dist的ai.html字节一致。本批为纯色面修改，未新增几何或动效参数，也未新增媒体格式/文件。
+
+## 随后AI/企业五处底色注释（1030×981）
+
+修改前main：6e24677b。AI首屏背景与xa-page洗色均白色；能力矩阵按最新注释改白色，覆盖前一条米白记录。企业历程所在xf-dark白色；企业页自研产品#products与企业荣誉#honors米白，cover表面及inherit的全宽背景同步。运行源码只改ai.html与company-brand.css；其余AI/企业章节、媒体、字体和所有交互保持原实现。只进行源码/已有检查与构建，不声称浏览器截图验收。
+
+企业历程选中年份点的遮线阴影也由米白同步为白色，大小与位置不变，避免底色改白后留下米白圈。
+
+本批AI/企业/荣誉专项检查、npm run check、npm run build、dist资源校验和diff检查通过；两个运行文件与dist逐字节一致。仍未取得浏览器after截图。
