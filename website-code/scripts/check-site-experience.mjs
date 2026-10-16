@@ -79,13 +79,47 @@ for (const [page, html] of Object.entries(sources)) {
   assert.equal(normalized, sharedFooter, page + ' uses the current shared footer');
   for (const channel of channels) assert.ok(footer.includes(`href="${channel}"`), page + ' ' + channel);
   for (const entry of ['./company.html', './planting.html', './products.html', './service.html', './ai.html', './contact.html', './contact.html#/about/news', './service.html#/franchise']) assert.ok(footer.includes(`href="${entry}"`), page + ' ' + entry);
-  assert.doesNotMatch(footer, /置顶公告|隐私政策|用户协议|正品查询|举报通道|中文 \/ EN/, page + ' has no unconfigured footer items');
+  for (const label of ['快捷导航', '新闻资讯', '廉政与合规', '服务与支持']) assert.ok(footer.includes(`<h3>${label}</h3>`), page + ' ' + label);
+  for (const label of ['置顶公告', '隐私政策', '用户协议', '正品查询', '举报通道', '备案信息', 'EN']) {
+    const item = [...footer.matchAll(/<span\b([^>]*)>([^<]*)<\/span>/g)].find(([, , text]) => text.trim() === label);
+    assert.ok(item, page + ' displays unavailable ' + label);
+    assert.match(item[1], /\brole="link"/, page + ' ' + label + ' retains link semantics');
+    assert.match(item[1], /\baria-disabled="true"/, page + ' ' + label + ' is explicitly unavailable');
+    assert.doesNotMatch(item[1], /\b(?:href|tabindex|onclick)\s*=/i, page + ' ' + label + ' cannot act as an unavailable link');
+  }
+  const social = footer.match(/<div class="footer-social-links">([\s\S]*?)<\/div>/)?.[1];
+  assert.ok(social, page + ' has separate social links');
+  assert.equal((social.match(/<a\b/g) || []).length, 2, page + ' has two social destinations');
+  for (const [label, href, asset, accessibleName] of [
+    ['微信', 'https://mp.weixin.qq.com/s/xUja-NTdHZBC-52JEEVa3Q', 'footer-wechat.svg', '艾艾贴微信公众号'],
+    ['天猫', 'https://m.tb.cn/h.jXQYfgHfp2uOsl5', 'footer-tmall.svg', '艾艾贴天猫店'],
+  ]) {
+    const link = [...social.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/g)].find(([, attributes]) => attributes.includes(`href="${href}"`));
+    assert.ok(link, page + ' ' + label + ' uses the supplied URL');
+    assert.match(link[1], /\btarget="_blank"/);
+    assert.match(link[1], /\brel="noopener noreferrer"/);
+    assert.ok(link[1].includes(`aria-label="${accessibleName}（新窗口打开）"`));
+    assert.ok(link[2].includes(`src="../assets/homepage/${asset}"`));
+    assert.ok(link[2].includes(`alt="${label}"`));
+    assert.match(link[2], /\bwidth="32"/);
+    assert.match(link[2], /\bheight="32"/);
+  }
+  assert.doesNotMatch(footer, /2cec2\.webp|href="#"|CZ356/, page + ' has no composite bitmap or fabricated destination');
   assert.ok(html.includes('./site-experience.css') && html.includes('./site-experience.js'), page + ' loads shared site experience');
   for (const [, href] of footer.matchAll(/href="(\.[^"]+)"/g)) {
     const url = new URL(href, new URL('../' + page + '.html', import.meta.url));
     url.hash = ''; url.search = '';
     assert.ok((await stat(fileURLToPath(url))).size > 0, page + ' ' + href);
   }
+}
+assert.ok((await read('site-experience.css')).includes("@import './site-footer.css'"), 'Shared footer styling loads on all pages');
+for (const file of ['styles.css', 'site-foundations.css']) assert.match(await read(file), /a:focus-visible\{outline:2px solid var\(--ink\)/, file + ' retains keyboard focus for the social destinations');
+assert.doesNotMatch(await read('site-footer.css'), /outline\s*:\s*(?:none|0\b)/, 'Footer styling does not suppress keyboard focus');
+for (const asset of ['footer-wechat.svg', 'footer-tmall.svg']) {
+  const svg = await readFile(new URL('../../assets/homepage/' + asset, import.meta.url), 'utf8');
+  const viewBox = svg.match(/\bviewBox="([^"]+)"/)?.[1].trim().split(/[\s,]+/).map(Number);
+  assert.ok(viewBox?.length === 4 && viewBox.every(Number.isFinite) && viewBox[2] > 0 && viewBox[2] === viewBox[3], asset + ' has a square vector canvas');
+  assert.doesNotMatch(svg, /<(?:image|script|foreignObject)\b|data:image|(?:href|xlink:href)="https?:/i, asset + ' is self-contained vector artwork');
 }
 const redirect = await read('franchise-redirect.js');
 assert.ok(redirect.includes('./service.html#/franchise') && redirect.includes('./contact.html#/franchise/apply'));

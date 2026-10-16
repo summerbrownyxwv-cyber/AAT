@@ -21,7 +21,7 @@ const measure = new Function('state', `
   return {landGeometry,composition,traitsStory};
 `);
 const approximately = (actual, expected) => assert(Math.abs(actual-expected)<.001, `${actual} != ${expected}`);
-const viewports = [[320,640],[390,844],[768,1024],[792,945],[900,800],[901,800],[997,876],[997,917],[1044,900],[1102,981],[1189,1263],[1440,900],[1920,1080],[2560,1440],[3840,2160]];
+const viewports = [[320,640],[390,844],[768,1024],[792,945],[900,800],[901,800],[997,876],[997,917],[1030,981],[1044,900],[1102,981],[1189,1263],[1440,900],[1920,1080],[2560,1440],[3840,2160]];
 for (const [width,height] of viewports) {
   const unit = Math.max(1,width/1440), narrow=width<=900;
   const nav=(narrow?64:72)*unit;
@@ -40,22 +40,25 @@ for (const [width,height] of viewports) {
       get offsetHeight(){return parseFloat(style.height)||baseHeight;},get clientHeight(){return this.offsetHeight;}};
     return {section:{dataset:{scrollStory:name},style:{setProperty(key,value){properties[key]=value;}}},stage,properties,start:1000};
   };
-  for (const reducedMotion of [false,true]) {
+  for (const reducedMotion of [false,true]) for (const copyScale of [1,2]) {
     const land=makeStory('land',narrow?height-nav:Math.max(580*unit,740*width/1440));
     const research=makeStory('research',Math.min(height-nav,680*unit));
     const traitsStory=makeStory('traits',height-nav);
     const thumbnails={};
-    const field={clientWidth:fieldWidth,querySelector(selector){return selector==='h3'?{offsetHeight:headingHeight}:selector==='p'?{offsetHeight:paragraphHeight}:thumbnails;}};
-    land.section.querySelector=selector=>selector==='.plant-land-field'?field:null;
+    const field={clientWidth:fieldWidth,querySelector(selector){return selector==='h3'?{offsetHeight:headingHeight}:selector==='p'?{offsetHeight:paragraphHeight*copyScale}:thumbnails;}};
+    land.section.querySelector=selector=>selector==='.plant-land-field'?field:selector==='.plant-land-heading'?{offsetHeight:36*unit}:null;
     const document={querySelector(selector){return selector==='.site-navigation'?{getBoundingClientRect:()=>({height:nav})}:{getBoundingClientRect:()=>({left,right:width-right})};}};
     const result=measure({innerWidth:width,innerHeight:height,land,research,traitsStory,reduced:{matches:reducedMotion},document,getComputedStyle:element=>({rowGap:String(element===field?fieldGap:thumbnailGap)})});
     const geometry=result.landGeometry;
     const properties=land.properties;
     const number=name=>parseFloat(properties[name]);
     assert(geometry.finalWidth>0 && geometry.finalHeight>0);
+    approximately(geometry.finalWidth/geometry.finalHeight,869/404);
+    approximately(geometry.finalTop,narrow?64:84*unit);
+    assert(geometry.finalTop+geometry.finalHeight<=geometry.height,'The landscape crop fits the stage independently of sidebar text height');
     assert(geometry.left+geometry.finalWidth <= width-right+.001);
     if (!reducedMotion) {
-      const copyBottom=number('--land-aside-top')+headingHeight+paragraphHeight+fieldGap;
+      const copyBottom=number('--land-aside-top')+headingHeight+paragraphHeight*copyScale+fieldGap;
       assert(number('--land-thumbnails-top') >= copyBottom+fieldGap-.001, 'Thumbnails must follow the full copy');
       const thumbBottom=number('--land-thumbnails-top')+number('--land-thumbnails-height');
       assert(thumbBottom <= (narrow?geometry.height-18*unit:geometry.height-24*unit)+.001, 'Field thumbnails fit the content stage');
@@ -131,14 +134,18 @@ assert.match(styles,/\.planting-page\{[^}]*display:block\}/);
 assert.match(styles,/grid-template-rows:repeat\(3,minmax\(0,1fr\)\)/);
 assert.match(styles,/grid-template-rows:repeat\(2,minmax\(0,1fr\)\)/);
 assert.match(styles,/\.plant-land-field\{opacity:var\(--land-copy\)/);
+assert.match(styles,/\.planting-page figure\{[^}]*overflow:hidden/,'Every thumbnail has its own crop boundary');
+assert.match(styles,/\.plant-land-thumbnails>figure\{position:relative;min-height:0;aspect-ratio:3\/2\}/);
+assert.match(styles,/\.plant-land-thumbnails>figure>img\{position:absolute;inset:0;width:100%;height:100%;object-fit:cover\}/);
+assert.equal((source.match(/\$\{landThumbnail\(/g)||[]).length,5,'All five rail photos use the bounded crop frame');
 assert.doesNotMatch(source,/p < \.28 \|\| p > \.86/);
 assert.match(styles,/\.plant-research-second\{left:30\.5%\}/);
 assert.match(styles,/\.plant-research-third\{left:0\}/);
 assert.match(styles,/\.plant-research-second\{left:51%\}\.plant-research-third\{left:0\}/);
 const reducedStyles=styles.slice(styles.indexOf('@media(prefers-reduced-motion:reduce)'));
 assert.match(reducedStyles,/\.plant-land-thumbnails\{[^}]*opacity:1!important/);
-assert.match(reducedStyles,/\.plant-land-glass \.plant-land-thumbnails>img\{aspect-ratio:3\/2;height:auto\}/);
+assert.match(reducedStyles,/\.plant-land-glass \.plant-land-thumbnails>figure\{aspect-ratio:3\/2;height:auto\}/);
 assert(source.includes('const traitProgress = reduced.matches ? 1 : clamp(traitsStory.progress * 4.6 / 1.8)'));
 assert(source.includes('smoothstep(1.8 / 4.6,2 / 4.6,traitsStory.progress)'));
 assert(source.includes('clamp((traitsStory.progress * 4.6 - 2) / 2.6)'));
-console.log(`PASS: planting arithmetic at ${viewports.length} viewports; natural cultivar heading, released upstream covers and motion-free final capacity; compact chapter budget, state sequence, hash measurement and reduced-motion flow preserved. Node checks are not browser visual proof.`);
+console.log(`PASS: planting arithmetic at ${viewports.length} viewports with regular/doubled copy height and reduced motion; natural cultivar heading, released upstream covers and motion-free final capacity; compact chapter budget, state sequence, hash measurement and reduced-motion flow preserved. Node checks are not browser visual proof.`);

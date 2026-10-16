@@ -1,0 +1,20 @@
+/* Keep the upper contact/business layout; only the link directory and social marks change. */
+.site-footer :is(.footer-address,.footer-social,.footer-business){border-bottom-style:dotted}
+.site-footer .footer-social-links{display:flex;align-items:center;gap:calc(12 * var(--wide-u))}
+.site-footer .footer-social-links>a{display:grid;place-items:center;flex:none;width:calc(44 * var(--wide-u));height:calc(44 * var(--wide-u))}
+.site-footer .footer-social-links img{display:block;width:calc(32 * var(--wide-u));height:calc(32 * var(--wide-u));object-fit:contain}
+.site-footer .footer-links{grid-template-columns:repeat(5,minmax(0,1fr));gap:calc(24 * var(--wide-u)) calc(16 * var(--wide-u))}
+.site-footer .footer-links>div{min-width:0}
+.site-footer .footer-links>div>[aria-disabled="true"],.site-footer .footer-meta-top>span{display:flex;align-items:center;min-height:calc(32 * var(--wide-u))}
+.site-footer .footer-links>.footer-meta{display:flex;flex-direction:column;align-self:stretch;gap:calc(8 * var(--wide-u));padding-top:0}
+.site-footer .footer-meta-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0 calc(12 * var(--wide-u))}
+.site-footer .footer-meta span{position:static;inset:auto;margin-top:0}
+.site-footer .footer-meta>.footer-meta-top+span{margin-top:auto}
+.site-footer .footer-language{position:static;inset:auto;white-space:nowrap;gap:.3em}
+.site-footer .footer-language>span{display:inline;font:inherit}
+@media(max-width:900px){.site-footer .footer-links{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:600px){
+ .site-footer .footer-links{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:calc(24 * var(--wide-u))}
+ .site-footer .footer-links>div>[aria-disabled="true"],.site-footer .footer-meta-top>span{min-height:calc(44 * var(--wide-u))}
+ .site-footer .footer-links>.footer-meta{grid-column:1/-1}
+}

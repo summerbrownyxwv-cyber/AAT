@@ -6,6 +6,7 @@ import { clamp, smoothstep } from './motion.js';
 import { renderPlantingManagement, mountPlantingManagement } from './planting-management.js';
 
 const image = (name, alt, eager = false) => `<img src="${canonicalAsset('../assets/planting/' + name)}" alt="${alt}" loading="${eager ? 'eager' : 'lazy'}" decoding="async">`;
+const landThumbnail = (name, alt) => `<figure>${image(name, alt)}</figure>`;
 const rows = items => items.map(([label, value]) => `<div><dt>${label}</dt><dd>${value}</dd></div>`).join('');
 const traits = [
   ['种苗培育', '育苗是项目的关键环节。科研团队在蕲春各地考察，选择各方面参数最优的野生艾草，移栽到温棚中，通过有性繁殖的方式优化种质，多次迭代、定向培育。', '4032b.webp'],
@@ -18,8 +19,8 @@ document.querySelector('#planting-content').innerHTML = `
   <section id="land" class="plant-land" data-scroll-story="land"><div class="plant-land-stage">
     <h2 class="plant-land-heading">土地与基地</h2>
     <div class="plant-land-canvas"><figure class="plant-land-photo">${image('28470.webp', '标准化种植基地的艾草田与采收团队')}<div id="greenhouse" class="plant-greenhouse-photo">${image('bceb2.webp', '艾草育苗恒温研究所的玻璃温室')}</div></figure></div>
-    <aside class="plant-land-aside plant-land-field"><h3>标准化种植基地</h3><p>艾艾贴与中国中医科学院中药研究合作，共建标准化艾草种植基地，同时制定艾叶无公害栽培生产规范和无公害技术标准，从源头上确保艾叶基因优良，严格把控原材料品质。该基地是蕲春县最为平整的地块之一，远离城市污染、空气清新、土壤肥沃且富含有机质，为艾草提供了最佳的生长条件。</p><div class="plant-land-thumbnails">${image('f80d1.webp', '种植基地田间作业')}${image('3ecaa.webp', '蕲优一号艾草采收')}${image('4ba9f.webp', '艾草育苗研究基地')}</div></aside>
-    <aside class="plant-land-aside plant-land-glass"><div class="plant-land-thumbnails">${image('4fb37.webp', '夕阳下的艾草育苗研究所')}${image('bceb2.webp', '恒温玻璃温室')}</div></aside>
+    <aside class="plant-land-aside plant-land-field"><h3>标准化种植基地</h3><p>艾艾贴与中国中医科学院中药研究合作，共建标准化艾草种植基地，同时制定艾叶无公害栽培生产规范和无公害技术标准，从源头上确保艾叶基因优良，严格把控原材料品质。该基地是蕲春县最为平整的地块之一，远离城市污染、空气清新、土壤肥沃且富含有机质，为艾草提供了最佳的生长条件。</p><div class="plant-land-thumbnails">${landThumbnail('f80d1.webp', '种植基地田间作业')}${landThumbnail('3ecaa.webp', '蕲优一号艾草采收')}${landThumbnail('4ba9f.webp', '艾草育苗研究基地')}</div></aside>
+    <aside class="plant-land-aside plant-land-glass"><div class="plant-land-thumbnails">${landThumbnail('4fb37.webp', '夕阳下的艾草育苗研究所')}${landThumbnail('bceb2.webp', '恒温玻璃温室')}</div></aside>
   </div></section>
   <div class="plant-cultivar cream">
     <div class="plant-cultivar-chapter"><h2 class="plant-cultivar-title plant-shell">从蕲优一号开始</h2>
@@ -136,8 +137,8 @@ function measure() {
   composition.travel = reduced.matches ? 0 : traitsStory.travel * 2.6 / 4.6;
   composition.section.dataset.chapterScroll = String(traitsStory.start + traitsStory.travel * 3.45 / 4.6);
   const height = land.stage.clientHeight;
-  const finalTop = narrow ? 64 : Math.max(72*unit,(height-finalWidth * 404 / 869)/2);
-  const finalHeight = narrow ? Math.min(finalWidth * 404 / 869,Math.max(96,height-64-fieldAfterPhoto)) : height-24*unit-finalTop;
+  const finalTop = narrow ? 64 : 48*unit+land.section.querySelector('.plant-land-heading').offsetHeight;
+  const finalHeight = finalWidth * 404 / 869;
   landGeometry = {width,height,fullHeight:available,left,finalWidth,finalHeight,finalTop,top,overflow:Math.max(0,height-available)};
   const asideTop = narrow ? finalTop+finalHeight+24*unit : 24*unit;
   const thumbnailsTop = asideTop+fieldCopyHeight+fieldGap;

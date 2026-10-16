@@ -1,4 +1,5 @@
 @import './site-link-arrows.css';
+@import './site-footer.css';
 
 /* Native disclosure controls share a one-CSS-pixel stroke, including store rows. */
 .xunai-content summary.site-disclosure-summary::before,.xunai-content summary.site-disclosure-summary::after{display:none!important}

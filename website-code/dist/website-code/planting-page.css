@@ -31,7 +31,8 @@ body:has(.planting-page){overflow-x:clip;overflow-anchor:none}
 .plant-land-field .plant-land-thumbnails{height:var(--land-thumbnails-height);flex:none;opacity:calc(1 - var(--land-glass))}
 .plant-land-glass{top:var(--land-thumbnails-top);height:var(--land-glass-height);opacity:var(--land-glass);transform:translateY(calc(calc(12 * var(--wide-u)) * (1 - var(--land-glass))))}
 .plant-land-thumbnails{display:grid;grid-template-rows:repeat(3,minmax(0,1fr));gap:calc(10 * var(--wide-u));flex:1;min-height:0}
-.plant-land-thumbnails>img{display:block;min-height:0;width:100%;height:100%;object-fit:cover;border-radius:var(--radius)}
+.plant-land-thumbnails>figure{position:relative;min-height:0;aspect-ratio:3/2}
+.plant-land-thumbnails>figure>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .plant-land-glass .plant-land-thumbnails{grid-template-rows:repeat(2,minmax(0,1fr));height:100%;width:100%}
 .plant-cultivar-chapter{position:relative;padding-top:calc(48 * var(--wide-u));background:var(--cream)}
 .plant-cultivar-title{text-align:right;margin-top:0;margin-bottom:calc(56 * var(--wide-u));background:var(--cream);pointer-events:none}
@@ -84,10 +85,10 @@ body:has(.planting-page){overflow-x:clip;overflow-anchor:none}
  .plant-land-aside{top:var(--land-aside-top);bottom:calc(18 * var(--wide-u));right:calc(20 * var(--wide-u));left:calc(20 * var(--wide-u));width:auto;gap:calc(8 * var(--wide-u))}
  .plant-land-aside h3{font-size:calc(20 * var(--wide-u))}.plant-land-aside p{font-size:clamp(calc(12 * var(--wide-u)),2.2vw,calc(15 * var(--wide-u)));line-height:1.55}
  .plant-land-thumbnails{grid-template-rows:auto;grid-template-columns:repeat(3,minmax(0,1fr));gap:calc(8 * var(--wide-u))}
- .plant-land-thumbnails>img{aspect-ratio:3/2;height:auto}
+ .plant-land-thumbnails>figure{aspect-ratio:3/2;height:auto}
  .plant-land-glass{top:var(--land-thumbnails-top);bottom:auto;justify-content:start}
  .plant-land-glass .plant-land-thumbnails{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:minmax(0,1fr);height:100%;max-height:100%}
- .plant-land-glass .plant-land-thumbnails>img{height:100%;aspect-ratio:auto}
+ .plant-land-glass .plant-land-thumbnails>figure{height:100%;aspect-ratio:auto}
  .plant-cultivar-chapter{padding-top:calc(24 * var(--wide-u))}.plant-cultivar-title{text-align:left;margin-bottom:calc(28 * var(--wide-u))}
  .plant-origin{padding-block:0 calc(48 * var(--wide-u))}.plant-origin-grid{grid-template-columns:1fr;gap:calc(24 * var(--wide-u))}
  .plant-research-stage{min-height:0}
@@ -136,9 +137,9 @@ body:has(.planting-page){overflow-x:clip;overflow-anchor:none}
  .plant-land-heading,.plant-land-canvas,.plant-land-photo,.plant-greenhouse-photo,.plant-land-aside{position:relative;inset:auto!important;opacity:1!important;transform:none!important;width:100%!important;height:auto!important}
  .plant-land-photo{display:flex;flex-direction:column;gap:calc(24 * var(--wide-u));overflow:visible!important}.plant-land-photo>img,.plant-greenhouse-photo>img{position:relative;aspect-ratio:869/404;height:auto;border-radius:var(--radius)}
  .plant-land-photo img{opacity:1!important;transform:none!important;filter:none!important;clip-path:none!important}
- .plant-land-thumbnails{grid-template-columns:repeat(3,1fr);grid-template-rows:auto;height:auto!important;opacity:1!important}.plant-land-thumbnails>img{aspect-ratio:3/2;height:auto}
+ .plant-land-thumbnails{grid-template-columns:repeat(3,1fr);grid-template-rows:auto;height:auto!important;opacity:1!important}.plant-land-thumbnails>figure{aspect-ratio:3/2;height:auto}
  .plant-land-glass .plant-land-thumbnails{grid-template-rows:auto}
- .plant-land-glass .plant-land-thumbnails>img{aspect-ratio:3/2;height:auto}
+ .plant-land-glass .plant-land-thumbnails>figure{aspect-ratio:3/2;height:auto}
  .plant-research-stage{display:grid;grid-template-columns:1fr 1fr;gap:calc(24 * var(--wide-u));padding:calc(32 * var(--wide-u)) 0;min-height:0}
  .plant-research-copy{position:relative;inset:auto;width:100%;grid-column:1/-1;opacity:1;transform:none;filter:none}
  .plant-research-stage figure{position:relative;inset:auto!important;width:100%!important;opacity:1!important;transform:none!important}
