@@ -88,7 +88,6 @@ export async function createProductScene(container) {
   const models = Array(products.length).fill(null);
   const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
   let progress = 0;
-  let rotation = null;
   let aspect = 1;
   let frame = 0;
   let destroyed = false;
@@ -106,7 +105,7 @@ export async function createProductScene(container) {
   function update() {
     const index = Math.min(Math.floor(progress), products.length - 1);
     const fraction = progress - index;
-    const turn = motionPreference.matches ? 0 : rotation ?? fraction * Math.PI * 2;
+    const turn = motionPreference.matches ? 0 : fraction * Math.PI * 2;
     const fallback = container.querySelector('.product-fallback');
     if (fallback) fallback.hidden = Boolean(models[index]);
     models.forEach((model, i) => {
@@ -237,11 +236,6 @@ export async function createProductScene(container) {
       if (next === progress) return;
       progress = next;
       update();
-    },
-    setRotation(value) {
-      if (value === rotation) return;
-      rotation = value;
-      if (models[Math.floor(progress)]) update();
     },
     destroy() {
       destroyed = true;

@@ -16,3 +16,13 @@
 - check-service-annotations、check-site-link-arrows：加盟4个面、遮罩删除、原照片/两链接/六步保留；CTA三态、禁用保护、七页加载共享样式、细线链接透明通过。
 - check-site-experience、check-product-carousel-motion、check-products-detail-layout、check-section-cover、check-performance-low-risk、check-annotation-layout-controls均通过。有限6/6/4/3产品详情、既有覆盖边界、菜单无底色、字体license字节与媒体校验保护保留。
 - 验证为源码、模板及Node输入/几何模拟。浏览器本地访问仍受安全策略限制，未绕过；本轮没有after页面截图或实体设备视觉验收，不能把计算结果当作浏览器表现已通过。
+
+## 后续模型滚轮修正（D-63）
+
+用户明确要保留“模型随滚轮旋转、切换产品”，同时不加长页面空白。以cc16c7ab为修改前基准：取消自动旋转；仅.product-stage监听wheel，直接推进0..4.98局部进度，240 CSS像素约一圈；首末进度向外继续滚动时不preventDefault，其他页面区域正常滚动。Ctrl缩放放行，像素/行/页单位归一、横纵主轴和反向操作保留。按钮选款、静态图片回退及低动态静止显示保留。删除本轮造成无调用的auto rotation覆盖API与相关专用断言。
+
+- 先在旧auto实现复现新增回归失败：1px舞台wheel未驱动模型，defaultPrevented实际false。
+- 修复后check-hero-migration通过：17尺寸几何、1px立即旋转、连续/反向、横纵轴与单位、首末边界页面放行、区域外滚动、Ctrl缩放、五按钮、减少动态、无WebGL回退与卸载监听清理。
+- check-performance-low-risk及check-product-carousel-motion通过；模型场景保留相同progress短路与按需提交，没有持续auto帧。
+- product-hero.css与cc16c7ab完全无差异；不恢复80svh、sticky、scrollTo或文档长度占位。
+- 以上为源码/Node证据，浏览器实屏复测仍未执行；没有新增浏览器截图或实体设备结论。

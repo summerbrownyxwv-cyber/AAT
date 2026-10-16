@@ -35,10 +35,14 @@ export async function mountProductHero(root) {
   const fallback = hero.querySelector('.product-fallback');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const abort = new AbortController();
-  let scene, frame = 0, active = 0, visible = false, lastTime = 0, rotation = 0;
-  const draw = index => {
+  let scene, progress = 0, active = -1;
+  const draw = value => {
+    progress = value;
+    scene?.setProgress(progress);
+    stage.style.setProperty('--orbit-angle', `${reduced.matches ? 0 : progress % 1 * 360}deg`);
+    const index = Math.min(products.length - 1, Math.floor(progress));
+    if (index === active) return;
     active = index;
-    scene?.setProgress(index);
     fallback.src = products[index].image;
     fallback.alt = products[index].label;
     hero.querySelector('#product-canvas').setAttribute('aria-label', `${products[index].label}${scene ? '三维模型' : '产品图片'}`);
@@ -48,34 +52,22 @@ export async function mountProductHero(root) {
     });
     series.textContent = buttons[index].dataset.series;
   };
-  const tick = now => {
-    frame = 0;
-    if (!lastTime || now - lastTime >= 32) {
-      if (lastTime) rotation = (rotation + Math.min(64, now - lastTime) * Math.PI / 18000) % (Math.PI * 2);
-      lastTime = now;
-      scene.setRotation(rotation);
-      stage.style.setProperty('--orbit-angle', `${rotation * 180 / Math.PI}deg`);
-    }
-    frame = requestAnimationFrame(tick);
-  };
-  const updateMotion = () => {
-    cancelAnimationFrame(frame); frame = 0; lastTime = 0;
-    if (reduced.matches) {
-      rotation = 0;
-      scene?.setRotation(0);
-      stage.style.setProperty('--orbit-angle', '0deg');
-    }
-    if (scene && visible && !document.hidden && !reduced.matches) frame = requestAnimationFrame(tick);
-  };
   buttons.forEach((button, index) => button.addEventListener('click', () => draw(index), {signal:abort.signal}));
-  document.addEventListener('visibilitychange', updateMotion, {signal:abort.signal});
-  reduced.addEventListener('change', updateMotion, {signal:abort.signal});
-  const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; updateMotion(); });
-  observer.observe(hero);
+  stage.addEventListener('wheel', event => {
+    if (event.ctrlKey) return;
+    const horizontal = Math.abs(event.deltaX) > Math.abs(event.deltaY);
+    const delta = (horizontal ? event.deltaX : event.deltaY)
+      * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? horizontal ? stage.clientWidth : stage.clientHeight : 1);
+    const next = Math.max(0, Math.min(4.98, progress + delta / 240));
+    if (!delta || next === progress) return;
+    event.preventDefault();
+    draw(next);
+  }, {passive:false,signal:abort.signal});
+  reduced.addEventListener('change', () => draw(progress), {signal:abort.signal});
   draw(0);
   try {
     scene = await createProductScene(hero.querySelector('#product-canvas'));
-    draw(active); updateMotion();
+    draw(progress);
   } catch { /* The existing product image remains available without WebGL. */ }
-  return () => { abort.abort(); observer.disconnect(); cancelAnimationFrame(frame); scene?.destroy(); };
+  return () => { abort.abort(); scene?.destroy(); };
 }
