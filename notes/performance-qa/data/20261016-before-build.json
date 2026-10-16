@@ -1,0 +1,80 @@
+{
+  "baseline": "87fdb492",
+  "scope": "Last built output before this performance batch; source runtime metrics were not reacquired",
+  "files": 935,
+  "bytes": 1077947415,
+  "developerFiles": [
+    {
+      "path": "website-code/dist/website-code/scripts/build.mjs",
+      "bytes": 1536
+    },
+    {
+      "path": "website-code/dist/website-code/scripts/check-ai-annotations.mjs",
+      "bytes": 3072
+    },
+    {
+      "path": "website-code/dist/website-code/scripts/check-annotation-layout-controls.mjs",
+      "bytes": 5749
+    },
+    {
+      "path": "website-code/dist/website-code/scripts/check-company-interactions.mjs",
+      "bytes": 6241
+    },
+    {
+      "path": "website-code/dist/website-code/scripts/check-hero-migration.mjs",
+      "bytes": 3114
+    },
+    {
+      "path": "website-code/dist/website-code/scripts/check-home-motion.mjs",
+      "bytes": 5952
+    },
+    {
+      "path": "website-code/dist/website-code/scripts/check-honors-cooperation.mjs",
+      "bytes": 2768
+    },
+    {
+      "path": "website-code/dist/website-code/scripts/check-package.mjs",
+      "bytes": 4591
+    },
+    {
+      "path": "website-code/dist/website-code/scripts/check-planting-annotations.mjs",
+      "bytes": 7110
+    },
+    {
+      "path": "website-code/dist/website-code/scripts/check-product-carousel-motion.mjs",
+      "bytes": 7874
+    },
+    {
+      "path": "website-code/dist/website-code/scripts/check-product-catalog.mjs",
+      "bytes": 2497
+    },
+    {
+      "path": "website-code/dist/website-code/scripts/check-products-detail-layout.mjs",
+      "bytes": 5186
+    },
+    {
+      "path": "website-code/dist/website-code/scripts/check-section-cover.mjs",
+      "bytes": 2121
+    },
+    {
+      "path": "website-code/dist/website-code/scripts/check-service-annotations.mjs",
+      "bytes": 6063
+    },
+    {
+      "path": "website-code/dist/website-code/scripts/check-site-experience.mjs",
+      "bytes": 8050
+    },
+    {
+      "path": "website-code/dist/website-code/scripts/check-site-link-arrows.mjs",
+      "bytes": 4123
+    },
+    {
+      "path": "website-code/dist/website-code/scripts/convert-product-assets.py",
+      "bytes": 2571
+    },
+    {
+      "path": "website-code/dist/website-code/scripts/serve.mjs",
+      "bytes": 3278
+    }
+  ]
+}

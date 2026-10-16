@@ -6,7 +6,7 @@ async function walk(directory) {
   const files = [];
   for (const item of await readdir(directory, { withFileTypes: true })) {
     const path = resolve(directory, item.name);
-    if (path === output || item.name === '.DS_Store') continue;
+    if (path === output || path === resolve(root, 'website-code/scripts') || item.name === '.DS_Store') continue;
     files.push(...(item.isDirectory() ? await walk(path) : [path]));
   }
   return files;

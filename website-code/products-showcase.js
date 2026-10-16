@@ -13,7 +13,7 @@ export function renderShowcase() {
   </section>
   <section class="products-series" id="products-series" data-products-series aria-label="燃萃温植产品系列" aria-roledescription="轮播" tabindex="0" style="--series-color:${escape(productSeries[0].color)}">
     <div class="products-series-headings">${productSeries.map((series, index) => `<h2 class="products-series-heading${index === 0 ? ' is-active' : ''}" data-series-heading="${index}" aria-hidden="${index !== 0}">「${escape(series.name)}」</h2>`).join('')}</div>
-    <div class="products-series-viewport"><div class="products-series-track">${productSeries.map((series, index) => `<button type="button" class="products-series-slide" data-series-slide="${index}" aria-label="查看${escape(series.name)}系列" aria-pressed="${index === 0}"><img src="${escape(series.image)}" alt="艾艾贴${escape(series.name)}系列产品" loading="eager" draggable="false"></button>`).join('')}</div></div>
+    <div class="products-series-viewport"><div class="products-series-track">${productSeries.map((series, index) => `<button type="button" class="products-series-slide" data-series-slide="${index}" aria-label="查看${escape(series.name)}系列" aria-pressed="${index === 0}"><img src="${escape(series.image)}" alt="艾艾贴${escape(series.name)}系列产品" loading="lazy" fetchpriority="low" draggable="false"></button>`).join('')}</div></div>
     <div class="products-series-descriptions">${productSeries.map((series, index) => `<p class="products-series-description${index === 0 ? ' is-active' : ''}" data-series-description="${index}" aria-hidden="${index !== 0}">${escape(series.description)}</p>`).join('')}</div>
     <span class="sr-only" data-carousel-status aria-live="polite" aria-atomic="true"></span>
   </section>`;
@@ -136,6 +136,12 @@ export function mountShowcase(root) {
     if (animate && itemIndex === index) reveal(element);
   });
   const slides = [...seriesRoot.querySelectorAll('[data-series-slide]')];
+  const nearby = new IntersectionObserver(([entry]) => {
+    if (!entry.isIntersecting) return;
+    seriesRoot.querySelectorAll('img').forEach(image => { image.loading = 'eager'; });
+    nearby.disconnect();
+  },{rootMargin:'200% 0px'});
+  nearby.observe(seriesRoot);
   const track = seriesRoot.querySelector('.products-series-track');
   const distance = () => slides[0].getBoundingClientRect().width + parseFloat(getComputedStyle(track).columnGap);
   const motion = createCarouselMotion(position => {
@@ -160,5 +166,5 @@ export function mountShowcase(root) {
   mountProductHero(root).then(cleanup => { if (disposed) cleanup(); else stop.push(cleanup); });
   stop.push(bindCarouselInput(seriesRoot, motion, distance));
   seriesRoot.querySelectorAll('[data-series-slide]').forEach(button => on(button, 'click', () => { const index = Number(button.dataset.seriesSlide); if (index !== seriesIndex) motion.step(slotFor(index, seriesIndex, productSeries.length)); }));
-  return () => { disposed = true; controller.abort(); stop.forEach(cleanup => cleanup()); root.querySelectorAll('[data-series-heading],[data-series-description]').forEach(element => element.getAnimations().forEach(animation => animation.cancel())); };
+  return () => { disposed = true; controller.abort(); nearby.disconnect(); stop.forEach(cleanup => cleanup()); root.querySelectorAll('[data-series-heading],[data-series-description]').forEach(element => element.getAnimations().forEach(animation => animation.cancel())); };
 }

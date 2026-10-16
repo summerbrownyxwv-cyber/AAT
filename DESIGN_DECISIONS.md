@@ -100,3 +100,7 @@ Safari、实体机、读屏、真实200%浏览器缩放、正式托管性能与�
 - D-41（品种特性上方空白注释）：桌面trait scene按可用视口与560wide/58vw局部上限取高，标题与列表上下用普通章节间距；减少长竖屏的空容器，不改4个特性与成分状态顺序。移动与reduced保留原可读回退。
 - D-42（“这一页的页脚呢”）：种植main从display:contents恢复正常块级盒，使最后sticky产能章在正文末尾释放。页脚仍位于main之后且不在cover列表；禁止用提高页脚层级重新覆盖正文来掩盖问题。
 - D-43（产品“切换卡屏”最新注释）：合成固定舞台的overflow:clip会在盖屏中途截断产品下半，短舞台与滚动runway叠加。products-catalog改复用现有mountSectionCover，四组自然高度/长章完整可读、110ms短跟随不变；不再计算合成舞台、内部裁切或等待距离。保留有限横滑、部分露出可操作、原hash入口与6/6/4/3。此明确替代D-29的compact固定舞台实现。
+
+## 2026-10-16 · 性能低风险批次
+
+仅同字节字体URL归一、非首屏系列图lazy/low并接近视口预热、Three相同夹紧进度短路、生产输出排除开发scripts。图像/视频/字体/模型原数据不变，校验规则不改。实施与未测边界见notes/performance-qa的PERFORMANCE-AUDIT、OPTIMIZATION-PLAN、OPTIMIZATION-RESULT和VISUAL-REGRESSION。原媒体再编码、模型分级加载和video source延后仍须对比验证后再决定。

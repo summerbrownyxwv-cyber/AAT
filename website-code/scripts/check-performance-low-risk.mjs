@@ -1,0 +1,46 @@
+import assert from 'node:assert/strict';
+import { readFile, stat } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+
+const read = name => readFile(new URL('../'+name,import.meta.url),'utf8');
+const hash = bytes => createHash('sha256').update(bytes).digest('hex');
+const css = await read('xunai/content.css');
+let avoided = 0;
+for(const name of ['oppo-sans','tsukushi-mincho-r','crimson-regular']){
+  const original = await readFile(new URL('../../assets/xunai/fonts/'+name+'.woff2',import.meta.url));
+  const canonical = await readFile(new URL('../../assets/fonts/'+name+'.woff2',import.meta.url));
+  assert.equal(hash(original),hash(canonical),'Font bytes and glyph coverage are unchanged');
+  assert(css.includes(`url("../../assets/fonts/${name}.woff2")`));
+  if(name!=='crimson-regular')avoided+=canonical.length;
+}
+assert.doesNotMatch(css,/url\("\.\.\/\.\.\/assets\/xunai\/fonts\//);
+assert.equal(avoided,15900056);
+const product = await read('product-scene.js');
+const productSetter = product.match(/setProgress\(value\) \{([\s\S]*?)\n    \},/)[1];
+const makeProduct = new Function('THREE',`let progress=0,calls=0;const update=()=>calls++;return {set(value){${productSetter}},get calls(){return calls;}};`);
+const scene = makeProduct({MathUtils:{clamp:(n,min,max)=>Math.max(min,Math.min(max,n))}});
+for(const progress of [0,0,.5,.5,4.98,12,12])scene.set(progress);
+assert.equal(scene.calls,2,'Identical clamped progress does not update/render the model again');
+scene.set(2);assert.equal(scene.calls,3,'Reverse progress updates immediately');
+assert(product.includes("motionPreference.addEventListener('change', update)"),'Preference changes still update the scene');
+assert(product.includes('resize();\n    update();'),'Model arrival still updates its pose independently');
+const plant = await read('planting-model.js');
+const plantSetter=plant.match(/setProgress\(progress\) \{([\s\S]*?)\n    \},/)[1];
+const plantScene=new Function(`let lastRotation,calls=0;const model={rotation:{}},renderer={domElement:{dataset:{}}},requestRender=()=>calls++;return {set(progress){${plantSetter}},get calls(){return calls;},model};`)();
+for(const progress of [0,0,.5,.5,1,2])plantScene.set(progress);
+assert.equal(plantScene.calls,3);plantScene.set(.25);assert.equal(plantScene.calls,4);
+const showcase=await read('products-showcase.js');
+assert.match(showcase,/系列产品" loading="lazy" fetchpriority="low"/);
+const nearby=showcase.match(/const nearby = new IntersectionObserver\(\(\[entry\]\) => \{([\s\S]*?)\n  \},\{rootMargin:'200% 0px'\}\);/)[1];
+const images=[{loading:'lazy'},{loading:'lazy'},{loading:'lazy'},{loading:'lazy'}];let disconnects=0;
+const prime=new Function('entry','seriesRoot','nearby',nearby);
+prime({isIntersecting:false},{querySelectorAll:()=>images},{disconnect:()=>disconnects++});assert(images.every(image=>image.loading==='lazy'));
+prime({isIntersecting:true},{querySelectorAll:()=>images},{disconnect:()=>disconnects++});assert(images.every(image=>image.loading==='eager'));assert.equal(disconnects,1);
+assert(showcase.includes('controller.abort(); nearby.disconnect();'));
+const build=await read('scripts/build.mjs');
+assert(build.includes("path === resolve(root, 'website-code/scripts')"),'Only deployment copying excludes developer scripts');
+const manifest=JSON.parse(await readFile(new URL('../../content/asset-map.json',import.meta.url),'utf8'));
+const license=manifest.files.find(file=>file.target==='assets/fonts/OPPO-LICENSE.txt');
+const original=await readFile(new URL('../../'+license.target,import.meta.url));
+assert.equal(original.length,license.after);assert.equal(hash(original),license.outputSha256||license.sourceSha256);
+console.log('PASS: identical font files use one URL (15,900,056 duplicate font-content bytes removed from the URL graph), unchanged WebGL progress skips rendering while reverse/load/preference updates remain, below-fold series primes near viewport, developer scripts stay source-only, and canonical license bytes match the manifest. No browser performance score implied.');

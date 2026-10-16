@@ -1,0 +1,246 @@
+{
+  "createdAt": "2026-10-16T03:06:42.354Z",
+  "baseline": "87fdb492",
+  "measurement": "Filesystem bytes and source changes, not actual browser transfer or memory",
+  "sourceFiles": 927,
+  "sourceBytes": 1077945092,
+  "builtFiles": 917,
+  "builtBytes": 1077862020,
+  "byType": {
+    "webp": {
+      "files": 520,
+      "bytes": 691841804
+    },
+    "mp4": {
+      "files": 7,
+      "bytes": 328306589
+    },
+    "svg": {
+      "files": 288,
+      "bytes": 632699
+    },
+    "txt": {
+      "files": 2,
+      "bytes": 4385
+    },
+    "woff2": {
+      "files": 6,
+      "bytes": 31886280
+    },
+    "glb": {
+      "files": 6,
+      "bytes": 21603648
+    },
+    "json": {
+      "files": 4,
+      "bytes": 475349
+    },
+    "js": {
+      "files": 44,
+      "bytes": 2590946
+    },
+    "md": {
+      "files": 1,
+      "bytes": 6533
+    },
+    "css": {
+      "files": 22,
+      "bytes": 455843
+    },
+    "html": {
+      "files": 8,
+      "bytes": 55823
+    },
+    "mjs": {
+      "files": 18,
+      "bytes": 82622
+    },
+    "py": {
+      "files": 1,
+      "bytes": 2571
+    }
+  },
+  "fontFiles": [
+    {
+      "name": "oppo-sans",
+      "bytes": 13645776,
+      "identical": true,
+      "sha256": "8d409dfff2a584a1e9c7d3022ef35887abe13510566fa19d776e475fc0a72c31"
+    },
+    {
+      "name": "tsukushi-mincho-r",
+      "bytes": 2254280,
+      "identical": true,
+      "sha256": "a0703fedb2f3e22439fe584d12d68ce9532b6549943f912af0496872f20630d2"
+    },
+    {
+      "name": "crimson-regular",
+      "bytes": 43084,
+      "identical": true,
+      "sha256": "126d2796c0ef94085dcd0cad414016bc99c6d19505b5937beb12d6ddb3c8b266"
+    }
+  ],
+  "largest": [
+    {
+      "path": "assets/planting/planting-hero.mp4",
+      "bytes": 91317434,
+      "type": "mp4"
+    },
+    {
+      "path": "assets/xunai/ai/ai-demo.mp4",
+      "bytes": 89964461,
+      "type": "mp4"
+    },
+    {
+      "path": "assets/planting/qiyou-one.mp4",
+      "bytes": 64487852,
+      "type": "mp4"
+    },
+    {
+      "path": "assets/xunai/stores/黑金店体验流程.mp4",
+      "bytes": 41704236,
+      "type": "mp4"
+    },
+    {
+      "path": "assets/xunai/brand/imgFrame71.webp",
+      "bytes": 18415194,
+      "type": "webp"
+    },
+    {
+      "path": "assets/homepage/home-hero.mp4",
+      "bytes": 17516809,
+      "type": "mp4"
+    },
+    {
+      "path": "assets/company/company-hero.mp4",
+      "bytes": 16128344,
+      "type": "mp4"
+    },
+    {
+      "path": "assets/homepage/28470.webp",
+      "bytes": 15396722,
+      "type": "webp"
+    },
+    {
+      "path": "assets/homepage/9f5c0.webp",
+      "bytes": 14989126,
+      "type": "webp"
+    },
+    {
+      "path": "assets/xunai/brand/imgFrame72.webp",
+      "bytes": 14988644,
+      "type": "webp"
+    },
+    {
+      "path": "assets/planting/d8707.webp",
+      "bytes": 14284258,
+      "type": "webp"
+    },
+    {
+      "path": "assets/xunai/brand/imgFrame73.webp",
+      "bytes": 14283776,
+      "type": "webp"
+    },
+    {
+      "path": "assets/fonts/oppo-sans.woff2",
+      "bytes": 13645776,
+      "type": "woff2"
+    },
+    {
+      "path": "assets/xunai/fonts/oppo-sans.woff2",
+      "bytes": 13645776,
+      "type": "woff2"
+    },
+    {
+      "path": "assets/xunai/brand/imgFrame74.webp",
+      "bytes": 13164498,
+      "type": "webp"
+    },
+    {
+      "path": "assets/planting/d8707-2560.webp",
+      "bytes": 12322048,
+      "type": "webp"
+    },
+    {
+      "path": "assets/company/imgRectangle3.webp",
+      "bytes": 11186258,
+      "type": "webp"
+    },
+    {
+      "path": "assets/company/figma/a1cd4.webp",
+      "bytes": 11106194,
+      "type": "webp"
+    },
+    {
+      "path": "assets/planting/f80d1.webp",
+      "bytes": 9739900,
+      "type": "webp"
+    },
+    {
+      "path": "assets/products/figma/e126f.webp",
+      "bytes": 9707094,
+      "type": "webp"
+    },
+    {
+      "path": "assets/xunai/brand/imgFrame70.webp",
+      "bytes": 8808580,
+      "type": "webp"
+    },
+    {
+      "path": "assets/company/imgRectangle53.webp",
+      "bytes": 8613400,
+      "type": "webp"
+    },
+    {
+      "path": "assets/models/moxibustion-device.glb",
+      "bytes": 8418188,
+      "type": "glb"
+    },
+    {
+      "path": "assets/xunai/brand/imgFrame22.webp",
+      "bytes": 8258622,
+      "type": "webp"
+    },
+    {
+      "path": "assets/homepage/817f2.webp",
+      "bytes": 7734998,
+      "type": "webp"
+    },
+    {
+      "path": "assets/products/catalog/flower-patch.webp",
+      "bytes": 7699128,
+      "type": "webp"
+    },
+    {
+      "path": "assets/company/figma/52b10.webp",
+      "bytes": 7514810,
+      "type": "webp"
+    },
+    {
+      "path": "assets/xunai/brand/imgRectangle6.webp",
+      "bytes": 7465348,
+      "type": "webp"
+    },
+    {
+      "path": "assets/homepage/a8c81.webp",
+      "bytes": 7436594,
+      "type": "webp"
+    },
+    {
+      "path": "assets/xunai/brand/imgFrame68.webp",
+      "bytes": 7424270,
+      "type": "webp"
+    }
+  ],
+  "builtDeveloperFiles": [],
+  "browserMetrics": {
+    "lighthouse": null,
+    "lcp": null,
+    "fcp": null,
+    "cls": null,
+    "inp": null,
+    "ttfb": null,
+    "transfer": null,
+    "reason": "Local browser access was rejected by policy; no bypass. Prior interrupted run is not a reliable full baseline."
+  }
+}
