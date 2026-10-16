@@ -16,6 +16,21 @@ for (const stage of [504, 828, 1368]) {
     assert.equal(Math.floor(modelProgress(scroll, top, height, stage)), index);
   }
 }
+const styles = await readFile(new URL('../product-hero.css', import.meta.url), 'utf8');
+assert.match(styles, /height:calc\(var\(--model-height\) \+ 80svh\)/);
+for (const [width, height] of [[390,844],[768,1024],[1189,1263],[1440,900],[1920,1080],[2560,1440],[3840,2160]]) {
+  const unit = width / 1440, wide = Math.max(1, unit), mobile = width <= 900;
+  const available = height - (mobile ? 64 : 72) * wide;
+  const content = mobile ? Math.min(width - 40 * wide, 440 * wide) * 603 / 592 + 300 * wide : 603 * unit + 40 * wide;
+  const compact = available - Math.max(0, available - content) / 3;
+  const stageWidth = space => mobile ? Math.min(width - 40 * wide, 440 * wide, (space - 300 * wide) * 592 / 603) : Math.min(592 * unit, (space - 56 * wide) * 592 / 603);
+  assert.ok(compact > 0 && compact <= available);
+  assert.ok(Math.abs(stageWidth(compact) - stageWidth(available)) < .01, 'Compacting whitespace must not shrink the model stage');
+  for (let index = 0; index < 5; index++) {
+    const travel = height * .8, scroll = (index ? index + .05 : 0) / 4.98 * travel;
+    assert.equal(Math.floor(modelProgress(scroll, 0, compact + travel, compact)), index, `${width}x${height} must retain all five scroll selections`);
+  }
+}
 const home = await readFile(new URL('../index.html', import.meta.url), 'utf8');
 assert.ok(home.includes('home-hero.mp4') && home.includes('home-hero-poster.webp'));
 assert.doesNotMatch(home, /id="product-canvas"|data-product-index=/);

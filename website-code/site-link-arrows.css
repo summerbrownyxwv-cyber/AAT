@@ -1,0 +1,5 @@
+/* Shared action arrow; link containers retain their own layout and background. */
+.site-link-arrow-host>.site-link-arrow{display:block;inline-size:.84em;block-size:.84em;min-inline-size:.84em;max-inline-size:none;flex:0 0 .84em;align-self:center;color:inherit;overflow:visible;pointer-events:none;transform:none;transition:transform 220ms var(--ease)}
+.site-link-arrow-host:is(:hover,:focus-visible)>.site-link-arrow{transform:translate(.14em,-.14em)}
+.site-link-arrow-host:focus-visible{outline:2px solid currentColor;outline-offset:.3em}
+@media(prefers-reduced-motion:reduce){.site-link-arrow-host>.site-link-arrow{transition:none}}

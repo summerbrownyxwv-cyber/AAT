@@ -1,0 +1,11 @@
+/* Latest AI annotations: natural chapter height, shared reading space, and media alignment. */
+#main-content .xa-page{--xa-section-space:clamp(40px,4.5vw,120px)}
+#main-content .xa-page .xa-content>section{padding-block:var(--xa-section-space)!important}
+#main-content .xa-page .xa-content>section.section-cover-panel.is-cover-fit{min-height:0}
+#main-content .xa-page #value{height:auto;min-height:0;align-items:start}
+#main-content .xa-page #value>.xa-intro-copy{align-self:start;padding-top:0}
+#main-content .xa-page #value>figure{align-self:start;align-items:flex-start}
+#main-content .xa-page #ai-capabilities{align-items:stretch}
+#main-content .xa-page #ai-capabilities>.xa-matrix-aside{align-self:stretch}
+#main-content .xa-page #ai-capabilities>.xa-matrix-aside>.xa-matrix-device{flex-shrink:0}
+#main-content .xa-page #ai-capabilities>div:last-child{align-self:end}

@@ -1,3 +1,5 @@
+import './site-link-arrows.js';
+
 const mountedVideos = new WeakSet();
 function mountFilms() {
   document.querySelectorAll('main video,.company-hero-video').forEach(video => {

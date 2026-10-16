@@ -19,14 +19,16 @@ export function renderShowcase() {
   </section>`;
 }
 
-export function createCarouselMotion(render, reduced = () => false) {
+export function createCarouselMotion(render, reduced = () => false, bounds) {
   let position = 0, target = 0, origin = 0, velocity = 0, frame = 0, lastTime = 0, sampleTime = 0, dragging = false;
+  const limit = value => Math.max(bounds?.min ?? -Infinity, Math.min(bounds?.max ?? Infinity, value));
   const stop = () => { cancelAnimationFrame(frame); frame = 0; };
   const tick = now => {
     const dt = Math.min(.032, Math.max(.001, (now - lastTime) / 1000)); lastTime = now;
     const displacement = position - target, spring = velocity + 14 * displacement, decay = Math.exp(-14 * dt);
     position = target + (displacement + spring * dt) * decay;
     velocity = (velocity - 14 * spring * dt) * decay;
+    if (position !== limit(position)) { position = limit(position); velocity = 0; }
     if (Math.abs(position - target) < .0005 && Math.abs(velocity) < .005) { position = target; velocity = 0; frame = 0; render(position); return; }
     render(position); frame = requestAnimationFrame(tick);
   };
@@ -39,6 +41,7 @@ export function createCarouselMotion(render, reduced = () => false) {
     get position() { return position; },
     begin() { stop(); dragging = true; origin = position; velocity = 0; sampleTime = performance.now(); return position; },
     drag(next) {
+      next = limit(next);
       const now = performance.now(), dt = Math.max(8, now - sampleTime);
       velocity = velocity * .25 + (next - position) / dt * 750;
       position = target = next; sampleTime = now; render(position);
@@ -48,9 +51,10 @@ export function createCarouselMotion(render, reduced = () => false) {
       if (performance.now() - sampleTime > 90) velocity = 0;
       target = Math.round(position + Math.max(-.85, Math.min(.85, velocity * .14)));
       if (minimumStep && (target - Math.round(origin)) * minimumStep < 1) target = Math.round(origin) + minimumStep;
+      target = limit(target);
       settle();
     },
-    step(direction) { dragging = false; target = Math.round(target) + direction; settle(); },
+    step(direction) { dragging = false; target = limit(Math.round(target) + direction); settle(); },
     refresh() { render(position); },
     dispose: stop
   };

@@ -1,0 +1,6 @@
+/* Ordinary contact and franchise chapters; hero and media compositions keep their own geometry. */
+#main-content :is(.xo-page,.xj-page){--page-section-space:clamp(40px,4.5vw,120px);--x-section-gap:var(--page-section-space)}
+#main-content .xj-page :is(.xj-models,.xj-headquarters,.xj-system,.xj-output,.xj-products,.xj-process,.xj-contact-cta){padding-block:var(--page-section-space)}
+#main-content :is(.xo-application,.xj-application){padding-block:var(--page-section-space)}
+#main-content .xo-contact-original .xo-original-news{margin-top:var(--page-section-space)}
+#main-content .xo-contact-original .xo-join{padding-block:var(--page-section-space)}

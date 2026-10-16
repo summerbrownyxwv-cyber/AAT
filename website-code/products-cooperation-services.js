@@ -54,7 +54,7 @@ function renderService(service) {
       </figure>
     </div>
     <details class="cooperation-flow-details">
-      <summary><span class="cooperation-services-summary-label">${service.summary}</span><span class="cooperation-services-flow-count">${service.steps.length}个环节</span><span class="cooperation-services-toggle" aria-hidden="true"></span></summary>
+      <summary aria-label="${service.summary}"><span class="cooperation-services-toggle" aria-hidden="true"></span></summary>
       <ol class="cooperation-services-steps" role="list">${service.steps.map(([label, copy, name], index) => `<li class="cooperation-services-step">${icon(name, 'cooperation-services-step-icon')}<div><h4><span class="cooperation-services-step-number" aria-hidden="true">${String(index + 1).padStart(2, '0')}</span>${label}</h4><p>${copy}</p></div></li>`).join('')}</ol>
     </details>
   </section>`;

@@ -157,7 +157,7 @@ window.XunAiStores=(()=>{
   const black=storeLocations.filter(row=>row[1].includes('黑金店')),standard=storeLocations.filter(row=>!row[1].includes('黑金店'));
   return `<section class="xs-section" id="locations">${heading('门店信息','城市·店型·汇总')}<div class="xs-location-group"><h3>黑金店</h3><div>${black.map(locationRow).join('')}</div></div><div class="xs-location-group"><h3>标准店</h3><div>${['直营店','加盟店'].map(type=>`<details class="site-disclosure xs-store-subgroup"><summary>${type}</summary><div data-store-cities>${standard.filter(row=>row[4]===type).map(locationRow).join('')}</div></details>`).join('')}</div></div></section>`;
  };
- const comparison=()=>`<section class="xs-section" id="types">${heading('店型对比','寻艾艾灸馆<br>黑金店 · 标准店')}${[['黑金店','imgE4A99442'],['标准店','imgRectangle']].map(([type,file],i)=>`<article class="xs-type ${i?'xs-type-reverse':''}"><div class="xs-type-copy"><h3>寻艾艾灸馆<br>${type}</h3><a class="xs-booklet-open route-link" href="#/stores/${i?'standard':'black-gold'}/detail">查看详情 ${arrow()}</a></div><figure>${image(file,type+(i?'设计参考':'空间'))}${i?'<figcaption>标准店设计参考</figcaption>':''}</figure></article>`).join('')}</section>`;
+ const comparison=()=>[['黑金店','imgE4A99442'],['标准店','imgRectangle']].map(([type,file],i)=>`<section class="xs-section xs-type-panel"${i?'':' id="types"'}>${i?'':heading('店型对比','寻艾艾灸馆<br>黑金店 · 标准店')}<article class="xs-type ${i?'xs-type-reverse':''}"><div class="xs-type-copy"><h3>寻艾艾灸馆<br>${type}</h3><a class="xs-booklet-open route-link" href="#/stores/${i?'standard':'black-gold'}/detail">查看详情 ${arrow()}</a></div><figure>${image(file,type+(i?'设计参考':'空间'))}</figure></article></section>`).join('');
  return {
   locations,
   render(page){
@@ -167,7 +167,7 @@ window.XunAiStores=(()=>{
   },
   mount(main){
    window.XunAiReview.mount(main);
-   const stopCover=mountSectionCover([...main.querySelectorAll('#types > .xs-type')]);
+   const stopCover=mountSectionCover([...main.querySelectorAll('.xs-page > .xs-section')]);
    const layout=main.querySelector('.xs-strength-layout');
    if(layout){let active=3;layout.addEventListener('click',event=>{const button=event.target.closest('[data-strength]');if(!button)return;const index=Number(button.dataset.strength);if(index===active)return;const from=button.querySelector('img').getBoundingClientRect();const old=active;active=index;layout.querySelector('.xs-strength-thumbs').innerHTML=[0,1,2,3].filter(i=>i!==active).map(i=>strengthCard(i)).join('');const feature=layout.querySelector('.xs-strength-feature');feature.innerHTML=strengthCard(active,true)+(active===3?'<p>打破传统的空间体验，对艾灸文化进行重新演绎。在都市语境中重构传统艾灸的疗愈智慧，以现代人的审美需求建立有温度的艾灸空间。</p>':'');const img=feature.querySelector('img'),to=img.getBoundingClientRect();if(!matchMedia('(prefers-reduced-motion: reduce)').matches)img.animate([{transform:`translate(${from.left-to.left}px,${from.top-to.top}px) scale(${from.width/to.width},${from.height/to.height})`},{transform:'none'}],{duration:550,easing:'cubic-bezier(.22,1,.36,1)'});layout.querySelector(`[data-strength="${old}"]`).focus({preventScroll:true});});}
    const root=main.querySelector('[data-services]');if(!root)return stopCover;

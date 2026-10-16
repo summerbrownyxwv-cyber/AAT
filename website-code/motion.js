@@ -141,10 +141,7 @@ export function mountMotion() {
     const mediaTargets = [
       company?.querySelector('.company-image img'),
       ...photos.map(photo => photo.querySelector('img')),
-      growth?.querySelector('.growth-figure > img'),
       seriesPhoto,
-      service?.querySelector('.service-image > img:first-child'),
-      ai?.querySelector('.ai-image img'),
     ].filter(Boolean);
     const copyTargets = [
       company.querySelector('.company-introduction'),
@@ -295,14 +292,14 @@ export function mountMotion() {
       if (element === aiImage) ai.style.setProperty('--ai-image-progress', maxOffset > 0 ? (offset / maxOffset).toFixed(4) : '1');
     }
     if (visible.has(service)) {
-      const positioned = motionPreference.matches || window.innerWidth <= 900 || Number(service.style.getPropertyValue('--service-image-progress')) >= .72;
+      const positioned = !serviceImage.hasAttribute('data-scroll-hold') || motionPreference.matches || window.innerWidth <= 900 || Number(service.style.getPropertyValue('--service-image-progress')) >= .72;
       for (const element of serviceCopyTargets) {
         const bounds = element.getBoundingClientRect();
         if (positioned && bounds.top < viewport * .88 && bounds.bottom > 0) element.classList.add('is-revealed');
       }
     }
     if (visible.has(ai)) {
-      const positioned = motionPreference.matches || window.innerWidth <= 900 || Number(ai.style.getPropertyValue('--ai-image-progress')) >= .72;
+      const positioned = !aiImage.hasAttribute('data-scroll-hold') || motionPreference.matches || window.innerWidth <= 900 || Number(ai.style.getPropertyValue('--ai-image-progress')) >= .72;
       for (const row of aiRows) {
         const bounds = row.getBoundingClientRect();
         if (positioned && bounds.top < viewport * .88 && bounds.bottom > 0) {

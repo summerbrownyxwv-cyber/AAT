@@ -1,8 +1,8 @@
 /* Aiaitie presentation layer for the imported XunAi brand sections. */
 .company-brand-content{--x-font-sans:var(--sans);--x-font-display:var(--display);--xf-dark:var(--ink);background:#fff;color:var(--ink);overflow-x:clip;}
 .company-brand-content .xf-brand{font-family:var(--sans);color:var(--ink);}
-.company-brand-content .xf-section{max-width:none;width:auto;margin-inline:var(--left) var(--right);padding:clamp(calc(72 * var(--wide-u)),9vw,calc(144 * var(--wide-u))) 0;}
-.company-brand-content .xf-section:is(#business,#history,.xf-group){padding-block:clamp(calc(36 * var(--wide-u)),4vw,calc(64 * var(--wide-u)));}
+.company-brand-content .xf-section{max-width:none;width:auto;margin-inline:var(--left) var(--right);padding:clamp(40px,4.5vw,120px) 0;}
+.company-brand-content .xf-section:is(#business,#history,.xf-group){padding-block:clamp(40px,4.5vw,120px);}
 .company-brand-content .xf-section + .xf-section{border-top:0;}
 .company-brand-content .xf-heading{margin-bottom:clamp(calc(32 * var(--wide-u)),4vw,calc(64 * var(--wide-u)));}
 .company-brand-content .xf-heading h2,.company-brand-content .xf-heading p,.company-brand-content .xf-subheading h3{font-family:var(--display);font-weight:400;color:var(--ink);}
@@ -87,8 +87,8 @@
   .company-brand-content .company-business-hover .company-business-panel.is-active .company-business-detail{display:flex;}
 }
 @media(max-width:767px){
-  .company-brand-content .xf-section{margin-inline:calc(20 * var(--wide-u)); padding-block:calc(64 * var(--wide-u));}
-  .company-brand-content .xf-section:is(#business,#history,.xf-group){padding-block:calc(32 * var(--wide-u));}
+  .company-brand-content .xf-section{margin-inline:calc(20 * var(--wide-u)); padding-block:clamp(40px,4.5vw,120px);}
+  .company-brand-content .xf-section:is(#business,#history,.xf-group){padding-block:clamp(40px,4.5vw,120px);}
   .company-brand-content .xf-terminal{gap:calc(24 * var(--wide-u)) calc(12 * var(--wide-u));}
 }
 @media(prefers-reduced-motion:reduce){.company-brand-content .xf-brand *{animation:none!important;transition:none!important;scroll-behavior:auto!important}.company-brand-content .xf-brand .company-brand-reveal{opacity:1;clip-path:none;filter:none;transform:none}.company-brand-content .xf-history-card:not(.is-active) .xf-history-copy{filter:none;}}

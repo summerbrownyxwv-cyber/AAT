@@ -7,7 +7,7 @@ const drawer = document.createElement('dialog');
 drawer.id = 'site-navigation-drawer';
 drawer.className = 'site-drawer';
 drawer.setAttribute('aria-label', '全站导航');
-drawer.innerHTML = '<div class="site-drawer-head"><p>MENU / 全站导航</p><button class="site-drawer-close" type="button" aria-label="关闭菜单">×</button></div><nav class="site-drawer-links" aria-label="主导航"></nav>';
+drawer.innerHTML = '<div class="site-drawer-head"><p>MENU / 全站导航</p><button class="site-drawer-close" type="button" aria-label="关闭菜单">×</button></div><nav class="site-drawer-links" aria-label="主导航"></nav><div class="site-drawer-actions"><button type="button" data-site-service="consumer">官方服务</button><button type="button" data-site-service="verify">投诉通道</button></div>';
 for (const link of nav.querySelectorAll('a')) drawer.querySelector('nav').append(link.cloneNode(true));
 document.body.append(drawer);
 menu.innerHTML = '<span aria-hidden="true"></span><span aria-hidden="true"></span>';
@@ -40,3 +40,23 @@ drawer.querySelector('.site-drawer-close').addEventListener('click', () => close
 drawer.querySelector('nav').addEventListener('click', event => { if (event.target.closest('a')) close(false); });
 drawer.addEventListener('cancel', event => { event.preventDefault(); close(); });
 mobile.addEventListener('change', () => { if (!mobile.matches) close(false); });
+
+// Reuse the previous XunAi official-service entry points with its published contacts.
+const official = document.createElement('dialog');
+official.className = 'site-official-service';
+official.setAttribute('aria-labelledby', 'site-official-title');
+official.innerHTML = '<form method="dialog"><div class="site-drawer-head"><p>OFFICIAL / SERVICE</p><button class="site-drawer-close" value="close" aria-label="关闭服务窗口">×</button></div><h2 id="site-official-title"></h2><p class="site-official-description"></p><div class="site-official-links"><a href="tel:07133671098">服务热线：0713-3671098</a><a href="mailto:aat@dongyuanjt.com">邮件联系官方服务</a></div></form>';
+document.body.append(official);
+drawer.querySelector('.site-drawer-actions').addEventListener('click', event => {
+  const button = event.target.closest('[data-site-service]');
+  if (!button) return;
+  const complaint = button.dataset.siteService === 'verify';
+  official.querySelector('h2').textContent = complaint ? '官方验证 / 投诉' : '官方服务';
+  official.querySelector('.site-official-description').textContent = complaint ? '请通过官方邮箱反馈门店名称、所在城市与情况说明。' : '产品及门店服务问题，可通过以下官方渠道咨询。';
+  const email = official.querySelector('a[href^="mailto:"]');
+  email.textContent = complaint ? '通过官方邮箱反馈' : '邮件联系官方服务';
+  email.href = 'mailto:aat@dongyuanjt.com' + (complaint ? '?subject=' + encodeURIComponent('官方验证 / 投诉') : '');
+  close(false);
+  official.showModal();
+});
+official.addEventListener('close', () => menu.focus({preventScroll:true}));

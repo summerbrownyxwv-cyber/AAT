@@ -93,7 +93,7 @@ assert.ok((await read('products-cooperation-services.js')).includes('./contact.h
 
 const videos = [{}];
 let addedVideos;
-vm.runInNewContext(await read('site-experience.js'), {
+vm.runInNewContext((await read('site-experience.js')).replace(/^import[^\n]+\n/gm, ''), {
   document: { querySelectorAll: () => videos, querySelector: () => ({}) },
   window: { addEventListener() {} },
   MutationObserver: class { constructor(callback) { addedVideos = callback; } observe() {} },

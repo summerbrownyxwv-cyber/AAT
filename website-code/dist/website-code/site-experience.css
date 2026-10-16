@@ -1,3 +1,5 @@
+@import './site-link-arrows.css';
+
 :root{--muted:#6d6a64;--type-section:clamp(calc(28 * var(--wide-u)),2.4vw,calc(38 * var(--wide-u)));--type-item:clamp(calc(20 * var(--wide-u)),1.6vw,calc(26 * var(--wide-u)));--motion-quick:180ms;--motion-standard:320ms;--motion-scene:620ms}
 html{scroll-padding-top:calc(var(--site-navigation-height) + calc(24 * var(--wide-u)))}
 .content-reveal-copy{transform:none;filter:none;clip-path:none;transition:opacity var(--motion-standard) var(--ease)}

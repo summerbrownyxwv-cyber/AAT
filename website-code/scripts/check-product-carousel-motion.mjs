@@ -87,4 +87,16 @@ mirroredSurface.emit('pointermove', { pointerType: 'mouse', clientX: 216 }); now
 mirroredSurface.emit('pointerup', { pointerType: 'mouse', clientX: 216 }); advance(120);
 assert.equal(mirroredMotion.position, 1, 'Mirrored galleries respond to a short gesture in their visual direction');
 stopMirrored();
-console.log('PASS: exact-offset release, interruption, cyclic continuity, short mouse/touch/wheel gestures, click tremor, mirrored direction and native vertical scroll.');
+for (const length of [6, 4, 3]) {
+  const seen = [], bounded = createCarouselMotion(position => seen.push(position), () => false, { min: 0, max: length - 1 });
+  bounded.step(-1); advance(120); assert.equal(bounded.position, 0, 'The first detail product cannot wrap backwards');
+  for (let index = 1; index < length; index++) { bounded.step(1); advance(120); assert.equal(bounded.position, index); }
+  bounded.step(1); advance(120); assert.equal(bounded.position, length - 1, 'The last detail product cannot wrap forwards');
+  bounded.begin(); now += 20; bounded.drag(length + .7); bounded.end(1); advance(120);
+  assert.equal(bounded.position, length - 1, 'Dragging beyond the last product stays at the end');
+  bounded.begin(); now += 20; bounded.drag(-.7); bounded.end(-1); advance(120);
+  assert.equal(bounded.position, 0, 'Dragging beyond the first product stays at the beginning');
+  assert.ok(seen.every(position => position >= 0 && position <= length - 1), 'No rendered frame crosses a detail boundary');
+  bounded.dispose();
+}
+console.log('PASS: exact-offset release, interruption, overview cyclic continuity, detail bounds, short mouse/touch/wheel gestures, click tremor, mirrored direction and native vertical scroll.');

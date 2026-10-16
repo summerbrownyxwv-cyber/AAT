@@ -6,7 +6,7 @@ export function catalogTimeline(heights, viewport) {
   const panels = heights.map((height, index) => {
     const arrival = distance;
     const read = Math.max(0, height - viewport);
-    distance += read + Math.max(96, viewport * .22);
+    distance += read;
     const departure = distance;
     if (index < heights.length - 1) distance += cover;
     return {arrival, read, departure};
@@ -28,25 +28,30 @@ export function mountCatalog(root) {
     current += (target - current) * (1 - Math.exp(-delta / 110));
     if (Math.abs(target - current) < .15) current = target;
     let next = 0, transitioning = false;
+    const tops = [];
     panels.forEach((panel, index) => {
       const item = timeline.panels[index];
       const cover = index ? clamp((current - timeline.panels[index - 1].departure) / timeline.cover) : 1;
       const read = Math.max(0, Math.min(item.read, current - item.arrival));
-      panel.style.transform = `translate3d(0,${(1 - cover) * height}px,0)`;
+      const top = (1 - cover) * height;
+      tops.push(top);
+      panel.style.transform = `translate3d(0,${top}px,0)`;
       panel.firstElementChild.style.transform = `translate3d(0,${-read}px,0)`;
       if (cover > .001 && cover < .999) transitioning = true;
       if (cover >= .99) next = index;
     });
     stage.dataset.transitioning = String(transitioning);
-    if (active !== next) {
-      if (panels[active]?.contains(document.activeElement)) stage.focus({preventScroll:true});
-      active = next;
-      panels.forEach((panel, index) => {
-        panel.inert = index !== active;
-        panel.setAttribute('aria-hidden', String(index !== active));
-      });
-      catalog.dataset.activeGroup = panels[active].dataset.productGroup;
-    }
+    const bounds = stage.getBoundingClientRect();
+    panels.forEach((panel, index) => {
+      const visibleTop = Math.max(0, tops[index], -bounds.top);
+      const visibleBottom = Math.min(height, tops[index + 1] ?? height, innerHeight - bounds.top);
+      const visible = visibleBottom - visibleTop > 1;
+      if (!visible && panel.contains(document.activeElement)) stage.focus({preventScroll:true});
+      panel.inert = !visible;
+      panel.setAttribute('aria-hidden', String(!visible));
+    });
+    active = next;
+    catalog.dataset.activeGroup = panels[active].dataset.productGroup;
     catalog.dataset.distance = current.toFixed(2);
     if (current !== target) frame = requestAnimationFrame(draw);
     else previous = 0;
@@ -62,6 +67,7 @@ export function mountCatalog(root) {
     catalog.classList.toggle('is-pinned', !reduce.matches);
     if (reduce.matches) {
       catalog.style.height = '';
+      stage.style.removeProperty('--catalog-content-height');
       panels.forEach(panel => {
         panel.style.transform = ''; panel.firstElementChild.style.transform = '';
         panel.inert = false; panel.removeAttribute('aria-hidden');
@@ -69,8 +75,10 @@ export function mountCatalog(root) {
       active = -1;
       return;
     }
+    const heights = panels.map(panel => panel.firstElementChild.scrollHeight);
+    stage.style.setProperty('--catalog-content-height', `${Math.max(...heights)}px`);
     height = stage.clientHeight;
-    timeline = catalogTimeline(panels.map(panel => panel.firstElementChild.scrollHeight), height);
+    timeline = catalogTimeline(heights, height);
     catalog.style.height = `${height + timeline.distance}px`;
     start = scrollY + catalog.getBoundingClientRect().top - parseFloat(getComputedStyle(stage).top);
     target = current = position(); previous = 0;

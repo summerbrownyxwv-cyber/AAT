@@ -11,8 +11,20 @@
 #main-content .xs-hero .xs-nav>div,
 #main-content .xs-hero .xs-nav>div>span,
 #main-content .xs-hero .xs-nav>div>div{border-color:rgb(0 0 0 / .24);color:inherit}
-#service-cooperation .xf-cta{background:none;color:#fff}
+#service-cooperation .xf-cta{background:var(--cream);color:#000;min-height:0;padding-block:clamp(40px,4.5vw,120px)}
 #service-cooperation .xf-cta h2,
-#service-cooperation .xf-cta p{color:#fff;text-shadow:0 1px 8px rgb(0 0 0 / .45)}
+#service-cooperation .xf-cta p{color:#000;text-shadow:none}
 #service-cooperation .xf-cta .pill-button{border-radius:var(--radius);background:#fff;color:#000;border-color:#fff}
 #service-cooperation .xf-cta .pill-button:is(:hover,:focus-visible){background:#fff;color:#000;border-color:#fff}
+
+/* Each store is one content-height sheet; the shared cover must not pad it to the viewport. */
+#main-content .xs-page>.section-cover-panel{padding-block:clamp(40px,4.5vw,120px)}
+#main-content .xs-page>.section-cover-panel.is-cover-fit{min-height:0}
+#main-content .xs-type-panel{--section-cover-surface:var(--cream);border-bottom:0}
+#main-content .xs-type-panel>.xs-type,
+#main-content #types>.xs-type{padding-block:0;margin-top:0;border-top:0;min-height:0}
+@media(min-width:1025px){
+ #main-content .xs-type-panel>.xs-type>figure{display:flex;flex-direction:column;align-items:flex-end}
+ #main-content .xs-type-panel>.xs-type-reverse>figure{align-items:flex-start}
+ #main-content .xs-type-panel>.xs-type>figure>img{width:min(100%,max(160px,calc((100svh - var(--site-navigation-height) - 104 * var(--wide-u)) * 599 / 775)));height:auto}
+}
