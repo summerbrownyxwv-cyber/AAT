@@ -55,3 +55,9 @@
 另检查transplanted.js的路由render：当前没有整页滑入/缩放转场，锚点/页顶使用instant；本批未改变导航、URL或加载顺序。实际滚动视频、浏览器多屏截图、实体触屏与DPR仍未复核，本批结论仅限源码/Node与几何证据。
 
 本批最终构建和dist校验通过；8个修改运行文件与发布副本逐字节一致、修改JS语法通过。独立只读复核确认product-catalog、xs-page、xa-page的覆盖范围在后续内容/页脚前释放，种植wrapper不改变既有后代选择器与锚点。未改媒体或资源校验规则。
+
+## AI五处底色注释（1030×981）
+
+修改前main：1402d814。用户指定#value/#ai-evidence白色，#ai-capabilities/#how-it-works/#scenarios米白。仅编辑ai.html现有inline主题规则；同步section-cover-surface和证据章before的背景/全宽阴影，保留原尺寸与裁切，避免切换时露出旧底色。图文、媒体原色、首屏、报告、排版与动效未改。独立只读检查确认局部ID规则优先于共享cover样式，不扩展到其他页面；浏览器修改后截图仍未取得。
+
+AI与共享cover专项检查、npm run check、npm run build、dist资源校验、diff检查均通过；source/dist的ai.html字节一致。本批为纯色面修改，未新增几何或动效参数，也未新增媒体格式/文件。
