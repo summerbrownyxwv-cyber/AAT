@@ -33,6 +33,7 @@ export async function mountProductHero(root) {
   const buttons = [...hero.querySelectorAll('[data-product-index]')];
   const series = hero.querySelector('#product-series');
   const fallback = hero.querySelector('.product-fallback');
+  const navigation = document.querySelector('.site-navigation');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const abort = new AbortController();
   let scene, progress = 0, active = -1;
@@ -53,16 +54,17 @@ export async function mountProductHero(root) {
     series.textContent = buttons[index].dataset.series;
   };
   buttons.forEach((button, index) => button.addEventListener('click', () => draw(index), {signal:abort.signal}));
-  stage.addEventListener('wheel', event => {
-    if (event.ctrlKey) return;
+  window.addEventListener('wheel', event => {
+    if (event.ctrlKey || event.metaKey || document.querySelector('dialog[open]')) return;
+    if (Math.abs(hero.getBoundingClientRect().top - navigation.getBoundingClientRect().bottom) > 2) return;
     const horizontal = Math.abs(event.deltaX) > Math.abs(event.deltaY);
     const delta = (horizontal ? event.deltaX : event.deltaY)
-      * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? horizontal ? stage.clientWidth : stage.clientHeight : 1);
-    const next = Math.max(0, Math.min(4.98, progress + delta / 240));
+      * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? horizontal ? window.innerWidth : window.innerHeight : 1);
+    const next = Math.max(0, Math.min(4.98, progress + delta / (window.innerHeight * .8) * 4.98));
     if (!delta || next === progress) return;
     event.preventDefault();
     draw(next);
-  }, {passive:false,signal:abort.signal});
+  }, {capture:true,passive:false,signal:abort.signal});
   reduced.addEventListener('change', () => draw(progress), {signal:abort.signal});
   draw(0);
   try {

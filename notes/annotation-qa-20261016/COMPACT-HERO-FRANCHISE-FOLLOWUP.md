@@ -26,3 +26,13 @@
 - check-performance-low-risk及check-product-carousel-motion通过；模型场景保留相同progress短路与按需提交，没有持续auto帧。
 - product-hero.css与cc16c7ab完全无差异；不恢复80svh、sticky、scrollTo或文档长度占位。
 - 以上为源码/Node证据，浏览器实屏复测仍未执行；没有新增浏览器截图或实体设备结论。
+
+## 首屏完整滚轮流程（D-64）
+
+用户进一步明确“鼠标向下滑动产品旋转切换、旋转到最后一个才可以滑到下一个页面”。修改前main为3210d0aaf2dc902965553080d712191241eb95b4。源码确认D-63监听仅在.product-stage内，首屏空白或导航上的输入不会推进；未发现canvas事件丢失证据。本轮先复现首屏空白处wheel未消费的失败，再扩大为首屏锚点内整屏输入。
+
+- window capture wheel仅在hero.top与导航.bottom相差不超过2px时推进0..4.98；原80svh改为纯数值输入行程innerHeight×0.8，保持原紧凑CSS和文档高度。
+- 完成第五款后向下放行；首款反向放行。下方内容自然滚回锚点后可立即反向旋转；开放弹窗及Ctrl/Meta缩放时不接管。
+- check-hero-migration通过：首屏空白/导航/canvas及其后代/舞台来源、连续五款及有限边界、离开/回到锚点、方向与单位、按钮、低动态、无WebGL回退、卸载清理，以及17视口几何。
+- check-performance-low-risk与check-product-carousel-motion通过。product-hero.css与product-scene.js相对3210d0aa均无修改，无持续动画帧、页面定位或额外滚动占位。
+- 验证为源码和Node输入/几何模拟，未取得浏览器修改后截图或实体设备结果。浏览器本地访问仍受已记录策略限制，未绕过。
