@@ -167,7 +167,7 @@ window.XunAiStores=(()=>{
   },
   mount(main){
    window.XunAiReview.mount(main);
-   const stopCover=mountSectionCover([...main.querySelectorAll('.xs-page > .xs-section')]);
+   const stopCover=mountSectionCover([...main.querySelectorAll('.xs-page > .xs-section:not(.xs-competence)')]);
    const layout=main.querySelector('.xs-strength-layout');
    if(layout){let active=3;layout.addEventListener('click',event=>{const button=event.target.closest('[data-strength]');if(!button)return;const index=Number(button.dataset.strength);if(index===active)return;const from=button.querySelector('img').getBoundingClientRect();const old=active;active=index;layout.querySelector('.xs-strength-thumbs').innerHTML=[0,1,2,3].filter(i=>i!==active).map(i=>strengthCard(i)).join('');const feature=layout.querySelector('.xs-strength-feature');feature.innerHTML=strengthCard(active,true)+(active===3?'<p>打破传统的空间体验，对艾灸文化进行重新演绎。在都市语境中重构传统艾灸的疗愈智慧，以现代人的审美需求建立有温度的艾灸空间。</p>':'');const img=feature.querySelector('img'),to=img.getBoundingClientRect();if(!matchMedia('(prefers-reduced-motion: reduce)').matches)img.animate([{transform:`translate(${from.left-to.left}px,${from.top-to.top}px) scale(${from.width/to.width},${from.height/to.height})`},{transform:'none'}],{duration:550,easing:'cubic-bezier(.22,1,.36,1)'});layout.querySelector(`[data-strength="${old}"]`).focus({preventScroll:true});});}
    const root=main.querySelector('[data-services]');if(!root)return stopCover;

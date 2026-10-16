@@ -17,6 +17,28 @@ for(const attribute of ['autoplay','muted','loop','playsinline','poster='])asser
 assert(!video.includes('controls'));
 assert(markup.indexOf('class="xa-intro"')<markup.indexOf(video));
 assert(markup.indexOf(video)<markup.indexOf('id="ai-capabilities"'));
+const stack=[],parents=new Map();
+for(const match of markup.matchAll(/<(\/?)(div|section)\b([^>]*)>/g)){
+  if(match[1]){assert.equal(stack.pop().tag,match[2]);continue;}
+  const node={tag:match[2],classes:match[3].match(/class="([^"]+)"/)?.[1],parent:stack.at(-1)};
+  const id=match[3].match(/id="([^"]+)"/)?.[1];
+  if(id)parents.set(id,node.parent);
+  stack.push(node);
+}
+assert.equal(stack.length,0,'Opening and later content retain balanced section containers');
+assert.equal(parents.get('value').classes,'xa-content','The video chapter keeps existing full-width content styling');
+assert.equal(parents.get('value').parent.classes,'xa-opening','The opening cover has a block boundary after the video');
+assert.equal(parents.get('ai-capabilities').parent.classes,'xa-page','Capabilities start outside the video cover containing block');
+const coverGroups=[],halt={};
+const hero={querySelector:()=>({prepend(){}})},value={},matrix={},later=[{},{},{},{}];
+const page={querySelectorAll:selector=>selector==='.xa-opening section'?[hero,value]:selector===':scope > .xa-content > section'?[matrix,...later]:[]};
+const mounted={XunAiOrbit:[]};
+runInNewContext(source.replace(/^import[^\n]+\n/,''),{window:mounted,mountSectionCover:panels=>{coverGroups.push(panels);return()=>{};},matchMedia:()=>{throw halt;}});
+assert.throws(()=>mounted.XunAiAI.mount({querySelector:selector=>selector==='.xa-hero'?hero:selector==='.xa-page'?page:null}),error=>error===halt);
+assert.equal(coverGroups.length,2);
+assert.deepEqual(Array.from(coverGroups[0]),[hero,value],'Hero-to-video cover is confined to its own opening');
+assert.deepEqual(Array.from(coverGroups[1]),[matrix,...later],'Capability-to-later covers stay intact without pinning the preceding video');
+assert.match(source,/stopOpeningCover\(\);stopCover\(\)/,'Both independent cover scopes clean up');
 assert.doesNotMatch(css,/(?:font(?:-[\w]+)?|line-height|letter-spacing|color|background|object-fit|object-position|aspect-ratio|grid-template-columns)\s*:/,'Layout annotations preserve type, artwork, crops, and grid proportions');
 assert.doesNotMatch(css,/\.xa-hero\b|\.xa-stage\b/,'The approved hero remains outside this change');
 const declarations=selector=>{
@@ -30,8 +52,8 @@ assert.match(declarations('#main-content .xa-page #value>figure'),/align-self:st
 assert.match(declarations('#main-content .xa-page #ai-capabilities>div:last-child'),/align-self:end/);
 assert(shared.includes('.xa-matrix-aside{display: flex; flex-direction: column; justify-content: space-between; align-self: stretch; gap: 32px;}'));
 assert(shared.includes('.xa-matrix-device{margin-top: auto !important;}'));
-for(const [width,height] of [[390,844],[768,1024],[1024,768],[1189,1263],[1440,900],[1920,560],[1920,1080],[2560,1440],[3840,2160]]){
+for(const [width,height] of [[320,640],[360,800],[390,844],[430,932],[768,1024],[792,945],[997,876],[1024,768],[1102,981],[1189,1263],[1440,900],[1515,917],[1920,560],[1920,1080],[2560,1440],[3840,2160]]){
   const spacing=Math.max(40,Math.min(width*.045,120));
   assert(spacing*2<height,'Chapter spacing leaves room for the original content at every target viewport');
 }
-console.log('PASS: original AI routes, silent looping demo and hero preserved; content chapters use natural height and bounded equal padding; video aligns to copy top and capability columns share a bottom edge. Source checks only; browser visual review remains required.');
+console.log('PASS: AI opening cover releases before capabilities; later covers, routes, silent looping video and media alignment preserved; balanced containers and bounded spacing at sixteen viewport fixtures. Node/source checks only; browser visual review remains required.');

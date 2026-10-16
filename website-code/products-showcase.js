@@ -11,7 +11,7 @@ export function renderShowcase() {
     <figure class="products-intro-film"><video src="../assets/products/products-film.mp4" poster="../assets/products/products-film-poster.webp" preload="metadata" autoplay muted playsinline loop aria-label="艾艾贴产品介绍视频"></video></figure>
     <div class="products-intro-copy"><h2 id="products-intro-title">产品系列</h2><p>${escape(productSeriesIntro)}</p></div>
   </section>
-  <section class="products-series" id="products-series" data-products-series aria-label="燃萃温植产品系列" aria-roledescription="轮播" tabindex="0" style="--series-color:${escape(productSeries[0].color)}">
+  <section class="products-series" id="products-series" data-products-series aria-label="燃萃温植产品系列" aria-roledescription="轮播" tabindex="0">
     <div class="products-series-headings">${productSeries.map((series, index) => `<h2 class="products-series-heading${index === 0 ? ' is-active' : ''}" data-series-heading="${index}" aria-hidden="${index !== 0}">「${escape(series.name)}」</h2>`).join('')}</div>
     <div class="products-series-viewport"><div class="products-series-track">${productSeries.map((series, index) => `<button type="button" class="products-series-slide" data-series-slide="${index}" aria-label="查看${escape(series.name)}系列" aria-pressed="${index === 0}"><img src="${escape(series.image)}" alt="艾艾贴${escape(series.name)}系列产品" loading="lazy" fetchpriority="low" draggable="false"></button>`).join('')}</div></div>
     <div class="products-series-descriptions">${productSeries.map((series, index) => `<p class="products-series-description${index === 0 ? ' is-active' : ''}" data-series-description="${index}" aria-hidden="${index !== 0}">${escape(series.description)}</p>`).join('')}</div>
@@ -156,7 +156,7 @@ export function mountShowcase(root) {
     });
     track.style.transform = 'none';
     if (index === seriesIndex) return;
-    seriesIndex = index; seriesRoot.style.setProperty('--series-color', productSeries[index].color);
+    seriesIndex = index;
     setCopy([...seriesRoot.querySelectorAll('[data-series-heading]')], index, true);
     setCopy([...seriesRoot.querySelectorAll('[data-series-description]')], index, true);
     seriesRoot.querySelector('[data-carousel-status]').textContent = `${productSeries[index].name}系列，${index + 1}/${productSeries.length}`;

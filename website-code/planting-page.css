@@ -156,9 +156,8 @@ body:has(.planting-page){overflow-x:clip;overflow-anchor:none}
 .plant-composition-stage{gap:calc(12 * var(--wide-u))}
 @media(max-width:600px){.plant-composition-data dt{font-size:calc(13 * var(--wide-u))}.plant-trait-copy p{font-size:calc(14 * var(--wide-u))}}
 
-/* Keep the trait chapter compact without changing its image proportions or scroll states. */
+/* Trait content uses the reading viewport; only its scroll runway extends beyond it. */
 @media(min-width:901px) and (prefers-reduced-motion:no-preference){
- .plant-traits-scene{height:min(calc(100svh - var(--site-navigation-height)),max(calc(560 * var(--wide-u)),58vw))}
  .plant-traits-stage{padding-top:clamp(40px,4.5vw,120px)}
  .plant-trait-list{top:calc(clamp(40px,4.5vw,120px) + 56 * var(--wide-u));bottom:clamp(40px,4.5vw,120px)}
 }

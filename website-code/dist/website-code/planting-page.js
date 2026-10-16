@@ -53,7 +53,9 @@ const landImages = [landPhoto.firstElementChild,landPhoto.querySelector('#greenh
 const traitArticles = [...traitsStory.section.querySelectorAll('article')];
 const dataRows = [...composition.section.querySelectorAll('dl>div')];
 dataRows.forEach(row => { row.querySelector('dd').dataset.final = row.querySelector('dd').textContent; });
-const coverChapters = [...main.querySelectorAll('.plant-origin,.plant-research,.plant-traits,.plant-management,.pf-campus,.pf-technology,.pf-lines,.pf-capacity')];
+const chapters = [...main.querySelectorAll('.plant-origin,.plant-research,.plant-traits,.plant-management,.pf-campus,.pf-technology,.pf-lines,.pf-capacity')];
+// Story scenes manage their own pinning; their outer runway stays in normal flow.
+const coverChapters = chapters.filter(section => !section.matches('.plant-origin,.plant-research,.plant-traits'));
 coverChapters.forEach((section,index) => { section.classList.add('plant-cover'); section.style.zIndex = String(index + 1); });
 const dampedCovers = [...main.querySelectorAll('.pf-campus,.pf-technology,.pf-lines,.pf-capacity')].map(section => ({section,top:null,offset:0}));
 let frame = 0, last = 0, landGeometry, researchGeometry, plantScene, titleExitLimit = 0;
@@ -94,24 +96,27 @@ function measure() {
   if (!reduced.matches) land.stage.style.height = `${narrow ? 64+finalWidth*404/869+fieldAfterPhoto : Math.max(land.stage.offsetHeight,sidebarHeight)}px`;
   if (innerHeight <= 560) research.stage.querySelectorAll('figure').forEach(photo => { photo.style.cssText = ''; });
   stories.forEach(item => {
-    const distance = {land:1.35,research:.55,traits:(1+4.6)*2/3-1}[item.section.dataset.scrollStory];
+    const distance = {land:1.35,research:.55}[item.section.dataset.scrollStory];
     const natural = reduced.matches || (item === research && innerHeight <= 560);
-    item.travel = natural ? 0 : item.stage.offsetHeight * distance;
+    // Keep the approved compact chapter budget while its reading scene fills the viewport.
+    const total = item === traitsStory
+      ? (narrow ? item.stage.offsetHeight : Math.min(available,Math.max(560*unit,innerWidth*.58))) * 5.6 * 2 / 3
+      : item.stage.offsetHeight * (1 + distance);
+    item.travel = natural ? 0 : Math.max(0,total - item.stage.offsetHeight);
     item.section.style.height = natural ? 'auto' : `${item.stage.offsetHeight + item.travel}px`;
   });
   const titleStyle = getComputedStyle(cultivarTitle);
-  const originTop = (parseFloat(titleStyle.top) || top) + cultivarTitle.offsetHeight + (parseFloat(titleStyle.marginBottom) || 0);
   const titleBottom = (parseFloat(titleStyle.top) || top) - top + cultivarTitle.offsetHeight;
   titleExitLimit = Math.max(0,available-titleBottom);
   cultivarChapter.style.setProperty('--cultivar-content-top', `${titleBottom + 24*unit}px`);
-  coverChapters.forEach(section => { section.style.setProperty('--cover-top', `${Math.min(section.classList.contains('plant-origin') ? originTop : top, innerHeight - section.offsetHeight)}px`); });
+  coverChapters.forEach(section => { section.style.setProperty('--cover-top', `${Math.min(top, innerHeight - section.offsetHeight)}px`); });
   const campus = main.querySelector('.pf-campus-inner');
   const description = campus.querySelector('.pf-campus-description');
   const stats = campus.querySelector('.pf-campus-stats');
   campus.style.setProperty('--campus-photo-top', `${description.offsetTop}px`);
   campus.style.setProperty('--campus-photo-height', `${stats.offsetTop + stats.offsetHeight - description.offsetTop}px`);
   let flowTop = top + main.querySelector('.plant-hero').offsetHeight;
-  [land.section,...coverChapters].forEach(section => {
+  [land.section,...chapters].forEach(section => {
     if (section.classList.contains('plant-origin')) {
       const heading = getComputedStyle(cultivarTitle);
       flowTop += parseFloat(getComputedStyle(cultivarChapter).paddingTop) + cultivarTitle.offsetHeight + (parseFloat(heading.marginBottom) || 0);
@@ -237,6 +242,6 @@ document.addEventListener('click',event=>{
 });
 document.fonts.ready.then(()=>{measure();goToPlantChapter();});
 const observer=new ResizeObserver(measure);
-coverChapters.forEach(section=>observer.observe(section));
+chapters.forEach(section=>observer.observe(section));
 stories.forEach(item=>observer.observe(item.stage));
 window.addEventListener('pagehide',event=>{if(event.persisted)return;stopContent.forEach(stop=>stop());observer.disconnect();modelObserver.disconnect();plantScene?.destroy();cancelAnimationFrame(frame);},{once:true});

@@ -54,7 +54,8 @@ assert.doesNotMatch(source,/fetch\(|XMLHttpRequest|localStorage|sessionStorage/,
 const companySource=await read('company.js');
 assert.match(companySource,/import \{ mountSectionCover \} from '.\/section-cover.js'/);
 assert.match(companySource,/mountSectionCover\(\[\.\.\.companyMain\.querySelectorAll/);
-assert.ok(companySource.includes(':scope>.company-intro,#company-brand-content .xf-brand>.xf-section,:scope>.honor-section,:scope>.action-section'));
+const companyCoverSelector=companySource.match(/companyMain\.querySelectorAll\('([^']+)'\)/)?.[1];
+assert.equal(companyCoverSelector,'#company-brand-content .xf-brand>.xf-section:not(#business),:scope>.honor-section,:scope>.action-section','Introduction, business and nested history stay outside the cover stack; later chapters retain it');
 assert.ok(companySource.includes('stopHonors(); stopCover();'));
 const brandCSS=await read('company-brand.css');
 assert.match(brandCSS,/\.company-cover-main :is\(\.company-brand-content,\.xf-brand\)\{display:contents\}/);
@@ -71,11 +72,5 @@ assert.match(home,/@media\(min-width:641px\) and \(max-width:900px\)\{\s*\.plant
 for(const [width,height] of [[320,640],[360,800],[390,844],[430,932],[768,1024],[1024,768],[1189,1263],[1488,1307],[1920,560],[2560,1440],[3840,2160]]){
   const gap=Math.max(40,Math.min(width*.045,120));
   assert(gap>=40&&gap<=120&&gap*2<height);
-  const unit=Math.max(1,width/1440), navHeight=(width<1024?64:72)*unit;
-  const stage=(height-navHeight)*2/3;
-  const oldTravel=Math.max(640*unit,Math.min(height*1.05,1200*unit));
-  const travel=Math.max(1280/3*unit,Math.min(height*.7,800*unit));
-  assert(Math.abs(travel-oldTravel*2/3)<.001);
-  assert(stage>0);
 }
-console.log('PASS: plus-only accessible OEM/ODM controls, complete workflows, mobile official-service dialogs and scroll/focus restoration, bounded equal chapter spacing, tablet gap removal and proportionally compact flower across eleven viewport fixtures. Node/source checks only.');
+console.log('PASS: plus-only accessible OEM/ODM controls, complete workflows, mobile official-service dialogs and scroll/focus restoration, company introduction/business/history natural flow, bounded equal chapter spacing and tablet gap removal across eleven viewport fixtures. Node/source checks only.');

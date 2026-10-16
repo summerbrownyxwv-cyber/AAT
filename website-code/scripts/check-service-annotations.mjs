@@ -16,20 +16,20 @@ for (const [,closing,tag,attributes] of html.matchAll(/<(\/?)(section|article)\b
   if (tag === 'article' && /\bxs-type\b/.test(attributes)) stores.push(node);
   stack.push(node);
 }
-assert.equal(panels.length, 5, 'Competence, locations, both store types and services are sibling cover sheets');
+assert.equal(panels.length, 5, 'Competence, locations, both store types and services remain sibling sections');
 assert.equal(stores.length, 2);
 assert.ok(stores.every(store=>panels.includes(store.parent)), 'Store articles cannot become nested sticky panels');
 assert.equal((html.match(/id="types"/g)||[]).length, 1, 'The existing store comparison anchor remains');
 assert.doesNotMatch(html, /<figcaption>标准店设计参考<\/figcaption>/);
-assert.ok(source.includes("main.querySelectorAll('.xs-page > .xs-section')"));
+assert.ok(source.includes("main.querySelectorAll('.xs-page > .xs-section:not(.xs-competence)')"), 'Hero and competence scroll naturally before later covers');
 for (const route of ['/stores/black-gold/detail','/stores/standard/detail','/stores/services']) {
   assert.ok(context.window.XunAiStores.render(route).includes('xs-page'), route);
 }
 const css = await read('service-annotation.css');
-assert.match(css, /\.xs-page>\.section-cover-panel\{padding-block:clamp\(40px,4\.5vw,120px\)\}/);
+assert.match(css, /\.xs-page>\.xs-section\{padding-block:clamp\(40px,4\.5vw,120px\)\}/);
 assert.match(css, /\.xs-page>\.section-cover-panel\.is-cover-fit\{min-height:0\}/);
 assert.match(css, /#main-content #types>\.xs-type\{padding-block:0;/);
-assert.match(css, /\.xf-cta\{background:var\(--cream\);color:#000;min-height:0;padding-block:clamp\(40px,4\.5vw,120px\)\}/);
+assert.match(css, /\.xf-cta\{background:#fff;color:#000;min-height:0;padding-block:clamp\(40px,4\.5vw,120px\)\}/);
 assert.match(css, /\.xf-cta p\{color:#000;text-shadow:none\}/);
 const cta = (await read('service.html')).match(/<section class="xf-cta">[\s\S]*?<\/section>/)[0];
 assert.doesNotMatch(cta, /<img\b/);
@@ -43,7 +43,7 @@ class Panel {
   }
   getBoundingClientRect(){return {top:this.position+(parseFloat(this.style.translate.split(' ')[1])||0)};}
 }
-const views = [[320,640],[390,844],[768,1024],[1024,768],[1189,1263],[1440,900],[1920,560],[2560,1440],[3840,2160]];
+const views = [[320,640],[390,844],[768,1024],[792,945],[997,917],[1024,768],[1102,981],[1189,1263],[1440,900],[1920,560],[1920,1080],[2560,1440],[3840,2160]];
 for (const [width,height] of views) {
   const navigation=(width<=1023.98?64:72)*Math.max(1,width/1440), available=height-navigation;
   const frames=new Map(),events=new Map(), reduce={matches:false,addEventListener(type,callback){this.changed=callback;},removeEventListener(){}};
@@ -77,4 +77,4 @@ for (const [width,height] of views) {
 }
 assert.equal(coverFollowOffset(5,50,16.67,0),0);
 assert.ok(coverFollowOffset(10,0,32,56)<coverFollowOffset(10,0,16,56),'Follow is time based');
-console.log('PASS: service sibling sheets, content heights, original store routes, image-free CTA, and native cover follow across nine viewport fixtures with reverse/boundary/reduced-motion/cleanup checks. Source and Node simulation only; browser visual QA remains pending.');
+console.log(`PASS: service opening/competence natural flow, white CTA, sibling stores and later covers across ${views.length} viewport fixtures with reverse/boundary/reduced-motion/cleanup checks. Source and Node simulation only; browser visual QA remains pending.`);

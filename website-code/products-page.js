@@ -2,7 +2,7 @@ import { productGroups } from '../content/products-data.js';
 import { renderShowcase, mountShowcase, bindCarouselInput, createCarouselMotion } from './products-showcase.js';
 import { mountContentMotion } from './content-motion.js';
 import { mountCatalog } from './products-catalog-motion.js';
-import { renderCooperation, mountCooperation } from './products-cooperation.js';
+import { renderCooperation } from './products-cooperation.js';
 
 const main = document.querySelector('#main-content');
 const reduce = matchMedia('(prefers-reduced-motion: reduce)');
@@ -19,7 +19,7 @@ function renderCatalog() {
   return `<div class="product-catalog" id="product-catalog"><div class="product-catalog-stage" tabindex="-1" aria-label="燃、萃、温、植系列产品">${productGroups.map(group => `<section class="product-group" id="products-${group.key}" data-product-group="${group.key}" data-product-index="0" style="--product-color:${group.color}" aria-labelledby="products-${group.key}-title"><div class="product-group-sheet"><header class="product-group-heading page-shell"><h2 id="products-${group.key}-title">${group.title}</h2><span>${group.index}</span></header><div class="product-group-layout"><div class="product-detail-copy" aria-live="polite" aria-atomic="true">${group.products.map((product,index)=>`<div class="product-copy-item${index===0?' is-active':''}" aria-hidden="${index!==0}"><h3>${product.name}</h3><p>${product.description}</p></div>`).join('')}</div><div class="product-detail-gallery" tabindex="0" role="region" aria-roledescription="轮播" aria-label="${group.title}，可拖动、点击相邻产品或使用左右方向键切换"><div class="product-detail-track">${renderTrack(group)}</div><output class="sr-only" aria-label="当前产品" aria-live="polite" aria-atomic="true">1 / ${group.products.length}</output></div></div></div></section>`).join('')}</div></div>`;
 }
 main.innerHTML = renderShowcase() + renderCatalog() + renderCooperation();
-const cleanups = [mountShowcase(main), mountCatalog(main), mountCooperation(main)];
+const cleanups = [mountShowcase(main), mountCatalog(main)];
 main.querySelectorAll('[data-content-motion],[data-products-intro]').forEach(root => cleanups.push(mountContentMotion(root)));
 
 main.querySelectorAll('[data-product-group]').forEach(section => {

@@ -3,8 +3,8 @@ import { mountSectionCover } from './section-cover.js';
 export function mountCatalog(root) {
   const catalog = root.querySelector('.product-catalog');
   const panels = [...catalog.querySelectorAll('.product-group')];
-  // Natural-height sheets avoid clipping cards inside a synthetic pinned viewport.
-  const stopCover = mountSectionCover(panels);
+  // The overview and first detail group scroll naturally before later covers begin.
+  const stopCover = mountSectionCover(panels.slice(1));
   const goToHash = () => {
     const index = panels.findIndex(panel => `#${panel.id}` === location.hash);
     if (index < 0) return;

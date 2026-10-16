@@ -65,7 +65,8 @@ const stopHonors = initCompanyHonors(container => {
 });
 const companyMain = document.querySelector('#main');
 companyMain.classList.add('company-cover-main');
-const stopCover = mountSectionCover([...companyMain.querySelectorAll(':scope>.company-intro,#company-brand-content .xf-brand>.xf-section,:scope>.honor-section,:scope>.action-section')]);
+// The introduction, business and history read in normal flow; covering starts at products.
+const stopCover = mountSectionCover([...companyMain.querySelectorAll('#company-brand-content .xf-brand>.xf-section:not(#business),:scope>.honor-section,:scope>.action-section')]);
 window.addEventListener('pagehide', event => { if (!event.persisted) { stopHonors(); stopCover(); } }, { once:true });
 
 const heroVideo = document.querySelector('.company-hero-video');

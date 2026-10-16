@@ -1,5 +1,8 @@
 /* Shared action arrow; link containers retain their own layout and background. */
+.more-link,.xu-detail-link.site-link-arrow-host{display:inline-flex;align-items:flex-end;gap:calc(7 * var(--wide-u));min-height:calc(44 * var(--wide-u));padding:0 0 calc(4 * var(--wide-u));border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;color:var(--muted);font:400 clamp(calc(13 * var(--wide-u)),14 * var(--u),calc(18 * var(--wide-u)))/1.2 var(--display);letter-spacing:0;text-decoration:none;transition:color 220ms var(--ease),border-color 220ms var(--ease)}
+.more-link:is(:hover,:focus-visible),.xu-detail-link.site-link-arrow-host:is(:hover,:focus-visible){gap:calc(7 * var(--wide-u));background:transparent;color:var(--ink);border-color:var(--line-strong)}
 .site-link-arrow-host>.site-link-arrow{display:block;inline-size:.84em;block-size:.84em;min-inline-size:.84em;max-inline-size:none;flex:0 0 .84em;align-self:center;color:inherit;overflow:visible;pointer-events:none;transform:none;transition:transform 220ms var(--ease)}
+.more-link>.site-link-arrow,.xu-detail-link.site-link-arrow-host>.site-link-arrow{align-self:flex-end;margin-bottom:.18em}
 .site-link-arrow-host:is(:hover,:focus-visible)>.site-link-arrow{transform:translate(.14em,-.14em)}
 .site-link-arrow-host:focus-visible{outline:2px solid currentColor;outline-offset:.3em}
 @media(prefers-reduced-motion:reduce){.site-link-arrow-host>.site-link-arrow{transition:none}}

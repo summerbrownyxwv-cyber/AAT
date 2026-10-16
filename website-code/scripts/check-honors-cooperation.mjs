@@ -1,14 +1,13 @@
 import assert from 'node:assert/strict';
-import { cooperationState } from '../products-cooperation.js';
+import { renderCooperation } from '../products-cooperation.js';
 import { initCompanyHonors } from '../company-honors.js';
 
-for (const progress of [.8208, .9, 1]) {
-  const state = cooperationState(progress);
-  assert.equal(state.scale, 1);
-  assert.deepEqual(state.petals, [1, 1, 1, 1, 1]);
-}
-assert.ok(cooperationState(.6).petals.some(value => value > 0 && value < 1));
-assert.deepEqual(cooperationState(0).petals, [0, 0, 0, 0, 0]);
+const cooperation = renderCooperation();
+assert.doesNotMatch(cooperation, /cooperation-(?:scroll|stage|intro|flower)/, 'Removed manufacturing intro must not leave a visual stage or scroll runway');
+assert.match(cooperation, /id="manufacturing"/);
+assert.match(cooperation, /id="cooperation-oem"/);
+assert.match(cooperation, /id="cooperation-odm"/);
+assert.equal((cooperation.match(/class="cooperation-services-step"/g) || []).length,16, 'All manufacturing service steps remain');
 
 function element(id) {
   const listeners = new Map();
@@ -53,4 +52,4 @@ assert.deepEqual(groups.map(group => group.inert), [true, false, true]);
 cleanup();
 tabs[0].emit('click');
 assert.equal(section.dataset.honorActive, 1);
-console.log('PASS: flower closes when scale settles; honor tabs, certificate disclosure, hash navigation and cleanup.');
+console.log('PASS: removed manufacturing intro retains OEM/ODM and all16 steps; honor tabs, certificate disclosure, hash navigation and cleanup.');

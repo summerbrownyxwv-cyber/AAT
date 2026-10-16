@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
+import { clamp, smoothstep } from '../motion.js';
 
 const source = await readFile(new URL('../motion.js', import.meta.url), 'utf8');
 const css = await readFile(new URL('../styles.css', import.meta.url), 'utf8');
@@ -8,6 +9,11 @@ assert.match(css, /\.ai-stats\{[^}]*grid-row:3;align-self:end/, 'Image and table
 const markup = await readFile(new URL('../index.html', import.meta.url), 'utf8');
 assert.doesNotMatch(markup, /series-playback|暂停轮播|继续轮播/, 'The carousel must not expose playback controls');
 assert.doesNotMatch(source, /seriesPaused|seriesHovered|seriesFocused/, 'Hover, focus, and manual selection must not stop automatic playback');
+assert.doesNotMatch(markup + source + css, /series-dots|data-series-dot|seriesDots/, 'Removed series dots must not retain markup, listeners, or a layout slot');
+assert.doesNotMatch(css.match(/\.collection-heading\{[^}]*\}/)?.[0] || '', /min-height|height:/, 'The collection heading must not reserve the removed dot row');
+assert.match(markup, /data-plant-step="2"[^>]*>[\s\S]*?生产基地/, 'The production directory item must select the actual production state');
+assert.match(markup, /data-step="2"><h3>产业园区<\/h3>[\s\S]*?<li>多个功能区域<\/li><li>自动化、智能化、数字化转型<\/li><li>精进生产研发<\/li>/, 'The production intro keeps the supplied heading and copy');
+assert.match(markup, /plant-photo-production[^>]*data-step="2"><img src="\.\.\/assets\/company\/company-hero-poster\.webp"/, 'The production state reuses the existing factory aerial asset');
 for (const target of ['company-copy', 'growth-figure', 'service-image', 'ai-image']) {
   const element = markup.match(new RegExp(`<[^>]+class="${target}"[^>]*>`))?.[0];
   assert.ok(element, `${target} must retain its existing layout element`);
@@ -56,7 +62,6 @@ const make = new Function('state', 'window', 'Image', 'clearInterval', 'clearTim
   let seriesTimer = 0, currentSeries = 0;
   let imageRequest = 0, imageTimer = 0, disposed = false;
   const { motion: motionPreference, document, visible, photo: seriesPhoto, buttons: seriesButtons, backdrop: seriesBackdrop, label: seriesLabel } = state;
-  const seriesDots = [];
   const select = (buttons, index) => { state.selected = index; };
   ${functions}
   return { start: startSeriesLoop, select: showSeries, index: () => currentSeries };
@@ -92,4 +97,56 @@ assert.equal(timer.delay, 4200, 'Returning to the foreground resumes autoplay');
 state.buttons.length = 1;
 carousel.start();
 assert.equal(timer, undefined, 'A single series does not need an interval');
-console.log('PASS: specified home content scrolls naturally, dependent content reveals at six sizes, no pause UI, autoplay, wrap, repeated manual reset, visibility, and reduced motion.');
+
+const plantFunctions = ['select', 'showPlant', 'plantProgress', 'updatePlantMotion'].map(name => {
+  const match = source.match(new RegExp(`^  function ${name}\\([^\\n]*\\) \\{[\\s\\S]*?^  \\}`, 'm'));
+  assert.ok(match, `${name} must exist`);
+  return match[0];
+}).join('\n');
+const makeElement = step => ({
+  dataset: { step: String(step), plantStep: String(step) },
+  style: { opacity: '', values: new Map(), setProperty(name, value) { this.values.set(name, value); }, removeProperty(name) { this.values.delete(name); } },
+  classes: new Set(), attributes: {},
+  classList: { toggle(name, enabled) { enabled ? this.owner.classes.add(name) : this.owner.classes.delete(name); } },
+  setAttribute(name, value) { this.attributes[name] = value; },
+});
+for (const [width, height] of [[320, 640], [390, 844], [768, 1024], [997, 917], [1440, 900], [1920, 1080], [2560, 1440], [3840, 2160]]) {
+  for (const reduced of [false, true]) {
+    const fixture = { innerWidth: width, innerHeight: height, scrollY: 0 };
+    const photos = [0, 1, 2].map(makeElement), details = [0, 1, 2].map(makeElement), buttons = [0, 2].map(makeElement);
+    [...photos, ...details, ...buttons].forEach(element => { element.classList.owner = element; });
+    const cta = {}, planting = makeElement(0);
+    const layout = { offsetHeight: 400, getBoundingClientRect: () => ({ top: 1000 - fixture.scrollY }) };
+    const flow = new Function('window', 'clamp', 'smoothstep', 'photos', 'plantDetails', 'plantButtons', 'plantCta', 'planting', 'plantLayout', 'motionPreference', `
+      let plantStep = 0, selectedPlant = null;
+      ${plantFunctions}
+      showPlant(0);
+      return { update: () => updatePlantMotion(window.innerHeight), select: index => { selectedPlant = index; updatePlantMotion(window.innerHeight); }, release: () => { selectedPlant = null; }, step: () => plantStep };
+    `)(fixture, clamp, smoothstep, photos, details, buttons, cta, planting, layout, { matches: reduced });
+    for (const [progress, expected] of [[0, 0], [.5, 1], [1, 2], [.5, 1], [0, 0]]) {
+      fixture.scrollY = 1000 - height * .56 + 220 * progress;
+      flow.update();
+      assert.equal(flow.step(), expected, `Scroll must reach and reverse all three states at ${width}x${height}, reduced=${reduced}`);
+      assert.equal(cta.href, expected === 2 ? './planting.html#factory' : './planting.html');
+      assert.equal(buttons[expected < 2 ? 0 : 1].attributes['aria-pressed'], 'true');
+      assert.equal(details.filter(detail => detail.attributes['aria-hidden'] === 'false').length, 1);
+      if (width > 640 && !reduced) assert.equal(photos[expected].style.opacity, '1.000');
+    }
+    if (width > 640 && !reduced) {
+      for (let sample = 0; sample <= 100; sample++) {
+        fixture.scrollY = 1000 - height * .56 + 220 * sample / 100;
+        flow.update();
+        const total = photos.reduce((sum, photo) => sum + Number(photo.style.opacity), 0);
+        assert.ok(Math.abs(total - 1) < .002, 'Adjacent planting/production crossfades must not introduce an empty gallery');
+      }
+    }
+    flow.select(2);
+    assert.equal(flow.step(), 2, 'Production menu selection works independently of scroll position');
+    assert.equal(cta.href, './planting.html#factory');
+    flow.release();
+    fixture.scrollY = 1000 - height * .56;
+    flow.update();
+    assert.equal(flow.step(), 0, 'Native scroll takes over again after manual selection');
+  }
+}
+console.log('PASS: static home content, removed dots and reserved row, autoplay unchanged, and three planting/production states with reversible scroll, menu/CTA mapping, mobile and reduced motion across eight sizes (Node fixtures, not browser screenshots).');

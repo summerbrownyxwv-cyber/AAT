@@ -17,9 +17,9 @@ export function mountMotion() {
   const photos = [...document.querySelectorAll('.plant-photo[data-step]')];
   const plantButtons = [...document.querySelectorAll('[data-plant-step]')];
   const plantDetails = [...document.querySelectorAll('.plant-detail[data-step]')];
+  const plantCta = planting.querySelector('.planting-cta');
   const holds = [...document.querySelectorAll('[data-scroll-hold]')];
   const seriesButtons = [...document.querySelectorAll('.series-thumb[data-series-index]')];
-  const seriesDots = [...document.querySelectorAll('[data-series-dot]')];
   const seriesPhoto = document.querySelector('#series-photo');
   const seriesBackdrop = document.querySelector('.series-backdrop');
   const seriesLabel = document.querySelector('#series-label');
@@ -69,7 +69,6 @@ export function mountMotion() {
 
   function selectSeries(index) {
     currentSeries = index;
-    for (const dot of seriesDots) dot.setAttribute('aria-current', String(Number(dot.dataset.seriesDot) === index));
   }
 
   function startSeriesLoop() {
@@ -195,9 +194,13 @@ export function mountMotion() {
 
   function showPlant(index) {
     plantStep = index;
-    select(plantButtons, index, 'plantStep');
+    select(plantButtons, index < 2 ? 0 : 2, 'plantStep');
     for (const photo of photos) photo.classList.toggle('is-active', Number(photo.dataset.step) === index);
-    for (const detail of plantDetails) detail.classList.toggle('is-active', Number(detail.dataset.step) === index);
+    for (const detail of plantDetails) {
+      detail.classList.toggle('is-active', Number(detail.dataset.step) === index);
+      detail.setAttribute('aria-hidden', String(Number(detail.dataset.step) !== index));
+    }
+    plantCta.href = index === 2 ? './planting.html#factory' : './planting.html';
   }
 
   function plantProgress(viewport) {
@@ -208,12 +211,24 @@ export function mountMotion() {
 
   function updatePlantMotion(viewport) {
     const progress = plantProgress(viewport);
-    const cross = selectedPlant ?? smoothstep(0.34, 0.66, progress);
+    const phase = selectedPlant ?? progress * (plantDetails.length - 1);
     planting.style.setProperty('--plant-progress', progress.toFixed(4));
-    planting.style.setProperty('--plant-cross', cross.toFixed(4));
+    if (motionPreference.matches || window.innerWidth <= 640) {
+      for (const photo of photos) {
+        photo.style.opacity = '';
+        for (const property of ['--plant-blur', '--plant-clip', '--plant-image-y', '--plant-scale']) photo.style.removeProperty(property);
+      }
+      for (const detail of plantDetails) detail.style.opacity = '';
+      showPlant(Math.round(phase));
+      return;
+    }
+    const firstCross = smoothstep(.34, .66, phase);
+    const secondCross = smoothstep(1.34, 1.66, phase);
+    const photoOpacity = [1 - firstCross, firstCross - secondCross, secondCross];
+    const detailOpacity = [1 - smoothstep(.08, .42, firstCross), smoothstep(.58, .9, firstCross) * (1 - smoothstep(.08, .42, secondCross)), smoothstep(.58, .9, secondCross)];
     for (const photo of photos) {
       const step = Number(photo.dataset.step);
-      const opacity = step === 0 ? 1 - cross : cross;
+      const opacity = photoOpacity[step];
       photo.style.opacity = opacity.toFixed(3);
       photo.style.setProperty('--plant-blur', `${((1 - opacity) * 6).toFixed(2)}px`);
       photo.style.setProperty('--plant-clip', `${((1 - opacity) * 14).toFixed(2)}%`);
@@ -222,10 +237,10 @@ export function mountMotion() {
     }
     for (const detail of plantDetails) {
       const step = Number(detail.dataset.step);
-      const opacity = step === 0 ? 1 - smoothstep(.08, .42, cross) : smoothstep(.58, .9, cross);
+      const opacity = detailOpacity[step];
       detail.style.opacity = opacity.toFixed(3);
     }
-    const active = cross >= 0.5 ? 1 : 0;
+    const active = Math.round(phase);
     if (active !== plantStep) showPlant(active);
   }
 
@@ -256,7 +271,7 @@ export function mountMotion() {
   function update() {
     frame = 0;
     const viewport = window.innerHeight;
-    if (visible.has(planting) && window.innerWidth > 640 && !motionPreference.matches) {
+    if (visible.has(planting)) {
       updatePlantMotion(viewport);
     } else if (window.innerWidth <= 640 || motionPreference.matches) {
       for (const photo of photos) {
@@ -315,14 +330,11 @@ export function mountMotion() {
       const index = Number(button.dataset.plantStep);
       selectedPlant = index;
       showPlant(index);
-      if (window.innerWidth > 640 && !motionPreference.matches) updatePlantMotion(window.innerHeight);
+      updatePlantMotion(window.innerHeight);
     });
   }
   for (const button of seriesButtons) {
     on(button, 'click', () => showSeries(Number(button.dataset.seriesIndex), true));
-  }
-  for (const dot of seriesDots) {
-    on(dot, 'click', () => showSeries(Number(dot.dataset.seriesDot), true));
   }
   for (const button of contactButtons) {
     on(button, 'click', () => {
@@ -368,6 +380,7 @@ export function mountMotion() {
   const resize = new ResizeObserver(measure);
   resize.observe(openingSticky);
   setupReveals();
+  showPlant(0);
   measure();
   selectSeries(Number(seriesButtons.find(button => button.classList.contains('is-active'))?.dataset.seriesIndex || 0));
   startSeriesLoop();

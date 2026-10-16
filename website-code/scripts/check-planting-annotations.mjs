@@ -21,7 +21,7 @@ const measure = new Function('state', `
   return {landGeometry,composition,traitsStory};
 `);
 const approximately = (actual, expected) => assert(Math.abs(actual-expected)<.001, `${actual} != ${expected}`);
-const viewports = [[320,640],[390,844],[768,1024],[900,800],[901,800],[997,876],[997,917],[1189,1263],[1440,900],[1920,1080],[2560,1440],[3840,2160]];
+const viewports = [[320,640],[390,844],[768,1024],[792,945],[900,800],[901,800],[997,876],[997,917],[1044,900],[1102,981],[1189,1263],[1440,900],[1920,1080],[2560,1440],[3840,2160]];
 for (const [width,height] of viewports) {
   const unit = Math.max(1,width/1440), narrow=width<=900;
   const nav=(narrow?64:72)*unit;
@@ -62,8 +62,10 @@ for (const [width,height] of viewports) {
       const glassBottom=number('--land-thumbnails-top')+number('--land-glass-height');
       assert(glassBottom <= thumbBottom+.001, 'Two greenhouse images must not stretch beyond the three-image rail');
       if(!narrow) approximately((number('--land-thumbnails-height')-2*thumbnailGap)/3,fieldWidth*2/3);
-      const oldTraitsHeight=traitsStory.stage.offsetHeight*5.6;
-      approximately(parseFloat(traitsStory.section.style.height),oldTraitsHeight*2/3);
+      const formerTraitScene=narrow?traitsStory.stage.offsetHeight:Math.min(height-nav,Math.max(560*unit,width*.58));
+      const compactBudget=formerTraitScene*5.6*2/3;
+      approximately(parseFloat(traitsStory.section.style.height),Math.max(traitsStory.stage.offsetHeight,compactBudget));
+      approximately(traitsStory.travel,Math.max(0,compactBudget-traitsStory.stage.offsetHeight));
       approximately(land.travel,land.stage.offsetHeight*1.35);
       approximately(research.travel,research.stage.offsetHeight*.55);
       approximately(result.composition.start,traitsStory.start+traitsStory.travel*2/4.6);
@@ -80,7 +82,28 @@ for (const [width,height] of viewports) {
   const thirdLeft=0, secondLeft=contentWidth*(narrow?.51:.305), secondaryWidth=contentWidth*(narrow?.45:.28093);
   approximately(thirdLeft,0);
   assert(secondLeft>=thirdLeft+secondaryWidth && secondLeft+secondaryWidth<=contentWidth, 'Research images keep their order, gap, and shell bounds');
+  if(!narrow){
+    const available=height-nav,space=Math.max(40,Math.min(width*.045,120));
+    const photoHeight=contentWidth*.87*.36*3/4;
+    const photoBottom=(available+56*unit)/2+photoHeight/2;
+    assert(photoBottom+space<=available,'Trait media fits the reading viewport with the existing bottom spacing');
+    const formerScene=Math.min(available,Math.max(560*unit,width*.58));
+    const formerBottom=(formerScene+56*unit)/2+photoHeight/2;
+    assert(photoBottom>=formerBottom,'Using the full reading viewport removes the additional lower void from the compact scene');
+    if(width===997||width===1044||width===1102)assert(photoBottom-formerBottom>100,'Reported tall-screen fixtures recover over 100 CSS pixels of unused lower viewport');
+  }
 }
+const sectionNames=['plant-origin','plant-research','plant-traits','plant-management','pf-campus','pf-technology','pf-lines','pf-capacity'];
+const sections=sectionNames.map(name=>({name,style:{},classes:[],matches:selector=>selector.split(',').some(value=>value==='.'+name),classList:{add(value){this.owner.classes.push(value);}}}));
+sections.forEach(section=>section.classList.owner=section);
+const chapterLists=new Function('main',`${extract('const chapters =','const dampedCovers')}return {chapters,coverChapters};`)({querySelectorAll:selector=>{assert.equal(selector,sectionNames.map(name=>'.'+name).join(','),'The complete chapter list stays ordered and excludes the footer');return sections;}});
+assert.deepEqual(chapterLists.chapters,sections,'Every chapter remains available to hash offsets and resize measurement');
+assert.deepEqual(chapterLists.coverChapters.map(section=>section.name),sectionNames.slice(3),'Video/research and the trait scroll runway are not outer sticky covers');
+for(const section of sections)assert.equal(section.classes.includes('plant-cover'),!sectionNames.slice(0,3).includes(section.name));
+assert(source.includes('[land.section,...chapters].forEach(section => {'),'Natural chapter heights still contribute to subsequent story starts');
+assert(source.includes('chapters.forEach(section=>observer.observe(section))'),'Natural chapter size changes still update scroll anchors');
+assert.match(styles,/\.plant-land-stage,\.plant-research-stage,\.plant-traits-scene\{position:sticky;top:var\(--site-navigation-height\);height:calc\(100svh - var\(--site-navigation-height\)\)\}/);
+assert.doesNotMatch(styles,/\.plant-traits-scene\{height:min\(/,'The inner trait viewport must not be compacted while a full viewport remains pinned');
 assert.match(styles,/\.planting-page\{[^}]*display:block\}/);
 assert.match(styles,/grid-template-rows:repeat\(3,minmax\(0,1fr\)\)/);
 assert.match(styles,/grid-template-rows:repeat\(2,minmax\(0,1fr\)\)/);
@@ -95,4 +118,4 @@ assert.match(reducedStyles,/\.plant-land-glass \.plant-land-thumbnails>img\{aspe
 assert(source.includes('const traitProgress = reduced.matches ? 1 : clamp(traitsStory.progress * 4.6 / 1.8)'));
 assert(source.includes('smoothstep(1.8 / 4.6,2 / 4.6,traitsStory.progress)'));
 assert(source.includes('clamp((traitsStory.progress * 4.6 - 2) / 2.6)'));
-console.log(`PASS: shipped planting arithmetic at ${viewports.length} viewports, copy/thumbnail bounds, equal-size greenhouse previews, research alignment, exact one-third traits reduction, anchors, and reduced-motion flow. Browser visual review remains required.`);
+console.log(`PASS: planting arithmetic at ${viewports.length} viewports; video/research natural boundaries, single-level trait pinning and viewport-aligned media; exact compact chapter budget, state sequence, hash measurement and reduced-motion flow preserved. Node geometry is not browser visual proof.`);

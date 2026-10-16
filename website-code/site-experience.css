@@ -1,5 +1,13 @@
 @import './site-link-arrows.css';
 
+/* Native disclosure controls share a one-CSS-pixel stroke, including store rows. */
+.xunai-content summary.site-disclosure-summary::before,.xunai-content summary.site-disclosure-summary::after{display:none!important}
+.xunai-content summary>.site-disclosure-toggle{position:relative;display:block;flex:0 0 1.125rem;width:1.125rem;height:1.125rem;min-width:1.125rem;margin-left:auto;transform:none!important}
+.xunai-content summary>.site-disclosure-toggle::before,.xunai-content summary>.site-disclosure-toggle::after{content:"";position:absolute;left:.125rem;top:calc(.5625rem - .5px);width:.875rem;height:1px;background:currentColor;transition:opacity 180ms}
+.xunai-content summary>.site-disclosure-toggle::after{transform:rotate(90deg)}
+.xunai-content details[open]>summary>.site-disclosure-toggle::after{opacity:0}
+@media(prefers-reduced-motion:reduce){.xunai-content summary>.site-disclosure-toggle::after{transition:none}}
+
 :root{--muted:#6d6a64;--type-section:clamp(calc(28 * var(--wide-u)),2.4vw,calc(38 * var(--wide-u)));--type-item:clamp(calc(20 * var(--wide-u)),1.6vw,calc(26 * var(--wide-u)));--motion-quick:180ms;--motion-standard:320ms;--motion-scene:620ms}
 html{scroll-padding-top:calc(var(--site-navigation-height) + calc(24 * var(--wide-u)))}
 .content-reveal-copy{transform:none;filter:none;clip-path:none;transition:opacity var(--motion-standard) var(--ease)}
