@@ -43,4 +43,23 @@ const cta = (await read('service.html')).match(/<section class="xf-cta">[\s\S]*?
 assert.doesNotMatch(cta, /<img\b/);
 assert.ok(cta.includes('href="./service.html#/franchise"'));
 
-console.log('PASS: hero, competence and locations use natural flow before sibling store/service covers; white CTA, preserved routes and later-cover cleanup. Shared multi-screen boundary/scroll tests are in check-section-cover.mjs; browser visual review remains pending.');
+vm.runInContext(await read('xunai/franchise-page.js'), context);
+const franchise = context.window.XunAiFranchise.render();
+assert.equal((franchise.match(/\bxj-dark\b/g)||[]).length, 4, 'Store models, output sheet/output content and process are the dark surface targets');
+assert.ok(franchise.includes('src="../assets/xunai/franchise/imgRectangle1.webp"'), 'The franchise hero retains its original photograph');
+assert.equal((franchise.match(/href="#\/franchise\/apply"/g)||[]).length, 2, 'Both existing intent links remain');
+assert.equal((franchise.match(/data-process-step=/g)||[]).length, 6, 'All six franchise process steps remain');
+const franchiseStart = css.indexOf('/* Franchise annotations');
+assert.ok(franchiseStart >= 0, 'Franchise annotations have a local page theme');
+const franchiseCss = css.slice(franchiseStart, css.indexOf('/* Each store', franchiseStart));
+assert.match(franchiseCss, /\.xj-page:not\(\.xj-application\)\{--xj-muted:var\(--muted\);--xj-line:var\(--line\)\}/);
+assert.match(franchiseCss, /\.xj-dark\{background:var\(--cream\);color:var\(--ink\)\}/);
+assert.match(franchiseCss, /\.xj-hero::after\{display:none;background:none\}/, 'The hero color mask is removed');
+assert.match(franchiseCss, /\.pill-button:not\(:disabled\):not\(\[aria-disabled="true"\]\):is\(:hover,:focus-visible,:active\)\{background:var\(--cream\);color:var\(--ink\);border-color:var\(--line-strong\)\}/);
+assert.match(franchiseCss, /\.xj-contact-cta \.pill-button\{background:transparent;color:#000;border-color:var\(--line\)\}/);
+assert.match(franchiseCss, /\.xj-process li button\{color:var\(--muted\)\}/);
+assert.match(franchiseCss, /\.xj-process li button:is\(:hover,:focus-visible\)\{color:var\(--ink\)\}/, 'Active and focused steps stay readable on cream');
+assert.match(franchiseCss, /\.xj-dark :is\(a,summary\):focus-visible\{outline-color:var\(--ink\)\}/);
+assert.doesNotMatch(franchiseCss, /\b(?:width|height|padding|margin|font|object-fit|filter)\s*:/, 'Franchise color annotations do not change layout or photography');
+
+console.log('PASS: natural service opening, sibling store/service covers, white CTA; franchise cream surfaces, unmasked original hero, readable process states and transparent intent CTA with original routes/content. Shared multi-screen boundary/scroll tests are in check-section-cover.mjs; browser visual review remains pending.');

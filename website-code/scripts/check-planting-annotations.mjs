@@ -21,7 +21,10 @@ const measure = new Function('state', `
   return {landGeometry,composition,traitsStory};
 `);
 const approximately = (actual, expected) => assert(Math.abs(actual-expected)<.001, `${actual} != ${expected}`);
-const viewports = [[320,640],[390,844],[768,1024],[792,945],[900,800],[901,800],[997,876],[997,917],[1030,981],[1044,900],[1102,981],[1189,1263],[1440,900],[1920,1080],[2560,1440],[3840,2160]];
+const landPhotoRect = new Function('landGeometry','shrink',`${extract('  const {width:w,fullHeight:h,left,finalWidth,finalHeight,finalTop}=landGeometry;', '  landPhoto.style.cssText')}return rect;`);
+const landClips = /\.plant-land\{[^}]*overflow:clip(?:;|\})/.test(styles);
+assert(landClips,'The chapter clips oversized opening media without creating a scroll container');
+const viewports = [[320,640],[390,844],[768,1024],[792,945],[900,800],[901,800],[901,1600],[997,876],[997,917],[1030,981],[1030,1600],[1044,900],[1102,981],[1189,1263],[1440,900],[1920,1080],[2560,1440],[3840,2160]];
 for (const [width,height] of viewports) {
   const unit = Math.max(1,width/1440), narrow=width<=900;
   const nav=(narrow?64:72)*unit;
@@ -45,10 +48,17 @@ for (const [width,height] of viewports) {
     const research=makeStory('research',Math.min(height-nav,680*unit));
     const traitsStory=makeStory('traits',height-nav);
     const thumbnails={};
-    const field={clientWidth:fieldWidth,querySelector(selector){return selector==='h3'?{offsetHeight:headingHeight}:selector==='p'?{offsetHeight:paragraphHeight*copyScale}:thumbnails;}};
-    land.section.querySelector=selector=>selector==='.plant-land-field'?field:selector==='.plant-land-heading'?{offsetHeight:36*unit}:null;
+    const field={clientWidth:fieldWidth,querySelector(selector){
+      if(selector==='h3')return{offsetHeight:headingHeight};
+      if(selector==='p')return{offsetHeight:paragraphHeight*copyScale};
+      assert.fail(`The copy aside does not contain ${selector}`);
+    }};
+    land.section.querySelector=selector=>selector==='.plant-land-field'?field:selector==='.plant-land-heading'?{offsetHeight:36*unit}:selector.includes('.plant-land-thumbnails')?thumbnails:null;
     const document={querySelector(selector){return selector==='.site-navigation'?{getBoundingClientRect:()=>({height:nav})}:{getBoundingClientRect:()=>({left,right:width-right})};}};
-    const result=measure({innerWidth:width,innerHeight:height,land,research,traitsStory,reduced:{matches:reducedMotion},document,getComputedStyle:element=>({rowGap:String(element===field?fieldGap:thumbnailGap)})});
+    const result=measure({innerWidth:width,innerHeight:height,land,research,traitsStory,reduced:{matches:reducedMotion},document,getComputedStyle:element=>{
+      assert(element===field||element===thumbnails,'Only existing copy and gallery nodes can be measured');
+      return{rowGap:String(element===field?fieldGap:thumbnailGap)};
+    }});
     const geometry=result.landGeometry;
     const properties=land.properties;
     const number=name=>parseFloat(properties[name]);
@@ -59,17 +69,45 @@ for (const [width,height] of viewports) {
     assert(geometry.left+geometry.finalWidth <= width-right+.001);
     if (!reducedMotion) {
       const copyBottom=number('--land-aside-top')+headingHeight+paragraphHeight*copyScale+fieldGap;
-      assert(number('--land-thumbnails-top') >= copyBottom+fieldGap-.001, 'Thumbnails must follow the full copy');
+      const photoBottom=geometry.finalTop+geometry.finalHeight;
+      const railWidth=narrow?fieldWidth:geometry.finalWidth;
+      const railHeight=(railWidth-2*thumbnailGap)/3*2/3;
+      approximately(number('--land-thumbnails-left'),left);
+      approximately(number('--land-thumbnails-width'),railWidth);
+      approximately(number('--land-thumbnails-height'),railHeight);
+      approximately(number('--land-thumbnails-top'),narrow?copyBottom+fieldGap:photoBottom+24*unit);
       const thumbBottom=number('--land-thumbnails-top')+number('--land-thumbnails-height');
-      assert(thumbBottom <= (narrow?geometry.height-18*unit:geometry.height-24*unit)+.001, 'Field thumbnails fit the content stage');
-      const glassBottom=number('--land-thumbnails-top')+number('--land-glass-height');
-      assert(glassBottom <= thumbBottom+.001, 'Two greenhouse images must not stretch beyond the three-image rail');
-      if(!narrow) approximately((number('--land-thumbnails-height')-2*thumbnailGap)/3,fieldWidth*2/3);
+      approximately(geometry.height,Math.max(copyBottom,thumbBottom)+24*unit);
+      assert(photoBottom+24*unit<=number('--land-thumbnails-top')+.001,'The thumbnail row starts below the main landscape crop');
+      for(const count of [3,2]){
+        const thumbnailWidth=(railWidth-2*thumbnailGap)/3;
+        const frames=Array.from({length:count},(_,index)=>({left:left+index*(thumbnailWidth+thumbnailGap),right:left+index*(thumbnailWidth+thumbnailGap)+thumbnailWidth}));
+        frames.forEach((rect,index)=>{
+          assert(rect.right<=left+railWidth+.001,'Both photo states fit the same single row');
+          if(index)assert(rect.left>=frames[index-1].right+thumbnailGap-.001,'Every crop frame has a separate horizontal slot');
+          approximately(thumbnailWidth/railHeight,3/2);
+        });
+      }
+      if(narrow)assert(number('--land-aside-top')>=photoBottom+24*unit-.001,'Narrow copy follows the landscape crop');
+      else{
+        const asideLeft=width-right-fieldWidth;
+        assert(geometry.left+geometry.finalWidth<asideLeft,'The main photo and right copy do not share a horizontal slot');
+        assert(left+railWidth<asideLeft,'The horizontal rail stays below the main photo, outside the right copy');
+      }
       const formerTraitScene=narrow?traitsStory.stage.offsetHeight:Math.min(height-nav,Math.max(560*unit,width*.58));
       const compactBudget=formerTraitScene*5.6*2/3;
       approximately(parseFloat(traitsStory.section.style.height),Math.max(traitsStory.stage.offsetHeight,compactBudget));
       approximately(traitsStory.travel,Math.max(0,compactBudget-traitsStory.stage.offsetHeight));
       approximately(land.travel,land.stage.offsetHeight*1.35);
+      const chapterBottom=parseFloat(land.section.style.height);
+      const openingRect=landPhotoRect(geometry,0);
+      const openingBottom=openingRect.y+openingRect.height;
+      const visibleOpeningBottom=landClips?Math.min(openingBottom,chapterBottom):openingBottom;
+      assert(visibleOpeningBottom<=chapterBottom,'The opening photo cannot paint into the next chapter');
+      if(height===1600&&copyScale===1){
+        assert(openingBottom>chapterBottom,'Tall narrow fixtures exercise the oversized opening crop');
+        approximately(visibleOpeningBottom,chapterBottom);
+      }
       approximately(research.travel,research.stage.offsetHeight*.55);
       approximately(result.composition.start,traitsStory.start+traitsStory.travel*2/4.6);
       approximately(result.composition.travel,traitsStory.travel*2.6/4.6);
@@ -131,21 +169,25 @@ assert(source.includes('chapters.forEach(section=>observer.observe(section))'),'
 assert.match(styles,/\.plant-land-stage,\.plant-research-stage,\.plant-traits-scene\{position:sticky;top:var\(--site-navigation-height\);height:calc\(100svh - var\(--site-navigation-height\)\)\}/);
 assert.doesNotMatch(styles,/\.plant-traits-scene\{height:min\(/,'The inner trait viewport must not be compacted while a full viewport remains pinned');
 assert.match(styles,/\.planting-page\{[^}]*display:block\}/);
-assert.match(styles,/grid-template-rows:repeat\(3,minmax\(0,1fr\)\)/);
-assert.match(styles,/grid-template-rows:repeat\(2,minmax\(0,1fr\)\)/);
+assert.match(styles,/\.plant-land-thumbnails\{[^}]*grid-template-columns:repeat\(3,minmax\(0,1fr\)\);grid-template-rows:minmax\(0,1fr\)/,'Both gallery states use one row with three fixed slots');
+assert.match(styles,/\.plant-land-gallery\{[^}]*left:var\(--land-thumbnails-left\);top:var\(--land-thumbnails-top\);width:var\(--land-thumbnails-width\);height:var\(--land-thumbnails-height\)/,'Both gallery states share the same measured footprint');
+assert.doesNotMatch(styles,/\.plant-land-field \.plant-land-thumbnails/,'The thumbnail rail no longer contributes to the right copy column');
 assert.match(styles,/\.plant-land-field\{opacity:var\(--land-copy\)/);
 assert.match(styles,/\.planting-page figure\{[^}]*overflow:hidden/,'Every thumbnail has its own crop boundary');
 assert.match(styles,/\.plant-land-thumbnails>figure\{position:relative;min-height:0;aspect-ratio:3\/2\}/);
 assert.match(styles,/\.plant-land-thumbnails>figure>img\{position:absolute;inset:0;width:100%;height:100%;object-fit:cover\}/);
 assert.equal((source.match(/\$\{landThumbnail\(/g)||[]).length,5,'All five rail photos use the bounded crop frame');
-assert.doesNotMatch(source,/p < \.28 \|\| p > \.86/);
+assert.doesNotMatch(source.match(/<aside class="plant-land-aside plant-land-field">(.*?)<\/aside>/s)?.[1]||'',/landThumbnail|plant-land-thumbnails/,'The desktop aside contains only copy');
+assert.equal((source.match(/class="plant-land-gallery /g)||[]).length,2,'Both photo states have separate gallery containers');
+assert.match(source,/querySelector\('\.plant-land-field'\)\.setAttribute\('aria-hidden',String\(!reduced\.matches && p < \.28\)\)/,'The base description remains available during the greenhouse state');
 assert.match(styles,/\.plant-research-second\{left:30\.5%\}/);
 assert.match(styles,/\.plant-research-third\{left:0\}/);
 assert.match(styles,/\.plant-research-second\{left:51%\}\.plant-research-third\{left:0\}/);
 const reducedStyles=styles.slice(styles.indexOf('@media(prefers-reduced-motion:reduce)'));
 assert.match(reducedStyles,/\.plant-land-thumbnails\{[^}]*opacity:1!important/);
+assert.match(reducedStyles,/\.plant-land-heading,\.plant-land-canvas,\.plant-land-photo,\.plant-greenhouse-photo,\.plant-land-aside,\.plant-land-gallery\{position:relative;inset:auto!important;opacity:1!important;transform:none!important;width:100%!important;height:auto!important\}/,'Reduced motion shows both galleries in natural flow without measured placement');
 assert.match(reducedStyles,/\.plant-land-glass \.plant-land-thumbnails>figure\{aspect-ratio:3\/2;height:auto\}/);
 assert(source.includes('const traitProgress = reduced.matches ? 1 : clamp(traitsStory.progress * 4.6 / 1.8)'));
 assert(source.includes('smoothstep(1.8 / 4.6,2 / 4.6,traitsStory.progress)'));
 assert(source.includes('clamp((traitsStory.progress * 4.6 - 2) / 2.6)'));
-console.log(`PASS: planting arithmetic at ${viewports.length} viewports with regular/doubled copy height and reduced motion; natural cultivar heading, released upstream covers and motion-free final capacity; compact chapter budget, state sequence, hash measurement and reduced-motion flow preserved. Node checks are not browser visual proof.`);
+console.log(`PASS: planting arithmetic in ${viewports.length*4} cases (${viewports.length} viewports, regular/doubled copy and reduced motion); landscape crop, single-row photo states, non-overlapping copy, exact content-based stage bottom and tall-screen opening-media clipping; natural heading, released covers, final capacity, compact budget and state sequence preserved. Node checks are not browser visual proof.`);

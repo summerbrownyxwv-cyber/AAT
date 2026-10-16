@@ -81,7 +81,16 @@ assert.match(style, /inline-size:\.84em/); assert.match(style, /:hover,:focus-vi
 assert.match(style, /\.more-link,\.xu-detail-link\.site-link-arrow-host\{[^}]*align-items:flex-end[^}]*min-height:calc\(44 \* var\(--wide-u\)\)[^}]*padding:0 0 calc\(4 \* var\(--wide-u\)\)[^}]*font:400[^}]*\/1\.2 var\(--display\)/);
 assert.match(style, /\.more-link>\.site-link-arrow,\.xu-detail-link\.site-link-arrow-host>\.site-link-arrow\{align-self:flex-end;margin-bottom:\.18em\}/);
 const experience = await readFile(new URL('../site-experience.css', import.meta.url), 'utf8');
+const ctaFeedback = experience.split('\n').find(line => line.startsWith(':is(.xunai-content .pill-button,'));
+assert.ok(ctaFeedback, 'Shared action CTAs have a scoped interaction theme');
+for (const selector of ['.xunai-content .pill-button','.cooperation-services-apply','.form-actions','.form-ready-actions','.xo-ready-actions','.filter-button',':not(:disabled)',':not([aria-disabled="true"])',':is(:hover,:focus-visible,:active)']) assert.ok(ctaFeedback.includes(selector), selector);
+assert.ok(ctaFeedback.endsWith('{background:var(--cream);color:var(--ink);border-color:var(--line-strong)}'));
+assert.doesNotMatch(ctaFeedback, /more-link|xu-detail-link|contact-row|menu-toggle|site-drawer|product-detail-card|\[aria-pressed|\[role=tab/, 'Other control semantics and transparent text links keep their own states');
+assert.match(style, /\.more-link:is\(:hover,:focus-visible\)[^{]*\{[^}]*background:transparent/);
+const cooperationStyle = await readFile(new URL('../products-cooperation-services.css', import.meta.url), 'utf8');
+assert.match(cooperationStyle, /\.cooperation-services-apply:not\(\[aria-disabled="true"\]\):is\(:hover,:focus-visible,:active\)\{border-color:var\(--line-strong\);background:var\(--cream\);color:var\(--ink\)\}/);
+for (const page of ['index','company','planting','products','service','ai','contact']) assert.ok((await readFile(new URL(`../${page}.html`, import.meta.url), 'utf8')).includes('href="./site-experience.css"'), `${page} loads shared action feedback`);
 assert.match(experience, /summary>\.site-disclosure-toggle::before[^}]*height:1px/);
 assert.match(experience, /details\[open\]>summary>\.site-disclosure-toggle::after\{opacity:0\}/);
 assert.doesNotMatch(source, /site-drawer-close|data-xr-close|menu-toggle/);
-console.log('PASS: shared homepage text-link typography/rule spacing, original arrow geometry, thin native disclosure states, preserved links/content, static/dynamic idempotence, self-observer filtering and BFCache lifecycle.');
+console.log('PASS: shared homepage text links/arrows; cream CTA hover/focus/active feedback with disabled guards on all seven pages; thin native disclosure states, preserved links/content, static/dynamic idempotence, self-observer filtering and BFCache lifecycle.');

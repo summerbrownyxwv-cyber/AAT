@@ -15,7 +15,20 @@
 #service-cooperation .xf-cta h2,
 #service-cooperation .xf-cta p{color:#000;text-shadow:none}
 #service-cooperation .xf-cta .pill-button{border-radius:var(--radius);background:#fff;color:#000;border-color:#fff}
-#service-cooperation .xf-cta .pill-button:is(:hover,:focus-visible){background:#fff;color:#000;border-color:#fff}
+#service-cooperation .xf-cta .pill-button:not(:disabled):not([aria-disabled="true"]):is(:hover,:focus-visible,:active){background:var(--cream);color:var(--ink);border-color:var(--line-strong)}
+
+/* Franchise annotations only change UI colors; the application route keeps its own theme. */
+#main-content .xj-page:not(.xj-application){--xj-muted:var(--muted);--xj-line:var(--line)}
+#main-content .xj-page:not(.xj-application) .xj-dark{background:var(--cream);color:var(--ink)}
+#main-content .xj-page:not(.xj-application) .xj-hero{background:var(--cream)}
+#main-content .xj-page:not(.xj-application) .xj-hero::after{display:none;background:none}
+#main-content .xj-page:not(.xj-application) .pill-button{background:var(--cream);color:var(--ink);border-color:var(--cream)}
+#main-content .xj-page:not(.xj-application) .pill-button:not(:disabled):not([aria-disabled="true"]):is(:hover,:focus-visible,:active){background:var(--cream);color:var(--ink);border-color:var(--line-strong)}
+#main-content .xj-page:not(.xj-application) .xj-contact-cta .pill-button{background:transparent;color:#000;border-color:var(--line)}
+#main-content .xj-page:not(.xj-application) .xj-process li button{color:var(--muted)}
+#main-content .xj-page:not(.xj-application) .xj-process li.is-current button,
+#main-content .xj-page:not(.xj-application) .xj-process li button:is(:hover,:focus-visible){color:var(--ink)}
+#main-content .xj-page:not(.xj-application) .xj-dark :is(a,summary):focus-visible{outline-color:var(--ink)}
 
 /* Each store is one content-height sheet; the shared cover must not pad it to the viewport. */
 #main-content .xs-page>.xs-section{padding-block:clamp(40px,4.5vw,120px)}

@@ -40,7 +40,7 @@
 .cooperation-services-quality h2{font-size:clamp(calc(30 * var(--wide-u)),3.2vw,calc(44 * var(--wide-u)));line-height:1.5;text-wrap:balance}
 .cooperation-services-quality-copy>p{max-width:34ch;margin-top:calc(26 * var(--wide-u));font-size:clamp(calc(16 * var(--wide-u)),1.35vw,calc(19 * var(--wide-u)));line-height:1.9}
 .cooperation-services-apply{display:inline-flex;align-items:center;justify-content:space-between;gap:calc(48 * var(--wide-u));min-height:calc(56 * var(--wide-u));margin-top:calc(34 * var(--wide-u));padding:calc(13 * var(--wide-u)) calc(22 * var(--wide-u));border:1px solid var(--line-strong);border-radius:var(--radius);background:#fff;color:var(--ink);font:400 calc(18 * var(--wide-u))/1.5 var(--display);text-decoration:none;transition:background 220ms var(--ease),border-color 220ms var(--ease),color 220ms var(--ease)}
-.cooperation-services-apply:hover{border-color:var(--ink);background:var(--ink);color:#fff}
+.cooperation-services-apply:not([aria-disabled="true"]):is(:hover,:focus-visible,:active){border-color:var(--line-strong);background:var(--cream);color:var(--ink)}
 .cooperation-services-certificates{justify-self:center;width:100%;max-width:calc(400 * var(--wide-u))}
 .cooperation-services-certificates h3{margin-bottom:calc(26 * var(--wide-u));font-size:calc(18 * var(--wide-u));line-height:1.5}
 .cooperation-services-certificate-logos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;gap:clamp(calc(16 * var(--wide-u)),2vw,calc(32 * var(--wide-u)))}

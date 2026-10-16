@@ -1,6 +1,9 @@
 @import './site-link-arrows.css';
 @import './site-footer.css';
 
+/* Action CTAs share color feedback; navigation, cards and disclosure controls keep their own states. */
+:is(.xunai-content .pill-button,.cooperation-services-apply,.xunai-content :is(.form-actions,.form-ready-actions,.xo-ready-actions) .filter-button):not(:disabled):not([aria-disabled="true"]):is(:hover,:focus-visible,:active){background:var(--cream);color:var(--ink);border-color:var(--line-strong)}
+
 /* Native disclosure controls share a one-CSS-pixel stroke, including store rows. */
 .xunai-content summary.site-disclosure-summary::before,.xunai-content summary.site-disclosure-summary::after{display:none!important}
 .xunai-content summary>.site-disclosure-toggle{position:relative;display:block;flex:0 0 1.125rem;width:1.125rem;height:1.125rem;min-width:1.125rem;margin-left:auto;transform:none!important}

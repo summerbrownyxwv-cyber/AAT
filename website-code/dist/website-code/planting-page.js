@@ -19,8 +19,9 @@ document.querySelector('#planting-content').innerHTML = `
   <section id="land" class="plant-land" data-scroll-story="land"><div class="plant-land-stage">
     <h2 class="plant-land-heading">土地与基地</h2>
     <div class="plant-land-canvas"><figure class="plant-land-photo">${image('28470.webp', '标准化种植基地的艾草田与采收团队')}<div id="greenhouse" class="plant-greenhouse-photo">${image('bceb2.webp', '艾草育苗恒温研究所的玻璃温室')}</div></figure></div>
-    <aside class="plant-land-aside plant-land-field"><h3>标准化种植基地</h3><p>艾艾贴与中国中医科学院中药研究合作，共建标准化艾草种植基地，同时制定艾叶无公害栽培生产规范和无公害技术标准，从源头上确保艾叶基因优良，严格把控原材料品质。该基地是蕲春县最为平整的地块之一，远离城市污染、空气清新、土壤肥沃且富含有机质，为艾草提供了最佳的生长条件。</p><div class="plant-land-thumbnails">${landThumbnail('f80d1.webp', '种植基地田间作业')}${landThumbnail('3ecaa.webp', '蕲优一号艾草采收')}${landThumbnail('4ba9f.webp', '艾草育苗研究基地')}</div></aside>
-    <aside class="plant-land-aside plant-land-glass"><div class="plant-land-thumbnails">${landThumbnail('4fb37.webp', '夕阳下的艾草育苗研究所')}${landThumbnail('bceb2.webp', '恒温玻璃温室')}</div></aside>
+    <aside class="plant-land-aside plant-land-field"><h3>标准化种植基地</h3><p>艾艾贴与中国中医科学院中药研究合作，共建标准化艾草种植基地，同时制定艾叶无公害栽培生产规范和无公害技术标准，从源头上确保艾叶基因优良，严格把控原材料品质。该基地是蕲春县最为平整的地块之一，远离城市污染、空气清新、土壤肥沃且富含有机质，为艾草提供了最佳的生长条件。</p></aside>
+    <div class="plant-land-gallery plant-land-field-gallery"><div class="plant-land-thumbnails">${landThumbnail('f80d1.webp', '种植基地田间作业')}${landThumbnail('3ecaa.webp', '蕲优一号艾草采收')}${landThumbnail('4ba9f.webp', '艾草育苗研究基地')}</div></div>
+    <div class="plant-land-gallery plant-land-glass"><div class="plant-land-thumbnails">${landThumbnail('4fb37.webp', '夕阳下的艾草育苗研究所')}${landThumbnail('bceb2.webp', '恒温玻璃温室')}</div></div>
   </div></section>
   <div class="plant-cultivar cream">
     <div class="plant-cultivar-chapter"><h2 class="plant-cultivar-title plant-shell">从蕲优一号开始</h2>
@@ -93,14 +94,16 @@ function measure() {
   land.section.style.setProperty('--land-aside-width',`${contentWidth * .2327}px`);
   const fieldWidth = landField.clientWidth;
   const fieldGap = parseFloat(getComputedStyle(landField).rowGap) || 0;
-  const thumbnailGap = parseFloat(getComputedStyle(landField.querySelector('.plant-land-thumbnails')).rowGap) || 0;
+  const thumbnailGap = parseFloat(getComputedStyle(land.section.querySelector('.plant-land-field-gallery .plant-land-thumbnails')).rowGap) || 0;
   const fieldCopyHeight = landField.querySelector('h3').offsetHeight + landField.querySelector('p').offsetHeight + fieldGap;
-  const fieldThumbnailsHeight = (fieldWidth-2*thumbnailGap)/3*2/3;
-  const fieldAfterPhoto = 24*unit+fieldCopyHeight+fieldGap+fieldThumbnailsHeight+18*unit;
+  const finalTop = narrow ? 64 : 48*unit+land.section.querySelector('.plant-land-heading').offsetHeight;
+  const finalHeight = finalWidth * 404 / 869;
+  const thumbnailsWidth = narrow ? fieldWidth : finalWidth;
+  const thumbnailHeight = (thumbnailsWidth-2*thumbnailGap)/3*2/3;
+  const asideTop = narrow ? finalTop+finalHeight+24*unit : 24*unit;
+  const thumbnailsTop = narrow ? asideTop+fieldCopyHeight+fieldGap : finalTop+finalHeight+24*unit;
   land.stage.style.height = '';
-  const thumbnailHeight = narrow ? fieldThumbnailsHeight : fieldWidth*2/3;
-  const sidebarHeight = 24*unit+fieldCopyHeight+fieldGap+thumbnailHeight*3+thumbnailGap*2+24*unit;
-  if (!reduced.matches) land.stage.style.height = `${narrow ? 64+finalWidth*404/869+fieldAfterPhoto : Math.max(land.stage.offsetHeight,sidebarHeight)}px`;
+  if (!reduced.matches) land.stage.style.height = `${Math.max(asideTop+fieldCopyHeight,thumbnailsTop+thumbnailHeight)+24*unit}px`;
   if (innerHeight <= 560) research.stage.querySelectorAll('figure').forEach(photo => { photo.style.cssText = ''; });
   stories.forEach(item => {
     const distance = {land:1.35,research:.55}[item.section.dataset.scrollStory];
@@ -137,16 +140,12 @@ function measure() {
   composition.travel = reduced.matches ? 0 : traitsStory.travel * 2.6 / 4.6;
   composition.section.dataset.chapterScroll = String(traitsStory.start + traitsStory.travel * 3.45 / 4.6);
   const height = land.stage.clientHeight;
-  const finalTop = narrow ? 64 : 48*unit+land.section.querySelector('.plant-land-heading').offsetHeight;
-  const finalHeight = finalWidth * 404 / 869;
   landGeometry = {width,height,fullHeight:available,left,finalWidth,finalHeight,finalTop,top,overflow:Math.max(0,height-available)};
-  const asideTop = narrow ? finalTop+finalHeight+24*unit : 24*unit;
-  const thumbnailsTop = asideTop+fieldCopyHeight+fieldGap;
-  const thumbnailsHeight = narrow ? fieldThumbnailsHeight : thumbnailHeight*3+thumbnailGap*2;
   land.section.style.setProperty('--land-aside-top',`${asideTop}px`);
+  land.section.style.setProperty('--land-thumbnails-left',`${left}px`);
+  land.section.style.setProperty('--land-thumbnails-width',`${thumbnailsWidth}px`);
   land.section.style.setProperty('--land-thumbnails-top',`${thumbnailsTop}px`);
-  land.section.style.setProperty('--land-thumbnails-height',`${thumbnailsHeight}px`);
-  land.section.style.setProperty('--land-glass-height',`${narrow ? thumbnailHeight : thumbnailHeight*2+thumbnailGap}px`);
+  land.section.style.setProperty('--land-thumbnails-height',`${thumbnailHeight}px`);
   const researchWidth = research.stage.clientWidth, researchHeight = research.stage.clientHeight, ratio = 361 / 244;
   research.section.style.setProperty('--research-copy-top', `${titleBottom + 24*unit}px`);
   const copyEnd = research.section.querySelector('.plant-research-copy').offsetTop + research.section.querySelector('.plant-research-copy').offsetHeight;
@@ -185,7 +184,7 @@ function render(time) {
   land.section.style.setProperty('--land-copy',smoothstep(.28,.42,p));
   land.section.style.setProperty('--land-glass',glass);
   land.section.querySelector('.plant-land-field').setAttribute('aria-hidden',String(!reduced.matches && p < .28));
-  land.section.querySelector('.plant-land-field .plant-land-thumbnails').setAttribute('aria-hidden',String(!reduced.matches && p > .86));
+  land.section.querySelector('.plant-land-field-gallery').setAttribute('aria-hidden',String(!reduced.matches && (p < .28 || p > .86)));
   land.section.querySelector('.plant-land-glass').setAttribute('aria-hidden',String(!reduced.matches && p < .62));
   const researchP = smoothstep(.08,.88,research.progress);
   research.section.style.setProperty('--research-progress',researchP);

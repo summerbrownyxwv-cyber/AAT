@@ -3,11 +3,11 @@ import { GLTFLoader } from './vendor/loaders/GLTFLoader.js';
 import { RoomEnvironment } from './vendor/environments/RoomEnvironment.js';
 
 export const products = [
-  { label: '精华帖', url: '../assets/models/five-petal.glb', series: '艾艾贴-温系列' },
-  { label: '艾灸器', url: '../assets/models/moxibustion-device.glb', series: '温系列' },
-  { label: '艾草纯露', url: '../assets/models/hydrosol-98ml.glb', series: '萃系列' },
-  { label: '艾草精油', url: '../assets/models/essential-oil-30ml.glb', series: '萃系列' },
-  { label: '艾条', url: '../assets/models/moxa-stick-40mm.glb', series: '燃系列' },
+  { label: '精华帖', url: '../assets/models/five-petal.glb', image: '../assets/models/five-petal-front.webp', series: '艾艾贴-温系列' },
+  { label: '艾灸器', url: '../assets/models/moxibustion-device.glb', image: '../assets/models/moxibustion-device-front.webp', series: '温系列' },
+  { label: '艾草纯露', url: '../assets/models/hydrosol-98ml.glb', image: '../assets/models/hydrosol-98ml-front.webp', series: '萃系列' },
+  { label: '艾草精油', url: '../assets/models/essential-oil-30ml.glb', image: '../assets/models/essential-oil-30ml-front.webp', series: '萃系列' },
+  { label: '艾条', url: '../assets/models/moxa-stick-40mm.glb', image: '../assets/models/moxa-stick-40mm-front.webp', series: '燃系列' },
 ];
 
 /**
@@ -88,6 +88,7 @@ export async function createProductScene(container) {
   const models = Array(products.length).fill(null);
   const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
   let progress = 0;
+  let rotation = null;
   let aspect = 1;
   let frame = 0;
   let destroyed = false;
@@ -105,7 +106,9 @@ export async function createProductScene(container) {
   function update() {
     const index = Math.min(Math.floor(progress), products.length - 1);
     const fraction = progress - index;
-    const turn = motionPreference.matches ? 0 : fraction * Math.PI * 2;
+    const turn = motionPreference.matches ? 0 : rotation ?? fraction * Math.PI * 2;
+    const fallback = container.querySelector('.product-fallback');
+    if (fallback) fallback.hidden = Boolean(models[index]);
     models.forEach((model, i) => {
       if (!model) return;
       model.visible = i === index;
@@ -234,6 +237,11 @@ export async function createProductScene(container) {
       if (next === progress) return;
       progress = next;
       update();
+    },
+    setRotation(value) {
+      if (value === rotation) return;
+      rotation = value;
+      if (models[Math.floor(progress)]) update();
     },
     destroy() {
       destroyed = true;
