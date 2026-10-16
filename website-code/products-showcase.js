@@ -20,7 +20,7 @@ export function renderShowcase() {
 }
 
 export function createCarouselMotion(render, reduced = () => false) {
-  let position = 0, target = 0, velocity = 0, frame = 0, lastTime = 0, sampleTime = 0, dragging = false;
+  let position = 0, target = 0, origin = 0, velocity = 0, frame = 0, lastTime = 0, sampleTime = 0, dragging = false;
   const stop = () => { cancelAnimationFrame(frame); frame = 0; };
   const tick = now => {
     const dt = Math.min(.032, Math.max(.001, (now - lastTime) / 1000)); lastTime = now;
@@ -37,16 +37,17 @@ export function createCarouselMotion(render, reduced = () => false) {
   };
   return {
     get position() { return position; },
-    begin() { stop(); dragging = true; velocity = 0; sampleTime = performance.now(); return position; },
+    begin() { stop(); dragging = true; origin = position; velocity = 0; sampleTime = performance.now(); return position; },
     drag(next) {
       const now = performance.now(), dt = Math.max(8, now - sampleTime);
       velocity = velocity * .25 + (next - position) / dt * 750;
       position = target = next; sampleTime = now; render(position);
     },
-    end() {
+    end(minimumStep = 0) {
       if (!dragging) return; dragging = false;
       if (performance.now() - sampleTime > 90) velocity = 0;
       target = Math.round(position + Math.max(-.85, Math.min(.85, velocity * .14)));
+      if (minimumStep && (target - Math.round(origin)) * minimumStep < 1) target = Math.round(origin) + minimumStep;
       settle();
     },
     step(direction) { dragging = false; target = Math.round(target) + direction; settle(); },
@@ -58,8 +59,8 @@ export function createCarouselMotion(render, reduced = () => false) {
 export function bindCarouselInput(element, motion, distance, direction = () => 1) {
   const controller = new AbortController();
   const on = (target, type, listener, options = {}) => target.addEventListener(type, listener, { ...options, signal: controller.signal });
-  let gesture, wheelTimer = 0, wheelActive = false, suppressClickUntil = 0;
-  const finishWheel = () => { clearTimeout(wheelTimer); if (wheelActive) { wheelActive = false; motion.end(); } };
+  let gesture, wheelTimer = 0, wheelActive = false, wheelTravel = 0, suppressClickUntil = 0;
+  const finishWheel = () => { clearTimeout(wheelTimer); if (wheelActive) { wheelActive = false; motion.end(Math.abs(wheelTravel) >= 12 ? Math.sign(wheelTravel) * direction() : 0); } };
   const reset = () => {
     const pointer = gesture; gesture = null;
     element.classList.remove('is-dragging');
@@ -67,24 +68,31 @@ export function bindCarouselInput(element, motion, distance, direction = () => 1
   };
   on(element, 'pointerdown', event => {
     if (!event.isPrimary || (event.pointerType === 'mouse' && event.button !== 0) || event.target.closest('[data-carousel-prev],[data-carousel-next],[data-series-select],a,input,textarea,select')) return;
-    finishWheel(); gesture = { id: event.pointerId, x: event.clientX, y: event.clientY, axis: null };
+    finishWheel(); gesture = { id: event.pointerId, x: event.clientX, y: event.clientY, type: event.pointerType, axis: null, dx: 0 };
   });
   on(element, 'pointermove', event => {
     if (!gesture || gesture.id !== event.pointerId) return;
     const dx = event.clientX - gesture.x, dy = event.clientY - gesture.y;
-    if (!gesture.axis && Math.max(Math.abs(dx), Math.abs(dy)) > 8) {
-      gesture.axis = Math.abs(dx) > Math.abs(dy) * 1.1 ? 'x' : 'y';
+    if (!gesture.axis && Math.max(Math.abs(dx), Math.abs(dy)) > 4) {
+      if (Math.abs(dx) > Math.abs(dy) * 1.15) gesture.axis = 'x';
+      else if (Math.abs(dy) > Math.abs(dx) * 1.15) gesture.axis = 'y';
       if (gesture.axis === 'x') { gesture.start = motion.begin(); element.setPointerCapture(event.pointerId); element.classList.add('is-dragging'); }
     }
     if (gesture.axis !== 'x') return;
+    gesture.dx = dx;
     event.preventDefault(); motion.drag(gesture.start - dx / distance() * direction());
   }, { passive: false });
   const finishPointer = event => {
     if (!gesture || gesture.id !== event.pointerId) return;
-    if (gesture.axis === 'x') { suppressClickUntil = Date.now() + 250; motion.end(); }
+    if (gesture.axis === 'x') {
+      const minimum = gesture.type === 'mouse' ? 12 : 18;
+      const step = event.type === 'pointercancel' ? 0 : Math.abs(gesture.dx) >= minimum ? -Math.sign(gesture.dx) * direction() : 0;
+      suppressClickUntil = Date.now() + 250; motion.end(step);
+    }
     reset();
   };
-  on(element, 'pointerup', finishPointer); on(element, 'pointercancel', finishPointer); on(element, 'lostpointercapture', finishPointer);
+  on(element, 'pointerup', finishPointer); on(element, 'pointercancel', finishPointer);
+  on(element, 'lostpointercapture', event => { if (event.target === element) finishPointer(event); });
   on(element, 'click', event => {
     if (Date.now() >= suppressClickUntil) return;
     event.preventDefault(); event.stopImmediatePropagation();
@@ -96,7 +104,8 @@ export function bindCarouselInput(element, motion, distance, direction = () => 1
     const delta = (horizontal ? event.deltaX : event.deltaY) * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? element.clientWidth : 1);
     if (!delta) return;
     event.preventDefault();
-    if (!wheelActive) { motion.begin(); wheelActive = true; }
+    if (!wheelActive) { motion.begin(); wheelActive = true; wheelTravel = 0; }
+    wheelTravel += delta;
     motion.drag(motion.position + delta / distance() * direction());
     clearTimeout(wheelTimer); wheelTimer = setTimeout(finishWheel, 100);
   }, { passive: false });

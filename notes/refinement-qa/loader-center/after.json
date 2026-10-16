@@ -1,0 +1,170 @@
+[
+  {
+    "width": 390,
+    "height": 844,
+    "states": [
+      {
+        "progress": "0.0000",
+        "fill": "none",
+        "centerOpacity": "0",
+        "emblemOpacity": "0",
+        "orbitLines": 180,
+        "petalCount": 5,
+        "seedLogo": true,
+        "overflow": 0
+      },
+      {
+        "progress": "0.5499",
+        "fill": "none",
+        "centerOpacity": "0",
+        "emblemOpacity": "0",
+        "orbitLines": 180,
+        "petalCount": 5,
+        "seedLogo": true,
+        "overflow": 0
+      },
+      {
+        "progress": "0.7999",
+        "fill": "none",
+        "centerOpacity": "0",
+        "emblemOpacity": "0",
+        "orbitLines": 180,
+        "petalCount": 5,
+        "seedLogo": true,
+        "overflow": 0
+      }
+    ],
+    "finished": {
+      "loaderRemoved": true,
+      "mainInert": false,
+      "videoControls": false
+    },
+    "errors": []
+  },
+  {
+    "width": 698,
+    "height": 1080,
+    "states": [
+      {
+        "progress": "0.0000",
+        "fill": "none",
+        "centerOpacity": "0",
+        "emblemOpacity": "0",
+        "orbitLines": 180,
+        "petalCount": 5,
+        "seedLogo": true,
+        "overflow": 0
+      },
+      {
+        "progress": "0.5500",
+        "fill": "none",
+        "centerOpacity": "0",
+        "emblemOpacity": "0",
+        "orbitLines": 180,
+        "petalCount": 5,
+        "seedLogo": true,
+        "overflow": 0
+      },
+      {
+        "progress": "0.7999",
+        "fill": "none",
+        "centerOpacity": "0",
+        "emblemOpacity": "0",
+        "orbitLines": 180,
+        "petalCount": 5,
+        "seedLogo": true,
+        "overflow": 0
+      }
+    ],
+    "finished": {
+      "loaderRemoved": true,
+      "mainInert": false,
+      "videoControls": false
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "states": [
+      {
+        "progress": "0.0000",
+        "fill": "none",
+        "centerOpacity": "0",
+        "emblemOpacity": "0",
+        "orbitLines": 180,
+        "petalCount": 5,
+        "seedLogo": true,
+        "overflow": 0
+      },
+      {
+        "progress": "0.5500",
+        "fill": "none",
+        "centerOpacity": "0",
+        "emblemOpacity": "0",
+        "orbitLines": 180,
+        "petalCount": 5,
+        "seedLogo": true,
+        "overflow": 0
+      },
+      {
+        "progress": "0.7999",
+        "fill": "none",
+        "centerOpacity": "0",
+        "emblemOpacity": "0",
+        "orbitLines": 180,
+        "petalCount": 5,
+        "seedLogo": true,
+        "overflow": 0
+      }
+    ],
+    "finished": {
+      "loaderRemoved": true,
+      "mainInert": false,
+      "videoControls": false
+    },
+    "errors": []
+  },
+  {
+    "width": 3840,
+    "height": 2160,
+    "states": [
+      {
+        "progress": "0.0000",
+        "fill": "none",
+        "centerOpacity": "0",
+        "emblemOpacity": "0",
+        "orbitLines": 180,
+        "petalCount": 5,
+        "seedLogo": true,
+        "overflow": 0
+      },
+      {
+        "progress": "0.5500",
+        "fill": "none",
+        "centerOpacity": "0",
+        "emblemOpacity": "0",
+        "orbitLines": 180,
+        "petalCount": 5,
+        "seedLogo": true,
+        "overflow": 0
+      },
+      {
+        "progress": "0.7999",
+        "fill": "none",
+        "centerOpacity": "0",
+        "emblemOpacity": "0",
+        "orbitLines": 180,
+        "petalCount": 5,
+        "seedLogo": true,
+        "overflow": 0
+      }
+    ],
+    "finished": {
+      "loaderRemoved": true,
+      "mainInert": false,
+      "videoControls": false
+    },
+    "errors": []
+  }
+]

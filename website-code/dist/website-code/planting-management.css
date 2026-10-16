@@ -1,0 +1,27 @@
+.plant-management{overflow-anchor:none}
+.plant-management-grid{display:grid;grid-template-columns:minmax(0,636fr) minmax(0,312fr) minmax(0,312fr);gap:calc(12 * var(--wide-u));height:var(--management-grid-height,auto);transition:grid-template-columns 760ms var(--ease);align-items:start;align-content:start}
+.plant-management-grid.is-switching .plant-management-detail{visibility:hidden}
+.plant-management-measure{position:absolute;top:0;left:0;height:auto!important;visibility:hidden;pointer-events:none}
+.plant-management-measure,.plant-management-measure *{transition:none!important}
+.plant-management h3{margin-block:calc(18 * var(--wide-u)) calc(12 * var(--wide-u))}
+.plant-management dl{margin-top:calc(24 * var(--wide-u));max-width:calc(379 * var(--wide-u))}
+.plant-management-grid[data-active="1"]{grid-template-columns:minmax(0,312fr) minmax(0,636fr) minmax(0,312fr)}
+.plant-management-grid[data-active="2"]{grid-template-columns:minmax(0,312fr) minmax(0,312fr) minmax(0,636fr)}
+.plant-management-grid article{min-width:0}
+.plant-management-choice{display:block;width:100%;border:0;padding:0;background:none;color:#000;text-align:left;cursor:pointer;font:inherit}
+.plant-management-choice:focus-visible{outline:2px solid var(--ink);outline-offset:calc(5 * var(--wide-u));border-radius:var(--radius)}
+.plant-management-choice figure{aspect-ratio:312/207;transition:aspect-ratio 760ms var(--ease)}
+.plant-management .is-active figure{aspect-ratio:636/430}
+.plant-management-detail[hidden]{display:none}
+.plant-management :is(h3,p,dt,dd){color:#000;text-align:left}
+.plant-management .plant-management-detail dt{font-size:var(--caption)}
+.plant-management .plant-management-detail dd{white-space:normal}
+@media(max-width:900px){
+ .plant-management-grid,.plant-management-grid[data-active="1"],.plant-management-grid[data-active="2"]{grid-template-columns:repeat(2,minmax(0,1fr));gap:calc(28 * var(--wide-u)) calc(16 * var(--wide-u))}
+ .plant-management-grid article{grid-column:auto}
+ .plant-management-grid .is-active{grid-column:1/-1;grid-row:1}
+ .plant-management-grid article:not(.is-active){grid-column:span 1}
+ .plant-management-choice h3{font-size:calc(18 * var(--wide-u))}
+ .plant-management-grid article:not(.is-active) .plant-management-choice h3{font-size:calc(16 * var(--wide-u))}
+}
+@media(prefers-reduced-motion:reduce){.plant-management-grid,.plant-management-choice figure{transition:none}}

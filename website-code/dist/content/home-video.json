@@ -1,0 +1,15 @@
+{
+  "video": "assets/homepage/home-hero.mp4",
+  "poster": "assets/homepage/home-hero-poster.webp",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "framesPerSecond": 25,
+  "sourceBytes": 17532641,
+  "outputBytes": 17516809,
+  "outputSha256": "b8b356cafb948cbd1bfe7c5e9c6d3901c020ccf5bfc6d4c437120adbdc1bf7e3",
+  "originalAndOutputVideoStreamSha256": "eb540fa4d1af67c09ee1f27a5d91e258183b7dd90ebff498910dc08d9144958b",
+  "optimization": "Original H.264 video packets preserved; container metadata cleaned; audio omitted for muted hero; fast-start index moved to beginning. No video re-encoding, resizing or frame-rate change.",
+  "sourceName": "首屏幕.mp4"
+}

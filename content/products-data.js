@@ -20,19 +20,19 @@ export const productSeriesIntro = '从传统艾绒、艾条，到艾草精油、
 
 export const productSeries = [
   {
-    id: 'ran', name: '燃', title: '燃', color: '#955f36', image: assets.ranScene,
+    id: 'ran', name: '燃', title: '燃', color: '#fff', image: assets.ranScene,
     description: '沿承传统明火艾灸与制艾工艺，以艾灸器、艾绒柱、清艾条等不同形态，呈现「燃」系列的艾灸产品。',
   },
   {
-    id: 'cui', name: '萃', title: '萃', color: '#6f712b', image: assets.cuiScene,
+    id: 'cui', name: '萃', title: '萃', color: '#fbf4e3', image: assets.cuiScene,
     description: '从艾叶中提取草本精华，形成精油、纯露等产品。「萃」系列以不同的提取产品形态，延展艾草的日常应用。',
   },
   {
-    id: 'wen', name: '温', title: '温', color: '#955f36', image: assets.wenScene,
+    id: 'wen', name: '温', title: '温', color: '#fff', image: assets.wenScene,
     description: '以自发热与贴敷形态融入日常。「温」系列涵盖艾灸精华贴、腰腹贴、眼贴与足贴，回应不同部位的温敷需求。',
   },
   {
-    id: 'zhi', name: '植', title: '植', color: '#6f712b', image: assets.zhiScene,
+    id: 'zhi', name: '植', title: '植', color: '#fbf4e3', image: assets.zhiScene,
     description: '由艾草贴、艾草足浴包与一日一茶组成，「植」系列探索草本在贴敷、足浴与茶饮中的不同形态，让艾草融入日常生活。',
   },
 ];
@@ -87,7 +87,7 @@ const apparatusDescription = '采用倒流香结构的贴附式艾灸器，以�
 // All product compositions share the original 405 × 520 card coordinate system.
 export const productGroups = [
   {
-    id: 'ran', key: 'ran', title: '燃系列产品', index: '01', color: '#955f36',
+    id: 'ran', key: 'ran', title: '燃系列产品', index: '01', color: '#fff',
     products: [
       {
         id: 'apparatus', name: '艾灸器', description: apparatusDescription, copySource: 'figma-product',
@@ -135,7 +135,7 @@ export const productGroups = [
     ],
   },
   {
-    id: 'cui', key: 'cui', title: '萃系列产品', index: '02', color: '#6f712b',
+    id: 'cui', key: 'cui', title: '萃系列产品', index: '02', color: '#fbf4e3',
     products: [
       {
         id: 'hydrosol', name: '艾草纯露', description: '瓶装艾草纯露，用于日常肌肤养护。以纯露形态呈现草本提取产品，与同系列的精油、精油棒形成不同选择。', copySource: 'product-packaging',
@@ -185,7 +185,7 @@ export const productGroups = [
     ],
   },
   {
-    id: 'wen', key: 'wen', title: '温系列产品', index: '03', color: '#955f36',
+    id: 'wen', key: 'wen', title: '温系列产品', index: '03', color: '#fff',
     products: [
       {
         id: 'essence-patch', name: '艾灸精华贴', description: '「温」系列的自发热贴敷产品，结合艾草精油与温敷形态。采用花形贴片设计，将日常温敷化为轻便的贴敷体验。', copySource: 'product-packaging',
@@ -222,7 +222,7 @@ export const productGroups = [
     ],
   },
   {
-    id: 'zhi', key: 'zhi', title: '植系列产品', index: '04', color: '#6f712b',
+    id: 'zhi', key: 'zhi', title: '植系列产品', index: '04', color: '#fbf4e3',
     products: [
       {
         id: 'wormwood-patch', name: '艾草贴', description: '「植」系列的艾草贴片产品，以盒装与独立贴片呈现。将草本应用延伸至日常贴敷，与足浴包形成不同的护理选择。', copySource: 'product-packaging',

@@ -1,0 +1,18 @@
+#main-content #types{background:var(--cream);color:var(--ink)}
+
+#main-content .xs-hero,
+#main-content .xs-hero-media,
+#main-content .xs-hero-content{background:#fff;color:#000}
+#main-content .xs-hero::after,
+#main-content .xs-hero-media::after,
+#service-cooperation .xf-cta::after{display:none;background:none}
+#main-content .xs-hero .xs-nav,
+#main-content .xs-hero .xs-nav a,
+#main-content .xs-hero .xs-nav>div,
+#main-content .xs-hero .xs-nav>div>span,
+#main-content .xs-hero .xs-nav>div>div{border-color:rgb(0 0 0 / .24);color:inherit}
+#service-cooperation .xf-cta{background:none;color:#fff}
+#service-cooperation .xf-cta h2,
+#service-cooperation .xf-cta p{color:#fff;text-shadow:0 1px 8px rgb(0 0 0 / .45)}
+#service-cooperation .xf-cta .pill-button{border-radius:var(--radius);background:#fff;color:#000;border-color:#fff}
+#service-cooperation .xf-cta .pill-button:is(:hover,:focus-visible){background:#fff;color:#000;border-color:#fff}

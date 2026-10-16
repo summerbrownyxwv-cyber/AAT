@@ -1,6 +1,6 @@
-.planting-page :is(.pf-campus,.pf-technology,.pf-lines,.pf-capacity){color:#fff;background:#955f36;}
+.planting-page :is(.pf-campus,.pf-technology,.pf-lines,.pf-capacity){color:var(--ink);background:#fff;}
 .planting-page :is(.pf-campus,.pf-technology,.pf-capacity){border-radius:var(--radius);}
-.planting-page :is(.pf-technology,.pf-capacity){background:#8a8a32;}
+.planting-page :is(.pf-technology,.pf-capacity){background:var(--cream);}
 .planting-page :is(.pf-campus,.pf-technology,.pf-lines,.pf-capacity) :is(h2,h3){font-family:var(--display);font-weight:400;color:inherit;}
 .planting-page :is(.pf-campus,.pf-technology,.pf-lines,.pf-capacity) h2{font-size:clamp(calc(24 * var(--wide-u)),32 * var(--u),calc(43 * var(--wide-u)));line-height:1.4;}
 .planting-page :is(.pf-campus,.pf-technology,.pf-lines,.pf-capacity) h3,.planting-page .pf-technology .pf-small-heading{font-size:clamp(calc(18 * var(--wide-u)),20 * var(--u),calc(27 * var(--wide-u)));line-height:1.4;}
@@ -16,8 +16,8 @@
 .planting-page .pf-campus-description>p+p{margin-top:calc(27 * var(--u));}
 .planting-page .pf-campus-stats{margin-top:calc(82 * var(--u));}
 .planting-page .pf-stat-list{padding:0;margin-inline:0;margin-bottom:0;}
-.planting-page .pf-stat-list>div{display:flex;align-items:center;justify-content:space-between;gap:calc(16 * var(--wide-u));min-height:calc(52 * var(--u));padding:calc(3 * var(--wide-u)) calc(13 * var(--u));border-top:1px solid rgba(255,255,255,.55);}
-.planting-page .pf-stat-list>div:last-child{border-bottom:1px solid rgba(255,255,255,.55);}
+.planting-page .pf-stat-list>div{display:flex;align-items:center;justify-content:space-between;gap:calc(16 * var(--wide-u));min-height:calc(52 * var(--u));padding:calc(3 * var(--wide-u)) calc(13 * var(--u));border-top:1px solid var(--line);}
+.planting-page .pf-stat-list>div:last-child{border-bottom:1px solid var(--line);}
 .planting-page .pf-stat-list dt{font:400 var(--body)/1.45 var(--display);}
 .planting-page .pf-stat-list dd{flex-shrink:0;margin:0;font:400 clamp(calc(23 * var(--wide-u)),35.172 * var(--u),calc(47 * var(--wide-u)))/1.2 var(--sans);font-variant-numeric:tabular-nums;white-space:nowrap;}
 .planting-page .pf-campus-stats>div{padding-left:calc(72 * var(--u));padding-right:0;}

@@ -1,0 +1,246 @@
+{
+  "date": "2026-10-15",
+  "baseline": "48886fa39b059a88e01bc75ab99dba7acc935db8",
+  "status": "Phase01 audit only,no live tokens changed",
+  "areas": [
+    {
+      "area": "shared CSS feedback",
+      "source": "website-code/site-foundations.css:29,31,87,89",
+      "duration": "220ms",
+      "easing": "cubic-bezier(.22,1,.36,1)",
+      "trigger": "hover/focus/current state",
+      "repeat": "on state change"
+    },
+    {
+      "area": "site navigation underline",
+      "source": "website-code/site-navigation.css:12",
+      "duration": "180ms",
+      "easing": "cubic-bezier(.2,0,0,1)",
+      "trigger": "hover/focus/current",
+      "repeat": "on state change"
+    },
+    {
+      "area": "site drawer",
+      "source": "website-code/site-navigation.js:17-23;site-navigation.css:19-27",
+      "duration": "400ms",
+      "easing": "cubic-bezier(.16,1,.3,1)",
+      "trigger": "open/close/cancel",
+      "repeat": "on demand"
+    },
+    {
+      "area": "generic body copy",
+      "source": "website-code/site-experience.css:1-8",
+      "duration": "320ms",
+      "easing": "cubic-bezier(.22,1,.36,1)",
+      "trigger": "IntersectionObserver then is-revealed",
+      "repeat": "once per mount"
+    },
+    {
+      "area": "generic photos",
+      "source": "website-code/site-foundations.css:92-94;content-motion.js:24-40",
+      "duration": "opacity760ms;clip/filter980ms;stagger0-275ms",
+      "easing": "cubic-bezier(.22,1,.36,1)",
+      "trigger": "IntersectionObserver threshold.14 rootMargin-10%",
+      "repeat": "once per mount"
+    },
+    {
+      "area": "homepage copy",
+      "source": "website-code/styles.css:20-21;motion.js:147-191",
+      "duration": "360ms",
+      "easing": "cubic-bezier(.22,1,.36,1)",
+      "trigger": "IntersectionObserver or section progress",
+      "repeat": "once per page state"
+    },
+    {
+      "area": "homepage photo carousel",
+      "source": "website-code/motion.js:86-121",
+      "duration": "autoplay4200ms;opacity180ms;swap delay90ms",
+      "easing": "ease / CSS current curve",
+      "trigger": "timer while visible;click",
+      "repeat": "cyclic;pause on hover/focus/manual/hidden/reduced"
+    },
+    {
+      "area": "counters",
+      "source": "website-code/motion.js:124-154;content-motion.js:46-74;company.js:77-95",
+      "duration": "home/generic1600ms;company1300ms",
+      "easing": "1-(1-p)^3",
+      "trigger": "IntersectionObserver visibility threshold",
+      "repeat": "generic once per mount;home resets offscreen"
+    },
+    {
+      "area": "loader flower and cooperation flower",
+      "source": "website-code/loader.js:147-223;products-cooperation.js:21-96",
+      "duration": "scroll driven,not timed",
+      "easing": "critically damped110ms time constant,dt<=64ms",
+      "trigger": "native scroll progress",
+      "repeat": "cooperation reversible;loader removes after commit"
+    },
+    {
+      "area": "loader ambient ornament",
+      "source": "website-code/loader.js:60-105",
+      "duration": "light revolution7600ms;wave420/270ms divisors;hover120ms time constant",
+      "easing": "sin/cos plus exponential follow",
+      "trigger": "visible loader and pointer",
+      "repeat": "RAF untilprogress>=.94/hidden/disposed"
+    },
+    {
+      "area": "product horizontal carousel",
+      "source": "website-code/products-showcase.js:30-111",
+      "duration": "physical settling;no fixed620ms lock",
+      "easing": "critical spring omega14/s,dtclamp.001-.032s",
+      "trigger": "pointer/wheel/keys/click",
+      "repeat": "continuous unbounded position wrapped to product index;wheel ends after100msquiet"
+    },
+    {
+      "area": "product copy change",
+      "source": "website-code/products-page.js:46-55;products-showcase.js:117-124",
+      "duration": "320ms",
+      "easing": "cubic-bezier(.22,1,.36,1)",
+      "trigger": "nearest card changes",
+      "repeat": "prior WAAPI animation cancelled"
+    },
+    {
+      "area": "product catalog cover",
+      "source": "website-code/products-catalog-motion.js:3-109",
+      "duration": "native scroll:read heightoverflow+.22viewportholdmin96px+.85viewportcover",
+      "easing": "exponential follow110ms,dt<=64ms",
+      "trigger": "scroll/hash/resize",
+      "repeat": "reversible;reduced unpins"
+    },
+    {
+      "area": "product hero3D",
+      "source": "website-code/product-hero.js:3-4,42-70;product-scene.js:105-122",
+      "duration": "native scroll progress0-4.98",
+      "easing": "direct mapped model yaw;render scheduled on demand",
+      "trigger": "scroll or product button",
+      "repeat": "one turn per model segment;reduced buttons update without yaw"
+    },
+    {
+      "area": "planting scroll scenes",
+      "source": "website-code/planting-page.js:84-89,136-209",
+      "duration": "land1.35stage,research.55stage,traits4.6stage;follow55ms,cover110ms",
+      "easing": "smoothstep / exp follow",
+      "trigger": "native scroll",
+      "repeat": "reversible;short/reduced fallbacks"
+    },
+    {
+      "area": "plant management",
+      "source": "website-code/planting-management.js:60-94;planting-management.css",
+      "duration": "transitionend,800msfallback;row55msstagger",
+      "easing": "existing CSS --ease",
+      "trigger": "click choice",
+      "repeat": "switch retains reserved max height"
+    },
+    {
+      "area": "company business",
+      "source": "website-code/company-brand.css:58-71;xunai/brand-figma.js:27-45",
+      "duration": "layout620ms;detail220/340/440/620ms;100msdetaildelay",
+      "easing": "cubic-bezier(.22,1,.36,1)",
+      "trigger": "click/Enter/Space;Escapecollapse;arrowsmovefocus",
+      "repeat": "no hover activation"
+    },
+    {
+      "area": "company history",
+      "source": "website-code/xunai/brand-figma.js:90-122",
+      "duration": "browser-native smooth scroll",
+      "easing": "UA native",
+      "trigger": "year/cardclick;mouse drag;native touch/wheel;keys",
+      "repeat": "continuous;reduced usesinstant"
+    },
+    {
+      "area": "AI/service cover",
+      "source": "website-code/section-cover.js:1-67;xunai/content.css:2548-2568",
+      "duration": "native sticky scroll,no JS scroll interception",
+      "easing": "native",
+      "trigger": "native scroll/resize",
+      "repeat": "reversible;desktop long bottompin;mobile long/reduced natural flow"
+    },
+    {
+      "area": "AI ambient orbit",
+      "source": "website-code/xunai/content.css:1432-1443,1475",
+      "duration": "150/180/210s;90/120/160s",
+      "easing": "linear rotation",
+      "trigger": "CSS animation;reduced disables",
+      "repeat": "infinite;offscreenpause selector exists but needs applied xmclass validation"
+    },
+    {
+      "area": "AI certificates",
+      "source": "website-code/xunai/ai-page.js:49-68;xunai/content.css:1406-1425",
+      "duration": "pointer550ms;buttonopacity350ms",
+      "easing": "cubic-bezier(.22,1,.36,1)",
+      "trigger": "click,Left/Right/Home/End,swipe>40px",
+      "repeat": "wrap3tabs;reduced suppresses transition"
+    },
+    {
+      "area": "service strengths/card detail",
+      "source": "website-code/xunai/stores-page.js:172,177-204",
+      "duration": "550ms",
+      "easing": "cubic-bezier(.22,1,.36,1)",
+      "trigger": "clickcard/pager;pointer swipe;keys",
+      "repeat": "cancelcopyprevious;reduced suppressesWAAPI"
+    },
+    {
+      "area": "franchise process",
+      "source": "website-code/xunai/franchise-page.js:39-86;xunai/content.css:2078-2083",
+      "duration": "opacity400ms;wheelstepthrottle450ms",
+      "easing": "existing --x-motion-ease-premium",
+      "trigger": "click/keys/localwheel/touch;mobile accordion",
+      "repeat": "sixstepsclamped;wheelinterceptsinsidefullvisibleprocessonly"
+    },
+    {
+      "area": "OEM/ODM disclosure",
+      "source": "website-code/products-cooperation-services.css:29,39,49,83-85",
+      "duration": "toggle220ms;unfold260ms",
+      "easing": "existing --ease",
+      "trigger": "native details toggle",
+      "repeat": "onopen;reduced disables"
+    }
+  ],
+  "proposed_aliases": [
+    {
+      "name": "motion-duration-fast",
+      "existing": "--motion-quick:180ms",
+      "note": "preserve220mssharedfeedbackasnamedvariant"
+    },
+    {
+      "name": "motion-duration-normal",
+      "existing": "--motion-standard:320ms"
+    },
+    {
+      "name": "motion-duration-slow",
+      "existing": "--motion-scene:620ms",
+      "note": "550/760/980ms scene exceptions remain"
+    },
+    {
+      "name": "motion-easing-standard",
+      "existing": "--ease:cubic-bezier(.22,1,.36,1)"
+    },
+    {
+      "name": "motion-easing-emphasized",
+      "existing": "drawer cubic-bezier(.16,1,.3,1)",
+      "note": "local navigation variant only,not global replacement"
+    }
+  ],
+  "validation": [
+    {
+      "check": "check-home-motion.mjs",
+      "status": "PASS"
+    },
+    {
+      "check": "check-product-carousel-motion.mjs",
+      "status": "PASS"
+    },
+    {
+      "check": "check-company-interactions.mjs",
+      "status": "PASS"
+    },
+    {
+      "check": "check-section-cover.mjs",
+      "status": "PASS"
+    },
+    {
+      "check": "check-honors-cooperation.mjs",
+      "status": "PASS"
+    }
+  ]
+}

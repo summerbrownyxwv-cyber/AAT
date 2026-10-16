@@ -1,0 +1,7 @@
+/* The selected list and expanded certificate determine the section height. */
+.honor-story .honor-groups{display:block;}
+.honor-story .honor-heading{position:sticky;align-self:start;top:calc(var(--site-navigation-height,calc(72 * var(--wide-u))) + calc(24 * var(--wide-u)));}
+.honor-story .honor-group[hidden]{display:none;}
+.honor-story .honor-group::before{display:none;}
+@media(max-width:1023.98px){.honor-story .honor-heading{position:static;}}
+@media(max-height:500px){.honor-story .honor-heading{position:static;}}

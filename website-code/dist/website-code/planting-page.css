@@ -1,0 +1,153 @@
+.planting-page{color:var(--ink);font-family:var(--sans);font-size:var(--body);line-height:1.6875;display:contents}
+body:has(.planting-page){overflow-x:clip;overflow-anchor:none}
+#planting-content,.plant-cultivar{display:contents}
+.plant-shell{margin-inline:var(--left) var(--right)}
+.planting-page h2{font:400 clamp(calc(26 * var(--wide-u)),32 * var(--u),calc(43 * var(--wide-u)))/1.4 var(--display)}
+.planting-page h3{font:400 clamp(calc(18 * var(--wide-u)),20 * var(--u),calc(27 * var(--wide-u)))/1.4 var(--display)}
+.planting-page figure{margin:0;overflow:hidden;border-radius:var(--radius)}
+.planting-page figure>img{width:100%;height:100%;object-fit:cover}
+.planting-page p{margin:0;font-weight:400;line-height:1.6875;text-align:left}
+.planting-page dl{margin:0}
+.planting-page dd{margin:0;font:300 clamp(calc(25 * var(--wide-u)),35.172 * var(--u),calc(47 * var(--wide-u)))/1.4 var(--sans);white-space:nowrap;font-variant-numeric:tabular-nums}
+.planting-page dt{font-family:var(--display);font-size:var(--caption)}
+.planting-page dl>div{display:flex;justify-content:space-between;align-items:center;gap:calc(16 * var(--wide-u));min-height:calc(52 * var(--u));border-top:1px solid var(--line)}
+.planting-page dl>div:last-child{border-bottom:1px solid var(--line)}
+.plant-hero{position:relative;width:100%;aspect-ratio:16/9;max-height:calc(100svh - var(--site-navigation-height));overflow:hidden}
+.plant-hero>img,.plant-hero>video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.plant-cover{position:sticky;top:var(--cover-top);background:var(--cream);isolation:isolate;min-height:0}
+.plant-cover::before{content:"";position:absolute;inset:0;z-index:-1;background:inherit}
+.plant-cover.plant-shell::before{left:calc(-1 * var(--left));right:calc(-1 * var(--right))}
+.plant-land{position:relative;background:#fff;--land-shrink:0;--land-copy:0;--land-glass:0}
+.plant-land-stage,.plant-research-stage,.plant-traits-scene{position:sticky;top:var(--site-navigation-height);height:calc(100svh - var(--site-navigation-height))}
+.plant-land-stage{height:max(calc(580 * var(--wide-u)),740 * var(--u))}
+.plant-research-stage{height:min(calc(100svh - var(--site-navigation-height)),max(calc(500 * var(--wide-u)),680 * var(--u)))}
+.plant-land-heading{position:absolute;left:var(--left);top:calc(24 * var(--wide-u));z-index:2;opacity:var(--land-shrink)}
+.plant-land-canvas{position:absolute;inset:0;height:calc(100svh - var(--site-navigation-height))}
+.plant-land-photo{position:absolute;opacity:0}
+.plant-land-photo>img,.plant-greenhouse-photo,.plant-greenhouse-photo>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.plant-greenhouse-photo{pointer-events:none}
+.plant-land-aside{position:absolute;top:calc(24 * var(--wide-u));bottom:calc(24 * var(--wide-u));right:var(--right);width:calc((100vw - var(--left) - var(--right)) * .2327);display:flex;flex-direction:column;gap:calc(12 * var(--wide-u))}
+.plant-land-field{opacity:calc(var(--land-copy) * (1 - var(--land-glass)));transform:translateY(calc(calc(12 * var(--wide-u)) * (1 - var(--land-copy))));filter:blur(calc(calc(4 * var(--wide-u)) * (1 - var(--land-copy))));clip-path:inset(calc(12% * (1 - var(--land-copy))) 0 0)}
+.plant-land-glass{top:var(--land-photo-top);opacity:var(--land-glass);transform:translateY(calc(calc(12 * var(--wide-u)) * (1 - var(--land-glass))))}
+.plant-land-thumbnails{display:grid;grid-auto-rows:minmax(0,1fr);gap:calc(10 * var(--wide-u));flex:1;min-height:0}
+.plant-land-thumbnails>img{width:100%;height:100%;object-fit:cover;border-radius:var(--radius)}
+.plant-land-glass .plant-land-thumbnails{height:100%;width:100%}
+.plant-cultivar-chapter{position:relative;padding-top:calc(48 * var(--wide-u));background:var(--cream)}
+.plant-cultivar-title{position:sticky;top:calc(var(--site-navigation-height) + calc(48 * var(--wide-u)));z-index:10;text-align:right;margin-top:0;margin-bottom:calc(56 * var(--wide-u));background:var(--cream);pointer-events:none}
+.plant-origin{padding-block:0 calc(48 * var(--wide-u));min-height:0}
+.plant-origin-grid{display:grid;grid-template-columns:minmax(0,975fr) minmax(0,299fr);gap:calc(67 * var(--u));align-items:start}
+.plant-origin-grid figure{position:relative;aspect-ratio:975/500}
+.plant-origin-grid video{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain}
+.plant-origin-grid p+p{margin-top:calc(27 * var(--wide-u))}
+.plant-research{--research-progress:0}
+.plant-research-stage{min-height:0}
+.plant-research-copy{position:absolute;left:0;top:var(--research-copy-top,calc(120 * var(--wide-u)));width:35%;opacity:var(--research-progress);transform:translateY(calc(calc(12 * var(--wide-u)) * (1 - var(--research-progress))));filter:blur(calc(calc(4 * var(--wide-u)) * (1 - var(--research-progress))))}
+.plant-research-copy h3{margin-bottom:calc(20 * var(--wide-u))}
+.plant-research-stage figure{position:absolute;aspect-ratio:361/244;height:auto}
+.plant-research-main{right:0;top:calc(24 * var(--wide-u));width:calc(62% - 33.907% * var(--research-progress));z-index:2}
+.plant-research-secondary{width:28.093%;top:calc(244 * var(--u) + calc(24 * var(--wide-u)));opacity:var(--research-progress);transform:translateY(calc(calc(40 * var(--wide-u)) * (1 - var(--research-progress))))}
+.plant-research-second{left:41.01%}
+.plant-research-third{left:10.51%}
+.plant-traits-stage{position:absolute;inset:0;height:100%;overflow:clip;padding-top:var(--cultivar-content-top);perspective:calc(1000 * var(--wide-u));opacity:calc(1 - var(--composition-phase,0));filter:blur(calc(calc(4 * var(--wide-u)) * var(--composition-phase,0)));clip-path:inset(0 0 calc(12% * var(--composition-phase,0)))}
+.plant-traits h2{font-size:clamp(calc(18 * var(--wide-u)),20 * var(--u),calc(27 * var(--wide-u)))}
+.plant-trait-list{position:absolute;inset:calc(var(--cultivar-content-top) + calc(48 * var(--wide-u))) 0 calc(32 * var(--wide-u)) 13%;perspective:calc(1000 * var(--wide-u));clip-path:inset(0 calc(-64 * var(--wide-u)))}
+.plant-trait-list article{position:absolute;inset:0}
+.plant-trait-copy{position:absolute;left:calc(32 * var(--wide-u));top:50%;width:28%;opacity:0;transform:translateY(calc(-50% + calc(12 * var(--wide-u))));clip-path:inset(12% 0 0);filter:blur(calc(4 * var(--wide-u)));transition:opacity 560ms var(--ease),transform 720ms var(--ease),filter 720ms var(--ease),clip-path 720ms var(--ease);pointer-events:none}
+.plant-trait-list .is-active .plant-trait-copy{opacity:1;transform:translateY(-50%);filter:none;clip-path:inset(0)}
+.plant-flower{width:calc(30 * var(--wide-u));height:auto;object-fit:contain}
+.plant-trait-copy>.plant-flower{position:absolute;right:calc(100% + calc(16 * var(--wide-u)));top:0}
+.plant-trait-list figure{position:absolute;right:0;top:50%;width:36%;aspect-ratio:4/3;height:auto;margin-top:-13.5%;transform-origin:center;backface-visibility:hidden}
+.plant-trait-list h3{margin-bottom:calc(18 * var(--wide-u))}
+.plant-trait-list article:nth-child(3) h3{font-weight:500}
+.plant-trait-list article:nth-child(3) h3{-webkit-text-stroke:.15px currentColor}
+.plant-composition{position:absolute;inset:0;opacity:var(--composition-phase,0);filter:blur(calc(calc(4 * var(--wide-u)) * (1 - var(--composition-phase,0))));clip-path:inset(calc(12% * (1 - var(--composition-phase,0))) 0 0)}
+.plant-composition-stage{height:100%;padding:var(--cultivar-content-top) 0 calc(36 * var(--wide-u)) 13%;display:flex;flex-direction:column}
+.plant-composition-data{flex:1;position:relative;min-height:0}
+.plant-composition-data>dl{height:100%;display:grid;grid-template-rows:repeat(3,minmax(0,1fr))}
+.plant-composition-data dl>div{gap:calc(16 * var(--wide-u));min-height:0;opacity:0}
+.plant-composition-data dt{max-width:30%}
+.plant-composition-data dd{font-family:Optima,var(--sans);font-size:clamp(calc(25 * var(--wide-u)),40 * var(--u),calc(54 * var(--wide-u)));min-width:30%;text-align:right}
+.plant-composition-data .plant-model{position:absolute;top:0;bottom:0;left:28%;width:34%;border-radius:0;overflow:visible;pointer-events:none;z-index:1}
+.plant-model>img{object-fit:contain!important;opacity:1;transition:opacity 320ms var(--ease)}
+.plant-model-canvas{position:absolute;inset:0;opacity:0;transition:opacity 320ms var(--ease)}
+.plant-model.model-ready>img{opacity:0}
+.plant-model.model-ready .plant-model-canvas{opacity:1}
+.plant-model-canvas canvas{display:block;width:100%;height:100%}
+.plant-management{padding-block:calc(40 * var(--wide-u)) calc(96 * var(--wide-u))}
+.plant-management>h2{margin-bottom:calc(56 * var(--wide-u))}
+@media(max-width:900px){
+ .planting-page h2{font-size:calc(28 * var(--wide-u))}.planting-page h3{font-size:calc(20 * var(--wide-u))}.plant-shell{margin-inline:calc(20 * var(--wide-u))}
+ .plant-cover.plant-shell::before{left:calc(-20 * var(--wide-u));right:calc(-20 * var(--wide-u))}
+ .plant-hero{max-height:none;min-height:calc(360 * var(--wide-u));aspect-ratio:4/3}
+ .plant-land-heading{left:calc(20 * var(--wide-u));top:calc(18 * var(--wide-u));font-size:calc(24 * var(--wide-u))}
+ .plant-land-aside{top:var(--land-aside-top);bottom:calc(18 * var(--wide-u));right:calc(20 * var(--wide-u));left:calc(20 * var(--wide-u));width:auto;gap:calc(8 * var(--wide-u))}
+ .plant-land-aside h3{font-size:calc(20 * var(--wide-u))}.plant-land-aside p{font-size:clamp(calc(12 * var(--wide-u)),2.2vw,calc(15 * var(--wide-u)));line-height:1.55}
+ .plant-land-thumbnails{grid-auto-rows:auto;grid-template-columns:repeat(3,minmax(0,1fr));gap:calc(8 * var(--wide-u))}
+ .plant-land-thumbnails>img{aspect-ratio:3/2;height:auto}
+ .plant-land-glass{top:var(--land-aside-top);justify-content:start}
+ .plant-land-glass .plant-land-thumbnails{grid-template-columns:repeat(2,minmax(0,1fr));height:100%;max-height:100%}
+ .plant-cultivar-chapter{padding-top:calc(24 * var(--wide-u))}.plant-cultivar-title{top:calc(var(--site-navigation-height) + calc(24 * var(--wide-u)));text-align:left;margin-bottom:calc(28 * var(--wide-u))}
+ .plant-origin{padding-block:0 calc(48 * var(--wide-u))}.plant-origin-grid{grid-template-columns:1fr;gap:calc(24 * var(--wide-u))}
+ .plant-research-stage{min-height:0}
+ .plant-land-stage{height:calc(100svh - var(--site-navigation-height))}
+ .plant-research-stage{height:min(calc(100svh - var(--site-navigation-height)),max(calc(540 * var(--wide-u)),70vw))}
+ .plant-research-copy{width:100%;max-width:70ch}
+ .plant-research-main{top:calc(180 * var(--wide-u));width:calc(100% - 55% * var(--research-progress))}
+ .plant-research-secondary{width:45%;top:calc(calc(180 * var(--wide-u)) + 32svh)}
+ .plant-research-second{left:51%}.plant-research-third{left:0}
+ .plant-trait-list{inset:calc(var(--cultivar-content-top) + calc(48 * var(--wide-u))) 0 calc(24 * var(--wide-u)) 0}
+ .plant-trait-copy{left:calc(42 * var(--wide-u));top:50%;width:40%}
+ .plant-trait-copy p{font-size:calc(13 * var(--wide-u));line-height:1.65}.plant-trait-copy h3{font-size:calc(18 * var(--wide-u));margin-bottom:calc(12 * var(--wide-u))}
+ .plant-trait-list figure{width:42%;aspect-ratio:4/3;height:auto;top:50%;margin-top:-15.75%}
+ .plant-composition-stage{padding:var(--cultivar-content-top) 0 calc(24 * var(--wide-u)) calc(42 * var(--wide-u))}
+ .plant-composition-data{display:flex;flex-direction:column}
+ .plant-composition-data .plant-model{position:relative;top:auto;bottom:auto;left:auto;width:100%;height:min(34svh,calc((100svh - var(--site-navigation-height) - var(--cultivar-content-top) - calc(24 * var(--wide-u))) * .42));max-height:calc(300 * var(--wide-u));flex-shrink:0}
+ .plant-composition-data>dl{height:auto;flex:1}
+ .plant-composition-data dd{font-size:clamp(calc(18 * var(--wide-u)),4.6vw,calc(32 * var(--wide-u)))}.plant-composition-data dt{font-size:calc(12 * var(--wide-u));max-width:45%}
+ .plant-composition-data dl>div{gap:calc(8 * var(--wide-u))}
+ .plant-management{padding-block:calc(32 * var(--wide-u)) calc(56 * var(--wide-u))}.plant-management>h2{margin-bottom:calc(28 * var(--wide-u))}
+}
+@media(max-height:600px){
+ .plant-cultivar-chapter{padding-top:calc(16 * var(--wide-u))}.plant-cultivar-title{top:calc(var(--site-navigation-height) + calc(16 * var(--wide-u)));margin-bottom:calc(24 * var(--wide-u))}
+}
+@media(max-height:600px) and (prefers-reduced-motion:no-preference){
+ .plant-trait-copy p{font-size:clamp(calc(13 * var(--wide-u)),1.4vw,calc(16 * var(--wide-u)));line-height:1.5}.plant-trait-copy h3{font-size:calc(20 * var(--wide-u));margin-bottom:calc(12 * var(--wide-u))}
+ .plant-trait-list figure{width:min(36%,calc((100svh - var(--site-navigation-height) - var(--cultivar-content-top) - calc(80 * var(--wide-u))) * 4 / 3));margin-top:0;translate:0 -50%}
+ .plant-composition-data dt{line-height:1.3}
+ .plant-composition-data dd{font-size:min(clamp(calc(25 * var(--wide-u)),40 * var(--u),calc(54 * var(--wide-u))),calc((100svh - var(--site-navigation-height) - var(--cultivar-content-top) - calc(36 * var(--wide-u))) / 9));line-height:1.2}
+}
+@media(max-width:900px) and (max-height:600px) and (prefers-reduced-motion:no-preference){
+ .plant-trait-copy{width:42%}.plant-trait-copy h3{font-size:calc(18 * var(--wide-u))}
+ .plant-trait-list figure{width:min(42%,calc((100svh - var(--site-navigation-height) - var(--cultivar-content-top) - calc(72 * var(--wide-u))) * 4 / 3))}
+ .plant-composition-data dd{font-size:min(clamp(calc(18 * var(--wide-u)),4.6vw,calc(32 * var(--wide-u))),calc((100svh - var(--site-navigation-height) - var(--cultivar-content-top) - calc(24 * var(--wide-u))) * .58 / 9))}
+}
+@media(max-height:560px) and (prefers-reduced-motion:no-preference){
+ .plant-research-stage{position:relative;top:0;height:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:calc(24 * var(--wide-u));padding:var(--cultivar-content-top) 0 calc(32 * var(--wide-u))}
+ .plant-research-copy{position:relative;inset:auto;grid-column:1/-1;width:100%;opacity:1;transform:none;filter:none}
+ .plant-research-stage figure{position:relative;inset:auto;width:100%;height:auto;opacity:1;transform:none}
+ .plant-research-main{grid-column:1/-1;max-width:62%;justify-self:end}
+}
+@media(prefers-reduced-motion:reduce){
+ .plant-cultivar-title{position:relative;top:auto}
+ .plant-cover{position:relative;top:auto}.plant-land-stage,.plant-research-stage,.plant-traits-scene,.plant-traits-stage,.plant-composition-stage{position:relative;top:0;height:auto;min-height:0}
+ .plant-traits-stage,.plant-composition{opacity:1!important;filter:none!important;clip-path:none!important}.plant-traits-stage{inset:auto}.plant-composition{position:relative;inset:auto}
+ .plant-land-stage{display:flex;flex-direction:column;gap:calc(24 * var(--wide-u));padding:calc(24 * var(--wide-u)) calc(20 * var(--wide-u))}
+ .plant-land-heading,.plant-land-canvas,.plant-land-photo,.plant-greenhouse-photo,.plant-land-aside{position:relative;inset:auto!important;opacity:1!important;transform:none!important;width:100%!important;height:auto!important}
+ .plant-land-photo{display:flex;flex-direction:column;gap:calc(24 * var(--wide-u));overflow:visible!important}.plant-land-photo>img,.plant-greenhouse-photo>img{position:relative;aspect-ratio:869/404;height:auto;border-radius:var(--radius)}
+ .plant-land-photo img{opacity:1!important;transform:none!important;filter:none!important;clip-path:none!important}
+ .plant-land-thumbnails{grid-template-columns:repeat(3,1fr);grid-auto-rows:auto;height:auto!important}.plant-land-thumbnails>img{aspect-ratio:3/2;height:auto}
+ .plant-research-stage{display:grid;grid-template-columns:1fr 1fr;gap:calc(24 * var(--wide-u));padding:calc(32 * var(--wide-u)) 0;min-height:0}
+ .plant-research-copy{position:relative;inset:auto;width:100%;grid-column:1/-1;opacity:1;transform:none;filter:none}
+ .plant-research-stage figure{position:relative;inset:auto!important;width:100%!important;opacity:1!important;transform:none!important}
+ .plant-research-main{grid-column:1/-1;max-width:62%;justify-self:end}
+ .plant-traits-stage{padding-block:calc(32 * var(--wide-u))}.plant-trait-list{position:relative;inset:auto;margin:calc(32 * var(--wide-u)) 0 0 13%;display:grid;gap:calc(40 * var(--wide-u));clip-path:none}
+ .plant-trait-list article{position:relative;inset:auto;display:grid;grid-template-columns:1fr 1fr;gap:12%}
+ .plant-trait-copy,.plant-trait-list figure{position:relative;inset:auto;width:100%;height:auto;opacity:1!important;transform:none!important;filter:none;clip-path:none}
+ .plant-trait-list figure{aspect-ratio:4/3;margin-top:0}
+ .plant-composition-stage{padding-top:calc(32 * var(--wide-u))}.plant-composition-data{min-height:calc(500 * var(--wide-u))}.plant-composition-data>dl{min-height:calc(500 * var(--wide-u))}.plant-composition-data dl>div{opacity:1;filter:none;transform:none}
+ .plant-composition-data .plant-model{height:34svh}
+ .plant-trait-copy,.plant-model>img,.plant-model-canvas{transition:none}
+}
+
+.plant-composition-stage{gap:calc(12 * var(--wide-u))}
+@media(max-width:600px){.plant-composition-data dt{font-size:calc(13 * var(--wide-u))}.plant-trait-copy p{font-size:calc(14 * var(--wide-u))}}

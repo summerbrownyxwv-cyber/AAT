@@ -1,0 +1,889 @@
+{
+  "generatedAt": "2026-10-15T14:35:43.484Z",
+  "scope": [
+    "assets",
+    "content",
+    "website-code excluding dist"
+  ],
+  "fileCount": 916,
+  "totalSourceBytes": 1077898711,
+  "byType": {
+    "webp": {
+      "files": 520,
+      "bytes": 691841804
+    },
+    "mp4": {
+      "files": 7,
+      "bytes": 328306589
+    },
+    "svg": {
+      "files": 288,
+      "bytes": 632699
+    },
+    "txt": {
+      "files": 2,
+      "bytes": 4385
+    },
+    "woff2": {
+      "files": 6,
+      "bytes": 31886280
+    },
+    "glb": {
+      "files": 6,
+      "bytes": 21603648
+    },
+    "json": {
+      "files": 4,
+      "bytes": 475349
+    },
+    "js": {
+      "files": 43,
+      "bytes": 2588650
+    },
+    "md": {
+      "files": 1,
+      "bytes": 6533
+    },
+    "html": {
+      "files": 8,
+      "bytes": 56236
+    },
+    "css": {
+      "files": 19,
+      "bytes": 450726
+    },
+    "mjs": {
+      "files": 11,
+      "bytes": 43241
+    },
+    "py": {
+      "files": 1,
+      "bytes": 2571
+    }
+  },
+  "byFolder": {
+    "assets": {
+      "files": 828,
+      "bytes": 1074274324
+    },
+    "content": {
+      "files": 7,
+      "bytes": 506551
+    },
+    "website-code": {
+      "files": 81,
+      "bytes": 3117836
+    }
+  },
+  "top20": [
+    {
+      "path": "assets/planting/planting-hero.mp4",
+      "type": "mp4",
+      "bytes": 91317434,
+      "possiblePages": [
+        "website-code/planting.html"
+      ],
+      "video": {
+        "topLevelAtoms": [
+          {
+            "type": "ftyp",
+            "offset": 0,
+            "size": 32
+          },
+          {
+            "type": "moov",
+            "offset": 32,
+            "size": 106289
+          },
+          {
+            "type": "free",
+            "offset": 106321,
+            "size": 8
+          },
+          {
+            "type": "mdat",
+            "offset": 106329,
+            "size": 91211105
+          }
+        ],
+        "fastStart": true,
+        "tracks": [
+          {
+            "type": "vide",
+            "codec": "avc1",
+            "durationSeconds": 291.76666666666665,
+            "framesOrSamples": 8753,
+            "framesPerSecond": 30,
+            "width": 1920,
+            "height": 1080
+          }
+        ],
+        "durationSeconds": 291.76666666666665,
+        "overallBitrate": 2503848.2988689593,
+        "note": "Container metadata only; not a decoded visual-quality measurement."
+      },
+      "firstScreenCritical": {
+        "status": "unknown",
+        "evidence": [
+          {
+            "owner": "website-code/planting.html",
+            "line": 34,
+            "reason": "Hero-related source line; requires viewport confirmation"
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/xunai/ai/ai-demo.mp4",
+      "type": "mp4",
+      "bytes": 89964461,
+      "possiblePages": [
+        "website-code/service.html",
+        "website-code/ai.html",
+        "website-code/contact.html"
+      ],
+      "video": {
+        "topLevelAtoms": [
+          {
+            "type": "ftyp",
+            "offset": 0,
+            "size": 32
+          },
+          {
+            "type": "moov",
+            "offset": 32,
+            "size": 185356
+          },
+          {
+            "type": "free",
+            "offset": 185388,
+            "size": 8
+          },
+          {
+            "type": "mdat",
+            "offset": 185396,
+            "size": 89779065
+          }
+        ],
+        "fastStart": true,
+        "tracks": [
+          {
+            "type": "vide",
+            "codec": "avc1",
+            "durationSeconds": 518.9851333333334,
+            "framesOrSamples": 15554,
+            "framesPerSecond": 29.97002997002997,
+            "width": 1920,
+            "height": 1080
+          }
+        ],
+        "durationSeconds": 518.9851333333334,
+        "overallBitrate": 1386775.1536106942,
+        "note": "Container metadata only; not a decoded visual-quality measurement."
+      },
+      "firstScreenCritical": {
+        "status": "unknown",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/planting/qiyou-one.mp4",
+      "type": "mp4",
+      "bytes": 64487852,
+      "possiblePages": [
+        "website-code/planting.html"
+      ],
+      "video": {
+        "topLevelAtoms": [
+          {
+            "type": "ftyp",
+            "offset": 0,
+            "size": 32
+          },
+          {
+            "type": "moov",
+            "offset": 32,
+            "size": 64621
+          },
+          {
+            "type": "free",
+            "offset": 64653,
+            "size": 8
+          },
+          {
+            "type": "mdat",
+            "offset": 64661,
+            "size": 64423191
+          }
+        ],
+        "fastStart": true,
+        "tracks": [
+          {
+            "type": "vide",
+            "codec": "avc1",
+            "durationSeconds": 128.48,
+            "framesOrSamples": 3212,
+            "framesPerSecond": 25.000000000000004,
+            "width": 1920,
+            "height": 1080
+          },
+          {
+            "type": "soun",
+            "codec": "mp4a",
+            "durationSeconds": 128.59633333333332,
+            "framesOrSamples": 6028,
+            "framesPerSecond": null,
+            "width": null,
+            "height": null
+          }
+        ],
+        "durationSeconds": 128.59633333333332,
+        "overallBitrate": 4011800.3571900707,
+        "note": "Container metadata only; not a decoded visual-quality measurement."
+      },
+      "firstScreenCritical": {
+        "status": "unknown",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/xunai/stores/黑金店体验流程.mp4",
+      "type": "mp4",
+      "bytes": 41704236,
+      "possiblePages": [
+        "website-code/service.html",
+        "website-code/ai.html",
+        "website-code/contact.html"
+      ],
+      "video": {
+        "topLevelAtoms": [
+          {
+            "type": "ftyp",
+            "offset": 0,
+            "size": 32
+          },
+          {
+            "type": "moov",
+            "offset": 32,
+            "size": 20535
+          },
+          {
+            "type": "free",
+            "offset": 20567,
+            "size": 8
+          },
+          {
+            "type": "mdat",
+            "offset": 20575,
+            "size": 41683661
+          }
+        ],
+        "fastStart": true,
+        "tracks": [
+          {
+            "type": "vide",
+            "codec": "avc1",
+            "durationSeconds": 53.06666666666667,
+            "framesOrSamples": 1592,
+            "framesPerSecond": 29.999999999999996,
+            "width": 2730,
+            "height": 1440
+          }
+        ],
+        "durationSeconds": 53.06666666666667,
+        "overallBitrate": 6287070.753768844,
+        "note": "Container metadata only; not a decoded visual-quality measurement."
+      },
+      "firstScreenCritical": {
+        "status": "unknown",
+        "evidence": [
+          {
+            "owner": "website-code/xunai/stores-page.js",
+            "line": 166,
+            "reason": "Hero-related source line; requires viewport confirmation"
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/xunai/brand/imgFrame71.webp",
+      "type": "webp",
+      "bytes": 18415194,
+      "possiblePages": [
+        "website-code/company.html"
+      ],
+      "image": {
+        "width": 4096,
+        "height": 2731,
+        "alpha": false,
+        "encoding": "lossless VP8L",
+        "metadata": [],
+        "chunks": [
+          "VP8L"
+        ]
+      },
+      "firstScreenCritical": {
+        "status": "unknown",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/homepage/home-hero.mp4",
+      "type": "mp4",
+      "bytes": 17516809,
+      "possiblePages": [
+        "website-code/index.html"
+      ],
+      "video": {
+        "topLevelAtoms": [
+          {
+            "type": "ftyp",
+            "offset": 0,
+            "size": 32
+          },
+          {
+            "type": "moov",
+            "offset": 32,
+            "size": 8403
+          },
+          {
+            "type": "free",
+            "offset": 8435,
+            "size": 8
+          },
+          {
+            "type": "mdat",
+            "offset": 8443,
+            "size": 17508366
+          }
+        ],
+        "fastStart": true,
+        "tracks": [
+          {
+            "type": "vide",
+            "codec": "avc1",
+            "durationSeconds": 24.52,
+            "framesOrSamples": 613,
+            "framesPerSecond": 25,
+            "width": 1920,
+            "height": 1080
+          }
+        ],
+        "durationSeconds": 24.52,
+        "overallBitrate": 5715108.972267536,
+        "note": "Container metadata only; not a decoded visual-quality measurement."
+      },
+      "firstScreenCritical": {
+        "status": "unknown",
+        "evidence": [
+          {
+            "owner": "website-code/index.html",
+            "line": 65,
+            "reason": "Hero-related source line; requires viewport confirmation"
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/company/company-hero.mp4",
+      "type": "mp4",
+      "bytes": 16128344,
+      "possiblePages": [
+        "website-code/company.html"
+      ],
+      "video": {
+        "topLevelAtoms": [
+          {
+            "type": "ftyp",
+            "offset": 0,
+            "size": 32
+          },
+          {
+            "type": "moov",
+            "offset": 32,
+            "size": 16815
+          },
+          {
+            "type": "free",
+            "offset": 16847,
+            "size": 8
+          },
+          {
+            "type": "mdat",
+            "offset": 16855,
+            "size": 16111489
+          }
+        ],
+        "fastStart": true,
+        "tracks": [
+          {
+            "type": "vide",
+            "codec": "avc1",
+            "durationSeconds": 52.48,
+            "framesOrSamples": 1312,
+            "framesPerSecond": 25,
+            "width": 1920,
+            "height": 1080
+          }
+        ],
+        "durationSeconds": 52.48,
+        "overallBitrate": 2458589.024390244,
+        "note": "Container metadata only; not a decoded visual-quality measurement."
+      },
+      "firstScreenCritical": {
+        "status": "unknown",
+        "evidence": [
+          {
+            "owner": "website-code/company.html",
+            "line": 35,
+            "reason": "Hero-related source line; requires viewport confirmation"
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/homepage/28470.webp",
+      "type": "webp",
+      "bytes": 15396722,
+      "possiblePages": [
+        "website-code/index.html"
+      ],
+      "image": {
+        "width": 4096,
+        "height": 2729,
+        "alpha": false,
+        "encoding": "lossless VP8L",
+        "metadata": [
+          "ICCP"
+        ],
+        "chunks": [
+          "VP8X",
+          "ICCP",
+          "VP8L"
+        ]
+      },
+      "firstScreenCritical": {
+        "status": "unknown",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/homepage/9f5c0.webp",
+      "type": "webp",
+      "bytes": 14989126,
+      "possiblePages": [
+        "website-code/index.html"
+      ],
+      "image": {
+        "width": 4096,
+        "height": 2731,
+        "alpha": false,
+        "encoding": "lossless VP8L",
+        "metadata": [
+          "ICCP"
+        ],
+        "chunks": [
+          "VP8X",
+          "ICCP",
+          "VP8L"
+        ]
+      },
+      "firstScreenCritical": {
+        "status": "unknown",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/xunai/brand/imgFrame72.webp",
+      "type": "webp",
+      "bytes": 14988644,
+      "possiblePages": [
+        "website-code/company.html"
+      ],
+      "image": {
+        "width": 4096,
+        "height": 2731,
+        "alpha": false,
+        "encoding": "lossless VP8L",
+        "metadata": [],
+        "chunks": [
+          "VP8L"
+        ]
+      },
+      "firstScreenCritical": {
+        "status": "unknown",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/planting/d8707.webp",
+      "type": "webp",
+      "bytes": 14284258,
+      "possiblePages": [
+        "website-code/planting.html"
+      ],
+      "image": {
+        "width": 2731,
+        "height": 4096,
+        "alpha": false,
+        "encoding": "lossless VP8L",
+        "metadata": [
+          "ICCP"
+        ],
+        "chunks": [
+          "VP8X",
+          "ICCP",
+          "VP8L"
+        ]
+      },
+      "firstScreenCritical": {
+        "status": "unknown",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/xunai/brand/imgFrame73.webp",
+      "type": "webp",
+      "bytes": 14283776,
+      "possiblePages": [
+        "website-code/company.html"
+      ],
+      "image": {
+        "width": 2731,
+        "height": 4096,
+        "alpha": false,
+        "encoding": "lossless VP8L",
+        "metadata": [],
+        "chunks": [
+          "VP8L"
+        ]
+      },
+      "firstScreenCritical": {
+        "status": "unknown",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/fonts/oppo-sans.woff2",
+      "type": "woff2",
+      "bytes": 13645776,
+      "possiblePages": [
+        "website-code/index.html",
+        "website-code/company.html",
+        "website-code/planting.html",
+        "website-code/products.html",
+        "website-code/service.html",
+        "website-code/ai.html",
+        "website-code/contact.html"
+      ],
+      "firstScreenCritical": {
+        "status": "explicit-preload",
+        "evidence": [
+          {
+            "owner": "website-code/ai.html",
+            "line": 10,
+            "reason": "Explicit preload declaration"
+          },
+          {
+            "owner": "website-code/company.html",
+            "line": 10,
+            "reason": "Explicit preload declaration"
+          },
+          {
+            "owner": "website-code/contact.html",
+            "line": 10,
+            "reason": "Explicit preload declaration"
+          },
+          {
+            "owner": "website-code/index.html",
+            "line": 10,
+            "reason": "Explicit preload declaration"
+          },
+          {
+            "owner": "website-code/planting.html",
+            "line": 10,
+            "reason": "Explicit preload declaration"
+          },
+          {
+            "owner": "website-code/products.html",
+            "line": 10,
+            "reason": "Explicit preload declaration"
+          },
+          {
+            "owner": "website-code/service.html",
+            "line": 10,
+            "reason": "Explicit preload declaration"
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/xunai/fonts/oppo-sans.woff2",
+      "type": "woff2",
+      "bytes": 13645776,
+      "possiblePages": [
+        "website-code/company.html",
+        "website-code/service.html",
+        "website-code/ai.html",
+        "website-code/contact.html"
+      ],
+      "firstScreenCritical": {
+        "status": "unknown",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/xunai/brand/imgFrame74.webp",
+      "type": "webp",
+      "bytes": 13164498,
+      "possiblePages": [
+        "website-code/company.html"
+      ],
+      "image": {
+        "width": 2731,
+        "height": 4096,
+        "alpha": false,
+        "encoding": "lossless VP8L",
+        "metadata": [],
+        "chunks": [
+          "VP8L"
+        ]
+      },
+      "firstScreenCritical": {
+        "status": "unknown",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/planting/d8707-2560.webp",
+      "type": "webp",
+      "bytes": 12322048,
+      "possiblePages": [
+        "website-code/planting.html"
+      ],
+      "image": {
+        "width": 2560,
+        "height": 3840,
+        "alpha": false,
+        "encoding": "lossless VP8L",
+        "metadata": [],
+        "chunks": [
+          "VP8L"
+        ]
+      },
+      "firstScreenCritical": {
+        "status": "unknown",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/company/imgRectangle3.webp",
+      "type": "webp",
+      "bytes": 11186258,
+      "possiblePages": [],
+      "image": {
+        "width": 3933,
+        "height": 2806,
+        "alpha": true,
+        "encoding": "lossless VP8L",
+        "metadata": [],
+        "chunks": [
+          "VP8L"
+        ]
+      },
+      "firstScreenCritical": {
+        "status": "unknown",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/company/figma/a1cd4.webp",
+      "type": "webp",
+      "bytes": 11106194,
+      "possiblePages": [],
+      "image": {
+        "width": 4096,
+        "height": 2731,
+        "alpha": false,
+        "encoding": "lossless VP8L",
+        "metadata": [
+          "ICCP"
+        ],
+        "chunks": [
+          "VP8X",
+          "ICCP",
+          "VP8L"
+        ]
+      },
+      "firstScreenCritical": {
+        "status": "unknown",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/planting/f80d1.webp",
+      "type": "webp",
+      "bytes": 9739900,
+      "possiblePages": [
+        "website-code/planting.html"
+      ],
+      "image": {
+        "width": 4096,
+        "height": 2731,
+        "alpha": false,
+        "encoding": "lossless VP8L",
+        "metadata": [
+          "ICCP"
+        ],
+        "chunks": [
+          "VP8X",
+          "ICCP",
+          "VP8L"
+        ]
+      },
+      "firstScreenCritical": {
+        "status": "unknown",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/products/figma/e126f.webp",
+      "type": "webp",
+      "bytes": 9707094,
+      "possiblePages": [
+        "website-code/products.html"
+      ],
+      "image": {
+        "width": 4096,
+        "height": 2731,
+        "alpha": false,
+        "encoding": "lossless VP8L",
+        "metadata": [
+          "ICCP"
+        ],
+        "chunks": [
+          "VP8X",
+          "ICCP",
+          "VP8L"
+        ]
+      },
+      "firstScreenCritical": {
+        "status": "unknown",
+        "evidence": []
+      }
+    }
+  ],
+  "duplicates": [
+    {
+      "sha256": "126d2796c0ef94085dcd0cad414016bc99c6d19505b5937beb12d6ddb3c8b266",
+      "bytesEach": 43084,
+      "paths": [
+        "assets/fonts/crimson-regular.woff2",
+        "assets/xunai/fonts/crimson-regular.woff2"
+      ],
+      "potentialRedundantBytes": 43084
+    },
+    {
+      "sha256": "8d409dfff2a584a1e9c7d3022ef35887abe13510566fa19d776e475fc0a72c31",
+      "bytesEach": 13645776,
+      "paths": [
+        "assets/fonts/oppo-sans.woff2",
+        "assets/xunai/fonts/oppo-sans.woff2"
+      ],
+      "potentialRedundantBytes": 13645776
+    },
+    {
+      "sha256": "a0703fedb2f3e22439fe584d12d68ce9532b6549943f912af0496872f20630d2",
+      "bytesEach": 2254280,
+      "paths": [
+        "assets/fonts/tsukushi-mincho-r.woff2",
+        "assets/xunai/fonts/tsukushi-mincho-r.woff2"
+      ],
+      "potentialRedundantBytes": 2254280
+    },
+    {
+      "sha256": "42f0a15fbd864f9cbbda6ccc3b4426d6bb4992be4024cf8bcda837c561089a75",
+      "bytesEach": 194,
+      "paths": [
+        "assets/homepage/3f4bd.svg",
+        "assets/planting/d52aa.svg",
+        "assets/products/figma/28868.svg"
+      ],
+      "potentialRedundantBytes": 388
+    },
+    {
+      "sha256": "da16516eb0434a1ac2133217c857dd3bae01a6692f05d2b51bfd95ac43341280",
+      "bytesEach": 397,
+      "paths": [
+        "assets/homepage/e24f6.svg",
+        "assets/homepage/f1aad.svg"
+      ],
+      "potentialRedundantBytes": 397
+    },
+    {
+      "sha256": "09a7c9512441301824c57b3c4e42466501f671ebade6ce24907f1e2339ba172b",
+      "bytesEach": 9960,
+      "paths": [
+        "assets/planting/74169.svg",
+        "assets/products/figma/74169.svg"
+      ],
+      "potentialRedundantBytes": 9960
+    },
+    {
+      "sha256": "a6ebec58c6ac1b76bd0ad068613e859623328f8975baf93011e0c12ff977a421",
+      "bytesEach": 4524,
+      "paths": [
+        "assets/planting/79f1b.svg",
+        "assets/products/figma/79f1b.svg"
+      ],
+      "potentialRedundantBytes": 4524
+    },
+    {
+      "sha256": "d3ac6024905680894519b589c40bc14c73819226134fb337554912b0b2d13f50",
+      "bytesEach": 399,
+      "paths": [
+        "assets/xunai/brand/imgArrowNarrowUpRight.svg",
+        "assets/xunai/franchise/imgArrowNarrowUpRight.svg"
+      ],
+      "potentialRedundantBytes": 399
+    }
+  ],
+  "duplicateBytes": 15958808,
+  "webp": {
+    "count": 520,
+    "lossless": 229,
+    "lossy": 291,
+    "unknown": 0
+  },
+  "manifests": {
+    "assetMapSummary": {
+      "bitmaps": 566,
+      "convertedFromPngJpeg": 114,
+      "before": 752903848,
+      "after": 607436216,
+      "largerAfterConversion": 39,
+      "allDecodedPixelsIdentical": true,
+      "svgAndEmbeddedModelTextures": "Preserved without rasterization or model format changes",
+      "afterEncodingBeforeDeduplication": 755355710,
+      "uniqueBitmaps": 499,
+      "identicalFilesRemoved": 67,
+      "identicalBytesRemoved": 147919494
+    },
+    "productCatalogSummary": {
+      "assets": 20,
+      "before": 129350683,
+      "after": 83219598,
+      "allDecodedPixelsIdentical": true
+    },
+    "plantingOriginalKeys": 28,
+    "plantingVariantEntries": 61
+  },
+  "measurementDistinction": {
+    "sourceBytes": "Actual file byte sum excluding dist; not network transfer.",
+    "git": "Git object storage separate from source and transfer.",
+    "dist": "Build absent at audit start; root will measure actual production output.",
+    "decodedMemory": "Per-image width*height*4 estimate only; not total browser resident memory.",
+    "network": "Requires browser baseline; do not infer from directory size."
+  },
+  "gitDiskKiB": 2019948
+}

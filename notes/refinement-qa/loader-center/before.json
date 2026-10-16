@@ -1,0 +1,90 @@
+[
+  {
+    "width": 390,
+    "height": 844,
+    "states": [
+      {
+        "progress": "0.5501",
+        "fill": "rgb(251, 244, 227)",
+        "centerOpacity": "0.1",
+        "emblemOpacity": "0.8",
+        "orbitLines": 180,
+        "petalCount": 5,
+        "seedLogo": true,
+        "overflow": 0
+      }
+    ],
+    "finished": {
+      "loaderRemoved": true,
+      "mainInert": false,
+      "videoControls": false
+    },
+    "errors": []
+  },
+  {
+    "width": 698,
+    "height": 1080,
+    "states": [
+      {
+        "progress": "0.5500",
+        "fill": "rgb(251, 244, 227)",
+        "centerOpacity": "0.1",
+        "emblemOpacity": "0.8",
+        "orbitLines": 180,
+        "petalCount": 5,
+        "seedLogo": true,
+        "overflow": 0
+      }
+    ],
+    "finished": {
+      "loaderRemoved": true,
+      "mainInert": false,
+      "videoControls": false
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "states": [
+      {
+        "progress": "0.5500",
+        "fill": "rgb(251, 244, 227)",
+        "centerOpacity": "0.1",
+        "emblemOpacity": "0.8",
+        "orbitLines": 180,
+        "petalCount": 5,
+        "seedLogo": true,
+        "overflow": 0
+      }
+    ],
+    "finished": {
+      "loaderRemoved": true,
+      "mainInert": false,
+      "videoControls": false
+    },
+    "errors": []
+  },
+  {
+    "width": 3840,
+    "height": 2160,
+    "states": [
+      {
+        "progress": "0.5500",
+        "fill": "rgb(251, 244, 227)",
+        "centerOpacity": "0.1",
+        "emblemOpacity": "0.8",
+        "orbitLines": 180,
+        "petalCount": 5,
+        "seedLogo": true,
+        "overflow": 0
+      }
+    ],
+    "finished": {
+      "loaderRemoved": true,
+      "mainInert": false,
+      "videoControls": false
+    },
+    "errors": []
+  }
+]
