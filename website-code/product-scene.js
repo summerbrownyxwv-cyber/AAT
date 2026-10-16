@@ -230,7 +230,9 @@ export async function createProductScene(container) {
   return {
     ready,
     setProgress(value) {
-      progress = THREE.MathUtils.clamp(Number(value) || 0, 0, 4.98);
+      const next = THREE.MathUtils.clamp(Number(value) || 0, 0, 4.98);
+      if (next === progress) return;
+      progress = next;
       update();
     },
     destroy() {

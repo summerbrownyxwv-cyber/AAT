@@ -12,7 +12,7 @@ export async function createPlantScene(container) {
   scene.add(new THREE.HemisphereLight(0xffffff,0xc1b8a0,2));
   const light = new THREE.DirectionalLight(0xffffff,2);
   light.position.set(-3,4,5); scene.add(light);
-  let model, frame = 0, destroyed = false;
+  let model, frame = 0, destroyed = false, lastRotation;
   const requestRender = () => {
     if (frame || destroyed) return;
     frame = requestAnimationFrame(() => { frame = 0; if (!destroyed) renderer.render(scene,camera); });
@@ -39,6 +39,8 @@ export async function createPlantScene(container) {
   return {
     setProgress(progress) {
       const rotation = Math.max(0,Math.min(1,progress))*Math.PI*2;
+      if (rotation === lastRotation) return;
+      lastRotation = rotation;
       model.rotation.y = rotation;
       renderer.domElement.dataset.rotation = rotation.toFixed(5);
       requestRender();

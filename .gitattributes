@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Preserve the canonical licensed file bytes required by the asset manifest.
+assets/fonts/OPPO-LICENSE.txt -text whitespace=cr-at-eol
+website-code/dist/assets/fonts/OPPO-LICENSE.txt -text whitespace=cr-at-eol

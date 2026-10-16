@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import vm from 'node:vm';
 import { productGroups } from '../../content/products-data.js';
-import { catalogTimeline } from '../products-catalog-motion.js';
+import { coverGeometry } from '../section-cover.js';
 
 const page = await readFile(new URL('../products-page.js', import.meta.url), 'utf8');
 const renderer = vm.createContext({});
@@ -22,51 +22,29 @@ assert.doesNotMatch(styles, /\.product-catalog\.is-pinned \.product-group-sheet\
 assert.match(page, /max:group\.products\.length - 1/);
 
 const source = await readFile(new URL('../products-catalog-motion.js', import.meta.url), 'utf8');
-for (const [width, viewport] of [[390,844],[768,1024],[1189,1263],[1440,900],[1920,1080],[2560,1440],[3840,2160]]) {
-  const nav = (width <= 900 ? 64 : 72) * Math.max(1, width / 1440);
-  const content = Math.min(viewport - nav, 600 * Math.max(1, width / 1440));
-  const heights = [content, content, content, content];
-  const context = vm.createContext({ Math, performance: { now: () => 1 }, innerHeight: viewport, scrollY: 0 });
-  const frames = new Map(), events = new Map();
-  let frame = 0, focus = 0;
-  const store = new Map();
-  const stage = {
-    style: { setProperty: (key, value) => store.set(key, value), removeProperty: key => store.delete(key) }, dataset: {},
-    get clientHeight() { return Math.min(viewport - nav, parseFloat(store.get('--catalog-content-height')) || viewport); },
-    getBoundingClientRect: () => ({ top: Math.max(nav, 1000 - context.scrollY) }),
-    focus: () => focus++,
-  };
-  const panels = heights.map((height, index) => ({
-    dataset: { productGroup: String(index) }, style: {},
-    firstElementChild: { scrollHeight: height, style: {} },
-    contains: () => false, setAttribute() {}, removeAttribute() {},
-  }));
-  stage.querySelectorAll = () => panels;
-  const catalog = { querySelector: () => stage, classList: { toggle() {} }, style: {}, dataset: {}, getBoundingClientRect: () => ({ top: 1000 - context.scrollY }) };
-  Object.assign(context, {
-    matchMedia: () => ({ matches: false, addEventListener() {}, removeEventListener() {} }),
-    requestAnimationFrame: callback => { frames.set(++frame, callback); return frame; }, cancelAnimationFrame: id => frames.delete(id),
-    ResizeObserver: class { observe() {} disconnect() {} },
-    getComputedStyle: () => ({ top: `${nav}px` }),
-    location: { hash: '' },
-    document: { activeElement: null, fonts: { ready: { then: callback => callback() } }, addEventListener() {}, removeEventListener() {} },
-    window: { addEventListener: (type, callback) => events.set(type, callback), removeEventListener() {} },
+assert.doesNotMatch(source,/catalogTimeline|requestAnimationFrame|style\.height|style\.transform/,'Native covers have no synthetic runway or clipped moving viewport');
+assert.match(styles,/\.product-catalog-stage\{display:contents;outline:none\}/);
+assert.match(styles,/\.product-catalog \.section-cover-panel\.is-cover-fit\{position:sticky;top:var\(--cover-top\);min-height:0\}/);
+for (const [width, viewport] of [[390,844],[768,1024],[997,876],[1189,1263],[1440,900],[1920,560],[1920,1080],[2560,1440],[3840,2160]]) {
+  const nav=(width<1024?64:72)*Math.max(1,width/1440), available=viewport-nav;
+  const heights=[available*.75,available*1.3,available*.8,available*.9];
+  const panels=heights.map((offsetHeight,index)=>({id:`products-${index}`,offsetHeight,inert:false}));
+  const events=new Map(), clicks=new Map();let mounted=false,stopped=false,scroll;
+  const catalog={querySelectorAll:()=>panels,getBoundingClientRect:()=>({top:1000})};
+  const context=vm.createContext({
+    scrollY:0,scrollTo:value=>scroll=value,location:{hash:''},
+    mountSectionCover:targets=>{assert.deepEqual(targets,panels);mounted=true;return()=>stopped=true;},
+    document:{querySelector:()=>({getBoundingClientRect:()=>({height:nav})}),fonts:{ready:{then:callback=>callback()}},addEventListener:(type,callback)=>clicks.set(type,callback),removeEventListener:type=>clicks.delete(type)},
+    window:{addEventListener:(type,callback)=>events.set(type,callback),removeEventListener:type=>events.delete(type)},
   });
-  vm.runInContext(source.replace(/^export /gm, '') + '\nglobalThis.mount = mountCatalog;', context);
-  const cleanup = context.mount({ querySelector: () => catalog });
-  assert.equal(stage.clientHeight, content, 'The stage is bounded by actual content, not forced to a full viewport');
-  const timeline = catalogTimeline(heights, content);
-  assert.equal(timeline.panels[0].departure, 0, 'No empty waiting interval follows a fully visible group');
-  assert.equal(parseFloat(catalog.style.height), content + timeline.distance);
-  context.scrollY = 1000 - nav + timeline.cover / 2;
-  events.get('scroll')();
-  for (let tick = 1; tick <= 120; tick++) for (const [id, callback] of [...frames]) { frames.delete(id); callback(tick * 16); }
-  assert.equal(panels[0].inert, false);
-  assert.equal(panels[1].inert, false, 'A partly exposed group accepts input before reaching the top');
-  assert.equal(panels[2].inert, true, 'A fully hidden group stays outside keyboard navigation');
-  assert.equal(focus, 0, 'The incoming group must not steal focus while both groups remain visible');
-  cleanup();
+  vm.runInContext(source.replace(/^import[^\n]+\n/gm,'').replace(/^export /gm,'')+'\nglobalThis.mount=mountCatalog;',context);
+  const cleanup=context.mount({querySelector:()=>catalog});assert(mounted);
+  context.location.hash='#products-2';events.get('hashchange')();
+  assert.equal(scroll.top,1000+heights[0]+heights[1]-nav,'Hash navigation uses the natural content heights');
+  assert(panels.every(panel=>!panel.inert),'Catalog does not block partly visible panels');
+  const geometry=coverGeometry(heights,available,nav,false,width>=901);
+  assert.equal(geometry[1].pinned,width>=901);
+  assert.equal(geometry[1].top+heights[1],viewport,'Long cover reaches the screen bottom after reading');
+  cleanup();assert(stopped);assert.equal(events.size,0);assert.equal(clicks.size,0);
 }
-const long = catalogTimeline([600, 1100, 600], 800);
-assert.equal(long.panels[1].read, 300, 'Long content is read fully before the next cover begins');
-console.log('PASS: unique 6/6/4/3 detail cards, shared artwork hover, compact content geometry, partial-visibility input and long-content reading across seven sizes.');
+console.log('PASS: unique finite 6/6/4/3 cards, artwork hover, native natural-height covers without cropped stage or synthetic runway, original hash routes and cleanup at nine viewport fixtures. Shared cover input/follow checks are in check-service-annotations.');

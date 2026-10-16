@@ -1,119 +1,28 @@
-const clamp = value => Math.max(0, Math.min(1, value));
-
-export function catalogTimeline(heights, viewport) {
-  let distance = 0;
-  const cover = viewport * .85;
-  const panels = heights.map((height, index) => {
-    const arrival = distance;
-    const read = Math.max(0, height - viewport);
-    distance += read;
-    const departure = distance;
-    if (index < heights.length - 1) distance += cover;
-    return {arrival, read, departure};
-  });
-  return {panels, cover, distance};
-}
+import { mountSectionCover } from './section-cover.js';
 
 export function mountCatalog(root) {
   const catalog = root.querySelector('.product-catalog');
-  const stage = catalog.querySelector('.product-catalog-stage');
-  const panels = [...stage.querySelectorAll('.product-group')];
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)');
-  let timeline, height = 0, start = 0, target = 0, current = 0, frame = 0, previous = 0, active = -1;
-  const position = () => Math.max(0, Math.min(timeline.distance, scrollY - start));
-  const draw = time => {
-    frame = 0;
-    const delta = previous ? Math.min(64, time - previous) : 16;
-    previous = time;
-    current += (target - current) * (1 - Math.exp(-delta / 110));
-    if (Math.abs(target - current) < .15) current = target;
-    let next = 0, transitioning = false;
-    const tops = [];
-    panels.forEach((panel, index) => {
-      const item = timeline.panels[index];
-      const cover = index ? clamp((current - timeline.panels[index - 1].departure) / timeline.cover) : 1;
-      const read = Math.max(0, Math.min(item.read, current - item.arrival));
-      const top = (1 - cover) * height;
-      tops.push(top);
-      panel.style.transform = `translate3d(0,${top}px,0)`;
-      panel.firstElementChild.style.transform = `translate3d(0,${-read}px,0)`;
-      if (cover > .001 && cover < .999) transitioning = true;
-      if (cover >= .99) next = index;
-    });
-    stage.dataset.transitioning = String(transitioning);
-    const bounds = stage.getBoundingClientRect();
-    panels.forEach((panel, index) => {
-      const visibleTop = Math.max(0, tops[index], -bounds.top);
-      const visibleBottom = Math.min(height, tops[index + 1] ?? height, innerHeight - bounds.top);
-      const visible = visibleBottom - visibleTop > 1;
-      if (!visible && panel.contains(document.activeElement)) stage.focus({preventScroll:true});
-      panel.inert = !visible;
-      panel.setAttribute('aria-hidden', String(!visible));
-    });
-    active = next;
-    catalog.dataset.activeGroup = panels[active].dataset.productGroup;
-    catalog.dataset.distance = current.toFixed(2);
-    if (current !== target) frame = requestAnimationFrame(draw);
-    else previous = 0;
-  };
-  const schedule = () => {
-    if (reduce.matches || !timeline) return;
-    target = position();
-    if (scrollY < start || scrollY > start + timeline.distance) current = target;
-    if (!frame) frame = requestAnimationFrame(draw);
-  };
-  const measure = () => {
-    cancelAnimationFrame(frame); frame = 0;
-    catalog.classList.toggle('is-pinned', !reduce.matches);
-    if (reduce.matches) {
-      catalog.style.height = '';
-      stage.style.removeProperty('--catalog-content-height');
-      panels.forEach(panel => {
-        panel.style.transform = ''; panel.firstElementChild.style.transform = '';
-        panel.inert = false; panel.removeAttribute('aria-hidden');
-      });
-      active = -1;
-      return;
-    }
-    const heights = panels.map(panel => panel.firstElementChild.scrollHeight);
-    stage.style.setProperty('--catalog-content-height', `${Math.max(...heights)}px`);
-    height = stage.clientHeight;
-    timeline = catalogTimeline(heights, height);
-    catalog.style.height = `${height + timeline.distance}px`;
-    start = scrollY + catalog.getBoundingClientRect().top - parseFloat(getComputedStyle(stage).top);
-    target = current = position(); previous = 0;
-    draw(performance.now());
-  };
+  const panels = [...catalog.querySelectorAll('.product-group')];
+  // Natural-height sheets avoid clipping cards inside a synthetic pinned viewport.
+  const stopCover = mountSectionCover(panels);
   const goToHash = () => {
     const index = panels.findIndex(panel => `#${panel.id}` === location.hash);
     if (index < 0) return;
-    if (reduce.matches) { panels[index].scrollIntoView({behavior:'instant'}); return; }
-    if (!timeline) return;
-    scrollTo({top:start + timeline.panels[index].arrival, behavior:'instant'});
-    current = target = position();
-    if (!frame) frame = requestAnimationFrame(draw);
+    const navigation = document.querySelector('header.site-navigation').getBoundingClientRect().height;
+    const top = catalog.getBoundingClientRect().top + scrollY + panels.slice(0,index).reduce((sum,panel) => sum + panel.offsetHeight,0) - navigation;
+    scrollTo({top,behavior:'instant'});
   };
   const repeatHash = event => {
     const link = event.target.closest('a[href^="#products-"]');
     if (!link || link.hash !== location.hash || !panels.some(panel => `#${panel.id}` === link.hash)) return;
-    event.preventDefault();
-    goToHash();
+    event.preventDefault(); goToHash();
   };
-  const resized = new ResizeObserver(measure);
-  panels.forEach(panel => resized.observe(panel.firstElementChild));
-  window.addEventListener('scroll', schedule, {passive:true});
-  window.addEventListener('resize', measure);
-  window.addEventListener('hashchange', goToHash);
-  document.addEventListener('click', repeatHash);
-  reduce.addEventListener('change', measure);
-  measure();
-  document.fonts.ready.then(() => { measure(); goToHash(); });
+  window.addEventListener('hashchange',goToHash);
+  document.addEventListener('click',repeatHash);
+  document.fonts.ready.then(goToHash);
   return () => {
-    cancelAnimationFrame(frame); resized.disconnect();
-    window.removeEventListener('scroll', schedule);
-    window.removeEventListener('resize', measure);
-    window.removeEventListener('hashchange', goToHash);
-    document.removeEventListener('click', repeatHash);
-    reduce.removeEventListener('change', measure);
+    stopCover();
+    window.removeEventListener('hashchange',goToHash);
+    document.removeEventListener('click',repeatHash);
   };
 }
