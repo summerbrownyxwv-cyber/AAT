@@ -74,3 +74,5 @@
 - 修改前main：`38f279c7fdfcbef01326768f235634bc4bc587ad`；恢复标签`qa-annotation-followup-baseline-20261016`。
 - 修改前证据：本对话15条浏览器注释+联系公众号阅读补充；792×945、997×917、1102×981等CSS视口。用户补充品种特性截图为2088×1800物理像素，不据此推断DPR或CSS视口。
 - 各项范围及源代码验证记录见notes/annotation-qa-20261016/ANNOTATION-FOLLOWUP.md；浏览器访问限制未变，未生成新的多屏截图或覆盖既有视觉基准。
+
+后续7条稳定画面修复前main：`de17098324f1615f39bec00951bfd42aa98a66e4`；恢复标签`qa-stable-sections-baseline-20261016`。Before证据为对话内首页目录、种植标题挡图/末章位移、产品系列/服务门店/AI矩阵截图。仍无浏览器after截图，不把Node结果当视觉验收。

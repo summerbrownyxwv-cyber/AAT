@@ -195,6 +195,11 @@ export function mountMotion() {
   function showPlant(index) {
     plantStep = index;
     select(plantButtons, index < 2 ? 0 : 2, 'plantStep');
+    for (const button of plantButtons) {
+      const icon = button.querySelector('.base-number img');
+      const src = button.classList.contains('is-active') ? '../assets/homepage/7e7ee.svg' : '../assets/homepage/ee015.svg';
+      if (icon.getAttribute('src') !== src) icon.src = src;
+    }
     for (const photo of photos) photo.classList.toggle('is-active', Number(photo.dataset.step) === index);
     for (const detail of plantDetails) {
       detail.classList.toggle('is-active', Number(detail.dataset.step) === index);

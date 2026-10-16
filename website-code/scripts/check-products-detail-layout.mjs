@@ -39,7 +39,7 @@ for (const [width, viewport] of viewports) {
   const catalog={querySelectorAll:()=>panels,getBoundingClientRect:()=>({top:1000})};
   const context=vm.createContext({
     scrollY:0,scrollTo:value=>scroll=value,location:{hash:''},
-    mountSectionCover:targets=>{assert.equal(targets.length,panels.length-1);targets.forEach((panel,index)=>assert.equal(panel,panels[index+1]));assert(!targets.includes(panels[0]),'Overview to first detail remains natural flow');mounted=true;return()=>stopped=true;},
+    mountSectionCover:targets=>{assert.equal(targets.length,panels.length);targets.forEach((panel,index)=>assert.equal(panel,panels[index]));mounted=true;return()=>stopped=true;},
     document:{querySelector:()=>({getBoundingClientRect:()=>({height:nav})}),fonts:{ready:{then:callback=>callback()}},addEventListener:(type,callback)=>clicks.set(type,callback),removeEventListener:type=>clicks.delete(type)},
     window:{addEventListener:(type,callback)=>events.set(type,callback),removeEventListener:type=>events.delete(type)},
   });
@@ -53,4 +53,4 @@ for (const [width, viewport] of viewports) {
   assert.equal(geometry[1].top+heights[1],viewport,'Long cover reaches the screen bottom after reading');
   cleanup();assert(stopped);assert.equal(events.size,0);assert.equal(clicks.size,0);
 }
-console.log(`PASS: unique finite 6/6/4/3 cards, white series surface, natural overview/first-detail flow, later covers, original hash routes and cleanup at ${viewports.length} viewport fixtures. Source/Node checks only.`);
+console.log(`PASS: unique finite 6/6/4/3 cards, white series surface, all four series in native cover order, original hash routes and cleanup at ${viewports.length} viewport fixtures. Source/Node checks only.`);

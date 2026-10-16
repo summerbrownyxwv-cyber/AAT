@@ -16,7 +16,7 @@ const measure = new Function('state', `
   const composition={section:{dataset:{}}};
   let landGeometry;
   ${extract("  const top = document.querySelector('.site-navigation')", '  if (innerHeight <= 560)')}
-  ${extract('  stories.forEach(item => {\n    const distance', '  const titleStyle')}
+  ${extract('  stories.forEach(item => {\n    const distance', '  const titleBottom')}
   ${extract('  composition.start = traitsStory.start', '  const researchWidth')}
   return {landGeometry,composition,traitsStory};
 `);
@@ -82,6 +82,13 @@ for (const [width,height] of viewports) {
   const thirdLeft=0, secondLeft=contentWidth*(narrow?.51:.305), secondaryWidth=contentWidth*(narrow?.45:.28093);
   approximately(thirdLeft,0);
   assert(secondLeft>=thirdLeft+secondaryWidth && secondLeft+secondaryWidth<=contentWidth, 'Research images keep their order, gap, and shell bounds');
+  const chapterPadding=(height<=600?16:narrow?24:48)*unit,titleHeight=43*unit;
+  const headingOffset=new Function('cultivarChapter','cultivarTitle','getComputedStyle','unit',`${extract('  const titleBottom =','  coverChapters.forEach')}return titleBottom;`)({style:{setProperty(){}}},{offsetHeight:titleHeight},()=>({paddingTop:String(chapterPadding)}),unit);
+  approximately(headingOffset,chapterPadding+titleHeight);
+  for(const progress of [0,.5,1]){
+    const titleBottom=chapterPadding+titleHeight-(chapterPadding+titleHeight+56*unit+400+height*.55*progress);
+    assert(titleBottom<0,'A natural-flow cultivar title has left the viewport throughout research instead of covering its photos');
+  }
   if(!narrow){
     const available=height-nav,space=Math.max(40,Math.min(width*.045,120));
     const photoHeight=contentWidth*.87*.36*3/4;
@@ -96,10 +103,26 @@ for (const [width,height] of viewports) {
 const sectionNames=['plant-origin','plant-research','plant-traits','plant-management','pf-campus','pf-technology','pf-lines','pf-capacity'];
 const sections=sectionNames.map(name=>({name,style:{},classes:[],matches:selector=>selector.split(',').some(value=>value==='.'+name),classList:{add(value){this.owner.classes.push(value);}}}));
 sections.forEach(section=>section.classList.owner=section);
-const chapterLists=new Function('main',`${extract('const chapters =','const dampedCovers')}return {chapters,coverChapters};`)({querySelectorAll:selector=>{assert.equal(selector,sectionNames.map(name=>'.'+name).join(','),'The complete chapter list stays ordered and excludes the footer');return sections;}});
+const chapterLists=new Function('main',`${extract('const chapters =','let frame =')}return {chapters,coverChapters};`)({querySelectorAll:selector=>{assert.equal(selector,sectionNames.map(name=>'.'+name).join(','),'The complete chapter list stays ordered and excludes the footer');return sections;}});
 assert.deepEqual(chapterLists.chapters,sections,'Every chapter remains available to hash offsets and resize measurement');
-assert.deepEqual(chapterLists.coverChapters.map(section=>section.name),sectionNames.slice(3),'Video/research and the trait scroll runway are not outer sticky covers');
-for(const section of sections)assert.equal(section.classes.includes('plant-cover'),!sectionNames.slice(0,3).includes(section.name));
+assert.deepEqual(chapterLists.coverChapters.map(section=>section.name),sectionNames.slice(3,-1),'Video/research, trait runway and the final capacity section are not outer sticky covers');
+for(const section of sections)assert.equal(section.classes.includes('plant-cover'),sectionNames.slice(3,-1).includes(section.name));
+assert.doesNotMatch(source,/dampedCovers|coverFollow|section\.style\.translate/,'Factory chapters have no delayed whole-section translate follower');
+const motionSelector=source.match(/const stopContent = \[\.\.\.main\.querySelectorAll\('([^']+)'\)/)?.[1];
+assert.equal(motionSelector,'.plant-hero,.plant-origin,.pf-campus,.pf-technology,.pf-lines','Capacity stays outside content reveal and counter animation');
+const node=name=>({name,children:[],before(child){const parent=this.parentElement;parent.children.splice(parent.children.indexOf(this),0,child);child.parentElement=parent;},append(...children){children.forEach(child=>{const previous=child.parentElement;previous?.children.splice(previous.children.indexOf(child),1);this.children.push(child);child.parentElement=this;});}});
+const parent=node('planting-content'),prior=['land','cultivar','campus','technology','lines'].map(node),capacity=node('capacity');
+const reveal={classList:{remove(...classes){this.removed=classes;}}};
+capacity.querySelectorAll=selector=>{assert.equal(selector,'.content-reveal-copy,.content-reveal-media');return[reveal];};
+parent.append(...prior,capacity);
+new Function('main','document',extract('const capacity =','main.querySelectorAll(\'img\')'))({querySelector:selector=>{assert.equal(selector,'.pf-capacity');return capacity;}},{createElement:()=>node('cover-stack')});
+const coverStack=parent.children[0];
+assert.equal(coverStack.className,'plant-cover-stack');
+assert.deepEqual(coverStack.children,prior,'All upstream sticky sections have a containing block ending before capacity');
+assert.deepEqual(parent.children,[coverStack,capacity],'Capacity sits outside the sticky containing block');
+assert.deepEqual(reveal.classList.removed,['content-reveal-copy','content-reveal-media'],'Capacity is visible immediately without reveal movement');
+for(const match of styles.matchAll(/[^{}]*\.plant-cultivar-title[^{}]*\{([^}]*)\}/g))assert.doesNotMatch(match[1],/(?:^|;)(?:position|top|z-index)\s*:/,'The cultivar heading never pins over later research photos');
+assert.doesNotMatch(source,/cultivarTitle\.style|titleExitLimit|chapterExit/,'Scroll rendering does not move the natural-flow heading');
 assert(source.includes('[land.section,...chapters].forEach(section => {'),'Natural chapter heights still contribute to subsequent story starts');
 assert(source.includes('chapters.forEach(section=>observer.observe(section))'),'Natural chapter size changes still update scroll anchors');
 assert.match(styles,/\.plant-land-stage,\.plant-research-stage,\.plant-traits-scene\{position:sticky;top:var\(--site-navigation-height\);height:calc\(100svh - var\(--site-navigation-height\)\)\}/);
@@ -118,4 +141,4 @@ assert.match(reducedStyles,/\.plant-land-glass \.plant-land-thumbnails>img\{aspe
 assert(source.includes('const traitProgress = reduced.matches ? 1 : clamp(traitsStory.progress * 4.6 / 1.8)'));
 assert(source.includes('smoothstep(1.8 / 4.6,2 / 4.6,traitsStory.progress)'));
 assert(source.includes('clamp((traitsStory.progress * 4.6 - 2) / 2.6)'));
-console.log(`PASS: planting arithmetic at ${viewports.length} viewports; video/research natural boundaries, single-level trait pinning and viewport-aligned media; exact compact chapter budget, state sequence, hash measurement and reduced-motion flow preserved. Node geometry is not browser visual proof.`);
+console.log(`PASS: planting arithmetic at ${viewports.length} viewports; natural cultivar heading, released upstream covers and motion-free final capacity; compact chapter budget, state sequence, hash measurement and reduced-motion flow preserved. Node checks are not browser visual proof.`);

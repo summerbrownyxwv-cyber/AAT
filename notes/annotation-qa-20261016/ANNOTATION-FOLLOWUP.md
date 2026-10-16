@@ -36,3 +36,22 @@
 这些用例是执行源码逻辑的Node/几何输入，不是上述尺寸的浏览器渲染。不能据此认定实际字体换行、像素差异、触屏、DPR、浏览器缩放、Safari和移动设备全部验收。用户截图保留为before证据；after截图尚无，不更新旧视觉基准，也未重新测量LCP/CLS/INP或声称加载速度达标。
 
 最终交付检查：`npm run build`通过；dist再次运行check-package通过。所有本轮运行源码与dist相应副本逐字节核对；开发检查脚本不进入发布产物，媒体/字体/资源映射与校验规则未改。提交/上传状态以最终Git记录为准。
+
+## 后续7条注释 · 切换到位后画面稳定
+
+修改前提交`de17098324f1615f39bec00951bfd42aa98a66e4`。
+
+| 问题/证据 | 定位及修改 | 影响范围 |
+| --- | --- | --- |
+| 首页产业园区仍实心01 | JS类和aria正确，实心SVG及first-child白字写死；showPlant随状态选择同尺寸既有SVG，白字按is-active | 首页目录，正反/点击/移动/reduced均测；图片内容不改 |
+| 种植研发图片被横条截过 | cultivarTitle在整段内sticky且z-index10，结束前一直覆盖照片；标题恢复自然流，删JS滚动transform | 该标题与既有内侧预留，不改照片/文案 |
+| 种植产能/页脚附近画面移动 | 工厂dampedCovers每帧写translate、capacity sticky且带入场动画；删除工厂跟随，将此前章节约束在产能前结束的块盒，capacity排除固定及入场 | 原章节/锚点/模型仍在，末章与footer正常流 |
+| 产品燃/萃及末组/代工之间移动 | 共享110ms跟随让整个可见sheet继续漂移；删除共享follow函数、偏移写入及settling帧；四组都参与原生cover，覆盖燃后停在边界 | 共享企业/服务/AI覆盖同样不再带整屏惯性；有限横滑/样式不改 |
+| 服务竞争力/门店信息不稳 | locations仍是cover，现与competence一起排除；其后两店型/服务保留原生cover | 门店查询/折叠和路由保留 |
+| AI视频/能力矩阵仍移动 | 移除开场cover及临时wrapper，hero/value/matrix都自然流；后续evidence起仍原生cover | 保留视频自动播放、图片/表格对齐与后续交互 |
+
+共享cover每次scroll只合并到一个可见性/交互状态更新帧，不再写transform/translate，不再等待跟随收尾。18视口Node用例测试正反、连续事件合帧、边界恢复、长章resize、reduced和cleanup，并确认不改变对象预存transform。planting15视口保留章节预算/顺序/哈希，另执行实际wrapper构建逻辑验证产能位于范围之外、标题与工厂不再写整屏偏移；home8视口加编号图标正反验证。14项专项检查和npm run check通过，8入口/1175引用/19产品/566位图校验。
+
+另检查transplanted.js的路由render：当前没有整页滑入/缩放转场，锚点/页顶使用instant；本批未改变导航、URL或加载顺序。实际滚动视频、浏览器多屏截图、实体触屏与DPR仍未复核，本批结论仅限源码/Node与几何证据。
+
+本批最终构建和dist校验通过；8个修改运行文件与发布副本逐字节一致、修改JS语法通过。独立只读复核确认product-catalog、xs-page、xa-page的覆盖范围在后续内容/页脚前释放，种植wrapper不改变既有后代选择器与锚点。未改媒体或资源校验规则。

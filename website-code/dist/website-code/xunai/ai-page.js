@@ -15,7 +15,7 @@ window.XunAiAI=(()=>{
  const certificates=[['4','杭州师范大学附属医院','与杭州师范大学附属医院合作完成非侵入式实验，通过两期疾病辨证临床试验'],['5','吉林大学白求恩第一医院','与吉林大学白求恩第一医院完成非侵入式实验，通过两期疾病辨证系统临床试验'],['6','互联网药品信息服务资格证书','互联网药品信息服务资格证书']];
  return {
   stage(){return `<div class="xa-stage" role="img" aria-label="寻艾 AI 中医检测设备与环形功能文字：体质检测、舌象检测、面像检测、脉象检测及经络穴位识别"><div class="xa-orbit" aria-hidden="true">${[0,1,2,3].map(layer=>`<div class="xa-orbit-layer">${window.XunAiOrbit.filter(([name])=>{const n=Number(name.replace('imgVector','')||0);return (n===189?3:n<=64||[180,182,186].includes(n)?0:n<=125||[181,185,187].includes(n)?1:2)===layer}).map(([name,x,y,w,h,r=0])=>`<img src="${base}${name}.svg" alt="" width="${w}" height="${h}" style="left:${x/617*100}%;top:${y/599*100}%;width:${w/617*100}%;height:${h/599*100}%;${r?`transform:rotate(${r}deg)`:''}">`).join('')}</div>`).join('')}</div><div class="xa-device-shadow" aria-hidden="true"></div><div class="xa-device" aria-hidden="true">${image('imgRectangle','')}</div></div>`;},
-  render(){return `<div class="xa-page"><div class="xa-opening">
+  render(){return `<div class="xa-page">
    <section class="xa-hero" aria-labelledby="xa-title">
     <div class="xa-light" aria-hidden="true"></div><div class="xa-star-trails" aria-hidden="true"><i></i><i></i><i></i></div>
     ${this.stage()}
@@ -23,7 +23,6 @@ window.XunAiAI=(()=>{
    </section>
    <div class="xa-content">
     <section class="xa-intro" id="value"><div class="xa-intro-copy"><h2>行业先行的现代化中医养生智慧<br>让传统可进化 让体验再升级</h2><p>根据用户体质、健康状况及检测结果，提供艾灸方案参考；记录用户艾灸过程中的健康变化动态，辅助服务人员调整养生方案。</p></div><figure><video class="xa-demo-video" data-demo-video autoplay muted loop playsinline preload="none" poster="../assets/xunai/ai/ai-demo-poster.webp" width="1920" height="1080" aria-label="AI中医问诊仪操作演示，静音循环播放"><source src="../assets/xunai/ai/ai-demo.mp4" type="video/mp4">您的浏览器不支持视频播放。</video></figure></section>
-   </div></div><div class="xa-content">
     <section class="xa-matrix" id="ai-capabilities"><div class="xa-matrix-aside"><h2>能力矩阵</h2><figure class="xa-matrix-device" aria-hidden="true">${image('imgRectangle','')}</figure></div><div><dl>${matrix.map(([label,value,desc])=>`<div class="xa-matrix-row"><dt>${label}</dt><dd class="xa-number" aria-label="${value}"><span data-count="${value}" aria-hidden="true">${value}</span></dd><dd>${desc}</dd></div>`).join('')}</dl></div></section>
     <section class="xa-evidence" id="ai-evidence"><h2>合作与资质</h2><div class="xa-evidence-stage" aria-label="左右滑动切换认证"><div class="xa-arch" aria-hidden="true">${Array.from({length:121},(_,i)=>`<i style="--angle:${i*1.5-90}deg" class="${i%10===0?'major':''}"></i>`).join('')}${['春分','夏至','秋分','冬至'].map((label,i)=>`<span class="xa-season" style="--season:${i*48-72}deg"><span>${label}</span></span>`).join('')}<b class="xa-dial-pointer"></b></div>${image('device','寻艾 AI 检测设备')}</div><div class="xa-certificates" role="tablist" aria-label="认证与合作">${certificates.map(([n,title],i)=>`<button type="button" role="tab" id="xa-cert-${i}" aria-controls="xa-cert-copy" aria-selected="${i===0}" tabindex="${i===0?0:-1}">${image('imgRectangle'+n,'')}<span>${title}</span></button>`).join('')}</div><div id="xa-cert-copy" role="tabpanel" aria-labelledby="xa-cert-0" tabindex="0"><p>${certificates[0][2]}</p></div></section>
     <section class="xa-values" id="how-it-works"><h2>寻艾AI中医师<br>核心价值</h2><div class="xa-values-layout"><div><p class="xa-value-copy">以智能舌诊和面诊为核心，辅助整理健康信息与分析报告，形成涵盖穴位、饮食、运动、情志、起居、音乐等方面的个性化健康调理参考。</p><dl class="xa-stats">${stats.map(([label,value,icon])=>`<div><dt>${label}</dt><dd aria-label="${value}"><span data-count="${value}" aria-hidden="true">${value}</span><img src="${base}imgGroup${icon}.svg" alt="" width="48" height="48" loading="lazy"></dd></div>`).join('')}</dl></div><figure>${image('device','AI 中医检测系统界面')}</figure></div></section>
@@ -36,9 +35,7 @@ window.XunAiAI=(()=>{
    const hero=main.querySelector('.xa-hero');if(!hero)return;
    hero.querySelector('.xa-stage').prepend(hero.querySelector('.xa-star-trails'));
    const page=main.querySelector('.xa-page');
-   // This containing block releases the video chapter before the capability matrix.
-   const stopOpeningCover=mountSectionCover([...page.querySelectorAll('.xa-opening section')]);
-   const stopCover=mountSectionCover([...page.querySelectorAll(':scope > .xa-content > section')]);
+   const stopCover=mountSectionCover([...page.querySelectorAll(':scope > .xa-content > section:not(#value):not(#ai-capabilities)')]);
    const reduce=matchMedia('(prefers-reduced-motion: reduce)');
    const resize=()=>page.style.setProperty('--xa-wash-height',hero.offsetHeight+main.querySelector('.xa-intro').offsetHeight+'px');
    resize();window.addEventListener('resize',resize);
@@ -70,7 +67,7 @@ window.XunAiAI=(()=>{
    report.addEventListener('pointermove',event=>{if(drag)report.scrollLeft=drag.left+drag.x-event.clientX});
    const release=()=>drag=null;report.addEventListener('pointerup',release);report.addEventListener('pointercancel',release);report.addEventListener('lostpointercapture',release);
    report.addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight'].includes(event.key)){event.preventDefault();report.scrollBy({left:report.clientWidth*(event.key==='ArrowRight'?1:-1),behavior:reduce.matches?'instant':'smooth'})}});
-   return ()=>{stopOpeningCover();stopCover();window.removeEventListener('resize',resize)};
+   return ()=>{stopCover();window.removeEventListener('resize',resize)};
   }
  };
 })();

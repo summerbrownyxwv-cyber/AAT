@@ -62,7 +62,7 @@ img{display:block;max-width:100%}
 .base-number{position:relative;display:inline-grid;place-items:center;width:clamp(calc(24 * var(--wide-u)),31.534 * var(--u),calc(42 * var(--wide-u)));height:clamp(calc(24 * var(--wide-u)),30.598 * var(--u),calc(41 * var(--wide-u)));flex-shrink:0;font:400 clamp(calc(14 * var(--wide-u)),18.419 * var(--u),calc(25 * var(--wide-u)))/1 var(--sans)}
 .base-number img{position:absolute;inset:0;width:100%;height:auto}
 .base-number>span{position:relative}
-.base-link:first-child .base-number{color:#fff}
+.base-link.is-active .base-number{color:#fff}
 .plant-descriptions{position:relative;display:grid;grid-template-columns:minmax(0,1fr);align-items:start}
 .plant-detail{grid-column:1;grid-row:1;color:var(--muted);opacity:0;pointer-events:none;transition:color 320ms var(--ease),opacity 360ms var(--ease)}
 .plant-detail.is-active{color:#000;opacity:1;pointer-events:auto}

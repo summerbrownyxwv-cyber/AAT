@@ -30,6 +30,14 @@ document.querySelector('#planting-content').innerHTML = `
     ${renderPlantingManagement(image, rows)}
   </div>${renderPlantingFactory()}`;
 
+// Release every preceding sticky chapter before the stable final capacity section.
+const capacity = main.querySelector('.pf-capacity');
+const coverStack = document.createElement('div');
+coverStack.className = 'plant-cover-stack';
+capacity.before(coverStack);
+coverStack.append(...[...coverStack.parentElement.children].filter(section => section !== coverStack && section !== capacity));
+capacity.querySelectorAll('.content-reveal-copy,.content-reveal-media').forEach(element => element.classList.remove('content-reveal-copy','content-reveal-media'));
+
 main.querySelectorAll('img').forEach(img => {
   const asset = plantingAssets[img.getAttribute('src')];
   if (!asset) return;
@@ -38,7 +46,7 @@ main.querySelectorAll('img').forEach(img => {
   img.sizes = img.closest('.plant-hero') ? '100vw' : img.closest('.plant-mosaic-aside') ? '(max-width:900px) 30vw, (min-width:1920px) 400px, 22vw' : '(max-width:900px) 90vw, (min-width:1920px) 1200px, 65vw';
   img.src = asset.variants.find(v => v.width >= 1440)?.src || asset.variants.at(-1).src;
 });
-const stopContent = [...main.querySelectorAll('.plant-hero,.plant-origin,.pf-campus,.pf-technology,.pf-lines,.pf-capacity')].map(mountContentMotion);
+const stopContent = [...main.querySelectorAll('.plant-hero,.plant-origin,.pf-campus,.pf-technology,.pf-lines')].map(mountContentMotion);
 stopContent.push(mountPlantingManagement(main.querySelector('.plant-management')));
 const reduced = matchMedia('(prefers-reduced-motion:reduce)');
 // Every story uses native scroll distance; no wheel interception or timed playback.
@@ -55,10 +63,9 @@ const dataRows = [...composition.section.querySelectorAll('dl>div')];
 dataRows.forEach(row => { row.querySelector('dd').dataset.final = row.querySelector('dd').textContent; });
 const chapters = [...main.querySelectorAll('.plant-origin,.plant-research,.plant-traits,.plant-management,.pf-campus,.pf-technology,.pf-lines,.pf-capacity')];
 // Story scenes manage their own pinning; their outer runway stays in normal flow.
-const coverChapters = chapters.filter(section => !section.matches('.plant-origin,.plant-research,.plant-traits'));
+const coverChapters = chapters.filter(section => !section.matches('.plant-origin,.plant-research,.plant-traits,.pf-capacity'));
 coverChapters.forEach((section,index) => { section.classList.add('plant-cover'); section.style.zIndex = String(index + 1); });
-const dampedCovers = [...main.querySelectorAll('.pf-campus,.pf-technology,.pf-lines,.pf-capacity')].map(section => ({section,top:null,offset:0}));
-let frame = 0, last = 0, landGeometry, researchGeometry, plantScene, titleExitLimit = 0;
+let frame = 0, last = 0, landGeometry, researchGeometry, plantScene;
 const modelContainer = composition.section.querySelector('.plant-model-canvas');
 const modelObserver = new IntersectionObserver(async entries => {
   if (!entries.some(entry => entry.isIntersecting)) return;
@@ -72,7 +79,6 @@ const modelObserver = new IntersectionObserver(async entries => {
 }, {rootMargin:'100% 0px'});
 modelObserver.observe(composition.section);
 function measure() {
-  dampedCovers.forEach(item => { item.section.style.translate = ''; item.top = null; item.offset = 0; });
   const top = document.querySelector('.site-navigation').getBoundingClientRect().height;
   const available = innerHeight - top;
   const unit = Math.max(1,innerWidth / 1440);
@@ -105,9 +111,7 @@ function measure() {
     item.travel = natural ? 0 : Math.max(0,total - item.stage.offsetHeight);
     item.section.style.height = natural ? 'auto' : `${item.stage.offsetHeight + item.travel}px`;
   });
-  const titleStyle = getComputedStyle(cultivarTitle);
-  const titleBottom = (parseFloat(titleStyle.top) || top) - top + cultivarTitle.offsetHeight;
-  titleExitLimit = Math.max(0,available-titleBottom);
+  const titleBottom = (parseFloat(getComputedStyle(cultivarChapter).paddingTop) || 0) + cultivarTitle.offsetHeight;
   cultivarChapter.style.setProperty('--cultivar-content-top', `${titleBottom + 24*unit}px`);
   coverChapters.forEach(section => { section.style.setProperty('--cover-top', `${Math.min(top, innerHeight - section.offsetHeight)}px`); });
   const campus = main.querySelector('.pf-campus-inner');
@@ -152,19 +156,8 @@ function measure() {
 }
 function render(time) {
   frame = 0;
-  const coverFollow = 1 - Math.exp(-(last ? Math.min(64,time-last) : 16.67)/110);
   const follow = last ? 1 - Math.exp(-Math.min(64,time-last)/55) : 1; last = time;
   let moving = false;
-  // Let each covering sheet settle behind native scroll without moving the document.
-  const coverPositions = dampedCovers.map(item => item.section.getBoundingClientRect().top - item.offset);
-  dampedCovers.forEach((item,index) => {
-    const top = coverPositions[index], limit = innerWidth <= 900 ? 32 : 56;
-    const visible = top < innerHeight && top + item.section.offsetHeight > 0;
-    item.offset = reduced.matches || !visible || item.top === null ? 0 : clamp(item.offset + item.top - top,-limit,limit) * (1-coverFollow);
-    item.top = top;
-    if (Math.abs(item.offset) < .05) item.offset = 0; else moving = true;
-    item.section.style.translate = item.offset ? `0 ${item.offset}px` : '';
-  });
   stories.forEach(item => {
     const target = reduced.matches ? 1 : clamp((scrollY-item.start) / Math.max(1,item.travel));
     item.progress += (target-item.progress) * follow;
@@ -178,8 +171,6 @@ function render(time) {
   traitsStory.section.style.setProperty('--composition-phase',compositionPhase);
   traitsStory.section.querySelector('.plant-traits-stage').setAttribute('aria-hidden',String(!reduced.matches && compositionPhase === 1));
   composition.section.setAttribute('aria-hidden',String(!reduced.matches && compositionPhase === 0));
-  const chapterExit = Math.max(0,scrollY-traitsStory.start-traitsStory.travel);
-  cultivarTitle.style.transform = reduced.matches ? 'none' : `translateY(${-Math.min(chapterExit,titleExitLimit)}px)`;
   const p = land.progress, shrink = smoothstep(0,.28,p), glass = smoothstep(.62,.86,p);
   land.stage.style.top = reduced.matches ? '' : `${landGeometry.top-landGeometry.overflow*smoothstep(.42,.62,p)}px`;
   const {width:w,fullHeight:h,left,finalWidth,finalHeight,finalTop}=landGeometry;

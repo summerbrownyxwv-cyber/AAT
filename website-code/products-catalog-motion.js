@@ -3,8 +3,8 @@ import { mountSectionCover } from './section-cover.js';
 export function mountCatalog(root) {
   const catalog = root.querySelector('.product-catalog');
   const panels = [...catalog.querySelectorAll('.product-group')];
-  // The overview and first detail group scroll naturally before later covers begin.
-  const stopCover = mountSectionCover(panels.slice(1));
+  // Each incoming series covers the previous one and rests at the native sticky boundary.
+  const stopCover = mountSectionCover(panels);
   const goToHash = () => {
     const index = panels.findIndex(panel => `#${panel.id}` === location.hash);
     if (index < 0) return;

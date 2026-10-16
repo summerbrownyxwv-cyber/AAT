@@ -7,6 +7,8 @@ const css = await readFile(new URL('../styles.css', import.meta.url), 'utf8');
 assert.match(css, /\.ai-image\{[^}]*grid-row:3;[^}]*align-self:end;[^}]*margin-bottom:0/, 'The stationary home AI image ends on the data table baseline');
 assert.match(css, /\.ai-stats\{[^}]*grid-row:3;align-self:end/, 'Image and table share the same bottom-aligned grid row');
 const markup = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+assert.doesNotMatch(css, /\.base-link:first-child \.base-number/, 'Filled number styling must follow the selected base, not its DOM order');
+assert.match(css, /\.base-link\.is-active \.base-number\{color:#fff\}/);
 assert.doesNotMatch(markup, /series-playback|暂停轮播|继续轮播/, 'The carousel must not expose playback controls');
 assert.doesNotMatch(source, /seriesPaused|seriesHovered|seriesFocused/, 'Hover, focus, and manual selection must not stop automatic playback');
 assert.doesNotMatch(markup + source + css, /series-dots|data-series-dot|seriesDots/, 'Removed series dots must not retain markup, listeners, or a layout slot');
@@ -107,7 +109,7 @@ const makeElement = step => ({
   dataset: { step: String(step), plantStep: String(step) },
   style: { opacity: '', values: new Map(), setProperty(name, value) { this.values.set(name, value); }, removeProperty(name) { this.values.delete(name); } },
   classes: new Set(), attributes: {},
-  classList: { toggle(name, enabled) { enabled ? this.owner.classes.add(name) : this.owner.classes.delete(name); } },
+  classList: { toggle(name, enabled) { enabled ? this.owner.classes.add(name) : this.owner.classes.delete(name); }, contains(name) { return this.owner.classes.has(name); } },
   setAttribute(name, value) { this.attributes[name] = value; },
 });
 for (const [width, height] of [[320, 640], [390, 844], [768, 1024], [997, 917], [1440, 900], [1920, 1080], [2560, 1440], [3840, 2160]]) {
@@ -115,6 +117,7 @@ for (const [width, height] of [[320, 640], [390, 844], [768, 1024], [997, 917], 
     const fixture = { innerWidth: width, innerHeight: height, scrollY: 0 };
     const photos = [0, 1, 2].map(makeElement), details = [0, 1, 2].map(makeElement), buttons = [0, 2].map(makeElement);
     [...photos, ...details, ...buttons].forEach(element => { element.classList.owner = element; });
+    buttons.forEach(button => { button.icon = { getAttribute() { return this.src; } }; button.querySelector = () => button.icon; });
     const cta = {}, planting = makeElement(0);
     const layout = { offsetHeight: 400, getBoundingClientRect: () => ({ top: 1000 - fixture.scrollY }) };
     const flow = new Function('window', 'clamp', 'smoothstep', 'photos', 'plantDetails', 'plantButtons', 'plantCta', 'planting', 'plantLayout', 'motionPreference', `
@@ -129,6 +132,7 @@ for (const [width, height] of [[320, 640], [390, 844], [768, 1024], [997, 917], 
       assert.equal(flow.step(), expected, `Scroll must reach and reverse all three states at ${width}x${height}, reduced=${reduced}`);
       assert.equal(cta.href, expected === 2 ? './planting.html#factory' : './planting.html');
       assert.equal(buttons[expected < 2 ? 0 : 1].attributes['aria-pressed'], 'true');
+      for (const [index,button] of buttons.entries()) assert.equal(button.icon.src, (expected < 2) === (index === 0) ? '../assets/homepage/7e7ee.svg' : '../assets/homepage/ee015.svg', 'The filled base emblem follows visible planting/production content in both scroll directions');
       assert.equal(details.filter(detail => detail.attributes['aria-hidden'] === 'false').length, 1);
       if (width > 640 && !reduced) assert.equal(photos[expected].style.opacity, '1.000');
     }
