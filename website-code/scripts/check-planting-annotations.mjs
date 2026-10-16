@@ -21,7 +21,7 @@ const measure = new Function('state', `
   return {landGeometry,composition,traitsStory};
 `);
 const approximately = (actual, expected) => assert(Math.abs(actual-expected)<.001, `${actual} != ${expected}`);
-const viewports = [[320,640],[390,844],[768,1024],[900,800],[901,800],[1189,1263],[1440,900],[1920,1080],[2560,1440],[3840,2160]];
+const viewports = [[320,640],[390,844],[768,1024],[900,800],[901,800],[997,876],[997,917],[1189,1263],[1440,900],[1920,1080],[2560,1440],[3840,2160]];
 for (const [width,height] of viewports) {
   const unit = Math.max(1,width/1440), narrow=width<=900;
   const nav=(narrow?64:72)*unit;
@@ -58,10 +58,11 @@ for (const [width,height] of viewports) {
       const copyBottom=number('--land-aside-top')+headingHeight+paragraphHeight+fieldGap;
       assert(number('--land-thumbnails-top') >= copyBottom+fieldGap-.001, 'Thumbnails must follow the full copy');
       const thumbBottom=number('--land-thumbnails-top')+number('--land-thumbnails-height');
-      assert(thumbBottom <= (narrow?geometry.height-18*unit:geometry.finalTop+geometry.finalHeight)+.001, 'Field thumbnails fit the final frame');
+      assert(thumbBottom <= (narrow?geometry.height-18*unit:geometry.height-24*unit)+.001, 'Field thumbnails fit the content stage');
       const glassBottom=number('--land-thumbnails-top')+number('--land-glass-height');
       assert(glassBottom <= thumbBottom+.001, 'Two greenhouse images must not stretch beyond the three-image rail');
-      const oldTraitsHeight=(height-nav)*5.6;
+      if(!narrow) approximately((number('--land-thumbnails-height')-2*thumbnailGap)/3,fieldWidth*2/3);
+      const oldTraitsHeight=traitsStory.stage.offsetHeight*5.6;
       approximately(parseFloat(traitsStory.section.style.height),oldTraitsHeight*2/3);
       approximately(land.travel,land.stage.offsetHeight*1.35);
       approximately(research.travel,research.stage.offsetHeight*.55);
@@ -80,6 +81,9 @@ for (const [width,height] of viewports) {
   approximately(thirdLeft,0);
   assert(secondLeft>=thirdLeft+secondaryWidth && secondLeft+secondaryWidth<=contentWidth, 'Research images keep their order, gap, and shell bounds');
 }
+assert.match(styles,/\.planting-page\{[^}]*display:block\}/);
+assert.match(styles,/grid-template-rows:repeat\(3,minmax\(0,1fr\)\)/);
+assert.match(styles,/grid-template-rows:repeat\(2,minmax\(0,1fr\)\)/);
 assert.match(styles,/\.plant-land-field\{opacity:var\(--land-copy\)/);
 assert.doesNotMatch(source,/p < \.28 \|\| p > \.86/);
 assert.match(styles,/\.plant-research-second\{left:30\.5%\}/);

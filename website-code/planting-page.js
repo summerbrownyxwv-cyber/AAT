@@ -88,7 +88,10 @@ function measure() {
   const fieldCopyHeight = landField.querySelector('h3').offsetHeight + landField.querySelector('p').offsetHeight + fieldGap;
   const fieldThumbnailsHeight = (fieldWidth-2*thumbnailGap)/3*2/3;
   const fieldAfterPhoto = 24*unit+fieldCopyHeight+fieldGap+fieldThumbnailsHeight+18*unit;
-  land.stage.style.height = narrow && !reduced.matches ? `${64+finalWidth*404/869+fieldAfterPhoto}px` : '';
+  land.stage.style.height = '';
+  const thumbnailHeight = narrow ? fieldThumbnailsHeight : fieldWidth*2/3;
+  const sidebarHeight = 24*unit+fieldCopyHeight+fieldGap+thumbnailHeight*3+thumbnailGap*2+24*unit;
+  if (!reduced.matches) land.stage.style.height = `${narrow ? 64+finalWidth*404/869+fieldAfterPhoto : Math.max(land.stage.offsetHeight,sidebarHeight)}px`;
   if (innerHeight <= 560) research.stage.querySelectorAll('figure').forEach(photo => { photo.style.cssText = ''; });
   stories.forEach(item => {
     const distance = {land:1.35,research:.55,traits:(1+4.6)*2/3-1}[item.section.dataset.scrollStory];
@@ -129,8 +132,7 @@ function measure() {
   landGeometry = {width,height,fullHeight:available,left,finalWidth,finalHeight,finalTop,top,overflow:Math.max(0,height-available)};
   const asideTop = narrow ? finalTop+finalHeight+24*unit : 24*unit;
   const thumbnailsTop = asideTop+fieldCopyHeight+fieldGap;
-  const thumbnailsHeight = narrow ? fieldThumbnailsHeight : Math.max(0,finalTop+finalHeight-thumbnailsTop);
-  const thumbnailHeight = narrow ? fieldThumbnailsHeight : Math.max(0,(thumbnailsHeight-2*thumbnailGap)/3);
+  const thumbnailsHeight = narrow ? fieldThumbnailsHeight : thumbnailHeight*3+thumbnailGap*2;
   land.section.style.setProperty('--land-aside-top',`${asideTop}px`);
   land.section.style.setProperty('--land-thumbnails-top',`${thumbnailsTop}px`);
   land.section.style.setProperty('--land-thumbnails-height',`${thumbnailsHeight}px`);

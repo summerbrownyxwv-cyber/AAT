@@ -1,4 +1,4 @@
-.planting-page{color:var(--ink);font-family:var(--sans);font-size:var(--body);line-height:1.6875;display:contents}
+.planting-page{color:var(--ink);font-family:var(--sans);font-size:var(--body);line-height:1.6875;display:block}
 body:has(.planting-page){overflow-x:clip;overflow-anchor:none}
 #planting-content,.plant-cultivar{display:contents}
 .plant-shell{margin-inline:var(--left) var(--right)}
@@ -30,9 +30,9 @@ body:has(.planting-page){overflow-x:clip;overflow-anchor:none}
 .plant-land-field{opacity:var(--land-copy);transform:translateY(calc(calc(12 * var(--wide-u)) * (1 - var(--land-copy))));filter:blur(calc(calc(4 * var(--wide-u)) * (1 - var(--land-copy))));clip-path:inset(calc(12% * (1 - var(--land-copy))) 0 0)}
 .plant-land-field .plant-land-thumbnails{height:var(--land-thumbnails-height);flex:none;opacity:calc(1 - var(--land-glass))}
 .plant-land-glass{top:var(--land-thumbnails-top);height:var(--land-glass-height);opacity:var(--land-glass);transform:translateY(calc(calc(12 * var(--wide-u)) * (1 - var(--land-glass))))}
-.plant-land-thumbnails{display:grid;grid-auto-rows:minmax(0,1fr);gap:calc(10 * var(--wide-u));flex:1;min-height:0}
-.plant-land-thumbnails>img{width:100%;height:100%;object-fit:cover;border-radius:var(--radius)}
-.plant-land-glass .plant-land-thumbnails{height:100%;width:100%}
+.plant-land-thumbnails{display:grid;grid-template-rows:repeat(3,minmax(0,1fr));gap:calc(10 * var(--wide-u));flex:1;min-height:0}
+.plant-land-thumbnails>img{display:block;min-height:0;width:100%;height:100%;object-fit:cover;border-radius:var(--radius)}
+.plant-land-glass .plant-land-thumbnails{grid-template-rows:repeat(2,minmax(0,1fr));height:100%;width:100%}
 .plant-cultivar-chapter{position:relative;padding-top:calc(48 * var(--wide-u));background:var(--cream)}
 .plant-cultivar-title{position:sticky;top:calc(var(--site-navigation-height) + calc(48 * var(--wide-u)));z-index:10;text-align:right;margin-top:0;margin-bottom:calc(56 * var(--wide-u));background:var(--cream);pointer-events:none}
 .plant-origin{padding-block:0 calc(48 * var(--wide-u));min-height:0}
@@ -83,7 +83,7 @@ body:has(.planting-page){overflow-x:clip;overflow-anchor:none}
  .plant-land-heading{left:calc(20 * var(--wide-u));top:calc(18 * var(--wide-u));font-size:calc(24 * var(--wide-u))}
  .plant-land-aside{top:var(--land-aside-top);bottom:calc(18 * var(--wide-u));right:calc(20 * var(--wide-u));left:calc(20 * var(--wide-u));width:auto;gap:calc(8 * var(--wide-u))}
  .plant-land-aside h3{font-size:calc(20 * var(--wide-u))}.plant-land-aside p{font-size:clamp(calc(12 * var(--wide-u)),2.2vw,calc(15 * var(--wide-u)));line-height:1.55}
- .plant-land-thumbnails{grid-auto-rows:auto;grid-template-columns:repeat(3,minmax(0,1fr));gap:calc(8 * var(--wide-u))}
+ .plant-land-thumbnails{grid-template-rows:auto;grid-template-columns:repeat(3,minmax(0,1fr));gap:calc(8 * var(--wide-u))}
  .plant-land-thumbnails>img{aspect-ratio:3/2;height:auto}
  .plant-land-glass{top:var(--land-thumbnails-top);bottom:auto;justify-content:start}
  .plant-land-glass .plant-land-thumbnails{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:minmax(0,1fr);height:100%;max-height:100%}
@@ -137,7 +137,8 @@ body:has(.planting-page){overflow-x:clip;overflow-anchor:none}
  .plant-land-heading,.plant-land-canvas,.plant-land-photo,.plant-greenhouse-photo,.plant-land-aside{position:relative;inset:auto!important;opacity:1!important;transform:none!important;width:100%!important;height:auto!important}
  .plant-land-photo{display:flex;flex-direction:column;gap:calc(24 * var(--wide-u));overflow:visible!important}.plant-land-photo>img,.plant-greenhouse-photo>img{position:relative;aspect-ratio:869/404;height:auto;border-radius:var(--radius)}
  .plant-land-photo img{opacity:1!important;transform:none!important;filter:none!important;clip-path:none!important}
- .plant-land-thumbnails{grid-template-columns:repeat(3,1fr);grid-auto-rows:auto;height:auto!important;opacity:1!important}.plant-land-thumbnails>img{aspect-ratio:3/2;height:auto}
+ .plant-land-thumbnails{grid-template-columns:repeat(3,1fr);grid-template-rows:auto;height:auto!important;opacity:1!important}.plant-land-thumbnails>img{aspect-ratio:3/2;height:auto}
+ .plant-land-glass .plant-land-thumbnails{grid-template-rows:auto}
  .plant-land-glass .plant-land-thumbnails>img{aspect-ratio:3/2;height:auto}
  .plant-research-stage{display:grid;grid-template-columns:1fr 1fr;gap:calc(24 * var(--wide-u));padding:calc(32 * var(--wide-u)) 0;min-height:0}
  .plant-research-copy{position:relative;inset:auto;width:100%;grid-column:1/-1;opacity:1;transform:none;filter:none}
@@ -154,3 +155,10 @@ body:has(.planting-page){overflow-x:clip;overflow-anchor:none}
 
 .plant-composition-stage{gap:calc(12 * var(--wide-u))}
 @media(max-width:600px){.plant-composition-data dt{font-size:calc(13 * var(--wide-u))}.plant-trait-copy p{font-size:calc(14 * var(--wide-u))}}
+
+/* Keep the trait chapter compact without changing its image proportions or scroll states. */
+@media(min-width:901px) and (prefers-reduced-motion:no-preference){
+ .plant-traits-scene{height:min(calc(100svh - var(--site-navigation-height)),max(calc(560 * var(--wide-u)),58vw))}
+ .plant-traits-stage{padding-top:clamp(40px,4.5vw,120px)}
+ .plant-trait-list{top:calc(clamp(40px,4.5vw,120px) + 56 * var(--wide-u));bottom:clamp(40px,4.5vw,120px)}
+}
