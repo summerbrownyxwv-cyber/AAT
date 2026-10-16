@@ -4,8 +4,6 @@
 .product-catalog .section-cover-panel{position:relative;z-index:var(--cover-layer)}
 .product-catalog .section-cover-panel.is-cover-fit{position:sticky;top:var(--cover-top);min-height:0}
 .product-catalog .section-cover-panel.is-cover-behind{visibility:hidden}
-.product-group{position:absolute;inset:0;overflow:clip;will-change:transform}
-.product-catalog.is-pinned .product-group-sheet{will-change:transform}
 .product-group{--product-color:#fff;background:var(--product-color);color:var(--ink)}
 .product-group-sheet{padding-bottom:clamp(calc(32 * var(--wide-u)),3vw,calc(52 * var(--wide-u)))}
 .product-group-heading{min-height:clamp(calc(76 * var(--wide-u)),6.25vw,calc(120 * var(--wide-u)));padding-block:calc(18 * var(--wide-u));display:flex;align-items:center;justify-content:space-between;gap:calc(24 * var(--wide-u))}

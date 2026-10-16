@@ -68,3 +68,9 @@
 用户997×876截图显示切换中途产品下半被固定舞台裁断。仅缩短舞台仍保留overflow:clip与人工runway，不能彻底修复；本次将目录接入服务/企业同一自然高度cover，保留110ms跟随，移除合成舞台与内部位移。九视口Node检查覆盖hash目标、长章读取与cleanup；共享cover的正反向/边界/reduce检查仍通过。此实现替代前文产品3的compact舞台方案。
 
 附带交付一致性更正：最终对dist运行资源校验发现OPPO-LICENSE.txt的Git文本换行规范化改变了manifest要求的3304原始字节。精确两路径使用-text保留源许可字节，未更改许可内容或资源校验规则。source/dist的许可字节及hash现都通过；不再恢复为旧的LF生成副本。
+
+## 产品叠层回归修复（1515×917 最新注释）
+
+- 修改前问题：用户截图中四组产品叠在同一位置。自然高度盖屏迁移后，products-page.css仍残留旧`.product-group{position:absolute;inset:0;overflow:clip;will-change:transform}`，以及已无对应状态的`.product-catalog.is-pinned .product-group-sheet`规则。初始化前面板脱离文档流；挂载后较高优先级规则将position改为relative/sticky，但inset（包括bottom:0）、裁切与will-change仍然残留，干扰自然高度盖屏。
+- 修改范围：仅删除上述两条产品目录旧规则，补强check-products-detail-layout，构建同步dist；不改共享section-cover、图片、产品顺序、横滑、跟随参数或字体。此修复恢复D-43的自然高度实现，不扩大锁定设计的变更范围。
+- 验证结果：新增断言在旧CSS上失败，在修复后通过；Node几何用例加入用户1515×917，保留997×876及手机/平板/4K，共10个产品用例。14项专项检查、npm run check、npm run build、dist资源校验和diff检查通过，source/dist产品样式逐字节一致。独立只读审查未找到其他目录级旧固定舞台规则。浏览器访问限制仍在，无修改后截图，不把数学用例称为设备视觉通过。

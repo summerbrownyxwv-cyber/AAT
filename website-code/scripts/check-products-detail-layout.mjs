@@ -18,14 +18,15 @@ const styles = await readFile(new URL('../products-page.css', import.meta.url), 
 assert.doesNotMatch(styles, /product-detail-card[^{}]*:[^{}]*(?:hover|active)[^{}]*\{[^{}]*box-shadow/);
 assert.match(styles, /\.product-detail-card:hover \.product-card-artwork\{transform:scale\(1\.025\)\}/);
 assert.doesNotMatch(styles, /data-transitioning=true[^{}]*\{pointer-events:none/);
-assert.doesNotMatch(styles, /\.product-catalog\.is-pinned \.product-group-sheet\{[^}]*min-height/);
+assert.doesNotMatch(styles, /\.product-group\s*\{[^}]*\b(?:position\s*:\s*(?:absolute|fixed)|inset\s*:|overflow(?:-[xy])?\s*:\s*(?:clip|hidden))/, 'Natural-height product panels must stay in document flow without stage clipping');
+assert.doesNotMatch(styles, /\.product-catalog\.is-pinned/, 'The obsolete synthetic pinned catalog must not retain CSS rules');
 assert.match(page, /max:group\.products\.length - 1/);
 
 const source = await readFile(new URL('../products-catalog-motion.js', import.meta.url), 'utf8');
 assert.doesNotMatch(source,/catalogTimeline|requestAnimationFrame|style\.height|style\.transform/,'Native covers have no synthetic runway or clipped moving viewport');
 assert.match(styles,/\.product-catalog-stage\{display:contents;outline:none\}/);
 assert.match(styles,/\.product-catalog \.section-cover-panel\.is-cover-fit\{position:sticky;top:var\(--cover-top\);min-height:0\}/);
-for (const [width, viewport] of [[390,844],[768,1024],[997,876],[1189,1263],[1440,900],[1920,560],[1920,1080],[2560,1440],[3840,2160]]) {
+for (const [width, viewport] of [[390,844],[768,1024],[997,876],[1189,1263],[1440,900],[1515,917],[1920,560],[1920,1080],[2560,1440],[3840,2160]]) {
   const nav=(width<1024?64:72)*Math.max(1,width/1440), available=viewport-nav;
   const heights=[available*.75,available*1.3,available*.8,available*.9];
   const panels=heights.map((offsetHeight,index)=>({id:`products-${index}`,offsetHeight,inert:false}));
@@ -47,4 +48,4 @@ for (const [width, viewport] of [[390,844],[768,1024],[997,876],[1189,1263],[144
   assert.equal(geometry[1].top+heights[1],viewport,'Long cover reaches the screen bottom after reading');
   cleanup();assert(stopped);assert.equal(events.size,0);assert.equal(clicks.size,0);
 }
-console.log('PASS: unique finite 6/6/4/3 cards, artwork hover, native natural-height covers without cropped stage or synthetic runway, original hash routes and cleanup at nine viewport fixtures. Shared cover input/follow checks are in check-service-annotations.');
+console.log('PASS: unique finite 6/6/4/3 cards, artwork hover, in-flow panel CSS without obsolete pinned stage, native natural-height covers, original hash routes and cleanup at ten viewport fixtures. Shared cover input/follow checks are in check-service-annotations.');
