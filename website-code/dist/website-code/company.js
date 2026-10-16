@@ -1,6 +1,7 @@
 import { responsiveMarkup } from './responsive-media.js';
 import './xunai/brand-figma.js';
 import { initCompanyHonors } from './company-honors.js';
+import { mountSectionCover } from './section-cover.js';
 
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const clamp = (value, min = 0, max = 1) => Math.min(max, Math.max(min, value));
@@ -62,7 +63,10 @@ const stopHonors = initCompanyHonors(container => {
     mediaObserver.observe(image);
   });
 });
-window.addEventListener('pagehide', event => { if (!event.persisted) stopHonors(); }, { once:true });
+const companyMain = document.querySelector('#main');
+companyMain.classList.add('company-cover-main');
+const stopCover = mountSectionCover([...companyMain.querySelectorAll(':scope>.company-intro,#company-brand-content .xf-brand>.xf-section,:scope>.honor-section,:scope>.action-section')]);
+window.addEventListener('pagehide', event => { if (!event.persisted) { stopHonors(); stopCover(); } }, { once:true });
 
 const heroVideo = document.querySelector('.company-hero-video');
 let videoInView = true;

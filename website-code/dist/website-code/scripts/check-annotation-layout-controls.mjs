@@ -51,6 +51,16 @@ for(const type of ['consumer','verify']){
   official.close();assert.equal(document.activeElement,menu);
 }
 assert.doesNotMatch(source,/fetch\(|XMLHttpRequest|localStorage|sessionStorage/,'The menu does not submit or store feedback');
+const companySource=await read('company.js');
+assert.match(companySource,/import \{ mountSectionCover \} from '.\/section-cover.js'/);
+assert.match(companySource,/mountSectionCover\(\[\.\.\.companyMain\.querySelectorAll/);
+assert.ok(companySource.includes(':scope>.company-intro,#company-brand-content .xf-brand>.xf-section,:scope>.honor-section,:scope>.action-section'));
+assert.ok(companySource.includes('stopHonors(); stopCover();'));
+const brandCSS=await read('company-brand.css');
+assert.match(brandCSS,/\.company-cover-main :is\(\.company-brand-content,\.xf-brand\)\{display:contents\}/);
+assert.match(brandCSS,/\.company-cover-main \.section-cover-panel\.is-cover-fit\{position:sticky;top:var\(--cover-top\);min-height:0\}/);
+const planting=await read('planting-page.js');
+assert.doesNotMatch(planting.match(/const coverChapters = [^;]+;/)[0],/footer/, 'The planting footer stays in normal document flow');
 const spacing=await read('page-spacing.css');
 assert.match(spacing,/clamp\(40px,4\.5vw,120px\)/);
 for(const file of ['contact.html','service.html'])assert.ok((await read(file)).includes('./page-spacing.css'));

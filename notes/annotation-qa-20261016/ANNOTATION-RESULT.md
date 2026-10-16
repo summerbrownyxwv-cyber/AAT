@@ -54,3 +54,7 @@
 首页AI图片与表底部对齐：原.ai-image align-self:start和110u底margin使图像底边明显高于表格。仅改同一grid-row的image为align-self:end、margin-bottom:0；.ai-stats本来就是align-self:end。原图宽88%、裁切和移动单列顺序不改。home-motion新增这一布局约束检查通过；本条与此前33条一起上传，仍未获得浏览器截图验收。
 
 上传前第35条新增注释：997×876菜单官方服务/投诉按钮去米白填充，background透明，文字/边框/触点及原生弹窗保留。源码与dist同字节更新；此单一色面删除不改变布局。
+
+## 上传中第36–37条新增注释
+
+企业正文区块向上覆盖：company.js复用section-cover（110ms短跟随），将两个brand包装设display:contents，使intro、导入章节、荣誉和行动共享main边界。每章保持自然内容高，原内侧边界不变，用背景伪元素全宽遮盖，无runway或全屏min-height；原点击商业组件和横向时间线保留。种植页脚原被显式放入coverChapters，现从该列表移除；其他共享cover均只选择main内容，页脚不参与盖屏。

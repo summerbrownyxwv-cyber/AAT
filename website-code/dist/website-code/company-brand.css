@@ -94,3 +94,12 @@
 @media(prefers-reduced-motion:reduce){.company-brand-content .xf-brand *{animation:none!important;transition:none!important;scroll-behavior:auto!important}.company-brand-content .xf-brand .company-brand-reveal{opacity:1;clip-path:none;filter:none;transform:none}.company-brand-content .xf-history-card:not(.is-active) .xf-history-copy{filter:none;}}
 @media(prefers-reduced-motion:reduce){.company-brand-content .xf-brand .xf-covers>button>img.company-brand-reveal{filter:brightness(.65);}}
 @media(prefers-reduced-motion:reduce){.company-brand-content .company-business-hover .company-business-choice>img.company-brand-reveal{filter:brightness(.65);}}
+
+/* Content-height sheets share one scroll container; the footer stays outside main. */
+.company-cover-main{overflow-x:clip;overflow-y:visible}
+.company-cover-main :is(.company-brand-content,.xf-brand){display:contents}
+.company-cover-main .section-cover-panel{position:relative;z-index:var(--cover-layer);isolation:isolate;background:#fff}
+.company-cover-main .section-cover-panel::before{content:"";position:absolute;inset:0;z-index:-1;background:inherit;pointer-events:none}
+.company-cover-main .section-cover-panel:is(.xf-section,.page-shell)::before{left:calc(-1 * var(--left));right:calc(-1 * var(--right))}
+.company-cover-main .section-cover-panel.is-cover-fit{position:sticky;top:var(--cover-top);min-height:0}
+.company-cover-main .section-cover-panel.is-cover-behind{visibility:hidden}

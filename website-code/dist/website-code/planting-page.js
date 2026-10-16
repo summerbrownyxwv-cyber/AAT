@@ -53,7 +53,7 @@ const landImages = [landPhoto.firstElementChild,landPhoto.querySelector('#greenh
 const traitArticles = [...traitsStory.section.querySelectorAll('article')];
 const dataRows = [...composition.section.querySelectorAll('dl>div')];
 dataRows.forEach(row => { row.querySelector('dd').dataset.final = row.querySelector('dd').textContent; });
-const coverChapters = [...main.querySelectorAll('.plant-origin,.plant-research,.plant-traits,.plant-management,.pf-campus,.pf-technology,.pf-lines,.pf-capacity'),document.querySelector('#footer')];
+const coverChapters = [...main.querySelectorAll('.plant-origin,.plant-research,.plant-traits,.plant-management,.pf-campus,.pf-technology,.pf-lines,.pf-capacity')];
 coverChapters.forEach((section,index) => { section.classList.add('plant-cover'); section.style.zIndex = String(index + 1); });
 const dampedCovers = [...main.querySelectorAll('.pf-campus,.pf-technology,.pf-lines,.pf-capacity')].map(section => ({section,top:null,offset:0}));
 let frame = 0, last = 0, landGeometry, researchGeometry, plantScene, titleExitLimit = 0;
