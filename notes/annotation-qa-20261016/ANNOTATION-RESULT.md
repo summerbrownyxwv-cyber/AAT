@@ -48,3 +48,7 @@
 构建与上传结果以本轮最终终端记录、Git提交和远端SHA为准。原修改前证据不覆盖，原媒体及资源映射校验未改。
 
 最终构建记录：`npm run build`通过；对website-code/dist再次运行check-package通过；所有本轮修改和新增运行模块与dist对应副本逐字节一致。构建产生的许可证换行差异已仅恢复该生成副本，未修改原字体授权文本。
+
+## 上传前第34条新增注释
+
+首页AI图片与表底部对齐：原.ai-image align-self:start和110u底margin使图像底边明显高于表格。仅改同一grid-row的image为align-self:end、margin-bottom:0；.ai-stats本来就是align-self:end。原图宽88%、裁切和移动单列顺序不改。home-motion新增这一布局约束检查通过；本条与此前33条一起上传，仍未获得浏览器截图验收。

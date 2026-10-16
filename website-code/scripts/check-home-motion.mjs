@@ -2,6 +2,9 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 
 const source = await readFile(new URL('../motion.js', import.meta.url), 'utf8');
+const css = await readFile(new URL('../styles.css', import.meta.url), 'utf8');
+assert.match(css, /\.ai-image\{[^}]*grid-row:3;[^}]*align-self:end;[^}]*margin-bottom:0/, 'The stationary home AI image ends on the data table baseline');
+assert.match(css, /\.ai-stats\{[^}]*grid-row:3;align-self:end/, 'Image and table share the same bottom-aligned grid row');
 const markup = await readFile(new URL('../index.html', import.meta.url), 'utf8');
 assert.doesNotMatch(markup, /series-playback|暂停轮播|继续轮播/, 'The carousel must not expose playback controls');
 assert.doesNotMatch(source, /seriesPaused|seriesHovered|seriesFocused/, 'Hover, focus, and manual selection must not stop automatic playback');
