@@ -1,5 +1,4 @@
 .planting-page :is(.pf-campus,.pf-technology,.pf-lines,.pf-capacity){color:var(--ink);background:#fff;}
-.planting-page :is(.pf-campus,.pf-technology,.pf-capacity){border-radius:var(--radius);}
 .planting-page :is(.pf-technology,.pf-capacity){background:var(--cream);}
 .planting-page :is(.pf-campus,.pf-technology,.pf-lines,.pf-capacity) :is(h2,h3){font-family:var(--display);font-weight:400;color:inherit;}
 .planting-page :is(.pf-campus,.pf-technology,.pf-lines,.pf-capacity) h2{font-size:clamp(calc(24 * var(--wide-u)),32 * var(--u),calc(43 * var(--wide-u)));line-height:1.4;}
@@ -77,7 +76,6 @@
   .planting-page .pf-device-copy{width:100%;}
 }
 @media(max-width:767px){
-  .planting-page :is(.pf-campus,.pf-technology,.pf-capacity){border-radius:calc(20 * var(--wide-u));}
   .planting-page .pf-campus-inner,.planting-page .pf-capacity-inner{padding:calc(40 * var(--wide-u)) calc(20 * var(--wide-u)) calc(48 * var(--wide-u));}
   .planting-page .pf-campus-aerial{position:relative;left:auto;top:auto;width:100%;height:auto;aspect-ratio:4/5;margin-top:calc(36 * var(--wide-u));}
   .planting-page .pf-campus-intro{width:100%;margin-top:calc(36 * var(--wide-u));}

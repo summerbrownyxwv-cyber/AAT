@@ -69,3 +69,9 @@ AI与共享cover专项检查、npm run check、npm run build、dist资源校验�
 企业历程选中年份点的遮线阴影也由米白同步为白色，大小与位置不变，避免底色改白后留下米白圈。
 
 本批AI/企业/荣誉专项检查、npm run check、npm run build、dist资源校验和diff检查通过；两个运行文件与dist逐字节一致。仍未取得浏览器after截图。
+
+## 种植页外侧圆角注释
+
+修改前main：46964c43。用户圈选产能章右下整页底板圆角。planting-factory.css删除pf-campus/pf-technology/pf-capacity的基础及移动端border-radius两条，避免不同视口重新出现章节外角；原pf-media/figure图片圆角不变。无尺寸/间距/字体/动效改动，浏览器after截图未取得。
+
+种植专项、npm run check、npm run build、dist资源校验、source/dist字节核对及diff检查通过。
