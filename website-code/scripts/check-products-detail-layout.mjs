@@ -33,7 +33,7 @@ for (const [width, viewport] of [[390,844],[768,1024],[997,876],[1189,1263],[144
   const catalog={querySelectorAll:()=>panels,getBoundingClientRect:()=>({top:1000})};
   const context=vm.createContext({
     scrollY:0,scrollTo:value=>scroll=value,location:{hash:''},
-    mountSectionCover:targets=>{assert.deepEqual(targets,panels);mounted=true;return()=>stopped=true;},
+    mountSectionCover:targets=>{assert.equal(targets.length,panels.length);targets.forEach((panel,index)=>assert.equal(panel,panels[index]));mounted=true;return()=>stopped=true;},
     document:{querySelector:()=>({getBoundingClientRect:()=>({height:nav})}),fonts:{ready:{then:callback=>callback()}},addEventListener:(type,callback)=>clicks.set(type,callback),removeEventListener:type=>clicks.delete(type)},
     window:{addEventListener:(type,callback)=>events.set(type,callback),removeEventListener:type=>events.delete(type)},
   });
