@@ -47,9 +47,9 @@ img{display:block;max-width:100%}
 .company-image img{width:100%;height:100%;object-fit:cover;transform:translate3d(0,var(--parallax-y,0%),0) scale(var(--parallax-scale,1));will-change:transform,filter}
 .company-image,.company-cta{will-change:transform}
 .company-copy-column{position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:calc(32 * var(--wide-u))}
-.company-copy{position:relative}
+.company-copy{position:relative;container-type:inline-size}
 .company-copy h2{font-size:clamp(calc(22 * var(--wide-u)),30.297 * var(--u),calc(41 * var(--wide-u)));line-height:1.3;margin-bottom:calc(18 * var(--u));white-space:normal}
-.company-copy p{font-size:var(--body);line-height:1.5;width:calc(289.294 * var(--u));max-width:100%}
+.company-copy p{font-size:min(var(--body),5cqi);line-height:1.5;width:100%;white-space:nowrap}
 .company-cta{width:100%;color:var(--muted);flex-shrink:0}
 .company-cta img,.planting-cta img,.collection-cta img{width:calc(12 * var(--wide-u));height:auto}
 .planting-section{padding-top:calc(46 * var(--u));padding-bottom:calc(26 * var(--u))}
@@ -214,7 +214,6 @@ img{display:block;max-width:100%}
   .company-card{display:flex;flex-direction:column;gap:calc(32 * var(--wide-u));margin-top:calc(48 * var(--wide-u))}
   .company-copy-column{gap:calc(24 * var(--wide-u))}
   .company-copy h2{font-size:calc(26 * var(--wide-u));margin-bottom:calc(16 * var(--wide-u))}
-  .company-copy p{width:calc(290 * var(--wide-u))}
   .planting-section{padding:calc(40 * var(--wide-u)) 0}
   .planting-heading{margin-bottom:calc(32 * var(--wide-u))}
   .planting-layout{display:flex;flex-direction:column;gap:calc(32 * var(--wide-u));min-height:0}

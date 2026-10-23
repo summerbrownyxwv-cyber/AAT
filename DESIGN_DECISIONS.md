@@ -127,3 +127,12 @@ Safari、实体机、读屏、真实200%浏览器缩放、正式托管性能与�
 ## 2026-10-16 · 性能低风险批次
 
 仅同字节字体URL归一、非首屏系列图lazy/low并接近视口预热、Three相同夹紧进度短路、生产输出排除开发scripts。图像/视频/字体/模型原数据不变，校验规则不改。实施与未测边界见notes/performance-qa的PERFORMANCE-AUDIT、OPTIMIZATION-PLAN、OPTIMIZATION-RESULT和VISUAL-REGRESSION。原媒体再编码、模型分级加载和video source延后仍须对比验证后再决定。
+
+## 2026-10-23 · 首页与页脚四条注释
+
+- D-65：首页公司说明“东元集团布局大健康产业的核心智能制造中心”完整单行，使用所在列全宽；父级inline-size容器配合字号min(var(--body),5cqi)，窄屏按20字所需宽度缩小，移除旧桌面/移动固定段落宽度。不截断、不省略、不改文案、字体角色或其他字号。25宽度（240–3840，含900/901、986）尺寸计算及实际OPPO字宽检查通过；不等同浏览器实屏验收。
+- D-66：首页公司图片按用户上传替换为工厂大门，新增1920×1280 WebP q82，133,108字节（约130KiB），较已压缩JPEG小5.896%；沿用原583:324图框与居中cover。旧图片保留，其他引用不变。此为用户明确授权的有损转换，不声称像素无损；原图/成图/招牌局部及图框裁切已本地查看，来源与哈希记录在content/home-company-image.json，不改历史像素无损清单。
+- D-67：首页#collections外围底色由米白改白色，仅移除cream类；保留系列摄影、图内底板、缩略图、自动轮播与原动效。
+- D-68：七个正文页共享页脚新增小红书、抖音1:1 SVG，按用户上传参考描摹path，无嵌入位图或字体依赖；分别链接https://xhslink.cn/o/3bfojLBF91a和https://v.douyin.com/t0FnwTl1gFY/，不含抖音分享附字。保留微信/天猫及全部联系信息；四图沿用32wide图形、44wide触点、12wide等距，容器可换行且自然增高。来源记录见notes/asset-sources/footer-social.md。
+
+本轮范围与验证证据见notes/annotation-qa-20261023/HOME-FOOTER-ANNOTATIONS.md。浏览器访问限制仍在，未新增浏览器after截图或真实设备结论。

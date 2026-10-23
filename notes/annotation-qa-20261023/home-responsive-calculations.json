@@ -1,0 +1,209 @@
+{
+  "kind": "CSS layout arithmetic and actual OPPO font measurement; not browser rendering",
+  "text": "东元集团布局大健康产业的核心智能制造中心",
+  "characterCount": 20,
+  "fontAdvanceEm": 19.72,
+  "viewports": [
+    {
+      "viewportWidth": 240,
+      "companyColumnWidth": 200,
+      "fontSize": 10.0,
+      "actualFontTextWidth": 197.2,
+      "fullwidthFallbackBound": 200.0,
+      "fits": true
+    },
+    {
+      "viewportWidth": 280,
+      "companyColumnWidth": 240,
+      "fontSize": 12.0,
+      "actualFontTextWidth": 236.64,
+      "fullwidthFallbackBound": 240.0,
+      "fits": true
+    },
+    {
+      "viewportWidth": 320,
+      "companyColumnWidth": 280,
+      "fontSize": 14.0,
+      "actualFontTextWidth": 276.08,
+      "fullwidthFallbackBound": 280.0,
+      "fits": true
+    },
+    {
+      "viewportWidth": 360,
+      "companyColumnWidth": 320,
+      "fontSize": 15,
+      "actualFontTextWidth": 295.8,
+      "fullwidthFallbackBound": 300,
+      "fits": true
+    },
+    {
+      "viewportWidth": 375,
+      "companyColumnWidth": 335,
+      "fontSize": 15,
+      "actualFontTextWidth": 295.8,
+      "fullwidthFallbackBound": 300,
+      "fits": true
+    },
+    {
+      "viewportWidth": 390,
+      "companyColumnWidth": 350,
+      "fontSize": 15,
+      "actualFontTextWidth": 295.8,
+      "fullwidthFallbackBound": 300,
+      "fits": true
+    },
+    {
+      "viewportWidth": 414,
+      "companyColumnWidth": 372.6,
+      "fontSize": 15,
+      "actualFontTextWidth": 295.8,
+      "fullwidthFallbackBound": 300,
+      "fits": true
+    },
+    {
+      "viewportWidth": 430,
+      "companyColumnWidth": 387.0,
+      "fontSize": 15,
+      "actualFontTextWidth": 295.8,
+      "fullwidthFallbackBound": 300,
+      "fits": true
+    },
+    {
+      "viewportWidth": 600,
+      "companyColumnWidth": 540.0,
+      "fontSize": 15,
+      "actualFontTextWidth": 295.8,
+      "fullwidthFallbackBound": 300,
+      "fits": true
+    },
+    {
+      "viewportWidth": 640,
+      "companyColumnWidth": 576.0,
+      "fontSize": 15,
+      "actualFontTextWidth": 295.8,
+      "fullwidthFallbackBound": 300,
+      "fits": true
+    },
+    {
+      "viewportWidth": 641,
+      "companyColumnWidth": 576.9,
+      "fontSize": 15,
+      "actualFontTextWidth": 295.8,
+      "fullwidthFallbackBound": 300,
+      "fits": true
+    },
+    {
+      "viewportWidth": 768,
+      "companyColumnWidth": 691.2,
+      "fontSize": 15,
+      "actualFontTextWidth": 295.8,
+      "fullwidthFallbackBound": 300,
+      "fits": true
+    },
+    {
+      "viewportWidth": 899,
+      "companyColumnWidth": 809.1,
+      "fontSize": 15.283,
+      "actualFontTextWidth": 301.3808,
+      "fullwidthFallbackBound": 305.66,
+      "fits": true
+    },
+    {
+      "viewportWidth": 900,
+      "companyColumnWidth": 810.0,
+      "fontSize": 15.3,
+      "actualFontTextWidth": 301.716,
+      "fullwidthFallbackBound": 306.0,
+      "fits": true
+    },
+    {
+      "viewportWidth": 901,
+      "companyColumnWidth": 368.534,
+      "fontSize": 14,
+      "actualFontTextWidth": 276.08,
+      "fullwidthFallbackBound": 280,
+      "fits": true
+    },
+    {
+      "viewportWidth": 986,
+      "companyColumnWidth": 403.3014,
+      "fontSize": 14,
+      "actualFontTextWidth": 276.08,
+      "fullwidthFallbackBound": 280,
+      "fits": true
+    },
+    {
+      "viewportWidth": 1023,
+      "companyColumnWidth": 418.4354,
+      "fontSize": 14,
+      "actualFontTextWidth": 276.08,
+      "fullwidthFallbackBound": 280,
+      "fits": true
+    },
+    {
+      "viewportWidth": 1024,
+      "companyColumnWidth": 418.8444,
+      "fontSize": 14,
+      "actualFontTextWidth": 276.08,
+      "fullwidthFallbackBound": 280,
+      "fits": true
+    },
+    {
+      "viewportWidth": 1200,
+      "companyColumnWidth": 490.8333,
+      "fontSize": 14,
+      "actualFontTextWidth": 276.08,
+      "fullwidthFallbackBound": 280,
+      "fits": true
+    },
+    {
+      "viewportWidth": 1280,
+      "companyColumnWidth": 523.5556,
+      "fontSize": 14.2222,
+      "actualFontTextWidth": 280.4622,
+      "fullwidthFallbackBound": 284.4444,
+      "fits": true
+    },
+    {
+      "viewportWidth": 1440,
+      "companyColumnWidth": 589.0,
+      "fontSize": 16.0,
+      "actualFontTextWidth": 315.52,
+      "fullwidthFallbackBound": 320.0,
+      "fits": true
+    },
+    {
+      "viewportWidth": 1512,
+      "companyColumnWidth": 618.45,
+      "fontSize": 16.8,
+      "actualFontTextWidth": 331.296,
+      "fullwidthFallbackBound": 336.0,
+      "fits": true
+    },
+    {
+      "viewportWidth": 1920,
+      "companyColumnWidth": 785.3333,
+      "fontSize": 21.3333,
+      "actualFontTextWidth": 420.6933,
+      "fullwidthFallbackBound": 426.6667,
+      "fits": true
+    },
+    {
+      "viewportWidth": 2560,
+      "companyColumnWidth": 1047.1111,
+      "fontSize": 28.4444,
+      "actualFontTextWidth": 560.9244,
+      "fullwidthFallbackBound": 568.8889,
+      "fits": true
+    },
+    {
+      "viewportWidth": 3840,
+      "companyColumnWidth": 1570.6667,
+      "fontSize": 42.6667,
+      "actualFontTextWidth": 841.3867,
+      "fullwidthFallbackBound": 853.3333,
+      "fits": true
+    }
+  ],
+  "photoIntegrity": "passed"
+}

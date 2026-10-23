@@ -1,0 +1,46 @@
+{
+  "image": "assets/homepage/company-factory-gate.webp",
+  "checkedOn": "2026-10-23",
+  "usage": "Homepage company image; user-provided replacement for the previous field photograph.",
+  "sourceName": "工厂大门.jpg",
+  "sourcePath": "/Volumes/临空市保镖小姐/艾艾贴/艾艾贴图片素材库/工厂图/工厂大门.jpg",
+  "sourceBytes": 141448,
+  "sourceSha256": "83c4e1a5b111722f8b587185b9438922fc6a85f8d592a9624f8f965e7db5ce03",
+  "outputBytes": 133108,
+  "outputSha256": "216d1df9245a04205cef9534144f51f139b4a007431a2166d3faadbd735b3904",
+  "resolution": [
+    1920,
+    1280
+  ],
+  "reductionPercent": 5.896,
+  "format": "WebP",
+  "qualityMode": "Lossy WebP re-encoding of the decoded JPEG; not pixel-lossless. Original dimensions, composition and color appearance retained; no crop, resizing or color filters.",
+  "encoding": {
+    "encoder": "Pillow/libwebp",
+    "pillowVersion": "12.3.0",
+    "quality": 82,
+    "method": 6,
+    "lossless": false
+  },
+  "verification": {
+    "fullDecodeErrors": 0,
+    "psnrRgbDb": 40.586709,
+    "ssimLuminance": 0.982601,
+    "ssimMethod": "BT.601 luminance; 11x11 Gaussian window, sigma 1.5; valid interior; K1=0.01, K2=0.03, L=255.",
+    "visualCheck": "Native-resolution source and output inspected side by side: rooftop red signage, illuminated company sign and garden foliage remain clear; small foliage detail has slight re-encoding softness. No resized/cropped composition or obvious visual artifacts in the inspected regions.",
+    "candidatesBytes": {
+      "q78": 114904,
+      "q80": 123508,
+      "q82": 133108,
+      "q83": 138214,
+      "q84": 143914,
+      "q85": 149678,
+      "q88": 173012,
+      "q92": 209982,
+      "q95": 259382,
+      "lossless": 803686
+    },
+    "choice": "Quality 82 keeps more detail than q80 while remaining below the already-compressed source size. q84 and higher increase transfer size; lossless WebP is much larger.",
+    "browserVisualCheck": "Not performed; local source and converted-image inspection only."
+  }
+}

@@ -89,10 +89,12 @@ for (const [page, html] of Object.entries(sources)) {
   }
   const social = footer.match(/<div class="footer-social-links">([\s\S]*?)<\/div>/)?.[1];
   assert.ok(social, page + ' has separate social links');
-  assert.equal((social.match(/<a\b/g) || []).length, 2, page + ' has two social destinations');
+  assert.equal((social.match(/<a\b/g) || []).length, 4, page + ' has four social destinations');
   for (const [label, href, asset, accessibleName] of [
     ['微信', 'https://mp.weixin.qq.com/s/xUja-NTdHZBC-52JEEVa3Q', 'footer-wechat.svg', '艾艾贴微信公众号'],
     ['天猫', 'https://m.tb.cn/h.jXQYfgHfp2uOsl5', 'footer-tmall.svg', '艾艾贴天猫店'],
+    ['小红书', 'https://xhslink.cn/o/3bfojLBF91a', 'footer-xiaohongshu.svg', '艾艾贴小红书'],
+    ['抖音', 'https://v.douyin.com/t0FnwTl1gFY/', 'footer-douyin.svg', '艾艾贴抖音'],
   ]) {
     const link = [...social.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/g)].find(([, attributes]) => attributes.includes(`href="${href}"`));
     assert.ok(link, page + ' ' + label + ' uses the supplied URL');
@@ -115,11 +117,11 @@ for (const [page, html] of Object.entries(sources)) {
 assert.ok((await read('site-experience.css')).includes("@import './site-footer.css'"), 'Shared footer styling loads on all pages');
 for (const file of ['styles.css', 'site-foundations.css']) assert.match(await read(file), /a:focus-visible\{outline:2px solid var\(--ink\)/, file + ' retains keyboard focus for the social destinations');
 assert.doesNotMatch(await read('site-footer.css'), /outline\s*:\s*(?:none|0\b)/, 'Footer styling does not suppress keyboard focus');
-for (const asset of ['footer-wechat.svg', 'footer-tmall.svg']) {
+for (const asset of ['footer-wechat.svg', 'footer-tmall.svg', 'footer-xiaohongshu.svg', 'footer-douyin.svg']) {
   const svg = await readFile(new URL('../../assets/homepage/' + asset, import.meta.url), 'utf8');
   const viewBox = svg.match(/\bviewBox="([^"]+)"/)?.[1].trim().split(/[\s,]+/).map(Number);
   assert.ok(viewBox?.length === 4 && viewBox.every(Number.isFinite) && viewBox[2] > 0 && viewBox[2] === viewBox[3], asset + ' has a square vector canvas');
-  assert.doesNotMatch(svg, /<(?:image|script|foreignObject)\b|data:image|(?:href|xlink:href)="https?:/i, asset + ' is self-contained vector artwork');
+  assert.doesNotMatch(svg, /<(?:image|text|script|foreignObject)\b|data:image|(?:href|xlink:href)="https?:/i, asset + ' is self-contained vector artwork');
 }
 const redirect = await read('franchise-redirect.js');
 assert.ok(redirect.includes('./service.html#/franchise') && redirect.includes('./contact.html#/franchise/apply'));
