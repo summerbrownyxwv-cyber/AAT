@@ -1,0 +1,207 @@
+{
+  "verification": "Source CSS/HTML plus local font/image measurements; not browser rendering",
+  "imageResolution": [
+    1024,
+    768
+  ],
+  "viewports": [
+    {
+      "viewportWidth": 320,
+      "sharedLeft": 20,
+      "sharedRight": 300,
+      "imageAndCaptionWidth": 280,
+      "imageHeightAt4To3": 210.0,
+      "researchToCollectionsGapBefore": 72,
+      "researchToCollectionsGapAfter": 40,
+      "creamServiceTopInset": 40,
+      "aiHeadingFits": true
+    },
+    {
+      "viewportWidth": 360,
+      "sharedLeft": 20,
+      "sharedRight": 340,
+      "imageAndCaptionWidth": 320,
+      "imageHeightAt4To3": 240.0,
+      "researchToCollectionsGapBefore": 72,
+      "researchToCollectionsGapAfter": 40,
+      "creamServiceTopInset": 40,
+      "aiHeadingFits": true
+    },
+    {
+      "viewportWidth": 390,
+      "sharedLeft": 20,
+      "sharedRight": 370,
+      "imageAndCaptionWidth": 350,
+      "imageHeightAt4To3": 262.5,
+      "researchToCollectionsGapBefore": 72,
+      "researchToCollectionsGapAfter": 40,
+      "creamServiceTopInset": 40,
+      "aiHeadingFits": true
+    },
+    {
+      "viewportWidth": 430,
+      "sharedLeft": 21.5,
+      "sharedRight": 408.5,
+      "imageAndCaptionWidth": 387.0,
+      "imageHeightAt4To3": 290.25,
+      "researchToCollectionsGapBefore": 72,
+      "researchToCollectionsGapAfter": 40,
+      "creamServiceTopInset": 40,
+      "aiHeadingFits": true
+    },
+    {
+      "viewportWidth": 600,
+      "sharedLeft": 30.0,
+      "sharedRight": 570.0,
+      "imageAndCaptionWidth": 540.0,
+      "imageHeightAt4To3": 405.0,
+      "researchToCollectionsGapBefore": 72,
+      "researchToCollectionsGapAfter": 40,
+      "creamServiceTopInset": 40,
+      "aiHeadingFits": true
+    },
+    {
+      "viewportWidth": 640,
+      "sharedLeft": 32.0,
+      "sharedRight": 608.0,
+      "imageAndCaptionWidth": 576.0,
+      "imageHeightAt4To3": 432.0,
+      "researchToCollectionsGapBefore": 72,
+      "researchToCollectionsGapAfter": 40,
+      "creamServiceTopInset": 40,
+      "aiHeadingFits": true
+    },
+    {
+      "viewportWidth": 641,
+      "sharedLeft": 32.05,
+      "sharedRight": 608.95,
+      "imageAndCaptionWidth": 576.9,
+      "imageHeightAt4To3": 432.675,
+      "researchToCollectionsGapBefore": 72,
+      "researchToCollectionsGapAfter": 40,
+      "creamServiceTopInset": 40,
+      "aiHeadingFits": true
+    },
+    {
+      "viewportWidth": 768,
+      "sharedLeft": 38.4,
+      "sharedRight": 729.6,
+      "imageAndCaptionWidth": 691.2,
+      "imageHeightAt4To3": 518.4,
+      "researchToCollectionsGapBefore": 72,
+      "researchToCollectionsGapAfter": 40,
+      "creamServiceTopInset": 40,
+      "aiHeadingFits": true
+    },
+    {
+      "viewportWidth": 899,
+      "sharedLeft": 44.95,
+      "sharedRight": 854.05,
+      "imageAndCaptionWidth": 809.1,
+      "imageHeightAt4To3": 606.825,
+      "researchToCollectionsGapBefore": 72,
+      "researchToCollectionsGapAfter": 40,
+      "creamServiceTopInset": 40,
+      "aiHeadingFits": true
+    },
+    {
+      "viewportWidth": 900,
+      "sharedLeft": 45.0,
+      "sharedRight": 855.0,
+      "imageAndCaptionWidth": 810.0,
+      "imageHeightAt4To3": 607.5,
+      "researchToCollectionsGapBefore": 72,
+      "researchToCollectionsGapAfter": 40,
+      "creamServiceTopInset": 40,
+      "aiHeadingFits": true
+    },
+    {
+      "viewportWidth": 901,
+      "sharedLeft": 54.435,
+      "sharedRight": 858.453,
+      "imageAndCaptionWidth": 804.017,
+      "imageHeightAt4To3": 603.013,
+      "researchToCollectionsGapBefore": 77.586,
+      "researchToCollectionsGapAfter": 16.268,
+      "creamServiceTopInset": 48,
+      "aiHeadingFits": true
+    },
+    {
+      "viewportWidth": 986,
+      "sharedLeft": 59.571,
+      "sharedRight": 939.439,
+      "imageAndCaptionWidth": 879.868,
+      "imageHeightAt4To3": 659.901,
+      "researchToCollectionsGapBefore": 84.906,
+      "researchToCollectionsGapAfter": 17.803,
+      "creamServiceTopInset": 48,
+      "aiHeadingFits": true
+    },
+    {
+      "viewportWidth": 1024,
+      "sharedLeft": 61.867,
+      "sharedRight": 975.644,
+      "imageAndCaptionWidth": 913.778,
+      "imageHeightAt4To3": 685.333,
+      "researchToCollectionsGapBefore": 88.178,
+      "researchToCollectionsGapAfter": 18.489,
+      "creamServiceTopInset": 48,
+      "aiHeadingFits": true
+    },
+    {
+      "viewportWidth": 1280,
+      "sharedLeft": 77.333,
+      "sharedRight": 1219.556,
+      "imageAndCaptionWidth": 1142.222,
+      "imageHeightAt4To3": 856.667,
+      "researchToCollectionsGapBefore": 110.222,
+      "researchToCollectionsGapAfter": 23.111,
+      "creamServiceTopInset": 48,
+      "aiHeadingFits": true
+    },
+    {
+      "viewportWidth": 1440,
+      "sharedLeft": 87.0,
+      "sharedRight": 1372.0,
+      "imageAndCaptionWidth": 1285.0,
+      "imageHeightAt4To3": 963.75,
+      "researchToCollectionsGapBefore": 124.0,
+      "researchToCollectionsGapAfter": 26.0,
+      "creamServiceTopInset": 48,
+      "aiHeadingFits": true
+    },
+    {
+      "viewportWidth": 1920,
+      "sharedLeft": 116.0,
+      "sharedRight": 1829.333,
+      "imageAndCaptionWidth": 1713.333,
+      "imageHeightAt4To3": 1285.0,
+      "researchToCollectionsGapBefore": 165.333,
+      "researchToCollectionsGapAfter": 34.667,
+      "creamServiceTopInset": 64.0,
+      "aiHeadingFits": true
+    },
+    {
+      "viewportWidth": 2560,
+      "sharedLeft": 154.667,
+      "sharedRight": 2439.111,
+      "imageAndCaptionWidth": 2284.444,
+      "imageHeightAt4To3": 1713.333,
+      "researchToCollectionsGapBefore": 220.444,
+      "researchToCollectionsGapAfter": 46.222,
+      "creamServiceTopInset": 85.333,
+      "aiHeadingFits": true
+    },
+    {
+      "viewportWidth": 3840,
+      "sharedLeft": 232.0,
+      "sharedRight": 3658.667,
+      "imageAndCaptionWidth": 3426.667,
+      "imageHeightAt4To3": 2570.0,
+      "researchToCollectionsGapBefore": 330.667,
+      "researchToCollectionsGapAfter": 69.333,
+      "creamServiceTopInset": 128.0,
+      "aiHeadingFits": true
+    }
+  ]
+}

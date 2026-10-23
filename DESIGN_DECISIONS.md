@@ -136,3 +136,11 @@ Safari、实体机、读屏、真实200%浏览器缩放、正式托管性能与�
 - D-68：七个正文页共享页脚新增小红书、抖音1:1 SVG，按用户上传参考描摹path，无嵌入位图或字体依赖；分别链接https://xhslink.cn/o/3bfojLBF91a和https://v.douyin.com/t0FnwTl1gFY/，不含抖音分享附字。保留微信/天猫及全部联系信息；四图沿用32wide图形、44wide触点、12wide等距，容器可换行且自然增高。来源记录见notes/asset-sources/footer-social.md。
 
 本轮范围与验证证据见notes/annotation-qa-20261023/HOME-FOOTER-ANNOTATIONS.md。浏览器访问限制仍在，未新增浏览器after截图或真实设备结论。
+
+### 首页图文与衔接补充三条注释
+
+- D-69：首页AI过渡标题改为“走向智慧艾灸体验”；原右对齐位置、字体和入场效果保持。
+- D-70：首页从一株艾草的.growth-figure和图注使用同一shell全宽、左偏移0，与两侧标题边界对齐；删除移动65%/平板42%窄图覆盖。原07d4e.webp是1024×768，恢复4:3完整横图，height:auto并保留原尺寸属性以预留比例。原照片与说明文字不变；不添加位移、固定舞台或滚动占位。此局部替代旧窄竖图构图。
+- D-71：首页自研产品区靠近“走入产品研发”：growth去min-height下限和底部70u内距，collections桌面28u/移动32px上内距清零，只保留planting原26u/移动40px底距。服务米白区域顶部增加48wide、移动40wide内距；其他章节间距和既有动效不改。986px宽度计算下，研发至自研产品标题的间隔由84.91px收至17.80px，服务米白顶部48px。18档320–3840px的计算及源码检查通过，浏览器实屏未验收。
+
+本次三条范围与证据见notes/annotation-qa-20261023/HOME-GROWTH-SPACING.md。
