@@ -1,0 +1,253 @@
+{
+  "checkedOn": "2026-10-23",
+  "encoding": {
+    "encoder": "Pillow/libwebp",
+    "pillowVersion": "12.3.0",
+    "libwebpVersion": "1.6.0",
+    "quality": 95,
+    "method": 6,
+    "lossless": false,
+    "resizeFilter": "Lanczos for responsive variants; original-size main images not resized",
+    "colorHandling": "Original sRGB IEC61966-2.1 ICC profile retained in every WebP; no color filters or color-space conversion",
+    "qualityMode": "Lossy WebP re-encoding, not pixel-lossless; responsive variants additionally downsample the source at unchanged aspect ratio."
+  },
+  "images": [
+    {
+      "usage": "企业介绍：新商业范式下游封面",
+      "sourceName": "_E4A9942.jpg",
+      "sourcePath": "/Users/dabao/Desktop/_E4A9942.jpg",
+      "sourceBytes": 26787141,
+      "sourceSha256": "6ba57c11fdbdcf8a2d53edd5697196126fda38fc3604110574c146131ffce50c",
+      "sourceWidth": 6720,
+      "sourceHeight": 4480,
+      "sourceIccSha256": "2b3aa1645779a9e634744faf9b01e9102b0c9b88fd6deced7934df86b949af7e",
+      "sourceIccDescription": "sRGB IEC61966-2.1",
+      "files": [
+        {
+          "path": "assets/company/company-downstream-cover.webp",
+          "width": 6720,
+          "height": 4480,
+          "bytes": 12667268,
+          "sha256": "e8e6a6ee938538814c6df0ac914cc6b5f0757b0360e6aa205ca2afc78b444923",
+          "quality": 95,
+          "method": 6,
+          "lossless": false,
+          "resized": false,
+          "psnrRgbDbAgainstMatchingResolutionSource": 40.827653,
+          "ssimLuminanceOriginalPixelCrops": {
+            "sign": 0.987905,
+            "ferns": 0.98897,
+            "mural-chair": 0.993205
+          },
+          "reductionFromSourceBytesPercent": 52.711
+        },
+        {
+          "path": "assets/company/company-downstream-cover-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 156114,
+          "sha256": "3bfc57f40498ddf681ba721ef49cf0aa3dcb6999a609dcbfa5cc6e0cebdb8c80",
+          "quality": 95,
+          "method": 6,
+          "lossless": false,
+          "resized": true,
+          "psnrRgbDbAgainstMatchingResolutionSource": 40.583895,
+          "reductionFromSourceBytesPercent": 99.417
+        },
+        {
+          "path": "assets/company/company-downstream-cover-1920.webp",
+          "width": 1920,
+          "height": 1280,
+          "bytes": 682206,
+          "sha256": "247bc9a523279a2f6476fd1c0261faf82d1b5852b8ed32085b1547c725c4d738",
+          "quality": 95,
+          "method": 6,
+          "lossless": false,
+          "resized": true,
+          "psnrRgbDbAgainstMatchingResolutionSource": 41.450925,
+          "reductionFromSourceBytesPercent": 97.453
+        },
+        {
+          "path": "assets/company/company-downstream-cover-3840.webp",
+          "width": 3840,
+          "height": 2560,
+          "bytes": 3612380,
+          "sha256": "e8e1879d0d8e70d83fa5bb2a9ece897406b7ef75cdf1ccdf94de57fcb256115c",
+          "quality": 95,
+          "method": 6,
+          "lossless": false,
+          "resized": true,
+          "psnrRgbDbAgainstMatchingResolutionSource": 42.187845,
+          "reductionFromSourceBytesPercent": 86.514
+        }
+      ],
+      "candidateMainBytes": {
+        "q92": 10794860,
+        "q95": 12667268
+      },
+      "qualitySelection": "q95 selected after source/q92/q95 native-pixel visual comparison, retaining more original grain and fine texture; all variants use q95 as well. No lossless candidate is needed because the user requested visual quality and compression rather than identical pixels.",
+      "visualCheck": "Original and encoded overall appearance plus native-pixel signage, fern leaves, woven chair, mural detail or product lettering/bottle label were compared as applicable. q95 retains detail without obvious visible blocking in inspected crops; lossy differences remain at pixel level.",
+      "composition": "No crop, rotation, retouching, generation or color filter; original aspect ratio maintained."
+    },
+    {
+      "usage": "企业介绍：下游展开服务背景",
+      "sourceName": "_E4A9913.jpg",
+      "sourcePath": "/Users/dabao/Desktop/_E4A9913.jpg",
+      "sourceBytes": 29315018,
+      "sourceSha256": "c270300ff7fa488f4f3af4ab03df917d626678242252a3983ac1f00b68ac670d",
+      "sourceWidth": 4480,
+      "sourceHeight": 6720,
+      "sourceIccSha256": "2b3aa1645779a9e634744faf9b01e9102b0c9b88fd6deced7934df86b949af7e",
+      "sourceIccDescription": "sRGB IEC61966-2.1",
+      "files": [
+        {
+          "path": "assets/company/company-service-detail.webp",
+          "width": 4480,
+          "height": 6720,
+          "bytes": 12215454,
+          "sha256": "a73caaea3b1465958de435cdda33edb6f9e3a24ef082c46916d3a7c0d8d7bb2e",
+          "quality": 95,
+          "method": 6,
+          "lossless": false,
+          "resized": false,
+          "psnrRgbDbAgainstMatchingResolutionSource": 39.786048,
+          "ssimLuminanceOriginalPixelCrops": {
+            "mural": 0.991357,
+            "chair": 0.989182
+          },
+          "reductionFromSourceBytesPercent": 58.33
+        },
+        {
+          "path": "assets/company/company-service-detail-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 417858,
+          "sha256": "d4f7578c978798716af1966568262adfe7b41bc2bec4c860000ba9a0e85f7add",
+          "quality": 95,
+          "method": 6,
+          "lossless": false,
+          "resized": true,
+          "psnrRgbDbAgainstMatchingResolutionSource": 40.590445,
+          "reductionFromSourceBytesPercent": 98.575
+        },
+        {
+          "path": "assets/company/company-service-detail-1920.webp",
+          "width": 1920,
+          "height": 2880,
+          "bytes": 1814024,
+          "sha256": "29951e770e3cca57ac2033d08cdf704222403c04b7fb6b1e42e28c77cdd0042b",
+          "quality": 95,
+          "method": 6,
+          "lossless": false,
+          "resized": true,
+          "psnrRgbDbAgainstMatchingResolutionSource": 41.619456,
+          "reductionFromSourceBytesPercent": 93.812
+        },
+        {
+          "path": "assets/company/company-service-detail-3840.webp",
+          "width": 3840,
+          "height": 5760,
+          "bytes": 8762024,
+          "sha256": "faee377f3616b4184ed8cb142c8a808c1dd03eeb49e630510dcf3c8dd4e0d88d",
+          "quality": 95,
+          "method": 6,
+          "lossless": false,
+          "resized": true,
+          "psnrRgbDbAgainstMatchingResolutionSource": 40.747463,
+          "reductionFromSourceBytesPercent": 70.111
+        }
+      ],
+      "candidateMainBytes": {
+        "q92": 9721716,
+        "q95": 12215454
+      },
+      "qualitySelection": "q95 selected after source/q92/q95 native-pixel visual comparison, retaining more original grain and fine texture; all variants use q95 as well. No lossless candidate is needed because the user requested visual quality and compression rather than identical pixels.",
+      "visualCheck": "Original and encoded overall appearance plus native-pixel signage, fern leaves, woven chair, mural detail or product lettering/bottle label were compared as applicable. q95 retains detail without obvious visible blocking in inspected crops; lossy differences remain at pixel level.",
+      "composition": "No crop, rotation, retouching, generation or color filter; original aspect ratio maintained."
+    },
+    {
+      "usage": "企业介绍：自研产品全家福",
+      "sourceName": "KHP00465.jpg",
+      "sourcePath": "/Users/dabao/Desktop/KHP00465.jpg",
+      "sourceBytes": 19857019,
+      "sourceSha256": "0cde6f13bfe88de70177082b2ae0792bb1c9e4db085241cea0c7126828d2d207",
+      "sourceWidth": 9207,
+      "sourceHeight": 6138,
+      "sourceIccSha256": "2b3aa1645779a9e634744faf9b01e9102b0c9b88fd6deced7934df86b949af7e",
+      "sourceIccDescription": "sRGB IEC61966-2.1",
+      "files": [
+        {
+          "path": "assets/company/company-product-family.webp",
+          "width": 9207,
+          "height": 6138,
+          "bytes": 2800274,
+          "sha256": "58bede159b52c4b160df7e174f5cff2a2bbc3afc746fc621ec223fa1163c545d",
+          "quality": 95,
+          "method": 6,
+          "lossless": false,
+          "resized": false,
+          "psnrRgbDbAgainstMatchingResolutionSource": 45.12659,
+          "ssimLuminanceOriginalPixelCrops": {
+            "packaging": 0.989051,
+            "bottles": 0.986335
+          },
+          "reductionFromSourceBytesPercent": 85.898
+        },
+        {
+          "path": "assets/company/company-product-family-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 51822,
+          "sha256": "307477e9be2adc9dc6c3d9d268ba12d89b5c452f8ba65d79fa5d8fc71360a968",
+          "quality": 95,
+          "method": 6,
+          "lossless": false,
+          "resized": true,
+          "psnrRgbDbAgainstMatchingResolutionSource": 39.137047,
+          "reductionFromSourceBytesPercent": 99.739
+        },
+        {
+          "path": "assets/company/company-product-family-1920.webp",
+          "width": 1920,
+          "height": 1280,
+          "bytes": 157212,
+          "sha256": "694f2530c27d84ece5797351e02bc406acc741ee84ed8f0bfb1a75c47b5262e4",
+          "quality": 95,
+          "method": 6,
+          "lossless": false,
+          "resized": true,
+          "psnrRgbDbAgainstMatchingResolutionSource": 41.085103,
+          "reductionFromSourceBytesPercent": 99.208
+        },
+        {
+          "path": "assets/company/company-product-family-3840.webp",
+          "width": 3840,
+          "height": 2560,
+          "bytes": 505756,
+          "sha256": "e4c4d022d96b8509e0ba631ec0e4c6f41b97c49bcec9666fbecfb1e29d4454f7",
+          "quality": 95,
+          "method": 6,
+          "lossless": false,
+          "resized": true,
+          "psnrRgbDbAgainstMatchingResolutionSource": 43.183645,
+          "reductionFromSourceBytesPercent": 97.453
+        }
+      ],
+      "candidateMainBytes": {
+        "q92": 1626764,
+        "q95": 2800274
+      },
+      "qualitySelection": "q95 selected after source/q92/q95 native-pixel visual comparison, retaining more original grain and fine texture; all variants use q95 as well. No lossless candidate is needed because the user requested visual quality and compression rather than identical pixels.",
+      "visualCheck": "Original and encoded overall appearance plus native-pixel signage, fern leaves, woven chair, mural detail or product lettering/bottle label were compared as applicable. q95 retains detail without obvious visible blocking in inspected crops; lossy differences remain at pixel level.",
+      "composition": "No crop, rotation, retouching, generation or color filter; original aspect ratio maintained."
+    }
+  ],
+  "verification": {
+    "decodeErrors": 0,
+    "dimensionAndIccChecks": "Every output decoded; actual dimensions and retained ICC bytes asserted.",
+    "psnrMethod": "Full-image RGB PSNR against source decoded pixels at matching resolution; responsive references resized once with Lanczos.",
+    "ssimMethod": "Main-image native-pixel crops recorded in QA crop-regions.json; BT.601 luminance, 11x11 Gaussian window sigma1.5, valid interior, K1=0.01/K2=0.03/L=255. Crop SSIM is not a full-image score.",
+    "visualScope": "Local image and crop inspection only; no browser or device verification."
+  },
+  "deliveryAdvice": "Use the 1920-wide variant for ordinary image src and responsive srcset with accurate sizes. Use 960 for narrow displays, 3840 for larger/high-DPR displays, and original-width main only when the displayed image density requires it. Never preload all originals or set the 12 MB shop originals as the default src."
+}

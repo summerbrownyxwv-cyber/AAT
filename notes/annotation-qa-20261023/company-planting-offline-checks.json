@@ -1,0 +1,153 @@
+{
+  "kind": "Offline template, assets, CSS delimiter and conservative font/layout calculations; not browser screenshots",
+  "companyImageCount": 31,
+  "newWebPFilesChecked": 12,
+  "historyYears": 11,
+  "productImageLinks": 5,
+  "viewports": [
+    {
+      "width": 320,
+      "height": 640,
+      "companyTitleLinesFit": true,
+      "seriesCardWidth": 64.0,
+      "plantingSingleViewportContentEstimate": 457.8,
+      "availableEstimate": 576,
+      "expectedTraitMode": "fixed finite input"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "companyTitleLinesFit": true,
+      "seriesCardWidth": 74.0,
+      "plantingSingleViewportContentEstimate": 411.6,
+      "availableEstimate": 736,
+      "expectedTraitMode": "fixed finite input"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "companyTitleLinesFit": true,
+      "seriesCardWidth": 81.5,
+      "plantingSingleViewportContentEstimate": 388.5,
+      "availableEstimate": 780,
+      "expectedTraitMode": "fixed finite input"
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "companyTitleLinesFit": true,
+      "seriesCardWidth": 91.5,
+      "plantingSingleViewportContentEstimate": 342.3,
+      "availableEstimate": 868,
+      "expectedTraitMode": "fixed finite input"
+    },
+    {
+      "width": 640,
+      "height": 800,
+      "companyTitleLinesFit": true,
+      "seriesCardWidth": 142.8,
+      "plantingSingleViewportContentEstimate": 304.2,
+      "availableEstimate": 736,
+      "expectedTraitMode": "fixed finite input"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "companyTitleLinesFit": true,
+      "seriesCardWidth": 162.69,
+      "plantingSingleViewportContentEstimate": 348.36,
+      "availableEstimate": 960,
+      "expectedTraitMode": "fixed finite input"
+    },
+    {
+      "width": 900,
+      "height": 800,
+      "companyTitleLinesFit": true,
+      "seriesCardWidth": 190.66,
+      "plantingSingleViewportContentEstimate": 399.9,
+      "availableEstimate": 736,
+      "expectedTraitMode": "fixed finite input"
+    },
+    {
+      "width": 901,
+      "height": 800,
+      "companyTitleLinesFit": true,
+      "seriesCardWidth": 190.87,
+      "plantingSingleViewportContentEstimate": 380.65,
+      "availableEstimate": 736,
+      "expectedTraitMode": "fixed finite input"
+    },
+    {
+      "width": 986,
+      "height": 909,
+      "companyTitleLinesFit": true,
+      "seriesCardWidth": 208.87,
+      "plantingSingleViewportContentEstimate": 411.91,
+      "availableEstimate": 845,
+      "expectedTraitMode": "fixed finite input"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "companyTitleLinesFit": true,
+      "seriesCardWidth": 216.92,
+      "plantingSingleViewportContentEstimate": 425.89,
+      "availableEstimate": 704,
+      "expectedTraitMode": "fixed finite input"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "companyTitleLinesFit": true,
+      "seriesCardWidth": 305.05,
+      "plantingSingleViewportContentEstimate": 581.73,
+      "availableEstimate": 828,
+      "expectedTraitMode": "fixed finite input"
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "companyTitleLinesFit": true,
+      "seriesCardWidth": 406.73,
+      "plantingSingleViewportContentEstimate": 756.43,
+      "availableEstimate": 984.0,
+      "expectedTraitMode": "fixed finite input"
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "companyTitleLinesFit": true,
+      "seriesCardWidth": 542.31,
+      "plantingSingleViewportContentEstimate": 976.58,
+      "availableEstimate": 1312.0,
+      "expectedTraitMode": "fixed finite input"
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "companyTitleLinesFit": true,
+      "seriesCardWidth": 813.47,
+      "plantingSingleViewportContentEstimate": 1416.87,
+      "availableEstimate": 1968.0,
+      "expectedTraitMode": "fixed finite input"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "companyTitleLinesFit": true,
+      "seriesCardWidth": 178.79,
+      "plantingSingleViewportContentEstimate": 377.22,
+      "availableEstimate": 326,
+      "expectedTraitMode": "normal flow if content exceeds viewport"
+    },
+    {
+      "width": 986,
+      "height": 560,
+      "companyTitleLinesFit": true,
+      "seriesCardWidth": 208.87,
+      "plantingSingleViewportContentEstimate": 411.91,
+      "availableEstimate": 496,
+      "expectedTraitMode": "fixed finite input"
+    }
+  ]
+}

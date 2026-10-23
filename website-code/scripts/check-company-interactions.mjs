@@ -64,5 +64,5 @@ historyViewport.emit('wheel');historyViewport.scrollLeft=640;historyViewport.emi
 historyTrack.emit('keydown',{key:'End'});assert.equal(document.activeElement,cards[4]);assert.equal(cards[4].attributes['aria-pressed'],'true');
 yearList.emit('keydown',{key:'Home'});assert.equal(historyViewport.lastScroll.left,0);assert.equal(document.activeElement,years[0]);
 cleanup();years[3].emit('click');assert.equal(cards[0].attributes['aria-pressed'],'true');assert(observers.every(observer=>observer.disconnected));
-assert(readFileSync(new URL('../company.html',import.meta.url),'utf8').includes('让蕲春艾草，抵达更多健康生活'));
+assert(readFileSync(new URL('../company.html',import.meta.url),'utf8').includes('让蕲春艾草<br>抵达更多健康生活'));
 console.log('PASS: click-only business accordion, keyboard collapse/focus, native history scrolling/drag, year sync, bounds and cleanup.');

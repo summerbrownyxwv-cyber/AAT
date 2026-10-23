@@ -10,8 +10,6 @@ const brandContent = document.querySelector('#company-brand-content');
 if (brandContent && window.XunAiFigmaBrand) {
   brandContent.innerHTML = responsiveMarkup(window.XunAiFigmaBrand.render());
   brandContent.querySelector('.xf-group')?.remove();
-  brandContent.querySelector('#products > .xf-heading')?.remove();
-  brandContent.querySelector('#products > .xf-subheading h3').textContent = '自研产品';
   brandContent.querySelector('#stores > .xf-heading p').textContent = '艾艾贴终端业务';
   brandContent.querySelector('#stores > .xf-subheading h3').textContent = '寻艾艾灸馆';
   brandContent.querySelectorAll('a[href]').forEach(link => {

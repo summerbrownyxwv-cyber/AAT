@@ -16,12 +16,11 @@ const traits = [
 ];
 const main = document.querySelector('#main-content');
 document.querySelector('#planting-content').innerHTML = `
-  <section id="land" class="plant-land" data-scroll-story="land"><div class="plant-land-stage">
+  <section id="land" class="plant-land"><div class="plant-land-stage">
     <h2 class="plant-land-heading">土地与基地</h2>
-    <div class="plant-land-canvas"><figure class="plant-land-photo">${image('28470.webp', '标准化种植基地的艾草田与采收团队')}<div id="greenhouse" class="plant-greenhouse-photo">${image('bceb2.webp', '艾草育苗恒温研究所的玻璃温室')}</div></figure></div>
+    <div class="plant-land-canvas"><figure class="plant-land-photo">${image('28470.webp', '标准化种植基地的艾草田与采收团队')}</figure></div>
     <aside class="plant-land-aside plant-land-field"><h3>标准化种植基地</h3><p>艾艾贴与中国中医科学院中药研究合作，共建标准化艾草种植基地，同时制定艾叶无公害栽培生产规范和无公害技术标准，从源头上确保艾叶基因优良，严格把控原材料品质。该基地是蕲春县最为平整的地块之一，远离城市污染、空气清新、土壤肥沃且富含有机质，为艾草提供了最佳的生长条件。</p></aside>
-    <div class="plant-land-gallery plant-land-field-gallery"><div class="plant-land-thumbnails">${landThumbnail('f80d1.webp', '种植基地田间作业')}${landThumbnail('3ecaa.webp', '蕲优一号艾草采收')}${landThumbnail('4ba9f.webp', '艾草育苗研究基地')}</div></div>
-    <div class="plant-land-gallery plant-land-glass"><div class="plant-land-thumbnails">${landThumbnail('4fb37.webp', '夕阳下的艾草育苗研究所')}${landThumbnail('bceb2.webp', '恒温玻璃温室')}</div></div>
+    <div class="plant-land-gallery"><div class="plant-land-thumbnails">${landThumbnail('f80d1.webp', '种植基地田间作业')}${landThumbnail('3ecaa.webp', '蕲优一号艾草采收')}${landThumbnail('4ba9f.webp', '艾草育苗研究基地')}<figure id="greenhouse">${image('4fb37.webp', '夕阳下的艾草育苗研究所')}</figure>${landThumbnail('bceb2.webp', '恒温玻璃温室')}</div></div>
   </div></section>
   <div class="plant-cultivar cream">
     <div class="plant-cultivar-chapter"><h2 class="plant-cultivar-title plant-shell">从蕲优一号开始</h2>
@@ -51,15 +50,15 @@ main.querySelectorAll('img').forEach(img => {
 const stopContent = [...main.querySelectorAll('.plant-hero,.plant-origin,.pf-campus,.pf-technology,.pf-lines')].map(mountContentMotion);
 stopContent.push(mountPlantingManagement(main.querySelector('.plant-management')));
 const reduced = matchMedia('(prefers-reduced-motion:reduce)');
-// Every story uses native scroll distance; no wheel interception or timed playback.
+// Research keeps its native scroll story; traits use finite input inside one reading viewport.
 const stories = [...main.querySelectorAll('[data-scroll-story]')].map(section => ({section, stage:section.firstElementChild, progress:0, start:0, travel:1}));
-const land = stories[0], research = stories[1], traitsStory = stories[2];
+const landSection = main.querySelector('#land');
+const research = stories.find(item => item.section.dataset.scrollStory === 'research');
+const traitsStory = stories.find(item => item.section.dataset.scrollStory === 'traits');
 const compositionSection = main.querySelector('#composition');
 const composition = {section:compositionSection,stage:compositionSection.firstElementChild,progress:0,start:0,travel:1};
 const cultivarChapter = main.querySelector('.plant-cultivar-chapter');
 const cultivarTitle = main.querySelector('.plant-cultivar-title');
-const landPhoto = land.section.querySelector('.plant-land-photo');
-const landImages = [landPhoto.firstElementChild,landPhoto.querySelector('#greenhouse>img')];
 const traitArticles = [...traitsStory.section.querySelectorAll('article')];
 const dataRows = [...composition.section.querySelectorAll('dl>div')];
 dataRows.forEach(row => { row.querySelector('dd').dataset.final = row.querySelector('dd').textContent; });
@@ -67,7 +66,8 @@ const chapters = [...main.querySelectorAll('.plant-origin,.plant-research,.plant
 // Story scenes manage their own pinning; their outer runway stays in normal flow.
 const coverChapters = chapters.filter(section => !section.matches('.plant-origin,.plant-research,.plant-traits,.pf-capacity'));
 coverChapters.forEach((section,index) => { section.classList.add('plant-cover'); section.style.zIndex = String(index + 1); });
-let frame = 0, last = 0, landGeometry, researchGeometry, plantScene;
+let frame = 0, last = 0, researchGeometry, plantScene;
+let traitCursor = 0, traitFlow = false;
 const modelContainer = composition.section.querySelector('.plant-model-canvas');
 const modelObserver = new IntersectionObserver(async entries => {
   if (!entries.some(entry => entry.isIntersecting)) return;
@@ -84,35 +84,20 @@ function measure() {
   const top = document.querySelector('.site-navigation').getBoundingClientRect().height;
   const available = innerHeight - top;
   const unit = Math.max(1,innerWidth / 1440);
-  const landField = land.section.querySelector('.plant-land-field');
-  const width = land.stage.clientWidth;
-  const shell = document.querySelector('.plant-shell').getBoundingClientRect();
-  const stageLeft = land.stage.getBoundingClientRect().left;
-  const left = shell.left - stageLeft, right = width - (shell.right - stageLeft);
   const narrow = innerWidth <= 900;
-  const contentWidth = width - left - right, finalWidth = narrow ? contentWidth : contentWidth * .676;
-  land.section.style.setProperty('--land-aside-width',`${contentWidth * .2327}px`);
-  const fieldWidth = landField.clientWidth;
-  const fieldGap = parseFloat(getComputedStyle(landField).rowGap) || 0;
-  const thumbnailGap = parseFloat(getComputedStyle(land.section.querySelector('.plant-land-field-gallery .plant-land-thumbnails')).rowGap) || 0;
-  const fieldCopyHeight = landField.querySelector('h3').offsetHeight + landField.querySelector('p').offsetHeight + fieldGap;
-  const finalTop = narrow ? 64 : 48*unit+land.section.querySelector('.plant-land-heading').offsetHeight;
-  const finalHeight = finalWidth * 404 / 869;
-  const thumbnailsWidth = narrow ? fieldWidth : finalWidth;
-  const thumbnailHeight = (thumbnailsWidth-2*thumbnailGap)/3*2/3;
-  const asideTop = narrow ? finalTop+finalHeight+24*unit : 24*unit;
-  const thumbnailsTop = narrow ? asideTop+fieldCopyHeight+fieldGap : finalTop+finalHeight+24*unit;
-  land.stage.style.height = '';
-  if (!reduced.matches) land.stage.style.height = `${Math.max(asideTop+fieldCopyHeight,thumbnailsTop+thumbnailHeight)+24*unit}px`;
+  traitsStory.section.classList.remove('plant-story-flow');
+  traitsStory.stage.style.height = `${available}px`;
+  const traitStage = traitsStory.section.querySelector('.plant-traits-stage');
+  const traitStyle = getComputedStyle(traitStage);
+  const contentHeight = Math.max(...traitArticles.map(article => Math.max(article.querySelector('.plant-trait-copy').scrollHeight,article.querySelector('figure').offsetHeight)));
+  const requiredHeight = (parseFloat(traitStyle.paddingTop)||0)+(parseFloat(traitStyle.paddingBottom)||0)+(parseFloat(traitStyle.rowGap)||0)+traitStage.querySelector('h2').offsetHeight+contentHeight;
+  traitFlow = reduced.matches || requiredHeight > available;
+  traitsStory.section.classList.toggle('plant-story-flow',traitFlow);
+  traitsStory.stage.style.height = traitFlow ? 'auto' : `${available}px`;
   if (innerHeight <= 560) research.stage.querySelectorAll('figure').forEach(photo => { photo.style.cssText = ''; });
   stories.forEach(item => {
-    const distance = {land:1.35,research:.55}[item.section.dataset.scrollStory];
-    const natural = reduced.matches || (item === research && innerHeight <= 560);
-    // Keep the approved compact chapter budget while its reading scene fills the viewport.
-    const total = item === traitsStory
-      ? (narrow ? item.stage.offsetHeight : Math.min(available,Math.max(560*unit,innerWidth*.58))) * 5.6 * 2 / 3
-      : item.stage.offsetHeight * (1 + distance);
-    item.travel = natural ? 0 : Math.max(0,total - item.stage.offsetHeight);
+    const natural = item === traitsStory || reduced.matches || innerHeight <= 560;
+    item.travel = natural ? 0 : item.stage.offsetHeight * .55;
     item.section.style.height = natural ? 'auto' : `${item.stage.offsetHeight + item.travel}px`;
   });
   const titleBottom = (parseFloat(getComputedStyle(cultivarChapter).paddingTop) || 0) + cultivarTitle.offsetHeight;
@@ -124,7 +109,7 @@ function measure() {
   campus.style.setProperty('--campus-photo-top', `${description.offsetTop}px`);
   campus.style.setProperty('--campus-photo-height', `${stats.offsetTop + stats.offsetHeight - description.offsetTop}px`);
   let flowTop = top + main.querySelector('.plant-hero').offsetHeight;
-  [land.section,...chapters].forEach(section => {
+  [landSection,...chapters].forEach(section => {
     if (section.classList.contains('plant-origin')) {
       const heading = getComputedStyle(cultivarTitle);
       flowTop += parseFloat(getComputedStyle(cultivarChapter).paddingTop) + cultivarTitle.offsetHeight + (parseFloat(heading.marginBottom) || 0);
@@ -136,16 +121,9 @@ function measure() {
     if (item) item.start = flowTop - top;
     flowTop += section.offsetHeight + (parseFloat(style.marginBottom) || 0);
   });
-  composition.start = traitsStory.start + traitsStory.travel * 2 / 4.6;
-  composition.travel = reduced.matches ? 0 : traitsStory.travel * 2.6 / 4.6;
-  composition.section.dataset.chapterScroll = String(traitsStory.start + traitsStory.travel * 3.45 / 4.6);
-  const height = land.stage.clientHeight;
-  landGeometry = {width,height,fullHeight:available,left,finalWidth,finalHeight,finalTop,top,overflow:Math.max(0,height-available)};
-  land.section.style.setProperty('--land-aside-top',`${asideTop}px`);
-  land.section.style.setProperty('--land-thumbnails-left',`${left}px`);
-  land.section.style.setProperty('--land-thumbnails-width',`${thumbnailsWidth}px`);
-  land.section.style.setProperty('--land-thumbnails-top',`${thumbnailsTop}px`);
-  land.section.style.setProperty('--land-thumbnails-height',`${thumbnailHeight}px`);
+  composition.start = traitsStory.start;
+  composition.travel = 0;
+  composition.section.dataset.chapterScroll = String(traitsStory.start);
   const researchWidth = research.stage.clientWidth, researchHeight = research.stage.clientHeight, ratio = 361 / 244;
   research.section.style.setProperty('--research-copy-top', `${titleBottom + 24*unit}px`);
   const copyEnd = research.section.querySelector('.plant-research-copy').offsetTop + research.section.querySelector('.plant-research-copy').offsetHeight;
@@ -154,38 +132,60 @@ function measure() {
   researchGeometry = {height:researchHeight,ratio,photoTop,smallWidth,largeWidth:Math.min(researchWidth * (narrow ? 1 : .62),Math.max(1,(researchHeight-photoTop-24*unit)*ratio))};
   schedule();
 }
+function advanceTraits(delta) {
+  if (!delta || reduced.matches || traitFlow || document.querySelector('dialog[open]')) return false;
+  const top = document.querySelector('.site-navigation').getBoundingClientRect().height;
+  const bounds = traitsStory.section.getBoundingClientRect();
+  const available = innerHeight-top, tolerance = Math.min(120,available*.25);
+  const pinned = Math.abs(bounds.top-top) <= 2;
+  const crossing = delta > 0 ? bounds.top > top && bounds.top-top <= delta : bounds.top < top && top-bounds.top <= -delta;
+  const arriving = delta > 0 ? bounds.top < top && bounds.top >= top-tolerance : bounds.top > top && bounds.top <= top+tolerance;
+  if (!pinned && !crossing && !arriving) return false;
+  const next = clamp(traitCursor + clamp(delta/Math.max(240,available*.55),-1,1),0,7);
+  if (next === traitCursor) return false;
+  if (!pinned) window.scrollTo({top:scrollY+bounds.top-top,behavior:'instant'});
+  traitCursor = next;
+  schedule();
+  return true;
+}
+const traitInput = new AbortController();
+const editableTarget = target => target?.closest?.('input,textarea,select,button,a,[contenteditable="true"]');
+window.addEventListener('wheel',event=>{
+  if (!event.cancelable || event.ctrlKey || event.metaKey || editableTarget(event.target) || Math.abs(event.deltaX)>Math.abs(event.deltaY)) return;
+  const delta = event.deltaY*(event.deltaMode===1?16:event.deltaMode===2?innerHeight:1);
+  if (advanceTraits(delta)) event.preventDefault();
+},{passive:false,signal:traitInput.signal});
+let traitTouch;
+window.addEventListener('touchstart',event=>{traitTouch=event.touches.length===1?{x:event.touches[0].clientX,y:event.touches[0].clientY}:null;},{passive:true,signal:traitInput.signal});
+window.addEventListener('touchmove',event=>{
+  if (!traitTouch || event.touches.length!==1 || !event.cancelable || editableTarget(event.target)) return;
+  const touch=event.touches[0],dy=traitTouch.y-touch.clientY,dx=traitTouch.x-touch.clientX;
+  traitTouch={x:touch.clientX,y:touch.clientY};
+  if (Math.abs(dy)>Math.abs(dx) && advanceTraits(dy)) event.preventDefault();
+},{passive:false,signal:traitInput.signal});
+for (const type of ['touchend','touchcancel']) window.addEventListener(type,()=>{traitTouch=null;},{passive:true,signal:traitInput.signal});
+window.addEventListener('keydown',event=>{
+  if (event.ctrlKey || event.metaKey || event.altKey || editableTarget(event.target)) return;
+  const delta = {ArrowDown:40,ArrowUp:-40,PageDown:innerHeight,PageUp:-innerHeight,' ':event.shiftKey?-innerHeight:innerHeight}[event.key];
+  if (delta && advanceTraits(delta)) event.preventDefault();
+},{signal:traitInput.signal});
 function render(time) {
   frame = 0;
   const follow = last ? 1 - Math.exp(-Math.min(64,time-last)/55) : 1; last = time;
   let moving = false;
   stories.forEach(item => {
-    const target = reduced.matches ? 1 : clamp((scrollY-item.start) / Math.max(1,item.travel));
-    item.progress += (target-item.progress) * follow;
+    const target = item === traitsStory ? traitCursor / 7 : reduced.matches ? 1 : clamp((scrollY-item.start) / Math.max(1,item.travel));
+    item.progress = item === traitsStory ? target : item.progress + (target-item.progress) * follow;
     if (Math.abs(item.progress-target)<.0005) item.progress = target; else moving = true;
     item.section.dataset.progress = item.progress.toFixed(4);
   });
-  const traitProgress = reduced.matches ? 1 : clamp(traitsStory.progress * 4.6 / 1.8);
-  const compositionPhase = reduced.matches ? 1 : smoothstep(1.8 / 4.6,2 / 4.6,traitsStory.progress);
-  composition.progress = reduced.matches ? 1 : clamp((traitsStory.progress * 4.6 - 2) / 2.6);
+  const compositionPhase = traitFlow || traitCursor >= 4 ? 1 : 0;
+  composition.progress = traitFlow ? 1 : clamp((traitCursor - 4) / 3);
   composition.section.dataset.progress = composition.progress.toFixed(4);
+  traitsStory.section.dataset.inputProgress = traitCursor.toFixed(4);
   traitsStory.section.style.setProperty('--composition-phase',compositionPhase);
-  traitsStory.section.querySelector('.plant-traits-stage').setAttribute('aria-hidden',String(!reduced.matches && compositionPhase === 1));
-  composition.section.setAttribute('aria-hidden',String(!reduced.matches && compositionPhase === 0));
-  const p = land.progress, shrink = smoothstep(0,.28,p), glass = smoothstep(.62,.86,p);
-  land.stage.style.top = reduced.matches ? '' : `${landGeometry.top-landGeometry.overflow*smoothstep(.42,.62,p)}px`;
-  const {width:w,fullHeight:h,left,finalWidth,finalHeight,finalTop}=landGeometry;
-  const rect = {x:left*shrink,y:finalTop*shrink,width:w+(finalWidth-w)*shrink,height:h+(finalHeight-h)*shrink};
-  landPhoto.style.cssText = `left:${rect.x}px;top:${rect.y}px;width:${rect.width}px;height:${rect.height}px;opacity:1;border-radius:calc(var(--radius) * ${shrink})`;
-  landImages.forEach((picture,index) => {
-    const opacity = index === 0 ? 1-glass : glass;
-    picture.style.cssText = `opacity:${opacity};filter:blur(${(1-opacity)*6}px);clip-path:inset(${(1-opacity)*14}% 0 0);transform:translateY(${(1-opacity)*3}%) scale(${1+(1-opacity)*.035})`;
-  });
-  land.section.style.setProperty('--land-shrink',shrink);
-  land.section.style.setProperty('--land-copy',smoothstep(.28,.42,p));
-  land.section.style.setProperty('--land-glass',glass);
-  land.section.querySelector('.plant-land-field').setAttribute('aria-hidden',String(!reduced.matches && p < .28));
-  land.section.querySelector('.plant-land-field-gallery').setAttribute('aria-hidden',String(!reduced.matches && (p < .28 || p > .86)));
-  land.section.querySelector('.plant-land-glass').setAttribute('aria-hidden',String(!reduced.matches && p < .62));
+  traitsStory.section.querySelector('.plant-traits-stage').setAttribute('aria-hidden',String(!traitFlow && compositionPhase === 1));
+  composition.section.setAttribute('aria-hidden',String(!traitFlow && compositionPhase === 0));
   const researchP = smoothstep(.08,.88,research.progress);
   research.section.style.setProperty('--research-progress',researchP);
   if (innerHeight > 560) {
@@ -196,25 +196,21 @@ function render(time) {
     research.section.querySelector('.plant-research-main').style.cssText = `top:${photoTop}px;width:${mainWidth}px`;
     research.section.querySelectorAll('.plant-research-secondary').forEach(photo => { photo.style.cssText = `top:${secondTop}px;width:${secondaryWidth}px;opacity:${researchP};transform:none`; });
   }
-  const cursor = smoothstep(.08,.9,traitProgress)*(traitArticles.length-1);
-  const traitGap = traitArticles[0].querySelector('figure').offsetHeight * .9 + 24;
   traitArticles.forEach((article,index) => {
-    const distance = index-cursor;
-    const active = index === Math.round(cursor);
+    const active = traitFlow || index === Math.min(3,Math.floor(traitCursor));
     article.classList.toggle('is-active',active);
-    article.querySelector('.plant-trait-copy').setAttribute('aria-hidden',String(!reduced.matches && !active));
-    article.querySelector('figure').style.transform = `translateY(${distance * traitGap}px) rotateX(${clamp(distance,-1,1)*-12}deg) scale(${1-Math.min(Math.abs(distance),1)*.2})`;
-    article.querySelector('figure').style.opacity = String(1-Math.min(Math.abs(distance),1)*.76);
+    article.setAttribute('aria-hidden',String(!active));
+    article.querySelector('.plant-trait-copy').setAttribute('aria-hidden',String(!active));
   });
   dataRows.forEach((row,index) => {
-    const reveal = reduced.matches ? 1 : smoothstep(.04+index*.145,.16+index*.145,composition.progress);
+    const reveal = traitFlow ? 1 : smoothstep(0,.65,traitCursor - 4 - index);
     row.style.cssText = `opacity:${reveal};transform:translateY(${12*(1-reveal)}px);filter:blur(${4*(1-reveal)}px);clip-path:inset(${12*(1-reveal)}% 0 0)`;
     row.setAttribute('aria-hidden',String(reveal === 0));
     const value = row.querySelector('dd');
     value.textContent = value.dataset.final;
     row.dataset.reveal = reveal.toFixed(3);
   });
-  plantScene?.setProgress(reduced.matches ? 0 : composition.progress);
+  plantScene?.setProgress(0);
   if(moving) frame=requestAnimationFrame(render); else last=0;
 }
 function schedule(){if(!frame)frame=requestAnimationFrame(render);}
@@ -224,7 +220,10 @@ reduced.addEventListener('change',measure);
 measure();
 function goToPlantChapter() {
   const target = document.getElementById(location.hash.slice(1));
+  if (target === composition.section) traitCursor = 4;
+  else if (target === traitsStory.section) traitCursor = 0;
   if (target?.dataset.chapterScroll) window.scrollTo({top:Number(target.dataset.chapterScroll),behavior:'instant'});
+  schedule();
 }
 window.addEventListener('hashchange',goToPlantChapter);
 document.addEventListener('click',event=>{
@@ -233,6 +232,7 @@ document.addEventListener('click',event=>{
 });
 document.fonts.ready.then(()=>{measure();goToPlantChapter();});
 const observer=new ResizeObserver(measure);
+observer.observe(landSection);
 chapters.forEach(section=>observer.observe(section));
 stories.forEach(item=>observer.observe(item.stage));
-window.addEventListener('pagehide',event=>{if(event.persisted)return;stopContent.forEach(stop=>stop());observer.disconnect();modelObserver.disconnect();plantScene?.destroy();cancelAnimationFrame(frame);},{once:true});
+window.addEventListener('pagehide',event=>{if(event.persisted)return;stopContent.forEach(stop=>stop());traitInput.abort();observer.disconnect();modelObserver.disconnect();plantScene?.destroy();cancelAnimationFrame(frame);},{once:true});

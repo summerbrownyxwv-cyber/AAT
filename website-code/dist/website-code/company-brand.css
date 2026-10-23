@@ -33,6 +33,8 @@
 .company-brand-content .xf-history-card:focus-visible{outline-offset:calc(-4 * var(--wide-u));}
 .company-brand-content .xf-history-card.is-active{border-color:var(--line-strong);color:#000;}
 .company-brand-content .xf-history-visual{border-radius:var(--radius);}
+.company-brand-content .xf-history-placeholder{position:absolute;inset:0;display:grid;place-items:center;height:100%;background:var(--cream);color:var(--muted);font:400 var(--heading)/1.4 var(--sans);}
+.company-brand-content .xf-history-hint{margin-top:calc(20 * var(--wide-u));font:400 var(--caption)/1.6 var(--sans);color:var(--muted);}
 .company-brand-content .xf-history-card .xf-history-visual img{filter:blur(calc(5 * var(--wide-u)));transform:scale(1.035);transition:opacity 760ms var(--ease),filter 980ms var(--ease),transform 980ms var(--ease);}
 .company-brand-content .xf-history-card.is-active .xf-history-visual img{filter:none;transform:none;}
 .company-brand-content .xf-history-copy{opacity:1;filter:none;transform:none;transition:none;}
@@ -40,6 +42,15 @@
 .company-brand-content .xf-group-grid img,.company-brand-content .xf-products img,.company-brand-content .xf-terminal img{transition:transform 760ms var(--ease),filter 980ms var(--ease);}
 .company-brand-content .xf-group-grid figure:hover img,.company-brand-content .xf-products figure:hover img,.company-brand-content .xf-terminal>*:hover>img{transform:scale(1.025);}
 .company-brand-content .xf-products figcaption,.company-brand-content .xf-terminal figcaption{font-family:var(--display);}
+.company-brand-content .xf-products{grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(calc(8 * var(--wide-u)),1.5vw,calc(24 * var(--wide-u)));}
+.company-brand-content .xf-products>figure:nth-child(n){grid-column:auto;}
+.company-brand-content .xf-products>figure.company-product-family{grid-column:1/-1;}
+.company-brand-content .xf-products a{display:block;min-height:44px;overflow:hidden;border-radius:var(--radius);}
+.company-brand-content .xf-products a:focus-visible{outline:2px solid var(--ink);outline-offset:4px;}
+.company-brand-content .xf-products img{width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;}
+.company-brand-content .xf-products a[href$="#products-ran"] img{object-position:10% center;}
+.company-brand-content .xf-products .company-product-family img{aspect-ratio:3/2;object-fit:contain;}
+.company-brand-content .xf-products figcaption{white-space:nowrap;}
 .company-brand-content .xf-terminal p{font-family:var(--sans);}
 .company-brand-content .xf-stage-content p{max-width:58ch;}
 .company-brand-content .xf-covers strong,.company-brand-content .xf-stage-content>h3,.company-brand-content .xf-stage-copy h4{font-size:var(--heading);font-family:var(--display);}
